@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Wed, 13 Oct 2021 13:32:33",
+	"@generated": "Fri, 15 Oct 2021 09:05:52",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -142,7 +142,7 @@
 					"reference": "",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "38"
+					"sourceid": "44"
 				},
 				{
 					"pluginid": "10108",
@@ -379,7 +379,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "38"
+					"sourceid": "44"
 				},
 				{
 					"pluginid": "10017",
@@ -719,7 +719,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "38"
+					"sourceid": "44"
 				},
 				{
 					"pluginid": "10096",
@@ -911,7 +911,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "275"
+					"sourceid": "282"
 				},
 				{
 					"pluginid": "10027",
@@ -1177,35 +1177,49 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p>",
 					"instances":[ 
 						{
-							"uri": "https://parisregion.eu/img/favicon.ico",
+							"uri": "https://parisregion.eu/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=604800"
+							"evidence": "max-age=0"
 						},
 						{
-							"uri": "https://parisregion.eu/img/favicon.png",
+							"uri": "https://parisregion.eu/discover.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=604800"
+							"evidence": "max-age=0"
 						},
 						{
-							"uri": "https://parisregion.eu/robots.txt",
+							"uri": "https://parisregion.eu/news.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "max-age=0"
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.xml",
+							"uri": "https://parisregion.eu/parisregionfp.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://parisregion.eu/sitemap.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://parisregion.eu/study-research.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
 						}
 					],
-					"count": "4",
+					"count": "6",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
