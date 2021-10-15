@@ -843,7 +843,7 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-62 seconds from localtime"
+              "finding"      : "-63 seconds from localtime"
           }
 ,         {
               "id"           : "HSTS",
@@ -961,10 +961,10 @@
               "id"           : "BREACH",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
-              "severity"     : "WARN",
+              "severity"     : "MEDIUM",
               "cve"          : "CVE-2013-3587",
               "cwe"          : "CWE-310",
-              "finding"      : "Test failed as HTTP request stalled and was terminated"
+              "finding"      : "potentially VULNERABLE, gzip HTTP compression detected  - only supplied '/' tested"
           }
 ,         {
               "id"           : "POODLE_SSL",
@@ -1429,6 +1429,6 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "335"
+              "finding"      : "395"
           }
 ]
