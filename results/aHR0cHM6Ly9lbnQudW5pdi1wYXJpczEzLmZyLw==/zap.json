@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Wed, 13 Oct 2021 19:00:20",
+	"@generated": "Fri, 15 Oct 2021 09:39:21",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -183,7 +183,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=CB9C4F8A48FBF81AE7CFE76BFC7763DE?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=AA677E800FFABED2DB0FEE3985F16CB1?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
 						}
 					],
 					"count": "1",
@@ -232,7 +232,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10010",
@@ -519,7 +519,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10036",
@@ -628,12 +628,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-1241068-ccWARFrRamIyY3ONnhH5uaEvh43rd4-cas1"
+							"evidence": "LT-1278075-jV7r4RCWzR9AGhS9q45VW37ztxRe1p-cas1"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\u06CDt\uFFFD\u03DCq`\\x0011\\x0016\uFFFDZ\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFD~nhK\uFFFD\uFFFDz\uFFFD\uFFFD\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\u06FF4\uF7E3W\uFFFD\uFFFDD%\uFFFDG\uFFFD\\x0006\uFFFD/j\uFFFDV\u07FC\uFFFD\uFFFD\\x0017\uFFFD\uFFFD\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -680,16 +680,30 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "no-store"
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
 						}
 					],
-					"count": "1",
+					"count": "3",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				}
 			]
 		}
