@@ -54,14 +54,14 @@
 <h1>Scan Report<br><small>Nmap 7.91</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln unif.fr</pre>
-<p class="lead">Wed Oct 13 13:26:12 2021 – Wed Oct 13 13:26:16 2021<br>1 hosts scanned.
-              0 hosts up.
-              1 hosts down.
+<p class="lead">Fri Oct 15 14:53:25 2021 – Fri Oct 15 14:53:51 2021<br>1 hosts scanned.
+              1 hosts up.
+              0 hosts down.
             </p>
 <div class="progress">
-<div class="progress-bar progress-bar-success" style="width:0%;">0<span class="sr-only"></span>
+<div class="progress-bar progress-bar-success" style="width:100%;">1<span class="sr-only"></span>
 </div>
-<div class="progress-bar progress-bar-danger" style="width:100%;">1<span class="sr-only"></span>
+<div class="progress-bar progress-bar-danger" style="width:0%;">0<span class="sr-only"></span>
 </div>
 </div>
 </div>
@@ -74,7 +74,13 @@
 <th>TCP (open)</th>
 <th>UDP (open)</th>
 </tr></thead>
-<tbody></tbody>
+<tbody><tr>
+<td><span class="label label-success">up</span></td>
+<td>192.33.182.249</td>
+<td>unif.fr</td>
+<td>3</td>
+<td>0</td>
+</tr></tbody>
 </table></div>
 <script>
             $(document).ready(function() {
@@ -84,6 +90,221 @@
               "lengthMenu": [ [10, 25, 50, 100, -1], [10, 25, 50, 100, "All"] ]
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
+<div class="panel panel-default">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#192-33-182-249"><h3 class="panel-title">192.33.182.249 - unif.fr</h3></div>
+<div class="panel-body collapse in" id="192-33-182-249">
+<h4>Hostnames</h4>
+<ul>
+<li>unif.fr (user)</li>
+<li>unknown-1.univ-paris13.fr (PTR)</li>
+</ul>
+<h4>Ports</h4>
+<div class="table-responsive"><table class="table table-bordered">
+<thead><tr>
+<th>Port</th>
+<th>Protocol</th>
+<th>State<br>Reason</th>
+<th>Service</th>
+<th>Product</th>
+<th>Version</th>
+<th>Extra Info</th>
+</tr></thead>
+<tbody>
+<tr class="success">
+<td title="Port">22</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">ssh</td>
+<td title="Product">OpenSSH</td>
+<td title="Version">6.7p1 Debian 5+deb8u8</td>
+<td title="Extra Info">protocol 2.0</td>
+</tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:openbsd:openssh:6.7p1">cpe:/a:openbsd:openssh:6.7p1</a><h5>vulners</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  cpe:/a:openbsd:openssh:6.7p1: 
+    	CVE-2015-5600	8.5	https://vulners.com/cve/CVE-2015-5600
+    	EDB-ID:40888	7.8	https://vulners.com/exploitdb/EDB-ID:40888	*EXPLOIT*
+    	EDB-ID:41173	7.2	https://vulners.com/exploitdb/EDB-ID:41173	*EXPLOIT*
+    	MSF:ILITIES/GENTOO-LINUX-CVE-2015-6564/	6.9	https://vulners.com/metasploit/MSF:ILITIES/GENTOO-LINUX-CVE-2015-6564/	*EXPLOIT*
+    	CVE-2015-6564	6.9	https://vulners.com/cve/CVE-2015-6564
+    	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+    	CVE-2017-15906	5.0	https://vulners.com/cve/CVE-2017-15906
+    	SSV:90447	4.6	https://vulners.com/seebug/SSV:90447	*EXPLOIT*
+    	EDB-ID:45233	4.6	https://vulners.com/exploitdb/EDB-ID:45233	*EXPLOIT*
+    	EDB-ID:45210	4.6	https://vulners.com/exploitdb/EDB-ID:45210	*EXPLOIT*
+    	EDB-ID:45001	4.6	https://vulners.com/exploitdb/EDB-ID:45001	*EXPLOIT*
+    	EDB-ID:45000	4.6	https://vulners.com/exploitdb/EDB-ID:45000	*EXPLOIT*
+    	EDB-ID:40963	4.6	https://vulners.com/exploitdb/EDB-ID:40963	*EXPLOIT*
+    	EDB-ID:40962	4.6	https://vulners.com/exploitdb/EDB-ID:40962	*EXPLOIT*
+    	MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/	4.3	https://vulners.com/metasploit/MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/	4.3	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/	4.3	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/	4.3	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/	*EXPLOIT*
+    	MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/	4.3	https://vulners.com/metasploit/MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/	*EXPLOIT*
+    	MSF:ILITIES/UBUNTU-CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2016-0777/	*EXPLOIT*
+    	MSF:ILITIES/IBM-AIX-CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/IBM-AIX-CVE-2016-0777/	*EXPLOIT*
+    	MSF:ILITIES/DEBIAN-CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2016-0777/	*EXPLOIT*
+    	MSF:ILITIES/AIX-7.2-OPENSSH_ADVISORY7_CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/AIX-7.2-OPENSSH_ADVISORY7_CVE-2016-0777/	*EXPLOIT*
+    	MSF:ILITIES/AIX-7.1-OPENSSH_ADVISORY7_CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/AIX-7.1-OPENSSH_ADVISORY7_CVE-2016-0777/	*EXPLOIT*
+    	MSF:ILITIES/AIX-5.3-OPENSSH_ADVISORY7_CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/AIX-5.3-OPENSSH_ADVISORY7_CVE-2016-0777/	*EXPLOIT*
+    	MSF:ILITIES/ALPINE-LINUX-CVE-2015-6563/	1.9	https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2015-6563/	*EXPLOIT*</pre>
+</td></tr>
+<tr class="active">
+<td>53</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>domain</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="success">
+<td title="Port">80</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">http</td>
+<td title="Product">Apache httpd</td>
+<td title="Version">2.4.10</td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server:2.4.10">cpe:/a:apache:http_server:2.4.10</a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache/2.4.10 (Debian)</pre>
+<h5>vulners</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  Apache httpd 2.4.10: 
+    	HTTPD:9AD76A782F4E66676719E36B64777A7A	7.5	https://vulners.com/httpd/HTTPD:9AD76A782F4E66676719E36B64777A7A
+    	HTTPD:650C6B8A1FEAD1FBD1AF9746142659F9	7.5	https://vulners.com/httpd/HTTPD:650C6B8A1FEAD1FBD1AF9746142659F9
+    	HTTPD:1F84410918227CC81FA7C000C4F999A3	7.5	https://vulners.com/httpd/HTTPD:1F84410918227CC81FA7C000C4F999A3
+    	HTTPD:156974A46CA46AF26CC4140D00F7EB10	7.5	https://vulners.com/httpd/HTTPD:156974A46CA46AF26CC4140D00F7EB10
+    	MSF:ILITIES/UBUNTU-CVE-2018-1312/	6.8	https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1312/	*EXPLOIT*
+    	MSF:ILITIES/UBUNTU-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/SUSE-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/REDHAT_LINUX-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/ORACLE_LINUX-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/ORACLE_LINUX-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2018-1312/	6.8	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2018-1312/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1312/	6.8	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1312/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2018-1312/	6.8	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2018-1312/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/FREEBSD-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/FREEBSD-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/DEBIAN-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/CENTOS_LINUX-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/APACHE-HTTPD-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/AMAZON_LINUX-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/AMAZON_LINUX-CVE-2017-15715/	*EXPLOIT*
+    	MSF:ILITIES/ALPINE-LINUX-CVE-2018-1312/	6.8	https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2018-1312/	*EXPLOIT*
+    	MSF:ILITIES/ALPINE-LINUX-CVE-2017-15715/	6.8	https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2017-15715/	*EXPLOIT*
+    	HTTPD:E8492EE5729E8FB514D3C0EE370C9BC6	6.8	https://vulners.com/httpd/HTTPD:E8492EE5729E8FB514D3C0EE370C9BC6
+    	HTTPD:D66D5F45690EBE82B48CC81EF6388EE8	6.8	https://vulners.com/httpd/HTTPD:D66D5F45690EBE82B48CC81EF6388EE8
+    	HTTPD:B63E69E936F944F114293D6F4AB8D4D6	6.8	https://vulners.com/httpd/HTTPD:B63E69E936F944F114293D6F4AB8D4D6
+    	HTTPD:D868A1E68FB46E2CF5486281DCDB59CF	6.4	https://vulners.com/httpd/HTTPD:D868A1E68FB46E2CF5486281DCDB59CF
+    	MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/	6.0	https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/	*EXPLOIT*
+    	MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0217/	6.0	https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0217/	*EXPLOIT*
+    	HTTPD:05E6BF2AD317E3658D2938931207AA66	6.0	https://vulners.com/httpd/HTTPD:05E6BF2AD317E3658D2938931207AA66
+    	HTTPD:8DF9389A321028B4475CE2E9B5BFC7A6	5.8	https://vulners.com/httpd/HTTPD:8DF9389A321028B4475CE2E9B5BFC7A6
+    	HTTPD:5FF2D6B51D8115FFCB653949D8D36345	5.8	https://vulners.com/httpd/HTTPD:5FF2D6B51D8115FFCB653949D8D36345
+    	EDB-ID:47689	5.8	https://vulners.com/exploitdb/EDB-ID:47689	*EXPLOIT*
+    	1337DAY-ID-33577	5.8	https://vulners.com/zdt/1337DAY-ID-33577	*EXPLOIT*
+    	HTTPD:BA2AA2F9CA78BCC3B836D2041D1E15B6	5.1	https://vulners.com/httpd/HTTPD:BA2AA2F9CA78BCC3B836D2041D1E15B6
+    	SSV:96537	5.0	https://vulners.com/seebug/SSV:96537	*EXPLOIT*
+    	SSV:62058	5.0	https://vulners.com/seebug/SSV:62058	*EXPLOIT*
+    	MSF:ILITIES/UBUNTU-CVE-2018-1303/	5.0	https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1303/	*EXPLOIT*
+    	MSF:ILITIES/UBUNTU-CVE-2017-15710/	5.0	https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2017-15710/	*EXPLOIT*
+    	MSF:ILITIES/ORACLE-SOLARIS-CVE-2020-1934/	5.0	https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2020-1934/	*EXPLOIT*
+    	MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15710/	5.0	https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15710/	*EXPLOIT*
+    	MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15710/	5.0	https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15710/	*EXPLOIT*
+    	MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-8743/	5.0	https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-8743/	*EXPLOIT*
+    	MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-2161/	5.0	https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-2161/	*EXPLOIT*
+    	MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-0736/	5.0	https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-0736/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15710/	5.0	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15710/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15710/	5.0	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15710/	*EXPLOIT*
+    	MSF:ILITIES/CENTOS_LINUX-CVE-2017-15710/	5.0	https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2017-15710/	*EXPLOIT*
+    	MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED	5.0	https://vulners.com/metasploit/MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED	*EXPLOIT*
+    	HTTPD:FCCF5DB14D66FA54B47C34D9680C0335	5.0	https://vulners.com/httpd/HTTPD:FCCF5DB14D66FA54B47C34D9680C0335
+    	HTTPD:EB26BC6B6E566C865F53A311FC1A6744	5.0	https://vulners.com/httpd/HTTPD:EB26BC6B6E566C865F53A311FC1A6744
+    	HTTPD:E07AEA8765BD0F6E15AAD496A2714564	5.0	https://vulners.com/httpd/HTTPD:E07AEA8765BD0F6E15AAD496A2714564
+    	HTTPD:D5C9AD5E120B9B567832B4A5DBD97F43	5.0	https://vulners.com/httpd/HTTPD:D5C9AD5E120B9B567832B4A5DBD97F43
+    	HTTPD:A2EC89FEFE17D8EC8F8C3049CF6ED335	5.0	https://vulners.com/httpd/HTTPD:A2EC89FEFE17D8EC8F8C3049CF6ED335
+    	HTTPD:975FD708E753E143E7DFFC23510F802E	5.0	https://vulners.com/httpd/HTTPD:975FD708E753E143E7DFFC23510F802E
+    	HTTPD:867B7FEBC94AAFD9542C6BE363C3D8A3	5.0	https://vulners.com/httpd/HTTPD:867B7FEBC94AAFD9542C6BE363C3D8A3
+    	HTTPD:63F2722DB00DBB3F59C40B40F32363B3	5.0	https://vulners.com/httpd/HTTPD:63F2722DB00DBB3F59C40B40F32363B3
+    	HTTPD:6236A32987BAE49DFBF020477B1278DD	5.0	https://vulners.com/httpd/HTTPD:6236A32987BAE49DFBF020477B1278DD
+    	HTTPD:60420623F2A716909480F87DB74EE9D7	5.0	https://vulners.com/httpd/HTTPD:60420623F2A716909480F87DB74EE9D7
+    	HTTPD:5C8B0394DE17D1C29719B16CE00F475D	5.0	https://vulners.com/httpd/HTTPD:5C8B0394DE17D1C29719B16CE00F475D
+    	HTTPD:34AD734658A873D0B091ED78567E6DF4	5.0	https://vulners.com/httpd/HTTPD:34AD734658A873D0B091ED78567E6DF4
+    	HTTPD:348811594B4FDD8579A34C563A16F7F6	5.0	https://vulners.com/httpd/HTTPD:348811594B4FDD8579A34C563A16F7F6
+    	HTTPD:3353898BFE39BBDF8391739FC2DDB5B1	5.0	https://vulners.com/httpd/HTTPD:3353898BFE39BBDF8391739FC2DDB5B1
+    	HTTPD:30E31E412AB4505FEE1161AB62A2E9AD	5.0	https://vulners.com/httpd/HTTPD:30E31E412AB4505FEE1161AB62A2E9AD
+    	HTTPD:11D4941ECBB2B14842A64574A692D8D1	5.0	https://vulners.com/httpd/HTTPD:11D4941ECBB2B14842A64574A692D8D1
+    	EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7	5.0	https://vulners.com/exploitpack/EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7	*EXPLOIT*
+    	EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	*EXPLOIT*
+    	1337DAY-ID-28573	5.0	https://vulners.com/zdt/1337DAY-ID-28573	*EXPLOIT*
+    	1337DAY-ID-26574	5.0	https://vulners.com/zdt/1337DAY-ID-26574	*EXPLOIT*
+    	MSF:ILITIES/UBUNTU-CVE-2018-1301/	4.3	https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1301/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2016-4975/	4.3	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2016-4975/	*EXPLOIT*
+    	MSF:ILITIES/DEBIAN-CVE-2019-10092/	4.3	https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2019-10092/	*EXPLOIT*
+    	MSF:ILITIES/APACHE-HTTPD-CVE-2020-11985/	4.3	https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2020-11985/	*EXPLOIT*
+    	MSF:ILITIES/APACHE-HTTPD-CVE-2019-10092/	4.3	https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2019-10092/	*EXPLOIT*
+    	EDB-ID:47688	4.3	https://vulners.com/exploitdb/EDB-ID:47688	*EXPLOIT*
+    	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
+    	MSF:ILITIES/UBUNTU-CVE-2018-1283/	3.5	https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1283/	*EXPLOIT*
+    	MSF:ILITIES/REDHAT_LINUX-CVE-2018-1283/	3.5	https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2018-1283/	*EXPLOIT*
+    	MSF:ILITIES/ORACLE-SOLARIS-CVE-2018-1283/	3.5	https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2018-1283/	*EXPLOIT*
+    	MSF:ILITIES/IBM-HTTP_SERVER-CVE-2018-1283/	3.5	https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2018-1283/	*EXPLOIT*
+    	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1283/	3.5	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1283/	*EXPLOIT*
+    	MSF:ILITIES/CENTOS_LINUX-CVE-2018-1283/	3.5	https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2018-1283/	*EXPLOIT*
+    	PACKETSTORM:140265	0.0	https://vulners.com/packetstorm/PACKETSTORM:140265	*EXPLOIT*
+    	EDB-ID:42745	0.0	https://vulners.com/exploitdb/EDB-ID:42745	*EXPLOIT*
+    	EDB-ID:40961	0.0	https://vulners.com/exploitdb/EDB-ID:40961	*EXPLOIT*</pre>
+</td></tr>
+<tr class="success">
+<td title="Port">443</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">ssl</td>
+<td title="Product">Apache httpd</td>
+<td title="Version"></td>
+<td title="Extra Info">SSL-only mode</td>
+</tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server">cpe:/a:apache:http_server</a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache/2.4.10 (Debian)</pre>
+</td></tr>
+<tr class="active">
+<td>3404</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>unknown</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="active">
+<td>8080</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>http-proxy</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="active">
+<td>8443</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>https-alt</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 <h2 id="openservices" class="target">Open Services</h2>
 <div class="table-responsive"><table id="table-services" class="table table-striped dataTable" role="grid">
 <thead><tr>
@@ -96,7 +317,38 @@
 <th>CPE</th>
 <th>Extra info</th>
 </tr></thead>
-<tbody></tbody>
+<tbody>
+<tr>
+<td>192.33.182.249 - unif.fr</td>
+<td>22</td>
+<td>tcp</td>
+<td>ssh</td>
+<td>OpenSSH</td>
+<td>6.7p1 Debian 5+deb8u8</td>
+<td>cpe:/a:openbsd:openssh:6.7p1</td>
+<td>protocol 2.0</td>
+</tr>
+<tr>
+<td>192.33.182.249 - unif.fr</td>
+<td>80</td>
+<td>tcp</td>
+<td>http</td>
+<td>Apache httpd</td>
+<td>2.4.10</td>
+<td>cpe:/a:apache:http_server:2.4.10</td>
+<td></td>
+</tr>
+<tr>
+<td>192.33.182.249 - unif.fr</td>
+<td>443</td>
+<td>tcp</td>
+<td>ssl</td>
+<td>Apache httpd</td>
+<td></td>
+<td>cpe:/a:apache:http_server</td>
+<td>SSL-only mode</td>
+</tr>
+</tbody>
 </table></div>
 <script>
             $(document).ready(function() {
