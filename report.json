@@ -18916,7 +18916,50 @@
             "product": "HAProxy http proxy",
             "id": "80",
             "version": "1.3.1 or later",
-            "vulnerabilities": []
+            "vulnerabilities": [
+              {
+                "is_exploit": "true",
+                "id": "MSF:ILITIES/UBUNTU-USN-1800-1/",
+                "type": "metasploit",
+                "cvss": "5.1"
+              },
+              {
+                "is_exploit": "true",
+                "id": "MSF:ILITIES/DEBIAN-DSA-2711/",
+                "type": "metasploit",
+                "cvss": "5.1"
+              },
+              {
+                "is_exploit": "false",
+                "id": "CVE-2012-2942",
+                "type": "cve",
+                "cvss": "5.1"
+              },
+              {
+                "is_exploit": "false",
+                "id": "CVE-2018-20103",
+                "type": "cve",
+                "cvss": "5.0"
+              },
+              {
+                "is_exploit": "false",
+                "id": "CVE-2018-20102",
+                "type": "cve",
+                "cvss": "5.0"
+              },
+              {
+                "is_exploit": "false",
+                "id": "CVE-2018-14645",
+                "type": "cve",
+                "cvss": "5.0"
+              },
+              {
+                "is_exploit": "false",
+                "id": "CVE-2018-10184",
+                "type": "cve",
+                "cvss": "5.0"
+              }
+            ]
           }
         },
         {
@@ -18957,7 +19000,7 @@
           }
         }
       ],
-      "grade": "B"
+      "grade": "D"
     },
     "dependabot": null,
     "codescan": null,
@@ -19554,7 +19597,7 @@
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "+9 seconds from localtime"
+        "finding": "+1 seconds from localtime"
       },
       {
         "id": "HSTS_time",
@@ -19665,10 +19708,10 @@
         "id": "ROBOT",
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
-        "severity": "OK",
+        "severity": "CRITICAL",
         "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
         "cwe": "CWE-203",
-        "finding": "not vulnerable"
+        "finding": "VULNERABLE"
       },
       {
         "id": "secure_renego",
@@ -19685,7 +19728,7 @@
         "severity": "OK",
         "cve": "CVE-2011-1473",
         "cwe": "CWE-310",
-        "finding": "likely not vulnerable (timed out)"
+        "finding": "not vulnerable"
       },
       {
         "id": "CRIME_TLS",
@@ -19774,6 +19817,24 @@
         "cve": "CVE-2015-4000",
         "cwe": "CWE-310",
         "finding": "not vulnerable, no DH EXPORT ciphers,"
+      },
+      {
+        "id": "BEAST_CBC_TLS1",
+        "ip": "ent.univ-paris13.fr/81.194.43.200",
+        "port": "443",
+        "severity": "MEDIUM",
+        "cve": "CVE-2011-3389",
+        "cwe": "CWE-20",
+        "finding": "ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA DHE-RSA-AES128-SHA DHE-RSA-AES256-SHA AES128-SHA AES256-SHA DHE-RSA-CAMELLIA256-SHA CAMELLIA256-SHA DHE-RSA-CAMELLIA128-SHA CAMELLIA128-SHA DES-CBC3-SHA"
+      },
+      {
+        "id": "BEAST",
+        "ip": "ent.univ-paris13.fr/81.194.43.200",
+        "port": "443",
+        "severity": "LOW",
+        "cve": "CVE-2011-3389",
+        "cwe": "CWE-20",
+        "finding": "VULNERABLE -- but also supports higher protocols  TLSv1.1 TLSv1.2 (likely mitigated)"
       },
       {
         "id": "LUCKY13",
@@ -20073,73 +20134,80 @@
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "95"
+        "finding": "0"
       },
       {
         "id": "protocol_support_score_weighted",
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "28"
+        "finding": "0"
       },
       {
         "id": "key_exchange_score",
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "80"
+        "finding": "0"
       },
       {
         "id": "key_exchange_score_weighted",
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "24"
+        "finding": "0"
       },
       {
         "id": "cipher_strength_score",
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "60"
+        "finding": "0"
       },
       {
         "id": "cipher_strength_score_weighted",
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "24"
+        "finding": "0"
       },
       {
         "id": "final_score",
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "76"
+        "finding": "0"
       },
       {
         "id": "overall_grade",
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
-        "severity": "MEDIUM",
-        "finding": "B"
+        "severity": "CRITICAL",
+        "finding": "F"
       },
       {
         "id": "grade_cap_reason_1",
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "Grade capped to B. TLS 1.1 offered"
+        "finding": "Grade capped to F. Vulnerable to ROBOT"
       },
       {
         "id": "grade_cap_reason_2",
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "Grade capped to B. TLS 1.0 offered"
+        "finding": "Grade capped to B. TLS 1.1 offered"
       },
       {
         "id": "grade_cap_reason_3",
+        "ip": "ent.univ-paris13.fr/81.194.43.200",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "Grade capped to B. TLS 1.0 offered"
+      },
+      {
+        "id": "grade_cap_reason_4",
         "ip": "ent.univ-paris13.fr/81.194.43.200",
         "port": "443",
         "severity": "INFO",
@@ -20737,7 +20805,7 @@
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
         "severity": "INFO",
-        "finding": "+1 seconds from localtime"
+        "finding": "+9 seconds from localtime"
       },
       {
         "id": "HSTS_time",
@@ -20848,10 +20916,10 @@
         "id": "ROBOT",
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
-        "severity": "OK",
+        "severity": "CRITICAL",
         "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
         "cwe": "CWE-203",
-        "finding": "not vulnerable"
+        "finding": "VULNERABLE"
       },
       {
         "id": "secure_renego",
@@ -21274,63 +21342,63 @@
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
         "severity": "INFO",
-        "finding": "95"
+        "finding": "0"
       },
       {
         "id": "protocol_support_score_weighted",
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
         "severity": "INFO",
-        "finding": "28"
+        "finding": "0"
       },
       {
         "id": "key_exchange_score",
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
         "severity": "INFO",
-        "finding": "80"
+        "finding": "0"
       },
       {
         "id": "key_exchange_score_weighted",
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
         "severity": "INFO",
-        "finding": "24"
+        "finding": "0"
       },
       {
         "id": "cipher_strength_score",
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
         "severity": "INFO",
-        "finding": "60"
+        "finding": "0"
       },
       {
         "id": "cipher_strength_score_weighted",
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
         "severity": "INFO",
-        "finding": "24"
+        "finding": "0"
       },
       {
         "id": "final_score",
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
         "severity": "INFO",
-        "finding": "76"
+        "finding": "0"
       },
       {
         "id": "overall_grade",
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
-        "severity": "MEDIUM",
-        "finding": "B"
+        "severity": "CRITICAL",
+        "finding": "F"
       },
       {
         "id": "grade_cap_reason_1",
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
         "severity": "INFO",
-        "finding": "Grade capped to B. Using a weak public key and/or ephemeral key"
+        "finding": "Grade capped to F. Vulnerable to ROBOT"
       },
       {
         "id": "grade_cap_reason_2",
@@ -21358,7 +21426,7 @@
         "ip": "ent.univ-paris13.fr/81.194.43.201",
         "port": "443",
         "severity": "INFO",
-        "finding": "837"
+        "finding": "742"
       }
     ],
     "thirdparties": {
@@ -21405,7 +21473,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://cas.univ-paris13.fr/cas/js/cas.js;CASSESSIONID=89B5057BDB4B4B55E719B3A8AB26CB3F"
+          "url": "https://cas.univ-paris13.fr/cas/js/cas.js;CASSESSIONID=25907D4E6F3B2CE590DC61BB1D5C6F9C"
         },
         {
           "type": "unknown",
@@ -21459,7 +21527,7 @@
         },
         {
           "name": "CASSESSIONID",
-          "value": "89B5057BDB4B4B55E719B3A8AB26CB3F",
+          "value": "25907D4E6F3B2CE590DC61BB1D5C6F9C",
           "domain": "cas.univ-paris13.fr",
           "path": "/cas/",
           "expires": -1,
@@ -21477,9 +21545,9 @@
         "pragma": "no-cache",
         "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
         "cache-control": "no-cache\nno-store",
-        "set-cookie": "CASSESSIONID=89B5057BDB4B4B55E719B3A8AB26CB3F; Path=/cas/; Secure; HttpOnly; Secure\nhacas=cas1; path=/",
+        "set-cookie": "CASSESSIONID=25907D4E6F3B2CE590DC61BB1D5C6F9C; Path=/cas/; Secure; HttpOnly; Secure\nhacas=cas1; path=/",
         "content-type": "text/html;charset=UTF-8",
-        "date": "Fri, 15 Oct 2021 09:40:20 GMT",
+        "date": "Fri, 15 Oct 2021 15:21:37 GMT",
         "transfer-encoding": "chunked",
         "content-encoding": "gzip",
         "strict-transport-security": "max-age=0; includeSubDomains"
@@ -21763,7 +21831,7 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "142.251.33.106",
+          "ip": "142.251.33.74",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -21981,7 +22049,7 @@
     },
     "zap": {
       "@version": "2.11.0",
-      "@generated": "Fri, 15 Oct 2021 09:39:21",
+      "@generated": "Fri, 15 Oct 2021 15:21:09",
       "site": [
         {
           "@name": "https://ent.univ-paris13.fr",
@@ -22144,7 +22212,7 @@
         "type": "http",
         "host": "https://ent.univ-paris13.fr/",
         "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:18.129684793Z"
+        "timestamp": "2021-10-15T15:33:18.018808139Z"
       },
       {
         "templateID": "tech-detect",
@@ -22163,241 +22231,32 @@
         "type": "http",
         "host": "https://ent.univ-paris13.fr/",
         "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:18.130364545Z"
+        "timestamp": "2021-10-15T15:33:18.019364175Z"
       },
       {
-        "templateID": "http-missing-security-headers",
+        "templateID": "phpinfo-files",
         "info": {
-          "name": "HTTP Missing Security Headers",
+          "name": "phpinfo Disclosure",
           "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
+            "pdteam",
+            "daffainfo",
+            "meme-lord",
+            "dhiyaneshdk"
           ],
           "tags": [
-            "misconfig",
-            "generic"
+            "config",
+            "exposure"
           ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
           "reference": null,
-          "severity": "info"
+          "severity": "low"
         },
-        "matcher_name": "content-security-policy",
         "type": "http",
         "host": "https://ent.univ-paris13.fr/",
-        "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.737983501Z"
-      },
-      {
-        "templateID": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher_name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://ent.univ-paris13.fr/",
-        "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.738181316Z"
-      },
-      {
-        "templateID": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher_name": "access-control-allow-origin",
-        "type": "http",
-        "host": "https://ent.univ-paris13.fr/",
-        "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.738254922Z"
-      },
-      {
-        "templateID": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher_name": "x-content-type-options",
-        "type": "http",
-        "host": "https://ent.univ-paris13.fr/",
-        "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.738331628Z"
-      },
-      {
-        "templateID": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher_name": "referrer-policy",
-        "type": "http",
-        "host": "https://ent.univ-paris13.fr/",
-        "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.738397033Z"
-      },
-      {
-        "templateID": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher_name": "access-control-allow-credentials",
-        "type": "http",
-        "host": "https://ent.univ-paris13.fr/",
-        "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.738463738Z"
-      },
-      {
-        "templateID": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher_name": "clear-site-data",
-        "type": "http",
-        "host": "https://ent.univ-paris13.fr/",
-        "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.738525343Z"
-      },
-      {
-        "templateID": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher_name": "access-control-expose-headers",
-        "type": "http",
-        "host": "https://ent.univ-paris13.fr/",
-        "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.739628528Z"
-      },
-      {
-        "templateID": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher_name": "access-control-allow-methods",
-        "type": "http",
-        "host": "https://ent.univ-paris13.fr/",
-        "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.739825544Z"
+        "matched": "https://ent.univ-paris13.fr/phpinfo.php",
+        "extracted_results": [
+          "5.6.36"
+        ],
+        "timestamp": "2021-10-15T15:34:26.377051082Z"
       },
       {
         "templateID": "http-missing-security-headers",
@@ -22423,7 +22282,7 @@
         "type": "http",
         "host": "https://ent.univ-paris13.fr/",
         "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.740013958Z"
+        "timestamp": "2021-10-15T15:35:36.192358115Z"
       },
       {
         "templateID": "http-missing-security-headers",
@@ -22445,37 +22304,11 @@
           "reference": null,
           "severity": "info"
         },
-        "matcher_name": "cross-origin-embedder-policy",
+        "matcher_name": "clear-site-data",
         "type": "http",
         "host": "https://ent.univ-paris13.fr/",
         "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.740187772Z"
-      },
-      {
-        "templateID": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher_name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://ent.univ-paris13.fr/",
-        "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.740361485Z"
+        "timestamp": "2021-10-15T15:35:36.19259373Z"
       },
       {
         "templateID": "http-missing-security-headers",
@@ -22501,7 +22334,33 @@
         "type": "http",
         "host": "https://ent.univ-paris13.fr/",
         "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.740529898Z"
+        "timestamp": "2021-10-15T15:35:36.19290665Z"
+      },
+      {
+        "templateID": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher_name": "access-control-allow-credentials",
+        "type": "http",
+        "host": "https://ent.univ-paris13.fr/",
+        "matched": "https://ent.univ-paris13.fr/",
+        "timestamp": "2021-10-15T15:35:36.193037159Z"
       },
       {
         "templateID": "http-missing-security-headers",
@@ -22527,38 +22386,247 @@
         "type": "http",
         "host": "https://ent.univ-paris13.fr/",
         "matched": "https://ent.univ-paris13.fr/",
-        "timestamp": "2021-10-15T09:52:47.740706312Z"
+        "timestamp": "2021-10-15T15:35:36.193130365Z"
       },
       {
-        "templateID": "phpinfo-files",
+        "templateID": "http-missing-security-headers",
         "info": {
-          "name": "phpinfo Disclosure",
+          "name": "HTTP Missing Security Headers",
           "author": [
-            "pdteam",
-            "daffainfo",
-            "meme-lord",
-            "dhiyaneshdk"
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
           ],
           "tags": [
-            "config",
-            "exposure"
+            "misconfig",
+            "generic"
           ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
           "reference": null,
-          "severity": "low"
+          "severity": "info"
         },
+        "matcher_name": "access-control-allow-methods",
         "type": "http",
         "host": "https://ent.univ-paris13.fr/",
-        "matched": "https://ent.univ-paris13.fr/phpinfo.php",
-        "extracted_results": [
-          "5.6.36"
-        ],
-        "timestamp": "2021-10-15T09:53:01.516832023Z"
+        "matched": "https://ent.univ-paris13.fr/",
+        "timestamp": "2021-10-15T15:35:36.19321567Z"
+      },
+      {
+        "templateID": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher_name": "content-security-policy",
+        "type": "http",
+        "host": "https://ent.univ-paris13.fr/",
+        "matched": "https://ent.univ-paris13.fr/",
+        "timestamp": "2021-10-15T15:35:36.193303376Z"
+      },
+      {
+        "templateID": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher_name": "x-permitted-cross-domain-policies",
+        "type": "http",
+        "host": "https://ent.univ-paris13.fr/",
+        "matched": "https://ent.univ-paris13.fr/",
+        "timestamp": "2021-10-15T15:35:36.194540356Z"
+      },
+      {
+        "templateID": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher_name": "referrer-policy",
+        "type": "http",
+        "host": "https://ent.univ-paris13.fr/",
+        "matched": "https://ent.univ-paris13.fr/",
+        "timestamp": "2021-10-15T15:35:36.194973584Z"
+      },
+      {
+        "templateID": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher_name": "cross-origin-embedder-policy",
+        "type": "http",
+        "host": "https://ent.univ-paris13.fr/",
+        "matched": "https://ent.univ-paris13.fr/",
+        "timestamp": "2021-10-15T15:35:36.195394411Z"
+      },
+      {
+        "templateID": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher_name": "access-control-expose-headers",
+        "type": "http",
+        "host": "https://ent.univ-paris13.fr/",
+        "matched": "https://ent.univ-paris13.fr/",
+        "timestamp": "2021-10-15T15:35:36.195821539Z"
+      },
+      {
+        "templateID": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher_name": "x-content-type-options",
+        "type": "http",
+        "host": "https://ent.univ-paris13.fr/",
+        "matched": "https://ent.univ-paris13.fr/",
+        "timestamp": "2021-10-15T15:35:36.196231665Z"
+      },
+      {
+        "templateID": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher_name": "access-control-allow-origin",
+        "type": "http",
+        "host": "https://ent.univ-paris13.fr/",
+        "matched": "https://ent.univ-paris13.fr/",
+        "timestamp": "2021-10-15T15:35:36.196643492Z"
+      },
+      {
+        "templateID": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher_name": "cross-origin-opener-policy",
+        "type": "http",
+        "host": "https://ent.univ-paris13.fr/",
+        "matched": "https://ent.univ-paris13.fr/",
+        "timestamp": "2021-10-15T15:35:36.196905008Z"
       }
     ],
     "lhr": {
       "requestedUrl": "https://ent.univ-paris13.fr/",
       "finalUrl": "https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr",
-      "fetchTime": "2021-10-15T09:39:25.755Z",
+      "fetchTime": "2021-10-15T15:21:13.508Z",
       "runWarnings": [
         "The page may not be loading as expected because your test URL (https://ent.univ-paris13.fr/) was redirected to https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr. Try testing the second URL directly."
       ],
@@ -22602,49 +22670,49 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 5543,
+          "numericValue": 5541,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 4820,
-                "firstMeaningfulPaint": 4820,
-                "largestContentfulPaint": 6166,
-                "firstCPUIdle": 5399,
-                "interactive": 5543,
-                "speedIndex": 6276,
+                "firstContentfulPaint": 4814,
+                "firstMeaningfulPaint": 4814,
+                "largestContentfulPaint": 6175,
+                "firstCPUIdle": 5396,
+                "interactive": 5541,
+                "speedIndex": 6301,
                 "estimatedInputLatency": 13,
-                "totalBlockingTime": 30,
-                "maxPotentialFID": 105,
+                "totalBlockingTime": 36,
+                "maxPotentialFID": 95,
                 "cumulativeLayoutShift": 0.0044812444051106765,
                 "cumulativeLayoutShiftAllFrames": 0.0043097763061523435,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 226486049,
+                "observedTimeOriginTs": 135908331,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 226486049,
-                "observedFirstPaint": 2259,
-                "observedFirstPaintTs": 228744865,
-                "observedFirstContentfulPaint": 2259,
-                "observedFirstContentfulPaintTs": 228744865,
-                "observedFirstMeaningfulPaint": 2259,
-                "observedFirstMeaningfulPaintTs": 228744865,
-                "observedLargestContentfulPaint": 2543,
-                "observedLargestContentfulPaintTs": 229028572,
-                "observedTraceEnd": 4514,
-                "observedTraceEndTs": 230999895,
-                "observedLoad": 3452,
-                "observedLoadTs": 229937731,
-                "observedDomContentLoaded": 2221,
-                "observedDomContentLoadedTs": 228707275,
+                "observedNavigationStartTs": 135908331,
+                "observedFirstPaint": 2243,
+                "observedFirstPaintTs": 138151019,
+                "observedFirstContentfulPaint": 2243,
+                "observedFirstContentfulPaintTs": 138151019,
+                "observedFirstMeaningfulPaint": 2243,
+                "observedFirstMeaningfulPaintTs": 138151019,
+                "observedLargestContentfulPaint": 2527,
+                "observedLargestContentfulPaintTs": 138435354,
+                "observedTraceEnd": 4804,
+                "observedTraceEndTs": 140712493,
+                "observedLoad": 3742,
+                "observedLoadTs": 139650603,
+                "observedDomContentLoaded": 2219,
+                "observedDomContentLoadedTs": 138126854,
                 "observedCumulativeLayoutShift": 0.0044812444051106765,
                 "observedCumulativeLayoutShiftAllFrames": 0.0043097763061523435,
-                "observedFirstVisualChange": 2254,
-                "observedFirstVisualChangeTs": 228740049,
-                "observedLastVisualChange": 3471,
-                "observedLastVisualChangeTs": 229957049,
-                "observedSpeedIndex": 2423,
-                "observedSpeedIndexTs": 228909343
+                "observedFirstVisualChange": 2252,
+                "observedFirstVisualChangeTs": 138160331,
+                "observedLastVisualChange": 3752,
+                "observedLastVisualChangeTs": 139660331,
+                "observedSpeedIndex": 2444,
+                "observedSpeedIndexTs": 138352632
               },
               {
                 "lcpInvalidated": false
@@ -22666,19 +22734,19 @@
                 "numScripts": 5,
                 "numStylesheets": 4,
                 "numFonts": 2,
-                "numTasks": 207,
+                "numTasks": 204,
                 "numTasksOver10ms": 3,
-                "numTasksOver25ms": 1,
+                "numTasksOver25ms": 0,
                 "numTasksOver50ms": 0,
                 "numTasksOver100ms": 0,
                 "numTasksOver500ms": 0,
-                "rtt": 5.109999999999999,
-                "throughput": 4073609.0868252404,
-                "maxRtt": 148.798,
-                "maxServerLatency": 19.838000000000022,
-                "totalByteWeight": 547999,
-                "totalTaskTime": 127.31400000000004,
-                "mainDocumentTransferSize": 2687
+                "rtt": 5.04,
+                "throughput": 2850477.233548689,
+                "maxRtt": 149.16699999999997,
+                "maxServerLatency": 17.040000000000077,
+                "totalByteWeight": 548067,
+                "totalTaskTime": 109.38000000000005,
+                "mainDocumentTransferSize": 2652
               }
             ]
           }
@@ -22694,12 +22762,12 @@
     "trivy": null,
     "summary": {
       "httpGrade": "F",
-      "nmapGrade": "B",
+      "nmapGrade": "D",
       "nmapOpenPortsCount": 6,
       "nmapOpenPortsGrade": "F",
       "testsslExpireSoon": false,
       "testsslExpireDate": "2021-11-23T23:59:00.000Z",
-      "testsslGrade": "B",
+      "testsslGrade": "F",
       "cookiesGrade": "C",
       "cookiesCount": 3,
       "trackersGrade": "F",
