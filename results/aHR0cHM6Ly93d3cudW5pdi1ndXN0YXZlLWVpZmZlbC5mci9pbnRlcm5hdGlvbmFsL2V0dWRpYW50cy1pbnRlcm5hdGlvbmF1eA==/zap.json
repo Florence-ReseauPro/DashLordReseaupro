@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Fri, 15 Oct 2021 15:08:12",
+	"@generated": "Sun, 17 Oct 2021 01:10:32",
 	"site":[ 
 		{
 			"@name": "https://www.univ-gustave-eiffel.fr",
@@ -33,13 +33,6 @@
 							"evidence": "503503503503"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Documents/Reglements_des_etudes/MCC_2020-2021/MCC_generales_DUT_2020-2021.pdf",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "503503503503"
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Plans_d_acces/Universite_Gustave_Eiffel_campus_de_Bron.pdf",
 							"method": "GET",
 							"param": "",
@@ -59,22 +52,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": "500222260222349"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Presse/CP_Signature_Convention_Eiffel_Cerema_-_Juillet_2021.pdf",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "567652543653577419"
 						}
 					],
-					"count": "7",
+					"count": "5",
 					"solution": "",
 					"otherinfo": "<p>Credit Card Type detected: Maestro</p><p>Bank Identification Number: 508640</p><p>Brand: MAESTRO</p><p>Category: </p><p>Issuer: </p>",
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "1307"
+					"sourceid": "1306"
 				},
 				{
 					"pluginid": "10038",
@@ -338,22 +324,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": "$#Ryyz"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Documents/Reglements_des_etudes/MCC_2020-2021/MCC_generales_Master_2020-2021.pdf",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "$#YqDw"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
 					"otherinfo": "<p>$#um9F</p>",
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "641"
+					"sourceid": "640"
 				},
 				{
 					"pluginid": "90003",
@@ -935,7 +914,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "803"
+					"sourceid": "801"
 				},
 				{
 					"pluginid": "10063",
@@ -1064,7 +1043,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "838"
+					"sourceid": "837"
 				},
 				{
 					"pluginid": "10035",
@@ -1768,15 +1747,29 @@
 							"param": "tx_news_pi1[year]",
 							"attack": "",
 							"evidence": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/index.php?ADMCMD_cooluri=1&id=3414&no_cache=1",
+							"method": "GET",
+							"param": "ADMCMD_cooluri",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/index.php?ADMCMD_cooluri=1&id=3414&no_cache=1",
+							"method": "GET",
+							"param": "ADMCMD_cooluri",
+							"attack": "",
+							"evidence": ""
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
 					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.univ-gustave-eiffel.fr/actualites/actualite/d7efa576d020e6ffe5c68c21cc149cc1/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=11&tx_news_pi1%5Bmonth%5D=10&tx_news_pi1%5Bnews%5D=1817&tx_news_pi1%5Byear%5D=2021</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [p] tag [class] attribute </p><p></p><p>The user input found was:</p><p>tx_news_pi1[controller]=News</p><p></p><p>The user-controlled value was:</p><p>news-img-caption</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "416"
+					"sourceid": "417"
 				}
 			]
 		}
