@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.91</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln parisregion.eu</pre>
-<p class="lead">Fri Oct 15 15:03:44 2021 – Fri Oct 15 15:04:36 2021<br>1 hosts scanned.
+<p class="lead">Sun Oct 17 01:02:51 2021 – Sun Oct 17 01:03:41 2021<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -119,9 +119,9 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSVersionBindReqTCP, RPCCheck: 
+  DNSVersionBindReqTCP: 
     HTTP/1.1 400 Bad Request
-    Date: Fri, 15 Oct 2021 15:04:09 GMT
+    Date: Sun, 17 Oct 2021 01:03:16 GMT
     Content-Type: text/html
     Content-Length: 154
     Connection: close
@@ -134,25 +134,31 @@
     &lt;/html&gt;
   FourOhFourRequest: 
     HTTP/1.1 404 Not Found
-    Date: Fri, 15 Oct 2021 15:04:04 GMT
+    Date: Sun, 17 Oct 2021 01:03:10 GMT
     Content-Type: text/plain; charset=utf-8
     Content-Length: 21
     Connection: close
     default backend - 404
-  GetRequest: 
+  GetRequest, HTTPOptions: 
     HTTP/1.1 404 Not Found
-    Date: Fri, 15 Oct 2021 15:04:02 GMT
+    Date: Sun, 17 Oct 2021 01:03:09 GMT
     Content-Type: text/plain; charset=utf-8
     Content-Length: 21
     Connection: close
     default backend - 404
-  HTTPOptions: 
-    HTTP/1.1 404 Not Found
-    Date: Fri, 15 Oct 2021 15:04:03 GMT
-    Content-Type: text/plain; charset=utf-8
-    Content-Length: 21
+  RPCCheck: 
+    HTTP/1.1 400 Bad Request
+    Date: Sun, 17 Oct 2021 01:03:15 GMT
+    Content-Type: text/html
+    Content-Length: 154
     Connection: close
-    default backend - 404
+    &lt;html&gt;
+    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
+    &lt;body&gt;
+    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;
+    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
   RTSPRequest: 
     &lt;html&gt;
     &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
@@ -163,7 +169,7 @@
     &lt;/html&gt;
   X11Probe: 
     HTTP/1.1 400 Bad Request
-    Date: Fri, 15 Oct 2021 15:04:03 GMT
+    Date: Sun, 17 Oct 2021 01:03:10 GMT
     Content-Type: text/html
     Content-Length: 154
     Connection: close
@@ -187,9 +193,9 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSVersionBindReqTCP, RPCCheck: 
+  DNSVersionBindReqTCP: 
     HTTP/1.1 400 Bad Request
-    Date: Fri, 15 Oct 2021 15:04:18 GMT
+    Date: Sun, 17 Oct 2021 01:03:25 GMT
     Content-Type: text/html
     Content-Length: 154
     Connection: close
@@ -200,9 +206,9 @@
     &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-  FourOhFourRequest, HTTPOptions: 
+  FourOhFourRequest: 
     HTTP/1.1 404 Not Found
-    Date: Fri, 15 Oct 2021 15:04:10 GMT
+    Date: Sun, 17 Oct 2021 01:03:17 GMT
     Content-Type: text/plain; charset=utf-8
     Content-Length: 21
     Connection: close
@@ -210,12 +216,33 @@
     default backend - 404
   GetRequest: 
     HTTP/1.1 404 Not Found
-    Date: Fri, 15 Oct 2021 15:04:09 GMT
+    Date: Sun, 17 Oct 2021 01:03:15 GMT
     Content-Type: text/plain; charset=utf-8
     Content-Length: 21
     Connection: close
     Strict-Transport-Security: max-age=15724800; includeSubDomains
     default backend - 404
+  HTTPOptions: 
+    HTTP/1.1 404 Not Found
+    Date: Sun, 17 Oct 2021 01:03:16 GMT
+    Content-Type: text/plain; charset=utf-8
+    Content-Length: 21
+    Connection: close
+    Strict-Transport-Security: max-age=15724800; includeSubDomains
+    default backend - 404
+  RPCCheck: 
+    HTTP/1.1 400 Bad Request
+    Date: Sun, 17 Oct 2021 01:03:24 GMT
+    Content-Type: text/html
+    Content-Length: 154
+    Connection: close
+    &lt;html&gt;
+    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
+    &lt;body&gt;
+    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;
+    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
   RTSPRequest: 
     &lt;html&gt;
     &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
@@ -226,7 +253,7 @@
     &lt;/html&gt;
   tor-versions: 
     HTTP/1.1 400 Bad Request
-    Date: Fri, 15 Oct 2021 15:04:11 GMT
+    Date: Sun, 17 Oct 2021 01:03:17 GMT
     Content-Type: text/html
     Content-Length: 154
     Connection: close
