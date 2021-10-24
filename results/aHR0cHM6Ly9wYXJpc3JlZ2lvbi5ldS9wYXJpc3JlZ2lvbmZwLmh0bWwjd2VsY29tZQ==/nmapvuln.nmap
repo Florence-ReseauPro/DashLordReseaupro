@@ -1,13 +1,13 @@
-# Nmap 7.91 scan initiated Sun Oct 17 01:02:51 2021 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln parisregion.eu
+# Nmap 7.91 scan initiated Sun Oct 24 00:59:23 2021 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln parisregion.eu
 Nmap scan report for parisregion.eu (217.147.199.227)
-Host is up (0.15s latency).
+Host is up (0.16s latency).
 Not shown: 998 filtered ports
 PORT    STATE SERVICE   VERSION
 80/tcp  open  http
 | fingerprint-strings: 
-|   DNSVersionBindReqTCP: 
+|   DNSVersionBindReqTCP, RPCCheck: 
 |     HTTP/1.1 400 Bad Request
-|     Date: Sun, 17 Oct 2021 01:03:16 GMT
+|     Date: Sun, 24 Oct 2021 00:59:48 GMT
 |     Content-Type: text/html
 |     Content-Length: 154
 |     Connection: close
@@ -20,31 +20,18 @@ PORT    STATE SERVICE   VERSION
 |     </html>
 |   FourOhFourRequest: 
 |     HTTP/1.1 404 Not Found
-|     Date: Sun, 17 Oct 2021 01:03:10 GMT
+|     Date: Sun, 24 Oct 2021 00:59:42 GMT
 |     Content-Type: text/plain; charset=utf-8
 |     Content-Length: 21
 |     Connection: close
 |     default backend - 404
 |   GetRequest, HTTPOptions: 
 |     HTTP/1.1 404 Not Found
-|     Date: Sun, 17 Oct 2021 01:03:09 GMT
+|     Date: Sun, 24 Oct 2021 00:59:41 GMT
 |     Content-Type: text/plain; charset=utf-8
 |     Content-Length: 21
 |     Connection: close
 |     default backend - 404
-|   RPCCheck: 
-|     HTTP/1.1 400 Bad Request
-|     Date: Sun, 17 Oct 2021 01:03:15 GMT
-|     Content-Type: text/html
-|     Content-Length: 154
-|     Connection: close
-|     <html>
-|     <head><title>400 Bad Request</title></head>
-|     <body>
-|     <center><h1>400 Bad Request</h1></center>
-|     <hr><center>openresty</center>
-|     </body>
-|     </html>
 |   RTSPRequest: 
 |     <html>
 |     <head><title>400 Bad Request</title></head>
@@ -55,7 +42,7 @@ PORT    STATE SERVICE   VERSION
 |     </html>
 |   X11Probe: 
 |     HTTP/1.1 400 Bad Request
-|     Date: Sun, 17 Oct 2021 01:03:10 GMT
+|     Date: Sun, 24 Oct 2021 00:59:42 GMT
 |     Content-Type: text/html
 |     Content-Length: 154
 |     Connection: close
@@ -70,7 +57,7 @@ PORT    STATE SERVICE   VERSION
 | fingerprint-strings: 
 |   DNSVersionBindReqTCP: 
 |     HTTP/1.1 400 Bad Request
-|     Date: Sun, 17 Oct 2021 01:03:25 GMT
+|     Date: Sun, 24 Oct 2021 00:59:57 GMT
 |     Content-Type: text/html
 |     Content-Length: 154
 |     Connection: close
@@ -83,7 +70,7 @@ PORT    STATE SERVICE   VERSION
 |     </html>
 |   FourOhFourRequest: 
 |     HTTP/1.1 404 Not Found
-|     Date: Sun, 17 Oct 2021 01:03:17 GMT
+|     Date: Sun, 24 Oct 2021 00:59:49 GMT
 |     Content-Type: text/plain; charset=utf-8
 |     Content-Length: 21
 |     Connection: close
@@ -91,7 +78,7 @@ PORT    STATE SERVICE   VERSION
 |     default backend - 404
 |   GetRequest: 
 |     HTTP/1.1 404 Not Found
-|     Date: Sun, 17 Oct 2021 01:03:15 GMT
+|     Date: Sun, 24 Oct 2021 00:59:47 GMT
 |     Content-Type: text/plain; charset=utf-8
 |     Content-Length: 21
 |     Connection: close
@@ -99,7 +86,7 @@ PORT    STATE SERVICE   VERSION
 |     default backend - 404
 |   HTTPOptions: 
 |     HTTP/1.1 404 Not Found
-|     Date: Sun, 17 Oct 2021 01:03:16 GMT
+|     Date: Sun, 24 Oct 2021 00:59:48 GMT
 |     Content-Type: text/plain; charset=utf-8
 |     Content-Length: 21
 |     Connection: close
@@ -107,7 +94,7 @@ PORT    STATE SERVICE   VERSION
 |     default backend - 404
 |   RPCCheck: 
 |     HTTP/1.1 400 Bad Request
-|     Date: Sun, 17 Oct 2021 01:03:24 GMT
+|     Date: Sun, 24 Oct 2021 00:59:56 GMT
 |     Content-Type: text/html
 |     Content-Length: 154
 |     Connection: close
@@ -128,7 +115,7 @@ PORT    STATE SERVICE   VERSION
 |     </html>
 |   tor-versions: 
 |     HTTP/1.1 400 Bad Request
-|     Date: Sun, 17 Oct 2021 01:03:17 GMT
+|     Date: Sun, 24 Oct 2021 00:59:50 GMT
 |     Content-Type: text/html
 |     Content-Length: 154
 |     Connection: close
@@ -141,72 +128,72 @@ PORT    STATE SERVICE   VERSION
 |_    </html>
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.91%I=7%D=10/17%Time=616B764D%P=x86_64-alpine-linux-musl%
-SF:r(GetRequest,A4,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Sun,\x201
-SF:7\x20Oct\x202021\x2001:03:09\x20GMT\r\nContent-Type:\x20text/plain;\x20
+SF-Port80-TCP:V=7.91%I=7%D=10/24%Time=6174AFFD%P=x86_64-alpine-linux-musl%
+SF:r(GetRequest,A4,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Sun,\x202
+SF:4\x20Oct\x202021\x2000:59:41\x20GMT\r\nContent-Type:\x20text/plain;\x20
 SF:charset=utf-8\r\nContent-Length:\x2021\r\nConnection:\x20close\r\n\r\nd
 SF:efault\x20backend\x20-\x20404")%r(HTTPOptions,A4,"HTTP/1\.1\x20404\x20N
-SF:ot\x20Found\r\nDate:\x20Sun,\x2017\x20Oct\x202021\x2001:03:09\x20GMT\r\
+SF:ot\x20Found\r\nDate:\x20Sun,\x2024\x20Oct\x202021\x2000:59:41\x20GMT\r\
 SF:nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2021
 SF:\r\nConnection:\x20close\r\n\r\ndefault\x20backend\x20-\x20404")%r(RTSP
 SF:Request,9A,"<html>\r\n<head><title>400\x20Bad\x20Request</title></head>
 SF:\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n<hr><c
 SF:enter>openresty</center>\r\n</body>\r\n</html>\r\n")%r(X11Probe,11C,"HT
-SF:TP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Sun,\x2017\x20Oct\x202021\
-SF:x2001:03:10\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20
+SF:TP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Sun,\x2024\x20Oct\x202021\
+SF:x2000:59:42\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20
 SF:154\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x2
 SF:0Request</title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request<
 SF:/h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r
 SF:\n")%r(FourOhFourRequest,A4,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\
-SF:x20Sun,\x2017\x20Oct\x202021\x2001:03:10\x20GMT\r\nContent-Type:\x20tex
+SF:x20Sun,\x2024\x20Oct\x202021\x2000:59:42\x20GMT\r\nContent-Type:\x20tex
 SF:t/plain;\x20charset=utf-8\r\nContent-Length:\x2021\r\nConnection:\x20cl
 SF:ose\r\n\r\ndefault\x20backend\x20-\x20404")%r(RPCCheck,11C,"HTTP/1\.1\x
-SF:20400\x20Bad\x20Request\r\nDate:\x20Sun,\x2017\x20Oct\x202021\x2001:03:
-SF:15\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\nCo
+SF:20400\x20Bad\x20Request\r\nDate:\x20Sun,\x2024\x20Oct\x202021\x2000:59:
+SF:48\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\nCo
 SF:nnection:\x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Request<
 SF:/title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></cen
 SF:ter>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n")%r(DN
 SF:SVersionBindReqTCP,11C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20
-SF:Sun,\x2017\x20Oct\x202021\x2001:03:16\x20GMT\r\nContent-Type:\x20text/h
+SF:Sun,\x2024\x20Oct\x202021\x2000:59:48\x20GMT\r\nContent-Type:\x20text/h
 SF:tml\r\nContent-Length:\x20154\r\nConnection:\x20close\r\n\r\n<html>\r\n
 SF:<head><title>400\x20Bad\x20Request</title></head>\r\n<body>\r\n<center>
 SF:<h1>400\x20Bad\x20Request</h1></center>\r\n<hr><center>openresty</cente
 SF:r>\r\n</body>\r\n</html>\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.91%T=SSL%I=7%D=10/17%Time=616B7653%P=x86_64-alpine-linu
+SF-Port443-TCP:V=7.91%T=SSL%I=7%D=10/24%Time=6174B003%P=x86_64-alpine-linu
 SF:x-musl%r(GetRequest,E4,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Su
-SF:n,\x2017\x20Oct\x202021\x2001:03:15\x20GMT\r\nContent-Type:\x20text/pla
+SF:n,\x2024\x20Oct\x202021\x2000:59:47\x20GMT\r\nContent-Type:\x20text/pla
 SF:in;\x20charset=utf-8\r\nContent-Length:\x2021\r\nConnection:\x20close\r
 SF:\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains\
 SF:r\n\r\ndefault\x20backend\x20-\x20404")%r(HTTPOptions,E4,"HTTP/1\.1\x20
-SF:404\x20Not\x20Found\r\nDate:\x20Sun,\x2017\x20Oct\x202021\x2001:03:16\x
+SF:404\x20Not\x20Found\r\nDate:\x20Sun,\x2024\x20Oct\x202021\x2000:59:48\x
 SF:20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Lengt
 SF:h:\x2021\r\nConnection:\x20close\r\nStrict-Transport-Security:\x20max-a
 SF:ge=15724800;\x20includeSubDomains\r\n\r\ndefault\x20backend\x20-\x20404
 SF:")%r(FourOhFourRequest,E4,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x2
-SF:0Sun,\x2017\x20Oct\x202021\x2001:03:17\x20GMT\r\nContent-Type:\x20text/
+SF:0Sun,\x2024\x20Oct\x202021\x2000:59:49\x20GMT\r\nContent-Type:\x20text/
 SF:plain;\x20charset=utf-8\r\nContent-Length:\x2021\r\nConnection:\x20clos
 SF:e\r\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomai
 SF:ns\r\n\r\ndefault\x20backend\x20-\x20404")%r(tor-versions,11C,"HTTP/1\.
-SF:1\x20400\x20Bad\x20Request\r\nDate:\x20Sun,\x2017\x20Oct\x202021\x2001:
-SF:03:17\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\
+SF:1\x20400\x20Bad\x20Request\r\nDate:\x20Sun,\x2024\x20Oct\x202021\x2000:
+SF:59:50\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\
 SF:nConnection:\x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Reque
 SF:st</title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></
 SF:center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n")%r
 SF:(RTSPRequest,9A,"<html>\r\n<head><title>400\x20Bad\x20Request</title></
 SF:head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n<
 SF:hr><center>openresty</center>\r\n</body>\r\n</html>\r\n")%r(RPCCheck,11
-SF:C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Sun,\x2017\x20Oct\x20
-SF:2021\x2001:03:24\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length
+SF:C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Sun,\x2024\x20Oct\x20
+SF:2021\x2000:59:56\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length
 SF::\x20154\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>400\x20B
 SF:ad\x20Request</title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Req
 SF:uest</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</ht
 SF:ml>\r\n")%r(DNSVersionBindReqTCP,11C,"HTTP/1\.1\x20400\x20Bad\x20Reques
-SF:t\r\nDate:\x20Sun,\x2017\x20Oct\x202021\x2001:03:25\x20GMT\r\nContent-T
+SF:t\r\nDate:\x20Sun,\x2024\x20Oct\x202021\x2000:59:57\x20GMT\r\nContent-T
 SF:ype:\x20text/html\r\nContent-Length:\x20154\r\nConnection:\x20close\r\n
 SF:\r\n<html>\r\n<head><title>400\x20Bad\x20Request</title></head>\r\n<bod
 SF:y>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n<hr><center>op
 SF:enresty</center>\r\n</body>\r\n</html>\r\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Oct 17 01:03:41 2021 -- 1 IP address (1 host up) scanned in 50.19 seconds
+# Nmap done at Sun Oct 24 01:00:14 2021 -- 1 IP address (1 host up) scanned in 51.85 seconds
