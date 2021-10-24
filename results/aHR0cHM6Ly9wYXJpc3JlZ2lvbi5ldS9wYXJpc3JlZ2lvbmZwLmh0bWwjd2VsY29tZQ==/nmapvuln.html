@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.91</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln parisregion.eu</pre>
-<p class="lead">Sun Oct 24 00:59:23 2021 – Sun Oct 24 01:00:14 2021<br>1 hosts scanned.
+<p class="lead">Sun Oct 24 08:49:18 2021 – Sun Oct 24 08:50:10 2021<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -119,9 +119,9 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSVersionBindReqTCP, RPCCheck: 
+  DNSVersionBindReqTCP: 
     HTTP/1.1 400 Bad Request
-    Date: Sun, 24 Oct 2021 00:59:48 GMT
+    Date: Sun, 24 Oct 2021 08:49:44 GMT
     Content-Type: text/html
     Content-Length: 154
     Connection: close
@@ -134,18 +134,38 @@
     &lt;/html&gt;
   FourOhFourRequest: 
     HTTP/1.1 404 Not Found
-    Date: Sun, 24 Oct 2021 00:59:42 GMT
+    Date: Sun, 24 Oct 2021 08:49:38 GMT
     Content-Type: text/plain; charset=utf-8
     Content-Length: 21
     Connection: close
     default backend - 404
-  GetRequest, HTTPOptions: 
+  GetRequest: 
     HTTP/1.1 404 Not Found
-    Date: Sun, 24 Oct 2021 00:59:41 GMT
+    Date: Sun, 24 Oct 2021 08:49:36 GMT
     Content-Type: text/plain; charset=utf-8
     Content-Length: 21
     Connection: close
     default backend - 404
+  HTTPOptions: 
+    HTTP/1.1 404 Not Found
+    Date: Sun, 24 Oct 2021 08:49:37 GMT
+    Content-Type: text/plain; charset=utf-8
+    Content-Length: 21
+    Connection: close
+    default backend - 404
+  RPCCheck: 
+    HTTP/1.1 400 Bad Request
+    Date: Sun, 24 Oct 2021 08:49:43 GMT
+    Content-Type: text/html
+    Content-Length: 154
+    Connection: close
+    &lt;html&gt;
+    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
+    &lt;body&gt;
+    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;
+    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
   RTSPRequest: 
     &lt;html&gt;
     &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
@@ -156,7 +176,7 @@
     &lt;/html&gt;
   X11Probe: 
     HTTP/1.1 400 Bad Request
-    Date: Sun, 24 Oct 2021 00:59:42 GMT
+    Date: Sun, 24 Oct 2021 08:49:37 GMT
     Content-Type: text/html
     Content-Length: 154
     Connection: close
@@ -182,7 +202,7 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   DNSVersionBindReqTCP: 
     HTTP/1.1 400 Bad Request
-    Date: Sun, 24 Oct 2021 00:59:57 GMT
+    Date: Sun, 24 Oct 2021 08:49:53 GMT
     Content-Type: text/html
     Content-Length: 154
     Connection: close
@@ -193,9 +213,9 @@
     &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-  FourOhFourRequest: 
+  FourOhFourRequest, HTTPOptions: 
     HTTP/1.1 404 Not Found
-    Date: Sun, 24 Oct 2021 00:59:49 GMT
+    Date: Sun, 24 Oct 2021 08:49:44 GMT
     Content-Type: text/plain; charset=utf-8
     Content-Length: 21
     Connection: close
@@ -203,15 +223,7 @@
     default backend - 404
   GetRequest: 
     HTTP/1.1 404 Not Found
-    Date: Sun, 24 Oct 2021 00:59:47 GMT
-    Content-Type: text/plain; charset=utf-8
-    Content-Length: 21
-    Connection: close
-    Strict-Transport-Security: max-age=15724800; includeSubDomains
-    default backend - 404
-  HTTPOptions: 
-    HTTP/1.1 404 Not Found
-    Date: Sun, 24 Oct 2021 00:59:48 GMT
+    Date: Sun, 24 Oct 2021 08:49:43 GMT
     Content-Type: text/plain; charset=utf-8
     Content-Length: 21
     Connection: close
@@ -219,7 +231,7 @@
     default backend - 404
   RPCCheck: 
     HTTP/1.1 400 Bad Request
-    Date: Sun, 24 Oct 2021 00:59:56 GMT
+    Date: Sun, 24 Oct 2021 08:49:52 GMT
     Content-Type: text/html
     Content-Length: 154
     Connection: close
@@ -240,7 +252,7 @@
     &lt;/html&gt;
   tor-versions: 
     HTTP/1.1 400 Bad Request
-    Date: Sun, 24 Oct 2021 00:59:50 GMT
+    Date: Sun, 24 Oct 2021 08:49:45 GMT
     Content-Type: text/html
     Content-Length: 154
     Connection: close
