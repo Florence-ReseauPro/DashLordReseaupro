@@ -272,6 +272,13 @@
               "finding"      : "29121CD8FC5D012CC34CAEC227B986E1"
           }
 ,         {
+              "id"           : "cert_serialNumberLen",
+              "ip"           : "www.univ-gustave-eiffel.fr/193.50.159.150",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "16"
+          }
+,         {
               "id"           : "cert_fingerprintSHA1",
               "ip"           : "www.univ-gustave-eiffel.fr/193.50.159.150",
               "port"         : "443",
@@ -338,8 +345,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.univ-gustave-eiffel.fr/193.50.159.150",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "62 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (55)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -352,7 +359,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.univ-gustave-eiffel.fr/193.50.159.150",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2021-12-25 23:59"
           }
 ,         {
@@ -1217,6 +1224,6 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.50.159.150",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "126"
+              "finding"      : "206"
           }
 ]
