@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 24 Oct 2021 08:33:01
+		Generated on Sun, 31 Oct 2021 00:45:15
 	</h3>
 
 	
@@ -152,7 +152,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>4</div>
+					<div>3</div>
 				</td>
 			</tr>
 			<tr>
@@ -197,11 +197,6 @@ td {
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">11</td>
-			</tr>
-			<tr>
-				<td><a href="#10108">Reverse Tabnabbing</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">12</td>
 			</tr>
 			<tr>
 				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
@@ -668,379 +663,6 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10038/">10038</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10108"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">Reverse Tabnabbing</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>At least one link on this page is vulnerable to Reverse tabnabbing as it uses a target attribute without using both of the &quot;noopener&quot; and &quot;noreferrer&quot; keywords in the &quot;rel&quot; attribute, which allows the target page to take control of this page.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/carte-multi-services/">https://unif.fr/carte-multi-services/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/data-center-regional/">https://unif.fr/data-center-regional/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/international/">https://unif.fr/international/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/learning-spaces/">https://unif.fr/learning-spaces/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/online-welcome-desk/">https://unif.fr/online-welcome-desk/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/organisation/">https://unif.fr/organisation/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/partenaires/">https://unif.fr/partenaires/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/reseaupro/">https://unif.fr/reseaupro/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/rue-des-facs/">https://unif.fr/rue-des-facs/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/sms-u/">https://unif.fr/sms-u/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/univmobile/">https://unif.fr/univmobile/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a href=&quot;https://twitter.com/Unif_Num&quot; target=&quot;_blank&quot; title=&quot;@Unif_Num&quot; class=&quot;ctf-header-link&quot;&gt;&lt;div class=&quot;ctf-header-text&quot;&gt;&lt;p class=&quot;ctf-header-user&quot; style=&quot;&quot;&gt;&lt;span class=&quot;ctf-header-name&quot;&gt;UNIF&lt;/span&gt;&lt;span class=&quot;ctf-header-follow&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Follow&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;ctf-header-img&quot;&gt;&lt;div class=&quot;ctf-header-img-hover&quot;&gt;&lt;svg class=&quot;svg-inline--fa fa-twitter fa-w-16&quot; aria-hidden=&quot;true&quot; aria-label=&quot;twitter logo&quot; data-fa-processed=&quot;&quot; data-prefix=&quot;fab&quot; data-icon=&quot;twitter&quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot;&gt;&lt;path fill=&quot;currentColor&quot; d=&quot;M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;img src=&quot;https://pbs.twimg.com/profile_images/1085165774359199745/qFsxiapl_normal.jpg&quot; alt=&quot;UNIF&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/div&gt;&lt;/a&gt;</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">12</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Do not use a target attribute, or if you have to then also add the attribute: rel=&quot;noopener noreferrer&quot;.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://owasp.org/www-community/attacks/Reverse_Tabnabbing">https://owasp.org/www-community/attacks/Reverse_Tabnabbing</a>
-							<br />
-						
-							<a href="https://dev.to/ben/the-targetblank-vulnerability-by-example">https://dev.to/ben/the-targetblank-vulnerability-by-example</a>
-							<br />
-						
-							<a href="https://mathiasbynens.github.io/rel-noopener/">https://mathiasbynens.github.io/rel-noopener/</a>
-							<br />
-						
-							<a href="https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c">https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10108/">10108</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -2382,7 +2004,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/wp-includes/js/jquery/jquery.min.js?ver=3.5.1">https://unif.fr/wp-includes/js/jquery/jquery.min.js?ver=3.5.1</a></td>
+						<td width="80%"><a href="https://unif.fr/wp-includes/js/jquery/jquery.min.js?ver=3.6.0">https://unif.fr/wp-includes/js/jquery/jquery.min.js?ver=3.6.0</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3180,32 +2802,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/blog/2021/03/30/nouveau-flux/">https://unif.fr/blog/2021/03/30/nouveau-flux/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">http://unif.fr/wp-content/uploads/2020/03/Facade2-13-cm-ConvertImage-1-1024x591.jpg</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/blog/2021/10/11/reponses-u/">https://unif.fr/blog/2021/10/11/reponses-u/</a></td>
 					</tr>
 					<tr>
@@ -3383,6 +2979,32 @@ td {
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">http://unif.eu/wp-content/uploads/2019/01/cours_d_amphi_01-300x2001.jpg</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/reponses-u/">https://unif.fr/reponses-u/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">http://unif.fr/wp-content/uploads/2021/10/banniere.jpg</td>
 					</tr>
 				
 					<tr>
@@ -4276,7 +3898,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
+						<td width="80%"><a href="https://unif.fr/organisation/">https://unif.fr/organisation/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4296,13 +3918,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1635026400</td>
+						<td width="80%">1635631200</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
+						<td width="80%"><a href="https://unif.fr/organisation/">https://unif.fr/organisation/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4328,7 +3950,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
+						<td width="80%"><a href="https://unif.fr/organisation/">https://unif.fr/organisation/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
