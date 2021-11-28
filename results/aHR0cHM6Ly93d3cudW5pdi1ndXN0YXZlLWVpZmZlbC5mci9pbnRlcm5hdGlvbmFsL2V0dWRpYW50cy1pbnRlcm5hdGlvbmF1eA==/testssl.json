@@ -345,8 +345,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.univ-gustave-eiffel.fr/193.50.159.150",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (34)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (27)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -359,7 +359,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.univ-gustave-eiffel.fr/193.50.159.150",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2021-12-25 23:59"
           }
 ,         {
@@ -626,7 +626,7 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.50.159.150",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HSTS",
@@ -1224,6 +1224,6 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.50.159.150",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "207"
+              "finding"      : "138"
           }
 ]
