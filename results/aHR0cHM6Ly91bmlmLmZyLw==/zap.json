@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 28 Nov 2021 00:46:25",
+	"@generated": "Sun, 5 Dec 2021 00:49:41",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -129,6 +129,20 @@
 							"evidence": "<link rel='stylesheet' id='enrollment-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300italic%2C400italic%2C700italic%2C400%2C300%2C700%2C900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />"
 						},
 						{
+							"uri": "https://unif.fr/data-center-regional/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"profile\" href=\"http://gmpg.org/xfn/11\">"
+						},
+						{
+							"uri": "https://unif.fr/data-center-regional/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel='stylesheet' id='enrollment-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300italic%2C400italic%2C700italic%2C400%2C300%2C700%2C900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />"
+						},
+						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
@@ -165,20 +179,6 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel='stylesheet' id='enrollment-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300italic%2C400italic%2C700italic%2C400%2C300%2C700%2C900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />"
-						},
-						{
-							"uri": "https://unif.fr/reseaupro/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"profile\" href=\"http://gmpg.org/xfn/11\">"
-						},
-						{
-							"uri": "https://unif.fr/reseaupro/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -408,22 +408,15 @@
 							"param": "wordpress_test_cookie",
 							"attack": "",
 							"evidence": "Set-Cookie: wordpress_test_cookie"
-						},
-						{
-							"uri": "https://unif.fr/wp-login.php",
-							"method": "POST",
-							"param": "wordpress_test_cookie",
-							"attack": "",
-							"evidence": "Set-Cookie: wordpress_test_cookie"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "851"
+					"sourceid": "859"
 				},
 				{
 					"pluginid": "10054",
@@ -448,22 +441,15 @@
 							"param": "wordpress_test_cookie",
 							"attack": "",
 							"evidence": "Set-Cookie: wordpress_test_cookie"
-						},
-						{
-							"uri": "https://unif.fr/wp-login.php",
-							"method": "POST",
-							"param": "wordpress_test_cookie",
-							"attack": "",
-							"evidence": "Set-Cookie: wordpress_test_cookie"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "851"
+					"sourceid": "859"
 				},
 				{
 					"pluginid": "10110",
@@ -489,7 +475,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "331"
+					"sourceid": "334"
 				},
 				{
 					"pluginid": "10015",
@@ -784,7 +770,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "571"
+					"sourceid": "572"
 				},
 				{
 					"pluginid": "10036",
@@ -1007,7 +993,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1638054000"
+							"evidence": "1638658800"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -1725,43 +1711,15 @@
 							"param": "redirect_to",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-login.php",
-							"method": "POST",
-							"param": "redirect_to",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-login.php",
-							"method": "POST",
-							"param": "redirect_to",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-login.php",
-							"method": "POST",
-							"param": "rememberme",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-login.php",
-							"method": "POST",
-							"param": "wp-submit",
-							"attack": "",
-							"evidence": ""
 						}
 					],
-					"count": "13",
+					"count": "9",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
 					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://unif.fr/wp-login.php?action=lostpassword</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [form] tag [id] attribute </p><p></p><p>The user input found was:</p><p>action=lostpassword</p><p></p><p>The user-controlled value was:</p><p>lostpasswordform</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "851"
+					"sourceid": "859"
 				}
 			]
 		}
