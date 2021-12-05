@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 28 Nov 2021 01:00:57",
+	"@generated": "Sun, 5 Dec 2021 01:01:36",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -142,82 +142,7 @@
 					"reference": "",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "38"
-				},
-				{
-					"pluginid": "10108",
-					"alertRef": "10108",
-					"alert": "Reverse Tabnabbing",
-					"name": "Reverse Tabnabbing",
-					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
-					"desc": "<p>At least one link on this page is vulnerable to Reverse tabnabbing as it uses a target attribute without using both of the \"noopener\" and \"noreferrer\" keywords in the \"rel\" attribute, which allows the target page to take control of this page.</p>",
-					"instances":[ 
-						{
-							"uri": "https://parisregion.eu/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://www.chooseparisregion.org/\" target=\"_blank\">Invest</a>"
-						},
-						{
-							"uri": "https://parisregion.eu/b3conference.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://www.chooseparisregion.org/\" target=\"_blank\">Invest</a>"
-						},
-						{
-							"uri": "https://parisregion.eu/discover.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://www.chooseparisregion.org/\" target=\"_blank\">Invest</a>"
-						},
-						{
-							"uri": "https://parisregion.eu/news.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://www.chooseparisregion.org/\" target=\"_blank\">Invest</a>"
-						},
-						{
-							"uri": "https://parisregion.eu/parisregionfp.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://www.chooseparisregion.org/\" target=\"_blank\">Invest</a>"
-						},
-						{
-							"uri": "https://parisregion.eu/search-project.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://www.chooseparisregion.org/\" target=\"_blank\">Invest</a>"
-						},
-						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://www.chooseparisregion.org/\" target=\"_blank\">Invest</a>"
-						},
-						{
-							"uri": "https://parisregion.eu/study-research.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://www.chooseparisregion.org/\" target=\"_blank\">Invest</a>"
-						}
-					],
-					"count": "8",
-					"solution": "<p>Do not use a target attribute, or if you have to then also add the attribute: rel=\"noopener noreferrer\".</p>",
-					"otherinfo": "",
-					"reference": "<p>https://owasp.org/www-community/attacks/Reverse_Tabnabbing</p><p>https://dev.to/ben/the-targetblank-vulnerability-by-example</p><p>https://mathiasbynens.github.io/rel-noopener/</p><p>https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c</p>",
-					"cweid": "-1",
-					"wascid": "-1",
-					"sourceid": "3"
+					"sourceid": "42"
 				},
 				{
 					"pluginid": "90003",
@@ -332,7 +257,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/28236</p><p>https://github.com/twbs/bootstrap/issues/20184</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "169"
+					"sourceid": "166"
 				},
 				{
 					"pluginid": "10202",
@@ -379,7 +304,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "38"
+					"sourceid": "42"
 				},
 				{
 					"pluginid": "10017",
@@ -719,7 +644,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "38"
+					"sourceid": "42"
 				},
 				{
 					"pluginid": "10096",
@@ -737,13 +662,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "33696000"
-						},
-						{
-							"uri": "https://parisregion.eu/bower_components/bootstrap/dist/css/bootstrap.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "00000000"
 						},
 						{
 							"uri": "https://parisregion.eu/bower_components/bootstrap/dist/css/bootstrap.css",
@@ -809,7 +727,7 @@
 							"evidence": "33696000"
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>33696000, which evaluates to: 1971-01-26 00:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
