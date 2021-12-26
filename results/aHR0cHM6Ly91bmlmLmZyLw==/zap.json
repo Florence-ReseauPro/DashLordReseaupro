@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 19 Dec 2021 00:51:10",
+	"@generated": "Sun, 26 Dec 2021 00:50:00",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -578,7 +578,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "350"
+					"sourceid": "349"
 				},
 				{
 					"pluginid": "10015",
@@ -592,6 +592,13 @@
 					"instances":[ 
 						{
 							"uri": "https://unif.fr/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://unif.fr/carte-multi-services/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -655,13 +662,6 @@
 						},
 						{
 							"uri": "https://unif.fr/univmobile/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap.xml",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -907,6 +907,13 @@
 							"evidence": "Apache/2.4.10 (Debian)"
 						},
 						{
+							"uri": "https://unif.fr/online-welcome-desk/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.10 (Debian)"
+						},
+						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
@@ -950,13 +957,6 @@
 						},
 						{
 							"uri": "https://unif.fr/wp-admin/admin-ajax.php",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.10 (Debian)"
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1045,14 +1045,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/wp-admin/admin-ajax.php",
+							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/wp-sitemap.xml",
+							"uri": "https://unif.fr/wp-admin/admin-ajax.php",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1092,21 +1092,21 @@
 							"evidence": "34806106"
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1639868400"
+							"evidence": "1640473200"
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "20180605"
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1133,6 +1133,13 @@
 					"instances":[ 
 						{
 							"uri": "https://unif.fr/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://unif.fr/carte-multi-services/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1196,13 +1203,6 @@
 						},
 						{
 							"uri": "https://unif.fr/univmobile/",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap.xml",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1414,7 +1414,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "331"
+					"sourceid": "335"
 				},
 				{
 					"pluginid": "10027",
@@ -1632,7 +1632,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "9"
+					"sourceid": "28"
 				},
 				{
 					"pluginid": "10049",
@@ -1666,6 +1666,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://unif.fr/online-welcome-desk/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
@@ -1688,13 +1695,6 @@
 						},
 						{
 							"uri": "https://unif.fr/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
