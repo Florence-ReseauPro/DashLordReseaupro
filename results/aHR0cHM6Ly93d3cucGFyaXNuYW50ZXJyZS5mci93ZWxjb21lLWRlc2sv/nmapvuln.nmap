@@ -1,4 +1,4 @@
-# Nmap 7.91 scan initiated Sun Dec 19 02:28:19 2021 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.parisnanterre.fr
+# Nmap 7.91 scan initiated Sun Dec 26 02:45:17 2021 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.parisnanterre.fr
 Nmap scan report for www.parisnanterre.fr (193.50.151.174)
 Host is up (0.15s latency).
 rDNS record for 193.50.151.174: ksupapp21.u-paris10.fr
@@ -14,6 +14,7 @@ PORT     STATE  SERVICE    VERSION
 |     	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-11984/	7.5	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-11984/	*EXPLOIT*
 |     	MSF:ILITIES/FREEBSD-CVE-2020-11984/	7.5	https://vulners.com/metasploit/MSF:ILITIES/FREEBSD-CVE-2020-11984/	*EXPLOIT*
 |     	MSF:ILITIES/APACHE-HTTPD-CVE-2020-11984/	7.5	https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2020-11984/	*EXPLOIT*
+|     	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
 |     	CVE-2021-39275	7.5	https://vulners.com/cve/CVE-2021-39275
 |     	CVE-2021-26691	7.5	https://vulners.com/cve/CVE-2021-26691
 |     	CVE-2020-11984	7.5	https://vulners.com/cve/CVE-2020-11984
@@ -28,6 +29,7 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2021-40438	6.8	https://vulners.com/cve/CVE-2021-40438
 |     	CVE-2020-35452	6.8	https://vulners.com/cve/CVE-2020-35452
 |     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
+|     	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
 |     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
 |     	MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/	6.0	https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/	*EXPLOIT*
 |     	MSF:ILITIES/ORACLE-SOLARIS-CVE-2019-0215/	6.0	https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2019-0215/	*EXPLOIT*
@@ -73,6 +75,7 @@ PORT     STATE  SERVICE    VERSION
 |     	1337DAY-ID-35422	4.3	https://vulners.com/zdt/1337DAY-ID-35422	*EXPLOIT*
 |     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
 |     	PACKETSTORM:152441	0.0	https://vulners.com/packetstorm/PACKETSTORM:152441	*EXPLOIT*
+|     	MSF:EXPLOIT/UNIX/WEBAPP/JOOMLA_MEDIA_UPLOAD_EXEC/	0.0	https://vulners.com/metasploit/MSF:EXPLOIT/UNIX/WEBAPP/JOOMLA_MEDIA_UPLOAD_EXEC/	*EXPLOIT*
 |     	1337DAY-ID-663	0.0	https://vulners.com/zdt/1337DAY-ID-663	*EXPLOIT*
 |     	1337DAY-ID-601	0.0	https://vulners.com/zdt/1337DAY-ID-601	*EXPLOIT*
 |     	1337DAY-ID-4533	0.0	https://vulners.com/zdt/1337DAY-ID-4533	*EXPLOIT*
@@ -83,4 +86,4 @@ PORT     STATE  SERVICE    VERSION
 9090/tcp closed zeus-admin
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Dec 19 02:28:48 2021 -- 1 IP address (1 host up) scanned in 29.23 seconds
+# Nmap done at Sun Dec 26 02:45:47 2021 -- 1 IP address (1 host up) scanned in 29.47 seconds
