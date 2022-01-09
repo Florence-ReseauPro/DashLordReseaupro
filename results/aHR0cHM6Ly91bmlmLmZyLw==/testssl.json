@@ -654,7 +654,7 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "62 >= 30 days"
+              "finding"      : "55 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -850,14 +850,14 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-131 seconds from localtime"
+              "finding"      : "-152 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1641084564"
+              "finding"      : "1641689550"
           }
 ,         {
               "id"           : "HSTS",
@@ -940,10 +940,10 @@
               "id"           : "ROBOT",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "CRITICAL",
               "cve"          : "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
               "cwe"          : "CWE-203",
-              "finding"      : "not vulnerable"
+              "finding"      : "VULNERABLE"
           }
 ,         {
               "id"           : "secure_renego",
@@ -1033,56 +1033,17 @@
               "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=B5D3767B068339ECE052A5D0E21BCC12433C5EF8F150403EDFFD86570FF670B9"
           }
 ,         {
-              "id"           : "LOGJAM-common_primes",
+              "id"           : "scanProblem",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
-              "severity"     : "INFO",
-              "cve"          : "CVE-2015-4000",
-              "cwe"          : "CWE-310",
-              "finding"      : "RFC3526/Oakley Group 14"
+              "severity"     : "FATAL",
+              "finding"      : "repeated TCP connect problems, giving up"
           }
 ,         {
-              "id"           : "LOGJAM",
+              "id"           : "scanTime",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
-              "severity"     : "OK",
-              "cve"          : "CVE-2015-4000",
-              "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable, no DH EXPORT ciphers,"
+              "severity"     : "WARN",
+              "finding"      : "Scan interrupted"
           }
-,         {
-              "id"           : "BEAST_CBC_TLS1",
-              "ip"           : "unif.fr/192.33.182.249",
-              "port"         : "443",
-              "severity"     : "MEDIUM",
-              "cve"          : "CVE-2011-3389",
-              "cwe"          : "CWE-20",
-              "finding"      : "ECDHE-RSA-AES256-SHA DHE-RSA-AES256-SHA DHE-RSA-CAMELLIA256-SHA AES256-SHA CAMELLIA256-SHA ECDHE-RSA-AES128-SHA DHE-RSA-AES128-SHA DHE-RSA-CAMELLIA128-SHA AES128-SHA CAMELLIA128-SHA"
-          }
-,         {
-              "id"           : "BEAST",
-              "ip"           : "unif.fr/192.33.182.249",
-              "port"         : "443",
-              "severity"     : "LOW",
-              "cve"          : "CVE-2011-3389",
-              "cwe"          : "CWE-20",
-              "finding"      : "VULNERABLE -- but also supports higher protocols  TLSv1.1 TLSv1.2 (likely mitigated)"
-          }
-,         {
-              "id"           : "LUCKY13",
-              "ip"           : "unif.fr/192.33.182.249",
-              "port"         : "443",
-              "severity"     : "LOW",
-              "cve"          : "CVE-2013-0169",
-              "cwe"          : "CWE-310",
-              "finding"      : "potentially vulnerable, uses TLS CBC ciphers"
-          }
-,         {
-              "id"           : "winshock",
-              "ip"           : "unif.fr/192.33.182.249",
-              "port"         : "443",
-              "severity"     : "OK",
-              "cve"          : "CVE-2014-6321",
-              "cwe"          : "CWE-94",
-              "finding"      : "not vulnerable"
-          }
+]
