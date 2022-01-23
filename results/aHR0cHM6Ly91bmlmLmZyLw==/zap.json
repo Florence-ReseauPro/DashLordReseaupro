@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 16 Jan 2022 00:52:35",
+	"@generated": "Sun, 23 Jan 2022 00:47:02",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -236,7 +236,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202202.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202203.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -264,7 +264,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202202.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202203.js' defer></script>"
 						}
 					],
 					"count": "8",
@@ -395,7 +395,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "401"
+					"sourceid": "432"
 				},
 				{
 					"pluginid": "10054",
@@ -421,7 +421,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "401"
+					"sourceid": "432"
 				},
 				{
 					"pluginid": "10017",
@@ -436,9 +436,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202202.js",
+							"param": "https://stats.wp.com/e-202203.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202202.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202203.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/",
@@ -450,9 +450,9 @@
 						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202202.js",
+							"param": "https://stats.wp.com/e-202203.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202202.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202203.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
@@ -464,9 +464,9 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202202.js",
+							"param": "https://stats.wp.com/e-202203.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202202.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202203.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -478,9 +478,9 @@
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202202.js",
+							"param": "https://stats.wp.com/e-202203.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202202.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202203.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
@@ -492,9 +492,9 @@
 						{
 							"uri": "https://unif.fr/reseaupro/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202202.js",
+							"param": "https://stats.wp.com/e-202203.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202202.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202203.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/reseaupro/",
@@ -536,7 +536,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "358"
+					"sourceid": "366"
 				},
 				{
 					"pluginid": "10015",
@@ -741,18 +741,11 @@
 					"desc": "<p>The page includes mixed content, that is content accessed via HTTP instead of HTTPS.</p>",
 					"instances":[ 
 						{
-							"uri": "https://unif.fr/blog/2021/03/30/mise-en-page/",
+							"uri": "https://unif.fr/blog/2022/01/18/marionum/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "http://unif.fr/wp-content/uploads/2020/03/POD-in-situ-12-cm-ConvertImage-1024x1024.jpg"
-						},
-						{
-							"uri": "https://unif.fr/blog/2021/10/11/reponses-u/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "http://unif.fr/wp-content/uploads/2021/10/banniere.jpg"
+							"evidence": "http://unif.fr/wp-content/uploads/2022/01/Flyer-John-fin-300x169.png"
 						},
 						{
 							"uri": "https://unif.fr/cursus-enseigner-avec-le-numerique/",
@@ -781,6 +774,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "http://unpidf.fr/wp-content/uploads/2015/11/cover-212x300.png"
+						},
+						{
+							"uri": "https://unif.fr/marionum/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "http://unif.fr/wp-content/uploads/2022/01/Flyer-John-fin.png"
 						},
 						{
 							"uri": "https://unif.fr/oraccle/",
@@ -827,11 +827,11 @@
 					],
 					"count": "12",
 					"solution": "<p>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.</p><p>The page must not contain any content that is transmitted over unencrypted HTTP.</p><p> This includes content from third party sites.</p>",
-					"otherinfo": "<p>tag=img src=http://unif.fr/wp-content/uploads/2020/03/POD-in-situ-12-cm-ConvertImage-1024x1024.jpg</p><p></p>",
+					"otherinfo": "<p>tag=img src=http://unif.fr/wp-content/uploads/2022/01/Flyer-John-fin-300x169.png</p><p></p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "725"
+					"sourceid": "593"
 				},
 				{
 					"pluginid": "10036",
@@ -1358,7 +1358,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "345"
+					"sourceid": "353"
 				},
 				{
 					"pluginid": "10027",
@@ -1576,7 +1576,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "30"
+					"sourceid": "75"
 				},
 				{
 					"pluginid": "10049",
@@ -1684,7 +1684,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "86"
+					"sourceid": "87"
 				},
 				{
 					"pluginid": "10031",
@@ -1752,7 +1752,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "401"
+					"sourceid": "432"
 				}
 			]
 		}
