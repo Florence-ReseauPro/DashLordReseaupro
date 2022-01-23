@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 16 Jan 2022 00:52:57",
+	"@generated": "Sun, 23 Jan 2022 00:47:38",
 	"site":[ 
 		{
 			"@name": "http://reseaupro.unpidf.fr",
@@ -584,77 +584,77 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u2"
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u2"
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/etudiants",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u2"
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/partenaires",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u2"
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/120",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u2"
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/121",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u2"
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u2"
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u2"
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u2"
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u2"
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/user",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u2"
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						}
 					],
 					"count": "11",
@@ -1404,7 +1404,7 @@
 					],
 					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=70790fd55b826b04e676af5d38c4f692</p><p></p><p>The user-controlled value was:</p><p>70790fd55b826b04e676af5d38c4f692</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=1d60e1639cf5753740fc9d56102e0987</p><p></p><p>The user-controlled value was:</p><p>1d60e1639cf5753740fc9d56102e0987</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
