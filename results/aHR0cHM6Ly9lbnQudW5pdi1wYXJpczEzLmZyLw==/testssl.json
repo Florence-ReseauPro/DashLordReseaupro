@@ -360,7 +360,7 @@
               "ip"           : "ent.univ-paris13.fr/81.194.43.201",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "298 >= 60 days"
+              "finding"      : "291 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,14 +556,14 @@
               "ip"           : "ent.univ-paris13.fr/81.194.43.201",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+4 seconds from localtime"
+              "finding"      : "+13 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "ent.univ-paris13.fr/81.194.43.201",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1642300849"
+              "finding"      : "1642903371"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -674,10 +674,10 @@
               "id"           : "ROBOT",
               "ip"           : "ent.univ-paris13.fr/81.194.43.201",
               "port"         : "443",
-              "severity"     : "CRITICAL",
+              "severity"     : "MEDIUM",
               "cve"          : "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
               "cwe"          : "CWE-203",
-              "finding"      : "VULNERABLE"
+              "finding"      : "VULNERABLE, but the attack would take too long"
           }
 ,         {
               "id"           : "secure_renego",
@@ -863,62 +863,6 @@
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-android_90",
-              "ip"           : "ent.univ-paris13.fr/81.194.43.201",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-android_X",
-              "ip"           : "ent.univ-paris13.fr/81.194.43.201",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-chrome_74_win10",
-              "ip"           : "ent.univ-paris13.fr/81.194.43.201",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-chrome_79_win10",
-              "ip"           : "ent.univ-paris13.fr/81.194.43.201",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-firefox_66_win81",
-              "ip"           : "ent.univ-paris13.fr/81.194.43.201",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-firefox_71_win10",
-              "ip"           : "ent.univ-paris13.fr/81.194.43.201",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-ie_6_xp",
-              "ip"           : "ent.univ-paris13.fr/81.194.43.201",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No connection"
-          }
-,         {
-              "id"           : "clientsimulation-ie_8_win7",
-              "ip"           : "ent.univ-paris13.fr/81.194.43.201",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.0 ECDHE-RSA-AES128-SHA"
           }
 ,         {
               "id"           : "scanProblem",

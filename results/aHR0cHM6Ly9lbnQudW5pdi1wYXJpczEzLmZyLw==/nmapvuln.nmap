@@ -1,6 +1,6 @@
-# Nmap 7.91 scan initiated Sun Jan 16 02:48:04 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
+# Nmap 7.91 scan initiated Sun Jan 23 02:10:03 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
 Nmap scan report for ent.univ-paris13.fr (81.194.43.201)
-Host is up (0.15s latency).
+Host is up (0.13s latency).
 Other addresses for ent.univ-paris13.fr (not scanned): 81.194.43.200
 rDNS record for 81.194.43.201: proxy.univ-paris13.fr
 Not shown: 994 filtered ports
@@ -34,7 +34,7 @@ PORT     STATE SERVICE    VERSION
 |_http-server-header: Apache
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port143-TCP:V=7.91%I=7%D=1/16%Time=61E3877A%P=x86_64-alpine-linux-musl%
+SF-Port143-TCP:V=7.91%I=7%D=1/23%Time=61ECB913%P=x86_64-alpine-linux-musl%
 SF:r(NULL,1B0,"\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20LITERAL\+\x20ID\x2
 SF:0ENABLE\x20ACL\x20RIGHTS=kxte\x20QUOTA\x20MAILBOX-REFERRALS\x20NAMESPAC
 SF:E\x20UIDPLUS\x20NO_ATOMIC_RENAME\x20UNSELECT\x20CHILDREN\x20MULTIAPPEND
@@ -63,7 +63,7 @@ SF:TE\x20IDLE\x20STARTTLS\]\x20perdition\x20ready\x20on\x20haproxy2\.dsi\.
 SF:univ-paris13\.fr\x2000037f51\r\n\*\x20BAD\x20Invalid\x20tag,\x20mate\r\
 SF:n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port993-TCP:V=7.91%T=SSL%I=7%D=1/16%Time=61E38781%P=x86_64-alpine-linux
+SF-Port993-TCP:V=7.91%T=SSL%I=7%D=1/23%Time=61ECB91A%P=x86_64-alpine-linux
 SF:-musl%r(NULL,1A7,"\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20LITERAL\+\x2
 SF:0ID\x20ENABLE\x20ACL\x20RIGHTS=kxte\x20QUOTA\x20MAILBOX-REFERRALS\x20NA
 SF:MESPACE\x20UIDPLUS\x20NO_ATOMIC_RENAME\x20UNSELECT\x20CHILDREN\x20MULTI
@@ -93,4 +93,4 @@ SF:\n\*\x20BAD\x20Invalid\x20tag,\x20mate\r\n");
 Service Info: Device: load balancer
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jan 16 02:48:46 2022 -- 1 IP address (1 host up) scanned in 42.60 seconds
+# Nmap done at Sun Jan 23 02:10:47 2022 -- 1 IP address (1 host up) scanned in 44.09 seconds
