@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 30 Jan 2022 02:21:20",
+	"@generated": "Sun, 6 Feb 2022 02:24:57",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -157,7 +157,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=6E30ED221C103DE10C36A5D9E112DA6C?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=68591BC1A83BDA3715FD3DB00EF4C609?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
 						}
 					],
 					"count": "1",
@@ -576,12 +576,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "18789848"
+							"evidence": "19660273"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>18789848, which evaluates to: 1970-08-06 11:24:08</p>",
+					"otherinfo": "<p>19660273, which evaluates to: 1970-08-16 13:11:13</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -628,12 +628,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-18789848-SMOZ2URpQF40LkUSwNKbrdydvZHlf3-cas2"
+							"evidence": "LT-19660273-GslN7MH1bcPAs7HAXwzaQKt0JBYNxT-cas2"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFD=\uFFFD>H\u00D9\uFFFDDi@^4.E\\x0012\uFFFD\u049B\uFFFD\u071D\uFFFD\uFFFD\uFFFD\uFFFDj\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD\uFFFD\uFFFD\u06FD\uFFFD\\x001a\uFFFDM\uFFFD\uFFFD\uFFFDm\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD_\\x000c\uFFFD@\uFFFDt$\\x0016\r\uFFFD?\uFFFDj\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
