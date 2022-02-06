@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 30 Jan 2022 02:35:46",
+	"@generated": "Sun, 6 Feb 2022 02:39:38",
 	"site":[ 
 		{
 			"@name": "https://www.visium360-ssl1.fr",
@@ -26,14 +26,21 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -54,13 +61,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "5",
+					"count": "6",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: \"Content-Security-Policy\" for Chrome 25+, Firefox 23+ and Safari 7+, \"X-Content-Security-Policy\" for Firefox 4.0+ and Internet Explorer 10+, and \"X-WebKit-CSP\" for Chrome 14+ and Safari 6+.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "5"
 				},
 				{
 					"pluginid": "10020",
@@ -80,27 +87,34 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "5"
 				},
 				{
 					"pluginid": "90003",
@@ -113,69 +127,97 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>",
 					"instances":[ 
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<link href=\"https://fonts.googleapis.com/css2?family=Lato&display=swap\" rel=\"stylesheet\">"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB\"></script>"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script src=\"https://code.jquery.com/jquery-3.5.1.min.js\" ></script>"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<link href=\"https://fonts.googleapis.com/css2?family=Lato&display=swap\" rel=\"stylesheet\">"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB\"></script>"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://code.jquery.com/jquery-3.5.1.min.js\" ></script>"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.googleapis.com/css2?family=Lato&display=swap\" rel=\"stylesheet\">"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB\"></script>"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script src=\"https://code.jquery.com/jquery-3.5.1.min.js\" ></script>"
 						}
 					],
-					"count": "8",
+					"count": "12",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "17"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10010",
@@ -190,12 +232,26 @@
 						{
 							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
-							"param": "ASPSESSIONIDQWARCQRA",
+							"param": "ASPSESSIONIDQQHQCSRB",
 							"attack": "",
-							"evidence": "Set-Cookie: ASPSESSIONIDQWARCQRA"
+							"evidence": "Set-Cookie: ASPSESSIONIDQQHQCSRB"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"method": "GET",
+							"param": "ASPSESSIONIDQUDQCSRB",
+							"attack": "",
+							"evidence": "Set-Cookie: ASPSESSIONIDQUDQCSRB"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
+							"method": "GET",
+							"param": "ASPSESSIONIDQQHQCSRB",
+							"attack": "",
+							"evidence": "Set-Cookie: ASPSESSIONIDQQHQCSRB"
 						}
 					],
-					"count": "1",
+					"count": "3",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
@@ -216,12 +272,26 @@
 						{
 							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
-							"param": "ASPSESSIONIDQWARCQRA",
+							"param": "ASPSESSIONIDQQHQCSRB",
 							"attack": "",
-							"evidence": "Set-Cookie: ASPSESSIONIDQWARCQRA"
+							"evidence": "Set-Cookie: ASPSESSIONIDQQHQCSRB"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"method": "GET",
+							"param": "ASPSESSIONIDQUDQCSRB",
+							"attack": "",
+							"evidence": "Set-Cookie: ASPSESSIONIDQUDQCSRB"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
+							"method": "GET",
+							"param": "ASPSESSIONIDQQHQCSRB",
+							"attack": "",
+							"evidence": "Set-Cookie: ASPSESSIONIDQQHQCSRB"
 						}
 					],
-					"count": "1",
+					"count": "3",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
@@ -240,55 +310,76 @@
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js",
 							"attack": "",
 							"evidence": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "https://code.jquery.com/jquery-3.5.1.min.js",
 							"attack": "",
 							"evidence": "<script src=\"https://code.jquery.com/jquery-3.5.1.min.js\" ></script>"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB",
 							"attack": "",
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB\"></script>"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
 							"method": "GET",
 							"param": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js",
 							"attack": "",
 							"evidence": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
 							"method": "GET",
 							"param": "https://code.jquery.com/jquery-3.5.1.min.js",
 							"attack": "",
 							"evidence": "<script src=\"https://code.jquery.com/jquery-3.5.1.min.js\" ></script>"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB",
+							"attack": "",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB\"></script>"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
+							"method": "GET",
+							"param": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js",
+							"attack": "",
+							"evidence": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
+							"method": "GET",
+							"param": "https://code.jquery.com/jquery-3.5.1.min.js",
+							"attack": "",
+							"evidence": "<script src=\"https://code.jquery.com/jquery-3.5.1.min.js\" ></script>"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB",
 							"attack": "",
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB\"></script>"
 						}
 					],
-					"count": "6",
+					"count": "9",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "17"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10015",
@@ -308,27 +399,34 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "private"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "private"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "5"
 				},
 				{
 					"pluginid": "10063",
@@ -348,14 +446,21 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -376,13 +481,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "5",
+					"count": "6",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "5"
 				},
 				{
 					"pluginid": "10037",
@@ -423,6 +528,34 @@
 							"evidence": "X-Powered-By: ASP.NET"
 						},
 						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: ASP.NET"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: ASP.NET"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: ASP.NET"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2?fkl=36&profil=1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: ASP.NET"
+						},
+						{
 							"uri": "https://www.visium360-ssl1.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -435,22 +568,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": "X-Powered-By: ASP.NET"
-						},
-						{
-							"uri": "https://www.visium360-ssl1.fr/welcome.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: ASP.NET"
 						}
 					],
-					"count": "7",
+					"count": "10",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress \"X-Powered-By\" headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "5"
 				},
 				{
 					"pluginid": "10036",
@@ -491,6 +617,34 @@
 							"evidence": "Microsoft-IIS/7.5"
 						},
 						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Microsoft-IIS/7.5"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Microsoft-IIS/7.5"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Microsoft-IIS/7.5"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2?fkl=36&profil=1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Microsoft-IIS/7.5"
+						},
+						{
 							"uri": "https://www.visium360-ssl1.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -503,22 +657,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": "Microsoft-IIS/7.5"
-						},
-						{
-							"uri": "https://www.visium360-ssl1.fr/welcome.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Microsoft-IIS/7.5"
 						}
 					],
-					"count": "7",
+					"count": "10",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the \"Server\" header or provide generic details.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "5"
 				},
 				{
 					"pluginid": "10035",
@@ -538,14 +685,21 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -573,13 +727,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "5"
 				},
 				{
 					"pluginid": "10021",
@@ -599,14 +753,21 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -620,13 +781,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "5"
 				},
 				{
 					"pluginid": "10094",
@@ -646,14 +807,21 @@
 							"evidence": "org/TR/xhtml1/DTD/xhtml1-strict"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -674,13 +842,13 @@
 							"evidence": "org/TR/xhtml1/DTD/xhtml1-strict"
 						}
 					],
-					"count": "5",
+					"count": "6",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFD\uFFFD?M\\x001f\uFFFD\u0665\uFFFD\uFFFD\uFFFD\\x000f\uFFFDa\uFFFDiu\uFFFD\uFFFDk\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "5"
 				},
 				{
 					"pluginid": "10109",
@@ -693,27 +861,34 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/",
+							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB\"></script>"
 						},
 						{
-							"uri": "https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1",
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB\"></script>"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-KYEMV0GLYB\"></script>"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "17"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -738,15 +913,29 @@
 							"param": "",
 							"attack": "",
 							"evidence": "private"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
 						}
 					],
-					"count": "2",
+					"count": "4",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "17"
+					"sourceid": "19"
 				},
 				{
 					"pluginid": "10049",
@@ -773,6 +962,20 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2?fkl=36&profil=1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://www.visium360-ssl1.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -785,22 +988,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://www.visium360-ssl1.fr/welcome.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
 						}
 					],
-					"count": "5",
+					"count": "6",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "5"
 				},
 				{
 					"pluginid": "10031",
@@ -818,9 +1014,16 @@
 							"param": "profil",
 							"attack": "",
 							"evidence": ""
+						},
+						{
+							"uri": "https://www.visium360-ssl1.fr/PACEM_IDF_V2/?fkl=36&profil=1",
+							"method": "GET",
+							"param": "profil",
+							"attack": "",
+							"evidence": ""
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
 					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=36&profil=1</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>profil=1</p><p></p><p>The user-controlled value was:</p><p>width=device-width, initial-scale=1</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
