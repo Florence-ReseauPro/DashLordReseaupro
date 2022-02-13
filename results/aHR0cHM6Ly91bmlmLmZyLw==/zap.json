@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 6 Feb 2022 00:58:06",
+	"@generated": "Sun, 13 Feb 2022 00:53:27",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -8,6 +8,109 @@
 			"@port": "443",
 			"@ssl": "true",
 			"alerts": [ 
+				{
+					"pluginid": "10062",
+					"alertRef": "10062",
+					"alert": "PII Disclosure",
+					"name": "PII Disclosure",
+					"riskcode": "3",
+					"confidence": "3",
+					"riskdesc": "High (High)",
+					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
+					"instances":[ 
+						{
+							"uri": "https://unif.fr/carte-multi-services/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						},
+						{
+							"uri": "https://unif.fr/data-center-regional/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						},
+						{
+							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						},
+						{
+							"uri": "https://unif.fr/international/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						},
+						{
+							"uri": "https://unif.fr/learning-spaces/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						},
+						{
+							"uri": "https://unif.fr/marionum/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						},
+						{
+							"uri": "https://unif.fr/membres/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						},
+						{
+							"uri": "https://unif.fr/organisation/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						},
+						{
+							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						},
+						{
+							"uri": "https://unif.fr/reseaupro/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						},
+						{
+							"uri": "https://unif.fr/sms-u/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						},
+						{
+							"uri": "https://unif.fr/univmobile/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "671259599899639808"
+						}
+					],
+					"count": "12",
+					"solution": "",
+					"otherinfo": "<p>Credit Card Type detected: Maestro</p><p>Bank Identification Number: 671259</p><p>Brand: MAESTRO</p><p>Category: </p><p>Issuer: </p>",
+					"reference": "",
+					"cweid": "359",
+					"wascid": "13",
+					"sourceid": "155"
+				},
 				{
 					"pluginid": "10038",
 					"alertRef": "10038",
@@ -236,35 +339,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202205.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202206.js' defer></script>"
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<link rel=\"profile\" href=\"http://gmpg.org/xfn/11\">"
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<link rel='stylesheet' id='enrollment-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300italic%2C400italic%2C700italic%2C400%2C300%2C700%2C900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />"
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202205.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202206.js' defer></script>"
 						}
 					],
 					"count": "8",
@@ -436,9 +539,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202205.js",
+							"param": "https://stats.wp.com/e-202206.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202205.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202206.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/",
@@ -450,9 +553,9 @@
 						{
 							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202205.js",
+							"param": "https://stats.wp.com/e-202206.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202205.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202206.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
@@ -464,9 +567,9 @@
 						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202205.js",
+							"param": "https://stats.wp.com/e-202206.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202205.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202206.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
@@ -478,9 +581,9 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202205.js",
+							"param": "https://stats.wp.com/e-202206.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202205.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202206.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -492,9 +595,9 @@
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202205.js",
+							"param": "https://stats.wp.com/e-202206.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202205.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202206.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
@@ -536,7 +639,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "381"
+					"sourceid": "377"
 				},
 				{
 					"pluginid": "10015",
@@ -1358,7 +1461,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "368"
+					"sourceid": "361"
 				},
 				{
 					"pluginid": "10027",
@@ -1576,7 +1679,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "49"
+					"sourceid": "82"
 				},
 				{
 					"pluginid": "10049",
