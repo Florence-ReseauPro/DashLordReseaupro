@@ -654,7 +654,7 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "76 >= 30 days"
+              "finding"      : "69 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -850,14 +850,14 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-99 seconds from localtime"
+              "finding"      : "-120 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1645318725"
+              "finding"      : "1645923568"
           }
 ,         {
               "id"           : "HSTS",
@@ -928,6 +928,15 @@
               "finding"      : "not vulnerable"
           }
 ,         {
+              "id"           : "ticketbleed",
+              "ip"           : "unif.fr/192.33.182.249",
+              "port"         : "443",
+              "severity"     : "OK",
+              "cve"          : "CVE-2016-9244",
+              "cwe"          : "CWE-200",
+              "finding"      : "not vulnerable"
+          }
+,         {
               "id"           : "ROBOT",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
@@ -951,7 +960,7 @@
               "severity"     : "OK",
               "cve"          : "CVE-2011-1473",
               "cwe"          : "CWE-310",
-              "finding"      : "likely not vulnerable (timed out)"
+              "finding"      : "not vulnerable"
           }
 ,         {
               "id"           : "CRIME_TLS",
@@ -1434,6 +1443,6 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "623"
+              "finding"      : "334"
           }
 ]
