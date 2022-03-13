@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 6 Mar 2022 01:30:18
+		Generated on Sun, 13 Mar 2022 01:24:26
 	</h3>
 
 	
@@ -152,7 +152,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>6</div>
+					<div>7</div>
 				</td>
 			</tr>
 			<tr>
@@ -160,7 +160,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>11</div>
+					<div>9</div>
 				</td>
 			</tr>
 			<tr>
@@ -168,7 +168,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>6</div>
+					<div>7</div>
 				</td>
 			</tr>
 			<tr>
@@ -196,7 +196,12 @@ td {
 			<tr>
 				<td><a href="#10062">PII Disclosure</a></td>
 				<td align="center" class="risk-3">High</td>
-				<td align="center">1</td>
+				<td align="center">4</td>
+			</tr>
+			<tr>
+				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
+				<td align="center" class="risk-2">Medium</td>
+				<td align="center">10</td>
 			</tr>
 			<tr>
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
@@ -211,7 +216,7 @@ td {
 			<tr>
 				<td><a href="#10099">Source Code Disclosure - PHP</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">7</td>
+				<td align="center">8</td>
 			</tr>
 			<tr>
 				<td><a href="#10099">Source Code Disclosure - Perl</a></td>
@@ -227,11 +232,6 @@ td {
 				<td><a href="#10003">Vulnerable JS Library</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">2</td>
-			</tr>
-			<tr>
-				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">10</td>
 			</tr>
 			<tr>
 				<td><a href="#10010">Cookie No HttpOnly Flag</a></td>
@@ -257,11 +257,6 @@ td {
 				<td><a href="#10110">Dangerous JS Functions</a></td>
 				<td align="center" class="risk-1">Low</td>
 				<td align="center">1</td>
-			</tr>
-			<tr>
-				<td><a href="#10015">Incomplete or No Cache-control Header Set</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10063">Permissions Policy Header Not Set</a></td>
@@ -302,6 +297,11 @@ td {
 				<td><a href="#10049">Non-Storable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
 				<td align="center">9</td>
+			</tr>
+			<tr>
+				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
@@ -364,9 +364,87 @@ td {
 						<td width="80%">503503503503</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Plans_d_acces/Universite_Gustave_Eiffel_campus_de_Bron.pdf">https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Plans_d_acces/Universite_Gustave_Eiffel_campus_de_Bron.pdf</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">500222260222349</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Plans_d_acces/Universite_Gustave_Eiffel_campus_de_Lille.pdf">https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Plans_d_acces/Universite_Gustave_Eiffel_campus_de_Lille.pdf</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">500222260222349</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Plans_d_acces/Universite_Gustave_Eiffel_campus_de_Versailles_Satory.pdf">https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Plans_d_acces/Universite_Gustave_Eiffel_campus_de_Versailles_Satory.pdf</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">500222260222349</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">1</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -389,6 +467,392 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10062/">10062</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-2"><a
+						id="10202"></a>
+						<div>Medium</div></th>
+					<th class="risk-2">Absence of Anti-CSRF Tokens</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>No Anti-CSRF tokens were found in a HTML submission form.</div>
+							<br />
+						
+							<div>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</div>
+							<br />
+						
+							<div>CSRF attacks are effective in a number of situations, including:</div>
+							<br />
+						
+							<div>    * The victim has an active session on the target site.</div>
+							<br />
+						
+							<div>    * The victim is authenticated via HTTP auth on the target site.</div>
+							<br />
+						
+							<div>    * The victim is on the same local network as the target site.</div>
+							<br />
+						
+							<div>CSRF has primarily been used to perform an action against a target site using the victim&#39;s privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/">https://www.univ-gustave-eiffel.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form id=&quot;searchform-1&quot; method=&quot;get&quot; name=&quot;form_kesearch_pi1&quot;  action=&quot;resultats-de-recherche/&quot; class=&quot;u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-pa-10 g-mt-25--lg g-mt-15--lg--scrolling&quot;&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/">https://www.univ-gustave-eiffel.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form data-cookieman-form class=&quot;mt-3&quot;
+                          data-cookieman-dnt-enabled=&quot;Vous avez déjà choisi de ne plus suivre les utilisateurs avec la fonction &amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot; href=&amp;quot;https://en.wikipedia.org/wiki/Do_Not_Track&amp;quot;&amp;gt;Ne pas suivre&amp;lt;/a&amp;gt;de votre navigateur. Nous respectons cela. Vous pouvez modifier cela à tous moments dans les paramètres de votre navigateur.&quot;
+                    &gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form id=&quot;searchform-1&quot; method=&quot;get&quot; name=&quot;form_kesearch_pi1&quot;  action=&quot;resultats-de-recherche/&quot; class=&quot;u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-pa-10 g-mt-25--lg g-mt-15--lg--scrolling&quot;&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form data-cookieman-form class=&quot;mt-3&quot;
+                          data-cookieman-dnt-enabled=&quot;Vous avez déjà choisi de ne plus suivre les utilisateurs avec la fonction &amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot; href=&amp;quot;https://en.wikipedia.org/wiki/Do_Not_Track&amp;quot;&amp;gt;Ne pas suivre&amp;lt;/a&amp;gt;de votre navigateur. Nous respectons cela. Vous pouvez modifier cela à tous moments dans les paramètres de votre navigateur.&quot;
+                    &gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/">https://www.univ-gustave-eiffel.fr/universite/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form id=&quot;searchform-1&quot; method=&quot;get&quot; name=&quot;form_kesearch_pi1&quot;  action=&quot;resultats-de-recherche/&quot; class=&quot;u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-pa-10 g-mt-25--lg g-mt-15--lg--scrolling&quot;&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/">https://www.univ-gustave-eiffel.fr/universite/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form data-cookieman-form class=&quot;mt-3&quot;
+                          data-cookieman-dnt-enabled=&quot;Vous avez déjà choisi de ne plus suivre les utilisateurs avec la fonction &amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot; href=&amp;quot;https://en.wikipedia.org/wiki/Do_Not_Track&amp;quot;&amp;gt;Ne pas suivre&amp;lt;/a&amp;gt;de votre navigateur. Nous respectons cela. Vous pouvez modifier cela à tous moments dans les paramètres de votre navigateur.&quot;
+                    &gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/appui-aux-politiques-publiques/">https://www.univ-gustave-eiffel.fr/universite/appui-aux-politiques-publiques/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form id=&quot;searchform-1&quot; method=&quot;get&quot; name=&quot;form_kesearch_pi1&quot;  action=&quot;resultats-de-recherche/&quot; class=&quot;u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-pa-10 g-mt-25--lg g-mt-15--lg--scrolling&quot;&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/appui-aux-politiques-publiques/">https://www.univ-gustave-eiffel.fr/universite/appui-aux-politiques-publiques/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form data-cookieman-form class=&quot;mt-3&quot;
+                          data-cookieman-dnt-enabled=&quot;Vous avez déjà choisi de ne plus suivre les utilisateurs avec la fonction &amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot; href=&amp;quot;https://en.wikipedia.org/wiki/Do_Not_Track&amp;quot;&amp;gt;Ne pas suivre&amp;lt;/a&amp;gt;de votre navigateur. Nous respectons cela. Vous pouvez modifier cela à tous moments dans les paramètres de votre navigateur.&quot;
+                    &gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/qui-sommes-nous/">https://www.univ-gustave-eiffel.fr/universite/qui-sommes-nous/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form id=&quot;searchform-1&quot; method=&quot;get&quot; name=&quot;form_kesearch_pi1&quot;  action=&quot;resultats-de-recherche/&quot; class=&quot;u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-pa-10 g-mt-25--lg g-mt-15--lg--scrolling&quot;&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/qui-sommes-nous/">https://www.univ-gustave-eiffel.fr/universite/qui-sommes-nous/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form data-cookieman-form class=&quot;mt-3&quot;
+                          data-cookieman-dnt-enabled=&quot;Vous avez déjà choisi de ne plus suivre les utilisateurs avec la fonction &amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot; href=&amp;quot;https://en.wikipedia.org/wiki/Do_Not_Track&amp;quot;&amp;gt;Ne pas suivre&amp;lt;/a&amp;gt;de votre navigateur. Nous respectons cela. Vous pouvez modifier cela à tous moments dans les paramètres de votre navigateur.&quot;
+                    &gt;</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">10</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Phase: Architecture and Design</div>
+							<br />
+						
+							<div>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</div>
+							<br />
+						
+							<div>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</div>
+							<br />
+						
+							<div>Phase: Implementation</div>
+							<br />
+						
+							<div>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</div>
+							<br />
+						
+							<div>Phase: Architecture and Design</div>
+							<br />
+						
+							<div>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</div>
+							<br />
+						
+							<div>Note that this can be bypassed using XSS.</div>
+							<br />
+						
+							<div>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</div>
+							<br />
+						
+							<div>Note that this can be bypassed using XSS.</div>
+							<br />
+						
+							<div>Use the ESAPI Session Management control.</div>
+							<br />
+						
+							<div>This control includes a component for CSRF.</div>
+							<br />
+						
+							<div>Do not use the GET method for any request that triggers a state change.</div>
+							<br />
+						
+							<div>Phase: Implementation</div>
+							<br />
+						
+							<div>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://projects.webappsec.org/Cross-Site-Request-Forgery">http://projects.webappsec.org/Cross-Site-Request-Forgery</a>
+							<br />
+						
+							<a href="http://cwe.mitre.org/data/definitions/352.html">http://cwe.mitre.org/data/definitions/352.html</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">9</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10202/">10202</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -2903,6 +3367,310 @@ MùZsÃ Û}èÒÛïïñµ¡&gt;Òv±#-TPSË®dÝjçµGÏõÃHü8)
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Documents/Reglements_des_etudes/MCC_2022-2023/capacites_accueil_2022-2023.zip">https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Documents/Reglements_des_etudes/MCC_2022-2023/capacites_accueil_2022-2023.zip</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;?=ÇùC)» ªKÃlà2þÙ¼ñÏ÷ýèåUê¨:h7M·eÅ¾ú s¬ðø7q­¶3³sÏ5éâdüW&#39;øßðÌþu½ùH°ð/Rå]Þ|þoÎ¹r&#39;
+(­76ÖARºø[&quot;E ï»QÿfqL¶¾ áÑ
+*²([ Å5ÿ`ª¸Ñ;ø¶c&quot;µ÷Mû©¯;ùþ»hi9­@ rçúÑ×»]î¬¯WØk kÛGîê&amp;K  û¾¶¼õO¼ÀcAzûiqàzÞ6xåx¿ùÙj~=ø/gácÇPT)iÔ@ê»uüso©}òÄJ&quot;7¨ÙÏúçß:yô)L.¥ºnÐ¯ïdÿOü~¡/ZLC?7T`ÏY	3þÂ |Ód`Öp
+ì©	ìbÐ¤Kx{)¿\8R)&gt;_o!vö.iåÀçvÌ{P,ùªÊ¨ÑðOÜ=é;f2=wÍ|ÈÃà¦øÅjcF×¨Ý¾y°Æh#ðmJqdúWü,jRIý÷ÔÚÉõgØò!ÎÄe)]U¾ÊqÊ½}ïçüôAºz«Ìoâ:÷Ôt}­0K§ç3 Náó½K÷=z` ÌëÊÎÅÞ.ßßªµÔëÊ¨aÀ¸£å rë;Ñwp×ÑgvVìÉc@UOÐ¦§¯!¦cÌÆªBÓw(û¬ Ûþ\@ñ×7¼±êôÈùXO~,&amp;¡}=ÙÂ6?©O´~¿mKû_b7ÙÂ§JÞ/þ^¦ºñ32j²O-MWog
+ ¢òÖ¹.46¾h	«ìQÒ°÷qÂWp¥%þä¦$Úçû|xÎkJ/®·Geøº´&quot;=¸UÕÕDÛÏmÁ?Þ&gt;§;¼ÞfÜg¬ëßhNy¥!b&lt;4Í¦aqUFåsrÚâ`FÖÕë.µ-«#1ÄÅEëê­ÒT\ÝHCqÀMtËCy6LÐ°:Xç|¥²ë1$1z#iô@Þï¾ ^90kjÿ%néÓLJ587JæYºé²KdÈ¦ [ß±-0HNçù)]Ýí®y}ÿ9¨ÇXnGl¸nOô¬#¥;sR|Në×Ç&lt;z¯O·ºæ¹¢·Üë&quot;«ÜxÏ~ÒÆ¶.KÅò2gÓÚ0ï$àØ¤úi\&#39;¬Ð»Û4à5àyÔe33eaÌðà£¾ Ç©ê6«c§ØãôÃ@gøÖx·3Ç;Ï $Øãr´ÀÇ³çÑÆrE7cXhq^T-¡ÖÀÌí¶´×hñ&#39;&quot;JÒ
+$¡TïÜÝX·«Oô®p:2GÇOÁA3=¹²
+æ^UnÒqO§EæÌ÷´âýQ®ê.¿[nF5ÞÌtp¸äs]øe×ß$(í÷8+XH	m
+ÍÓ=¤ºìõj»»°/df¥G6µÙðq áP$HÏ8Ë42ôJ=æm9]Ô&amp;í{@8«$/É-%ýwç2Z³%¯EÓ·¸/ûºÇ/$P¬Ê&quot;3¡Ü® «ñ/º|5¿Ä¸Áo~Ñêp[0;~d£Ýd¯)3ã0»É¾éA´O±E¶µ ±P0F#ëÍcÒ¤iàúlc=]¹GêO¶(ÇòÚµëÜÔwm&#39;¶&gt;*È³6}Õ\¸Nû¯»^âÐ½ÂÚÔ&quot;åhÚ¯Ò«_y/»­¤eõ&#39;,©öp&amp;ÕüIO	6L&gt;=êò}¯«E~\ðu&#39;ôÛ6vgÙToNPÛ÷lÁ¹Èu_¡1!KDEÖ¶d&lt;1U§Á¨X®*Qk®¼.°ZüùìÃ=ák6v-¾5\Ì£NaÉ°èi©§Ç4åÞ÷&#39;{×µ+ôÍ&gt;E.·:$J¼jÍ®üâ¿õÌÌõÅïN¸åó¿¶JN§Å¹	°ÎZøÉ©RPÇÍÌÚµ]ìóKKÜîíFKßþôhIñâü.øJð&amp;?ÁÞ±HÍórI30·WÁk.]MÝÒ! Û%¿lKÓSÅt¹üA¹kÀì&#39;x¾lqËÞÅ;1,ÛãÅ4,vóÅÐÚí%ýVH änÁQëè?QpÏÂ¿¶Õ\¯vhH»^LÏ~Fa\-7g~ GVÒ ®_D&amp;)úphb@,3ùcJ;R0ðÀK:*©×{f`Ð+ÅÀ¯ãïçò5u	!ÿbå&#39;&lt;ä¾ãà*ß©8O@ÔMñ8?k¡y!~(¦§ê·»7¼°:1¼FÛb}m;,«ùðuß­@§¯H÷ü¬êÄg)Ñh#Òhv$úç¦À±Ë®ô+TÓýe¬681|ÆË¦6æjJE$®9ÆÂÕ¿o/¥ó®F¡Ø#8JZW=ùºÖß*\/÷§oÝËfËÑòÉv QùÄv°;]d:ÔÍÄ&lt;î¸ÒuàÀK)]­jÏO«&#39;æB¶`äÈÙ:ànÁ~nõK;rïWä;@ÅMkiÞo|YµÅòæYà½ Z ±¸S1HL~Ró0½ÔèeDeÀÃ½ääKp1ìO×&gt; ù ¢^Ù¬ÙÖöE[|%u÷¤ÄÙ(üXÏGúF`ïBåOªJùCíÊ¶¥9RÆÕ Ër¸\®ÉzpEÓ:Î½À»¾¥tCýÚu_ðNë,a:c]KwGKÚkhgÉáU5ó#ÐbÌ(ÜÈ2xow¼&quot;Ø¬DÍ.×$wÐT+)ÔW%Õ©ûION~Øã¾bíýVc*Ð¹ÏÛ ôÏ¬Â8X{û %®´ÁÍÀ,56Vó½üó)ö¬+)}+kRË®6jËæ÷Ïùfç{ÉÅÙDÆ%}r¢Øè×dæH!&quot;ÛHòíë¸h_lg$¹yqU¿6&gt;±JV&quot;7)ÊÕiê1À]-dÄ]jðÏH»ûb&gt;è;!ÒæU­JqmÞÐM	È³dÙñ··:&quot;&amp;o9rl§sd9	U9UÉw$xS2-ï Û×¡$ZhÂdsÍuðlm£îêñµ33L8JÍ£OÆùï)s³&quot;SÊN¼Z¡CN/¸(]¼¢-dO0âÊê½×Ï8ÿ4&gt;y&gt;Ï%£ÕçÌR¶ñ pVµ¦úZs¦öbó Õýþfà¶xøä@¤bg/ðc²ç¸!Ý;*ª.&gt;¢÷ðüîlY&amp;bÛtÙÇØÈ&#39;Ö£rãEÓ\bk*¼OY!/á_IÈo9Æ÷}¯KQ|,tn(Ux~Çu!KrÖfLæ&gt;_ ¸¾`¸ui$ÌË´Þè2æ¡¸c.¿kÞì ÉÊä¨ééXÓBÍè¦Ï(ïÞ!{!&gt;CÁð²ÊÉÒAHû¶ð-c¯ÉÔèwúyAÀù§U§¨AÝZ·z&lt;wºVºFÌ,1¤´º.dËì ¾àíNØ9¹xàÃ½öên¬ôåRå[fençQ½ûâF+ç÷Üxjiãí[ÁX7;FA8íî¨9OE.æÐ6³­Vñ:áCÁ§N Oéwë½PtãÈGÌÁû5°³»|!ÒøshÊçîF7iqO#¹&#39;`êþÛÚbc¿ïÎ^£T]ÊÁ¶^½POù1h)I¦²5ÊÄôgòüic[àð´ðö72­äj{ÎA¼Z²=çÍ8y$Ëâ/ôÑØEÏÕ»c¥F±~³¯jä}àK+±Ä#ÇÚ8¸Cyhcà_Tð¡Ýå}ÙQl§ê%ÂÙ	d3ÊG­ÌÌQÂ÷¯E/°Sâõd:Ñ¿ÀBKv¹·ÅcõpIãÛw ®6	\U&lt;¡WNP·qóÉZï~a±Ó{õVþX6õÀê$Psât7Ï$ðè»ÖgÐÑ äFÎ¬Ó:Ùz¥1M|Ôß¨WzïÍð99wáï@zàÊ?Å¯5ì
+¥T&quot;÷tÄb!Ó¡Q{áåÅR@95¹|Ðxúv¶BñÎAbÉiù}¢xPmö&amp;ùW©Wò.&amp;¿~&#39;þV«J ìcÕ¨vûÃ¢$baë{Ý\¢;VÉ&quot;ëÅ¤[ò;I2@uûWSîR¡	§-­ùz®§æÔ &#39;{[ÄS$Tß¸õ:å7`B;¾ì¶ô4í¸ÔTË}kc§qHjÖºuA{QÂz¬R÷Íu;þ6Önþ0=UöÎ¹´þÁpI+CÆ
+Í:^nÒÁ4ÛÏÜ3bmúîCÚú&#39;õëoú8â!êé£·UÞÖÅâC´³4ýfþr¥	aä&amp;WV¨ÊÐ]ì°:¦H!ÈV¢ú^
+÷)k)ECÉn%ÈÈüÛ²ø³z¡%zÎÑA² FRv­iaÐ¨C2Ù¡²ý*näQÏGãÀ_¬fû7t7?¯ìßà9xqÔaTVC×È¢wÓèµõp³ÆÚû¨rKpDÜF;§E.«3+Í]ßRÑ£Ö2¯Í¥SÞáG}(Ë5Zß9v_ã»TÞD&amp;øR®øüú	»Ý$ºÉ(ÙE«º=&lt;5½À§Ù·~­ùjahçÑG| As¯¯¿F!o£?ÒIä@VÔÙ/=uí7ª!Òb_AÎCe!.¦u&quot;WqÒ²Ôk5GsÉ°úFBd]}qM,ãNsë!zs=Þr«¡âÁ{öSx{kÅÀrè&amp;èk;yÅWj@ÁÙ$¥þT½°zã]1!ûk´7&amp;)ÑjqTv«slÎ3á{fÏ§*î2ÿ2;vHG^rL&#39;^$¢ &amp;[Y°¸i&quot;Dhãécñ#ø8M@ëÉ¶µÇ»8XÈNº^H²j_¾£ç;¼ðêÚyÖ+øD0ÊUl5Q¼3JÚÁìáæò]s#|J*cÍu(Dÿí=Upª|ñÑO]ìQ¶¾}lônïSð]AccÃÆ¬3¹aÈQqÿòD&quot;V;¤øÅTrP5ô=Ò0¿ï¡¿!Õw¬-5ä0¡îíÔ¨`°íæ:cþ´÷Û*è$Lú3(ºêìë6\¡ú,Ë#qFÆ~+¢íw^ aÃ`uK§&gt;¬!ªØÄËæ+«Îs7XA³YtvWKÀïJéÖ%7Þ,4×6(m ñÌìIjâT&#39;Ù)ÐDÖgnVÓã&amp;ÍÜ&#39;ËÐgÆÛÏcø7´TË÷&amp;ý°¶úÞ«qk¦5½ýÝ:·¶Ù?üç)]À.§ï$~ÓÿXû­_G¿kâÜL%Õ½±ÐýeõoBCs¡u`KV62×~#¡æÞø¿d§R^èãGÎåte}·³­HÜY~ßÄ&gt;	ä«I©ÝkëPs9Áö&quot;×q\ A&amp;oþL&#39;Íï3§Ï?V-0qÑ$l®Ï y%²¥öÎ8Îyþ¶óÇH³LKÆÍÓ¼BñóF,Õ{æ-_Úµ8µüêC²g3ý-íûh,wêá	Ü Úù!¸üÔgÃl ýiÉ×«Zq}+Xëë¹HÂ³¥H6Õjª¨výE9ZÆc |ÂwFáÅ*ÙßX¢ÔQ+Àle Oº*Û\¡ò~h¤¯,]Ë&quot;3ÁÜá!¨]awìõÞ÷¨V\ÿÃ;ú²ÔÂ&#39;ó&quot;}ÒìàåZ7Ràðê~­4HGÖ¦(Ñä{µðKÌýFû´¤^ñvÌ»»»òät«NèÙgvmaaÇ¾Ä¥Ì«Þªµ.u&gt;÷ÚXÏ]½d[dfª?bs?ïL3\Òû ÆB:Óeýös fÂÉ¢ÁËâ-·.Ô²÷øáB¨³:_eõCbHçÖâ«	gyÃ¥1&#39;5¹Äµi/!ÔÐp&quot;Kþ«ö1käËûàTw%PâùTR³_¸ÚÞÅLÚÞU&#39;÷ÌfÓ|&lt;ÜUTFzÜçÍK%|¾Û tßenå«XnYçomW ÌÚSÓ*éÑà¬N¹hX»ûIFvW]ËònâÛ¹ÅD£_ÐTÑ.¯VöxÿXPý!¨Z7þF ñ¶dqOa.	9Xt£ý· ÜöèHXï]?6&#39;òC\f éñÐ!&quot;91Ã,\põY;qÆÑf!a&#39;×et+¾y² ÕV¯ý 0²0úðèiÎQ«,)lIÊóZeË­ÒVÜbUúóºý¤øÖxÉ¶A¥¦Â×ß&amp;ôð¡ô$g¸làÈ!îÞ/¨×ø%$?Ç#°$O&gt;ZW?fÀwã,ïQI8d½¶ÈxH¯F½ÕàE2º§Û§7,p«$g¶q*ù
+oS&gt;ú¿t×òâ\Xyò`sìÇÇ(ÐðÂÔY72*ÊýS MsÛÌðÆä§Ï¶e,³&lt;¿UÐ0ñç7ï¶Ê¨-a».¦È*@Ógá/^v&quot;:Ú1ñÛt¤Ì¸cX+Íï_ëªs¶0@W½$èµ$&gt;¤ô[S©%®_&amp;7ãG¨eñFS×ë£µ*|¬ÐYÍñÁL¿à­Ê=æÔSÓu&quot;¿Ô&#39;FèÓòùq´aV&#39;g;É»2FÒHÝÒNxR*iúçÒ[¶GZðËîè«q¤ç;¶©X[m!_]HH+|Ç]Èaûx¯uÂ¶ûáu¢]vNp%hÜ?iÛçØÇõ$R_ÖR.sJêsc&#39;+mÉHçÔ3/îaPV1AÓÇõÀåK)R|ö$Ïf&#39;Cðû}|Ñ©X_ý6iQ¼ÌâYü(|Áá}ÃåBÀ0,kJKvð:ãl½÷ Â2;Úä¶g-%§ SØà¸¹û$®qûä#{/½µCôúSÆmíÑæ]{¬³âm|£Dj¾00µÞ&lt;SgX²ÃÅ;Bû/Ø&quot;×B¿Í­NG¹ürþ=ÄþÝ4H?Xñ¾ØJÒ&lt;fQIÄ[C6ãf/°ã{¨_%s¤1·l°X³`Ø_.!Õ!4µbD¢J«R)I&#39;?):Ó2è&#39;øý[ÂÿÝq×Þÿðù£p&quot;H+r%èoD¹ÁèBÞLÁ½X+Léâ]ÓhIFIÝgý+/¾^®Ã#¿ª1kàáÃÏ·-á&amp;Ù¶1¡òb¥+!Tµ¼O¤5!kó9åáð7ß&quot;o×ÌKö9XP®è³Ø£ÌGGÎÎpT¦#üÑx|B;áLÆ^ ùÃ\íÖôºÎe#æ]]¶QÆÒB¬þ×òr}EæíèwTº_Ö=TºÐ§&amp;[MNÌ´³F óa8Ãu!Ñ¡d¹KÆgsPÍFÌOß¤\
+âyýÝ3Är	´­ÁLhøËC?ÐB:ÃHØWjÏÌÁqïsåFßvµÐ	rfyî6yG$K&gt;Ðn 47:äÎ+âS0· ìcÚ$Ù ~´D±)°&#39;0^tvâõgô£_ÐnæïFö ÙÊ§i_6zJícå±¢ØÖÆÂ­ú-ýVºÛ_ @ügW:Éæú dhÊ
+÷Xå&amp;&lt;ócHIqÀìÏØ÷_2ª¦Úç¶û/Å²YäIúgãZ _Äò o»XNtÛur¼J¾ÂYµCà&amp;¦1´oZO¯À VÞ@dçúÚÕk6±~XðïfM^ÕÖ!jE7tÅÄ6¹ÈR*Öï-$YÙ$¨«9lùìhÃBäoÔ´0rzËlHhÜ÷sEßÜ YZ~74í=ñÒ4)á@%àî*pÞË_°&quot;ÎâI_¼ö²4_&lt;ûTÕ¯ ,Ôy&amp;£fd¬Ú­ëðJB®µÒ6qê`mõr&gt;ô ø&lt;=éÕ©D4´&gt;,d m£Ï`+È_Î`hagøk]pt8bITzüñ©¸q~Nù4ùÓÀ[Ráy­ÃÂ÷SÍ	 	ñE¶Í×·ÍñVGÇÉ8$Düd5)lCéB´µéèÐ|FRbb­n¬¥Ý¸/É¢#%ÄµDhôI^YQBÐ×UÛî&#39;H¸5N:òú&#39;å$°À¥¦ßõEvõ$?õ?aÑôé1¾ÿÀk¬lôÏtvýQ
+uí,Îj¨
+õ_90ÁZ8÷Á£âY{År[_q~ªzÑ)ÈSíÌ6Ésþ*|Ý¿üå5ßéH³ìÝ-&lt;
+ïd\UëhÑpg±ÖjÄwäÙJl.:J ÖAeïåÑq¸åt¡ïRÉhr°÷d¯F?jWoÁVÌ!µ¢ðCÚÊhjeèà¤Õ)B]÷²èáÆ&amp;R¦UWÒñÖ¾ûÌ;âoÆâgÏ¬4ufÞ®=¢!%¢Ã~ÌÉà?ªRáóõètl¾$:&lt;µsM)uÂ­gõÖE8Øã«lÏP¤Ú}#y 8&#39;ÖÙÛùð×*ÓzÑyÇ)!2èãÙ¯ÍÓAhTòv{ûJ»aCw¾Ü{öÐïwÚ9	ËW{?E&#39;ä¾z#ôjåuNÍE¡Å[:]·ü nCQn)¥¦ËÆåðõ¾¤,SÛV®µèê.¹ÖJrwAÊÕ7}).B&lt;Ë=T^}`¦lò­ùa©Ñ°½ø#&lt;rH~­,¿¯×ñ.C±ºÊ-µe 7¨fô±}ª¿¯rA]æÊÂFOW_tíD3#ÊWó)»ïDJÉnÌíPÙQH/zË¬Tó~&amp;EJ^ÍkoÂ¡ÆôMK¢nëè/z8êfToe1ï7IùM°ÅÄ¯23ÆµëV¿Ì£²àêûô-ùD°¹©Cït½ë[nooKnß®DpÖ!]3TN¢Q^²D·åH	éÂ­nV2ÌèQÝLëH#4ãË5¨F1VßÌ)¿Y*ÁtK¼Åk`*WÉÖD×û¯Ùm9%l*Úe@AÛE3#/µ%ÖÞr9îX.fÝûSµ8I:°¨¢Äræ&lt;Tú
+¥G¢÷-_ª&gt;RÃö»Ëlc^¦ã-ø FvwÐ°±säaµg!ÌÊ7àÈ¾)´iðÈ3jÇ&amp;ÎîíîÊ!Þ·Å^e~º~cÆZÇhëÍaßÞÎ+9û¶ñOáCÛa&lt;=á
+ØÍ,fc7&quot;Ðû3±bôòo[2a6ýZmVXó~dÞ%­êÌÓ¢ðJíd)Ôó3k×IÀ) !º?qO1Úe(U/¹îÿ&lt;²SJQ.ÍÝPf^ÖÏ¯è$V¡³*\ÆÄÂV;]#ÐS§yÕäuDÙN?sZåá§ZUçöêð]Ñý\ùóâN¹|Î ÚÃ¡AV] oÃ T¸LÕ´|6÷ )öþa)î)82ÿ,9Ý+þfã¥z&gt;iUèás¼Yï¹ìîÆ[7)Û¤W~ÆizéþbÂ½ÉòÉºi~TÐsaNL&#39;5auÝI[-yWÐé¦X\xùæPÔwë-¾¸½½(kÃc QÖä/â2«vúHàÀ&lt;©3ð8qÊw	ScÒÇJ9B¼{2Â÷q¹¼üs(ãIöEÁ&gt;ÎÀÝÍ²»_*ÏÓbøkÚø&gt;%s\ßc§Ï	Í¶4¬%#&lt;6 ÓFº¾HEcWæÒ0ëT´oÈbK_¥~ÝÊä§îÚ¹m|¾Á×é²+ë(C|uºõ¸öÇÙ«ÜâåBM&lt;4ÜÕ¬Gñ§Jphðð«|Á¹«·¶ãûjzÐÿó£÷üseñ§G54cKPOõ®Ü®ôîó7@ß\ü)cOc,ôNêeV~ÏP\Oß°òp&lt;Íd}ö×&lt;Åtõü~òÓ@kÃ¬Y£RâL~gw¬äÕ³`ZxjvÙÈeúd ÉÚÏÈ»öâ[R¡¹{@å®¨Tqa0î¬|øÎuiûºfÚ½=4YR-ÃÌ
+ì(ß£D&lt;åymõÏù¸#ççÀÖåULrcW×Ð¾Mù\»©f0Ýåu@J ­´øÿQ$åêuÚàëâ»EØ«HsªÙñ!·&quot;Iòp¦Hg&quot;½uùÑ=þµêD×¥#wÓ©eÑcpf;ã9pCìmÉò 6ÉÉRN]JÅÂæÓ!BÏJ^}E@I«ë
+ð¾È&amp;Ù-è/$,ÞPÓ5ïJ&quot;ÅMÏ7b	¯C]}î5¯d²íáó(àðIG&lt;ÛhOÔttmîíëÊývMDWl§»o»G9Çî©q$ôªDJ&gt;jåZÚaj²$E3IR²þvÌVïKPÌ3¦Æ ÒX¸G»AF|q¤¥ñ÷¹É\¿ó~pöms%K¹ckÙßò´$é3qxÎÁ¾üõ9?ÏôwøþÌ,ç?&#39;ñoÚ³HlØÜv÷¥ cãç­ß¥Áâ¯c«ëÍ´S&quot;Ý³E£Ã.IÇ_F¹xÈ?êm{ö|7»u¼;67IîFÎ}Gï&amp;»QìCT ¡3ø5&gt;~ºn
+8~±Ó/rXJ~ßw«^5ç´8Õ] %#ÙSËó&amp;#ÃTxQáFËJyã{ùk¿Salm×¶£#«Øq&amp;ªö%d»Rb¯ÙGá	èîN¥©ùu!
+®lî×s\ò,Öü
+Ú+O	RGÁÔú&lt;×0Ã0&gt;)+pÅò?ÇûQíõ­ã7Çÿ^ÖÜ62â±+¼Îÿ¸|BÈjÒòâC°Ö]HÓ&quot;Jÿ÷ól¥HÈúU6¹á¸Ç¢¬¬äÝµu/Ë:zGWüZÉÐµÎªjiëØ3ù:ø½T÷ÉòVgþÄcT_·Ó¼-®%$5b¸}Ü/^O:UöpM¸h	QÉ±É¸ÇÑs­f6u0vð&quot;{e0½ñÄzv4$¶&gt;ë{UÕv&amp;©C#(I&quot;² ×«üFÁüÁ´9Ô8Öì,­S%kR&gt;ýy÷ÝØë{+Êô|!åjDØUr)ø»ìH]»ÌðË
+M§(N¡}ö&#39;Õ!Iu{vì
+Ü|/¤Ä!µÃ²`¿yVjñîðæ©îÁâ¡S&amp;ÒÁ	3Ü|zìµ®üG´Ýá~iFÜ_ûÚjÞ?à^?ÊXÛlqpx/+ÔD7 LV¯;Ë¯Ui¢ßâR «¨Ðä2\IûÜ}Ï}Üò£¶®Ýë ï§ÖïrI
+°¯Y7°NìHpâN ¿Z H«¹ÈmE.NÔ¦­®¿Ax|^.¾Uþ^ÈÅ llãìõîpcÀkÕ¾!»öNÙÏ?O§ 1õxå÷Õ°&lt;ÌèQsz&gt;ï.ï*ÿfQÆ±eÍVxQÐaÃ²iúy:Íä}9zÐ¥=nË Aë¡pµ£N?ÎhoV^× ´æMm	UgA&lt;|CêÓÜ277_K¢7©gáìmh*YÊ·¼`tM+6ÆçÐæ\\ØpÔ¨7öýPS[áL?âÙqº7«°|¤ÁWgñáZÔå·ãLïUË	JÆ¸ÿÉ	l(==Î¬³Ã\Tv\bwþ9ù±ÑzÎ×÷ÄØÅ¥%%hÓÂR+w1Å&lt;\ýºï2Ö:KçÇUS¿É¼¨ò¯ÝYêÚ=møV0mÑX?ä&amp;\üÖ×Êÿy¥&#39;«½ç~âÿd;anÂÙãÊXÅ@¯à¤,ÏéÆÞHBfÛrà-×^ëE«	&amp;nòV¹×ù$WÕÌèÉ~&lt;ç&quot;ÈER&#39;gsÇSîãyG27»Îv±æ¡¹çúàü£ë!ú2uþ|ÃÇ^³ºÂ{gl!ä×HDóí v¨y×Ê?ÊÏ~*øÐ°Q,}D~Z(vÄÚ§0ÚWÊu½&quot;íÞøIÌ¹Ë%ô[õÐ £Eò Pñ _¬mêvÜS:dü@f(´ææN»ð¨-ÚTýmgÂq%&#39;èçgÎVí·T5Y^|Æ]{³*üHQLôYùù:üuÛÈ6
+ÿ1åbæ
+oÙûLo}^Áðï{¨&#39;Ô(èÜp&gt;PÚI^a&#39;³òÌ×/[/ÓmÈ¦j¤Ùk{Å`dÌûJ´Ýl¸A% cú¡$)(DÏoÊç4ñ¦xA;«­¯lEuÐaýH«û«28¾ö)·äÏcñÚ*óÑ©nM&#39;uÀYÏIÏXDbÛ%vµ(¦öYå¸dº^$4ûË |ø5wöävî(Læ9`h^$´
+¬#._×¦+¸@Äöµ$,³À)S&gt;aÉãÞU÷ååê°4O¯+]Lí×³i©U0+&#39;OðÛu[lâx&#39;ÈóÜ®~v+ë{ØÞ×}*ö«/{øl=¡I¿´íØi¹­rhìHó¼ÆèßïøRý©7/Fu¶SöÄ#QÏ¤öNÚ@lMøÑ&#39;Rñßd¦¾Ð; 
+¼V¤SçÆ¥u~¤Ë­öÃêù4kê&lt;´/	o2°{Ìµ0Èµ¹ðM®Gäö2¥¦×¦*Vâ]¶]Ùjg¨Çy##ÎÎ½èuøTøñO,xlÅØõ¤¾xÌÒCdI5(fÚ9)@®»%=«[è¬Çp a3G-A¨öo&lt;/fÈ5ánÌÃÎ]óÎÍOº
+¯«¹±âÂÁð^8U#[Mâ }´Í¡ûÞW&gt;ö&#39;?B]¯ÖådG§yn 6ÿD¹&#39;TIWQLrÝÑLºf%.À)¾D0ë¯êß&amp;n&quot;Låt£x: V2mkØOõdë}ØTmû[l½»þ¹ÊÞHãaÇaÀY¹&lt;nüÙÍ,
+ª0¯º«ÄõµOhé áág­qÅü¹ªõQ\îµe^ ~CnÜÿ
+gý:_½uè;ð:è.hØ+LæÀöý¤?Ñ1ÉdÐ×5^pËKà½©L³JCrô=v¢°Vü÷ÅyPÃQ°×ÀE1Ä]Ø3ÄÄMro-¬$2Ï¡ædkÞÕÂõuØDÌ&quot;bDÅ¼¹B*ôË?¬¿ßj3}W$h6ÜCá;aTöSKel!&lt;ó·ti\¸ßCáa0Ëµ¡:TËÎíÅ
+ÕF~®4*¯Ø&lt;³Õði?ÏÌ/×ª¶DÐÍoÙ&gt;/2Q0£öt. }Å¸ïU¦µêÑWë ÎÖ¬ìø3\²Àõ&quot;xÅh|ÉFÙÜf\öâ&quot;OutêFMf8©}Uô½qÛ+içK&amp;¸ÌþëUênòã$3-pÔe:Ö©´ùòÛ§è¢²-qbÔÀ
+¯¡¯¾êU6-Í ûmÙ]©¶7=Ìã}óÚÜö?¨&lt;WúÝ·U/&gt;ÖX?Nû­D1åÛ¸Ú±·+}ª]~p&#39;´@Gf^ß\øç¹RqÛÇ_Déz÷øë­Ä	*Iµ÷·ÉOûËÊóW|ûÀÞ\=©uÝ`hþ,TvåI$Ü[;Lé,Ï	ðªÝA3&quot;Ý
+!wVÂ²@ÑkÝÌEª,]±ÅÇlYöÛmé0LÚÕä*2Ðx&gt;4¨þà úQ/F£+Ö1RC^ìFmd~ïÓ±Ó»Q0Y×÷&#39;ØÃÊ&lt;CCÃE×±ëXR94Éî¢úkW½`A¶xÀÔ:÷&lt;2èw Í|rVSg÷`a=\k£uËü_¥ÐWièD/8è]KrNSXìe+GÀ	ÂÙhx]&#39;éþ8Ý0{·[óÄÐ7	_pñÑz:Xöï4Þ,Æ¯Ü³É4¸E-Nn¼UÄF*gØÞuX ¾ºxpÈ§d}ø¡O Úè¥X¬|)ÿiî÷¼©ä«ãf¦2S*Z&#39;4UGåÒs®;I)¤úp ÈÊñVZ |ÃB2 !Ü¸@À¯ùiÑ?Ç±sT:i¸{N3Á´Ç ] #¬jÆIúp/ðhr&lt;bfÀÆã²ý:£gÿ	¨Ìb=ÒÄ§êË/[¶7å,Ax4Pt]´ûèËtØÿå¡÷ëêËÛÿ³³^A_A.´tiÄHs;&#39;éDùsÁ&amp;i°ÿÅÍb5¼êy4ã²t.&amp;û9Ç)kßVQ ZAôGÿ¦}£)~ÏIS`(fÕÁÃ\¤pëË&#39;Þ¡jAd­á£i§,Y÷ÜíådäPr9µÅÏvEÄÖAÌT5ÎÒàè3]Þ	¾êºµÏ½!ßn&gt;àëÌ`ù §(c[¢Y:Îæ»åSJ]w5¹V_·Ñu6Uh!72­V¼YÌõÇPÊË:ýV­Ïñq?ÆEÐÝð3zÍøjñþÎöc¹{Ý%Úøp,lBÙÃü@]B  ÛµdÆ.ª
+hëÉi×ðR	&lt;ö\ÿâ1ò¨yÞ4=ÄRÓâ #§ý÷;þ×zhPa&amp;µÿöïa¼	qôÅ(qRÈ&quot;w\M7&amp;G¬	:Ö -»£×tuºø}GèUÚù&#39;H[?Uød_0¶Lá+1ç© g6(H¥*G+24Û©/àÛa¹´¹Ï Üæ±æé÷¤þ&lt;ï#Ãz&amp;~y~)7Õ0ácîfXáZãþ*ûkØÕÂ½´7Ô¼&lt;YV£µvâ÷eUl8^N}#@:±ÆÏùøÙ7 ç7Õá¼ÕrF}ó	.ñqc§ÔÃö¶ L©Sý#äÉô Äls¶ò¨Î_ÊV8½ê¼hL¶øøË2¡Ïì M+½SÍ3ÁÌÙrÇ±ÆÔi¯H¼&gt;?ë°öZì¢õ¸Ô©ßïâ0Vz´ÄV¿ü°eBÐ&amp;ç8DÑ»±Ä¦8§ÑIÂÝ/BM2 æë&#39;ÔÍõHNñÓ^éA²ø(Q[Þæ¨ÜÝ(¹bÎÕ\·ô9O1á=_/¤ù³ãPî;az?05Ð¾×K[t×NE	¯ã|ÞL#Ã[QDBw/r¸F&lt;ù£ËëwÁâ`­¿TpóyyäûÍ7JúTg!¨ÖµòUc½CßnÚSÕè/È&quot;G=¬r´cícÒËÕLúêk+Â¨ö+?.³8êdATNÍÓ²´PF·âÃtaLsë!R3&lt;ùÍR]¼Æ&gt;ªÉhø¯ Eq´èÀLÆC#&amp;ê1­lG&quot;ZõVY+&lt;®¢:1³f#º:`ìæ¡÷L¨E	á­ÁÒ(GõÁK©R×+ª|Ruúv·T48~«(m©¹¤0m~¢HØ÷°uR+\Êü¢i R\=;µ)°ïJbUüsª6ÄÑ}1hæÀü)©få¤oí$M½Vñ/i·Ñá«Ã¯uNÅ Å·§DNðo»íÝ]5c@ÐílZÈ`4G=óêòïQ)ï±ö]z2ÐÀ®ôv¦é#gEÁhËÃþÓÒ¯ ùrô&quot;]&quot;rë;¸!¯sóØqOdLo&gt;,2 yÅSþ	m%§#´3ôytå8%
+ìèjå^&#39;]gP2@ÎE.¾eÛ+cáty6ã@¯f(iDÝ)³&gt;Æ1ñ;YÎ¿IÇY|r~Ã¨¢F¸ò±³	±fk9!øbx³µ7ÍfúõÛt0ý ÊcÿSá$ò,)üä©¾åÂ&gt;Iæh×rETü´c&#39;ö+ïýÛ]b2!\$Wot|JüÏSè²{@!p}Heýêa±XêàSi:ûæçöµ n3.æ¦Í0MM«g&#39;»ÏÌýuG&#39;&#39;õÏîëÁãnÂ#ÏNÿ	òÙ¡ ´²tÄDýÄå­VLåfÑo|lë\æÜí^-F¾T7v/F¨ãªª±Ø|ÏS
+Ì/Ý&amp;ÔÄD¯ÃqA
+%uÂ@Öz-¯Ì{-v:Ï£i6BÍc©¶ejþIíZú{¿Tº@©ê^ÞÈp±$
+J!ó_¾ÆÆVjÊñ&lt;EÑ©÷d5ÓêëØ¤¯úÓà=eÄ`d_n{*¨ònÎÃØùcJYY´q#/X{GÃvÀ¡­PöKÔ°4´]%õ®nG2P«ÆÕ¨É¯G4éwê¾&#39;B&amp;¸\ÈnUd`vWä³î.@_´ËfÖBÁjâ9²°ÝaKÖ¯2Dã;Éif·9Jj2=Iã^¤lI¾{ÒPªÝYÙ©_ÉeÍàªjcM­£¨(LÆ;q×m²¾ç§¿Ëø×Ô§OÿHYÁ`äÜÂâ¨º§Ç4s7¡¤Sù¦eä&amp;NBÜÂ¯%Øª¶^Ç*K]-¦m~¸à)º$i;¡jüá#/­iG6M½3°ó^åóÎôéÿMM£³vüðl­ªÑçªg}±ã³û}þJ©Çn&quot;4±°oz²\]*AÓ&#39;
+·6MF t¸R³Ó/Ô­Ù´Üñ	pù{¿Ü¡ÒäØ[-:
+Äj&gt;&lt;~ »ß(i©¬Ylfsþº¾øh1ª±tY]=?¨B%Z)Gc×àþ
+éÜ1RØ§à2&lt;ù5,,ÌmÑ=àu·x¨~¦,J¾$2®´³§ÝÆáÉcÄVb²ëR%¾%:=Ï¹ÿàÜª$n¼Ø{-?];ãOL£çòa÷ü{¦ñ/æ¢ø­?óûêñUnõ7¨M¶Å§4úauÛO~;6¹;boè¡°zú &#39;PK³2%]ÁýÉÇö±ê!»`µMI¶ndÿ0,Ðûªµêg©&lt;Öß&amp;¥Í!wËÃqÞ¹ÙA´IgM4ÙwúK±¾e1í ØGn÷«±þ¹Ç»£%|Æ7¼8°©åi:~&quot;e|Æ6ú µoöQ(kJïkKÙÜUrgÛâMºðÊHø±z*®{AbNùÎîatOj¶L¾=Þ)òÅ¼Ï$WÜc7³ ^{Ñ-	BHhÞßW«Öd.7ôÉL»Â¼\ñÌNÚÐÍl÷_ÆY½²|p&amp;Æ?Dë-ä7æ{¢^e¸WøTÕKÞ,Þï*uô-_óò÷LÄkss3q(£¯áÝÆ)¼3ÊãÚEþç$z5k?ÈAÉ%¸!©xF?/Ú©ªJN¼$RaTñ4õÙl(ÂÒikNaäBäðW·±­Ó¨X¨÷óf11VxÊª)|	¬öøSºìjò­lß1I8©¦¿n¢Õøá:pUo´cîVx!I:áHîL$B`A(X$|È/3÷,ß6UWûCÖv¹2fL{ðØz¿ËÌìÉÝc#ìiÏÈæËg¡Yç£%¥&quot;R]ë èAE¡AEÛÌP6U
+ù:à iU^ÜÔ@µÞFrYÙuxfH`ëd½&amp;çËdI¸ÚÒ¤`h×aF&#39;$Ña}ÈêÝ½.µ&amp;k¹@ !xeº«#¶°17J:¤4öØØ«Íâ¬úuëûÐ£ý °J8º l~´/Iwèí5ÿÈR·½¸»°£èÏÚë«òççO²2«ôñ¡NMáÄaVÚé)$ù
+&gt;­&amp;[ü 16À÷ôËxêZýª×Ñ`%&quot;&gt;w&#39;6ãçÒã`Ã³¼øòºk%wU\½F%òYÅ¤eÈð6ø³ò%F &lt;ÚBù±îm1ÈC§lH*Jå¯&lt;u=Ïo·ÚbbübÃÝn¥Ö¡ô¹65Àv7±yÕW°eæcyé«ë h&gt;&lt;1Vjäº.4v o¾(V~ãulN£-æIzOT9¯)ÛÃ¦Ûà%ì,d %^¬§Ä©2%Ålµ,F?HvlÖoèõö_¿&amp;Ra ÷k?Þ;ºø+µñåXp[«F­Ë(ñ
+¾É»=º £=°Ó;:ûØãSk(¡Jf÷çÁôÈ1BÉ»½#;8Xpdç³Úp
+[aiëO ¯B¥Â&amp;¨FÙw¡È¹Çk;,~Á(ü @ô¿låAÜRIÛÏ`´©ºfÿêø¡MDù¸ÁXÅ­ÛÄa Yo²jûìt&#39;Oé3âÝÔIÒ×^i}aÃÎªñ¨%Úy`2ôÃùò-»{oNHÓº6´¯ô{&lt;ä==¾=T;AæõÄÎË|¬b\)§¹(ÜtÍR Ç&amp;ôÍáý ³áz-¦	¼÷WgÔcñ49
+ÔLÁ©-»ôdoN%YÙø:A¡µ¼ªAÛÃ±&gt;ê_+ &#39;í¯qÏý¾ÇJPD¡f]²rÙzL9[|O	âÝÊD¶±ñV=º2vçý&quot;]§Jnêo]ëH¬-]ÏvàzÅ½qGVÎeÍõÎéTä³¶ÇÛbÀNB6×LÕÆÝ÷êò@¨qEö&amp;Å]°&amp;m0v:apåür;xQZ- nZãxQ°L-ModAjàÌ¦ÍïË=°íCÚÿëkÍ@!»ûP4©!Z«Ïû7Î~cõ#¿ÜÈ¢ù2 á±Äåpc%D¾ÚºûIÔMÚÁ`9á±loõÒlÐÅãõZ&amp;Ù±[£üj(©f}¿hÝg)Ó$c«ã`ºSî×&quot;°&amp;=tZ.Ú	4&amp;ÁÌú oÆ¿½}R»=aý-Áæ MQÜ¯½.ÙÊ&#39;[Tÿ-õWc\¤É±.	ÄQÔX3öçÊ÷Ô¡EÖf±ÏgJ)
+$2é-ñ¾e¡óGÃvt[}&gt;©ª&#39;I×RÁ½]äÚøóÄRóëòokk?tP¬(«î]þÄ+,è+ÅÍ²DSÃ1_FøH³¡çEÁ«WzÃ´Ê_¿y9EpäIÜ»ö4/ÍÞ%g^r|0¿s|9Pîñ×ÎZ:VA1&#39;4%zòö?×qù®\[¥GZN&gt;Ó$½¾[âó[
+;±¯?e.¨º~$qx¦ßûúÅ&#39;DZjíÌinl@^)î¾øÚ¶ÖÕ-l¼­ÒÙ¿¨®¹h½-öyÜ*u?·$êW-	)Å&quot;øÇxZöçR1îmË7mÒæRp±zD÷ÇÇº8ôròíäµÉ&lt;«Ä¤úEXÃímáºgy;Ð.PmÒqìfæw¼¯à íßÂð°ôIÒÉ`¡Ð§«{­Moßí&#39;ÊHRLæ¹Õ!
+6Þ}áôkw*z?_ZQFà|K?&lt;¦õn.eÓáÐÈÂ+Ôf3 ®mn 7$LÕ#¢1^økt¼éTFµ²âù£ËJI´á¥Cò2àD3ä¦5Mw³ïP¹Ç®ÆEÀ&amp;FÈPq¤SH	Â|:£&gt;5ÙDnåæ²ºÔ¥bJVßpk£ý-ð*E&amp;ðòà\Îx(åø¤ä§LCy&gt;&gt;¼3Ö%ÙÌd#k&lt;RqÁQG¯À*cÕÖ5»ÓÂÅ&lt;²Eìq7cß³È¾^åß¡pn¼¡Õ«ÿ½÷kjëÚ
+Ò¤÷Þ{ï*H¡¤
+R¤)M)Q@zïJW&quot;UP((   %HÒä÷ÞÏÙû½Þçûõó½Ïy]¬¬9Çã÷c$¬8aØvACá¯+µg3vËÙuébÜ/åüâòÄ÷«Ë,Dà_÷Ú×
+SÎ¤·ÍÉxvÆm&lt;ã\$[ô&#39;¬FäXy/ëIÐ·[¤\ê0ýì[:ñÕù¡Ïòx	ÀO¨ Åå§ä?¾ *Ý¥Î¶¿ V
+kî÷VÜØ¾(Â)oKðnz	4¯Æ¶GÛ´×{òK¢¯»
+-¹UÊþÈÊ	Úþ®ÓuéèýaÙ¥z¦ç0G¢ªõÓ[n7\kp¯â&amp;¨¯Á¢ê~»Öì3=É/,ulÐgØ­|ÿ6²)lþx2[V%ãýÚ¢ÝdHÆ4+ÍúÑ]PÖÙF¶ºùÜÜn¦ç 0Ð·Ò²Ü;èó¨üý(èË÷nñÆ~¨BBÑ	æÐ7&lt;n6ÊFûE.Kdc÷=&amp;$Z®øjhDÅ¶ûØÝ¦S_Ð,íüó}]]*/Ï×ÁíþXé|¿»Ï¸Ù uÃ{÷RHoô*Zä6ª°9.}yq(µ:0rÃacCUü&lt;EÝ1
+fb¾5ÀE?aXþ¼«whØýø.YôåÂ8¬%Wwqú×0	lû/iSB	-Tq$}»kweªdú&quot;&#39;Û½Â³#£¸5ïøV§íu+[#L­J¿ô¾fÒ&gt;S	HÉÄC2l,¾[u¿ëkñ^*üúTíNWid÷ò#íÁ&amp;¾ÒÎäuP
+ñ êå+µ¥sâh¿ãxhÑ1²Ýëíh&amp;(Jª!¦ãÏ¢»M?©%Úó(QÍ·ßg÷¶è õvk­[Ù»t]Ø(,½Ì-coÀ43·¿¿&lt;*/æJüÀ.ï0q*{rÆç,Å;lâæª¯¹¿ÌÐ:MÕ® 2¯q®.V÷_rZ¨(2x_XÜÃb#v»ï¥YEz^[pàj^Wß8Eªî@c³¬[F391WBLÇDè8&lt;Üi*O£áC&gt;»P Æô0ì½NeWA½Ip?å«E!ø²l£+Bÿ\º)iÖÜ}mg5r·í&amp;ÚMH¯=òÚ¶Er5Ð~b4ð¤CïãÃ·ìz¥cØÔY_	Æ5ô×
+VÙl¤â}*gúÞ§ðãË×5v­î´ÇF|NËI/F|k¨éÙÌù×TJáÓj*L»BiÙbÒw8­¼JÁù¢ ¨£äÂþÛé½¡e+·û¦3¶b³X}ÊwÈËaëÊÞtNkÞl=ßòÜÖYôy{VT3×p MÉ®];kÍþç&quot;&#39;ElÉÕL«åOXn|Z¢káúÕlè@¢oüâÀPõ:É¬jÝê²ÊífÔkoy·&amp;&#39;¢;[#ätGRcks:µ&amp;!Í°Û¿ÿÛ}ÿÿ_Md?óê!1läÑÐi|NÏ%vp/®Qò8ùÑK¸¹Ûdº*Ê5NZvp¦Wë+3^w¨Ô`Hg½ºÁÏ
+&gt;JqÀ÷{òçÌz`AXi±.jøÛvê÷¡¶Çýór¨ñ»É|5NºTTíð[Â/?­z-{&#39;/ptÆ÷sºì]§_^ÏÀ¤ZzNtz
+6o¼\ôµ¦ßwÿ~Â%h[qáÆ]g{sÐ}}çP13h %ËôîT¨í¨¼u/#©Mp©~O¼²2ú««Ç\?RßHÁÌ¦+¦ø-^¦¢)°ãI©ÙF×T&#39;jM^@íG®(6V¯Ô`\jv©Q.¿J_XòZP5$Ão`&quot;a#uÓäç$;ÀPÏ*3&gt;IT¨-3­ÿ:y!]úTPÎÄV×ù1¡Ð÷yÃÃñçféÕ}îþ,?X¹¬ÉÇÅ²Í¼-î©ó}]H÷}H&#39;|À·ªd©ÛôÓ¦ë»NìS&lt;DL 2Ý_F»|[XóYÓ/e7¦³}âý1ª&#39;Ý%v·ç¬¹ãR~ÞZ{oÂ*&amp;¬©Õ:êJcÐÉWóBÕí=	­«^èñ÷W}@1Qim{RéBÞ5Jçþ´qo2¥sóºøO@f{8îAqX÷Ñ×â»¡ûpIÄ/2´B²~3âR ;sÅk¾Ü]òè,µBéÎáÀýêÂC«¥×ÚÃLÒM´Ö!þ t}P½/2ÐÒT\:t&#39;ísËÐAR¥åOËl1EâxÇD_«!$aZ¡´öÆ&gt;
+3!ú£ÂÃ¬$Â¢+vJrx;ØçÒ-*)òF%â°RÂDFF²2è©W|öx*T¯±X/ÎòmåÀÎ½»KïJcrµâôyR^ú*ÄHß` àf	üöù¡¾J\ p9]ãðM*áÓÂ^&quot;Z´â%Ö,¯Yú&gt;ThVÚ?ÓC
+!%÷AoYWoéðWÖmí&#39;«Uößjµq¸C+/&quot;ÍpÚr;Qù¸¾;Y¨nöUjWänIÆñ4òdÏ E[ñjÝ¥åÕÜ6ïÒüÜõ`½Ç«~kC£¡õù tòâ7_6$@0©.?JHq Ég »À¸AóhÅ¼uTSÔ@@¤)D´ØøUÝÓ¼J»§-x5s$Ì½}¤Øì²Ê2@Ú.óÃ )^Uâ®tw¾Cm|©ã#ÒF=mAÀÕÆ##&quot;%çÓ =Ö4õ ëgwsÊù¡Ó¨ËÏnX·ò@ÿï[ÈÚCÆtêO¡Ïkú¡ïÓÚËÛ¥ªOuÔí¸ëhAÀ`¦ïóºKTµPýëY0.£BÕMvy°«d$7G}Õi2Ñ\ÏÌÁÎ× ûÇEÔ*Avy,¦ÅãÑæ°eF-hfT)7þ¤yéKUè4±Õ$Æ$ß~ÝÓ j`@ål~¢×æK*é[­ûC`æ0é¾¸Nb%ðÕ®40MÍ|ùø&amp;PKÃà)Ò7À@b eæºkBj¾\ÝVy¬ó bn&amp;(¹²¹OvÍý©BËÊmbúI=­&#39;Î9æ²ÜgW7[9ox£y3ùù¥üæ¦4J­«¤ Ág¹±0Ë+ï³$+
+ ¬êBáxÄüS&#39;q8i0¢6ôy¨ÿ¤õú~:ÅûÄ0*çA}Óc¦¤µI_KûOÕ½!Â¶QÑ5.÷äwØ@z]@}£ÐdrIò7Å æ¤ÿàõ(¶Ñé&amp;¾x­¿ ßÇùçoßôAPím®_[Eïá(jª	¥+¥BBøèä áÕ}À/åÓn9Xb`®W°ç^ Lÿ£uég|¨iõ¤æ`¾&#39;ÎY«ÄB!E*
+òõ²Ãê&#39;°(yiôhÏg-8Söëþ/¾:áÁØÑëB«ÇØ·«×&gt;:rËOþJ¡b~ªz÷­èrúhêÕà9µw$&lt;ÁTYaSñßjð}âê&lt;pö 8Z &amp;0N±=ÐÕ¸\ç go%qZIÓ	»N4«ØA²ý&lt;B°äÝ²oâÃë)Kà+9-3´¼ö1ì¤x&#39;Ø¶84&quot;Õ!A#¹OÜ|!bj^±³ÃCè¹MÎË, &amp;í÷M|&amp;¥5ÙÃüÔM|·*VlCÒ¥&quot;ç²z%TöþæCì_£%¥¢ï«9&#39;×9&lt;£øÙy¹kÒ´&amp;GLº¦ûÌÊÆßåTÇ~8C!F9l~ü4!Óâ]ÌB.ö#,ýÁÄL]ÏÌG%½oLE¹2ïû|ªÀdZymSP¶±¸½öú;çÅæ7B²3´-÷+Í¸ân&gt;&#39;øeüå§×âõý*gÐËÁÕT©eîSÍ©Ùä_$Pøìù²àÓì.N¹þóï ±·ä±&lt;)Õä¡H×(jOI³LrÄ¦F!Ö¿4.»ÞaA®1M{]ÚaüÆ^·ªIdSè¥BG²þ¯µÿü$ÚÿAqúïÿ­ÿÿ`6 áÿ5þ3þgÿ&gt;0ûÏøÏøÿý¸&gt;hN°©ßN}J¾ãm0mLÁÄ¿êÔpÀh©ÆN¡#Ý&gt;B¬&quot;óé6ôW
+¬o¼lØã_Ê¿Ø 1Ø¯_q@WïO;vÇô4O:ÑiSªI+¼ÀvGN®ãä&amp;µ8ø!à«·Í±ÇçëºÂnüqÕ;ÅÝâ×ýs¯ò³½×8 2JÂ9úði&amp;×á,¥&amp;ÑYr¶-ÂX§²¥ ¬±u®§¥z:t¸ÂP~$*çRvÿ&amp;%rqúi6/GÚ8Òs=i´ã A¼~Î{ÍbxmÏ¯?¨ß¨Ðcªô°Ë°&lt;üÜ&gt;´M{Ð(0ñî·ø¹e)):PX©qºrn.+&quot;æÆoy¯þÀ(]Ç¶£$âs2p¯lÕoyÖ¹­¸9â,p
+´èè#Þ4¦!DRÙ@P7ãIC¼P9VñÖ°ù­åo&gt;þéûòHÈ¬Þ6M«Fn·¦Çåº#FV²¨»WvN`úáó]»ÿrmÞË¼tmxâb¼õÑÙuZKxaõxaï	ÈéÛÛçw`¿­ &amp;aíj/:Û;ðYÓ·2Ô«±ú;mzå·©Î&lt;ß¯Åß7l³u¯à¡;yuBÈk¥üKxuô·tøç¹£P ÃþyßµÊàÔÈÀÛ· Ü:uMA8¼~ðREôrI1à½&#39;uú¥¤owÄãõèOIîü(]FÀJðô+&gt;ßâ±sàxyã-{ñ?5Y:cÁ¿&quot;Çul&#39;Ü«,w£ÈPVõáíéYTºÞlõMø=®ã÷xHDN¯&gt;ï-ÀÓ&#39;æÄWLXv-+ì11ViMßz¹Hæá¢SËs3pÀð?QLbæ9¡2á»ó ÔÙãß4½?ø\x_7Y±8à0oÎX
+~r+4âÙîû¢À¶}ö/A$Üëª°ÏX{á«Þ?ÞõyÊþû9²Æiméô#bºUâ8Î&gt;ßà#&gt;	#ÿ¤Úòû&#39;å);r*[là³×ç[D;ßúÓ=n]dØ®ó)2ÓMaÓuøk9½Â¬£ZÕq«Ý1âR{Þ|Ø?tÄÞý*:h7ef§êç0ahúþþ×ï¿ßLàL3ZtfO¢yßq #u&lt;xóßÙò\^Ä¯?E\dÎy°;]Á+à¬»r½E:î½Â;¨oÅ£!$lþ×UÂç«Å¡l&gt;¿íàóÊ4Ô`~÷ý?f¼d&gt;7ÁLWþ÷*þSÓ&gt;¹MGîScÍ´eðm6ÿ¶OÜ)I ò¼gÏevZ#NMÎ-ùc}Oefhâ:æëøùOHþà·â3ì3ûÏÞD5ªç°~ü%k¹ð1óßwþ, ñãï/=ªû»« ÙG9çÙæ/O1ÿ¾úÿUBäß=ÏôürÞæ¹/þ·/5þ Òå_¾ü¶.¿ùû8¼M	µ&amp;GmÏÎá[Ñø/XüE|¾økv^õÈÏwimYãgãåÃJ|Ðþ8Ú-µØhû´ßvj×ýmÁñ6To°ÿÓËÎa«ÑTlbÎM¤ûcÍ2~Q¢ñÌßépð&#39;NßÿÂIóï8Eþ§soý¹î¿²çïøs&gt;ÌûðJïq[IîÈ3&gt;ÈóÉ³W·cù·ÌxÖ~Û:ÿKf§ë®äØ_!ÞñóàýGðþ&amp;£s¾Cû&gt;|Y­úw·á¸Xþg&gt;ÀXøwn8ýgnøÃOaXð«çô9Ö¡îûËÿ`&gt;á¯:?¹ÇçÅkÜÁûïAÊ¹è9uÏg×ÿ1[ø=¡¾&lt;úÀéÿ®	ù9n2ÿ¢åµÉÎøo¾üßç¡Èß ó÷ð{qjv;záç¼ûÍC?xNrÑÂ$«Ü¿ÿ«¿ìQÿmClþ
+ª&amp;Ø W&lt;ªç_r&#39;±9ÆîRU£u¨øÎå®þ¶[þÓ|æY%ê&quot;þºz
+âðé?¤ÿLøÐè¸ÿÓ`{mçF¬þ6]óà^±-Êì22hî&gt;Fp é?g¡4k¶qÀÍÓ?ý¥¯VØï@Æ[^% ®áiK~näs:±·&gt;q0ì+Aûì&#39;G¢×0ë·£#.ÛClÉ5IA­Ã&#39;øãeTOõG#Bj-IÑOó&#39;ðnD³o	oÔÿÁ#]þý¿%õñ?e¨)þ»5øÏø·­çüZ$-Ü± ÷£TåTn2âÔ&amp;i¥úÒÁ£jÒõÊGD¬ìä`KÄ×KÂe§ßkdÚyÜ5âÆ©^Eê$w
+&amp;1?ôÎ~ð0Hêo¸¬¿ h5iÂ*G&lt;±{ÔÑ÷¬roÁ:¡æá7[ºÃì»ÊEÒZìºúùøýlcê¯cÇSÏëÏélÑîcë7E½j¢ê5BÆiL-ÁÆÅbåóÃFð^ÔB¡n¸)ìÆÀÄ¥b+v`krg+»»Ó|Xt¶cî$âÍ9fñÄn3Ø·å af*¤¬:ö¡fáÂ&amp;¶K®sAÊÙ&gt;Æ©&lt;VÚ?ÝæjØm3¬4ÁBScµ¨×(dºÐtÊn4&#39;of~ó°ñÝGÂ|
+và¡]fßOøÅpùÆÞL&quot;(Å7g}wb]/3éZÒbÑÑÄ&lt;ºTtáú¾Úï¦|ÌÍPO&gt;±µV:3½¨Ð&amp;yætõyÍØÓÛ&lt;çÊµ°JëÞ@ôÕnø`4*;5V[à2.0üíZ]C¨FÌ{v45îæ_\¨Öi±Ç7è^p¼Á|Ü»w¨&quot;4û}ÛRNlñ&quot;¨Pë mævüTÌ#ê-9h­d_ÃCÝCÌêûMû½¾ó/¯.±@	¨Íª`Oè°Ò1IÁn°¡ûøÖòýÚ#)ÞgL	èHEÁm÷1ÌóJ|¹÷ÏgtÖ¾ï&lt;éú÷_èÿµAÓ9è¬j¶äé¿²&#39;¸îô¯#Y©§.v×Û+±~|rõbGO3Hî ÷×??%æÌ¤BÞìr¤Lî5AÖ3»_}V-ögòÏI§àèì
+ìmËáv¦[yÿTdéT%ù ã¬õ	á!×-¼(&quot;]BâÃö¤¸	º÷øÆ;&quot;Ëà£ìïã3§!ìõ¾Ã ZÑ~ÔÐó4«ïå-uÐØ¦ÙTo¨A@²æqÿÚo6o¼Æx
+Zº¯®#UÕ.Í~¯¥ôkìí}H955Ôëuó»5§?¶çóípìò^PäA²P²gyß¡õsóê+%Ò.´XfºÝ((ê)±Ñcho;­Í±0%í¬#+¯ªKïçÎ-nó¤&quot;¯X	úN26Íø6½l ÏO©r£&lt;2FVôXç¦_z=S%ç0Áeáz-éj3A6æÇâ@;iWð¸Á-	¾8[Xlj#_Ì±ö¡µ­4_Ôae]ºÛÐt%ZAC æCàI@9xj	Ò¸õÜÞ¡_¹&lt;É;À/qDì[Õ¢GW±¼ß|56Æn,DÉ¥Zõy¬õ].^¹`ËX¥)å;0Î_¸&gt;zó-Í©9Ré;ýªÈ/ô·7ª(ÒWS[ðq¦ZLl¯¢ódÍÑN-r7
+¨ÅA¾±ørÊÔ~í£ðuòÂò¨U¦J+UO¨E/ª(&quot;ö]¨=1w&amp;2º+ÍÉòêÛXóBõÁûÑÜñ-dc|R)Í¯ù
+&gt;1¨ÊôòÕ°©Â¶
+&amp;Ñý	Nk°ËñöB÷Õáµø¦Kªp§okrí¤d§`·[5yjæð|#PÄd´áWéâ\ìôíù§k&lt;^@!TÊ¹%ÄßÌÃ.x¹%¿ñúYÑOãÎ`«8]ÖOøv+I¯2W÷Ø¢¯âX_FÜÔElô7lí&lt;¿%j;x&quot;¼JÙMî&amp;~h,d i%ðT.Ù±Å¯{í+*×_¡¿zãª ÔUbÞ7´ýÞÁ#ÔÒÏ&lt;ÄÄK.0´x
+à×s$üð-¾ËôÐ5&gt;çàÓoÒd_püÈæjrÇ¦Pý®&gt;x}¤Ü«ÜS½oÛÙÑVÍ¶½º²ÙJÞô½¬+¨XfSaÖw04Ö×GX¯f¦lpÐðö}Ä*C]Òf4J«KÈ^+fäBu
+*ù	°Õeý*VuÃ÷{áÅ?&gt;ÐaMæ~Ô,C}ëqÓ4·£Îvñ1ÅbÉL=»Ø[b,IîÌn4¾ÿ
+¡ÃR&#39;,$^}ì-Ý¯£BE+!(EÄìfô5~¥Ý[Õ?SJÎ&#39;íÆxØÁ£?5ËN5R.­+ÇzÓ&amp;W}ùDy	Aé í8òôGm9õ¢QxÝºIÒ
+&quot;9ýùì«8s]&lt;ÑÂ3F¥NÕ&gt;e6ê¥ÔØaê·aè¶X]Yn;*ÐKRä67a!Á_Mpåbç^¶rp[,úô©.|bpÄmóâ;´x	] {D­ë5¬ú1¶©}õÙE&amp;r_pægøó¾&quot;©°¥m¤qÑ&gt;sFbID&quot;tÐmqâjåg|U¹ù{bD`×FÐÕõ«LÉzQí:ÙÈÐNúªâ9×¬ù¼&#39;hÌ¢Jò!NÙ?&quot;ß¾P§ÍÌÌ§øÇ%&lt;,wÕà0|&#39;ííàôí®d*t´¾+¥¿ /óõ` ®;©d«´Ê~ð¸ ð&lt;@ljy ôÂ¥·ÀäØODûègØmóøÚ_(­¸_xTÇæÀOL¹¨À8 §&amp;^ï&gt;l¦ûn½Rw½øÇVÑÊ&quot;ÏSt^5!¹ ¹x6dûoMËVËª6&quot;Ð;Ç½ûòWÓ´+ïBò^-0\Ä1âµ&gt;%¡ãíG??ãqOqv¼l¤Î	ñÛl&gt;Ôó&quot;3Íú´N_áBópÔq¡,ýRÎ$S°¨&amp;Hà~&#39;ÎØ´©.Z³x¯©+uÙ&gt;öXw*îÙ»gÂ°«ÓfK½âûØçÙvïã+kÞÙ ²kBB·G­\ùR~Y#ØýXØ4¬ë=#&gt;«à ¶L­@kÖå|U*©¹¾åµã;#ÜÒ&amp;£k`ðsi$ænÑñPþ*¶km¾¸!u0Æ§
+x0ç¥À³­v¥cqÀ4×!qO&gt;°ËDÏFø=THZ6R`éÏr²h¹&lt;Ì?æ(0EÈOÍL^K´+LÍÛ&#39;àKëÖóX.ÔN!r÷~tâ!
+­¨ï°t	ÈÉ³ÊQ&lt;ùIöÕgXÛ½ü6éw{öJ¦ÍcÐ*5¾]ÄR¡¼oÁ¼vÇ¶V1|µ&quot;}©»9úÕJ­kV/µñ4»P¨³ë£Q&#39;&amp;E¨Gh?n£TpËzh©TCe]Ì¾öX?ÄþèÂwâö@ßURÍií&gt;«º~.
+énØRyRÒùÇý°i&quot;´ûJWØ4èskë(s£¯uYÍ|*b&lt;öy:4½øþ]«j¨b&lt;×ÝsvÅq 5Cn&amp;,_òêYMOyO³_ðYAÔÇ»åÕ[&gt;£Nco	·ýú{¥Óð{tÎR5ÂÝLÐÁö;gÅIt;cXo$*Xg´0úCéw®_é2õÎ+°àò½îwÁ§Ý5ÔØ%°Ð¨Þ¾þòDñ÷dð¹|ÍÏ^&quot;]ø&quot;¢*é+~R¨pÿn©Z¨c¹$ÄüuYýQ£¢:ë¼¿©qÉ²f¦Q¢tæ[U 
+Ôv4ðÅd·©¢	£+Góæ÷ä¦gÚ2El²|¥Æ683Gxn©w/[T(ÍÒgv¨È·Ô~/ïFb)Â/X2¬8«°Íly4j_þÁ°CUÙ+96iekTq*Byûh¯
+zï~ÃçÃ ë6F\^cØíYü!ÜlFQDßÎpñs/×èS!á¾ÔCÉ°ü®õADI1ÏkO¾æh}ÖÒ²ë&gt;Îg1ãË´ÕvñÆBq{Æ0iÊ8½Øtxj^¡7]Âª!@wNÙKÚ_~9)OÇ½ÿ°©×0+«¿@+7F@ð-:b£¤þÅÖl=ìdªDÞè~¢lÌ¹Õ+U9»¿uMÔ&amp;AO·ûCH­}®¾¢r0{VøNBMË»;h¦ûG]ç±dç6$©3ø¦)aï¯æh ï-Ò,z(åá+h,¸axÁ*[VïÅ7~a¿xjkBF@ÕæAóhÞe-[¾{cQôX½*OV¹ôwÚÊiÆ}hÔÛ¨Ç-=í¹Vå+ÿf¿kPaÖhszQw\ªstFCR&quot;º
+&gt;}wmÛ-¢Äl/*90´0ÍbI9öÒÉGeØÁÏMbÒ­²ÞNÏÓnØÆ­ùÎ|AµEÂõ°ªïÏßZVX¤ö9Ë:{7Qt1Å/©ÈGº!æ{ìVÇ¸ö~iÌyÕ¨ë[KDÕ=½îm|úv{bþ.¨ùb
+©æ5£þ¶í¢et?5¢¥8éigmLY^N«£­ØlÝ¨ á¡1MÒ§*°|3;ÜÔÌ |$(jqr³d®¦NÔk¤lýW»Ì¢pÅ&quot;i+¾;søÉUVázÔ|¨¬±sïÿ S]ÝIUÅE ~¾ãÐÂÄÑA¾Ë#+Èì{mjOR=Ãvvad1¿ð·}ÑÖöÑñÀ
+Ý!îõ¼aPó½­! ³¦[&#39;+/#:®Ô;é7ÂßÔëéÀß¼ûP³vD+µKà ç!r~ÿþ,,ÑhÁN~?&quot;òÓlÌÏÙkÕ*ðbÜLÕÏ£ÑÝ)T-Öxv;bc0.J=üà¸à¾µHÚ$¨éùÀ:óÈ¨w7¤s ï«îÇ&lt;Ùå/¿?à|.S;±nÉÑ$Éa¡¤=ä þßá¼ ªhjoi°Ü(ð¾z	CÃ®×Òél.ZQÀF¨Î{YÒ¤Ü©}ïP$Ì\è	:ÊcS##ÐwaCäxÊçID¿ß9vMZ¤¦ûUM´ÖÆN8ýn³ 7[ÏS76w â´Ýúô¯¹Ùç}&amp;_tASåUÛÓª( ì¡.À;C,u:ÉR@Ó¿µKß?u{Ê°}+N, Öl«;ÏàÇ_syîùÈÚ 8jÿ_ísîÑ£ô(ø­oÞãÊçîé¿ä;²9p@(¾¾ìMªZõÙx8h^.)ê­*ú8§BI¼ÝçQt]eÓ·|&amp;çD|®ÈZé;/$,ÂæPçgZ¥)Ø¦¸ö8KÓow÷S¸Ã&lt;mõ½bd¶O¡©ï8E]ôý&lt;*ÈOlÆ6ùtïY]»Ú÷AóßÇ[ûíñax`)cxÚËaÍ°4¶èÆdL?ðÝ·²ÚûvÂß÷#&lt;&#39;8¢Ö°nÛUÙóxÌj¿Dnö=m½¡*Ô³\¦ºÀF_jtsáý4L¨L=mÄSycXøÈoC+etÉ^íÊ°á¶_q¿\ÿG3ü÷´üª&gt;&quot;&lt;Úvr&gt;&#39;&gt;õEµ1§ÁClá_	5õXg¼äâýÌ¡[/¾Ä0êOùÓ|ëçè´dÞa,ñÇ	·$÷ýóÝGó%Ôû»ÿ¯~0èç¬Ió¨ØúEHÓm=x¿uöªfàÈ|`äåÌÕe8òö¯H¹&quot;¼ÛâÑ+íKç5wzT¾K&#39;fû^÷$$j¾[j¦jÝõÚaÞ
+é´&amp;7á3É}¢FY@È¼Bo*&quot;Xõ×±þ.|}e¶vÙômQmé©/½ÖÆîc¢|ön½Ú²Xk«®9KÁ|CËOhD!)&quot;EØ»ãzrÈK=téÆNÖû-éK÷ÅZ~òN$û&lt;ñò-&quot;Û½o3úV±ÌæzMÉk}¡}A`mÆ¯Jr+hS
+þæJþ ÅÚÌì!§6á·[âÐfy·}CîÒÒBÌZî¾éHúÀëÇXYewTü»/N2ëdª$-µìRBzT½ºæ²è&amp;VÁíB¥,¯·¡÷çG|sTiçcVGÚ×ÛæÑÚ·onù^µçGäÄUý4÷Vß|b&#39;õÃ5Þ÷Ï\÷ù¬GúH@dWP?)¢h3¨¹¢/Î¡¤q÷¬ï^»=&gt;kÆ}ÖöõÕÙæXl°_ÀJt¡ï&lt;ª1ò&amp;
+ëqh&amp;71þît¢ÝGV*d¹ïæ;Û&quot;TùD®(I6
+ØdgefÄÎì&#39;NØÛ²;Úøª;¤º[2õU¯ëItèFK$|X-»Cwr]¥èù§PÏ »dÆöåôëÇfÄ»Ü*X3Ï^;£ûKÌÛA³ÌÌÏSW×%	ÌÎUïÕöø&lt;WÏ¢G0ô:1D¥]¸Ç8»M ÆvÂgR¤ùGÍ´ôZTûÔÔ54\3EþÒ(FÓ=­ï5R_¶h9µþþ¤xah×¹ä©EûYZfa×ÔIO¡zÅ¼½j·âäáÜ7].^&amp;Ë¥#úÕ;¤-dz|@$í³Õç½BþÖ¸êù÷wZ1Î.ý+ò¾ÄdÑÛ;ëz¿ù²ë{-ÁÀù²Ñ0@ÁÞËÔâ-ÿJþ|G4Á¤â4Ä9ÔJGVþ¢¸±)uíqÙcàLccÛkHºJfçEu¬¿tµüPP%±c¢£ö8þIO·û\¼ëKè
+ó=äÍ×ùÆX0­[å^°ÔøÞAÿBà-©QyëÖðTba£7ÕÊÏ÷QÛÑ§$XtU Kúq©^xDoöêïK(s©ÉQñÇl:VòDmË4hhhp·[z÷W&quot;4}:î»rµçAp¯Ô2â¬÷ÙCWð	òJk©ÅÇ,Å¿jîò;{ìEàÈ·Q7ì4åÊox3¸1^::ql]vb¦ÉËëþ&amp;¾D_©i Ä1§
+ëÞA¡º¡¤&lt;Ãdà®FLýrXIÈm¹Dý{·=©ÃÄ(ñ°?ÅÜè2=LS·ýê#­þ´Ý&#39;9clÖúG4}¼ÞÖÔjñ]õýÓþÍÁ¢¾þ,hï¹/ÛÂÅÎ¯´ÈÌ·9 ÷ØRûÐ!ãüß&#39;DÔºêjýSºãZy@qõ{îÙ¶k@BÒ§×bLß¸@ëWòÔt	_¤lÈ±g¬Æ²[óL,føY·yAØÈµÞvpô~ùX2(õy6ZóH¨Ä5O·Ñïäo$ÆBë¡lrí{¹å´öý/²³5¶%Ûtá|¨p§k	^B7_^l%Ô:¶µMqÑ=}6D=bYüõÆÈè]vî]{O««¼n{E¬uoc&gt;8ð+É7|ßòM×0gG¥Ø¥+¹î [¤S¾ó$ÙÊå;¦(?të j·@S·%s¨z­Øô|áå
+¤âLHsV¼_Të © Ñ£PÏÕÏÊöþ¤ @rõúf¡ÙXKÎC¥æ°à×=¿6µ¢¸gzÑ6NûÏOâiù,ÃàUM1DuQúµ[Õúo+	¬¸´\Òv³ÊLH$#Ì³.\¨Æ\×\È¨T¼°.ùËýËGò÷&lt;Ü0ºÝ·eü¢¥ä4n].7nyó&amp;mR/â¦ÎÛ5E¸d¥4É¹GÙêlâ}êªêCãCÚ}»¼#®hu ³á¶{YÔ ~&quot;¡ºñx5cÅP¹¸&amp;lo&lt;Ô\*þ×óühñ2xSé;CÂ&quot;X¶Óiùû]#­
+MgíëTÑÖÄßè?hwú&amp;=L^Èó5~Da¼$nôú£SoëwÆT°÷½@¿¤¾·ÛNbqFoa2M$Fmt8 xheÙ6O¼ù.1¨â#É³x-°/fÐcI
+ÆOè½+Ôk&#39;zÏKv/}ìÙÃø¼$ü²^·*­C_Yá3÷Ê(lÆñf&#39;
+ªN·n}ëâ_f¹y\C;æ¤üC­ÊÅ&#39;¬@ÜJiî&#39;.qÊ9ÐÈÄ¶Ð/ËÛ«ÛÇ¢m©vM.@^ÈA»H&amp;TÇ©;ëTú|Èº!Ýí`:hÔKÎ[¯+¹ÉSVÙ&#39;´hgk$©Ï	H­Ê¬°¡-¥&amp;&#39;ÚäuÑ{ýºÖ ¤¡nb]sÄí¾¶ÕgÚÖsÛZ½³\rË®0÷p¶òøªÛ®½ôCr_?l~-¯¸&amp;&lt;©õ¦Õé&lt;Ñ³GÜ6BCxoe#3³m#f*oª­MQSIµ}Ö÷Xtk¤*Li»[©Y^èbÕ®¼±È§·\àúI\{Öô
+PAôNÁäo5&quot;c^Ü¹qÃ×¾È2ÇÐ·;ßì&gt;¾[&lt;}V»{©O´TXWJïhl
+Êfdíïa¶ïú°:ÊBg§³t÷i­7·&amp;Û1@GºYo½îy¡;wXõë1D$ÌöúéjwO¿J*ìÿÒØkÆ²°æCdÑöâfC}É×±&amp;+ØÞv4Y=¥föùb|Þp}omcx¤&gt;QÕu°&quot;µÐ~&gt;áRm­ L.®LÄ¤ã¾o².ü{ÐÝËr&lt;&amp;ADÄ£Ä6ÅDM­Ì¦Ø¿oï9-ÆÐ`cwRìwÐNmØø%øs½4ôH¥ªy-êÞ¼î2	ò·A}ÁI°Õ&amp;³ýÇ¿ï¾9¢R54ü ð ¨~N ·ûÚÌ0X·rkDvûÝ¥Q¶sÝªLQüv&#39;Ñ	nd¹ßÑcXò|æá$Ðà¶-x :)\vÉTs)&#39;GÖ3;ïö-ñît¢ªàµvÖ`¥îûÛs^úõZ{¥?KcJÈõæê}3øÒ´3ªn L{·×N«±{ùS$:j}[¿ï×¿mr»zéW8æ¢F÷GÎÛ!±~Æ&lt;Ëf1PÍñâ{:gÑóÞ»1±¨	³~&amp;Ù£LvÑ=-Z©±ºäaº2«S¦Ð{ÑÉ\wHÌ t,V1Ñ&quot;üºZ~éSÍÞYª ÃNoË¼k&gt;©`9ûùÑ1ÚñZMÐëèÔ7ý©~&amp;4¯co}[&lt;ägÙ£s/ä¯àºùmù£Õâ¶Ðt«Ã âðî&quot;T4þÉè[z âÖ·½c¯3ÒÓ-&gt;A^Iòm¸/æ­íêàKf7âîÇu¾a®^|Æ&lt;q¥W¢,.S&quot;}1]ñõcøKÅn¶.Ô²=;Ó©TôÖ¦ÑtÝgE nú¿++5¾Á¤OeBñS&gt;	´÷Í±?ªZD9K=Ú¡CË ÀLðH±ß~êÂEIùÌìw9ÚA¿QSó[¤\í4ËãZÞ2cVg«nG	&lt;räxnÚ½ß0=jlJ@ïÄn´éßiGúxf
+À°f1Èm*«JÌ@£d¹eÔÀU£N )fÍy!Ønhð½\ÌòÆt÷ÄúKåg©ïDüEf´Þ³7Ã1\ 1`Kò¨t-ëéXeäoPãi¯#mp&gt;yç.î£åµùÓ0R¸Ñ¨ËÚ4g©]¦i&lt;my¤úuè«I8ÝÀ,I«W¸Ø@?÷_b­[Ûf¸Õ/Ý%KtMTP­y§; æG¯´«ôÜù¼¾jÎ%`}úyÁáíÖgÉFZ.fþTáZØ)óPÔLkr9YNØKL§¬ÏlVÎ4þ£&gt;ßÌHãRCMÂöÖé4ÁF÷ñRÞ Íw?c~DÊecVÑÙ7ñú6w_ZåY®þà:á&gt;®^JÁikéNË ¿G+ð_&#39;*Kçjûzv°fÅ°²çùK­C×|÷ff+ûé\Z6d§Ø±ÚºÝ¤0 ÜWÔk©A´Óº~Q4ñø\Â#z8sÏ%e eeÝ?Ô÷9rÚeÏæë±»!#¿¡þBú6ÛøLR¼ÿËu0Éùáe*´JpCý±Ó½G{îj2-ç¸]¡ZRúÌfõnÁ¡§;Å!QJñ(ÿ/ê\Ø:KËý­µ¶µ@S8üW
+Ú³Ç4¥&gt;õó-~Êj1·4³yþ(k	DùbXz·}[]u{j7î]¹Ö¸5uÚïQAmSÄá;òH&quot;&#39;£1_JgQz¾  ZR¨SpB°Æz¸ É7P{?³³ñuùy¥à |aS:#&#39;÷ºê9O ÄèÞB$N±«Nû|ó®ðÃ6gj§ÚêÌ¾ÛÝw?~rÝiGN06§ÒãkÍëÞà	ò®`ÿ|Ço[ïvÁþ%Õ&gt;[f¿`QbÃJ teJSúRîÝt6ø®âOÆ9N¥lP¡74m]à®O6iPë³»ÈÕüÌào§_ðÌ¬¥¬±tÐáþÍK×ª×ôJªpézÐ#94`¹Ï$þnK	¹DíÚ©Ô
+./úP¥V±³Î§*I:¼K«m¡¹Ö÷&amp;eGDè¤bæl©5Åpa,¾;¥ýõÒ6o3Ï«~a5Ö@áòK¥vF
+¼l¹±ûßµS©U6Y³»j8ÓCÜõÍ[¡)WùzUµ-ßz#&gt;õç~®Ã2SÁö¾¡Å­!b6Ùº¯iµtàç9~ßÑEIHªÖ³èúlS%2­Yë©iù+Ä®òl²äl[²½&amp;·Ç!÷~ñS/UöTõÝÕl;ÅÙÔ»nªV®´¡wd[a`[£wÏëá&#39;ÑÅFzJ2Ëj0t£«ÈÊdÆ¬ÀÑrÙüS/Mn±¿øHz!Ói´³,&gt;Î¯®Ùëü¶:ÙíZJªí~m»t_XiQ­`µÉn¨È$¯ ªìö68Ä´¯Ç&amp;Fq+è¬î
+çùä üùëCV[°H]ó5ÎN&quot;î(¿Ù·ÏS¤èGNòõ:VPhüì¨¨Y~dPó©¸ 2]Rjk}Í»ÚCíQ¢ý:bKãÛÝ¡úÏßK½*=}ÃõÜ6TmrýÉCõ)ßÍx6çõ®,¼»ÏkcÚüÔ:BwLá.eÞoýpþYìÐG.R¤ÁpÒÔ³Uk+b`¡¸¶4
+ë!}p|§_àGã±÷q»½è1ÿÝËYü³¶÷[_äã®ü)³@ Ö,W/Ø´;ÉÜKmvþà&quot;:ÏÂìL÷Zû¶«sG?Ns&lt;»M|=Ì%UU²Ã&lt;+xóJ3î¹ëØåPùøÛj²L\¼âèÙ2Uò&lt;×Y®*ÚrëºÓ¶geÒ~9{ûáôÂ&gt;ÐC°3u¢S|åË¬rÆ¥~q$ÐqnÔ2HV©Fuª«Ì d¦ùêÄ&amp;?s 3ra!I®À&#39;æMÐÃ7Z ï°~ßÑx¤ÎbÄÙîªwª©TsÀÝVÐù=](	h1ÊHc¦BsøU|ÒÒ7N$&#39;ßòIÛt¸a²dÓ§¦´wóvFÔ¹à&gt;,jæ!U )Ñ4JÌcò?G®#ÇÚø¨f¾ì©~ß£Y£(?ùþ,{ùµàOM«Rý¡·FÈ!QÃ÷¢8ã¸æ4hºüè«ûÌÄ2É¢*IuNgaÖÅÈ¶øÜ%ð¦ü®|Ô¬ÿ% ¼¯!ÈþÂ{UKÏºy¬¬äë¶aÇ«x¥;Áf6|ÞQÚáé/¸7BVÚÄêfhüNA &gt;PÿH1
+Ó´s5^Ý9eNH0§ÈÔ-7]gs&quot;põ5ýfÍKgj:Î3Ùb¸v/gÜG\nfåËd0¬¯e!½anÔ4¾Ägf@9hÒìHýtÖ&lt;`å;^]&gt;=Z-ìsS÷ì¤kN¹¬D­¢ #y=j R9L¦DHÈÀGÌÓ¤IL7lwÜoD&lt;YÌØvj~p8ãà°f G|9eÆ®_/$èúìTÚøåuþ^Ýw§5ï[ùõÛ+§\&#39;OkPûînðÚðD@Aã«møN¸¤:Ð
+Rpà=_Ùoä·#p17âÿd¬®Â;½WXTÔ2`¹8åAú,ÚäÈËt×QðfAQtiéíQ6}RÂùc÷1FÁQ²MÙêWõ©h¿{; @í¿E=|nsL÷]ÏêD-Ö0:MYñ«Ä³fµP°×çBåØuø~PÂné¶öÊ&#39;j¼·_¢FkÄñ£)ós{
+ÝV0ýv¼Ó!¯! nç¾Ã,7oêã¸× nK¿ ¦ìÍ#,¬ª-!8/ÙRßÊ8yUb&#39;§
+¹É{HÌnÎ+pÙ²®P¼¥@4ßzßzÅ=¿²¸©Ôó¸±©ãË#¯¬5½ZGËÄëÚqRR]H¹@x¬ñ-,f?SÐïrÕ/+Å70ç­ú&lt;@¸Ë½£áNÌP®[jÅ`ï»©T|ßJð;Ë8®or^h_}Óä0²ÍkUÌRêeµw=¾8f¦£R¾êÈµuÅûR¿ª¤Ã¢I9éõôµOÄf¦çeBvù3z/Z=^i=fJíÓT.þÊmå¾¸Ê÷-ó)=Üû!´Ã ùäÆjÆ§ôe±YWÿqhf)Çþd¤Rc¿·@¹¸Ö=Ñm&amp;UQé6nTí^÷é#º:î2AÉìty·I¡tÉCâ/|ÝÁo,ä¢ck­sî£Í9Ê£ëß¦ªCÕt¯pÖIJG)X½Å´Î³³w¡XØ«ªI²1Q7ó­ÍÕl,ò¨ZS±r&amp;vUW¡¯åÎa±»&gt;ëQv~S/åa¼$¨ÑÏÍzF¶ÀÓ&#39;»[Ì¯ªÛ³gº2v~ýbwHÕ1Û {þ¸g,kõ½]Ã-8Sà%bØÊÅUnëÍmk½ãÇññ*ÚIÕOî
+7SýËæk	9ª(Nû«úÆÍÛ!%OÛíq@Ieü&quot;4Q`l&gt;yòÓL±emT¬Îè]}ßÐ@T¥¼©¢[õàN\ÁÝÖ,±]ô¥éþ{!ë³&amp;±åBcnËcìÍ1qR»Ï7(%&lt;FM¤y²YWv¶~ùÿ4nþ09¿Gý²á`»ÝIí]ªðáI¿Ð¥B/Iàºp¸!á#µ¸äfùõ6»	vøµw¬Ö(þb2§jsÙecÚTïëa#ë|C-Ëw¢­¶NDúq¶uÞ&#39;	@5k½É2¦g¸95zîæ ç)~5RW&quot;Z¶^¡ ^ãé!47¦£Ç0\è©Ãc9âNnAa¦ûÑâákÇÏqâìÓ{YòNÔ`øpISÉ±Á0Rº=PªQ¼{.ÌÝ«¬¯TD·d÷$òJR_^tY¶µVÇ#Æ»N~¨MÿLº=nþkhÒò¯(L &quot; 
+äÓÏè÷é-`CìÉhÈîåR_ô9CKE?]LÚ\ÔìÿnÙ\Ð´jþ¬»©ÜèÝÝõ­ÚÁëªt$9¿T¯¦gM4hóYA/TÏ¬qqRðz!Íõg8ÍÜHyÿf¦*¼ÿ5ýL£CZO¤²ßÄF&amp;èâÝ/p¬G¢_û%¹ÝýÂuü1Ðô¿69ñorÍÿ{#YåQÝ3ñ¹ÕÓë*ÌKÁÀãä]ç[Øð¯&quot;6³ÊÌyS¯¹&quot;ó[/R®6Á0]3¢gE¦DÀºîu
+.±ÆJÝ &#39;Ë%B»rïVTJ4¿»G2¡&#39;Y³³S3ý_¤I~a5[/Þâ
+]Õÿè53báu#u3~2f@q,Êº­&gt;PéÛ.l|-÷3ÝÒpE¤ylryökâUk9:+$í&amp;&amp;fèt½-¸\wÌÐ°Ïi®¼O3Îåv$¼&quot;SDU+~ã×ÉÔ½_Ù*¡C_^¯+kw×A·)³³ã]¬WcÒe+óDXúÓÕÄ%½y9#!±A=ßÍEG¿»:eî_o÷
+¶ïI|ÇîW #¯yóÔÓL¸)ËÜÁX ì^E¤lú~ÆDÓïbd£iâ­æºþ`^N¡.0¡±è£ýØEÔ­Kízw_¾çãéUAÍ¾MG»@¼­ªm²-À%e«GÒ¤vfÌ	ÐaÒµUeWGïkX?{mnÒ,³/·{Þmi/Nçh:T{N°$NG²0pÃ½µ&gt;/Ï¿ÆÖÁ&amp;N£ÈfÛh}DáTpõ(Côþ@G¤&quot;Ü!ZV0Tq±ÿÛ5·¬BÄÌúxx³ ¯\ùçbîLþeÿ¥EÆgHü|÷ÆKÚ£åvSI [60&amp;¸0Z#j×1ýt¹ j÷µ¯~ãØ©^ÍªFÌí1çp~
+t&lt;@ÂÑÑOUÖ1[vï×Ï°bzL9B@À«èÒÏýtþ£eÛ@oÿÅÞ{G5Õµû¢&quot;]BïzïJE©R&amp;
+&quot;R*M.íÅFªH¤+¨(   !	4I !JÊYáÝçÞ»ïgqÎ·ïýÞ?ÆXsÍ5ç3ùT²æoA
+c¬ÙC¾HZëþPÍ·¸Ó^róòÜ3âe½oU¨^×ÂÁ4îÄB?Óf»R¦ÿm#½V~âþ{äº(ÂæC2i7HeúêÙøY±ÑêìSh}þKójb|ÌÆ|øA¯Ìí¹T&gt;Ùe[½3T;¿.Ä²tÊë YÂn/ÖWy¡}q¿}SãóÃ¿û~Þù ób&amp;7k|©ÕÏ¶½&quot;ð¹Ù;ìÕÜÁå`Ä+q&quot;[ìõäPt¶cqºNG£Jnbºl7aÏz&#39;ø}6\]|Ê#²Ám*öþÙÛ_â¸1Mª-¥ÈáÝ®
+}±sÑ¸/ûäÉEÖ&lt;MÖÝrùÉGÑ»iKÄl_çØMÜæK-ýäB&#39;­Íb	:dØ§VÊXªhøíiF7XøIT&quot;f¬{àù&gt;$MæûW?åû&gt;Á¿ÜóõMößz)4é80\»VË¸qìÿt\DSÙ¼sÇTÆxúö4C_±%îÆT²&lt;tìgÝÅr5Áäã~mÇ%/®1µ©úßû¦¿Æ+¶`-Ð&#39;7±°ã(ÐÜ.!}Q2uüK}?_áOs×ò4rMSè Ihih÷0JÑ¸]ws5xÄ&amp;£nûÈ#*ÙdôOµÖ`2`]¬^os¶óÁµr \«À/¼&#39;±¾Ò+à{Ì½¯%ÝüÀÆÎyaÂÔ¹àh&lt;Ù&quot;f`Xz
+{³øT)ÕNÞÃòB°ãIIwË
+ýújúÝÝ¿5Û®
+24Xîàv_²{Éf[2HYeÓ,EÌéïä°
+k|×ñG7»r¼#,ÏaîÈktFx&amp;Ë`Ãd.åu½ë+3ÆÆ~f÷À½8íó]çíBML·ÐYîþÏ¼2lO&gt;®Óðlå3¤ÔìçL=­95Æ°7³9Â(#dWoó@&#39;òÖ:)5A&#39;ÕOvÏÂÎW¤?ÏÆm·&gt;ÿÖ¸ÛCq-wH¾i±ÓØ¼¯(3,­UºêlF&quot;KO®/ÜÀF¹ûCØ§»ZhÚ|æ©­vÛÔPû÷«á?¡ÅÖ/ä¾ßcä¯À!Ù%wüÆ¿õ¼&gt;yZ§Ìu;	þëm·«BÀÆñ}RæKÃºÐ&gt;ÐÀ¯´½w.¨2/µk&lt;ÂÎ¯ß1i9f~#+ìw»nåÓ]$r·ýç	ÄÌ¢\cÇÃ0ßV¬oûï4wÖW:×ÇÂµ÷}æpú7Ü{ùu$)ïßé:9v¶ýE¢iN§&amp;µ?)F±ÛçÄ=ñ_ÄVÈ%¿ñ{zëÆvæ;¶ê5©3ª6öÄ­£Äb*T0fyå.o­åmsãÚ½ÿXF³ù#Å!	.¼ÙJj½ÒçQKÁîwòÏÇ^éæ§J¢ÿòÌp&quot;³¶ÚÚ½mÿ6Ú&lt;©HYd¶é)Å&amp;:ºv1K«v%pS&lt;SVwÉözm£ñÑsêðaí2«=ÖÓjê]s^gÙ¢Tª¨¡®¬ÃçsåvlÊ/-&amp;Á~!®ýr¹ÔÖùò®Vgt³L¢ôätËê=Ê3àsY&lt;¨¼safÁ¼SIöÌTæÞÌÂ¦ô©½Pâ½|ôî¥KÄO-Í9¯Á§llÌmgú1¬}.³I&lt;ÙJíÓ%&gt;±µ^uû©Q4a#á»CÜ-G­Ø)ôÖ¤FúL&#39;^Õ¬ûÒ»§1ÿÚÚ]+·»aþâ²B%a
+¦.éÝsòÑ{ú·eùGë¸èGsùrí3¡ÚPµS{/vT-îêCùÔ?ø¸°»K¦&gt;`¤=|0OKXª¶ï¿Ò1ed¾¢KÆùW	6÷N£7~ba:,U#ÎQ·)êì¬=C®+ê[MR«ïWY1/D¯YYLúÂ³mô&#39;7ý6Xó5ß:É©Øè)¡z¢¼XO3åU°+õV*ÉzÏígÏÝ´õK|;jòií&gt; E]x
+²g!*åAì^¯õÛF¿ÀCÕu3ñaëÐ£Kó¾WçÿJ,¼#¦bI¥á¥âöËÃMçâÈ²îûEÖ-æ\ ÌþTj`ÖR\S^¶y5(://·cí?çóâi­«U¼äµÍ÷ÔälâY®5ÿiýS±)åÚSKîeWoFC
+Ãl&lt;³Æ\T×Ø¨.r*R2?hº!}ÅY»¶ªÓüL\Üpºá©ëô	#úso+XpP­Ókgó;ø_Æùïjír8iªìÜKÎìé¥ÇÒÁÜÏ^UÔûü\»8R96ä~ò¥þ}¯@Wwg?Ú}ÄçúL¼\~ÿØ]ÝÉ¶´3¾y§ÁZîÎ»ü°OArzû-â~·Ï3ED¼«*-hÏuüxjô)¬Çgü&quot;?ôwÜJøLadÇ¶ø¾KßjmoFi°åð¬6¦Çe0¬ãÒiRÍ1:ò©lÇË*Ïmê§÷ÃgÄíügÙe/É^3ÌÅ=
+ª²ûÕáÆª{AÇ-?¡Õ6Ü?2}fy®×\hÿF÷fç-f;ÎÏá\zØó(¦R©;!&quot;Í?Â³Þnð¾hºÍmoç/ÊÓëö¸EM°ÒTh8z¶ç¥ïwµ±¼ÇýýÆI\}aöA^»Émýg×}OÞinþÂ?VÁ9b(¹´îá­Q Í¥iêÁm©£UÃÎF8S4,©Q~èCÔ­£¯¤6ábïO{O·$u_öì-úÈÖÿìúboo°Z~µS±PbÜÓMÙÁ}VX¶-ý±zg¥kØ ê&gt;4Ý¹°x!ÝoîHÿ&amp;ñ¶RÈZ_®»b~rá¹Fri­áì¹ÞûéB¾7¥ê&#39;?±X[Cs3)~¿/¿gÀÜwoÉØN*?ùÓØÒ*Vv~8l8Ïrbì
+F)¸ýP³	yhyNãÈUN&amp;g~DÌüËæÎ!6gß=(I¿î=Ã°%¹àzä¼s
+ñ}¡éÚ¡â
+jÚ A?ÇOJ+ÀAðè-¹é&lt;[äÉÐ0Æ*²y=÷í-¥óçøíÆ´&#39;ÒZÔ:x¬IÏÖÉéÈöxå¬ÎõÞ»òTþ×ùy¢y]jïêäGh~QËöÆ*U¶y6]ÖQ	¥2ú±R}úSÈÓÍ@oHE¢JÃúQNt!n6¯
+|;È£¥	Ú±öye÷F4/{|®3ìÝÈåçöo»]ªÝº½¦Zªàç¯ñÇâòr)oÄfÓu_W²_OáüñÍÅºæ¸óSYQí9pæ¼ÉS5µ$á1ÏO·	8&#39;,¨aX/{\VNS\ÿ¦ËKJvO1\ýr*ä/KN*pcI¾PÆVÀ+í7dÃþ±¶Qø;ÁM@lþÃ¼;5ì¢Þ0½FzêÖôµz¤Á:0ÝÚþÆ¶ñÊ£%YÊ&#39;Ø/nÙ¯¶ºÔYG&lt;emIrsC+ÇoäáÓ&lt;åât_fsS[V:8WAÍîßª6*÷9ÿBÐ½ÙÉ9Òv&lt;&gt;u¢@6U?Ð.MÑÃ&lt;ï&amp;ÞcÑsQ³2Åíw6©g÷²»ÔÑ§Y&amp;mÅä2®§Z«4Õ&lt;OpTÂßã+(v·=O°Î	¾_äw^N{£í£±E +jrTJy+÷±ÇR(ÿNÍÓ¢¥ªc¤Ëýõyå!*ª%QÍ­ùµX*ðÄ¢¿BÖpRß-]¾¨ªã[Á÷çqzôÝ½ß9îNlô&#39;¿î±¥*ìW/°¦Èµ%ÂÏ&lt;HV¹ë_8i¬~E0¥ßä+¤§ÛmÜÍ6ÆtÂï§ÔM*Ó±FU7;¹gY½±ÖnS°{[Ï6ù^òUÿPé&#39;]1èø^ë\OêoR»ÔÑ¦òê·««=ã¾~ã9=E\ú«:OBûAñÞJIQ±ÒNiÀçÜè´¬iHÛª©­ó	éÞÛ(çìZRG£ÅR mI_sÇ¬í®Üv¥õ«xûûI¬KóJr°Uu¥ºÙhgÓÞêÐþ	¬ÌÊ÷ýóYnPKT tÉ°K½è-À´1£hðºÄÇN)(Kãjòï#n\°%s~ÛòpÛyþÐ§cã$è^W@RYLêÊ%®k¸´WÈU×aðqW&#39;ßºÕõ*]DêâCCãÞkëýÜÔFç5ÛSþø¼ST@1rmWAàY±-wÑJJxÛ°^Æ¸NæGçW[Ô±æ8a~óûÚÙVÚu.°¬fl$E½Ì®qJ&gt;8ûêÍÎ\×ú:CkÁYçfK5»G+ñÖöØX¹ÓÚË½&lt;Já/S2æ^ú©!D:xÚ?ï§ ëÌWÆVSsâ&gt;=©õÝÒH9@åæuÍ7T !m ´käÌsî¹IAgzC&lt;]¼S¥lm=NpY ðÒü£Ó­&amp;ÏXÎè©?°úÑ&quot;¶sÿlYÏSçÝwîhán Ø /º¢^ÏÍ®~ùyä}ß¢AwjWå ë+S)Y5L§º~k
+ÝcsÛ&gt;øë0_ÍÏªÓúöc7ãÊQóÜO®«X¯®¡°iLpÓýbÃ¼èóÊ
+YÈÍiÔHgoËQýäbÆî0fï9Ì Î6*2ï{.`ÓÓ§[\:¦f
+(	]ÂÅ0^«T|gî%£¢yEõTV%SÎvÜ¬M6y3bY¢òv9î$Þ&lt;¸ÔÜªÃ¿ªøü¦\G¾âÍ.wùÎÆy¹§«Hlª®Í®óFàWÂ±+á¬ß}9Æ-/¬güj7Z@£!pÊÈV&lt;ÏÃ­­!ùwÔÞu²qßÒà!t/h?×ÎÛR+po\VS_`ù¡Ï,5B¤É+h5ß(?ZÐþ×½	²}SÏÍ·Î{½?Ö9ÊÒ-[N¨!/­0/£ã[ùuóÜf	ù¥T.Í×Þ¨û¤Á÷VO£}Eä©#[¬M÷9;Û7ºÞ7íÒ|æë@ü¥éÛP/¥Db&amp;)óîäÄ¤ú¼P¿:{(5áÙ-&amp;¬&gt;`òuÑ`8/5ø*î:½ÃÈ²¥&lt;÷pì©þôò|N©Úäj^&#39;|wüÃÝ§rÙZ4!v½ÔÌiß=ô¦&quot;(þ81Ììs5ã]1¢`Õ-3ôóE{Ü³µ;?­mtv@aEÿíÄ`æØ{µÔû\wCýã^ç¸:rûê:h ó	ÇsñN=ý^	Øf GÿTè­þï°º^´&quot;VûCýM÷ãè¦×èÏ=&gt;õ44fÃ)h,7øì¥n?Gy{Ï[ëW#2ãÜK5Ï´+â b©þuBçÞ´(âÏ|(ÉWyzm2BÆa
+Ç¾ºÑy Ñ&#39;ä³W`YõäjëÑ!Ú)r§[]é¦nÎZsÛ8cTÛG4=ºtüjÝó¿Ü³¿ú?+J:*P±Hk åÖ ñÍ
+Q¢iQY­¢©üÖÌrþDî×öuÁJìEÞÜÒÏ#Ñ8ÓB*¦EÝÙêë.¡1¼àT²a{a¹µ¾Þá_°kÝs{Ä¯ÏLÚ×Dl|ù|{ËB9t×hÐ6²­aîª÷åpMßçù9¾öolþ8#ybëÏ6WFfEÓ7&lt;^/î;Ý`Ñ¨$qú$
+ô9Æ&#39;¯QæTcÈOQT°þ#Ì÷#ÉÏô(Z¥oÇ	Pî½@8·ÃûÂÙK&gt;¾o;®Äv.ñEë¦ìÜöæÌ%×6m6§ûuS9#àÀnT`çkÿo(¨DøíÊb?j«EHÔy*ú,1rj.îÃ¤®qlzÐÆÔK&quot;!þ6×:­÷c¬j-õHb44c?÷(ÈÌ®0ÄXôQ*Ð[È´·iô²465}Þ9 dútå]ð6×Ùª¤]RÍXóhæjµLCë®³@ÀÙÇÆ1vQèö f°R#GïQñ¿13´ê×´§ëû?¿,7±¦ÀUhÈÓÜ(Ø÷F8R&gt;ß¿ëf ø¸NæÑÄí´9+¡0ìÐðTÈ	æM!á\[Øx
+rªäjß 47uüjpÛ&amp;½&amp;x4) =Yêdó`£Èøq«ÔXA=toÞa£Ú ûA1ùOZ²Wùû:½ÿ4³
+]LÕµðw°í8yu÷É¶k_Øî:ÆÁ*P
+&gt;þùÏ&#39;òôckç·åv&amp;©yDfB?\¿ÎÆ: ùöwè¼L§B~§ýr$ªuSbä­Ó
+$Òq{T§,l+,ÅáEòík.ÑÄQÿô ÏÁAbþ9Òëå*sµÐ8iJìy£°?ò®y¨oïs¶7µd%iÿÇ(ñg2¿9N?zksòj©Íã
+GÔp^ýÊùÏIØ«%;v}~^üw^É|5®À|!Ü°o¿TÄµc¬Ç\q£°êÎGÄ :Yàû)×Â»ao£ïF)îîÒ&gt;«¦QÐ4ÕIÉ¯N4@5º¼)1û
+$A¨6ÞST ùH¾ .½«çæÁmÇµ|ñpñ÷cX¡-~û·/î×-Y¤ÿ¨nh»ùñ?ÿ ÒÑøDºÿø»ÿ&quot;»nlábZéïf&lt;&gt;¶õ{4$¢ú¨gcö4°Ìytx{çÊf5Y_AÔ
+àÏ¢çh¸ÌÃµh
+Ûj$Cç¥9}xèïjâMà0¤9ÚaÕláªBÂõÊ/Y}äá»|k¢À&#39;Jøl vCÑ`&amp;	¤¡P{.NHøk4EÆ
+Ü)ú1#WìÄ°8q®®$ÄãgöpQ ³&amp;ùÓøÂføSè{uÃæD Ó\aãü)ÞöhµMr1M_I7ûeÑ+5Ìâ]3ìóihoÞK ÓPÂ1;Iwv@¾2ZÂzQNáÎR­&#39;t¶1ÁyQ­&gt;$
+|ôÝ¤Kå©Qò³Ú(pÌøôÒ*F$¸±GDg)lzgø3âËD°a8¢l(ìF&#39;¡).DxäwlÝ&lt;%ü!m±Y`h:&amp;¶ zä tðï,NPX|fÁ¦oT.Y¦9 C?QFË/t7ÙZTàn?¢O0ã^(QµñI&amp;Õh·{ã!û&quot;ñ3[¨MÂ!LZÄ3¹èF8Y`´kNoÆñ¿ÀYú¼³S8ks!ß×â9Á9vb©Æ?ï$ i&lt;Ðz·Àv||%¡!ç¢ÆÈô¢¹Fëã
+,Ýnqç67mîð%!Û.TÚíîc¡«ÀA³÷ åJÛ°¥¯ÎÉæO¹ó¹wü9á¡)Øø2ñ¢Üä2esúÐ^iº0X¹?ó7òàðÚs¼zº²³ò¥e_d¾¨½A© YxÁÒ)@­#VÅÁÅÐ¯Z3gÀ+·+:wSè¿Ýµ7N[ÜG¡éMzº(¾p³}*Dz\ÅÁÔ,	%¦wU&gt;98¹y`uÜ&lt;eÏ;òØ¤_?ÅÌÈ¥Hl2ô´hÌî­¥ð5K ÖAîHªT7òEt¤µ`ä;É°?Åñ¦pøû&#39;ðôrØâHÔ»&amp; Ü&lt;à^s¢OWndxÈ!*Âóo ?¿4¡³ºÜáÊ!i_Z³È¢Á6NYÔr5¸~$â.ë¦ïZ¡sS&lt;îÍã·çèc¥­n¤«
+³CD§¡¶zhàlßab·)í0.åèn=héX0t¯V5á³;ÀÅñc¦4Å¦ééQ¬
+¨º/ó;åäxÃ0â±  +9/½eÄy5wB+ñH(ç²­¹¥Vp$«á3j&amp;p½*SZß§_¡{Úä¤}N*äöZ´?þ{ ·¬³}K,üªî ?k¨K¼kÿúç&quot;Ø¶©Gñå
+¼Ão^m\)¤a&gt;h¾¢\(E»L¸«L×rMV±Õ|aè7Xí¾4Øªû_]¤ëÊ45Ìõ¿!è$±3
+*Êó&gt;*°* *åçCEGá¯i:«^wënÐÒ%÷Wé¡»C!4;®dÇó|=&#39;çë¾æÂSön-|Ð ùÓLt¨C2ç²ßÜkÿýÚH³tw`UEÈ½&#39;ji&amp;ìëÓå÷$Pã»Q[làýf÷ÕñCÃû¶/ÿÑið·
+=«ÙÍïg}¨ÀÒ4¾´j¦²4¤¤þ@&lt;Ld(®à¾3eêaMoÄ÷ 1pN*ýîtêó·ëË`vÿV9Uæc*pÅ`÷ÀEââõÁëàH4¬CcÕ&quot;XßöµÎ%ÎÊÕC  Ø`çª¸C®G?3sè~Dzy@7úåqgçÜNJÉÖ¶U¼(ÖVêÑ0X93ö»k¤áË!~ã»|xd[~ÙÑ.Dóh5O@/A°Ä3ïÎSÄi}¬R¤aß²+Aw~Dü¨19ú&#39;câ°ý´&amp;¶Øci}C½½[à~6Y¹¦4 ÎC?Àlõý Lw/Æ¯ôDC÷»Ç)l]E&amp;¢a%`pÌ{¿lbÀ4±Vþöïë0/pÎF3Vð¤Îß=5ù#¨9*ðêf
+\M&#39;Iô&quot;/&gt;ÿwS#üÑFèØ®ç¤Ï4Hw¾n¹9süE÷&#39;Õso¯\7ïæpvÓëà¦¬¡4C9áNT`L8çà-&#39;~¼áÇ1ùï8ÿJ1kì$ÔíQ ïÃûïs ðÃóþ8n@Ø&lt;º&gt;9Uã&lt;«_ÙwYï}vzvß`hq[â×´q|ú`÷ qÆPXLÀ&quot;¨B¶aÓçM:÷dï×³Á4áµ#CØèmX©i?hÀµ&#39;$¯r¿b|³Ù0`ªjtò{ÂLÔ,-ã´Ø¾Äò5ÐwÓôl¿Z?ÿºENA&quot;Ð~Ý¥xG¢~(îMÞi IÒ¢h+)©4HsØaP¢vúý
+y»$)&amp;5PCqw÷&amp;oËd.³ o¬XñèX_ã_C¼wO&quot;@çÅz~28 ¶¹gIúu|â9PDyMèo¬oåþ4Ñ&lt;[äõëæ¾æÌdå87+þ uí5¾5v « Æû«lõ#È?Ê°~{ýe&amp;¥óýûëT4ÑÉ¾$SÏ
+98JqfÞ34CggC4&gt;á78bú51»VDË.º2ý&amp;Á^dFiåî%D2²ÙEÈAnÏÂJ¦¼Íí$Ë$8}(ïQ¸«3¬)
+xLÅªz&gt;EH]Hãîiï¦ô_ÏG¶³A¹5¢¦öãßxúþ_gÄ$ãÍäZó~|N­ê¿üÄú?ôïA¬z@ðã_ÌúýûÐI§¼Û¹R&gt;ÿò÷ÿ¡ÿÿSüd&quot;@7ÁÂl_õß@õÿ¡ZèOåñìÀ¿èßè½?ü7àãúw!æÿÅË?ô¿¸K&#39;|{`0Ug	ßµ#æØ¥Ëÿð%Wílº¬@§K&amp;s)ëJ¸Qxãés{SS£ÇÛ,Ì$PMÀÝZívù¹DÁU8áÜ6Buµr@þìO&#39;ÜÍqÁôJb¾ÜÚ+(TÞX/bÂýÊ¾KÈ&amp;¸R_BÎ¡ï&#39;Q{&#39;}V0L4í¢ü¿Æ^t~ë¬BMÖZ½2ÃZR1H)Bàý{}¦èÏa«Kq¢ÐÝæüeh
+ö4Þ[³Só&lt;×®ÍËïÖ_CX_WùþRí%¿N ND´E#Ü-ÔCüqìîpüY4&gt;ÊnfûÑÌ6¥O|ðVCp6¹ãHÂ½/ÝéÉÊU_!ÎÖ9Vùþ-q]N7Ô¸Ï]d³?s¢íÂç*pb|²e&lt;¼I@«%¬Ãû|5 ù×}÷ÇB6ýÒa¥öw&lt;8¡]ù}{$%ÒOÉÌÖc£ýxéjÖXÄc¯¨YùüÀ§!fd_iã|hò¢±rIêÅHÝJö)ã
+¨icC;M&amp;Ä¬¥LÕôÅ9¼?¸M+Ú¿Qó²·°ê3¼§]äPK¯úhëaÃf­{â^Ü~Î)Øy}£þúbX&#39;:·v²0R±«ÙÝÄz¹Ü©mríìè¹üù=Ø¾kMJjÌú¿&lt;Lb%Ô·åÝC¾gÍK,e¤ÅFðû­ðc#»^9Ú&#39;¶f®Wvng¿8ÖÈÞb`pJ¯ËJjxÉ&#39;Ã]iô±xZøR³¾ÏöèfpyrÞ&lt;³àÂ\·³«Ñp4GÒéTøÜQ~5H!8jÞZåE7ÅõYid-	ð`¨;nph.éî®cl³uÞÚ¼~o _×ÛO|ÿþ4ý,
+4F)õÛ×5$òyDGÏÿ2¬Æd®&quot;ò,q6SENuÜ¤JüXz§ô`Ká£:ÍºÓºÎÌEùqDîqÙëÒ?nÞ4÷ð}}&lt;ö&gt;êÿx¬°Ì[Z¢3Oî¶¹é@¹Mùª±Æ{¤óªwû§U¼£»ÝðE9ëQë÷¶&gt;[úße&quot;æ\¹/uX¹¬­Âz|f¯50;¾³{3ÖFikzgá£üÍü;(²?õRëÄ¼EtüJ}¸:÷@ýÊÓ_TÎwPÂjõ²®&#39;/q0_ËD^eµÏo&amp;a¡éw$K»QnþµêS^sfuçEËwÞ.¹!Â
+Iùî~ÑÍ@ôûcø*ôµ´%cyf ÖN§ñORy¦Û½¬Ðy%,±§.ó}jïì·Ð7ÅÓ&lt;.Îöj=Âoe^PÎc!üîÁ0ó¥7Æ|[5~éeÊ`#Æá&lt;ä¯(¹y{:~ãÀÖ#L$r=ÒBjë.Ýý«òÌäC§Ä -¯®\ù¸õ:¸cd4V)¿Rñ«Þ
+7ÙÝõ3}&amp;I©în9;Øÿô2.ldÄ
+KÕÎ-	±Oà&#39;aè?ÈþvïøZ×ÑN¦Îoã\7c¸eqMu=_2jó)µ¶Â¸îcGwÎÏLîBGOôòxbØ¼¹®16ú}D°!Ïð¾×%åoÑ4*3Ïfá&gt;ÄrÜoÁnæM:ÖVI&amp;!¥Õì;Ú-³ßêWê-¼ÂÕt&quot;«%­fY&quot;}	sË]0þ¸æêU,k¿²#m~ÍVvãÁ^7©,f)u&amp;·&gt;l8ó&#39;á»JÑ¿5/ÖÂ`oÁ$èR´ëCØ1Ô7ÑE.Má¥ sV¹!PËT`÷aNÖÄ[ov­ãöe÷KòÑa×VÞ^g§Ïeß?Çý|æ zàp?Þ+Ùoáìª¾tüÉÖ¦Nxë;Ë,@`ÌÓ2x&amp;áôNÆó´NÄnn:ËA¹¯&lt;(ì.Þ~p¨4ö\	»6a}ÏsØ¬ .ùï%Â ùHÍjf~õÂ%ÆÑ
+Æ¼Þó[´¯~pZK¬à]+ÎpÆþËg¿õ4&lt;³A×¯ ¦EÆ!÷Ý¹áoí258&amp;æÄ¥¯} ½òî»oÏ8¿¯³øçÎWµ?û:F.K¦õÒÿ¡ÿ^$´bõO ¤¾Ï+ª3|yAáîVè®-?^9±åÙ§«ë&lt;2ÑYf#±4w.7oÁÓ\K.]B){Á*·Q«&quot;ìa¶t¯(WvSÏYËz|ãyI^¯;~ma!îhÛ$èQÞSRàcF/&lt;FxbN+P9æÍÝbç*¸
+/ôö&amp;ÖÞÚJxÍ¤¢Âf[4×¡&#39;ØZ3éo¸NT79ÿ¥åþxÜ¤iÝ¢~î³µÃÊÎºP·ÞckÜßÊÄªðY£6.þÞéeßV#ðôþûØÓÜ­ÃÀSå`ÈÇôNÕD¾ýÏ|q¡«&gt;9ÆFî÷]2Þ¾×Òå,¬n;y¶ÌÍ}+ûf÷&amp;lªY~½á]q$Ã%ÞùßÅ¶ÉóíéQþSV¸®Ó¢Iºl½WÊ°fíº¿vÓ¾Å¾liÖ!*Tr´ÎÖ©{¹³GN²&amp;7QØ4.·ý¶,:4=w
+µóðôíäÀß#Â*è3ê.oA»îQdK
+
+µ¶cçÜ[lSÞ@ëpm8Uö4­ /na^Þªâ¡ï&lt;tJí¦}u[ñ/ÍèZ;Ö]*õª]¸S5g¬îàË÷äÝñëH&#39;ÊjÁÄYgSÛJ3¢{{a.©]wÝä/ÃÓ¯kOV;èì!ù*¹{¢G¥$¹ AÙ½D£±a±;/ü¾&amp;^÷´ÑÍI¼ØåjkQé¼ãë9©m×ý^îq}&amp;HÏ:[YÍ±Ìó¿Gún«ú¶µí(H®6d%ð&quot;·Ïi»_dÕNÝ`²y1Þ­·h¨ÎG`óNo	m&gt;&amp;yÀ¶=r]UÔsÉ²PÉÞòË¹äºTÀºC_GùK\Xú&lt;|lÐG¾^~f6\AÄ·GÏðÝmù³gä²¾êMÛ1p&#39;WéÃõv7²×CÔd&quot;¢Ñßå3e±__óËñ³ÿÌñ
+@?¸,T;öNÿÝõ%ÂkNfì/»7Òï¿ÚÛ¢½ïlà÷Wì¢Ü*fáHï,&amp;`&quot;X££à°özêr»6Ñÿèþ0W9úÏzÚë·lå+oô\?*÷bMeÜ­Ü$&lt;G¢þB2ÉvväuQëake?sgN«ÅqOÃýQô¾Kä¹¦ÐýÏâÇoEÓ(â©Kî×¹v{æê¹b[â]&quot;ÆQü£2¯F³¼&gt;:qjî{ùvÁã¼¹ÉYg;vKÇÙõÂ]	Ép
+F&#39;t4Õ¯AþÔînnû7.QDïcb»åUë*]&gt;x£¾I\éJ	ë)¬Ã5Ô/ê»T5^Ù]kÈ8jï ¥^&amp;`Üê\&amp; ¨²;{ùþi·½§§¤_¢~Áöøº^A/è½ë:S$ù!k2S2©OúÊüü!Íeýåïßk«Y»^¯&gt;Ì(9Ylî®ÜäË+WþE®1A7´¿&lt;{#æøý_ÞäºXMáJ±+e×¾ªjS-wè»a*ÀÖâ½ëûüQî`d¼+oØãùÚ+Dï¤ñG1¼XÕó)Z:&amp;¹RØ¹ò®ß$Ëxgt­y¦ÙXU@Ú¼ØC,E=lÃ¾Jåg¾è &lt;§óÎaBÂw+Î4ÚÔ)&amp;[1æ`2|&amp;ëÝz:â1/ØÅÖ«v5¥©AfÔä	t¿Kÿ-4sÿ%Ù-éõ«ªÏ+µ(&lt;Ê@èËcÑQCû¹8©X¯¨¿º!^á\ÔÚää:øt|ÃÁÇnã4)|äã¶ÓùüM$n;é3«WNÍß:Âeô8õ}ÆnvâøêðÕ«eÉ×ëóYõ&gt;ÖÉCÁÊðîEÝaºSô¡xÖLvJübD0û XñÀXrÛZ¬X!P¡AÊK¸% ·|_%eôåÓ!ýPÄYu6£qÁþ&quot;Y*ý_Ao¸Õ=D\£z¶ë=Bâ±öwÕËßüÎ:Í¿Ipõ¸nÓðÕÅ÷zOõºS·Þ:1eÀ+!¦Ýn]|ß)&lt;a[·sUlõ­q&quot;%OËTbí}²V°]Ð{EÎ¯¯Ë{NFt¹Ç|0Ì+*,wûD[ÍÄwô_9çs´só+p½êù#å
+ÕRÞ.G:ú#&gt;|7Öoßhz&quot;ò³Gé£FºÌ¹?\ý¯ïÒ¬G_¹ÍôÿúwXÿ¡ÿ=$õLéT«_ðMÀù¬:Ëo®ôAåD¶ëJB¶âVÉÞIÀò`ù&lt;RæCÊæ}G;¾Îr¾³©­w½PÄS!bj«µgäÒ]|BÏ&quot;LË«ÉpE8&amp;¥¸ô°,@ÖÈí*\tMwÀ¾-á¢µ5ÑÑ¤!ØËÕ­[Ôy£µN©¾Ô¼x×æÇ&quot;Åáÿ®íOdÏµ^ë2  ]ÀQpÃS­ëzÇÇ`¯Z¡X.`\®åS[åM] y»+Ót×©¯9½8×É`=å\ÍÖ&amp;`[ÜDþ&gt;§ÅéÖ¶æÎ CC­*©djêGK²W×;Ý#¹ ´`o2zSR¢JHySw×zZ«ü¢gbÃp_æ#Æ¶~GU]%û¹K\ãæxbRÕP4$ëÎ_Ås/baæ*úÈ\§$N*&gt;å?D}ªZÅ¡°V1Î{ïR&lt;°Á¨Êu¤_¤£ôü@Û´Ö=,t&#39;¹Ìÿ*±$ÚÉïs5³swZÿë4ýþ=Èº¹ýí&gt;`á¿®·ÿÐ?ô¿BdFR8£4`kÊøÏúþ¡ÿMÄÝrI¡ÉÚýdiý~Ï?oÖþCÿgHEI@@âc³ì?ñõú?FÓT Xÿ³(þßâºu­%yè`@³y°µîÆ¯ä®#¿ê÷ãÍ84W&lt;;+©q\-»7%I?éçÿ	Ü§-)ö]V	?uÃ,s Êxòr1ÓÐ^ÂÞ´ÇÆ_ÇT¨ÀyFÀlÿ6ùyùÙO¤äË¹;ÂEú Þ&gt;nùo»÷¥ì¥ª×1Ê±%â¼¸è¸é*
+{&amp;é¿ÞÁsXZ²vG ÖÃª?hýÉ&lt;÷íçmÎ	
+ÉGÿ=Â}îÛÈÎ&#39;*9FUB÷J`8VòcdåïTàÕ[* t2ºPf+5
+(²#±¿`&amp;îØvý×kÛ¿âÙÃNéø]µ/L³IÚðv$ö[R·¨ Õøù8¹ºß¹,LÉ½ ÕÓlö¨R ÷(X %º¸¨(ÍJ¿Â{ÒÁMÑ¤º¯©@ Íì®Éíhòý2÷I\±CMú[Æìï¾04QQ3YB9î¼fJæ®x`¶Â]âýUbJiæ ¡hðç6SºD&amp;h&amp;Læg-Ñø_¹è?¶°a±&#39;7ØlZ[$ï\§¤»Íò
+$faBÏãÈ½S9øpûTdþü=°CãN©¾ôæ¡æ¸:(¾Édx.ÃcUuLµTHæ8AÍK£íµL(ÞÙ§rgv µÕÅ&quot;NWáùÞaÍoqò¹&#39;Ò]÷@ÊÇ]§	y2Q;o	Å»Ó¾²ÌÉìZ¹Ù£MA|\YÆ@kþ&lt;­ú
+Õö
+Lãà4-°O&lt;&amp;Ò¨6°ÞLÙÊÆxFQÓ´a&lt;XÞÃ&lt;Gæ:h@¾¥ÇM*9HÙ!k¡ñGeÂ4°ÄþtÈ
+;§z¾ë
+ù8ÄeÚ`¤)óA4{Ë*¥MpÂ/Q¢¢ gÖ´õÌ%jAÃf)_[ ÀØàcHfRgz4 ¨¥Ný=âð.3I LPq¡I×Éè[qÓ|-üÝßxÏ°Ï(\7
+,î¾fÚàN¡GPG!¿¯[#1,ú¸TÇÓ;p`1QÄK;ß?ÛâÄßJeöºn·§ûh&amp;¶E\Ð¨U!¢
+À_WÀ0Qgê×dþ2b¼1÷Ê ! Ú/:ÝÅý´îþ»*ÊHâí©@G]Èo*Ì&lt;¨. Ð«£¶ÕQCd¨M4h&quot;êÇ*Ã¾µ«ýQ¡KJé¡±óØûñRÏYÄòÝ*­Gñ\èfe
+ôssú(ªko¢)³#cÀGÀf(_)¿¨@B&lt;1¿ß×0[ûs¯hX%é;`&amp;dRI¿+j¯¶eWIâPµÁè,ÎyÆ´-Qâ9ëY¾Mb­Xÿ×*Þñ§âá÷úS&lt;çQ¿©ÀÃ_àÈWe9¾w§3¾X7ÖgÚ3ËÈßòa±L¡|Ø=p;ÿc}pGA#ª©¥zÍaH8°&amp;íHáf¡ã¾°ýj4`×ÈT@E;R^â¸G}ï1¢¼äærÔ*ÄqXÓÏ@ñÀQ~W¼H2&lt;M4Áæ°Ð!6Ã©@ì8¯èÇAÌaB37©@}1°î}ê¢&quot;þ®)lnå«
+úú&#39;ÌÉÇÜat£/Ci²ù!Ê¦¡?ÀãT¿cÛsp²N{A^ÉÈçëÑ4r¾`Y.Ä¥/ ×_q~¡°¦´ã»ån-Åç7²AèfÌÄ$±b¿&#39;o2ÍÈTbè°ÔÎ9ùt*ðÔ
+ÖerMðKºê Oj*1Ì$±E¨øiü^Oi)å#ÝLXA¤YäqYK%o3}ébuOgëÀÙ1|dp]¿e÷öö&amp;ëY­ôGäÁñÃ,ãÒuÇ´°±ÝÙÉ	OíûZæ·³þ×ÿW|²4ãË{Ïwâ¿XuãPKKHoúá²ÙþoÓË/&lt;¢dçâZ²õ4­H| ¯¿y¦lÌÙ¥Q,£¯»@&#39;pÐ¢[AB~ÓN:äz+ Ãï_}¼Z}WýþÒÆÐäCL
+¾jÔöD$àÞM2Ï¸sÕv?ÿô
+p]VT.ÇX	á®~1NG×iÏß4dãÄ$­£/µz,ªX8/A#ã§Ç¢ð¦ÌÒúÓÞt-u÷v,·ÐàjyÖ$ñg?#-ö¾ïkhtC^¶ÏÊøu~ëÂj%±A2X¯BY¯ÜÕoÓ;Ø£È&#39;ô®f%3#V 6zpØi{]Í&gt;~)%?ô÷¦ÿ1·/+#cRzx|½Ë©Ãæe6Ó¾L$ß·ï)$?½S¼n
+\&#39;´£p}@OeÓå½¹¨ÛKîý? ½Ãóí1YÏX?&quot;a?0|lxHY!¥Nyïnô¡¨Ü²ÂßÔBKv9µF&lt;¹´¡2oÏ¥çg&amp;Àð§ßT%\VõÈRÃðö·³äWºð/}á¢¢&gt;ÃöåZ)ê²3=Óìz$þve{)då1«Á£Wôíf#7O,²?5½¤ÖYR¿1 Ð!¸íxDk³fLqÌügGbüÑTîDÐ·ÿLÑ¢MV#{Æ^o V÷6%¤xAix2eñí¦¦)³2Ö¼[å&gt;æeÌcÄÊQ&lt;­ìA:¿Ý³­õÅ-ÅÊ£Ã`&#39;^Q4N*\_ºJ{ÚÉY¤^ûåÈ+Tò«M©;ÒhH#âÐ¨é««ü¹#
+æÖìxHtA¥DàA¯ë_¥VÕ¶F]ÏËô&gt;FÙ}õ§!,¡Ó\»)E?­¤,aVi66¡ó~ÎÄCù¡Ó|jë~¸~üÕ4WÍà)IòGÝ&#39;`oÚ´£¦²Lêf&#39;ÞuÁÅ]í1Ü&lt;39Û mtÊ¦¯Ü³P÷ÜOp.»sÛOåö2@tÆºiÄ¾¾ü
+
+nxÅ#®.Uz?vàq 2Îx2AÝÊªf¼&amp;ÑD¼í³kb¾G®iy_~gëUIä¹}ñBi{ÉüÂÉâxNw°ÂÀá°ÈüQ*°Ú¯À[:Ex @ú¿&quot;îÈm!_ÒûácIçÐ£
+L:/¤)°åEùDÛ×ÀøÞ´þwÞ_Jà¢C÷¼¡°{Û(²â¦$8P¨¬ØÖ3Æ¬&#39;îä&quot;9p_OøÏën)Mî*ªg?q{I#Móõ{
+7HÉînb[×¥zakh(dÂSÞÙ÷[ôWù¿R³à&amp;Ó5	TàªIæ9Øe2ð&quot;Ä½EI,&gt;¹ÔqnHáØ,=¡/É)¤!gm4Û`Lì&amp;ðfÓ[NåÕ!Ñûp}úX,é¼².sEèÑ:°À¶µè4Ú6júÄF5ôZ+òhÊ&lt;¼ªLÒ:Îf5!eiâ&lt;îÎ³ä&lt;ÉLóSýNÃ²ïÓ Ð&lt;Þ¼ÖC	i?íèBïÆûÚÍ?IÂú	îdàÎPé{Uâ	ÕçÆ;îRÚõ^[j	&amp;omoq:Ð»¶v½G5í¹xã¡?²%pê¤«¨Ñ`/l©&#39;ÓóÍTj:DºXfæ$d¡pûÐýÕ+$_fÎð¸ðÙ¿1|=êHv)ÎèzS)&amp;Ñ&amp;¬ØÑðòBÿÊÝ¡qÀO/*0©õ¡ïM×ìÌ»r	w óÌ²h¨5Æ±CÊ6P¼§Iñ?ýÙØ`q¯MÕ ¦!Ôaõçg
+ _I(¾wóºnq&#39;9Pr«rsQ^IÂTn¥ü
+kàå%ª}·&quot;ÿÕù7¢FLÜ §È¦Àq/5åÄ;=ÇdHþ­à2-`Â=²6Oin .6&amp;1	£ÅæÐC#?&amp;¦Æ#õ
+3pßÉ°;Ç+Ý«tÓhì]×øÎ¯îþQN,3ñßå§ïÕ¶þÉãü7ÌIPÂ.v½Ñÿ8±E;þÞ°ÐÇÎÔúáÞ($$ãÄÂJo±x¥µx}Á	SBÿ¼9Úy½ó}Çqûë&lt;tBÂÔ¯ý)¹:çY=|\%þû8éé$lÌëê bã§Ê°Ò&#39;&lt;&#39;µyÉ2ÏÀhÆ5â]	Â¨YØîÔM Ó«ðLãÐ÷ußªÑùÁb9@yêGüy×ù!æë³)¨_³´eo§ÈÊy91¡w?R5ßs-Xü¤sVTâñ`Ë!N3ÉA÷³T Û¼L¼¥(Ð.ÆÙ,fú7NOøÊ@ã)ÛEi§ß0Í2ý%D=úci7 è%cO(±º*3Ô:7Ù*9kytÂ?íVºÁ~ñ+¶¦úºÕ1¥ãoü¶-ÍùºéVy¿¹÷7&lt;Ì#ü8Û©&#39;Â
+*ñI£E.öØÑÅýcw}s
+Qò,hèèPÖ
+°OzÄï¦qïì«C-ÑÕ²¶­üìë{k(Æé Ã3tph(«¿Y `ÛäUWÉÇì^4H¾5ý?%¦l··È«í4ëâ¯Á£ßHÿã`@Ñpèß0s,Ô57«v EËX/ÈÏÜ/ÑýyyÔhæò½í8ÊÔ
+qä0ßèÿÀïlªÍYý?±_à¶.{
+O**Wø34Ã0RÅ\:ÂøÖ&gt;%«¾AåRKV·ÿUÉöàæ È~A³öÅÂ«XÈËå ¤æ°uÙîë_YøJËr4õ7~ý\á«ÞMÔÎ_ [°où&#39;ch_ÔG02RÇpUYòNvÎ]ýÙÕ üäBSÄÎyvâ!,ÑgLË_a	d)4ÐoAqÿA^ý3Akm ð´@g )ùT ÏÔHÃeC³Ýrôßð/ù üûQ-``Ç	²mâê%[\&amp;. 1þ²þè&amp;Æ1uA&gt;×´ïúëòøzíÿ@1,{Hà9Ä_å i³Ô1FaÞM£wï!ÀþL³îôØmïXÆù ô]03l]Ç y­IPÖ}x\
+Ãp9jÞØÃÙåäI{B Ã%4ðZt?5Ìî¯J&quot;ght¢Ý%J% aÍàmÕN¬u^aÑ 3 ·m!&amp;øVv5ToÙY¦Ìç¸§Ú&gt;ÞíF±cnTâC»&lt;)ðV	A$ÕS¨ Eë(Ï%ÐSâ;÷T~ 0T=yOõä_ZûQ²ËÏCì&#39;3Ä}@Æób-â\tã¾#¨½C8o*XÓeÿO$þµeÜ)ÄR2&amp;}ÀcGù5b²³ Oó³A,v1Ó@ÑÿõÜÈÿ}ädÁ«@&amp;dn³ }bG¤Ü(÷Pd?®¤ø%D,¨9µ~zKñÜ¯IÚG©@ó2bËöÔ´Î¿Am^2¾¬êIP§uéh75R·#Üpw3~&gt;á{â`=¹
+&amp;ÌLa³«	¾è²»Y p{\]OðE´2ï¦$QÜÝCi62WYaZ4@ÂVRRheX?(CØ§ôÀ¶
+¡QMS&amp;§øÙ%w_Já
+×QNÿö4¥¿t! 6¡xü¯x°ñ!¢ºÂÅÉY
+%&#39;Ü¢E¼)g©6¿ðªwM4Gô©ì£ö$c&lt;)ÇAgN´­ØêS²Ñz4ÑTß9rQ½º4ðªx¡°i¦Wû&#39;¯ß/¸6¿V±þtí¨ÍñåÿÀ¾;ä[¶À&lt;9j¬yí¸÷Ü&gt;Ìô(¬ï)·¢iË÷¶¢/ÔF¾[-ÁÌm)*`TBÃ;«\^&quot;´}	¶UÅp2Ýz­âA&lt;ÐiW)ô,Ü´#Ø*b«âÙ`ÿk6M/Uv]ô¯FÐ&#39;Í{vö
+iÌµ¶Ìý2GÛQÏ¿Ù;/;¨×Ì&lt;~]ó7è-y)\»¾­j¥
+ªù1èj f]ÏßSOrû ÚØf²Ñ?ç#À1=H¾¦à&gt;Ô2ÂUoy6ã9#ô¥4\AJÑé\gÒ¨9âÊÛ5¶ÙÞê¿mºÈ¹è¼0VOj»QdiG¢yº°ÙÄ¹iéðAhí¯c°ý&#39;æ¬JN,&lt;ïâogâs¼eX¸]!®&quot;0&lt;PpßÑRz¥ëT_W&quot; } újkY±Ï¨ñåK{OýæfíÉäxuûdé³Þ¶	ÿ³óûúýH$:Ñ{:z&#39;j`F½GnQ&amp;½Ñ[t Q&quot;a%D¯Qfè&amp;Á×ÿí]Ïºk=÷ÅïíY§ì³÷çû;ûìÃxîXt?¨÷7À3Þà«5Õ±Àie¦f¼ð/:û¹ÿÇß}¶h!¡µlÊ[±ºr«W%çY×	z?zé)«aÙÿûs,kËa½ßäÿ?³ôÙBb=;Pvmø&lt;µÑX×vÝP÷Aêèm/Ôÿ¯:¡ÿ}¡µ/{ÜUS3^F:yqÒ¨ f:ý1Øàº[Ílñ±t²cãçì&lt;$ï2CÁ[÷ éíI hmõ\fJåÆ&gt;õÁ°mR´à`ÐcZ¾VÑöîÇ¹:ÍÍº-híô¾Mr£éïk%9d§Ãú-ÉÌi!K@ñ_U·YiuF¹ã19l.!÷l¦A¿9ðB1¾Ç¨Ì®ë\ÕÂKp&amp;¥=gÛtT^Û¬xæ0Výé)3Î¼¯­¨$ÛÑá·Í+áÓ=¶ñ[ûm*p» /Õ[:Øê²å´gVyõM$,©Ú&gt;Xüþ¢CÔa&gt;í¦sI?ÿ´k¿&lt;¬TRâáé1pe	&#39;,æüq¶W¶IîRË__àVEþ(tâðìê&amp;õÛ®]ëBåãÅA$YÖfä³èÐ3DôÚ]§ÊL}Mým	;fJØ»cÑöB&quot;ß(°©`RïlT ,e|Sà!ê\fæ8ùdÓÄé&gt;cð:&quot;13q¿x¡ý	Vð¾ A ù ùÚ3Ê/íÅ£0÷QlüUnÓFU$´ä&#39;Ô0¯Ai&amp;Äz¯¤{øBÌÚ %£;¹¥Ïÿ=]¦×0þ3á§eÀ0{¼&quot;,íõXGïvo5QÒ9¢qjwS©^ç&amp;Mxã&quot;ÅïZðóza¦&gt;Llö«Âè$«yÃLÀØ`*ìQÂufÓÉ&#39;/ýØÅ©¿]alôÜ¿ö©C$lÑl&gt;P£¦&gt;Å³¿à´|wZoÇçÿèÆéb¨çæ8u)ßyÔXåÓMHéé)°ºVdº=&gt;bR;v8þÎ_È¾ô÷ôÊA=ÄD¤&lt;uGE#J+åëÉËÖgi¤h1CdÒÍÖ#8j«Uþ]kXn¾Qòï!ýÊ 0¶æcn	ò±£@Lu·¥ðÀ4¢nÃ¹¾¯^-±%ÎÚÊÇCÐ¢R³fíq{±ÉãtE&gt;«(Y []aÂÚ+áP¿ÍÆÝ°vB»éäJ¾êíÎî YÌ!ÑÙÞâì[òéei¤Y11hýö»Ø¥± £38Ð
+¥I¤ð¬¢9¢W£&#39;?ADë¦Þ	Öúª6û¦(T,M$|\½8Wbþ*ò½¢)ÏÛÀÉÿ¡çn&gt;]päc{Aø÷ÁõÆÅ[{=¿ÿÈ¶é{¿Il%j×ufÞX¿ÕãwùÝW0«b`2}i²×WîíÊÕÑiWm÷ýM&gt;Ü-£©°ÓtXá§Ú]F:o ßµ¹Æ¸yG?&amp;æE&lt;ç¥ö$=Á?øs÷Ê×«²Ý7ò­òQ{ÍëJÿ©;ßéµ ç¯YÂ×Z±÷/ssóMùÓ{IàV»L³1j±+à-~&amp;&quot;lããÈ2Ìv$};½-¨ ZUÙkj´@à%Ð=ú±KÃ½&#39;}&gt;s¯êð°W&amp;¨öû¢á~Òt¹ÑåE¹(O²nÎñNöËý~}§h1?¯ïc¢Ñäý3`eåã¤`Zxb¾£m¶J#ÇÚ§ßÔ¥?ÓÆi¬ûÒÈ,@ñ4ÙVÞê¹|ò½ieroé,Y]ü²Ê1þí3,âû_e³¸jòÒ2ÃyAr4C`­¥U?ÞB6Å
+½)ÏÄWÅõe3ÇÎpPKÇKîéìq¼ 5úÁ;b®7-R»ÔÂâ6o -®%Ò\¢Â6!GÐi­he£õsà{|Cf5ËW|Áw!IèîDæåÛe ýz¡LmJ7X(wf3ZÎ,,M-¡ë¸Åa«[öóÜMVce2i\s}¸Ñ
+Ù,X?¿«£Ä­páòbähz{Æt?#5òßMß«tn´HÀ¬¨ÎµVrT,­(1­Ó®óÇÓÂÒ--ïMÏ/áï²/»«Ûf1­Óoooú/¸ê}e64«\BËÂ2åéÏ]ñ®{´&gt;ô6+®Ïî?R.Ú_Mbb¥%TBCÛ¾n[÷âô×qê-íPsZÑÂ+[Z¦pöõÂ¦éCêì2òÒ^D©J£/kÍêQÊiRa~J¼ºVWøCwiãæ	É®ùÇ´ÍIõÿÀZô¤åVªCöÂ³Iõ*~ç~ìâ&lt;¡YÖyÙNáêÙg¶ a`;à&lt;\p8KöÕ¾MVÖ¸ëz±è[Ù×&lt;9·|.No#þùãq
+Lôz¸HVw-9Dô±±}*L»³¯A_½Î[ÿÜ&quot;|ü¤v e/ð,77Z^?^;ä®ÜZK©bÜÙ§âFNzåõäÛØÇT&quot;_½ÌDÙÚîÒ¢@Æ·¹ö³$	¸&gt;Æ
+Bë/Tg(rÛ!ÝcímÍØlÎðèº¤åHÂ[áÕÓÓPbÒ£¾(½`ºíF¦aÛ$èõßÇ¼Ia´Glò©w$¾ÁùüÒªÅ	boqÿwÀiá Çò ò3ìáó#+ük&amp;÷9%Ð!3Ñè¥TôÇºÜ§p&gt;!å/IæÔÈùo¿_9ÞøvÄQFØá}PUdM ¬L×¹~ø[È81 £ì(÷º¡åÎ(äÁ¡ùHÕ¿Äºt­,AÈDµZÚÎ¾ÂHöbÿòeÿ¹¨W}ÝI½ÇFÔ5­~ XL §æìôNÛ¡!YL¢ýõNÍôg7Nãc¾x¡ßbÑI7 Ô/YÔ ÓI\¡*Ü¤LëÿJ^`Ïë?ÆÚ&#39;mél;¨Ø?k6¹tô/EkB2x¼í^m´÷adìÁbÆÎGo­¾=ð÷**/çs@ë«¢szr#ÙðGÜømqauùÖóNêiMýlòÔB*Q&amp;sÿâ»¼rbÖÝñoÝ½sáqOÄ½ $?[àòÇD=~%]m@É+÷¨+Õ÷$t?é\LI,t,©%´à{$®&amp; ~f$UïHA§QTVJCÉéxª-!ÃQqäx&amp;(O®¹8°&gt;8sáÊò¦k¸GµÑí¯)¬¦pm&gt;ú±{RiºÊWcm¶\ oÃü`;èo°öÿÀ§ðgÓî&lt;sÜï]-t×&quot;sªZL«õïáÂpº° rsGïõ°FMè¼Íô@Öê¸¶*¼+® ³ñ.%ºò¯&lt;/²¸ëÇ{Ð®É»ÍQñV] Mú½=Tå­fZtòjwóçéß¡Tw¶òòypÎò¹÷jÇ÷n58uRÂåÖ³]í&amp;~©üää`Õ¶jù×ÉµÐ0A¢Ó*]W|ô9F§ãr`zì;¡lºÎ¨Ú¨ªäîgaÌÍ=Ì;U³ÕÅÊ½ú»àHsÿp_/2&amp;¯ñ/b¯ZÅGÁ4Zéa×NhUvÿ%Z½Ö-§^OsªÜ»mEté÷àr?fx=ÜºìÇk!6]RØ\2»ºàJQN&lt;½®î}®¥óêòSðÜh1	¯½2ÛÌ®&amp;OÕh½lV÷:n-áXgÝbïÌ.¸Þåg¤7K´zí¡teýP&quot;©njÉ¸
+owÔ:­e³âJçÓ»xiÞTw þ3ÍIï¯Ú\uX(½(~Fð$Òæ*ÑÒÕýÈ[©?0¡T2&amp;adj¶V¿ÒKqOÔEüTZ¼7&#39;M¢ñ°èÔÒÓüDç+XÂ´´`ßUVövSëÛú:-qÙèäÐû«6héwº?kEjtÐä(-3yf=j§k³ªe¶?[ùûÓÓu©D] L7Ïf5îz??ÙÂÙûL{úFhâ?¥§ÐXÿ^gcÙzRkÎºªYÇqò*!¼¿rBÞyÙ¿¼:¢ÕJ¶ñ´]Ë|D¯`=Ac8lÇ¼áOïÀÒ(/\g+GïèU¤W¶ÎÚíþ²Ò+9ÓÛuQÕ´Þ=$ßÃøF$«Åa©(K+$7tDEêéÙºGÝ@uO½pWùEÚ
+Â7 ,ßrR&lt;îih&amp;Ph±z+ócúb/¤ä}r`-&amp;À%3ïí&gt;aÿøßÔ»n ËÂÄfrA;(«ÃÞÊ{¬Fh·Ô$SXïêßä(í?~,à&quot;E`áôJ þÀàñQl[üáF2²«okh(¡¤íÁf[ép§;Á\¾»Æ&quot;LÛd|êÃ´=f.^*0ÒUvÝ p¨u--déÚ*RÁjßÙöÁ~eXÌ¹ïæúw¥sXsîBIR¡¸åz
+÷ð;i¤kU.î
+©êõF-µ²wÌÙ­À¾÷çp¨?RÝ3CÄÁö³«Î·­¿éPÎØ&gt;SI­óÖ8;ÇIÃ2#éVÏ¬ëÝ¾±î=Íz¦LL0,è±GÈÝBw9Ø&amp;ë&#39;ô5°XádmqÖ#vÏ;$
+kmn»&quot;N¤7ýõ@­Ü+²Ø;Àá8ÄT4Âüá&gt;ïÁ¥F	#ý¡Åõiþ&gt;6Æ_3ÆÃ6/¢Ïµµ9ÄÙÀ&#39;LÑÝXÔr+ÝÍJVv
+îóWÓ×÷|ÿóI !©¿yHOÁÑÞb±¢s{·©Ýþíê oÑBÐI ÌYäëÜµôj`9pÚîÔ\a9³Ìr Ùä­d²ÝS4«$QKZáE=ëØè|èøÙ;õ]]íµ8Ýw6TÁa+¿Ñ\nmHZû6qEEaåGzBåëFI*I¾Q)ÓwÿÀ¶FGìqÄPd#íh§PEeß(Ä\Ð~sLü©y^%hHÔ-0Èy{Þ º&gt;ã1Y}Êä©¬(«ÚP
+ÄOr³²ò°õÍÜÒsñ§UÏ&lt;_ÊÜ Jvo ´uÓM}i
+Þ±¦åÇ÷Ð£ÉÂ£&amp;
+&amp;Æ$üNÈ´0kE:q¬ô0M¼ëÊ`dO+zp¾ÏÞàÞuÙ&quot;A¶æºÝ ª}á«fU|ýÚéùDÕÙTê«ùî4èe¿ø Y_.On_òpFKÙçâæ0ÙD!÷»êãý;=!×NGI·,Jô*z«}ªCeö2Ì;UåLBmíà&#39;ázæ÷×äß9/÷õ¨]óvÕ©7áÛÚJë.Ñý´&gt;NRzÜRéleÊ%R!¿zÞIÐí¯Ê&#39;|+ÉÐÕ¿._]Êþ-bàäGÇä/µãùÈÇ8Ö! Z!á¤O$ÄKG§V´WâkÓSµ(æÌM1[ÒÅµ¥ËATÿW&amp;ÑFÝ©:òêöd!ãüÄC»G2[}÷¾¿ù4,ÛáÈ1¨¦és­~  jËg]DW_²ËÔS$Ü *Ø	òÌ?ì²Mù¤ûy£Hp:T«÷²F²&amp;ÎçÛY¹I·YO.ÒµÖðy &lt;ãIýü®RØ&#39;ïùÍ)ºæ,*9ÓYsúqÊ(sÌ³UöíÏï]h¬§Qè`(¹¥N§X*y Ð½¹Ý§Lp*)ÍöL¨&quot;ÿVt{&quot;ö}U/{Fßô&lt;ÎÚ´¥¸xcQm)U­5kÚxwï9äûýµ¢´M?ÿ1Ò+RWm.8&amp;5yù6².FæëÞü´é8 bkZôëÞ!ÉÑ,]#£«;î*¥ÖNé 6àKòÒ4å&lt;&amp;8ìÑ1}RE´Htº }+Lÿäâqößqû4äºY
+Mew|E(ÏT)×;^ðD+ÉòÔ,x=6f`dèÑYÐJs0(ïå=ß ÃÃ~WHu&amp;wÓ²zîHÂçå¿!¾´Ç,Ð_ÿäM_Å´Ò«ÖI~	6!O×@iïñz+aÓ2Õ
+ítlòk?wðëÔÙ:]©ÀÀÓä\­UÐî*lÝòÓ«ûê&gt;6¨,¥íãLï0tc@J4KÕvá!ê©¨Ó±ºÚ¥ÖLKV²6úè¢KNlÜ1ljXsþåhãü&amp;­ÒéSuv×Ô!a­yñ`ó¯ß¯òÆC=ÅJ·½ëºïcPÈ;ÄzF/ª-¶®$ß?Iqí)³^×¡÷U^µ0æu¥cSiØWü¡m¸Êc&gt;mÂÁ-A×,tåÕOo ×UïáA×ZÛèÅpQád½ÐF¶IÄ+ÃIzxÙÒ{/BâëÑÜ9¬NöÚBYâ&#39;eÙ¿&amp;Mìù¾Ý§ÖÁÐpä+ßðÊ¦&lt;×èþ¼3ÝÈßrl»5¹¼àÞ_ø\$4Ùq¡Å\übEÉþÚ£{¢§ÄË#Þ 
+42RCØg¬{û¤õñ?hþd®#ð&#39;³KÊ?&lt;õéSîËìØ­Äãgc?_TPý~îäøÏôW®¼õzÂq°ÄÒØÅo¾«vB¨½$öMc¨Ìú_gRG¼?9â·¦n7.¸·¢i¢ÂÖÌ9+¢ý$[)TØçºb´Hß!¤*í¾XV¯mTtmñ%µËYmtÚ°=ìàë¦QC
+èHËµdâéJÀÒ0ÿzVq£fÀN®6ëTX¦¶µZÚÚ×¥Éh¸©¼þX`õ+ò;6%¹çõqáòtþH oeB1ÊÐa³±Ì\x7¾¿·93:w¦Ñ%PHhXx´³jVúÑ+ÐúÔË©¼Ì35åï¢gîä×\×ÛOÒýé¤Ø;É`q£vÒFÝ=M-HÌ|õLZzGÃýìþ¯Ærw¾I´{³@ÔßHÌ¬ô!jy]¡ç)
+	Á&amp;!ÀÇÒâó´ÏäÿEOÖ&lt;³0ò.ëa,Aæâ~,ðÚ6VGbö¤n®å/V|AØÓ
+¹1z+u©?Æ^­_w#iP±±ÕGÇÿ²M©ìT ð\\Y$1ÍÔHËàÌýÙÕÏíÅÖFDyõVîvâØÅÙ7`¹×¸ïJ¸èøn´P§7¿	«ÿE[÷©@àÕ[¶¹èe5ÑdgéÌOÉÜ¡2Èez3Õo`Àù@?¼ ô®è9ýÃ?wÖÉ\A=[ä!8¢þÕcs°^Gí³¾Ã`sîÇËöèÓsWû,©1]©*âöl#¥&amp;KqÊþ6
+]u4ãv¬$DÏà
+y`DÙ~}?X&lt; ³ßHÑ¸_/}6´gÛBÿìÕKzÎ6ÖbA¨ððNÞIxRµ=Õ2¢:^!jßlîr¤d;ø+Wç¸4Ù-DÜÉúk4]GÌù7å]Bç(±uÊx~d±0oïäåä¢í3¢¦À&lt;Hõ!Ô»¬ÙÓÎf°§4øÄÄ§½ÀÙGDèÕï×í).Õß¹¢-*qÔîUÕ±×ü|B©&gt;ÂúìùKPÀíf:©,)|ôýÇ­G¬ljQþÓÜB¬â¯ lÕÁÝ_±L~QN6«×·ÜaG=Eo4ü§ÙxÕË7ê·©yüôàpVVGî¤?É·öm&gt;^ÚÕ³ÆÐ¦HÚ³llVPU=ëx÷´jÌ®Ný¦ßÎÞ&amp;êw*[\¢3IÀR8ò©9ý{ñiÒõ¾fIÝáwÍQ&quot;ö,ª\ç*øìËQòJIñãÄ¢âàîÖsÉêol¯Ã¹ùãG¹©î	ùí´;¹öåSÓ(PxFd³¹ÏB5è¢ìp8@í÷Ç-ÄÏ}ã3cÀÚ_±é¿.dtÂ×Z#$ßýi(1÷¤ç,@£mf3Óùt£3Af²bÕ&amp;¹´7;ëYÅ¥
+1íà1ûãü;JQ$g	¥ÄJuì6ÇsñÛØLÊÂ¼°è(ÃÒß¥¦T©0ähpçÇ%¡lé§¼æ~ûq|Cð1èèÿüS¾µêV¨@J¸NU;LîUo2^·&#39;ýÕ	ò£ýñüP-á¾FÇÚ&gt;Þ&#39;ßrÙ´Ê|üJryFÂý&#39;9¿Û?2°ÃceÊUü¾#\°d¥ûKC| [ðc²U?3DÿR£¾«¬ý×ÿ­Èù·«¢½±(-é£&#39;àf-ÈæpBD¿²ÕÙ¥êòáSMn+(¯XãzzD ÏõBC$ßPÖCíÛÄA=Þ²;AÜgài6/ã¹=6xLG_®;ÃÈHÌ¢Í{­ÕmïÄ2ÿ}]-ôÍ´)EÏZZîm
+Îè6{´Õ®£i %¤y
+èO5Ë6¿¬×¶ÊÒ£ékÉ{¬Â;Ð×åõæø@!Ï­¼wx®[gLìò~­Ê®ÊR½
+À÷,&amp;MM®´ëã!-óOÃn µýá á&gt;Khn.·AãäÈãùuY8Sà=)1î×7 ÊÊ¾èá@{
+ùçdg|3üø¦h?ãmq;ôÊòÿ÷ñ?wmfvåd°5í©[;_äÏñjs0KÔAõ%FÎI·5HC¹Òj µÇörG?ðI,²¯5|/_ðúÀ+4Ål²È!céOêNý9Z¯ÍÕ*?cù@ûPC×!}a¨{¡ç#bµZÿV;áS£F½î¢H&lt;ô¤|ªmóßUi)Æ¦i§±cª}_×~,ÎÞ |é2-Ä¼ÕHJQ½]pì»&#39;é{éDN-kÇêÕéE+¼å§*)Ðê¹ :®ONåÚ3¡¸wÏÿðåëý&#39;ÁLjìk³ü³ÜRèLÊJ°HíÃo¶Oôkz&gt;i
+ö©ó£ðuoùÚ»£¡ÙVìæð^å&lt;ÙÐ@U^Æì¼Z °x}Ú²ÿVzÈaPd%!\6&gt;&lt;?:¯G_:ÄÂ4H@µ-QûwÇêS¦ÍzþÆ0*n|Û¸4Þ´çÆQ»_×§6Jn~X5~þÏE¢ÊÛGý¿LIa±~ß9DâK~iâ¾uïõ×oí#¶hË×Ù¨Ã÷èZ¼	£Ãç¼vò¹½±ªCq2¢sÕè?hiDHýíµ£ôøkTGvøÄ©}Àö9Úqvk.ë¥å­}&amp;ÇDÈ£Ýï]ñôè#_ÊÇüÝ?Ve¨ÍË{qúÉÉt`YOz\è¨¯[F°fo½ÁV&amp;+gÆg»o6º¦ÏkLcðÔû4¢àVÞVÝ;¿&quot;¾3R1vK&quot;ç?n@&amp;7W­þó/¥u¦ù­uj»ÀLÈr&quot;í|í¸Agr]BÇvB KÓnùÎMX3F¨9aÓ(ÚV%¹ ³,x¦y¼`KÝ×É»³ÆþUÃó§µ@wïÐ­Ù^.±t*&amp;ûúó^ÊÖ¥û+L~¼dc,ÿ¬ç%6úh±æ_Y?¹&amp;ª%¥©ôádöþ&amp;Ø!ÖÏ
+¼AËKÝ1èÑ
+ìx½o4Ã©a±xï»Ú1lÂ=´¾*ÑçXyëA&gt;Ìã&gt;Gê¦8eÐì&gt;éíÒûôgu	ÑM&amp;úøi7ätº¶&#39;*ÛÄ¯ÃÅÑ?óXÄT!J§÷Ñ¨@áK×PS $tL½}GpÿëÇ§§mEÄ}TµvÚÏwÑäæî	oû·ó&lt;=²î·ò²R®¨9OBÿÊFéÔèUÆd&#39;Ôì¶Í²£¿7óªô[V´É&gt;%z ?VqpÍóø({9Ïåw{:CæñS¤¬ÒWâQÌ?&amp;=èåc]8Vsá&quot;¸ÀRËvÈ£¶	?Æ\ëeììÓWepsí!òõf95DøN°ùéº¡ÎSPoã&amp;^c&amp;ÎÔ*eJã ©(ýçì4Æû /c(CÙñÁ¹§s§p×)­ãºó6âÀ·yïíOX~2IçåÜd²ç D·ú_vÉ~®ÜfM¼]J1Þ§K&gt;jJ~¾Ç¾ìêÝ8½?·æìµþl¸ÔÎAà(F@DÛ·¢³4ôòSKb&#39;A^)£°º©kÇ¹BÍZR&gt;r88´Ó¨ñÍ&lt;;ïùÓ_´ÉÄ*uëOörÆÕ£s[5~^ýjM[}|«`ÓÅ;¿æñwV-ÏÿÔvïï½Üå¼KS@ó5ÏÍI5¼éïPyÿ·Î4£
+sN´4©&lt;×ö/Ùå	0~Ôþmþ¢H&gt;×Ó¶©ºµ:ì$r8ô¯c :«SÍ¤1ñk=RK§E3Ò+NHïøþÔ¦ÞÉÕJuÒYúÉ¥Ý@Qblï=J7GïÎ]¦GÖÐúQè&amp;x|.$å¿Jí c!@ÓIôHÒåjÄYÊ¡a+C
+ý®³è*=ÙâñlO0¾üÈ6aÅ&gt;
+ºç&gt;
+[Êì4³ã¨ã2I`oåä¤½Ó:s43N7UÑhúòàwwZvWÉò®º!32¬³²F ½DÛ)ìt&#39;ù:¨JÚsâ§ðSÑ%¨¨B½Ýr:¨(¯Ì Îqð.t9¦ÁOÔÓ¥&amp;­p #½,ø&gt;Ò
+¡WðíjÞU)hêaÈK&#39;Äµ º³\ßE:ÃeBb&lt;Anmº·/ÃÈÓØP·fè£A7±
+Â8Wþóëòd¯c ª/_,IðõûþÁ|Î=ÑIL)[0KÀgsùØ¥åÍ.ýþc 7õÉ©Íi9 ïPÿLÔ¨+â&#39;³4±jE}ícÎwü*¿·¬#¸Ååâh(ß1¤?V=Æ~6m+Uô¿|í3NõÇM.¹Xñì8sü&amp;IJ¾.§7üî&lt;fÁEööÂr0ûVE\e@!ócdPS]GnºI$òËà;ô¨8Ñq2¸;¨qÿg©£þÎ5ÚsÂ$*ÃºÍ]_plhwhYo6ìhd¸y¿B¡ZÍgåí3_sï¾Íy³Å
+ÕÍÍ¶NûqØRsÎØå}&lt;âÉLåkz,Ê¬ t@S4FO^~`ss¼÷ñÞ¹ë@*¸pF¦ÅéOÖòøåõ if_Y?êb×F¿ù5]´Çùb°ÊU3 ^°íJ4!Õê­Aÿªû76T-«´ß_U±k³öÐ5ñ)%õßµ?RÝ^(ÑÊñÒ²å4µÆàû¶/pñþ	Áú`ÔÁ
+þzæ_õEÅ#rØp0ì£D²þ9?k.HDõOð¢Ã¢µ@nÆîÉ×ß³º&gt;ÚÁÓö4àñ haL²×4ÌÕ±{¶ôÌùùOó¤]-3nRðéì×Õö¢Ô[Hï²¡îè¤s¤Ú	å-õ}Ó³ÃyDy2ò&lt;?ª$¨hÚ6hç&gt;ú÷ô&quot;CEí­ÒÔYà6oiõ$?âÿF¼Um³YÇWÛµ3àóÈ;í~/¬öÛvL_c»H$®bÅ¿àj&amp;ÇØ_7¾¥PÎdU)cZqGÌ)ºÐJÙå­ÞÆJö¾Ú(§ºãßKzNN7®*#éú^¹­FRTN  Xbäâê~;_ÙXáu²\g&amp;é-,¶ñÈw%Qøúú\;Ï:¶½&amp;!3j6kW+Ô K}ÑÖUå­vI&quot;!4»E¹}Û6&gt;ª­â?§Mþzûò®QJ¸³!ú¶íì~[&#39;&amp;Ò/r¼íüõ£ÕäkÎtS?ü¦{X¯,Q!UV*~N?(:`oÙªý×@i0åyéå°ÝßSóÏº£híûÄÙÃv=a]ÀÎÝÚæ4&gt;ÿpx
+G$,Ò[¾ÙæÃÏ&lt;!y1p?)WººNã ñn·«¨¿ÞÇßj[ëéÿî×L&amp;ï,µv[$;à)n ¯·°n*)þ±¼ÂÖ9ÁÖö*ÅpÒõÚd-³&lt;û¡­g§ËÚØúìÊ,âÅ«$üÄU&amp;ÕÚûé&#39;§L^´Íî;¦¦;6j7 íö7£®DP2üþ#ãz{ Åßú×­ÔWO!P8yØ&quot;Z­ç¿Ã\Â8ç?ï&lt; î#þKÅ&quot;iÎ/éä·%5-3mgÔ¯?b4øR|$Ò(*ð2ùr|Î¯!®ïp Rß²ÓúAv¢gïßQ/Ñg2°ßUÁe[Ú2_@±Ïóù8ü¥f,Ùºoêü%ñz¦ûw%Ü×ìq×ê»¦ñ;I®úPàS4¿eTG5¥Ó²&quot;_U3P;Ï»d¿¢!±§¬ðâ¶Öt«G=&lt;å¹yxèÎ©5`JäG~bD%Xó¾èn`¯î b
+ìÈ¯bôõ§P¯¼ÃjèØ[ôuÅõMóýÍáëÁðÍ¢êlDFÿCÁÀ¯)rØ¼`¸n¥ä6ë:Ã2mØN&gt;Ìßùãÿúa@n-Z§©åÿ¯Î
+õ ÌSä@ÃÁNÁ Õü_öâ1èãÀÒ&#39;¸ `ÿÝÿp»&#39;£WÖ³À7WßB/hb[îüÖÐM|_tÚ¹þcè&lt;Õ%2PÆfúÖ(&quot;s
+üR/ù­ð¯¥J8P9ZÖú~àû./¨ÂAóKÚÈ 1ÏÖY&amp;shäg¿LþºÌ2Ö»üÎüÇÀ¯´5óäKy(ë­v,9l
+g§òNù)s?N&amp;Qvþþ/ü½¹3ýPmQ/¨Ð.¦p\·OÂ}¯¥á1kMíÕ ôÚß!ô#Dñ¤ýlOF $ºÄÞÁÒÚ³vÕß òL\ª~E[Ú÷®^+:XiÚRó·DÑíf·f.ïò\°Y$[:m*¤$kh}iÞNx\ZË³23yåòö½¦júØiõ­&lt;åÔÄ¡Â¿ô&amp;M,ìù;9ÖÁÏM?å\2x¾Á\p¯;fÓ[Fß±7øë/à ÃYc«i8ü)²ó|Ïyë¼Ö´³aðhazÔþ£!­ñ¯&gt;¿RKºK[­ÇTÄ»o í\ -Lx¥ës1GßÀ±²!2¾õë¼ß»DyÚ³eÆÏvº&#39;Å`²²â¢oH&quot;ÎXxù &gt;D¸/7 UMÏ8çCÿÞ!RÃìRè¯èªÆÞ@J]Øý]Ri ]©]MÈ Á*a_pJ,.OqCA» j$ÖçMgÆ¶|ÈDO9Ç¼ÉWN|í¸~äçhî±³üÏ^¹þÍqnÄ%´Ã&amp;ÿ·_¥&lt;Ø+ÂÌTB­§&quot;1Ì#ÈUAUwk$°%L#ÝÜw«_W_®wAÚì#JD×ÍÑ12ñD9äLÖ{»î,ßã?ê¸vù]mjuÝ^´Ü´3ÂøôPVÆL%gcaH¯x»Ìñöd@/©m=%»jÖõkòqõq9B;Tîd¢Øõ+FýÓª+BÞÆàOÊöBZ¢R~÷¬¯ÕØ&quot;Ä9e@&#39;	Âêj¤gÿþ¥ª­½ûÞÿº¿âþ`´ç$IæT»8«JÂ-
+`WÃÔÔ­^£9*E×3~ê²6h¿ëWiM{èýSr/66b½Ï±=ÝÒû¤ö¾ØJ¹Ò]û&lt;¾ÓûEña; pÑï7¤Ü}çØãr·îÑ.ËE9zPîJ;CÓú³J¹Âû~;ø#Uút5IáÕü&gt;v&gt;Òfðë:ëºT|§ñªL)eÖýcôç¯ÁªúóóQ¦Uâ¹ÖÍ¥%üëº3cþ@«Cùàn&lt;¦Åóÿ1½óÙô|Ø¥¿²Úu ëúþ®4çti	vóönÛðñ©¦»&amp;ÄÓ:3¹©%3_Ìº¦ål^Ä.6Üº?Ï¾ÓmÕ^Ý`ªaØëÊ{¿5Ðc=ßw8rhüX&#39;ùÁe=G©e7 yIW[÷¾Zïz4M¾6­ËM)£M¥ãýåyAFÏ´ªÎøÙÔÖÀ*õnÊo·ý¡5ám-eUE&gt;a%XxÌhgR4;]X¹øª¡ O«Lûê·óoÇH,ÆM].x,/¥é¡Q&gt;¦Ç%ïÚ&lt;ÅÔ8¸4©z-y]ó¸ë/B§_g_jßºôÐ¯ï·0¸1sËÀ£¯ÒÞ°úEeG4ÒüjiþTú:O·º»x¶§R(hLaM¤ÞÁen §ÉjßP	öKúK~Ò´løÉ:2[N=£ãòøãBF²/bO»þÑ]bþ×²²ÜnB&amp;ØúÖÇPÒ÷mñõíî|Q¯w£PûÄ&lt;ÐuyÝÌæT4RL¹£Ì&gt;*LjÀCøù,
+ÌåîÕ#ÇôgÇA@|¢¶Þ­o}¾ÁuÖ¤ËP_
+ì¥k¹©ÀÙÏ9Î¨ý
+ÑÕ
+´ Ý¡GwÂ ì~)3üÝå±ù³¾è &amp;ÁG¯+ãÚøT¿x@2bl£«§k~o¡jÊ§ocÏ¿[´¹{9%&quot;z÷ÐÿÐâ³	övNwÈ\ËÚ«&lt;B`ãzw¡·H×:
+r×k¹K41ny±kÎ®ðÝ¡B¢¦c¹¨ê
+I]ð&quot;Õ¨&quot;Ê§ÄhOA×l_+õa[¦([¢øÙm2îñ.kåº}0ë&lt;ò®lÐ Z?[³³qÁbÅìmsõêt¹jæºßf!4aw~ê7LWÔ¿Cp9D¶u0 ¦óç$%êìÀ¶ÄÉÇ¸ÕÅbOeÏ³ð!iÇp*Z6ËÚ80|IgºÒçZÏ»Èç°kiÕÉï8Í{Æz»½ÐEëxÂh½dM­ëµ5d¯÷OÎ	Áê;w;M¤^ÓØÁÝ±üÖæÒã+kS¹¯xÌ¡­J¢|Ê³é?£|ì÷8Dá	þ_9FG/² nl§YA»ñ8fää£l,ðÙ«Ïõë5o }u;eepG8üg8hÛÖ ¬XIÇ@Ëçe}åZÝg{òkÊÃ&#39;;[äá¤nýÈW@?Ï¿ºÈuËX&lt;Í|´Î×tÈnÀÕû}¸%¤ ê&gt;ÅJ©×&lt;äüîj¯ë¦SKtx0÷øG×£ñ[ÂØâAiÂya%!Tù¤Tº4Yw69*×ò@ëVQâð6	ÉJ,y¿mSgzwú#&lt;ù	¥xÊÖJü¶jQûÊøTæUKrÇÚíq[`½Ôz1Ùy3rÍÍ*¶k{zMÃäÌÓ¯/âë¼ªízµø@íÕà¥D ôHHDZH´Rþ
+ýØaÔ¯Qßf}ÀVãz§DLâpp·fiõ$ÍbDØGà~R+MËÉÞè÷C#ãO¹{§Dgç;íîozg¾&#39;gP°&quot;«ÌÀâÏ|LCÕVÄõÈV![;¾¤½·ÈºQýÝÖßC¡ðt}Y4Àdõ9--mAì¡|ûzÍÈÂ( °t±¼©ëèÒ äôà:¿Fò{±j!ûÃWRÔXè«IúÚGÓï5V
+¯§Ñù/ÍaÔïèúdQ4â%efþ´tï®N\ïYýæt¶¥Z7NÎ®¨úö~ÈÛ¡â*DÿYÅbhN°JtMÅSÈ&quot;Ã^3G2/bÂ]i§i B²Adxåóàóø:Þ3ÍdIã¨ãåý?¸ç¾?wËðÐbvé1ý*lbn0XÝ5ørõojÎÀ¨-_&#39;9WG¹ÄÎß¬T+qÿ9 ÊV3V&amp;&#39;áZm
+îÊ¢y¼x¥QÊjâóÅ6ØÆWT_{÷âÕ,µh{*Âiùv§uXÄ	U&gt;°}*Ü&gt;h¸¨|%¢^ß}º ]àÝ ÊE ´BéÔã:Àï¿Yò%_«í|Éè°c/TºùÝÒç«&#39;@µùÀÚBq³,XèÅ´Úóó¨ u$9øç[Z/í_ú£«¸íñpª §õsÚ¨+ZÉb*ÿ!=ué.Á&#39;ñ|ï24ÄiÁJAxBbÎßÔG(¼#Õ\ÈÈ&quot;*Äõ¿AÆ&#39;7ïÉùß ÆR·«eÿ«QÑÛxPJå$Lkyö^Ðî{äu)EâëÔmÕgZ*ìÓiQqbôiîI-¥´
+HogN/bêÅKÂ&lt;^8U!D¯9×ð÷3¯ãâß,zß ¸9Âú÷QÊJÜùæEªçifÇÄ!äëQ§½`öÂ î$+ÂPqfÁTà âÖóhYH&quot;|®Jjî/9+0é²è¿ó´¥ç¤¨X[­[iÛ^MR#9ÖÀ£X:óhðP÷®ê.6ÜÌ+eÊÕ+õ©&#39;Û1{¥üã&#39;J)FWQåf÷S¬M¨Z-8¨åxï¥qEÏßvZ07óüÓ#Ç äÉ×°0×ð¢²w,aá¡Ê4¤ãXü~Çöã?nþ]õÉiLëVÓÏ°+jr9ºRh¿ÉQ3Y¶òWnÒ[Ãwc¿,]ö,ÍïÌ­I1}ý(fÞ£ÖíÔN9XÖ7×»W¨Ñ~Âé¨Ì°ÓYÔ eºá|3|óßÌ#oÎÊ$N
+¹Y/ìnA×zªÞõÑLþ&#39;­f£@;aÎ @í¿~t$3Z!pLâq	°CðX|çù½6Y íFòr~ÁÃI«Ax^¤z´=i¨£p§ku£JªÕ;¤ò%¥öjsç9å»¼«!OV
+gòÛÏáßñqÎT¯°aTý®D¿ó2ståE3§àÏÏ)Éz·$?&lt;Ìò´«äiSlC¼òã¸0;e|*­DµM]ÜZ¾Ëì+¼¬³G88Þõ(¦ér¼e&gt;âÌ?U¢ZT}Ò&quot;O|Ð
+l¼ªRfÞ?÷¢DV±ÏÎÏÔË¼èV¿øk&quot;8å«´w=i$jÐ=Á³Ñ½XìéUa}#aÑsõßcÎªOWU,¯vº÷JmÍc ¶¶¼pË?XÝ&lt;T[nÑ¶$ò&gt;É_ýÓÿ2;j¯(*Ûëm++&amp;*àß»%Ej$LÕìp/é\é:3òKüa¸%8ëÛI)ZÄØ^£Mq+È]Öu ng+(±´ÃÊkµeÅÛ¦¹Eó$Oô°BÊß83èÍÕ\½Ô/Wú®ýöº2YÆ4
+e
+`_ CºÞÞ}i*·øP´ék~4¬1ÞÐ¿úÁ{G¿ÖàªZùe?ö !f&#39;ÚüìYüÃüÛ%%ñÉ)¬5.&quot;r|ñËú ú_×Óïl6jÈ.gêY«7ß¤/âP^ sEêvvïÙÅÄ9¾ª§)§»2ÆµVéÜí¿$Ø©=S³,6Æ±÷E~ë¼pT¬¸ØlKÝ ÖÙ:Qc¢¹~Æ&#39;Õ[û3NæUWué×¦3½¨¬¼®Fm­ôªrQµLþß¦3%º7 ¿Ï«pÍüãÅ`K5aîþòáBï¶òú¢1ôyKÈW±RÝµ¼WoØ½ÿµÃþº©ãÙWr4+iøå:vÉ_:ÄÃ`9±CEO¢ÂÎËE&#39;Ì,ü=%Zb´Ð@·¨ðxåJ¯&gt;èþ¯½?¢{óDÐ8;)Zû?eî	¾ÿÖAíTdeÍ_ùòÌ¯Ï¼¯ò NA|-n n?Ð8µþÓ´.Ì;ïd_½ÐÐ&gt;¤ES
+ºÃÞÖòg+w2¤~@ß &#39;ö)+cÙBá1-YïÓJ*óÃ°¢µßØntÕbIÎ7Ì¾=÷?¶p}pòÜ Þ&lt;[aZáï­ZôVªÀ?Ü&lt;Ô6,Ð
+QÈhZ»â;ÜÎÃÆ¢q&lt;·Òé¦béS-ÿ9_tÉGhbËÃÓp/«;N5mª¢&#39;ÿ¶¤-sõ0í&gt;!3åÜ¾öoá&#39;rÐå2àîZWÖn×ÐN£Éûé»¦jZ9ÓÒc­Õ=¬&lt;X«ÚZêS.ÕD;òÔ]âiÇmÕÖ 2&#39;»¥kø§ÃÕ¿ù(ìö\Ã&amp;#C÷ð¢CrßÚX¥·jA$%7 0ëz#õ8ºãâõkG²Ï¬w®·/hAíóÍ)B@?b|@£óÔ»8GÝ:S.áÒÅÎÔóMØvòTN2£2ùË{³å Ö³3lmòmÐÊÉÊÏ¶MÏÿÊÀ£¡u¦®TËð¯¡3ðÛGø©%pG@T&#39;ÃIh{J.ë+ç.gúYzïHÙÙ¦Ôê&#39;öBV£XÉ{Îéoi©µvgñ?ú¸¤ÿúÐ,ÛìÖ_BGu½á¤ÆðXL-Ââ¡ÍªQÚ*D·:|t½ïCqÈ8³`sD%Øg³[9ÞÙÔ§VÞ d+¢Ñ/WàÇÆÃÇ~Ô&lt;1mj¡ÚÆ©ìð¦­Ì°7%ÔóÂý³{éýË2È±«­IÎívÉáßÓÁ&#39;þÐa÷³ó¿eFÿ:á [ÿÑÅUÒÎwVepúxD¿N«7Ú¼P6^áSÿDq°ÿ@ÃB_¶ùÔÉm¯jB[Ü#EdYþgU¦ZcRïâ8åuí¯õK	Ë}D«O:8u)%¬}hë«C¾]jÎ}VÇ¥¢{Fúìs&lt;7Åº1iñÎñM6}º¢¿l­*½ OÃã¶LâÕGGjcßDÚ°Ä$M/-Êe·¬ZKFdÚÜ:\ùO&amp;ÝárÄâZïÅû£¬Ìá{»^yÞ8½óèp_RùÝØ¥]%?ÊGËõuST|méæea qÖïÊ¦0ë4^¦âÕÝRB¿I&amp;(1î´!1õ¼ PËú§ï&#39;[ÍCâï÷Ïyê+FGG&gt;fQê³DÌp0ï`$ë¤UÀÀ5sû½Ä´óxlEB?Hîm+ß;íñBçD6÷(ðêWo9·GçgÚöÓ4O´Ég¬ÀVo}Ó.üHØÑÆ!&gt;órB·6]ºZËæöÚõ	Û{YÃASb¾4ulÐß¤IGaPCë7Uâ£X¨&#39;_±6T.Qßr¨VC×[Dc5Ziâiôûgz0;î÷ÏFÓ3&#39;yM:RÊ&#39;;úW/ðQ&gt;|=&#39;×Ûè@¯&#39;dR´/zÕ-Ú&amp;Ô¢(	Iå{&#39;kÖ;Å{Ðêfj©4Í®JoI&#39;õ&amp;Mnx/Ó¸ÌÉdxjEº3Ô÷YÈ§¿êKñm_W)Ñ¸ötZ .w$¿)¡®¢ôèÖ	¨]j^Â~ÐÌ¥;QÎtí9ëgÜKý¦E*,qÊz*Pº¥Ì&#39;àËýmËVÞ£3:Æöte.­¼¼»½uLþtÈy|ú[Oq¨ûz¦¦³ð½ËÉ[@.0ùjÙLùÜ¸½ÇfðésÅ·ü¥ü*~¡ðTÐÌuÏã½ÏüRÕØ)Ô¨;U¦¨àò«¾T·®ùµiDyF&gt;ÅFq_ RwÂ
+Âsû|».TD¸m&gt;
+¶ÀëØñ1Øÿ¹eØKç
+ ^9ÜßLû£8Î¡×;Îæ é5{E5Ò*¥­cã0L]ZùÐg5¬óÞJý`Dý^3/uÌ+þEiñ£¤veí¸ô+¶+-ÏúEgnÿv®è=ù(°_Ïñ(¦tU8ÁªêÔ$ìÊS2ÀcÎ¡úê)û³!ðë\*G6²
+CÝÑTQÁ$àbÓÖ~õxNvòFIûkôzûÎR÷Eò®)ð0u!ÊK&lt;aQ¾ ¿ÜÙ&gt;åm@ «á¨&quot;&amp;ÇTpÞ°pã ýT:i÷ðe8vGB4¬¥Ôk©9­«ÂÕ&quot;$½ã£ðûáå`-6nàÛ#Eä©då¼Ú` êªÒ*Æ.#±³ÃÜf4&lt;wë ÿ HYwÌLôÙ´«O«(ßêñ\;{¢&gt;á g¼î^¨x¨E¯hÄlB%°ßý_l¦ÇfÍË&#39;È_IÉù®cc«µ§AÔ}ýõ í)î&amp;^øÿÃÞ{F5ùE	¿¡IÞ;H¯ÒPÒ;&quot;MªHf éÒ»Té¢&quot;Eª¢¢
+I¤&#39;ÒägæÞ¹ëuß5³Ö]ó®5ÿûCÊ9Ï9ûì½ÏÞyß%m&gt;tl&amp;Ø¥Å¥%ÚiÎ¯FE²êúÛÇýGYU|±LÙ/î©üZÐlw:8ßHù[g ²®ò¨)/û½hþæ±ËhËAi+õMÞD©ÃªëÄpñfLËHÄ¹ÙÄ)ãÌ² [Ò·=t.îVj±wgÜ±_@+&gt;ôç+²×]©Üï¾¨ð ð A£XÖºõo¿Q@ïÃ Ü&amp;÷fV­æµxßÎÇ&amp;mÎ½I9@Ó;ä|áKj%÷*êæöTâ&lt;¾Ó^óOþ4Bð0ëx^½`îçTÒÜåPµ!9}ðõÊûÐ4S
+NþhºðëU×ÏÆä­
+Z,®âârÝ¿ß¯ÐÙÕ8Ínoõ]&lt;õõ$®tÈ·qÙÝºµùgüa[óEôúÞ	ûF	üKq_¬Ç´Æ¾¡¦Ëè­Sêa£éüµÃÄ÷àóùFSí/yñèùÕäÎueÌ4{oÃì ¥Ãh]Î!Ç}ÇÎÞ¼$ü+ù^HíEô\êÝ¾á?O×Í@Å¹;Þ-?^«`e	&quot;¬ì3åìC(}oÁ`×î¸Â(kµ¬°&gt;µÅi¿}ïWOÙà [¼÷ÈÆ®¡K11&amp;u8½ùpé&gt;r(r¦øéêtüý¤¹©~æ~úÓë?®&quot;0_wî²aê38õ¼7¹36Ð±ÔÃls:´»é¾çþÚÊçË¡}³nª!ôK|J¨&amp;úGk]èÇö?L)GÙ¾aÓìuAÙ*ZêÙµ¦tV½Ü¢Øôï: 
+Íçwx7/¬+(ÌÞ»PÉõÂ^°c{«&lt;;8ðY3$3}¨¸ñ ¬OÓÜoâGÿ&lt;ç&amp;Ì[-èÛöú&amp;li§&lt;¿ë¤A`Ü()¿¼dÉ~ºÜk&gt;}bQ£Ü¢½b­ø³îª_ÿ}ú´{In¦o^&#39;SuçàM×TF&amp;,Î¡2&quot;[oX½P&lt;õî!{ùArÅÌ.Nw\]ºY¹NÑ&gt;q:(°ùòiNr 8öÐXýí5éoóÖ7ì¿,ÜlMïHð_r=\÷ÑÅ÷ñnÜrÎöj¸#o~Ñzû5úøäßuÙ~Ö^®ÍÔ %E9Ó ìÜÛ¢yY)XÕXgcTtMjîÍE¬£*XÃ¤mò£¨¿#¼*,6a¼»beÑÍW¼~ëÊöÓú.ìP6W6¹ÊðC+y²yéÏÞ1&gt;I¸aÚH×ÏP?!@aëÑ9¢(&gt;íßÜæà¤+°Å×#BªÀç/4Þ·?:éÍíLà·!g#¹#ìùÃU;¬1&quot;­Ì-¬{}ë:¹÷¶Ôóâòª~á@½÷Ú¤nÍàsñ­²©å-ývË]6OB 6«ò0Î×rÃJz°ï&amp;_UíU;¸~=*ªºÂ$*á¹ ×/³)ð´ð¦;ÎûrYÇë7X¿åoÏG?äIQ¡ï¶þ!ô·Es#l¬Å&#39;Ûã||êóçF¹ñN\/ì s¢øÉó·ëW. ïØÕ¤°JT­ïv&gt;öÕßã|ldØÞ~µ&amp;ÉbùÉöZÅ¬6»/1rMQ_@5ßïczçªw®ëø[&#39;YåÑ¼ìî ×ß?ùMzOP¯¦/ãüoÑæY¨©®[ÚÉjÇÌj}¦ëP¶STª0l-üG9ÙwÚv&lt;¬_^Tcã¥3ÜôÙ·LÛì1*}[ñ´EëÎ³KO¼H;ùºç@¬» wI £Å4öÝ¸Ë)GÙ&#39;u+Öoo_¿ö¨&#39;¸¦O_Á å/h`Ç{$@¼Ê2 qA´¯Æ%éMKÞ&#39;³n~pR²_»Þqþ¥·ùøzô- ¡l_UâbÂêÀ¹Ð®»&amp;JâÜå9à*êÖ¨­êÇ¬ö,?&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Documents/Reglements_des_etudes/Rapports_sur_l_examen_des_voeux_2020-2021.zip">https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Documents/Reglements_des_etudes/Rapports_sur_l_examen_des_voeux_2020-2021.zip</a></td>
 					</tr>
 					<tr>
@@ -3038,7 +3806,7 @@ nØ&gt;4ø`ø=tþ)é[û) u­õ &#39;OZRÛÙ%~7;	8·ÃV«õsÃõ°é
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">7</td>
+					<td width="80%">8</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -3580,392 +4348,6 @@ nØ&gt;4ø`ø=tþ)é[û) u­õ &#39;OZRÛÙ%~7;	8·ÃV«õsÃõ°é
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
-						id="10202"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Absence of Anti-CSRF Tokens</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>No Anti-CSRF tokens were found in a HTML submission form.</div>
-							<br />
-						
-							<div>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</div>
-							<br />
-						
-							<div>CSRF attacks are effective in a number of situations, including:</div>
-							<br />
-						
-							<div>    * The victim has an active session on the target site.</div>
-							<br />
-						
-							<div>    * The victim is authenticated via HTTP auth on the target site.</div>
-							<br />
-						
-							<div>    * The victim is on the same local network as the target site.</div>
-							<br />
-						
-							<div>CSRF has primarily been used to perform an action against a target site using the victim&#39;s privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/">https://www.univ-gustave-eiffel.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;searchform-1&quot; method=&quot;get&quot; name=&quot;form_kesearch_pi1&quot;  action=&quot;resultats-de-recherche/&quot; class=&quot;u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-pa-10 g-mt-25--lg g-mt-15--lg--scrolling&quot;&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/">https://www.univ-gustave-eiffel.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form data-cookieman-form class=&quot;mt-3&quot;
-                          data-cookieman-dnt-enabled=&quot;Vous avez déjà choisi de ne plus suivre les utilisateurs avec la fonction &amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot; href=&amp;quot;https://en.wikipedia.org/wiki/Do_Not_Track&amp;quot;&amp;gt;Ne pas suivre&amp;lt;/a&amp;gt;de votre navigateur. Nous respectons cela. Vous pouvez modifier cela à tous moments dans les paramètres de votre navigateur.&quot;
-                    &gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;searchform-1&quot; method=&quot;get&quot; name=&quot;form_kesearch_pi1&quot;  action=&quot;resultats-de-recherche/&quot; class=&quot;u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-pa-10 g-mt-25--lg g-mt-15--lg--scrolling&quot;&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form data-cookieman-form class=&quot;mt-3&quot;
-                          data-cookieman-dnt-enabled=&quot;Vous avez déjà choisi de ne plus suivre les utilisateurs avec la fonction &amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot; href=&amp;quot;https://en.wikipedia.org/wiki/Do_Not_Track&amp;quot;&amp;gt;Ne pas suivre&amp;lt;/a&amp;gt;de votre navigateur. Nous respectons cela. Vous pouvez modifier cela à tous moments dans les paramètres de votre navigateur.&quot;
-                    &gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/">https://www.univ-gustave-eiffel.fr/universite/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;searchform-1&quot; method=&quot;get&quot; name=&quot;form_kesearch_pi1&quot;  action=&quot;resultats-de-recherche/&quot; class=&quot;u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-pa-10 g-mt-25--lg g-mt-15--lg--scrolling&quot;&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/">https://www.univ-gustave-eiffel.fr/universite/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form data-cookieman-form class=&quot;mt-3&quot;
-                          data-cookieman-dnt-enabled=&quot;Vous avez déjà choisi de ne plus suivre les utilisateurs avec la fonction &amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot; href=&amp;quot;https://en.wikipedia.org/wiki/Do_Not_Track&amp;quot;&amp;gt;Ne pas suivre&amp;lt;/a&amp;gt;de votre navigateur. Nous respectons cela. Vous pouvez modifier cela à tous moments dans les paramètres de votre navigateur.&quot;
-                    &gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/appui-aux-politiques-publiques/">https://www.univ-gustave-eiffel.fr/universite/appui-aux-politiques-publiques/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;searchform-1&quot; method=&quot;get&quot; name=&quot;form_kesearch_pi1&quot;  action=&quot;resultats-de-recherche/&quot; class=&quot;u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-pa-10 g-mt-25--lg g-mt-15--lg--scrolling&quot;&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/appui-aux-politiques-publiques/">https://www.univ-gustave-eiffel.fr/universite/appui-aux-politiques-publiques/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form data-cookieman-form class=&quot;mt-3&quot;
-                          data-cookieman-dnt-enabled=&quot;Vous avez déjà choisi de ne plus suivre les utilisateurs avec la fonction &amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot; href=&amp;quot;https://en.wikipedia.org/wiki/Do_Not_Track&amp;quot;&amp;gt;Ne pas suivre&amp;lt;/a&amp;gt;de votre navigateur. Nous respectons cela. Vous pouvez modifier cela à tous moments dans les paramètres de votre navigateur.&quot;
-                    &gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/qui-sommes-nous/">https://www.univ-gustave-eiffel.fr/universite/qui-sommes-nous/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;searchform-1&quot; method=&quot;get&quot; name=&quot;form_kesearch_pi1&quot;  action=&quot;resultats-de-recherche/&quot; class=&quot;u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-pa-10 g-mt-25--lg g-mt-15--lg--scrolling&quot;&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/universite/qui-sommes-nous/">https://www.univ-gustave-eiffel.fr/universite/qui-sommes-nous/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form data-cookieman-form class=&quot;mt-3&quot;
-                          data-cookieman-dnt-enabled=&quot;Vous avez déjà choisi de ne plus suivre les utilisateurs avec la fonction &amp;lt;a target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener&amp;quot; href=&amp;quot;https://en.wikipedia.org/wiki/Do_Not_Track&amp;quot;&amp;gt;Ne pas suivre&amp;lt;/a&amp;gt;de votre navigateur. Nous respectons cela. Vous pouvez modifier cela à tous moments dans les paramètres de votre navigateur.&quot;
-                    &gt;</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">10</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Phase: Architecture and Design</div>
-							<br />
-						
-							<div>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</div>
-							<br />
-						
-							<div>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</div>
-							<br />
-						
-							<div>Phase: Implementation</div>
-							<br />
-						
-							<div>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</div>
-							<br />
-						
-							<div>Phase: Architecture and Design</div>
-							<br />
-						
-							<div>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</div>
-							<br />
-						
-							<div>Note that this can be bypassed using XSS.</div>
-							<br />
-						
-							<div>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</div>
-							<br />
-						
-							<div>Note that this can be bypassed using XSS.</div>
-							<br />
-						
-							<div>Use the ESAPI Session Management control.</div>
-							<br />
-						
-							<div>This control includes a component for CSRF.</div>
-							<br />
-						
-							<div>Do not use the GET method for any request that triggers a state change.</div>
-							<br />
-						
-							<div>Phase: Implementation</div>
-							<br />
-						
-							<div>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="http://projects.webappsec.org/Cross-Site-Request-Forgery">http://projects.webappsec.org/Cross-Site-Request-Forgery</a>
-							<br />
-						
-							<a href="http://cwe.mitre.org/data/definitions/352.html">http://cwe.mitre.org/data/definitions/352.html</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">9</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10202/">10202</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
 						id="10010"></a>
 						<div>Low</div></th>
 					<th class="risk-1">Cookie No HttpOnly Flag</th>
@@ -4455,6 +4837,32 @@ nØ&gt;4ø`ø=tþ)é[û) u­õ &#39;OZRÛÙ%~7;	8·ÃV«õsÃõ°é
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/c94deb4a34ec48c02ebdda7e36eac265/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bnews%5D=1196">https://www.univ-gustave-eiffel.fr/actualites/actualite/c94deb4a34ec48c02ebdda7e36eac265/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bnews%5D=1196</a></td>
 					</tr>
 					<tr>
@@ -4481,59 +4889,7 @@ nØ&gt;4ø`ø=tþ)é[û) u­õ &#39;OZRÛÙ%~7;	8·ÃV«õsÃõ°é
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/ce3811bf8aa27c43ba6d40972d26a333/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=24&amp;tx_news_pi1%5Bmonth%5D=02&amp;tx_news_pi1%5Bnews%5D=1951&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/ce3811bf8aa27c43ba6d40972d26a333/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=24&amp;tx_news_pi1%5Bmonth%5D=02&amp;tx_news_pi1%5Bnews%5D=1951&amp;tx_news_pi1%5Byear%5D=2022</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/de2da440fa8d418675468b8c74d21a83/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=3&amp;tx_news_pi1%5Bmonth%5D=01&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/de2da440fa8d418675468b8c74d21a83/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=3&amp;tx_news_pi1%5Bmonth%5D=01&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/ee9e7567c7a9821719fe225dd6a84ea1/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=9&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/ee9e7567c7a9821719fe225dd6a84ea1/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=9&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4580,6 +4936,32 @@ nØ&gt;4ø`ø=tþ)é[û) u­õ &#39;OZRÛÙ%~7;	8·ÃV«õsÃõ°é
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/en/news/news/5cf3afc9215b0c67333adf972b222725/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=02&amp;tx_news_pi1%5Bnews%5D=1933&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/en/news/news/5cf3afc9215b0c67333adf972b222725/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=02&amp;tx_news_pi1%5Bnews%5D=1933&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
@@ -4689,140 +5071,6 @@ nØ&gt;4ø`ø=tþ)é[û) u­õ &#39;OZRÛÙ%~7;	8·ÃV«õsÃõ°é
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10110/">10110</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
-						id="10015"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Incomplete or No Cache-control Header Set</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Documents/Reglements_des_etudes/MCC_2021-2022/Capacites_d_accueil_2020-2021_et_2021-2022.xlsx">https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Documents/Reglements_des_etudes/MCC_2021-2022/Capacites_d_accueil_2020-2021_et_2021-2022.xlsx</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/templates/UGE/site.webmanifest">https://www.univ-gustave-eiffel.fr/fileadmin/templates/UGE/site.webmanifest</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/robots.txt">https://www.univ-gustave-eiffel.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">3</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a>
-							<br />
-						
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10015/">10015</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -10528,6 +10776,114 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
+						id="10015"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Re-examine Cache-control Directives</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/templates/UGE/site.webmanifest">https://www.univ-gustave-eiffel.fr/fileadmin/templates/UGE/site.webmanifest</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cache-Control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/robots.txt">https://www.univ-gustave-eiffel.fr/robots.txt</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cache-Control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">2</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Whenever possible ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a>
+							<br />
+						
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10015/">10015</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
 						id="10049"></a>
 						<div>Informational</div></th>
 					<th class="risk-0">Storable and Cacheable Content</th>
@@ -10643,111 +10999,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/de2da440fa8d418675468b8c74d21a83/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=3&amp;tx_news_pi1%5Bmonth%5D=01&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/de2da440fa8d418675468b8c74d21a83/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=3&amp;tx_news_pi1%5Bmonth%5D=01&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">tx_news_pi1[year]</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/de2da440fa8d418675468b8c74d21a83/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=3&amp;tx_news_pi1%5Bmonth%5D=01&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/de2da440fa8d418675468b8c74d21a83/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=3&amp;tx_news_pi1%5Bmonth%5D=01&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">tx_news_pi1[year]</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/de2da440fa8d418675468b8c74d21a83/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=3&amp;tx_news_pi1%5Bmonth%5D=01&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/de2da440fa8d418675468b8c74d21a83/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=3&amp;tx_news_pi1%5Bmonth%5D=01&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">tx_news_pi1[year]</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/de2da440fa8d418675468b8c74d21a83/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=3&amp;tx_news_pi1%5Bmonth%5D=01&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/de2da440fa8d418675468b8c74d21a83/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=3&amp;tx_news_pi1%5Bmonth%5D=01&amp;tx_news_pi1%5Bnews%5D=1912&amp;tx_news_pi1%5Byear%5D=2022</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">tx_news_pi1[year]</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -10773,7 +11025,85 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">tx_news_pi1[day]</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">tx_news_pi1[day]</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">tx_news_pi1[day]</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -10799,7 +11129,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -10825,7 +11155,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -10851,7 +11181,33 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/fafa1dfc759b310e6bf258b35d149936/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=1&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1944&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">tx_news_pi1[year]</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022">https://www.univ-gustave-eiffel.fr/actualites/actualite/bb565f7538d7b9aca13792d304ebe2ea/?tx_news_pi1%5Baction%5D=detail&amp;tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Bday%5D=10&amp;tx_news_pi1%5Bmonth%5D=03&amp;tx_news_pi1%5Bnews%5D=1940&amp;tx_news_pi1%5Byear%5D=2022</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
