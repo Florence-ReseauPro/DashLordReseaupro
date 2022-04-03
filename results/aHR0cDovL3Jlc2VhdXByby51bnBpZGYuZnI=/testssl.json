@@ -125,27 +125,6 @@
               "finding"      : "offered"
           }
 ,         {
-              "id"           : "cipher_order",
-              "ip"           : "reseaupro.unpidf.fr/193.51.86.242",
-              "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "NOT a cipher order configured"
-          }
-,         {
-              "id"           : "protocol_negotiated",
-              "ip"           : "reseaupro.unpidf.fr/193.51.86.242",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "Default protocol TLS1.2"
-          }
-,         {
-              "id"           : "cipher_negotiated",
-              "ip"           : "reseaupro.unpidf.fr/193.51.86.242",
-              "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "ECDHE-RSA-RC4-SHA, 256 bit ECDH (P-256)  (matching cipher in list missing)"
-          }
-,         {
               "id"           : "cipher-ssl3_xc014",
               "ip"           : "reseaupro.unpidf.fr/193.51.86.242",
               "port"         : "443",
@@ -734,6 +713,27 @@
               "finding"      : "ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA DHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-SHA256 DHE-RSA-AES256-SHA DHE-RSA-CAMELLIA256-SHA AES256-GCM-SHA384 AES256-SHA256 AES256-SHA CAMELLIA256-SHA ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-SHA256 DHE-RSA-AES128-SHA DHE-RSA-SEED-SHA DHE-RSA-CAMELLIA128-SHA AES128-GCM-SHA256 AES128-SHA256 AES128-SHA SEED-SHA CAMELLIA128-SHA ECDHE-RSA-RC4-SHA RC4-SHA ECDHE-RSA-DES-CBC3-SHA EDH-RSA-DES-CBC3-SHA DES-CBC3-SHA"
           }
 ,         {
+              "id"           : "cipher_order",
+              "ip"           : "reseaupro.unpidf.fr/193.51.86.242",
+              "port"         : "443",
+              "severity"     : "HIGH",
+              "finding"      : "NOT a cipher order configured"
+          }
+,         {
+              "id"           : "protocol_negotiated",
+              "ip"           : "reseaupro.unpidf.fr/193.51.86.242",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "Default protocol TLS1.2"
+          }
+,         {
+              "id"           : "cipher_negotiated",
+              "ip"           : "reseaupro.unpidf.fr/193.51.86.242",
+              "port"         : "443",
+              "severity"     : "HIGH",
+              "finding"      : "ECDHE-RSA-RC4-SHA, 256 bit ECDH (P-256)  (limited sense as client will pick)"
+          }
+,         {
               "id"           : "FS",
               "ip"           : "reseaupro.unpidf.fr/193.51.86.242",
               "port"         : "443",
@@ -1130,7 +1130,7 @@
               "ip"           : "reseaupro.unpidf.fr/193.51.86.242",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1648343186"
+              "finding"      : "1648948064"
           }
 ,         {
               "id"           : "HSTS",
@@ -1781,6 +1781,6 @@
               "ip"           : "reseaupro.unpidf.fr/193.51.86.242",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "224"
+              "finding"      : "184"
           }
 ]
