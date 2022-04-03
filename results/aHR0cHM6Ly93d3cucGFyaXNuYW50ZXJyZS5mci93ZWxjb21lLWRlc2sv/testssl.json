@@ -125,27 +125,6 @@
               "finding"      : "offered"
           }
 ,         {
-              "id"           : "cipher_order",
-              "ip"           : "www.parisnanterre.fr/193.50.151.174",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "server"
-          }
-,         {
-              "id"           : "protocol_negotiated",
-              "ip"           : "www.parisnanterre.fr/193.50.151.174",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "Default protocol TLS1.3"
-          }
-,         {
-              "id"           : "cipher_negotiated",
-              "ip"           : "www.parisnanterre.fr/193.50.151.174",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "TLS_AES_256_GCM_SHA384, 253 bit ECDH (X25519)"
-          }
-,         {
               "id"           : "cipherorder_TLSv1",
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
@@ -165,6 +144,27 @@
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "ECDHE-RSA-AES256-GCM-SHA384"
+          }
+,         {
+              "id"           : "cipher_order",
+              "ip"           : "www.parisnanterre.fr/193.50.151.174",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "protocol_negotiated",
+              "ip"           : "www.parisnanterre.fr/193.50.151.174",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "Default protocol TLS1.3"
+          }
+,         {
+              "id"           : "cipher_negotiated",
+              "ip"           : "www.parisnanterre.fr/193.50.151.174",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "TLS_AES_256_GCM_SHA384, 253 bit ECDH (X25519)"
           }
 ,         {
               "id"           : "FS",
@@ -360,7 +360,7 @@
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "122 >= 60 days"
+              "finding"      : "115 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -514,14 +514,14 @@
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1648350414"
+              "finding"      : "1648956349"
           }
 ,         {
               "id"           : "HSTS",
@@ -1121,6 +1121,6 @@
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "169"
+              "finding"      : "203"
           }
 ]
