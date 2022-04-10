@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 3 Apr 2022 01:06:22",
+	"@generated": "Sun, 10 Apr 2022 01:06:30",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -393,7 +393,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202213.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202214.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -421,7 +421,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202213.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202214.js' defer></script>"
 						}
 					],
 					"count": "8",
@@ -497,9 +497,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202213.js",
+							"param": "https://stats.wp.com/e-202214.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202213.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202214.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/",
@@ -511,9 +511,9 @@
 						{
 							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202213.js",
+							"param": "https://stats.wp.com/e-202214.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202213.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202214.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
@@ -525,9 +525,9 @@
 						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202213.js",
+							"param": "https://stats.wp.com/e-202214.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202213.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202214.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
@@ -539,9 +539,9 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202213.js",
+							"param": "https://stats.wp.com/e-202214.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202213.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202214.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -553,9 +553,9 @@
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202213.js",
+							"param": "https://stats.wp.com/e-202214.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202213.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202214.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
@@ -597,7 +597,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "384"
+					"sourceid": "393"
 				},
 				{
 					"pluginid": "10063",
@@ -1323,7 +1323,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "373"
+					"sourceid": "380"
 				},
 				{
 					"pluginid": "10027",
@@ -1541,7 +1541,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "60"
+					"sourceid": "36"
 				},
 				{
 					"pluginid": "10015",
@@ -1632,7 +1632,7 @@
 						}
 					],
 					"count": "11",
-					"solution": "<p>Whenever possible ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
+					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
 					"cweid": "525",
