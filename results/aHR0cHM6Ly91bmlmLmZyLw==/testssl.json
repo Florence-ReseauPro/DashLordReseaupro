@@ -654,7 +654,7 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "83 >= 30 days"
+              "finding"      : "76 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -850,14 +850,14 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-91 seconds from localtime"
+              "finding"      : "-112 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1650157660"
+              "finding"      : "1650762303"
           }
 ,         {
               "id"           : "HSTS",
@@ -960,7 +960,7 @@
               "severity"     : "OK",
               "cve"          : "CVE-2011-1473",
               "cwe"          : "CWE-310",
-              "finding"      : "likely not vulnerable (timed out)"
+              "finding"      : "not vulnerable"
           }
 ,         {
               "id"           : "CRIME_TLS",
@@ -975,10 +975,10 @@
               "id"           : "BREACH",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "WARN",
               "cve"          : "CVE-2013-3587",
               "cwe"          : "CWE-310",
-              "finding"      : "potentially VULNERABLE, gzip HTTP compression detected  - only supplied '/' tested"
+              "finding"      : "Test failed as HTTP request stalled and was terminated"
           }
 ,         {
               "id"           : "POODLE_SSL",
@@ -993,8 +993,8 @@
               "id"           : "fallback_SCSV",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "supported"
+              "severity"     : "WARN",
+              "finding"      : "Check failed. (couldn't connect)"
           }
 ,         {
               "id"           : "SWEET32",
@@ -1156,7 +1156,7 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-firefox_66_win81",
@@ -1443,6 +1443,6 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "688"
+              "finding"      : "763"
           }
 ]
