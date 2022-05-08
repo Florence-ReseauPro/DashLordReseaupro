@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 1 May 2022 01:28:21",
+	"@generated": "Sun, 8 May 2022 01:08:11",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -109,7 +109,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "152"
+					"sourceid": "156"
 				},
 				{
 					"pluginid": "10202",
@@ -435,7 +435,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202217.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202218.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -463,7 +463,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202217.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202218.js' defer></script>"
 						}
 					],
 					"count": "8",
@@ -473,6 +473,32 @@
 					"cweid": "345",
 					"wascid": "15",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10003",
+					"alertRef": "10003",
+					"alert": "Vulnerable JS Library",
+					"name": "Vulnerable JS Library",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>The identified library moment.js, version 2.18.1 is vulnerable.</p>",
+					"instances":[ 
+						{
+							"uri": "https://unif.fr/wp-content/plugins/google-calendar-events/assets/js/vendor/moment.min.js?ver=3.1.22",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "//! moment.js\n//! version : 2.18.1"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Please upgrade to the latest version of moment.js.</p>",
+					"otherinfo": "<p>CVE-2017-18214</p><p>CVE-2022-24785</p><p></p>",
+					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
+					"cweid": "829",
+					"wascid": "-1",
+					"sourceid": "405"
 				},
 				{
 					"pluginid": "10010",
@@ -539,9 +565,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202217.js",
+							"param": "https://stats.wp.com/e-202218.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202217.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202218.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/",
@@ -553,9 +579,9 @@
 						{
 							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202217.js",
+							"param": "https://stats.wp.com/e-202218.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202217.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202218.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
@@ -567,9 +593,9 @@
 						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202217.js",
+							"param": "https://stats.wp.com/e-202218.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202217.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202218.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
@@ -581,9 +607,9 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202217.js",
+							"param": "https://stats.wp.com/e-202218.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202217.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202218.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -595,9 +621,9 @@
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202217.js",
+							"param": "https://stats.wp.com/e-202218.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202217.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202218.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
@@ -1583,7 +1609,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "36"
+					"sourceid": "38"
 				},
 				{
 					"pluginid": "10015",
