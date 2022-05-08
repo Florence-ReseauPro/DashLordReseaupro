@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.91</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr</pre>
-<p class="lead">Sun May  1 03:47:43 2022 – Sun May  1 03:48:15 2022<br>1 hosts scanned.
+<p class="lead">Sun May  8 02:50:17 2022 – Sun May  8 02:50:53 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,9 +76,9 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>81.194.43.201</td>
+<td>81.194.43.211</td>
 <td>ent.univ-paris13.fr</td>
-<td>6</td>
+<td>4</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#81-194-43-201"><h3 class="panel-title">81.194.43.201 - ent.univ-paris13.fr</h3></div>
-<div class="panel-body collapse in" id="81-194-43-201">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#81-194-43-211"><h3 class="panel-title">81.194.43.211 - ent.univ-paris13.fr</h3></div>
+<div class="panel-body collapse in" id="81-194-43-211">
 <h4>Hostnames</h4>
 <ul>
 <li>ent.univ-paris13.fr (user)</li>
-<li>proxy.univ-paris13.fr (PTR)</li>
+<li>lb.univ-paris13.fr (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -110,57 +110,20 @@
 <th>Extra Info</th>
 </tr></thead>
 <tbody>
+<tr class="active">
+<td>25</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>smtp</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr class="success">
 <td title="Port">80</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http-proxy</td>
-<td title="Product">HAProxy http proxy</td>
-<td title="Version">1.3.1 or later</td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:haproxy:haproxy">cpe:/a:haproxy:haproxy</a></td></tr>
-<tr class="success">
-<td title="Port">143</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">imap</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  GenericLines: 
-    * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE STARTTLS] perdition ready on haproxy2.dsi.univ-paris13.fr 00037f51
-    Invalid tag, mate
-  GetRequest: 
-    * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE STARTTLS] perdition ready on haproxy2.dsi.univ-paris13.fr 00037f51
-    Unrecognised command, mate
-  NULL: 
-    * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE STARTTLS] perdition ready on haproxy2.dsi.univ-paris13.fr 00037f51</pre>
-</td></tr>
-<tr class="success">
-<td title="Port">443</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">http</td>
-<td title="Product">Apache httpd</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server">cpe:/a:apache:http_server</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
-<h5>http-trane-info</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Problem with XML parsing of /evox/about</pre>
-</td></tr>
-<tr class="success">
-<td title="Port">993</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">imap</td>
 <td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
@@ -168,17 +131,26 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  GenericLines: 
-    * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE] perdition ready on haproxy2.dsi.univ-paris13.fr 000380ce
-    Invalid tag, mate
-  GetRequest: 
-    * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE] perdition ready on haproxy2.dsi.univ-paris13.fr 000380ce
-    Unrecognised command, mate
-  NULL: 
-    * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE] perdition ready on haproxy2.dsi.univ-paris13.fr 000380ce</pre>
+  DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, RPCCheck, SSLSessionReq, X11Probe: 
+    HTTP/1.0 400 Bad request
+    cache-control: no-cache
+    content-type: text/html
+    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;
+    Your browser sent an invalid request.
+    &lt;/body&gt;&lt;/html&gt;
+  FourOhFourRequest: 
+    HTTP/1.1 301 Moved Permanently
+    content-length: 0
+    location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak
+    connection: close
+  GetRequest, HTTPOptions, RTSPRequest: 
+    HTTP/1.1 301 Moved Permanently
+    content-length: 0
+    location: https:///
+    connection: close</pre>
 </td></tr>
 <tr class="success">
-<td title="Port">1812</td>
+<td title="Port">389</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">tcpwrapped</td>
@@ -188,18 +160,62 @@
 </tr>
 <tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 <tr class="success">
-<td title="Port">8443</td>
+<td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http</td>
-<td title="Product">Apache httpd</td>
+<td title="Service">https</td>
+<td title="Product">Apache</td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server">cpe:/a:apache:http_server</a><h5>http-server-header</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, tor-versions: 
+    HTTP/1.0 400 Bad request
+    cache-control: no-cache
+    content-type: text/html
+    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;
+    Your browser sent an invalid request.
+    &lt;/body&gt;&lt;/html&gt;
+  FourOhFourRequest, GetRequest, HTTPOptions, RTSPRequest: 
+    HTTP/1.0 503 Service Unavailable
+    cache-control: no-cache
+    content-type: text/html
+    &lt;html&gt;&lt;body&gt;&lt;h1&gt;503 Service Unavailable&lt;/h1&gt;
+    server is available to handle this request.
+    &lt;/body&gt;&lt;/html&gt;</pre>
+<h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
 </td></tr>
+<tr class="active">
+<td>465</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>smtps</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="active">
+<td>587</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>submission</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="success">
+<td title="Port">636</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">tcpwrapped</td>
+<td title="Product"></td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 </tbody>
 </table></div>
 </div>
@@ -218,48 +234,18 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>81.194.43.201 - ent.univ-paris13.fr</td>
+<td>81.194.43.211 - ent.univ-paris13.fr</td>
 <td>80</td>
 <td>tcp</td>
-<td>http-proxy</td>
-<td>HAProxy http proxy</td>
-<td>1.3.1 or later</td>
-<td>cpe:/a:haproxy:haproxy</td>
-<td></td>
-</tr>
-<tr>
-<td>81.194.43.201 - ent.univ-paris13.fr</td>
-<td>143</td>
-<td>tcp</td>
-<td>imap</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>81.194.43.201 - ent.univ-paris13.fr</td>
-<td>443</td>
-<td>tcp</td>
 <td>http</td>
-<td>Apache httpd</td>
-<td></td>
-<td>cpe:/a:apache:http_server</td>
-<td></td>
-</tr>
-<tr>
-<td>81.194.43.201 - ent.univ-paris13.fr</td>
-<td>993</td>
-<td>tcp</td>
-<td>imap</td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>81.194.43.201 - ent.univ-paris13.fr</td>
-<td>1812</td>
+<td>81.194.43.211 - ent.univ-paris13.fr</td>
+<td>389</td>
 <td>tcp</td>
 <td>tcpwrapped</td>
 <td></td>
@@ -268,13 +254,23 @@
 <td></td>
 </tr>
 <tr>
-<td>81.194.43.201 - ent.univ-paris13.fr</td>
-<td>8443</td>
+<td>81.194.43.211 - ent.univ-paris13.fr</td>
+<td>443</td>
 <td>tcp</td>
-<td>http</td>
-<td>Apache httpd</td>
+<td>https</td>
+<td>Apache</td>
 <td></td>
-<td>cpe:/a:apache:http_server</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>81.194.43.211 - ent.univ-paris13.fr</td>
+<td>636</td>
+<td>tcp</td>
+<td>tcpwrapped</td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
