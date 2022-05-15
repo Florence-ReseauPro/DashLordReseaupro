@@ -1,5 +1,57 @@
 [
   {
+    "template": "ssl/ssl-dns-names.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
+    "template-id": "ssl-dns-names",
+    "info": {
+      "name": "SSL DNS Names",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://ent.univ-paris13.fr/",
+    "matched-at": "https://ent.univ-paris13.fr/",
+    "extracted-results": [
+      "*.univ-paris13.fr"
+    ],
+    "ip": "81.194.43.212",
+    "timestamp": "2022-05-15T03:31:05.449360412Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
+    "info": {
+      "name": "TLS Version",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://ent.univ-paris13.fr/",
+    "matched-at": "https://ent.univ-paris13.fr/",
+    "extracted-results": [
+      "TLS13"
+    ],
+    "ip": "81.194.43.212",
+    "timestamp": "2022-05-15T03:32:32.0417252Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
     "template": "dns/cname-fingerprint.yaml",
     "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/cname-fingerprint.yaml",
     "template-id": "cname-fingerprint",
@@ -31,61 +83,9 @@
     "extracted-results": [
       "lb.univ-paris13.fr."
     ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 60447\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t NS\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 60447\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nent.univ-paris13.fr.\t7200\tIN\tCNAME\tlb.univ-paris13.fr.\n\n;; AUTHORITY SECTION:\nuniv-paris13.fr.\t7200\tIN\tSOA\tdns1.univ-paris13.fr. hostmaster.univ-paris13.fr. 2022050601 21600 3600 604800 86400\n",
-    "timestamp": "2022-05-08T02:53:22.357076506Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/tls-version.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-    "template-id": "tls-version",
-    "info": {
-      "name": "TLS Version",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://ent.univ-paris13.fr/",
-    "matched-at": "https://ent.univ-paris13.fr/",
-    "extracted-results": [
-      "TLS13"
-    ],
-    "ip": "81.194.43.212",
-    "timestamp": "2022-05-08T02:55:09.852099995Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/ssl-dns-names.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
-    "template-id": "ssl-dns-names",
-    "info": {
-      "name": "SSL DNS Names",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://ent.univ-paris13.fr/",
-    "matched-at": "https://ent.univ-paris13.fr/",
-    "extracted-results": [
-      "*.univ-paris13.fr"
-    ],
-    "ip": "81.194.43.212",
-    "timestamp": "2022-05-08T02:55:40.252737994Z",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 25973\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 25973\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nent.univ-paris13.fr.\t6990\tIN\tCNAME\tlb.univ-paris13.fr.\n\n;; AUTHORITY SECTION:\nuniv-paris13.fr.\t1800\tIN\tSOA\tdns1.univ-paris13.fr. hostmaster.univ-paris13.fr. 2022051102 21600 3600 604800 86400\n",
+    "timestamp": "2022-05-15T03:34:20.530860191Z",
     "matcher-status": true,
     "matched-line": null
   }
