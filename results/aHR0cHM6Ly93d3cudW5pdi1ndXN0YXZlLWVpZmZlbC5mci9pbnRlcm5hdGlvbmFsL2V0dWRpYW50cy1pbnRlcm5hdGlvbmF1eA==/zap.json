@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 5 Jun 2022 01:52:33",
+	"@generated": "Sun, 12 Jun 2022 01:55:37",
 	"site":[ 
 		{
 			"@name": "https://www.univ-gustave-eiffel.fr",
@@ -24,15 +24,36 @@
 							"param": "",
 							"attack": "",
 							"evidence": "503503503503"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Plans_d_acces/Universite_Gustave_Eiffel_campus_de_Bron.pdf",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "500222260222349"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Plans_d_acces/Universite_Gustave_Eiffel_campus_de_Lille.pdf",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "500222260222349"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Plans_d_acces/Universite_Gustave_Eiffel_campus_de_Versailles_Satory.pdf",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "500222260222349"
 						}
 					],
-					"count": "1",
+					"count": "4",
 					"solution": "",
 					"otherinfo": "<p>Credit Card Type detected: Maestro</p><p>Bank Identification Number: 503503</p><p>Brand: MAESTRO</p><p>Category: </p><p>Issuer: </p>",
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "657"
+					"sourceid": "658"
 				},
 				{
 					"pluginid": "10202",
@@ -395,7 +416,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "655"
+					"sourceid": "659"
 				},
 				{
 					"pluginid": "10099",
@@ -435,7 +456,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "661"
+					"sourceid": "662"
 				},
 				{
 					"pluginid": "90003",
@@ -550,7 +571,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/28236</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "568"
+					"sourceid": "569"
 				},
 				{
 					"pluginid": "10010",
@@ -669,6 +690,13 @@
 							"evidence": "<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
 						},
 						{
+							"uri": "https://www.univ-gustave-eiffel.fr/?'&L=0%27",
+							"method": "GET",
+							"param": "https://platform.twitter.com/widgets.js",
+							"attack": "",
+							"evidence": "<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+						},
+						{
 							"uri": "https://www.univ-gustave-eiffel.fr/?mandatory=on&marketing=on",
 							"method": "GET",
 							"param": "https://platform.twitter.com/widgets.js",
@@ -704,14 +732,14 @@
 							"evidence": "<script type=\"text/javascript\" src=\"//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv\"></script>"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/5851eaf619931a2a1df82e8b3ac6b608/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=23&tx_news_pi1%5Bmonth%5D=05&tx_news_pi1%5Bnews%5D=2004&tx_news_pi1%5Byear%5D=2022",
+							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/c94deb4a34ec48c02ebdda7e36eac265/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=1196",
 							"method": "GET",
 							"param": "//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv",
 							"attack": "",
 							"evidence": "<script type=\"text/javascript\" src=\"//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv\"></script>"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/c94deb4a34ec48c02ebdda7e36eac265/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=1196",
+							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/e618e537165fd23dda3a1191016596d3/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=8&tx_news_pi1%5Bmonth%5D=06&tx_news_pi1%5Bnews%5D=2010&tx_news_pi1%5Byear%5D=2022",
 							"method": "GET",
 							"param": "//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv",
 							"attack": "",
@@ -723,9 +751,16 @@
 							"param": "https://platform.twitter.com/widgets.js",
 							"attack": "",
 							"evidence": "<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/en/news/news/5cf3afc9215b0c67333adf972b222725/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=10&tx_news_pi1%5Bmonth%5D=02&tx_news_pi1%5Bnews%5D=1933&tx_news_pi1%5Byear%5D=2022",
+							"method": "GET",
+							"param": "//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"//s7.addthis.com/js/300/addthis_widget.js#pubid=upemlv\"></script>"
 						}
 					],
-					"count": "9",
+					"count": "11",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -757,7 +792,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "565"
+					"sourceid": "566"
 				},
 				{
 					"pluginid": "10063",
@@ -886,7 +921,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "859"
+					"sourceid": "860"
 				},
 				{
 					"pluginid": "10035",
@@ -1305,7 +1340,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "572"
+					"sourceid": "573"
 				},
 				{
 					"pluginid": "10109",
@@ -1516,7 +1551,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "558"
+					"sourceid": "559"
 				},
 				{
 					"pluginid": "10049",
@@ -1590,35 +1625,35 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/5851eaf619931a2a1df82e8b3ac6b608/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=23&tx_news_pi1%5Bmonth%5D=05&tx_news_pi1%5Bnews%5D=2004&tx_news_pi1%5Byear%5D=2022",
+							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/e618e537165fd23dda3a1191016596d3/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=8&tx_news_pi1%5Bmonth%5D=06&tx_news_pi1%5Bnews%5D=2010&tx_news_pi1%5Byear%5D=2022",
 							"method": "GET",
 							"param": "tx_news_pi1[year]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/5851eaf619931a2a1df82e8b3ac6b608/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=23&tx_news_pi1%5Bmonth%5D=05&tx_news_pi1%5Bnews%5D=2004&tx_news_pi1%5Byear%5D=2022",
+							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/e618e537165fd23dda3a1191016596d3/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=8&tx_news_pi1%5Bmonth%5D=06&tx_news_pi1%5Bnews%5D=2010&tx_news_pi1%5Byear%5D=2022",
 							"method": "GET",
 							"param": "tx_news_pi1[year]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/5851eaf619931a2a1df82e8b3ac6b608/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=23&tx_news_pi1%5Bmonth%5D=05&tx_news_pi1%5Bnews%5D=2004&tx_news_pi1%5Byear%5D=2022",
+							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/e618e537165fd23dda3a1191016596d3/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=8&tx_news_pi1%5Bmonth%5D=06&tx_news_pi1%5Bnews%5D=2010&tx_news_pi1%5Byear%5D=2022",
 							"method": "GET",
 							"param": "tx_news_pi1[year]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/5851eaf619931a2a1df82e8b3ac6b608/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=23&tx_news_pi1%5Bmonth%5D=05&tx_news_pi1%5Bnews%5D=2004&tx_news_pi1%5Byear%5D=2022",
+							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/e618e537165fd23dda3a1191016596d3/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=8&tx_news_pi1%5Bmonth%5D=06&tx_news_pi1%5Bnews%5D=2010&tx_news_pi1%5Byear%5D=2022",
 							"method": "GET",
 							"param": "tx_news_pi1[year]",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/5851eaf619931a2a1df82e8b3ac6b608/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=23&tx_news_pi1%5Bmonth%5D=05&tx_news_pi1%5Bnews%5D=2004&tx_news_pi1%5Byear%5D=2022",
+							"uri": "https://www.univ-gustave-eiffel.fr/actualites/actualite/e618e537165fd23dda3a1191016596d3/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=8&tx_news_pi1%5Bmonth%5D=06&tx_news_pi1%5Bnews%5D=2010&tx_news_pi1%5Byear%5D=2022",
 							"method": "GET",
 							"param": "tx_news_pi1[year]",
 							"attack": "",
@@ -1627,11 +1662,11 @@
 					],
 					"count": "10",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.univ-gustave-eiffel.fr/actualites/actualite/1cb3b353041abcd18e86396292ca2c47/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=3&tx_news_pi1%5Bmonth%5D=06&tx_news_pi1%5Bnews%5D=2008&tx_news_pi1%5Byear%5D=2022</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>tx_news_pi1[year]=2022</p><p></p><p>The user-controlled value was:</p><p>https://www.univ-gustave-eiffel.fr/actualites/actualite/1cb3b353041abcd18e86396292ca2c47/?tx_news_pi1%5baction%5d=detail&tx_news_pi1%5bcontroller%5d=news&tx_news_pi1%5bday%5d=3&tx_news_pi1%5bmonth%5d=06&tx_news_pi1%5bnews%5d=2008&tx_news_pi1%5byear%5d=2022</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.univ-gustave-eiffel.fr/actualites/actualite/1cb3b353041abcd18e86396292ca2c47/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bday%5D=3&tx_news_pi1%5Bmonth%5D=06&tx_news_pi1%5Bnews%5D=2008&tx_news_pi1%5Byear%5D=2022</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>tx_news_pi1[year]=2022</p><p></p><p>The user-controlled value was:</p><p>https://www.univ-gustave-eiffel.fr/actualites/actualite/1cb3b353041abcd18e86396292ca2c47/?tx_news_pi1%5bnews%5d=2008&tx_news_pi1%5bcontroller%5d=news&tx_news_pi1%5baction%5d=detail&tx_news_pi1%5bday%5d=3&tx_news_pi1%5bmonth%5d=06&tx_news_pi1%5byear%5d=2022</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "427"
+					"sourceid": "438"
 				}
 			]
 		}
