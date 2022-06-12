@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Jun  5 02:30:56 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.parisnanterre.fr
+# Nmap 7.92 scan initiated Sun Jun 12 03:02:26 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.parisnanterre.fr
 Nmap scan report for www.parisnanterre.fr (193.50.151.174)
-Host is up (0.084s latency).
+Host is up (0.15s latency).
 rDNS record for 193.50.151.174: ksupapp21.u-paris10.fr
 Not shown: 997 filtered tcp ports (no-response)
 PORT     STATE  SERVICE    VERSION
@@ -35,6 +35,7 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2020-35452	6.8	https://vulners.com/cve/CVE-2020-35452
 |     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
 |     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
+|     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
 |     	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
 |     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
 |     	MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/	6.0	https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/	*EXPLOIT*
@@ -111,6 +112,7 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2020-35452	6.8	https://vulners.com/cve/CVE-2020-35452
 |     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
 |     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
+|     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
 |     	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
 |     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
 |     	MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/	6.0	https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/	*EXPLOIT*
@@ -159,4 +161,4 @@ PORT     STATE  SERVICE    VERSION
 9090/tcp closed zeus-admin
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jun  5 02:31:18 2022 -- 1 IP address (1 host up) scanned in 22.34 seconds
+# Nmap done at Sun Jun 12 03:02:53 2022 -- 1 IP address (1 host up) scanned in 27.11 seconds
