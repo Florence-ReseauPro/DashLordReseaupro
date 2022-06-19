@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Jun 12 01:26:13 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln unif.fr
+# Nmap 7.92 scan initiated Sun Jun 19 01:28:26 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln unif.fr
 Nmap scan report for unif.fr (192.33.182.249)
 Host is up (0.11s latency).
 rDNS record for 192.33.182.249: unknown-1.univ-paris13.fr
@@ -29,10 +29,11 @@ PORT     STATE  SERVICE    VERSION
 80/tcp   open   http       Apache httpd 2.4.10
 |_http-server-header: Apache/2.4.10 (Debian)
 443/tcp  open   ssl/http   Apache httpd 2.4.10
+|_http-server-header: Apache/2.4.10 (Debian)
 | vulners: 
 |   cpe:/a:apache:http_server:2.4.10: 
 |     	E899CC4B-A3FD-5288-BB62-A4201F93FDCC	10.0	https://vulners.com/githubexploit/E899CC4B-A3FD-5288-BB62-A4201F93FDCC	*EXPLOIT*
-|     	5DE1B404-0368-5986-856A-306EA0FE0C09	10.0	https://vulners.com/githubexploit/5DE1B404-0368-5986-856A-306EA0FE0C09	*EXPLOIT*
+|     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
 |     	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
 |     	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
 |     	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
@@ -70,6 +71,7 @@ PORT     STATE  SERVICE    VERSION
 |     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
 |     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
 |     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
+|     	CVE-2022-28615	6.4	https://vulners.com/cve/CVE-2022-28615
 |     	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
 |     	CVE-2017-9788	6.4	https://vulners.com/cve/CVE-2017-9788
 |     	MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/	6.0	https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/	*EXPLOIT*
@@ -97,6 +99,11 @@ PORT     STATE  SERVICE    VERSION
 |     	EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	*EXPLOIT*
 |     	EDB-ID:42745	5.0	https://vulners.com/exploitdb/EDB-ID:42745	*EXPLOIT*
 |     	EDB-ID:40961	5.0	https://vulners.com/exploitdb/EDB-ID:40961	*EXPLOIT*
+|     	CVE-2022-30556	5.0	https://vulners.com/cve/CVE-2022-30556
+|     	CVE-2022-30522	5.0	https://vulners.com/cve/CVE-2022-30522
+|     	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
+|     	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
+|     	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
 |     	CVE-2022-22719	5.0	https://vulners.com/cve/CVE-2022-22719
 |     	CVE-2021-34798	5.0	https://vulners.com/cve/CVE-2021-34798
 |     	CVE-2021-26690	5.0	https://vulners.com/cve/CVE-2021-26690
@@ -131,7 +138,6 @@ PORT     STATE  SERVICE    VERSION
 |     	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1283/	3.5	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1283/	*EXPLOIT*
 |     	MSF:ILITIES/CENTOS_LINUX-CVE-2018-1283/	3.5	https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2018-1283/	*EXPLOIT*
 |_    	PACKETSTORM:140265	0.0	https://vulners.com/packetstorm/PACKETSTORM:140265	*EXPLOIT*
-|_http-server-header: Apache/2.4.10 (Debian)
 2251/tcp closed dif-port
 3404/tcp closed unknown
 8080/tcp closed http-proxy
@@ -139,4 +145,4 @@ PORT     STATE  SERVICE    VERSION
 Service Info: Host: formation.unif.eu; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jun 12 01:26:36 2022 -- 1 IP address (1 host up) scanned in 23.48 seconds
+# Nmap done at Sun Jun 19 01:28:51 2022 -- 1 IP address (1 host up) scanned in 24.39 seconds
