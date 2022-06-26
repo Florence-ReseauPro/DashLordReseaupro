@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 19 Jun 2022 01:15:47",
+	"@generated": "Sun, 26 Jun 2022 01:18:04",
 	"site":[ 
 		{
 			"@name": "http://reseaupro.unpidf.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "175"
+					"sourceid": "181"
 				},
 				{
 					"pluginid": "10202",
@@ -58,7 +58,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "111"
+					"sourceid": "114"
 				},
 				{
 					"pluginid": "10038",
@@ -379,7 +379,7 @@
 					"reference": "<p>https://nvd.nist.gov/vuln/detail/CVE-2012-6708</p><p>https://github.com/jquery/jquery/issues/2432</p><p>http://research.insecurelabs.org/jquery/test/</p><p>http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/</p><p>http://bugs.jquery.com/ticket/11290</p><p>https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/</p><p>https://nvd.nist.gov/vuln/detail/CVE-2019-11358</p><p>https://nvd.nist.gov/vuln/detail/CVE-2015-9251</p><p>https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b</p><p>https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "107"
+					"sourceid": "110"
 				},
 				{
 					"pluginid": "10010",
@@ -485,7 +485,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "190"
+					"sourceid": "196"
 				},
 				{
 					"pluginid": "10063",
@@ -971,13 +971,6 @@
 							"evidence": "php/entreprises/infosEntreprise/id_entreprise/10368"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/page/1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "php/entreprises/infosEntreprise/id_entreprise/10368"
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/raison_sociale/ReseauPro+Portail+Entreprise",
 							"method": "GET",
 							"param": "",
@@ -1013,11 +1006,18 @@
 							"evidence": "php/gabarits/showImageActuRecruteur/id_actu/44"
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/actuRecruteur/id/50",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "php/gabarits/showImageActuRecruteur/id_actu/50"
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "php/gabarits/showImageActuRecruteur/id_actu/44"
+							"evidence": "php/gabarits/showImageActuRecruteur/id_actu/50"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/js/ckeditor/ckeditor.js",
@@ -1047,7 +1047,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "104"
+					"sourceid": "107"
 				},
 				{
 					"pluginid": "10027",
@@ -1425,11 +1425,11 @@
 					],
 					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=a06eee4d7893147416980f650309d214</p><p></p><p>The user-controlled value was:</p><p>a06eee4d7893147416980f650309d214</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=11fd9b9350603c12bf5843b3daf55a39</p><p></p><p>The user-controlled value was:</p><p>11fd9b9350603c12bf5843b3daf55a39</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "191"
+					"sourceid": "197"
 				}
 			]
 		}
