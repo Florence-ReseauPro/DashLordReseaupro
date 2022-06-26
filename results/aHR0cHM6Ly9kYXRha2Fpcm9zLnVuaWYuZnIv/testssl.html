@@ -21,19 +21,12 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-chacha (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az131-376:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az204-224:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Jan 18 17:12:17 2019&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2022-06-19 02:08:24        --&gt;&gt; 192.33.182.243:443 (datakairos.unif.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2022-06-26 02:22:38        --&gt;&gt; 192.33.182.243:443 (datakairos.unif.fr) &lt;&lt;--</span>
 
  rDNS (192.33.182.243):  cassiopee.sorbonne-paris-nord.fr.
-<span style="color:#cd00cd;"> Oops: TCP connect problem</span>
-
-<span style="color:#cd00cd;">Unable to open a socket to 192.33.182.243:443. </span>
-<span style="color:#be32d0;font-weight:bold;">Fatal error: repeated TCP connect problems, giving up</span>
-Consider increasing MAX_SOCKET_FAIL (currently: 2)
-
-</pre>
-</body>
-</html>
+<span style="color:#be32d0;font-weight:bold;"> Testing with datakairos.unif.fr:443 only worked using /home/testssl/bin/openssl.Linux.x86_64.</span>
+<span style="color:#be32d0;font-weight:bold;"> Test results may be somewhat better if the --ssl-native option is used.</span>

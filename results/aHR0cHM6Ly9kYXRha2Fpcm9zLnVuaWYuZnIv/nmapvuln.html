@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln datakairos.unif.fr</pre>
-<p class="lead">Sun Jun 19 02:12:57 2022 – Sun Jun 19 02:13:18 2022<br>1 hosts scanned.
+<p class="lead">Sun Jun 26 02:32:35 2022 – Sun Jun 26 02:32:55 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -78,7 +78,7 @@
 <td><span class="label label-success">up</span></td>
 <td>192.33.182.243</td>
 <td>datakairos.unif.fr</td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -110,6 +110,24 @@
 <th>Extra Info</th>
 </tr></thead>
 <tbody>
+<tr class="success">
+<td title="Port">22</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">ssh</td>
+<td title="Product">OpenSSH</td>
+<td title="Version">8.2p1 Ubuntu 4ubuntu0.2</td>
+<td title="Extra Info">Ubuntu Linux; protocol 2.0</td>
+</tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:openbsd:openssh:8.2p1">cpe:/a:openbsd:openssh:8.2p1</a><h5>vulners</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  cpe:/a:openbsd:openssh:8.2p1: 
+    	CVE-2020-15778	6.8	https://vulners.com/cve/CVE-2020-15778
+    	C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	6.8	https://vulners.com/githubexploit/C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	*EXPLOIT*
+    	10213DBE-F683-58BB-B6D3-353173626207	6.8	https://vulners.com/githubexploit/10213DBE-F683-58BB-B6D3-353173626207	*EXPLOIT*
+    	CVE-2020-12062	5.0	https://vulners.com/cve/CVE-2020-12062</pre>
+</td></tr>
 <tr class="active">
 <td>53</td>
 <td>tcp</td>
@@ -136,15 +154,33 @@
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">tcpwrapped</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
+<td title="Service">http</td>
+<td title="Product">nginx</td>
+<td title="Version">1.18.0</td>
+<td title="Extra Info">Ubuntu</td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx:1.18.0">cpe:/a:igor_sysoev:nginx:1.18.0</a><h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nginx/1.18.0 (Ubuntu)</pre>
 </td></tr>
+<tr class="active">
+<td>2251</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>dif-port</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="active">
+<td>3404</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>unknown</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr class="active">
 <td>8080</td>
 <td>tcp</td>
@@ -182,6 +218,16 @@
 <tbody>
 <tr>
 <td>192.33.182.243 - datakairos.unif.fr</td>
+<td>22</td>
+<td>tcp</td>
+<td>ssh</td>
+<td>OpenSSH</td>
+<td>8.2p1 Ubuntu 4ubuntu0.2</td>
+<td>cpe:/a:openbsd:openssh:8.2p1</td>
+<td>Ubuntu Linux; protocol 2.0</td>
+</tr>
+<tr>
+<td>192.33.182.243 - datakairos.unif.fr</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -194,11 +240,11 @@
 <td>192.33.182.243 - datakairos.unif.fr</td>
 <td>443</td>
 <td>tcp</td>
-<td>tcpwrapped</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>http</td>
+<td>nginx</td>
+<td>1.18.0</td>
+<td>cpe:/a:igor_sysoev:nginx:1.18.0</td>
+<td>Ubuntu</td>
 </tr>
 </tbody>
 </table></div>
