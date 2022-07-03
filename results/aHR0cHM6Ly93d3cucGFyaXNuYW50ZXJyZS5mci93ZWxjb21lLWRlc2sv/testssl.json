@@ -359,8 +359,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (31)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (24)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -373,7 +373,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2022-07-28 00:00"
           }
 ,         {
@@ -514,14 +514,14 @@
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1656212000"
+              "finding"      : "1656815851"
           }
 ,         {
               "id"           : "HSTS",
@@ -1114,6 +1114,6 @@
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "181"
+              "finding"      : "138"
           }
 ]
