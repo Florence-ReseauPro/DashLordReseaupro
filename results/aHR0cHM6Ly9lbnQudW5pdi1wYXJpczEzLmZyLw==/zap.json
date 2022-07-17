@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 10 Jul 2022 02:34:30",
+	"@generated": "Sun, 17 Jul 2022 03:25:15",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -23,7 +23,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=B280DB5B54258FDA4A1211A107C66E1E?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=AA96ADCED9B1DA41437D6E6B9EC7BA84?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
 						}
 					],
 					"count": "1",
@@ -522,6 +522,32 @@
 					"sourceid": "1"
 				},
 				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
+					"instances":[ 
+						{
+							"uri": "https://ent.univ-paris13.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "33304694"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>33304694, which evaluates to: 1971-01-21 11:18:14</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
 					"pluginid": "10021",
 					"alertRef": "10021",
 					"alert": "X-Content-Type-Options Header Missing",
@@ -562,12 +588,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-3132005-tzRc9OkSZJYzGedpQnKejeqJtdNjAa-cas1"
+							"evidence": "LT-33304694-0FHT3eGee06wiwK3P3pF6tFFye70Yf-cas2"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFD}\uFFFD\u04DF\uFFFD\uFFFD\\x0017=:D\uFFFD%\uFFFD\uFFFDy\uFFFDP\uFFFD\uFFFD\uFFFDz\uFFFDmt\uFFFD\uFFFDk\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD}8\uFFFD\uFFFD>\uFFFDQ\uFFFD\uFFFD\uFFFD{N\uFFFD\uFFFD\\x0002\uFFFD?zE\uFFFD\uFFFDE\uFFFD\uFFFD\uFFFDa\uFFFD\uFFFDj\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
