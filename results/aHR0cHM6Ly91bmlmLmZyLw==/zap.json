@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 17 Jul 2022 01:25:07",
+	"@generated": "Sun, 24 Jul 2022 01:24:58",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -54,13 +54,6 @@
 							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">"
 						},
 						{
-							"uri": "https://unif.fr/marionum/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">"
-						},
-						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
@@ -76,6 +69,13 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">"
+						},
+						{
+							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -246,13 +246,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/marionum/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -268,6 +261,13 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -332,7 +332,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202228.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202229.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -360,7 +360,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202228.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202229.js' defer></script>"
 						}
 					],
 					"count": "8",
@@ -435,7 +435,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "951"
+					"sourceid": "954"
 				},
 				{
 					"pluginid": "10054",
@@ -475,7 +475,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "951"
+					"sourceid": "954"
 				},
 				{
 					"pluginid": "10017",
@@ -490,9 +490,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202228.js",
+							"param": "https://stats.wp.com/e-202229.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202228.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202229.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/",
@@ -504,9 +504,9 @@
 						{
 							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202228.js",
+							"param": "https://stats.wp.com/e-202229.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202228.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202229.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
@@ -518,9 +518,9 @@
 						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202228.js",
+							"param": "https://stats.wp.com/e-202229.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202228.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202229.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
@@ -532,9 +532,9 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202228.js",
+							"param": "https://stats.wp.com/e-202229.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202228.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202229.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -546,9 +546,9 @@
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202228.js",
+							"param": "https://stats.wp.com/e-202229.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202228.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202229.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
@@ -590,7 +590,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "387"
+					"sourceid": "384"
 				},
 				{
 					"pluginid": "10063",
@@ -1165,13 +1165,6 @@
 							"evidence": "lLm0ihXnUAFjUqZVBc2dSDAGY4gGpp9hfRaoXA8h_bw"
 						},
 						{
-							"uri": "https://unif.fr/marionum/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "lLm0ihXnUAFjUqZVBc2dSDAGY4gGpp9hfRaoXA8h_bw"
-						},
-						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
@@ -1187,6 +1180,13 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "lLm0ihXnUAFjUqZVBc2dSDAGY4gGpp9hfRaoXA8h_bw"
+						},
+						{
+							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1234,13 +1234,6 @@
 						},
 						{
 							"uri": "https://unif.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Funif.fr%2Fcarte-multi-services%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Funif.fr%2Fdata-center-regional%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1296,6 +1289,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://unif.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Funif.fr%2Freponses-u%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://unif.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Funif.fr%2Fsms-u%2F",
 							"method": "GET",
 							"param": "",
@@ -1316,7 +1316,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "373"
+					"sourceid": "374"
 				},
 				{
 					"pluginid": "10027",
@@ -1364,13 +1364,6 @@
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://unif.fr/marionum/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
@@ -1386,6 +1379,13 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
+							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1460,13 +1460,6 @@
 							"evidence": "<a href=\"#\">Pr\u00E9sentation</a>"
 						},
 						{
-							"uri": "https://unif.fr/marionum/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"#\">Pr\u00E9sentation</a>"
-						},
-						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
@@ -1482,6 +1475,13 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"#\">Pr\u00E9sentation</a>"
+						},
+						{
+							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1534,7 +1534,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "86"
+					"sourceid": "87"
 				},
 				{
 					"pluginid": "10015",
@@ -1848,7 +1848,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "951"
+					"sourceid": "954"
 				}
 			]
 		}
