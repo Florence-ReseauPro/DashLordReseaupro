@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Jul 24 03:22:52 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
+# Nmap 7.92 scan initiated Sun Jul 31 04:01:51 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
 Nmap scan report for ent.univ-paris13.fr (81.194.43.212)
-Host is up (0.11s latency).
+Host is up (0.13s latency).
 Other addresses for ent.univ-paris13.fr (not scanned): 81.194.43.211
 rDNS record for 81.194.43.212: lb.univ-paris13.fr
 Not shown: 993 filtered tcp ports (no-response)
@@ -32,7 +32,7 @@ PORT    STATE  SERVICE        VERSION
 587/tcp closed submission
 636/tcp open   tcpwrapped
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port80-TCP:V=7.92%I=7%D=7/24%Time=62DCBB20%P=x86_64-alpine-linux-musl%r
+SF-Port80-TCP:V=7.92%I=7%D=7/31%Time=62E5FEC0%P=x86_64-alpine-linux-musl%r
 SF:(GetRequest,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-len
 SF:gth:\x200\r\nlocation:\x20https:///\r\nconnection:\x20close\r\n\r\n")%r
 SF:(HTTPOptions,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-le
@@ -64,4 +64,4 @@ SF:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x
 SF:20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jul 24 03:23:26 2022 -- 1 IP address (1 host up) scanned in 34.65 seconds
+# Nmap done at Sun Jul 31 04:02:25 2022 -- 1 IP address (1 host up) scanned in 33.36 seconds
