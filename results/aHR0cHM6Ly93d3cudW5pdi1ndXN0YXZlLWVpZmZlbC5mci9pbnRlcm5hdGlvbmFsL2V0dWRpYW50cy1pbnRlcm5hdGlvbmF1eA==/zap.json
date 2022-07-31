@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 24 Jul 2022 02:05:13",
+	"@generated": "Sun, 31 Jul 2022 02:13:50",
 	"site":[ 
 		{
 			"@name": "https://www.univ-gustave-eiffel.fr",
@@ -53,7 +53,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "661"
+					"sourceid": "668"
 				},
 				{
 					"pluginid": "10202",
@@ -108,14 +108,14 @@
 							"evidence": "<form data-cookieman-form class=\"mt-3\"\n                          data-cookieman-dnt-enabled=\"Vous avez d\u00E9j\u00E0 choisi de ne plus suivre les utilisateurs avec la fonction &lt;a target=&quot;_blank&quot; rel=&quot;noopener&quot; href=&quot;https://en.wikipedia.org/wiki/Do_Not_Track&quot;&gt;Ne pas suivre&lt;/a&gt;de votre navigateur. Nous respectons cela. Vous pouvez modifier cela \u00E0 tous moments dans les param\u00E8tres de votre navigateur.\"\n                    >"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/universite/appui-aux-politiques-publiques/",
+							"uri": "https://www.univ-gustave-eiffel.fr/universite/premiere-universite-en-apprentissage/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form id=\"searchform-1\" method=\"get\" name=\"form_kesearch_pi1\"  action=\"resultats-de-recherche/\" class=\"u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-pa-10 g-mt-25--lg g-mt-15--lg--scrolling\">"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/universite/appui-aux-politiques-publiques/",
+							"uri": "https://www.univ-gustave-eiffel.fr/universite/premiere-universite-en-apprentissage/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -416,7 +416,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "658"
+					"sourceid": "665"
 				},
 				{
 					"pluginid": "10099",
@@ -449,7 +449,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "664"
+					"sourceid": "670"
 				},
 				{
 					"pluginid": "90003",
@@ -589,9 +589,16 @@
 							"param": "PHPSESSID",
 							"attack": "",
 							"evidence": "Set-Cookie: PHPSESSID"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
+							"method": "GET",
+							"param": "PHPSESSID",
+							"attack": "",
+							"evidence": "Set-Cookie: PHPSESSID"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
@@ -622,9 +629,16 @@
 							"param": "PHPSESSID",
 							"attack": "",
 							"evidence": "Set-Cookie: PHPSESSID"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
+							"method": "GET",
+							"param": "PHPSESSID",
+							"attack": "",
+							"evidence": "Set-Cookie: PHPSESSID"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
@@ -655,9 +669,16 @@
 							"param": "PHPSESSID",
 							"attack": "",
 							"evidence": "Set-Cookie: PHPSESSID"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
+							"method": "GET",
+							"param": "PHPSESSID",
+							"attack": "",
+							"evidence": "Set-Cookie: PHPSESSID"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
