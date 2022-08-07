@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 31 Jul 2022 01:28:44",
+	"@generated": "Sun, 7 Aug 2022 01:22:42",
 	"site":[ 
 		{
 			"@name": "http://reseaupro.unpidf.fr",
@@ -371,9 +371,16 @@
 							"param": "",
 							"attack": "",
 							"evidence": "/*! jQuery UI - v1.12.1"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/js/jquery.dataTables.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/*! DataTables 1.10.3"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Please upgrade to the latest version of jquery.</p>",
 					"otherinfo": "<p>CVE-2020-11023</p><p>CVE-2020-11022</p><p>CVE-2015-9251</p><p>CVE-2019-11358</p><p>CVE-2012-6708</p><p></p>",
 					"reference": "<p>https://nvd.nist.gov/vuln/detail/CVE-2012-6708</p><p>https://github.com/jquery/jquery/issues/2432</p><p>http://research.insecurelabs.org/jquery/test/</p><p>http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/</p><p>http://bugs.jquery.com/ticket/11290</p><p>https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/</p><p>https://nvd.nist.gov/vuln/detail/CVE-2019-11358</p><p>https://nvd.nist.gov/vuln/detail/CVE-2015-9251</p><p>https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b</p><p>https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/</p><p></p>",
@@ -485,7 +492,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "197"
+					"sourceid": "196"
 				},
 				{
 					"pluginid": "10063",
@@ -1425,11 +1432,11 @@
 					],
 					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=34384a6b489e984e8b95f5c373bac9a5</p><p></p><p>The user-controlled value was:</p><p>34384a6b489e984e8b95f5c373bac9a5</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=ed02d24b280e9bbb57f02fb642186d03</p><p></p><p>The user-controlled value was:</p><p>ed02d24b280e9bbb57f02fb642186d03</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "196"
+					"sourceid": "197"
 				}
 			]
 		}
