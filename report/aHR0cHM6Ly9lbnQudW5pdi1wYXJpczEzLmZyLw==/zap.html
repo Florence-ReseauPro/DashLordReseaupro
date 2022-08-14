@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 7 Aug 2022 04:08:41
+		Generated on Sun, 14 Aug 2022 03:33:32
 	</h3>
 
 	
@@ -168,7 +168,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>3</div>
+					<div>4</div>
 				</td>
 			</tr>
 			<tr>
@@ -264,6 +264,11 @@ td {
 				<td align="center">1</td>
 			</tr>
 			<tr>
+				<td><a href="#10094">Base64 Disclosure</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				<td align="center">1</td>
+			</tr>
+			<tr>
 				<td><a href="#10049">Non-Storable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
 				<td align="center">1</td>
@@ -344,7 +349,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;fm1&quot; name=&quot;fm1&quot; class=&quot;fm-v clearfix&quot; action=&quot;/cas/login;CASSESSIONID=F0009A6A289821B5FBFF9C938947C41B?service=https%3A%2F%2Fent.univ-paris13.fr&quot; method=&quot;post&quot;&gt;</td>
+						<td width="80%">&lt;form id=&quot;fm1&quot; name=&quot;fm1&quot; class=&quot;fm-v clearfix&quot; action=&quot;/cas/login;CASSESSIONID=6725A520750CA28C21B72E9A434942F9?service=https%3A%2F%2Fent.univ-paris13.fr&quot; method=&quot;post&quot;&gt;</td>
 					</tr>
 				
 				<tr>
@@ -2148,6 +2153,85 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10021/">10021</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
+						id="10094"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Base64 Disclosure</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ent.univ-paris13.fr/">https://ent.univ-paris13.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">LT-47378-jOkHDXmq0ZIMJsT1ONTHgqZUTpPeAf-cas1</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10094/">10094</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
