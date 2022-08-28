@@ -10,7 +10,7 @@
 <pre>
 <span style="font-weight:bold;">
 ###########################################################
-    testssl.sh       3.1dev from </span><a href="https://testssl.sh/dev/" style="font-weight:bold;color:black;text-decoration:none;">https://testssl.sh/dev/</a>
+    testssl.sh       3.2rc1 from </span><a href="https://testssl.sh/dev/" style="font-weight:bold;color:black;text-decoration:none;">https://testssl.sh/dev/</a>
 <span style="font-weight:bold;">
       This program is free software. Distribution and
              modification under GPLv2 permitted.
@@ -21,15 +21,17 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-chacha (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az204-439:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az96-669:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Jan 18 17:12:17 2019&quot;, platform: &quot;linux-x86_64&quot;)
 
 
 <span style="font-weight:bold;">Testing all IPv4 addresses (port 443): </span>81.194.43.211 81.194.43.212
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2022-08-21 03:55:35        --&gt;&gt; 81.194.43.211:443 (ent.univ-paris13.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2022-08-28 04:16:02        --&gt;&gt; 81.194.43.211:443 (ent.univ-paris13.fr) &lt;&lt;--</span>
 
  Further IP addresses:   81.194.43.212 
  rDNS (81.194.43.211):   lb.univ-paris13.fr.
-<span style="color:#be32d0;font-weight:bold;"> Testing with ent.univ-paris13.fr:443 only worked using /home/testssl/bin/openssl.Linux.x86_64.</span>
-<span style="color:#be32d0;font-weight:bold;"> Test results may be somewhat better if the --ssl-native option is used.</span>
+<span style="color:#cd00cd;"> Oops: TCP connect problem</span>
+
+<span style="color:#cd00cd;">Unable to open a socket to 81.194.43.211:443. </span>
+<span style="font-weight:bold;"> 81.194.43.211:443 </span><span style="font-weight:bold;">doesn&apos;t seem to be a TLS/SSL enabled server</span>
