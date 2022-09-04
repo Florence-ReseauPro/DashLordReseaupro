@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Aug 28 04:03:28 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.parisnanterre.fr
+# Nmap 7.92 scan initiated Sun Sep  4 04:06:41 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.parisnanterre.fr
 Nmap scan report for www.parisnanterre.fr (193.50.151.174)
 Host is up (0.15s latency).
 rDNS record for 193.50.151.174: ksupapp21.u-paris10.fr
@@ -21,7 +21,6 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2019-0211	7.2	https://vulners.com/cve/CVE-2019-0211
 |     	1337DAY-ID-32502	7.2	https://vulners.com/zdt/1337DAY-ID-32502	*EXPLOIT*
 |     	FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	6.8	https://vulners.com/githubexploit/FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	*EXPLOIT*
-|     	CVE-2022-22721	6.8	https://vulners.com/cve/CVE-2022-22721
 |     	CVE-2021-40438	6.8	https://vulners.com/cve/CVE-2021-40438
 |     	CVE-2020-35452	6.8	https://vulners.com/cve/CVE-2020-35452
 |     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
@@ -34,6 +33,7 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2019-10097	6.0	https://vulners.com/cve/CVE-2019-10097
 |     	CVE-2019-0217	6.0	https://vulners.com/cve/CVE-2019-0217
 |     	CVE-2019-0215	6.0	https://vulners.com/cve/CVE-2019-0215
+|     	CVE-2022-22721	5.8	https://vulners.com/cve/CVE-2022-22721
 |     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
 |     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
 |     	1337DAY-ID-33577	5.8	https://vulners.com/zdt/1337DAY-ID-33577	*EXPLOIT*
@@ -62,7 +62,6 @@ PORT     STATE  SERVICE    VERSION
 |     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
 |_    	PACKETSTORM:152441	0.0	https://vulners.com/packetstorm/PACKETSTORM:152441	*EXPLOIT*
 443/tcp  open   ssl/http   Apache httpd 2.4.37 ((Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48)
-|_http-server-header: Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48
 | vulners: 
 |   cpe:/a:apache:http_server:2.4.37: 
 |     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
@@ -78,7 +77,6 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2019-0211	7.2	https://vulners.com/cve/CVE-2019-0211
 |     	1337DAY-ID-32502	7.2	https://vulners.com/zdt/1337DAY-ID-32502	*EXPLOIT*
 |     	FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	6.8	https://vulners.com/githubexploit/FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	*EXPLOIT*
-|     	CVE-2022-22721	6.8	https://vulners.com/cve/CVE-2022-22721
 |     	CVE-2021-40438	6.8	https://vulners.com/cve/CVE-2021-40438
 |     	CVE-2020-35452	6.8	https://vulners.com/cve/CVE-2020-35452
 |     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
@@ -91,6 +89,7 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2019-10097	6.0	https://vulners.com/cve/CVE-2019-10097
 |     	CVE-2019-0217	6.0	https://vulners.com/cve/CVE-2019-0217
 |     	CVE-2019-0215	6.0	https://vulners.com/cve/CVE-2019-0215
+|     	CVE-2022-22721	5.8	https://vulners.com/cve/CVE-2022-22721
 |     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
 |     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
 |     	1337DAY-ID-33577	5.8	https://vulners.com/zdt/1337DAY-ID-33577	*EXPLOIT*
@@ -118,7 +117,8 @@ PORT     STATE  SERVICE    VERSION
 |     	1337DAY-ID-35422	4.3	https://vulners.com/zdt/1337DAY-ID-35422	*EXPLOIT*
 |     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
 |_    	PACKETSTORM:152441	0.0	https://vulners.com/packetstorm/PACKETSTORM:152441	*EXPLOIT*
+|_http-server-header: Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48
 9090/tcp closed zeus-admin
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Aug 28 04:03:56 2022 -- 1 IP address (1 host up) scanned in 27.47 seconds
+# Nmap done at Sun Sep  4 04:07:10 2022 -- 1 IP address (1 host up) scanned in 29.17 seconds
