@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Sep  4 01:33:26 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln unif.fr
+# Nmap 7.92 scan initiated Sun Sep 11 01:44:02 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln unif.fr
 Nmap scan report for unif.fr (192.33.182.249)
 Host is up (0.081s latency).
 rDNS record for 192.33.182.249: unknown-1.univ-paris13.fr
@@ -30,6 +30,7 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2020-35452	6.8	https://vulners.com/cve/CVE-2020-35452
 |     	CVE-2018-1312	6.8	https://vulners.com/cve/CVE-2018-1312
 |     	CVE-2017-15715	6.8	https://vulners.com/cve/CVE-2017-15715
+|     	CVE-2016-5387	6.8	https://vulners.com/cve/CVE-2016-5387
 |     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
 |     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
 |     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
@@ -42,14 +43,12 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
 |     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
 |     	1337DAY-ID-33577	5.8	https://vulners.com/zdt/1337DAY-ID-33577	*EXPLOIT*
-|     	CVE-2016-5387	5.1	https://vulners.com/cve/CVE-2016-5387
 |     	SSV:96537	5.0	https://vulners.com/seebug/SSV:96537	*EXPLOIT*
 |     	SSV:62058	5.0	https://vulners.com/seebug/SSV:62058	*EXPLOIT*
 |     	EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7	5.0	https://vulners.com/exploitpack/EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7	*EXPLOIT*
 |     	EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	*EXPLOIT*
 |     	EDB-ID:42745	5.0	https://vulners.com/exploitdb/EDB-ID:42745	*EXPLOIT*
 |     	CVE-2022-30556	5.0	https://vulners.com/cve/CVE-2022-30556
-|     	CVE-2022-30522	5.0	https://vulners.com/cve/CVE-2022-30522
 |     	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
 |     	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
 |     	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
@@ -69,6 +68,7 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2015-3183	5.0	https://vulners.com/cve/CVE-2015-3183
 |     	CVE-2015-0228	5.0	https://vulners.com/cve/CVE-2015-0228
 |     	CVE-2014-3583	5.0	https://vulners.com/cve/CVE-2014-3583
+|     	CVE-2014-3581	5.0	https://vulners.com/cve/CVE-2014-3581
 |     	CVE-2013-5704	5.0	https://vulners.com/cve/CVE-2013-5704
 |     	CNVD-2022-53584	5.0	https://vulners.com/cnvd/CNVD-2022-53584
 |     	CNVD-2022-53582	5.0	https://vulners.com/cnvd/CNVD-2022-53582
@@ -95,6 +95,7 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2020-35452	6.8	https://vulners.com/cve/CVE-2020-35452
 |     	CVE-2018-1312	6.8	https://vulners.com/cve/CVE-2018-1312
 |     	CVE-2017-15715	6.8	https://vulners.com/cve/CVE-2017-15715
+|     	CVE-2016-5387	6.8	https://vulners.com/cve/CVE-2016-5387
 |     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
 |     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
 |     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
@@ -107,14 +108,12 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
 |     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
 |     	1337DAY-ID-33577	5.8	https://vulners.com/zdt/1337DAY-ID-33577	*EXPLOIT*
-|     	CVE-2016-5387	5.1	https://vulners.com/cve/CVE-2016-5387
 |     	SSV:96537	5.0	https://vulners.com/seebug/SSV:96537	*EXPLOIT*
 |     	SSV:62058	5.0	https://vulners.com/seebug/SSV:62058	*EXPLOIT*
 |     	EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7	5.0	https://vulners.com/exploitpack/EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7	*EXPLOIT*
 |     	EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	*EXPLOIT*
 |     	EDB-ID:42745	5.0	https://vulners.com/exploitdb/EDB-ID:42745	*EXPLOIT*
 |     	CVE-2022-30556	5.0	https://vulners.com/cve/CVE-2022-30556
-|     	CVE-2022-30522	5.0	https://vulners.com/cve/CVE-2022-30522
 |     	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
 |     	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
 |     	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
@@ -134,6 +133,7 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2015-3183	5.0	https://vulners.com/cve/CVE-2015-3183
 |     	CVE-2015-0228	5.0	https://vulners.com/cve/CVE-2015-0228
 |     	CVE-2014-3583	5.0	https://vulners.com/cve/CVE-2014-3583
+|     	CVE-2014-3581	5.0	https://vulners.com/cve/CVE-2014-3581
 |     	CVE-2013-5704	5.0	https://vulners.com/cve/CVE-2013-5704
 |     	CNVD-2022-53584	5.0	https://vulners.com/cnvd/CNVD-2022-53584
 |     	CNVD-2022-53582	5.0	https://vulners.com/cnvd/CNVD-2022-53582
@@ -149,4 +149,4 @@ PORT     STATE  SERVICE    VERSION
 Service Info: Host: formation.unif.eu; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Sep  4 01:33:47 2022 -- 1 IP address (1 host up) scanned in 21.94 seconds
+# Nmap done at Sun Sep 11 01:44:24 2022 -- 1 IP address (1 host up) scanned in 22.53 seconds
