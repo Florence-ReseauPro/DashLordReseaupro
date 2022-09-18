@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 11 Sep 2022 01:32:50",
+	"@generated": "Sun, 18 Sep 2022 01:51:37",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -320,7 +320,7 @@
 					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "408"
+					"sourceid": "405"
 				},
 				{
 					"pluginid": "10010",
@@ -360,7 +360,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "954"
+					"sourceid": "956"
 				},
 				{
 					"pluginid": "10054",
@@ -400,7 +400,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "954"
+					"sourceid": "956"
 				},
 				{
 					"pluginid": "10017",
@@ -415,9 +415,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202236.js",
+							"param": "https://stats.wp.com/e-202237.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202236.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202237.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/",
@@ -429,9 +429,9 @@
 						{
 							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202236.js",
+							"param": "https://stats.wp.com/e-202237.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202236.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202237.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
@@ -443,9 +443,9 @@
 						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202236.js",
+							"param": "https://stats.wp.com/e-202237.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202236.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202237.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
@@ -457,9 +457,9 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202236.js",
+							"param": "https://stats.wp.com/e-202237.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202236.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202237.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -471,9 +471,9 @@
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202236.js",
+							"param": "https://stats.wp.com/e-202237.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202236.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202237.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
@@ -592,7 +592,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "665"
+					"sourceid": "666"
 				},
 				{
 					"pluginid": "10096",
@@ -605,34 +605,41 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://unif.fr/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "201711455"
+							"evidence": "1663452000"
 						},
 						{
-							"uri": "https://unif.fr/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20180605"
+							"evidence": "1663452000"
 						},
 						{
-							"uri": "https://unif.fr/",
+							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "34806106"
+							"evidence": "1663452000"
+						},
+						{
+							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1663452000"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>201711455, which evaluates to: 1976-05-23 14:57:35</p>",
+					"otherinfo": "<p>1663452000, which evaluates to: 2022-09-17 22:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "129"
 				},
 				{
 					"pluginid": "10021",
@@ -935,8 +942,8 @@
 					"alert": "Re-examine Cache-control Directives",
 					"name": "Re-examine Cache-control Directives",
 					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
@@ -1020,7 +1027,7 @@
 					"count": "11",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
-					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
 					"sourceid": "1"
