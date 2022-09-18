@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 11 Sep 2022 01:55:32",
+	"@generated": "Sun, 18 Sep 2022 02:15:15",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -182,7 +182,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/28236</p><p>https://github.com/twbs/bootstrap/issues/20184</p><p>https://github.com/advisories/GHSA-4p24-vmcr-4gqj</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "169"
+					"sourceid": "166"
 				},
 				{
 					"pluginid": "10017",
@@ -317,69 +317,20 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://parisregion.eu/",
+							"uri": "https://parisregion.eu/map.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "33696000"
-						},
-						{
-							"uri": "https://parisregion.eu/bower_components/bootstrap/dist/css/bootstrap.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "42857143"
-						},
-						{
-							"uri": "https://parisregion.eu/bower_components/bootstrap/dist/css/bootstrap.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "80000000"
-						},
-						{
-							"uri": "https://parisregion.eu/discover.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "33696000"
-						},
-						{
-							"uri": "https://parisregion.eu/news.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "33696000"
-						},
-						{
-							"uri": "https://parisregion.eu/parisregionfp.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "33696000"
-						},
-						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "33696000"
-						},
-						{
-							"uri": "https://parisregion.eu/study-research.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "33696000"
+							"evidence": "1358797613"
 						}
 					],
-					"count": "8",
+					"count": "1",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>33696000, which evaluates to: 1971-01-26 00:00:00</p>",
+					"otherinfo": "<p>1358797613, which evaluates to: 2013-01-21 19:46:53</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "193"
 				},
 				{
 					"pluginid": "10027",
@@ -504,8 +455,8 @@
 					"alert": "Re-examine Cache-control Directives",
 					"name": "Re-examine Cache-control Directives",
 					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
@@ -575,7 +526,7 @@
 					"count": "9",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
-					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
 					"sourceid": "3"
