@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 18 Sep 2022 01:51:37",
+	"@generated": "Sun, 25 Sep 2022 01:29:49",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -316,11 +316,11 @@
 					],
 					"count": "1",
 					"solution": "<p>Please upgrade to the latest version of moment.js.</p>",
-					"otherinfo": "<p>CVE-2017-18214</p><p>CVE-2022-24785</p><p></p>",
-					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
+					"otherinfo": "<p>CVE-2022-31129</p><p>CVE-2017-18214</p><p>CVE-2022-24785</p><p></p>",
+					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://security.snyk.io/vuln/SNYK-JS-MOMENT-2944238</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "405"
+					"sourceid": "401"
 				},
 				{
 					"pluginid": "10010",
@@ -333,34 +333,20 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
-							"uri": "https://unif.fr/wp-login.php?action=lostpassword",
-							"method": "GET",
-							"param": "wordpress_test_cookie",
-							"attack": "",
-							"evidence": "Set-Cookie: wordpress_test_cookie"
-						},
-						{
 							"uri": "https://unif.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "wordpress_test_cookie",
 							"attack": "",
 							"evidence": "Set-Cookie: wordpress_test_cookie"
-						},
-						{
-							"uri": "https://unif.fr/wp-login.php",
-							"method": "POST",
-							"param": "wordpress_test_cookie",
-							"attack": "",
-							"evidence": "Set-Cookie: wordpress_test_cookie"
 						}
 					],
-					"count": "3",
+					"count": "1",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "956"
+					"sourceid": "436"
 				},
 				{
 					"pluginid": "10054",
@@ -373,34 +359,20 @@
 					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
 						{
-							"uri": "https://unif.fr/wp-login.php?action=lostpassword",
-							"method": "GET",
-							"param": "wordpress_test_cookie",
-							"attack": "",
-							"evidence": "Set-Cookie: wordpress_test_cookie"
-						},
-						{
 							"uri": "https://unif.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "wordpress_test_cookie",
 							"attack": "",
 							"evidence": "Set-Cookie: wordpress_test_cookie"
-						},
-						{
-							"uri": "https://unif.fr/wp-login.php",
-							"method": "POST",
-							"param": "wordpress_test_cookie",
-							"attack": "",
-							"evidence": "Set-Cookie: wordpress_test_cookie"
 						}
 					],
-					"count": "3",
+					"count": "1",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "956"
+					"sourceid": "436"
 				},
 				{
 					"pluginid": "10017",
@@ -415,9 +387,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202237.js",
+							"param": "https://stats.wp.com/e-202238.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202237.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202238.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/",
@@ -429,9 +401,9 @@
 						{
 							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202237.js",
+							"param": "https://stats.wp.com/e-202238.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202237.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202238.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
@@ -443,9 +415,9 @@
 						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202237.js",
+							"param": "https://stats.wp.com/e-202238.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202237.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202238.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
@@ -457,9 +429,9 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202237.js",
+							"param": "https://stats.wp.com/e-202238.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202237.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202238.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -471,9 +443,9 @@
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202237.js",
+							"param": "https://stats.wp.com/e-202238.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202237.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202238.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
@@ -609,33 +581,33 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1663452000"
+							"evidence": "1664056800"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1663452000"
+							"evidence": "1664056800"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1663452000"
+							"evidence": "1664056800"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1663452000"
+							"evidence": "1664056800"
 						}
 					],
 					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1663452000, which evaluates to: 2022-09-17 22:00:00</p>",
+					"otherinfo": "<p>1664056800, which evaluates to: 2022-09-24 22:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -838,7 +810,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "374"
+					"sourceid": "373"
 				},
 				{
 					"pluginid": "10027",
