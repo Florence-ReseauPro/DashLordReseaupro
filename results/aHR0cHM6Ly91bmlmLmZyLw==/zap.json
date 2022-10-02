@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 25 Sep 2022 01:29:49",
+	"@generated": "Sun, 2 Oct 2022 01:47:07",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -61,6 +61,13 @@
 							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">"
 						},
 						{
+							"uri": "https://unif.fr/nos-valeurs/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">"
+						},
+						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
@@ -69,13 +76,6 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">"
-						},
-						{
-							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -136,13 +136,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/international/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
@@ -151,6 +144,13 @@
 						},
 						{
 							"uri": "https://unif.fr/membres/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -253,6 +253,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://unif.fr/nos-valeurs/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -261,13 +268,6 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -320,7 +320,7 @@
 					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://security.snyk.io/vuln/SNYK-JS-MOMENT-2944238</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "401"
+					"sourceid": "409"
 				},
 				{
 					"pluginid": "10010",
@@ -333,6 +333,13 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
+							"uri": "https://unif.fr/wp-login.php?action=lostpassword",
+							"method": "GET",
+							"param": "wordpress_test_cookie",
+							"attack": "",
+							"evidence": "Set-Cookie: wordpress_test_cookie"
+						},
+						{
 							"uri": "https://unif.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "wordpress_test_cookie",
@@ -340,13 +347,13 @@
 							"evidence": "Set-Cookie: wordpress_test_cookie"
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "436"
+					"sourceid": "962"
 				},
 				{
 					"pluginid": "10054",
@@ -359,6 +366,13 @@
 					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
 						{
+							"uri": "https://unif.fr/wp-login.php?action=lostpassword",
+							"method": "GET",
+							"param": "wordpress_test_cookie",
+							"attack": "",
+							"evidence": "Set-Cookie: wordpress_test_cookie"
+						},
+						{
 							"uri": "https://unif.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "wordpress_test_cookie",
@@ -366,13 +380,13 @@
 							"evidence": "Set-Cookie: wordpress_test_cookie"
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "436"
+					"sourceid": "962"
 				},
 				{
 					"pluginid": "10017",
@@ -387,9 +401,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202238.js",
+							"param": "https://stats.wp.com/e-202239.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202238.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202239.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/",
@@ -399,28 +413,28 @@
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
 						},
 						{
-							"uri": "https://unif.fr/datakairos/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202238.js",
+							"param": "https://stats.wp.com/e-202239.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202238.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202239.js' defer></script>"
 						},
 						{
-							"uri": "https://unif.fr/datakairos/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202238.js",
+							"param": "https://stats.wp.com/e-202239.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202238.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202239.js' defer></script>"
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
@@ -429,9 +443,9 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202238.js",
+							"param": "https://stats.wp.com/e-202239.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202238.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202239.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -443,9 +457,9 @@
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202238.js",
+							"param": "https://stats.wp.com/e-202239.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202238.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202239.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
@@ -473,13 +487,6 @@
 					"riskdesc": "Low (Medium)",
 					"desc": "<p>The page includes mixed content, that is content accessed via HTTP instead of HTTPS.</p>",
 					"instances":[ 
-						{
-							"uri": "https://unif.fr/blog/2021/03/30/mise-en-page/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "http://unif.fr/wp-content/uploads/2020/03/POD-in-situ-12-cm-ConvertImage-1024x1024.jpg"
-						},
 						{
 							"uri": "https://unif.fr/blog/2021/10/11/reponses-u/",
 							"method": "GET",
@@ -514,6 +521,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "http://unpidf.fr/wp-content/uploads/2015/11/cover-212x300.png"
+						},
+						{
+							"uri": "https://unif.fr/impact-environnemental/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "http://unif.fr/wp-content/uploads/2022/07/Exemple-impact-environnement-Nombre-de-km-equivalent-CO2-1024x476.jpg"
 						},
 						{
 							"uri": "https://unif.fr/oraccle/",
@@ -560,11 +574,11 @@
 					],
 					"count": "12",
 					"solution": "<p>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.</p><p>The page must not contain any content that is transmitted over unencrypted HTTP.</p><p> This includes content from third party sites.</p>",
-					"otherinfo": "<p>tag=img src=http://unif.fr/wp-content/uploads/2020/03/POD-in-situ-12-cm-ConvertImage-1024x1024.jpg</p><p></p>",
+					"otherinfo": "<p>tag=img src=http://unif.fr/wp-content/uploads/2021/10/banniere.jpg</p><p></p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "666"
+					"sourceid": "671"
 				},
 				{
 					"pluginid": "10096",
@@ -577,41 +591,41 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://unif.fr/datakairos/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1664056800"
-						},
-						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1664056800"
+							"evidence": "1664661600"
+						},
+						{
+							"uri": "https://unif.fr/nos-valeurs/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1664661600"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1664056800"
+							"evidence": "1664661600"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1664056800"
+							"evidence": "1664661600"
 						}
 					],
 					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1664056800, which evaluates to: 2022-09-24 22:00:00</p>",
+					"otherinfo": "<p>1664661600, which evaluates to: 2022-10-01 22:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "129"
+					"sourceid": "112"
 				},
 				{
 					"pluginid": "10021",
@@ -645,13 +659,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/international/",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -660,6 +667,13 @@
 						},
 						{
 							"uri": "https://unif.fr/membres/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -755,14 +769,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Funif.fr%2Fmarionum%2F",
+							"uri": "https://unif.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Funif.fr%2Fmembres%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Funif.fr%2Fmembres%2F",
+							"uri": "https://unif.fr/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Funif.fr%2Fnos-valeurs%2F",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -810,7 +824,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "373"
+					"sourceid": "382"
 				},
 				{
 					"pluginid": "10027",
@@ -865,6 +879,13 @@
 							"evidence": "admin"
 						},
 						{
+							"uri": "https://unif.fr/nos-valeurs/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
@@ -873,13 +894,6 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
-							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -940,13 +954,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/international/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -955,6 +962,13 @@
 						},
 						{
 							"uri": "https://unif.fr/membres/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
