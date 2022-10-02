@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 25 Sep 2022 02:14:38",
+	"@generated": "Sun, 2 Oct 2022 02:30:05",
 	"site":[ 
 		{
 			"@name": "https://www.univ-gustave-eiffel.fr",
@@ -157,6 +157,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://www.univ-gustave-eiffel.fr/universite/partenaires-entreprises/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://www.univ-gustave-eiffel.fr/universite/premiere-universite-en-apprentissage/",
 							"method": "GET",
 							"param": "",
@@ -172,13 +179,6 @@
 						},
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/universite/qui-sommes-nous/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/universite/responsabilite-societale/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -345,16 +345,9 @@
 							"param": "PHPSESSID",
 							"attack": "",
 							"evidence": "Set-Cookie: PHPSESSID"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
-							"method": "GET",
-							"param": "PHPSESSID",
-							"attack": "",
-							"evidence": "Set-Cookie: PHPSESSID"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
@@ -385,16 +378,9 @@
 							"param": "PHPSESSID",
 							"attack": "",
 							"evidence": "Set-Cookie: PHPSESSID"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
-							"method": "GET",
-							"param": "PHPSESSID",
-							"attack": "",
-							"evidence": "Set-Cookie: PHPSESSID"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
@@ -425,16 +411,9 @@
 							"param": "PHPSESSID",
 							"attack": "",
 							"evidence": "Set-Cookie: PHPSESSID"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
-							"method": "GET",
-							"param": "PHPSESSID",
-							"attack": "",
-							"evidence": "Set-Cookie: PHPSESSID"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
@@ -534,7 +513,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "581"
+					"sourceid": "580"
 				},
 				{
 					"pluginid": "10096",
@@ -761,7 +740,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "581"
+					"sourceid": "580"
 				},
 				{
 					"pluginid": "10015",
