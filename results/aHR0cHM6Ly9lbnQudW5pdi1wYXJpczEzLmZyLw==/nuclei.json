@@ -1,57 +1,5 @@
 [
   {
-    "template": "ssl/detect-ssl-issuer.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/detect-ssl-issuer.yaml",
-    "template-id": "detect-ssl-issuer",
-    "info": {
-      "name": "Detect SSL Certificate Issuer",
-      "author": [
-        "lingtren"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://ent.univ-paris13.fr/",
-    "matched-at": "https://ent.univ-paris13.fr/",
-    "extracted-results": [
-      "Sectigo Limited"
-    ],
-    "ip": "81.194.43.212",
-    "timestamp": "2022-09-25T04:50:24.93955016Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/tls-version.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-    "template-id": "tls-version",
-    "info": {
-      "name": "TLS Version",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://ent.univ-paris13.fr/",
-    "matched-at": "https://ent.univ-paris13.fr/",
-    "extracted-results": [
-      "TLS13"
-    ],
-    "ip": "81.194.43.212",
-    "timestamp": "2022-09-25T04:50:33.612564442Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
     "template": "ssl/ssl-dns-names.yaml",
     "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
     "template-id": "ssl-dns-names",
@@ -73,7 +21,7 @@
       "*.univ-paris13.fr"
     ],
     "ip": "81.194.43.212",
-    "timestamp": "2022-09-25T04:51:21.840899036Z",
+    "timestamp": "2022-10-02T04:33:59.495348579Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -109,9 +57,61 @@
     "extracted-results": [
       "lb.univ-paris13.fr."
     ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 39716\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t CNAME\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 39716\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nent.univ-paris13.fr.\t6961\tIN\tCNAME\tlb.univ-paris13.fr.\n",
-    "timestamp": "2022-09-25T04:53:26.439866687Z",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 20763\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t CNAME\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 20763\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nent.univ-paris13.fr.\t7162\tIN\tCNAME\tlb.univ-paris13.fr.\n",
+    "timestamp": "2022-10-02T04:34:25.094941423Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
+    "info": {
+      "name": "TLS Version",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://ent.univ-paris13.fr/",
+    "matched-at": "https://ent.univ-paris13.fr/",
+    "extracted-results": [
+      "TLS13"
+    ],
+    "ip": "81.194.43.212",
+    "timestamp": "2022-10-02T04:34:58.178192444Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/detect-ssl-issuer.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/detect-ssl-issuer.yaml",
+    "template-id": "detect-ssl-issuer",
+    "info": {
+      "name": "Detect SSL Certificate Issuer",
+      "author": [
+        "lingtren"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://ent.univ-paris13.fr/",
+    "matched-at": "https://ent.univ-paris13.fr/",
+    "extracted-results": [
+      "Sectigo Limited"
+    ],
+    "ip": "81.194.43.212",
+    "timestamp": "2022-10-02T04:35:47.928488052Z",
     "matcher-status": true,
     "matched-line": null
   }
