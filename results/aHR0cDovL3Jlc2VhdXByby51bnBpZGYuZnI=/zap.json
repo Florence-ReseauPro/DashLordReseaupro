@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 9 Oct 2022 01:30:05",
+	"@generated": "Sun, 16 Oct 2022 01:49:39",
 	"site":[ 
 		{
 			"@name": "http://reseaupro.unpidf.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "181"
+					"sourceid": "183"
 				},
 				{
 					"pluginid": "10202",
@@ -492,7 +492,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "196"
+					"sourceid": "194"
 				},
 				{
 					"pluginid": "10063",
@@ -978,6 +978,13 @@
 							"evidence": "php/entreprises/infosEntreprise/id_entreprise/10368"
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/page/1",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "php/entreprises/infosEntreprise/id_entreprise/10368"
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/raison_sociale/ReseauPro+Portail+Entreprise",
 							"method": "GET",
 							"param": "",
@@ -1032,13 +1039,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "WvF0D4-UtPqN1-43nkD4-NKvUm2-daQqk3-LmNiI-z7Ysb4-mwry24-T8YrS3-Q2tpq2"
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/js/datatables.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "relativeOffsetEndOfZip64CentralDir"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/js/jquery-1.7.2.min.js",
@@ -1432,7 +1432,7 @@
 					],
 					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=40b4b4bc5f303469b5ef5736b03b0029</p><p></p><p>The user-controlled value was:</p><p>40b4b4bc5f303469b5ef5736b03b0029</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=f0b744f9bebfc4a8657d6f4deef26844</p><p></p><p>The user-controlled value was:</p><p>f0b744f9bebfc4a8657d6f4deef26844</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
