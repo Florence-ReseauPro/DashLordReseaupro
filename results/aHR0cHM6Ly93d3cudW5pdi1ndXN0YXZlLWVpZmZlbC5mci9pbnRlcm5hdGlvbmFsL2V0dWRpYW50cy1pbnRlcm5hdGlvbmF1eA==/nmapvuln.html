@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-gustave-eiffel.fr</pre>
-<p class="lead">Sun Oct  9 02:10:28 2022 – Sun Oct  9 02:10:49 2022<br>1 hosts scanned.
+<p class="lead">Sun Oct 16 02:28:01 2022 – Sun Oct 16 02:28:29 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>193.50.159.150</td>
+<td>193.55.45.10</td>
 <td>www.univ-gustave-eiffel.fr</td>
 <td>2</td>
 <td>0</td>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#193-50-159-150"><h3 class="panel-title">193.50.159.150 - www.univ-gustave-eiffel.fr</h3></div>
-<div class="panel-body collapse in" id="193-50-159-150">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#193-55-45-10"><h3 class="panel-title">193.55.45.10 - www.univ-gustave-eiffel.fr</h3></div>
+<div class="panel-body collapse in" id="193-55-45-10">
 <h4>Hostnames</h4>
 <ul>
 <li>www.univ-gustave-eiffel.fr (user)</li>
-<li>t3-prod.u-pem.fr (PTR)</li>
+<li>wwwdev.univ-eiffel.fr (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -110,49 +110,65 @@
 <th>Extra Info</th>
 </tr></thead>
 <tbody>
-<tr class="active">
-<td>25</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>smtp</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 <tr class="success">
 <td title="Port">80</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">http</td>
 <td title="Product">Apache httpd</td>
-<td title="Version"></td>
+<td title="Version">2.4.51</td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server">cpe:/a:apache:http_server</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server:2.4.51">cpe:/a:apache:http_server:2.4.51</a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache/2.4.51 (Debian)</pre>
+<h5>vulners</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  cpe:/a:apache:http_server:2.4.51: 
+    	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
+    	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
+    	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
+    	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
+    	CVE-2022-28615	6.4	https://vulners.com/cve/CVE-2022-28615
+    	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
+    	CVE-2022-22721	5.8	https://vulners.com/cve/CVE-2022-22721
+    	CVE-2022-30556	5.0	https://vulners.com/cve/CVE-2022-30556
+    	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
+    	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
+    	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
+    	CVE-2022-22719	5.0	https://vulners.com/cve/CVE-2022-22719
+    	CNVD-2022-53584	5.0	https://vulners.com/cnvd/CNVD-2022-53584
+    	CNVD-2022-53582	5.0	https://vulners.com/cnvd/CNVD-2022-53582</pre>
 </td></tr>
-<tr class="active">
-<td>110</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>pop3</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 <tr class="success">
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">http</td>
 <td title="Product">Apache httpd</td>
-<td title="Version"></td>
+<td title="Version">2.4.51</td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server">cpe:/a:apache:http_server</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server:2.4.51">cpe:/a:apache:http_server:2.4.51</a><h5>vulners</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  cpe:/a:apache:http_server:2.4.51: 
+    	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
+    	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
+    	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
+    	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
+    	CVE-2022-28615	6.4	https://vulners.com/cve/CVE-2022-28615
+    	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
+    	CVE-2022-22721	5.8	https://vulners.com/cve/CVE-2022-22721
+    	CVE-2022-30556	5.0	https://vulners.com/cve/CVE-2022-30556
+    	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
+    	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
+    	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
+    	CVE-2022-22719	5.0	https://vulners.com/cve/CVE-2022-22719
+    	CNVD-2022-53584	5.0	https://vulners.com/cnvd/CNVD-2022-53584
+    	CNVD-2022-53582	5.0	https://vulners.com/cnvd/CNVD-2022-53582</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache/2.4.51 (Debian)</pre>
 </td></tr>
 </tbody>
 </table></div>
@@ -172,23 +188,23 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>193.50.159.150 - www.univ-gustave-eiffel.fr</td>
+<td>193.55.45.10 - www.univ-gustave-eiffel.fr</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
 <td>Apache httpd</td>
-<td></td>
-<td>cpe:/a:apache:http_server</td>
+<td>2.4.51</td>
+<td>cpe:/a:apache:http_server:2.4.51</td>
 <td></td>
 </tr>
 <tr>
-<td>193.50.159.150 - www.univ-gustave-eiffel.fr</td>
+<td>193.55.45.10 - www.univ-gustave-eiffel.fr</td>
 <td>443</td>
 <td>tcp</td>
 <td>http</td>
 <td>Apache httpd</td>
-<td></td>
-<td>cpe:/a:apache:http_server</td>
+<td>2.4.51</td>
+<td>cpe:/a:apache:http_server:2.4.51</td>
 <td></td>
 </tr>
 </tbody>
