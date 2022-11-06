@@ -1,6 +1,6 @@
 {
 	"@version": "2.12.0",
-	"@generated": "Sun, 30 Oct 2022 02:12:03",
+	"@generated": "Sun, 6 Nov 2022 02:05:27",
 	"site":[ 
 		{
 			"@name": "https://datakairos.unif.fr",
@@ -59,20 +59,6 @@
 					"desc": "<p>The response does not include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options to protect against 'ClickJacking' attacks.</p>",
 					"instances":[ 
 						{
-							"uri": "https://datakairos.unif.fr/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://datakairos.unif.fr/robots.txt",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/sitemap.xml",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -80,13 +66,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "3",
+					"count": "1",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "73"
 				},
 				{
 					"pluginid": "10063",
@@ -100,6 +86,13 @@
 					"instances":[ 
 						{
 							"uri": "https://datakairos.unif.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/js/chunk-1394ab50.347c372a.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -155,13 +148,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-35823db7.98732019.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -182,7 +168,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10036",
@@ -237,14 +223,14 @@
 							"evidence": "nginx/1.18.0 (Ubuntu)"
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"uri": "https://datakairos.unif.fr/css/chunk-35823db7.3761e95e.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "nginx/1.18.0 (Ubuntu)"
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-4700b4d9.084c6fa0.css",
+							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -333,14 +319,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"uri": "https://datakairos.unif.fr/css/chunk-35823db7.3761e95e.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-4700b4d9.084c6fa0.css",
+							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -429,14 +415,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"uri": "https://datakairos.unif.fr/css/chunk-35823db7.3761e95e.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-4700b4d9.084c6fa0.css",
+							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -470,7 +456,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -646,7 +632,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -686,7 +672,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
