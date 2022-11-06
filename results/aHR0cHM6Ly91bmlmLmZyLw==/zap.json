@@ -1,6 +1,6 @@
 {
 	"@version": "2.12.0",
-	"@generated": "Sun, 30 Oct 2022 01:31:55",
+	"@generated": "Sun, 6 Nov 2022 01:20:26",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -33,13 +33,6 @@
 							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">"
 						},
 						{
-							"uri": "https://unif.fr/data-center-regional/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">"
-						},
-						{
 							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
@@ -55,13 +48,6 @@
 						},
 						{
 							"uri": "https://unif.fr/learning-spaces/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">"
-						},
-						{
-							"uri": "https://unif.fr/marionum/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -117,7 +103,7 @@
 							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">"
 						}
 					],
-					"count": "14",
+					"count": "12",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -143,14 +129,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/carte-multi-services/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/datakairos/",
+							"uri": "https://unif.fr/international/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -295,6 +281,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://unif.fr/reponses-u/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://unif.fr/sms-u/",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -309,7 +302,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
@@ -353,7 +346,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202243.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202244.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
@@ -381,7 +374,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202243.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202244.js' defer></script>"
 						}
 					],
 					"count": "8",
@@ -416,7 +409,7 @@
 					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://security.snyk.io/vuln/SNYK-JS-MOMENT-2944238</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "531"
+					"sourceid": "524"
 				},
 				{
 					"pluginid": "10010",
@@ -483,9 +476,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202243.js",
+							"param": "https://stats.wp.com/e-202244.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202243.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202244.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/",
@@ -495,11 +488,25 @@
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
 						},
 						{
+							"uri": "https://unif.fr/learning-spaces/",
+							"method": "GET",
+							"param": "https://stats.wp.com/e-202244.js",
+							"attack": "",
+							"evidence": "<script src='https://stats.wp.com/e-202244.js' defer></script>"
+						},
+						{
+							"uri": "https://unif.fr/learning-spaces/",
+							"method": "GET",
+							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
+							"attack": "",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
+						},
+						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202243.js",
+							"param": "https://stats.wp.com/e-202244.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202243.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202244.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
@@ -511,9 +518,9 @@
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202243.js",
+							"param": "https://stats.wp.com/e-202244.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202243.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202244.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
@@ -525,26 +532,12 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202243.js",
+							"param": "https://stats.wp.com/e-202244.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202243.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202244.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
-							"method": "GET",
-							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
-							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
-						},
-						{
-							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "https://stats.wp.com/e-202243.js",
-							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202243.js' defer></script>"
-						},
-						{
-							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
@@ -583,7 +576,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "510"
+					"sourceid": "512"
 				},
 				{
 					"pluginid": "10063",
@@ -603,14 +596,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/carte-multi-services/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/datakairos/",
+							"uri": "https://unif.fr/international/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -795,7 +788,7 @@
 							"evidence": "Apache/2.4.10 (Debian)"
 						},
 						{
-							"uri": "https://unif.fr/datakairos/",
+							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -823,13 +816,6 @@
 							"evidence": "Apache/2.4.10 (Debian)"
 						},
 						{
-							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.10 (Debian)"
-						},
-						{
 							"uri": "https://unif.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -838,6 +824,13 @@
 						},
 						{
 							"uri": "https://unif.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.10 (Debian)"
+						},
+						{
+							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -891,14 +884,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/carte-multi-services/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/datakairos/",
+							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -940,7 +933,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/sms-u/",
+							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -980,41 +973,41 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://unif.fr/datakairos/",
+							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1667080800"
+							"evidence": "1667689200"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1667080800"
+							"evidence": "1667689200"
 						},
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1667080800"
+							"evidence": "1667689200"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1667080800"
+							"evidence": "1667689200"
 						}
 					],
 					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1667080800, which evaluates to: 2022-10-29 22:00:00</p>",
+					"otherinfo": "<p>1667689200, which evaluates to: 2022-11-05 23:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "141"
+					"sourceid": "199"
 				},
 				{
 					"pluginid": "10021",
@@ -1034,14 +1027,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/carte-multi-services/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/datakairos/",
+							"uri": "https://unif.fr/international/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1130,20 +1123,6 @@
 							"evidence": "lLm0ihXnUAFjUqZVBc2dSDAGY4gGpp9hfRaoXA8h_bw"
 						},
 						{
-							"uri": "https://unif.fr/carte-multi-services/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "lLm0ihXnUAFjUqZVBc2dSDAGY4gGpp9hfRaoXA8h_bw"
-						},
-						{
-							"uri": "https://unif.fr/data-center-regional/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "lLm0ihXnUAFjUqZVBc2dSDAGY4gGpp9hfRaoXA8h_bw"
-						},
-						{
 							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
@@ -1214,7 +1193,7 @@
 							"evidence": "lLm0ihXnUAFjUqZVBc2dSDAGY4gGpp9hfRaoXA8h_bw"
 						}
 					],
-					"count": "13",
+					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\\x0015\uFFFDP\\x0001cR\uFFFDU\\x0005\u035DH0\\x0006c\uFFFD\\x0006\uFFFD\uFFFDa}\\x0016\uFFFD\\\\x000f!\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -1323,7 +1302,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "497"
+					"sourceid": "489"
 				},
 				{
 					"pluginid": "10027",
@@ -1350,13 +1329,6 @@
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://unif.fr/data-center-regional/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
 							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
@@ -1372,13 +1344,6 @@
 						},
 						{
 							"uri": "https://unif.fr/learning-spaces/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
-							"uri": "https://unif.fr/marionum/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1413,13 +1378,6 @@
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://unif.fr/reponses-u/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
 							"uri": "https://unif.fr/sms-u/",
 							"method": "GET",
 							"param": "",
@@ -1434,7 +1392,7 @@
 							"evidence": "admin"
 						}
 					],
-					"count": "14",
+					"count": "11",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected 2 times, the first in the element starting with: \"<script type='text/javascript' id='quicktags_drawit-js-extra'></p><p>/* <![CDATA[ */</p><p>var drawitFE = {\"mediaupload\":\"https:\\/\\/unif.fr\\\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -1562,7 +1520,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "69"
+					"sourceid": "72"
 				},
 				{
 					"pluginid": "10015",
@@ -1582,14 +1540,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/carte-multi-services/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/datakairos/",
+							"uri": "https://unif.fr/international/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1685,7 +1643,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/datakairos/",
+							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1713,14 +1671,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/partenaires/",
+							"uri": "https://unif.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/robots.txt",
+							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
