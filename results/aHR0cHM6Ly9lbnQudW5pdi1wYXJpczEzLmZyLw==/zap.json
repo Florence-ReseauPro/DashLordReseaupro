@@ -1,6 +1,6 @@
 {
 	"@version": "2.12.0",
-	"@generated": "Sun, 30 Oct 2022 03:17:19",
+	"@generated": "Sun, 6 Nov 2022 03:20:51",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -23,7 +23,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=52B52479F30E72516F4DD13DB5EE27B2?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=A02F76D6E3377AE2567FAE003DFFAA25?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
 						}
 					],
 					"count": "1",
@@ -179,13 +179,6 @@
 					"desc": "<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>",
 					"instances":[ 
 						{
-							"uri": "https://ent.univ-paris13.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://ent.univ-paris13.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -200,13 +193,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
 					"otherinfo": "<p>Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].</p><p>Predicted response size: 379.</p><p>Response Body Length: 452.</p>",
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10010",
@@ -562,12 +555,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-6333072-UZtdvecV7HGoZCXOP7nZ2WmqY0X4FH-cas1"
+							"evidence": "LT-6505309-UAtwj7rlKX3wYlY2w4kDUwpXOczEeP-cas1"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFD}\uFFFD\uFFFDo\uFFFDf\uFFFDoy\uFFFD{\\x001cj\\x0019\ts\uFFFD\uFFFDvvZj\uFFFD\uFFFD~\\x0005\\x001f\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFDNw\uFFFD\u07D4\\x0002\uFFFD#\uFFFDJ_|\\x0018\uFFFD\uFFFD\uFFFD\uFFFD@\uFFFD\u0095\uFFFDs1\\x001e?\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
