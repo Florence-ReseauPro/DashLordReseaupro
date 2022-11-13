@@ -1,6 +1,6 @@
 {
 	"@version": "2.12.0",
-	"@generated": "Sun, 6 Nov 2022 01:37:48",
+	"@generated": "Sun, 13 Nov 2022 01:34:53",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -142,7 +142,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10042",
@@ -304,7 +304,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/28236</p><p>https://github.com/twbs/bootstrap/issues/20184</p><p>https://github.com/advisories/GHSA-4p24-vmcr-4gqj</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "169"
+					"sourceid": "166"
 				},
 				{
 					"pluginid": "10017",
@@ -446,7 +446,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://parisregion.eu/bower_components/bootstrap/dist/js/bootstrap.min.js",
+							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -622,13 +622,6 @@
 							"evidence": "D27CDB6E-AE6D-11cf-96B8-444553540000"
 						},
 						{
-							"uri": "https://parisregion.eu/img/b3conference/Logo_b3.jpg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA"
-						},
-						{
 							"uri": "https://parisregion.eu/img/welcome/valerie_pecresse500.jpg",
 							"method": "GET",
 							"param": "",
@@ -664,6 +657,13 @@
 							"evidence": "pdf/20200630_Prfp_DMI-laboratories"
 						},
 						{
+							"uri": "https://parisregion.eu/pdf/20200630_Prfp_DMI-laboratories.xls",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "877D93EC-0EFA-40ac-8DA6-3AB56D48C5D3UU"
+						},
+						{
 							"uri": "https://parisregion.eu/pdf/h2020_hi_ethics-self-assess_en.pdf",
 							"method": "GET",
 							"param": "",
@@ -684,7 +684,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "275"
+					"sourceid": "249"
 				},
 				{
 					"pluginid": "10027",
@@ -972,7 +972,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -985,7 +985,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"uri": "https://parisregion.eu/bower_components/fontawesome/css/font-awesome.min.css",
+							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1026,7 +1026,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "139"
+					"sourceid": "147"
 				},
 				{
 					"pluginid": "10049",
