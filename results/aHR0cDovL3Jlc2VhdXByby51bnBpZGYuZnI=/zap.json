@@ -1,6 +1,6 @@
 {
 	"@version": "2.12.0",
-	"@generated": "Sun, 6 Nov 2022 01:20:47",
+	"@generated": "Sun, 13 Nov 2022 01:17:38",
 	"site":[ 
 		{
 			"@name": "http://reseaupro.unpidf.fr",
@@ -154,7 +154,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10020",
@@ -291,14 +291,14 @@
 							"evidence": "<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800' rel='stylesheet' type='text/css'>"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/partenaires",
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/etudiants",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<link href=\"https://fonts.googleapis.com/css?family=Roboto:400,500,700,900\" rel=\"stylesheet\">"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/partenaires",
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/etudiants",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -492,7 +492,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "194"
+					"sourceid": "196"
 				},
 				{
 					"pluginid": "10063",
@@ -643,13 +643,6 @@
 							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/167",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/176",
 							"method": "GET",
 							"param": "",
@@ -665,6 +658,13 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -746,7 +746,7 @@
 							"evidence": "Apache/2.2.22 (Debian)"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -849,6 +849,62 @@
 							"evidence": "1642762249"
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1505979942"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1519291402"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1530257856"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1537866212"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1591623214"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1622626310"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1624632233"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1642762249"
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
 							"method": "GET",
 							"param": "",
@@ -905,13 +961,13 @@
 							"evidence": "1642762249"
 						}
 					],
-					"count": "16",
+					"count": "24",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1505979942, which evaluates to: 2017-09-21 07:45:42</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10021",
@@ -925,6 +981,13 @@
 					"instances":[ 
 						{
 							"uri": "http://reseaupro.unpidf.fr",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/images/pcu/favicon.ico",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -980,13 +1043,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/user",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -1034,11 +1090,11 @@
 							"evidence": "php/entreprises/infosEntreprise/id_entreprise/10368"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/page/1",
+							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/page/2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "php/entreprises/infosEntreprise/id_entreprise/10368"
+							"evidence": "php/entreprises/infosEntreprise/id_entreprise/19227"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/raison_sociale/ReseauPro+Portail+Entreprise",
@@ -1151,6 +1207,13 @@
 							"evidence": "User"
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "User"
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
 							"method": "GET",
 							"param": "",
@@ -1179,13 +1242,6 @@
 							"evidence": "User"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "User"
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "",
@@ -1206,7 +1262,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10109",
@@ -1247,6 +1303,13 @@
 							"evidence": "<noscript><p><img src=\"//matomo.anakrys.biz/piwik.php?idsite=4\" style=\"border:0;\" alt=\"\" /></p></noscript>"
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript><p><img src=\"//matomo.anakrys.biz/piwik.php?idsite=4\" style=\"border:0;\" alt=\"\" /></p></noscript>"
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
 							"method": "GET",
 							"param": "",
@@ -1296,7 +1359,7 @@
 							"evidence": "<noscript><p><img src=\"//matomo.anakrys.biz/piwik.php?idsite=4\" style=\"border:0;\" alt=\"\" /></p></noscript>"
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not.</p>",
 					"reference": "",
@@ -1488,7 +1551,7 @@
 					],
 					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=2e30f9f19ed5fed476c84864990660a2</p><p></p><p>The user-controlled value was:</p><p>2e30f9f19ed5fed476c84864990660a2</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=6f43670193e2a251f1053c545ac7ead3</p><p></p><p>The user-controlled value was:</p><p>6f43670193e2a251f1053c545ac7ead3</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
