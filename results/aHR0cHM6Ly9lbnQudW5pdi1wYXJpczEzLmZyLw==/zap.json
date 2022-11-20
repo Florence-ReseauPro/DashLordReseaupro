@@ -1,6 +1,6 @@
 {
 	"@version": "2.12.0",
-	"@generated": "Sun, 13 Nov 2022 03:03:56",
+	"@generated": "Sun, 20 Nov 2022 03:20:02",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -23,7 +23,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=C08385788955D7D655E7B9698F7800FA?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=04AB12B30E350E40A20ECDCA692D627F?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
 						}
 					],
 					"count": "1",
@@ -186,6 +186,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://ent.univ-paris13.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -193,13 +200,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
 					"otherinfo": "<p>Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].</p><p>Predicted response size: 379.</p><p>Response Body Length: 452.</p>",
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10010",
@@ -460,7 +467,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10036",
@@ -555,12 +562,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-7397177-Df6Sfvh2LPIw3l6YddOHym4frOZVZj-cas1"
+							"evidence": "LT-7745632-ORF59QEEUGfsJHkfwzoWNfhioMpjbl-cas1"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFD\uFFFD\uFFFD\uFFC3\uFFFD\uFFFD\uFFFD\\x001d\uFFFD<\uFFFD7\uFFFD\uFFFD\\x001dt\uFFFD\uFFFD\uFFFD9\uFFFDY\uFFFD\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFDz\uFFFDo\uFFFDD^}@A\\x0014\\x0019\uFFFD\t\\x001eG\uFFFD\u0385\uFFFD~\\x0018\uFFFD2\uFFFD\u06D7\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -656,7 +663,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				}
 			]
 		}
