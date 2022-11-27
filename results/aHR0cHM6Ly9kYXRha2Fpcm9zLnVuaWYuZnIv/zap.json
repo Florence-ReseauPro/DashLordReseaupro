@@ -1,6 +1,7 @@
 {
+	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 20 Nov 2022 02:00:42",
+	"@generated": "Sun, 27 Nov 2022 02:01:35",
 	"site":[ 
 		{
 			"@name": "https://datakairos.unif.fr",
@@ -46,7 +47,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10020",
@@ -182,7 +183,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10036",
@@ -223,13 +224,6 @@
 							"evidence": "nginx/1.18.0 (Ubuntu)"
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.dcc6c8bb.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "nginx/1.18.0 (Ubuntu)"
-						},
-						{
 							"uri": "https://datakairos.unif.fr/css/chunk-345a4851.8733232e.css",
 							"method": "GET",
 							"param": "",
@@ -245,6 +239,13 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -278,7 +279,7 @@
 					"reference": "<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10035",
@@ -319,13 +320,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.dcc6c8bb.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/css/chunk-345a4851.8733232e.css",
 							"method": "GET",
 							"param": "",
@@ -341,6 +335,13 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -443,6 +444,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://datakairos.unif.fr/favicon.svg",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -464,7 +472,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
@@ -496,7 +504,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "139"
+					"sourceid": "140"
 				},
 				{
 					"pluginid": "10027",
@@ -586,11 +594,11 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-ec858992.c95758cd.js",
+							"uri": "https://datakairos.unif.fr/js/chunk-93757618.0e093526.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "select"
+							"evidence": "query"
 						}
 					],
 					"count": "12",
@@ -599,7 +607,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "105"
+					"sourceid": "106"
 				},
 				{
 					"pluginid": "10109",
@@ -646,7 +654,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "73"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10015",
@@ -686,7 +694,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -727,13 +735,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.dcc6c8bb.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/css/chunk-345a4851.8733232e.css",
 							"method": "GET",
 							"param": "",
@@ -755,7 +756,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-4700b4d9.084c6fa0.css",
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -783,13 +784,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				}
 			]
 		}
