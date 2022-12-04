@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 27 Nov 2022 01:34:01",
+	"@generated": "Sun, 4 Dec 2022 01:22:11",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -54,7 +54,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "38"
+					"sourceid": "79"
 				},
 				{
 					"pluginid": "10038",
@@ -190,7 +190,7 @@
 					"reference": "",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "38"
+					"sourceid": "79"
 				},
 				{
 					"pluginid": "90003",
@@ -563,7 +563,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "38"
+					"sourceid": "79"
 				},
 				{
 					"pluginid": "10096",
@@ -589,7 +589,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "192"
+					"sourceid": "184"
 				},
 				{
 					"pluginid": "10094",
@@ -621,13 +621,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "D27CDB6E-AE6D-11cf-96B8-444553540000"
-						},
-						{
-							"uri": "https://parisregion.eu/img/b3conference/Logo_b3.jpg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA"
 						},
 						{
 							"uri": "https://parisregion.eu/img/welcome/valerie_pecresse500.jpg",
@@ -665,6 +658,13 @@
 							"evidence": "pdf/20200630_Prfp_DMI-laboratories"
 						},
 						{
+							"uri": "https://parisregion.eu/pdf/20200630_Prfp_DMI-laboratories.xls",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "877D93EC-0EFA-40ac-8DA6-3AB56D48C5D3UU"
+						},
+						{
 							"uri": "https://parisregion.eu/pdf/h2020_hi_ethics-self-assess_en.pdf",
 							"method": "GET",
 							"param": "",
@@ -685,7 +685,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "282"
+					"sourceid": "283"
 				},
 				{
 					"pluginid": "10027",
@@ -986,6 +986,13 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
+							"uri": "https://parisregion.eu/bower_components/fontawesome/css/font-awesome.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=604800"
+						},
+						{
 							"uri": "https://parisregion.eu/img/favicon.ico",
 							"method": "GET",
 							"param": "",
@@ -1014,13 +1021,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "136"
+					"sourceid": "139"
 				},
 				{
 					"pluginid": "10049",
@@ -1041,13 +1048,6 @@
 						},
 						{
 							"uri": "https://parisregion.eu/discover.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0"
-						},
-						{
-							"uri": "https://parisregion.eu/news.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1075,7 +1075,7 @@
 							"evidence": "max-age=0"
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
