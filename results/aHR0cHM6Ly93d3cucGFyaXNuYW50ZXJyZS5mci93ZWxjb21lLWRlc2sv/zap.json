@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 27 Nov 2022 03:32:46",
+	"@generated": "Sun, 4 Dec 2022 02:42:52",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -9,6 +9,46 @@
 			"@port": "443",
 			"@ssl": "true",
 			"alerts": [ 
+				{
+					"pluginid": "10062",
+					"alertRef": "10062",
+					"alert": "PII Disclosure",
+					"name": "PII Disclosure",
+					"riskcode": "3",
+					"confidence": "3",
+					"riskdesc": "High (High)",
+					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.parisnanterre.fr/mentions-legales",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "4217759892224546"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/plan-du-site",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "4217759892261209"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/tous-nos-sites",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "4217759892253107"
+						}
+					],
+					"count": "3",
+					"solution": "",
+					"otherinfo": "<p>Credit Card Type detected: Visa</p><p>Bank Identification Number: 421775</p><p>Brand: VISA</p><p>Category: </p><p>Issuer: TEXAS NATIONAL BANK OF WACO</p>",
+					"reference": "",
+					"cweid": "359",
+					"wascid": "13",
+					"sourceid": "2117"
+				},
 				{
 					"pluginid": "10202",
 					"alertRef": "10202",
@@ -479,6 +519,13 @@
 							"evidence": "<script type=\"text/javascript\" async src=\"https://platform.twitter.com/widgets.js\"></script>"
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/actualites-de-luniversite/luniversite-paris-nanterre-labellisee-science-avec-et-pour-la-societe",
+							"method": "GET",
+							"param": "https://platform.twitter.com/widgets.js",
+							"attack": "",
+							"evidence": "<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/diffusion-scientifique",
 							"method": "GET",
 							"param": "https://platform.twitter.com/widgets.js",
@@ -486,7 +533,7 @@
 							"evidence": "<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -610,7 +657,7 @@
 					],
 					"count": "1",
 					"solution": "<p>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.</p><p>The page must not contain any content that is transmitted over unencrypted HTTP.</p><p> This includes content from third party sites.</p>",
-					"otherinfo": "<p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/970654159639928832/g7cFggrJ_normal.jpg</p><p></p>",
+					"otherinfo": "<p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p></p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
@@ -641,6 +688,13 @@
 							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48"
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/etudiant%C2%B7e",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48"
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/extensions/",
 							"method": "GET",
 							"param": "",
@@ -649,13 +703,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/lyceen%C2%B7ne",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -730,6 +777,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/etudiant%C2%B7e",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/extensions/",
 							"method": "GET",
 							"param": "",
@@ -738,13 +792,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/lyceen%C2%B7ne",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -802,6 +849,32 @@
 					"sourceid": "4"
 				},
 				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.parisnanterre.fr/agenda/commission-daide-aux-projets-etudiants-cape-session-3?id_agendaevenement=73744",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1657201844"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1657201844, which evaluates to: 2022-07-07 13:50:44</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "2065"
+				},
+				{
 					"pluginid": "10021",
 					"alertRef": "10021",
 					"alert": "X-Content-Type-Options Header Missing",
@@ -840,14 +913,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
+							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
+							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1107,7 +1180,7 @@
 							"evidence": "302"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&PROC=IDENTIFICATION_FRONT",
+							"uri": "https://www.parisnanterre.fr/etudiant%C2%B7e",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1182,20 +1255,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-services",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-ufr-et-instituts",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1231,7 +1290,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "13",
+					"count": "11",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
