@@ -1,12 +1,59 @@
-# Nmap 7.92 scan initiated Sun Dec  4 02:58:40 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
+# Nmap 7.92 scan initiated Sun Dec 11 03:39:11 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
 Nmap scan report for ent.univ-paris13.fr (81.194.43.211)
-Host is up (0.15s latency).
+Host is up (0.084s latency).
 Other addresses for ent.univ-paris13.fr (not scanned): 81.194.43.212
 rDNS record for 81.194.43.211: lb.univ-paris13.fr
 Not shown: 999 filtered tcp ports (no-response)
-PORT    STATE SERVICE        VERSION
-443/tcp open  ssl/tcpwrapped
+PORT    STATE SERVICE   VERSION
+443/tcp open  ssl/https Apache
 |_http-server-header: Apache
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, tor-versions: 
+|     HTTP/1.0 400 Bad request
+|     cache-control: no-cache
+|     content-type: text/html
+|     <html><body><h1>400 Bad request</h1>
+|     Your browser sent an invalid request.
+|     </body></html>
+|   FourOhFourRequest, GetRequest, HTTPOptions, RTSPRequest: 
+|     HTTP/1.0 503 Service Unavailable
+|     cache-control: no-cache
+|     content-type: text/html
+|     <html><body><h1>503 Service Unavailable</h1>
+|     server is available to handle this request.
+|_    </body></html>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=12/11%Time=639550F8%P=x86_64-alpine-linu
+SF:x-musl%r(GetRequest,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\nc
+SF:ache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><b
+SF:ody><h1>503\x20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20avail
+SF:able\x20to\x20handle\x20this\x20request\.\n</body></html>\n\n")%r(HTTPO
+SF:ptions,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\ncache-control:
+SF:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><body><h1>503\x
+SF:20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20available\x20to\x2
+SF:0handle\x20this\x20request\.\n</body></html>\n\n")%r(FourOhFourRequest,
+SF:C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\ncache-control:\x20no-
+SF:cache\r\ncontent-type:\x20text/html\r\n\r\n<html><body><h1>503\x20Servi
+SF:ce\x20Unavailable</h1>\nNo\x20server\x20is\x20available\x20to\x20handle
+SF:\x20this\x20request\.\n</body></html>\n\n")%r(tor-versions,A9,"HTTP/1\.
+SF:0\x20400\x20Bad\x20request\r\ncache-control:\x20no-cache\r\ncontent-typ
+SF:e:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour
+SF:\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n\n")
+SF:%r(RTSPRequest,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\ncache-
+SF:control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><body><
+SF:h1>503\x20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20available\
+SF:x20to\x20handle\x20this\x20request\.\n</body></html>\n\n")%r(RPCCheck,A
+SF:9,"HTTP/1\.0\x20400\x20Bad\x20request\r\ncache-control:\x20no-cache\r\n
+SF:content-type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request
+SF:</h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></
+SF:html>\n\n")%r(DNSVersionBindReqTCP,A9,"HTTP/1\.0\x20400\x20Bad\x20reque
+SF:st\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<
+SF:html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\x20a
+SF:n\x20invalid\x20request\.\n</body></html>\n\n")%r(DNSStatusRequestTCP,A
+SF:9,"HTTP/1\.0\x20400\x20Bad\x20request\r\ncache-control:\x20no-cache\r\n
+SF:content-type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request
+SF:</h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></
+SF:html>\n\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Dec  4 02:59:14 2022 -- 1 IP address (1 host up) scanned in 34.02 seconds
+# Nmap done at Sun Dec 11 03:39:52 2022 -- 1 IP address (1 host up) scanned in 41.27 seconds
