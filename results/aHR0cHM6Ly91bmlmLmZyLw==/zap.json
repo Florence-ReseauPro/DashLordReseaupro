@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 4 Dec 2022 01:06:39",
+	"@generated": "Sun, 11 Dec 2022 01:12:09",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -137,6 +137,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://unif.fr/international/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
@@ -173,13 +180,6 @@
 						},
 						{
 							"uri": "https://unif.fr/sms-u/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -333,35 +333,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202248.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202249.js' defer></script>"
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<link rel=\"profile\" href=\"http://gmpg.org/xfn/11\">"
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<link rel='stylesheet' id='enrollment-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300italic%2C400italic%2C700italic%2C400%2C300%2C700%2C900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />"
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202248.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202249.js' defer></script>"
 						}
 					],
 					"count": "8",
@@ -396,7 +396,7 @@
 					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://security.snyk.io/vuln/SNYK-JS-MOMENT-2944238</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "543"
+					"sourceid": "540"
 				},
 				{
 					"pluginid": "10010",
@@ -463,9 +463,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202248.js",
+							"param": "https://stats.wp.com/e-202249.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202248.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202249.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/",
@@ -475,11 +475,39 @@
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
 						},
 						{
+							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "https://stats.wp.com/e-202249.js",
+							"attack": "",
+							"evidence": "<script src='https://stats.wp.com/e-202249.js' defer></script>"
+						},
+						{
+							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
+							"attack": "",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
+						},
+						{
+							"uri": "https://unif.fr/learning-spaces/",
+							"method": "GET",
+							"param": "https://stats.wp.com/e-202249.js",
+							"attack": "",
+							"evidence": "<script src='https://stats.wp.com/e-202249.js' defer></script>"
+						},
+						{
+							"uri": "https://unif.fr/learning-spaces/",
+							"method": "GET",
+							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
+							"attack": "",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
+						},
+						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202248.js",
+							"param": "https://stats.wp.com/e-202249.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202248.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202249.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
@@ -491,9 +519,9 @@
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202248.js",
+							"param": "https://stats.wp.com/e-202249.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202248.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202249.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
@@ -505,9 +533,9 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202248.js",
+							"param": "https://stats.wp.com/e-202249.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202248.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202249.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
@@ -519,9 +547,9 @@
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202248.js",
+							"param": "https://stats.wp.com/e-202249.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202248.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202249.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
@@ -531,7 +559,7 @@
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
 						}
 					],
-					"count": "10",
+					"count": "14",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -563,7 +591,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "529"
+					"sourceid": "524"
 				},
 				{
 					"pluginid": "10063",
@@ -591,6 +619,13 @@
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://unif.fr/international/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -633,13 +668,6 @@
 						},
 						{
 							"uri": "https://unif.fr/sms-u/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -775,14 +803,14 @@
 							"evidence": "Apache/2.4.10 (Debian)"
 						},
 						{
-							"uri": "https://unif.fr/learning-spaces/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Apache/2.4.10 (Debian)"
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -871,6 +899,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://unif.fr/carte-multi-services/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
@@ -914,13 +949,6 @@
 						},
 						{
 							"uri": "https://unif.fr/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/sms-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -960,41 +988,41 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1670713200"
+						},
+						{
 							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1670108400"
-						},
-						{
-							"uri": "https://unif.fr/membres/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1670108400"
+							"evidence": "1670713200"
 						},
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1670108400"
+							"evidence": "1670713200"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1670108400"
+							"evidence": "1670713200"
 						}
 					],
 					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1670108400, which evaluates to: 2022-12-03 23:00:00</p>",
+					"otherinfo": "<p>1670713200, which evaluates to: 2022-12-10 23:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "208"
+					"sourceid": "188"
 				},
 				{
 					"pluginid": "10021",
@@ -1022,6 +1050,13 @@
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://unif.fr/international/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1071,13 +1106,6 @@
 						},
 						{
 							"uri": "https://unif.fr/sms-u/",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1289,7 +1317,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "508"
+					"sourceid": "509"
 				},
 				{
 					"pluginid": "10027",
@@ -1316,13 +1344,6 @@
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://unif.fr/data-center-regional/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
 							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
@@ -1338,13 +1359,6 @@
 						},
 						{
 							"uri": "https://unif.fr/learning-spaces/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
-							"uri": "https://unif.fr/marionum/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1393,7 +1407,7 @@
 							"evidence": "admin"
 						}
 					],
-					"count": "13",
+					"count": "11",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected 2 times, the first in the element starting with: \"<script type='text/javascript' id='quicktags_drawit-js-extra'></p><p>/* <![CDATA[ */</p><p>var drawitFE = {\"mediaupload\":\"https:\\/\\/unif.fr\\\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -1521,7 +1535,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "35"
+					"sourceid": "67"
 				},
 				{
 					"pluginid": "10015",
@@ -1549,6 +1563,13 @@
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://unif.fr/international/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1597,20 +1618,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/sms-u/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://unif.fr/univmobile/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://unif.fr/wp-json/",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1618,7 +1625,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
@@ -1644,14 +1651,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/learning-spaces/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
