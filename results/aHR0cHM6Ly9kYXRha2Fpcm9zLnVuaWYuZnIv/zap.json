@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 18 Dec 2022 01:41:16",
+	"@generated": "Sun, 25 Dec 2022 01:43:58",
 	"site":[ 
 		{
 			"@name": "https://datakairos.unif.fr",
@@ -183,7 +183,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10036",
@@ -224,13 +224,6 @@
 							"evidence": "nginx/1.18.0 (Ubuntu)"
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.dcc6c8bb.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "nginx/1.18.0 (Ubuntu)"
-						},
-						{
 							"uri": "https://datakairos.unif.fr/css/chunk-345a4851.8733232e.css",
 							"method": "GET",
 							"param": "",
@@ -246,6 +239,13 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -320,13 +320,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.dcc6c8bb.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/css/chunk-345a4851.8733232e.css",
 							"method": "GET",
 							"param": "",
@@ -342,6 +335,13 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -416,13 +416,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.dcc6c8bb.css",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/css/chunk-345a4851.8733232e.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -438,6 +431,13 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -471,7 +471,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -647,7 +647,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -708,6 +708,13 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-1394ab50.43ae3012.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-1ab22a73.415f5a6b.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -777,13 +784,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				}
 			]
 		}
