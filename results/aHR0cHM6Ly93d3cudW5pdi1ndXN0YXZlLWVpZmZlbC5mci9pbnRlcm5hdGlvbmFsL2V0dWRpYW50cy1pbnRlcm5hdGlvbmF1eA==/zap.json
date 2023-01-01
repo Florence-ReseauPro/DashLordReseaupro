@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 25 Dec 2022 01:35:47",
+	"@generated": "Sun, 1 Jan 2023 01:41:09",
 	"site":[ 
 		{
 			"@name": "https://www.univ-gustave-eiffel.fr",
@@ -61,7 +61,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "1274"
+					"sourceid": "1271"
 				},
 				{
 					"pluginid": "10202",
@@ -123,20 +123,6 @@
 							"evidence": "<form method=\"post\" name=\"filter\" class=\"form-search-global-wrapper\" id=\"indexedsearchTop\" action=\"/search?tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch&amp;cHash=bca08b83a04078da90f60164b92802cd\">"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form method=\"post\" name=\"filter\" class=\"form-search-global-wrapper\" id=\"indexedsearchTop\" action=\"/search?tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch&amp;cHash=bca08b83a04078da90f60164b92802cd\">"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form method=\"post\" name=\"filter\" class=\"form-search-global-wrapper\" id=\"indexedsearchTop\" action=\"/search?tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch&amp;cHash=bca08b83a04078da90f60164b92802cd\">"
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/notre-projet",
 							"method": "GET",
 							"param": "",
@@ -158,7 +144,7 @@
 							"evidence": "<form method=\"post\" name=\"filter\" class=\"form-search-global-wrapper\" id=\"indexedsearchTop\" action=\"/search?tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch&amp;cHash=bca08b83a04078da90f60164b92802cd\">"
 						}
 					],
-					"count": "12",
+					"count": "10",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"form-search-sitewide-top\" \"tx_eiffel_wsgooglesearch[__referrer][@action]\" \"tx_eiffel_wsgooglesearch[__referrer][@controller]\" \"tx_eiffel_wsgooglesearch[__referrer][@extension]\" \"tx_eiffel_wsgooglesearch[__referrer][@request]\" \"tx_eiffel_wsgooglesearch[__referrer][arguments]\" \"tx_eiffel_wsgooglesearch[__trustedProperties]\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -359,7 +345,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1223"
+					"sourceid": "1252"
 				},
 				{
 					"pluginid": "10098",
@@ -549,7 +535,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "828"
+					"sourceid": "1042"
 				},
 				{
 					"pluginid": "90003",
@@ -608,7 +594,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "14"
+					"sourceid": "13"
 				},
 				{
 					"pluginid": "10055",
@@ -681,7 +667,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1118"
+					"sourceid": "1125"
 				},
 				{
 					"pluginid": "10011",
@@ -721,7 +707,7 @@
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
 					"cweid": "614",
 					"wascid": "13",
-					"sourceid": "1118"
+					"sourceid": "1125"
 				},
 				{
 					"pluginid": "10054",
@@ -754,7 +740,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "1118"
+					"sourceid": "1125"
 				},
 				{
 					"pluginid": "10017",
@@ -827,7 +813,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "938"
+					"sourceid": "854"
 				},
 				{
 					"pluginid": "10009",
@@ -867,7 +853,7 @@
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1223"
+					"sourceid": "1252"
 				},
 				{
 					"pluginid": "10063",
@@ -922,7 +908,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1004,7 +990,7 @@
 							"evidence": "Apache/2.4.51 (Debian)"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/notre-projet",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1270,14 +1256,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1671879226"
+							"evidence": "1672484080"
 						},
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1671879227"
+							"evidence": "1672484081"
 						}
 					],
 					"count": "19",
@@ -1517,20 +1503,6 @@
 							"evidence": "user"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/index.php?id=2310&type=776",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/index.php?id=2310&type=776",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "user"
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international",
 							"method": "GET",
 							"param": "",
@@ -1553,13 +1525,41 @@
 						},
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/menu-haut/annuaire/fiche-personnelle/?cHash=98cc530b41c814eabd7a21202b4fc8eb&fe_users%5Buid%5D=663",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "select"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/menu-haut/annuaire/fiche-personnelle/?cHash=98cc530b41c814eabd7a21202b4fc8eb&fe_users%5Buid%5D=663",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/menu-haut/annuaire/fiche-personnelle/personne/gabriele_veronique/?cHash=0f5dc876fc58d5d641602e2f0e130d72&police=2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "select"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/menu-haut/annuaire/fiche-personnelle/personne/gabriele_veronique/?cHash=0f5dc876fc58d5d641602e2f0e130d72&police=2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "user"
 						}
 					],
-					"count": "8",
+					"count": "10",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script src=\"/typo3conf/ext/eiffel/Resources/Public/Js/jquery-nice-select/jquery.nice-select.min.js?1671615107\" type=\"text/javas\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -1702,7 +1702,7 @@
 							"evidence": "no-store"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/notre-projet",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1770,7 +1770,7 @@
 							"evidence": "private, no-store"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/apprentissage",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1940,7 +1940,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1049"
+					"sourceid": "1037"
 				}
 			]
 		}
