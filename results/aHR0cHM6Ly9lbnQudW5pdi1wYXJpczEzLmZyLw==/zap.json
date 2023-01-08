@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 18 Dec 2022 02:48:45",
+	"@generated": "Sun, 8 Jan 2023 02:54:55",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=6215770C990733C50443EDD4446611D0?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=9A352C2125DABB1E853CE87AEC428B61?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
 						}
 					],
 					"count": "1",
@@ -123,7 +123,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdn.univ-paris13.fr/includes/css/new/arma-cas.css\" />"
+							"evidence": "<link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdn.univ-paris13.fr/includes/css/new/arma-cas-uspn.css\" />"
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
@@ -563,12 +563,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-10424640-BMrQcBZTLygClHI3UGEeWPJHC2n03H-cas1"
+							"evidence": "LT-11609699-MB7JQGb2j3KD4aaDx0MttvMYv5wDlf-cas1"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\u04CD\uFFFD\uFFFD>\\x0004\uFFFD\uFFFDp\\x0016S/(\\x0002\uFFFDr7Pa\\x001eX\uFFFDG\\x000bi\uFFFD\uFFFD\uFFFDj\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\u05ED=\uFFFD\uFFFD~0\\x001e\uFFFD@f\uFFFD\uFFFDr\uFFFD\u1983\uFFFDC-\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\\x0003\uFFFD\uFFFD\uFFFDj\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
