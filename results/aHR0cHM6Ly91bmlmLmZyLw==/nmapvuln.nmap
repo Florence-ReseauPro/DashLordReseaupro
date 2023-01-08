@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Jan  1 01:22:58 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln unif.fr
+# Nmap 7.92 scan initiated Sun Jan  8 01:20:29 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln unif.fr
 Nmap scan report for unif.fr (192.33.182.249)
-Host is up (0.084s latency).
+Host is up (0.11s latency).
 rDNS record for 192.33.182.249: unknown-1.univ-paris13.fr
 Not shown: 991 filtered tcp ports (no-response)
 PORT     STATE  SERVICE    VERSION
@@ -13,7 +13,6 @@ PORT     STATE  SERVICE    VERSION
 |_    	SSV:90447	4.6	https://vulners.com/seebug/SSV:90447	*EXPLOIT*
 53/tcp   closed domain
 80/tcp   open   http       Apache httpd 2.4.10
-|_http-server-header: Apache/2.4.10 (Debian)
 | vulners: 
 |   cpe:/a:apache:http_server:2.4.10: 
 |     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
@@ -84,8 +83,10 @@ PORT     STATE  SERVICE    VERSION
 |     	4013EC74-B3C1-5D95-938A-54197A58586D	4.3	https://vulners.com/githubexploit/4013EC74-B3C1-5D95-938A-54197A58586D	*EXPLOIT*
 |     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
 |_    	PACKETSTORM:140265	0.0	https://vulners.com/packetstorm/PACKETSTORM:140265	*EXPLOIT*
+|_http-server-header: Apache/2.4.10 (Debian)
 222/tcp  closed rsh-spx
 443/tcp  open   ssl/http   Apache httpd 2.4.10
+|_http-server-header: Apache/2.4.10 (Debian)
 | vulners: 
 |   cpe:/a:apache:http_server:2.4.10: 
 |     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
@@ -156,7 +157,6 @@ PORT     STATE  SERVICE    VERSION
 |     	4013EC74-B3C1-5D95-938A-54197A58586D	4.3	https://vulners.com/githubexploit/4013EC74-B3C1-5D95-938A-54197A58586D	*EXPLOIT*
 |     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
 |_    	PACKETSTORM:140265	0.0	https://vulners.com/packetstorm/PACKETSTORM:140265	*EXPLOIT*
-|_http-server-header: Apache/2.4.10 (Debian)
 2251/tcp closed dif-port
 3404/tcp closed unknown
 8080/tcp closed http-proxy
@@ -164,4 +164,4 @@ PORT     STATE  SERVICE    VERSION
 Service Info: Host: formation.unif.eu; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jan  1 01:23:20 2023 -- 1 IP address (1 host up) scanned in 22.02 seconds
+# Nmap done at Sun Jan  8 01:20:53 2023 -- 1 IP address (1 host up) scanned in 23.89 seconds
