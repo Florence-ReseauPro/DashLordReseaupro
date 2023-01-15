@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 8 Jan 2023 02:54:55",
+	"@generated": "Sun, 15 Jan 2023 02:55:08",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=9A352C2125DABB1E853CE87AEC428B61?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=01E3C715948B9D1CE061CFDCDCC1FF0A?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
 						}
 					],
 					"count": "1",
@@ -563,12 +563,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-11609699-MB7JQGb2j3KD4aaDx0MttvMYv5wDlf-cas1"
+							"evidence": "LT-12600274-m4baOY7ZRqNR1ibbM49UXMQ4wkHjiT-cas1"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\u05ED=\uFFFD\uFFFD~0\\x001e\uFFFD@f\uFFFD\uFFFDr\uFFFD\u1983\uFFFDC-\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\\x0003\uFFFD\uFFFD\uFFFDj\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\u06ED4\u06FE>\uFFFD\uFFFD\uFFFD9\uFFFD\uFFFDF\uFFFDQ\uFFFD&\uFFFD3\uFFFDT\\\uFFFD8\uFFFDA\uFFFD?\uFFFDj\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
