@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 15 Jan 2023 02:40:55",
+	"@generated": "Sun, 22 Jan 2023 02:40:14",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -47,7 +47,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2147"
+					"sourceid": "2108"
 				},
 				{
 					"pluginid": "10202",
@@ -74,27 +74,6 @@
 							"evidence": "<form action=\"/search\" method=\"get\" itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\">"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/extensions/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"/search\" method=\"get\" itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\">"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/extensions/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"/search\" method=\"get\" itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\">"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/extensions/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG\" method=\"post\">"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
 							"method": "GET",
 							"param": "",
@@ -110,27 +89,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG\" method=\"post\">"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/META_INF/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"/search\" method=\"get\" itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\">"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/META_INF/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"/search\" method=\"get\" itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\">"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/META_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -156,20 +114,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG\" method=\"post\">"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/welcome-desk",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"/search\" method=\"get\" itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\">"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/welcome-desk",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"/search\" method=\"get\" itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\">"
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/welcome-desk/",
@@ -186,7 +130,7 @@
 							"evidence": "<form action=\"/search\" method=\"get\" itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\">"
 						}
 					],
-					"count": "18",
+					"count": "10",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"beanKey\" \"default-MOTS_CLEFS\" \"l\" \"RH\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -336,14 +280,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
+							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-services",
+							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -410,7 +354,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2386"
+					"sourceid": "2475"
 				},
 				{
 					"pluginid": "90003",
@@ -606,7 +550,7 @@
 							"evidence": "eval"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/45de9a31394a6f8f29a13c1a2ca41276efbf71e7.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/82c2182f6643060b43dd0034e37338807db9a984.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -619,7 +563,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "2302"
+					"sourceid": "2384"
 				},
 				{
 					"pluginid": "10063",
@@ -796,14 +740,14 @@
 							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/sitemap.xml",
+							"uri": "https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&PROC=IDENTIFICATION_FRONT",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/WEB_INF/",
+							"uri": "https://www.parisnanterre.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -929,6 +873,32 @@
 					"sourceid": "4"
 				},
 				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.parisnanterre.fr/agenda/commission-daide-aux-projets-etudiants-cape-session-4?id_agendaevenement=74159",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1657201844"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1657201844, which evaluates to: 2022-07-07 13:50:44</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "2329"
+				},
+				{
 					"pluginid": "10021",
 					"alertRef": "10021",
 					"alert": "X-Content-Type-Options Header Missing",
@@ -967,14 +937,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
+							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-services",
+							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1159,35 +1129,35 @@
 							"evidence": "user"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/45de9a31394a6f8f29a13c1a2ca41276efbf71e7.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/82c2182f6643060b43dd0034e37338807db9a984.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "from"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/45de9a31394a6f8f29a13c1a2ca41276efbf71e7.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/82c2182f6643060b43dd0034e37338807db9a984.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "QUERY"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/45de9a31394a6f8f29a13c1a2ca41276efbf71e7.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/82c2182f6643060b43dd0034e37338807db9a984.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/45de9a31394a6f8f29a13c1a2ca41276efbf71e7.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/82c2182f6643060b43dd0034e37338807db9a984.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "user"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/45de9a31394a6f8f29a13c1a2ca41276efbf71e7.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/82c2182f6643060b43dd0034e37338807db9a984.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1200,7 +1170,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2299"
+					"sourceid": "2381"
 				},
 				{
 					"pluginid": "10109",
@@ -1336,7 +1306,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "224"
+					"sourceid": "226"
 				},
 				{
 					"pluginid": "10015",
@@ -1377,7 +1347,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
+							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1757,7 +1727,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2363"
+					"sourceid": "2450"
 				}
 			]
 		}
