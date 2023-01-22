@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 15 Jan 2023 01:49:37",
+	"@generated": "Sun, 22 Jan 2023 01:59:52",
 	"site":[ 
 		{
 			"@name": "https://datakairos.unif.fr",
@@ -87,7 +87,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10063",
@@ -107,6 +107,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://datakairos.unif.fr/js/chunk-1394ab50.a813664e.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://datakairos.unif.fr/js/chunk-1b83712e.788253e1.js",
 							"method": "GET",
 							"param": "",
@@ -114,7 +121,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-25b709a1.af23e374.js",
+							"uri": "https://datakairos.unif.fr/js/chunk-25b709a1.53c44345.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -150,13 +157,6 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/js/chunk-2d0e5e97.0f155758.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://datakairos.unif.fr/js/chunk-2d21402c.5b1ec646.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -210,7 +210,7 @@
 							"evidence": "nginx/1.18.0 (Ubuntu)"
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-1ab22a73.415f5a6b.css",
+							"uri": "https://datakairos.unif.fr/css/chunk-1ab22a73.0b9fc395.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -218,13 +218,6 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-1b83712e.1a373f0a.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "nginx/1.18.0 (Ubuntu)"
-						},
-						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.dcc6c8bb.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -246,6 +239,13 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -279,7 +279,7 @@
 					"reference": "<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10035",
@@ -306,7 +306,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-1ab22a73.415f5a6b.css",
+							"uri": "https://datakairos.unif.fr/css/chunk-1ab22a73.0b9fc395.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -314,13 +314,6 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-1b83712e.1a373f0a.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.dcc6c8bb.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -342,6 +335,13 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -375,7 +375,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10021",
@@ -402,7 +402,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-1ab22a73.415f5a6b.css",
+							"uri": "https://datakairos.unif.fr/css/chunk-1ab22a73.0b9fc395.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -410,13 +410,6 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-1b83712e.1a373f0a.css",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.dcc6c8bb.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -438,6 +431,13 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -510,7 +510,7 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-1ab22a73.88f9f0dc.js",
+							"uri": "https://datakairos.unif.fr/js/chunk-1ab22a73.b7fdc6a5.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -524,7 +524,7 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-25b709a1.af23e374.js",
+							"uri": "https://datakairos.unif.fr/js/chunk-25b709a1.53c44345.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -538,14 +538,14 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-43598b42.39fe9ed5.js",
+							"uri": "https://datakairos.unif.fr/js/chunk-43598b42.8b677785.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select"
 						},
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-48a4adb6.d29d3cb8.js",
+							"uri": "https://datakairos.unif.fr/js/chunk-48a4adb6.3cd9319b.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -566,14 +566,14 @@
 							"evidence": "select"
 						},
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-7b708dfe.e9ee36a1.js",
+							"uri": "https://datakairos.unif.fr/js/chunk-7b708dfe.c82a0700.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select"
 						},
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-7d8cba4d.5daea09d.js",
+							"uri": "https://datakairos.unif.fr/js/chunk-7d8cba4d.19f10bdf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -640,7 +640,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -707,7 +707,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-1ab22a73.415f5a6b.css",
+							"uri": "https://datakairos.unif.fr/css/chunk-1ab22a73.0b9fc395.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -715,13 +715,6 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-1b83712e.1a373f0a.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.dcc6c8bb.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -743,6 +736,13 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
