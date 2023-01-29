@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Jan 22 03:00:56 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
+# Nmap 7.92 scan initiated Sun Jan 29 07:18:39 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
 Nmap scan report for ent.univ-paris13.fr (81.194.43.212)
-Host is up (0.15s latency).
+Host is up (0.11s latency).
 Other addresses for ent.univ-paris13.fr (not scanned): 81.194.43.211
 rDNS record for 81.194.43.212: lb.univ-paris13.fr
 Not shown: 998 filtered tcp ports (no-response)
@@ -26,24 +26,8 @@ PORT    STATE SERVICE   VERSION
 |_    connection: close
 443/tcp open  ssl/https Apache
 |_http-server-header: Apache
-| fingerprint-strings: 
-|   DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, tor-versions: 
-|     HTTP/1.0 400 Bad request
-|     cache-control: no-cache
-|     content-type: text/html
-|     <html><body><h1>400 Bad request</h1>
-|     Your browser sent an invalid request.
-|     </body></html>
-|   FourOhFourRequest, GetRequest, HTTPOptions, RTSPRequest: 
-|     HTTP/1.0 503 Service Unavailable
-|     cache-control: no-cache
-|     content-type: text/html
-|     <html><body><h1>503 Service Unavailable</h1>
-|     server is available to handle this request.
-|_    </body></html>
-2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=1/22%Time=63CCA6F9%P=x86_64-alpine-linux-musl%r
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.92%I=7%D=1/29%Time=63D61DE1%P=x86_64-alpine-linux-musl%r
 SF:(GetRequest,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-len
 SF:gth:\x200\r\nlocation:\x20https:///\r\nconnection:\x20close\r\n\r\n")%r
 SF:(HTTPOptions,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-le
@@ -73,38 +57,6 @@ SF:valid\x20request\.\n</body></html>\n\n")%r(SSLSessionReq,A9,"HTTP/1\.0\
 SF:x20400\x20Bad\x20request\r\ncache-control:\x20no-cache\r\ncontent-type:
 SF:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x
 SF:20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n\n");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=1/22%Time=63CCA700%P=x86_64-alpine-linux
-SF:-musl%r(GetRequest,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\nca
-SF:che-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><bo
-SF:dy><h1>503\x20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20availa
-SF:ble\x20to\x20handle\x20this\x20request\.\n</body></html>\n\n")%r(HTTPOp
-SF:tions,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\ncache-control:\
-SF:x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><body><h1>503\x2
-SF:0Service\x20Unavailable</h1>\nNo\x20server\x20is\x20available\x20to\x20
-SF:handle\x20this\x20request\.\n</body></html>\n\n")%r(FourOhFourRequest,C
-SF:2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\ncache-control:\x20no-c
-SF:ache\r\ncontent-type:\x20text/html\r\n\r\n<html><body><h1>503\x20Servic
-SF:e\x20Unavailable</h1>\nNo\x20server\x20is\x20available\x20to\x20handle\
-SF:x20this\x20request\.\n</body></html>\n\n")%r(tor-versions,A9,"HTTP/1\.0
-SF:\x20400\x20Bad\x20request\r\ncache-control:\x20no-cache\r\ncontent-type
-SF::\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\
-SF:x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n\n")%
-SF:r(RTSPRequest,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\ncache-c
-SF:ontrol:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><body><h
-SF:1>503\x20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20available\x
-SF:20to\x20handle\x20this\x20request\.\n</body></html>\n\n")%r(RPCCheck,A9
-SF:,"HTTP/1\.0\x20400\x20Bad\x20request\r\ncache-control:\x20no-cache\r\nc
-SF:ontent-type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request<
-SF:/h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></h
-SF:tml>\n\n")%r(DNSVersionBindReqTCP,A9,"HTTP/1\.0\x20400\x20Bad\x20reques
-SF:t\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<h
-SF:tml><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\x20an
-SF:\x20invalid\x20request\.\n</body></html>\n\n")%r(DNSStatusRequestTCP,A9
-SF:,"HTTP/1\.0\x20400\x20Bad\x20request\r\ncache-control:\x20no-cache\r\nc
-SF:ontent-type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request<
-SF:/h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></h
-SF:tml>\n\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jan 22 03:01:46 2023 -- 1 IP address (1 host up) scanned in 50.10 seconds
+# Nmap done at Sun Jan 29 07:19:11 2023 -- 1 IP address (1 host up) scanned in 31.76 seconds
