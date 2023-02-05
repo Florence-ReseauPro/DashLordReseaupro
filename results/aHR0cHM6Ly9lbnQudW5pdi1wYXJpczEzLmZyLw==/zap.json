@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 29 Jan 2023 07:07:28",
+	"@generated": "Sun, 5 Feb 2023 03:13:31",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=E94BFA156C52D46D400FFB655EC0E7A9?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=F84FFF6419B46460CCC4C7547A3490A8?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
 						}
 					],
 					"count": "1",
@@ -546,6 +546,32 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"uri": "https://ent.univ-paris13.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "LT-1468706-mv2HB23wFZEQBbRN33ExdJ7GLLDrTC-cas2"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD;\u04EF\uFFFD\uFFFDa\uFFFD\uFFFD|\\x0005dD\\x0001m\\x0013w\uFFFDL]'\uFFFD\uFFFD,:\uFFFD\\x000b\uFFFD\\x001a\uFFFD</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
 					"sourceid": "1"
 				},
 				{
