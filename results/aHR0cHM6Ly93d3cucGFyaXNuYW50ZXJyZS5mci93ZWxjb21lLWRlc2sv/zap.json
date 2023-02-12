@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 5 Feb 2023 03:05:52",
+	"@generated": "Sun, 12 Feb 2023 03:02:35",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -76,27 +76,6 @@
 							"evidence": "<form action=\"https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG\" method=\"post\">"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/META_INF/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"/search\" method=\"get\" itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\">"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/META_INF/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"/search\" method=\"get\" itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\">"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/META_INF/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form action=\"https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG\" method=\"post\">"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -132,13 +111,13 @@
 							"evidence": "<form action=\"/search\" method=\"get\" itemprop=\"potentialAction\" itemscope itemtype=\"http://schema.org/SearchAction\">"
 						}
 					],
-					"count": "16",
+					"count": "13",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"beanKey\" \"default-MOTS_CLEFS\" \"l\" \"RH\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10038",
@@ -289,7 +268,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
+							"uri": "https://www.parisnanterre.fr/organisation/les-services",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -419,7 +398,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10054",
@@ -459,7 +438,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10017",
@@ -486,13 +465,6 @@
 							"evidence": "<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/actualites-de-luniversite/soldes-dhiver-sur-le-site-de-la-boutique-en-ligne",
-							"method": "GET",
-							"param": "//www.instagram.com/embed.js",
-							"attack": "",
-							"evidence": "<script async src=\"//www.instagram.com/embed.js\"></script>"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/diffusion-scientifique",
 							"method": "GET",
 							"param": "https://platform.twitter.com/widgets.js",
@@ -500,13 +472,13 @@
 							"evidence": "<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10063",
@@ -602,7 +574,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10040",
@@ -628,7 +600,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "4"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10036",
@@ -669,13 +641,6 @@
 							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/lyceen%C2%B7ne",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/META_INF/",
 							"method": "GET",
 							"param": "",
@@ -684,6 +649,13 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&PROC=IDENTIFICATION_FRONT",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -717,7 +689,7 @@
 					"reference": "<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10035",
@@ -744,6 +716,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/etudiant%C2%B7e",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/extensions/",
 							"method": "GET",
 							"param": "",
@@ -752,13 +731,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/lyceen%C2%B7ne",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -813,7 +785,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10021",
@@ -854,14 +826,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
+							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
+							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -936,13 +908,6 @@
 							"evidence": "fr/uas/UNIVERSITE/LOGO/202101-UPN-RVB-header-v06"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/actualites-de-luniversite",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr/uas/UNIVERSITE/LOGO/202101-UPN-RVB-header-v06"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/extensions/",
 							"method": "GET",
 							"param": "",
@@ -958,6 +923,13 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/META_INF/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr/uas/UNIVERSITE/LOGO/202101-UPN-RVB-header-v06"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/presentation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1005,7 +977,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10109",
@@ -1101,7 +1073,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "4"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10049",
@@ -1121,7 +1093,14 @@
 							"evidence": "302"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/lyceen%C2%B7ne",
+							"uri": "https://www.parisnanterre.fr/etudiant%C2%B7e",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&PROC=IDENTIFICATION_FRONT",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1135,13 +1114,13 @@
 							"evidence": "308"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "229"
+					"sourceid": "225"
 				},
 				{
 					"pluginid": "10015",
@@ -1189,7 +1168,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
+							"uri": "https://www.parisnanterre.fr/organisation/les-services",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1237,7 +1216,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10049",
@@ -1312,7 +1291,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "17"
 				}
 			]
 		}
