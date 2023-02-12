@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr</pre>
-<p class="lead">Sun Feb  5 03:25:07 2023 – Sun Feb  5 03:25:32 2023<br>1 hosts scanned.
+<p class="lead">Sun Feb 12 03:33:55 2023 – Sun Feb 12 03:34:32 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -114,14 +114,30 @@
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">tcpwrapped</td>
-<td title="Product"></td>
+<td title="Service">https</td>
+<td title="Product">Apache</td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
+<h5>fingerprint-strings</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, tor-versions: 
+    HTTP/1.0 400 Bad request
+    cache-control: no-cache
+    content-type: text/html
+    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;
+    Your browser sent an invalid request.
+    &lt;/body&gt;&lt;/html&gt;
+  FourOhFourRequest, GetRequest, HTTPOptions, RTSPRequest: 
+    HTTP/1.0 503 Service Unavailable
+    cache-control: no-cache
+    content-type: text/html
+    &lt;html&gt;&lt;body&gt;&lt;h1&gt;503 Service Unavailable&lt;/h1&gt;
+    server is available to handle this request.
+    &lt;/body&gt;&lt;/html&gt;</pre>
 </td></tr>
 </tbody>
 </table></div>
@@ -143,8 +159,8 @@
 <td>81.194.43.211 - ent.univ-paris13.fr</td>
 <td>443</td>
 <td>tcp</td>
-<td>tcpwrapped</td>
-<td></td>
+<td>https</td>
+<td>Apache</td>
 <td></td>
 <td></td>
 <td></td>
