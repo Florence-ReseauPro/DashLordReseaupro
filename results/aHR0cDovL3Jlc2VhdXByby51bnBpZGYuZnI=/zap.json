@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 12 Feb 2023 01:11:00",
+	"@generated": "Sun, 19 Feb 2023 01:08:44",
 	"site":[ 
 		{
 			"@name": "http://reseaupro.unpidf.fr",
@@ -493,7 +493,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "193"
+					"sourceid": "196"
 				},
 				{
 					"pluginid": "10063",
@@ -848,9 +848,65 @@
 							"param": "",
 							"attack": "",
 							"evidence": "1642762249"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1505979942"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1519291402"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1530257856"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1537866212"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1591623214"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1622626310"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1624632233"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1642762249"
 						}
 					],
-					"count": "8",
+					"count": "16",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1505979942, which evaluates to: 2017-09-21 07:45:42</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -952,7 +1008,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10094",
@@ -977,13 +1033,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "php/entreprises/infosEntreprise/id_entreprise/10368"
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/page/2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "php/entreprises/infosEntreprise/id_entreprise/13912"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/raison_sociale/ReseauPro+Portail+Entreprise",
@@ -1040,6 +1089,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "WvF0D4-UtPqN1-43nkD4-NKvUm2-daQqk3-LmNiI-z7Ysb4-mwry24-T8YrS3-Q2tpq2"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/js/datatables.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "relativeOffsetEndOfZip64CentralDir"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/js/jquery-1.7.2.min.js",
@@ -1151,7 +1207,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -1247,7 +1303,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -1433,7 +1489,7 @@
 					],
 					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=09120c93ff1b1c42c9008966bdaf2f97</p><p></p><p>The user-controlled value was:</p><p>09120c93ff1b1c42c9008966bdaf2f97</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=314ec0189888b6674e0597ed8c626fc6</p><p></p><p>The user-controlled value was:</p><p>314ec0189888b6674e0597ed8c626fc6</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
