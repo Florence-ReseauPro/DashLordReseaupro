@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 19 Feb 2023 03:03:46",
+	"@generated": "Sun, 26 Feb 2023 03:06:18",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=14A3C646FED589AB57B50267B9622B75?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=C35951F39E980A820EA91DFCD674DA0C?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
 						}
 					],
 					"count": "1",
@@ -207,7 +207,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10010",
@@ -239,9 +239,16 @@
 							"param": "SERVERID",
 							"attack": "",
 							"evidence": "set-cookie: SERVERID"
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"method": "GET",
+							"param": "SERVERID",
+							"attack": "",
+							"evidence": "set-cookie: SERVERID"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
@@ -279,9 +286,16 @@
 							"param": "SERVERID",
 							"attack": "",
 							"evidence": "set-cookie: SERVERID"
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"method": "GET",
+							"param": "SERVERID",
+							"attack": "",
+							"evidence": "set-cookie: SERVERID"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
@@ -344,12 +358,19 @@
 						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
+							"param": "SERVERID",
+							"attack": "",
+							"evidence": "set-cookie: SERVERID"
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
 							"evidence": "set-cookie: UP13ENT"
 						}
 					],
-					"count": "7",
+					"count": "8",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
@@ -468,7 +489,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10036",
@@ -563,12 +584,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-2309592-F2KGOUSAgUxG1gtInSRVZshkhamLEe-cas1"
+							"evidence": "LT-2433194-PEB2qL3shQ4tjzhdtBW4wDZMk306we-cas1"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFDOy\uFFFDo\uFFFD\u0621\uFFFDQ  S\\x0011\uFFFD\uFFFD\uFFFD'I\\x0015Y\uFFFD\\x0019!jb\uFFFD{\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD}\uFFFD\uFFFD\uFFFD\uFFFD\\x0010\\x001d\uFFFD/{!C\uFFFDc\uFFFD\\x0017m\\x0005n0\r\uFFFD$\uFFFDN\uFFFD{\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -664,7 +685,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "8"
 				}
 			]
 		}
