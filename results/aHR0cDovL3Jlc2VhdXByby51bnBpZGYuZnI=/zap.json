@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 26 Feb 2023 01:13:44",
+	"@generated": "Sun, 5 Mar 2023 01:17:46",
 	"site":[ 
 		{
 			"@name": "http://reseaupro.unpidf.fr",
@@ -28,12 +28,12 @@
 						}
 					],
 					"count": "1",
-					"solution": "",
+					"solution": "<p>Check the response for the potential presence of personally identifiable information (PII), ensure nothing sensitive is leaked by the application.</p>",
 					"otherinfo": "<p>Credit Card Type detected: DinersClub</p><p>Bank Identification Number: 302588</p><p>Brand: DISCOVER</p><p>Category: BUSINESS CARD</p><p>Issuer: DINERS CLUB INTERNATIONAL</p>",
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "186"
+					"sourceid": "180"
 				},
 				{
 					"pluginid": "10202",
@@ -59,11 +59,11 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "120"
+					"sourceid": "122"
 				},
 				{
 					"pluginid": "10038",
-					"alertRef": "10038",
+					"alertRef": "10038-1",
 					"alert": "Content Security Policy (CSP) Header Not Set",
 					"name": "Content Security Policy (CSP) Header Not Set",
 					"riskcode": "2",
@@ -128,6 +128,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "",
@@ -149,8 +156,8 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: \"Content-Security-Policy\" for Chrome 25+, Firefox 23+ and Safari 7+, \"X-Content-Security-Policy\" for Firefox 4.0+ and Internet Explorer 10+, and \"X-WebKit-CSP\" for Chrome 14+ and Safari 6+.</p>",
+					"count": "12",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
@@ -251,7 +258,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90003",
@@ -292,14 +299,14 @@
 							"evidence": "<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800' rel='stylesheet' type='text/css'>"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/partenaires",
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/etudiants",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<link href=\"https://fonts.googleapis.com/css?family=Roboto:400,500,700,900\" rel=\"stylesheet\">"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/partenaires",
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/etudiants",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -328,33 +335,19 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800' rel='stylesheet' type='text/css'>"
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/user",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link href=\"https://fonts.googleapis.com/css?family=Roboto:400,500,700,900\" rel=\"stylesheet\">"
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/user",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800' rel='stylesheet' type='text/css'>"
 						}
 					],
-					"count": "12",
+					"count": "10",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10003",
@@ -507,7 +500,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "190"
+					"sourceid": "188"
 				},
 				{
 					"pluginid": "10063",
@@ -576,13 +569,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "",
@@ -604,7 +590,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
@@ -686,7 +672,7 @@
 							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -761,13 +747,6 @@
 							"evidence": "Apache/2.2.22 (Debian)"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/176",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.2.22 (Debian)"
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
 							"method": "GET",
 							"param": "",
@@ -782,7 +761,7 @@
 							"evidence": "Apache/2.2.22 (Debian)"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/user",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -803,7 +782,7 @@
 							"evidence": "Apache/2.2.22 (Debian)"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the \"Server\" header or provide generic details.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
@@ -904,6 +883,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/images/pcu/favicon.ico",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -947,13 +933,6 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1179,7 +1158,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10109",
@@ -1275,7 +1254,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -1309,13 +1288,6 @@
 							"evidence": "no-store"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/partenaires",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-store"
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/121",
 							"method": "GET",
 							"param": "",
@@ -1330,14 +1302,21 @@
 							"evidence": "no-store"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/176",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "no-store"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1461,11 +1440,11 @@
 					],
 					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=617492683e10e53c430fe2cdbb8c877c</p><p></p><p>The user-controlled value was:</p><p>617492683e10e53c430fe2cdbb8c877c</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=a0a6f374dc2a682377305c89f107062a</p><p></p><p>The user-controlled value was:</p><p>a0a6f374dc2a682377305c89f107062a</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "192"
+					"sourceid": "196"
 				}
 			]
 		}
