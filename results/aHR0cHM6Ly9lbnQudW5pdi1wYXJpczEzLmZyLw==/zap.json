@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 26 Feb 2023 03:06:18",
+	"@generated": "Sun, 5 Mar 2023 02:44:53",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=C35951F39E980A820EA91DFCD674DA0C?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=806140E154DBD24B306B0A51FD2AFA7E?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
 						}
 					],
 					"count": "1",
@@ -37,7 +37,7 @@
 				},
 				{
 					"pluginid": "10038",
-					"alertRef": "10038",
+					"alertRef": "10038-1",
 					"alert": "Content Security Policy (CSP) Header Not Set",
 					"name": "Content Security Policy (CSP) Header Not Set",
 					"riskcode": "2",
@@ -54,7 +54,7 @@
 						}
 					],
 					"count": "1",
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: \"Content-Security-Policy\" for Chrome 25+, Firefox 23+ and Safari 7+, \"X-Content-Security-Policy\" for Firefox 4.0+ and Internet Explorer 10+, and \"X-WebKit-CSP\" for Chrome 14+ and Safari 6+.</p>",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
@@ -584,12 +584,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-2433194-PEB2qL3shQ4tjzhdtBW4wDZMk306we-cas1"
+							"evidence": "LT-2805065-mKfPsCwQTU2LQq16JLFMzni9cAojJl-cas2"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFD}\uFFFD\uFFFD\uFFFD\uFFFD\\x0010\\x001d\uFFFD/{!C\uFFFDc\uFFFD\\x0017m\\x0005n0\r\uFFFD$\uFFFDN\uFFFD{\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFDNt\uB7E6)\uFFFD\uFFFD\\x000b\\x0004\\x0013Sb\u042B^\uFFFD,S3\uFFFD/\\\\x0002\uFFFD\u0257\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
