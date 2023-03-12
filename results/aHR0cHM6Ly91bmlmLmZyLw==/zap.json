@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 5 Mar 2023 01:18:40",
+	"@generated": "Sun, 12 Mar 2023 01:10:54",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -103,7 +103,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10038",
@@ -295,7 +295,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "90003",
@@ -333,7 +333,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202309.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202310.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
@@ -361,7 +361,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202309.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202310.js' defer></script>"
 						}
 					],
 					"count": "8",
@@ -370,7 +370,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10003",
@@ -396,7 +396,7 @@
 					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://security.snyk.io/vuln/SNYK-JS-MOMENT-2944238</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "562"
+					"sourceid": "566"
 				},
 				{
 					"pluginid": "10010",
@@ -422,7 +422,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "773"
+					"sourceid": "751"
 				},
 				{
 					"pluginid": "10054",
@@ -448,7 +448,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "773"
+					"sourceid": "751"
 				},
 				{
 					"pluginid": "10017",
@@ -463,9 +463,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202309.js",
+							"param": "https://stats.wp.com/e-202310.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202309.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202310.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/",
@@ -475,14 +475,14 @@
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
 						},
 						{
-							"uri": "https://unif.fr/learning-spaces/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202309.js",
+							"param": "https://stats.wp.com/e-202310.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202309.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202310.js' defer></script>"
 						},
 						{
-							"uri": "https://unif.fr/learning-spaces/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
@@ -491,9 +491,9 @@
 						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202309.js",
+							"param": "https://stats.wp.com/e-202310.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202309.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202310.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
@@ -505,9 +505,9 @@
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202309.js",
+							"param": "https://stats.wp.com/e-202310.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202309.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202310.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
@@ -519,33 +519,19 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202309.js",
+							"param": "https://stats.wp.com/e-202310.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202309.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202310.js' defer></script>"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
-							"method": "GET",
-							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
-							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
-						},
-						{
-							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "https://stats.wp.com/e-202309.js",
-							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202309.js' defer></script>"
-						},
-						{
-							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
 							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>"
 						}
 					],
-					"count": "12",
+					"count": "10",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -577,7 +563,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "551"
+					"sourceid": "558"
 				},
 				{
 					"pluginid": "10063",
@@ -611,13 +597,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/international/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
@@ -653,6 +632,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://unif.fr/sms-u/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "",
@@ -673,7 +659,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10040",
@@ -686,11 +672,11 @@
 					"desc": "<p>The page includes mixed content, that is content accessed via HTTP instead of HTTPS.</p>",
 					"instances":[ 
 						{
-							"uri": "https://unif.fr/blog/2021/03/30/mise-en-page/",
+							"uri": "https://unif.fr/blog/2021/03/30/nouveau-flux/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "http://unif.fr/wp-content/uploads/2020/03/POD-in-situ-12-cm-ConvertImage-1024x1024.jpg"
+							"evidence": "http://unif.fr/wp-content/uploads/2020/03/Facade2-13-cm-ConvertImage-1-1024x591.jpg"
 						},
 						{
 							"uri": "https://unif.fr/cursus-enseigner-avec-le-numerique-2022-2023/",
@@ -772,11 +758,11 @@
 					],
 					"count": "12",
 					"solution": "<p>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.</p><p>The page must not contain any content that is transmitted over unencrypted HTTP.</p><p> This includes content from third party sites.</p>",
-					"otherinfo": "<p>tag=img src=http://unif.fr/wp-content/uploads/2020/03/POD-in-situ-12-cm-ConvertImage-1024x1024.jpg</p><p></p>",
+					"otherinfo": "<p>tag=img src=http://unif.fr/wp-content/uploads/2020/03/Facade2-13-cm-ConvertImage-1-1024x591.jpg</p><p></p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "1197"
+					"sourceid": "1188"
 				},
 				{
 					"pluginid": "10036",
@@ -796,7 +782,7 @@
 							"evidence": "Apache/2.4.10 (Debian)"
 						},
 						{
-							"uri": "https://unif.fr/learning-spaces/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -872,7 +858,7 @@
 					"reference": "<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10035",
@@ -968,7 +954,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10096",
@@ -981,41 +967,48 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1678575600"
+						},
+						{
 							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1677970800"
+							"evidence": "1678575600"
 						},
 						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1677970800"
+							"evidence": "1678575600"
 						},
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1677970800"
+							"evidence": "1678575600"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1677970800"
+							"evidence": "1678575600"
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1677970800, which evaluates to: 2023-03-04 23:00:00</p>",
+					"otherinfo": "<p>1678575600, which evaluates to: 2023-03-11 23:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "221"
+					"sourceid": "152"
 				},
 				{
 					"pluginid": "10021",
@@ -1111,7 +1104,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10094",
@@ -1207,7 +1200,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "90011",
@@ -1310,7 +1303,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "539"
+					"sourceid": "534"
 				},
 				{
 					"pluginid": "10027",
@@ -1406,7 +1399,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10109",
@@ -1502,7 +1495,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10049",
@@ -1528,7 +1521,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10015",
@@ -1644,7 +1637,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://unif.fr/learning-spaces/",
+							"uri": "https://unif.fr/datakairos/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1699,7 +1692,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10049",
@@ -1732,7 +1725,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "114"
+					"sourceid": "51"
 				},
 				{
 					"pluginid": "10031",
@@ -1807,7 +1800,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "773"
+					"sourceid": "751"
 				}
 			]
 		}
