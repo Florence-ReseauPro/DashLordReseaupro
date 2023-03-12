@@ -1,11 +1,10 @@
-# Nmap 7.92 scan initiated Sun Mar  5 02:00:12 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-gustave-eiffel.fr
+# Nmap 7.92 scan initiated Sun Mar 12 01:54:59 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-gustave-eiffel.fr
 Nmap scan report for www.univ-gustave-eiffel.fr (193.55.45.10)
 Host is up (0.15s latency).
 rDNS record for 193.55.45.10: wwwdev.univ-eiffel.fr
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE  VERSION
 80/tcp  open  http     Apache httpd 2.4.51
-|_http-server-header: Apache/2.4.51 (Debian)
 | vulners: 
 |   cpe:/a:apache:http_server:2.4.51: 
 |     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
@@ -25,6 +24,7 @@ PORT    STATE SERVICE  VERSION
 |     	CNVD-2022-73122	5.0	https://vulners.com/cnvd/CNVD-2022-73122
 |     	CNVD-2022-53584	5.0	https://vulners.com/cnvd/CNVD-2022-53584
 |_    	CNVD-2022-53582	5.0	https://vulners.com/cnvd/CNVD-2022-53582
+|_http-server-header: Apache/2.4.51 (Debian)
 443/tcp open  ssl/http Apache httpd 2.4.51
 |_http-server-header: Apache/2.4.51 (Debian)
 | vulners: 
@@ -48,4 +48,4 @@ PORT    STATE SERVICE  VERSION
 |_    	CNVD-2022-53582	5.0	https://vulners.com/cnvd/CNVD-2022-53582
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Mar  5 02:00:39 2023 -- 1 IP address (1 host up) scanned in 27.39 seconds
+# Nmap done at Sun Mar 12 01:55:26 2023 -- 1 IP address (1 host up) scanned in 27.53 seconds
