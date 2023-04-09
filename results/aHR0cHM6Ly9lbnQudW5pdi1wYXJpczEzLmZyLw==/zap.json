@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 2 Apr 2023 02:53:09",
+	"@generated": "Sun, 9 Apr 2023 03:04:15",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=E2144FAC0C5E279054A595C49B3FB873?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=0860A31BA247B82D174A2236EA85AC6B?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
 					"count": "1",
@@ -50,7 +51,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -76,7 +78,8 @@
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -102,63 +105,72 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link href=\"https://cdn.univ-paris13.fr/includes/img/favicons/favicon.ico\" rel=\"shortcut icon\" type=\"image/x-icon\" />"
+							"evidence": "<link href=\"https://cdn.univ-paris13.fr/includes/img/favicons/favicon.ico\" rel=\"shortcut icon\" type=\"image/x-icon\" />",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\" />"
+							"evidence": "<link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\" />",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdn.univ-paris13.fr/includes/css/fonts.css\" />"
+							"evidence": "<link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdn.univ-paris13.fr/includes/css/fonts.css\" />",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdn.univ-paris13.fr/includes/css/new/arma-cas-uspn.css\" />"
+							"evidence": "<link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdn.univ-paris13.fr/includes/css/new/arma-cas-uspn.css\" />",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdn.univ-paris13.fr/includes/css/new/materialize.min.css\" />"
+							"evidence": "<link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdn.univ-paris13.fr/includes/css/new/materialize.min.css\" />",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/arma-cas.js\"></script>"
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/arma-cas.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/jquery-ui.min.js\"></script>"
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/jquery-ui.min.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/jquery.min.js\"></script>"
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/jquery.min.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/materialize.min.js\"></script>"
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/materialize.min.js\"></script>",
+							"otherinfo": ""
 						}
 					],
 					"count": "9",
@@ -184,17 +196,27 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
 					"otherinfo": "<p>Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].</p><p>Predicted response size: 379.</p><p>Response Body Length: 452.</p>",
 					"reference": "",
@@ -217,28 +239,32 @@
 							"method": "GET",
 							"param": "hacas",
 							"attack": "",
-							"evidence": "Set-Cookie: hacas"
+							"evidence": "Set-Cookie: hacas",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "SERVERID",
 							"attack": "",
-							"evidence": "set-cookie: SERVERID"
+							"evidence": "set-cookie: SERVERID",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/robots.txt",
 							"method": "GET",
 							"param": "SERVERID",
 							"attack": "",
-							"evidence": "set-cookie: SERVERID"
+							"evidence": "set-cookie: SERVERID",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "SERVERID",
 							"attack": "",
-							"evidence": "set-cookie: SERVERID"
+							"evidence": "set-cookie: SERVERID",
+							"otherinfo": ""
 						}
 					],
 					"count": "4",
@@ -264,28 +290,32 @@
 							"method": "GET",
 							"param": "hacas",
 							"attack": "",
-							"evidence": "Set-Cookie: hacas"
+							"evidence": "Set-Cookie: hacas",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "SERVERID",
 							"attack": "",
-							"evidence": "set-cookie: SERVERID"
+							"evidence": "set-cookie: SERVERID",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/robots.txt",
 							"method": "GET",
 							"param": "SERVERID",
 							"attack": "",
-							"evidence": "set-cookie: SERVERID"
+							"evidence": "set-cookie: SERVERID",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "SERVERID",
 							"attack": "",
-							"evidence": "set-cookie: SERVERID"
+							"evidence": "set-cookie: SERVERID",
+							"otherinfo": ""
 						}
 					],
 					"count": "4",
@@ -311,56 +341,64 @@
 							"method": "GET",
 							"param": "CASSESSIONID",
 							"attack": "",
-							"evidence": "Set-Cookie: CASSESSIONID"
+							"evidence": "Set-Cookie: CASSESSIONID",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "hacas",
 							"attack": "",
-							"evidence": "Set-Cookie: hacas"
+							"evidence": "Set-Cookie: hacas",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "SERVERID",
 							"attack": "",
-							"evidence": "set-cookie: SERVERID"
+							"evidence": "set-cookie: SERVERID",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "set-cookie: UP13ENT"
+							"evidence": "set-cookie: UP13ENT",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/robots.txt",
 							"method": "GET",
 							"param": "SERVERID",
 							"attack": "",
-							"evidence": "set-cookie: SERVERID"
+							"evidence": "set-cookie: SERVERID",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/robots.txt",
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "set-cookie: UP13ENT"
+							"evidence": "set-cookie: UP13ENT",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "SERVERID",
 							"attack": "",
-							"evidence": "set-cookie: SERVERID"
+							"evidence": "set-cookie: SERVERID",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "set-cookie: UP13ENT"
+							"evidence": "set-cookie: UP13ENT",
+							"otherinfo": ""
 						}
 					],
 					"count": "8",
@@ -386,28 +424,32 @@
 							"method": "GET",
 							"param": "https://cdn.univ-paris13.fr/includes/js/new/arma-cas.js",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/arma-cas.js\"></script>"
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/arma-cas.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "https://cdn.univ-paris13.fr/includes/js/new/jquery-ui.min.js",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/jquery-ui.min.js\"></script>"
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/jquery-ui.min.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "https://cdn.univ-paris13.fr/includes/js/new/jquery.min.js",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/jquery.min.js\"></script>"
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/jquery.min.js\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
 							"param": "https://cdn.univ-paris13.fr/includes/js/new/materialize.min.js",
 							"attack": "",
-							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/materialize.min.js\"></script>"
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdn.univ-paris13.fr/includes/js/new/materialize.min.js\"></script>",
+							"otherinfo": ""
 						}
 					],
 					"count": "4",
@@ -433,7 +475,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -459,21 +502,24 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "x-powered-by: PHP/5.6.36"
+							"evidence": "x-powered-by: PHP/5.6.36",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "x-powered-by: PHP/5.6.36"
+							"evidence": "x-powered-by: PHP/5.6.36",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "x-powered-by: PHP/5.6.36"
+							"evidence": "x-powered-by: PHP/5.6.36",
+							"otherinfo": ""
 						}
 					],
 					"count": "3",
@@ -499,7 +545,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Apache-Coyote/1.1"
+							"evidence": "Apache-Coyote/1.1",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -525,7 +572,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=0"
+							"evidence": "max-age=0",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -551,7 +599,8 @@
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						}
 					],
 					"count": "1",
@@ -560,6 +609,33 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"uri": "https://ent.univ-paris13.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "LT-1418673-6bVeYh4ERc6Odrhqm3iUQQzczEvp15-cas1",
+							"otherinfo": "-?\uFFFD\uFFFD_:\uFFFD\uFFFDmW\uFFFD\uFFFD\uFFFD\\x0011s\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\uFFFD%\\x0010C73\\x0012\uFFFDu\uFFFD\uFFFD\\x001a\uFFFD"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD_:\uFFFD\uFFFDmW\uFFFD\uFFFD\uFFFD\\x0011s\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\uFFFD%\\x0010C73\\x0012\uFFFDu\uFFFD\uFFFD\\x001a\uFFFD</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
 					"sourceid": "1"
 				},
 				{
@@ -577,7 +653,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "There was a charset mismatch between the HTTP Header and the META content-type encoding declarations: [iso-8859-1] and [UTF-8] do not match."
 						}
 					],
 					"count": "1",
@@ -603,7 +680,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "no-store"
+							"evidence": "no-store",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -629,7 +707,8 @@
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": "no-cache, no-store"
+							"evidence": "no-cache, no-store",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -655,21 +734,24 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=0"
+							"evidence": "max-age=0",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=0"
+							"evidence": "max-age=0",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=0"
+							"evidence": "max-age=0",
+							"otherinfo": ""
 						}
 					],
 					"count": "3",
