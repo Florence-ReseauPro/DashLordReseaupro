@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr</pre>
-<p class="lead">Sun Apr  9 03:07:23 2023 – Sun Apr  9 03:08:00 2023<br>1 hosts scanned.
+<p class="lead">Sun Apr 16 03:25:26 2023 – Sun Apr 16 03:26:03 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -124,17 +124,13 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
 <h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSStatusRequestTCP, Help, tor-versions: 
+  DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, tor-versions: 
     HTTP/1.0 400 Bad request
     cache-control: no-cache
     content-type: text/html
     &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;
     Your browser sent an invalid request.
     &lt;/body&gt;&lt;/html&gt;
-  DNSVersionBindReqTCP, RPCCheck: 
-    HTTP/1.0 400 Bad request
-    cache-control: no-cache
-    content-type: text/html
   FourOhFourRequest, GetRequest, HTTPOptions, RTSPRequest: 
     HTTP/1.0 503 Service Unavailable
     cache-control: no-cache
