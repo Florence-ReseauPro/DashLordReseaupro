@@ -661,7 +661,7 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "41 >= 30 days"
+              "finding"      : "34 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -857,14 +857,14 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1681002355"
+              "finding"      : "1681607253"
           }
 ,         {
               "id"           : "HSTS",
@@ -947,10 +947,10 @@
               "id"           : "ROBOT",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "CRITICAL",
               "cve"          : "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
               "cwe"          : "CWE-203",
-              "finding"      : "not vulnerable"
+              "finding"      : "VULNERABLE"
           }
 ,         {
               "id"           : "secure_renego",
@@ -967,7 +967,7 @@
               "severity"     : "OK",
               "cve"          : "CVE-2011-1473",
               "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable"
+              "finding"      : "likely not vulnerable (timed out)"
           }
 ,         {
               "id"           : "CRIME_TLS",
@@ -1366,73 +1366,80 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "95"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "protocol_support_score_weighted",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "28"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "key_exchange_score",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "90"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "key_exchange_score_weighted",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "27"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "cipher_strength_score",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "90"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "cipher_strength_score_weighted",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "36"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "final_score",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "91"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "overall_grade",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "B"
+              "severity"     : "CRITICAL",
+              "finding"      : "F"
           }
 ,         {
               "id"           : "grade_cap_reason_1",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Grade capped to B. TLS 1.1 offered"
+              "finding"      : "Grade capped to F. Vulnerable to ROBOT"
           }
 ,         {
               "id"           : "grade_cap_reason_2",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Grade capped to B. TLS 1.0 offered"
+              "finding"      : "Grade capped to B. TLS 1.1 offered"
           }
 ,         {
               "id"           : "grade_cap_reason_3",
+              "ip"           : "unif.fr/192.33.182.249",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Grade capped to B. TLS 1.0 offered"
+          }
+,         {
+              "id"           : "grade_cap_reason_4",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
@@ -1443,6 +1450,6 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "102"
+              "finding"      : "306"
           }
 ]
