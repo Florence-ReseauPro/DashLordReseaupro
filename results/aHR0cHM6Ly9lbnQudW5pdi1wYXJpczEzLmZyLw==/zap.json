@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 16 Apr 2023 03:22:15",
+	"@generated": "Sun, 23 Apr 2023 01:36:55",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=B2EDD916FF3EDEFDDDF13D189A789337?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=70B60EBF9D21271AB2A5097B448EDF01?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -60,6 +60,33 @@
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10020",
+					"alertRef": "10020-1",
+					"alert": "Missing Anti-clickjacking Header",
+					"name": "Missing Anti-clickjacking Header",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>The response does not include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options to protect against 'ClickJacking' attacks.</p>",
+					"instances":[ 
+						{
+							"uri": "https://ent.univ-paris13.fr/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
+					"cweid": "1021",
 					"wascid": "15",
 					"sourceid": "1"
 				},
@@ -179,15 +206,23 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
 					"otherinfo": "<p>Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].</p><p>Predicted response size: 379.</p><p>Response Body Length: 452.</p>",
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10010",
@@ -493,7 +528,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10036",
@@ -591,13 +626,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-2266393-vnDQumnemLXURf6Eb0v0pDiemckJRJ-cas1",
-							"otherinfo": "-?\uFFFD\u06EE\uFFFD\uFFFD\uFFFD\uFFFD4.\uFFFDw\uFFFD-u\\x0011\uFFFD\\x001b\uFFFD\uFFFD)\\x000e'\uFFFDrBQ'\uFFFD\\x001a\uFFFD"
+							"evidence": "LT-3059785-XU2P0h5PFIVuRFTsgkvOnnMK9NNtte-cas1",
+							"otherinfo": "-?\uFFFD\u04DF{\uFFFDSc\uFFFD\uFFFD![\uFFFD\\x0015; \uFFFD\uFFFD\u00BD4\uFFFDm{\uFFFD\\x001a\uFFFD"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\u06EE\uFFFD\uFFFD\uFFFD\uFFFD4.\uFFFDw\uFFFD-u\\x0011\uFFFD\\x001b\uFFFD\uFFFD)\\x000e'\uFFFDrBQ'\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\u04DF{\uFFFDSc\uFFFD\uFFFD![\uFFFD\\x0015; \uFFFD\uFFFD\u00BD4\uFFFDm{\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -725,7 +760,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				}
 			]
 		}
