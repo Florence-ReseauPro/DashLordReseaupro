@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 23 Apr 2023 02:42:48",
+	"@generated": "Sun, 30 Apr 2023 02:59:30",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -50,7 +50,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2326"
+					"sourceid": "2115"
 				},
 				{
 					"pluginid": "10202",
@@ -226,7 +226,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/presentation",
+							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -309,14 +309,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -334,6 +326,14 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/les-services",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -406,7 +406,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2335"
+					"sourceid": "1998"
 				},
 				{
 					"pluginid": "90003",
@@ -451,7 +451,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/META_INF/",
+							"uri": "https://www.parisnanterre.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -459,7 +459,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/sitemap.xml",
+							"uri": "https://www.parisnanterre.fr/WEB_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -634,7 +634,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "2417"
+					"sourceid": "2281"
 				},
 				{
 					"pluginid": "10063",
@@ -695,7 +695,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/presentation",
+							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -789,14 +789,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/action/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/adminsite/",
 							"method": "GET",
 							"param": "",
@@ -838,6 +830,14 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/WEB_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1009,7 +1009,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2080"
+					"sourceid": "2185"
 				},
 				{
 					"pluginid": "10021",
@@ -1038,15 +1038,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
+							"uri": "https://www.parisnanterre.fr/organisation",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1063,6 +1055,14 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/les-services",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1314,7 +1314,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2402"
+					"sourceid": "2277"
 				},
 				{
 					"pluginid": "10109",
@@ -1375,7 +1375,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/presentation",
+							"uri": "https://www.parisnanterre.fr/organisation/les-ufr-et-instituts",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1485,14 +1485,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/organisation",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1501,7 +1493,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
+							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1509,7 +1501,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
+							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/les-services",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1632,6 +1632,14 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/WEB_INF/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/welcome-desk",
 							"method": "GET",
 							"param": "",
@@ -1648,7 +1656,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "9",
+					"count": "10",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -1937,7 +1945,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2491"
+					"sourceid": "2508"
 				}
 			]
 		}
