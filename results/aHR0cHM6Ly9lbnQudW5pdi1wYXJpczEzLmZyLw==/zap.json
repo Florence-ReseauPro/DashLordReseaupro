@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 30 Apr 2023 01:36:37",
+	"@generated": "Sun, 7 May 2023 01:32:31",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=C8CF83EF7D044D40F04D956B1D0CACE1?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=39857E8D1F62D2AD64B4F7FAF3E38204?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -192,23 +192,7 @@
 					"desc": "<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>",
 					"instances":[ 
 						{
-							"uri": "https://ent.univ-paris13.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
-						},
-						{
 							"uri": "https://ent.univ-paris13.fr/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
-						},
-						{
-							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -216,13 +200,13 @@
 							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
 						}
 					],
-					"count": "3",
+					"count": "1",
 					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
 					"otherinfo": "<p>Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].</p><p>Predicted response size: 379.</p><p>Response Body Length: 452.</p>",
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10010",
@@ -528,7 +512,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10036",
@@ -613,7 +597,7 @@
 				},
 				{
 					"pluginid": "10094",
-					"alertRef": "10094",
+					"alertRef": "10094-3",
 					"alert": "Base64 Disclosure",
 					"name": "Base64 Disclosure",
 					"riskcode": "0",
@@ -626,13 +610,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-3917960-x231ONg9JkaMYFdGMbT0iLlyX9pvKf-cas1",
-							"otherinfo": "-?\uFFFD\uFFFD^\uFFFD\uFFFDO\uFFFD\uFFFD}N6\\x000fI\uFFFD\uFFFD\\x0018\\x0015\u044Cm=\".\\\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD"
+							"evidence": "LT-4634113-4tBQ67vSKeewlc9GDd3IfIqh0NIFtt-cas1",
+							"otherinfo": "-?\uFFFD\uFFFD~5\uFFFD\uFFFD\uFFFD\\x0014:\uFFFD\uFFFDy\uFFFD%s\u0443wr\\x001f\"\uFFFDt4\uFFFDm\uFFFD\uFFFD\\x001a\uFFFD"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFD^\uFFFD\uFFFDO\uFFFD\uFFFD}N6\\x000fI\uFFFD\uFFFD\\x0018\\x0015\u044Cm=\".\\\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD~5\uFFFD\uFFFD\uFFFD\\x0014:\uFFFD\uFFFDy\uFFFD%s\u0443wr\\x001f\"\uFFFDt4\uFFFDm\uFFFD\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -760,7 +744,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				}
 			]
 		}
