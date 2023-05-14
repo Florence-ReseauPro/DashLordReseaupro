@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 7 May 2023 01:14:24",
+	"@generated": "Sun, 14 May 2023 01:18:47",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -269,22 +269,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://parisregion.eu/study-research.html",
 							"method": "GET",
 							"param": "",
@@ -301,7 +285,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -484,7 +468,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "175"
+					"sourceid": "176"
 				},
 				{
 					"pluginid": "10063",
@@ -514,14 +498,6 @@
 						},
 						{
 							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/bower_components/wowjs/dist/wow.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -585,13 +561,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10040",
@@ -880,7 +856,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "175"
+					"sourceid": "176"
 				},
 				{
 					"pluginid": "10109",
@@ -1062,7 +1038,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10049",
@@ -1075,7 +1051,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.css",
+							"uri": "https://parisregion.eu/bower_components/fontawesome/css/font-awesome.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1121,7 +1097,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "147"
+					"sourceid": "135"
 				},
 				{
 					"pluginid": "10049",
