@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 7 May 2023 01:08:00",
+	"@generated": "Sun, 14 May 2023 01:08:06",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -369,7 +369,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202318.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202319.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
@@ -401,7 +401,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202318.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202319.js' defer></script>",
 							"otherinfo": ""
 						}
 					],
@@ -438,7 +438,7 @@
 					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://security.snyk.io/vuln/SNYK-JS-MOMENT-2944238</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "723"
+					"sourceid": "574"
 				},
 				{
 					"pluginid": "10010",
@@ -465,7 +465,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "839"
+					"sourceid": "825"
 				},
 				{
 					"pluginid": "10054",
@@ -492,7 +492,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "839"
+					"sourceid": "825"
 				},
 				{
 					"pluginid": "10017",
@@ -515,9 +515,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202318.js",
+							"param": "https://stats.wp.com/e-202319.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202318.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202319.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
@@ -529,30 +529,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/membres/",
-							"method": "GET",
-							"param": "//www.googletagmanager.com/gtag/js?id=UA-34806106-1",
-							"attack": "",
-							"evidence": "<script src=\"//www.googletagmanager.com/gtag/js?id=UA-34806106-1\"  data-cfasync=\"false\" data-wpfc-render=\"false\" type=\"text/javascript\" async></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/membres/",
-							"method": "GET",
-							"param": "https://stats.wp.com/e-202318.js",
-							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202318.js' defer></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/membres/",
-							"method": "GET",
-							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
-							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-34806106-1\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "//www.googletagmanager.com/gtag/js?id=UA-34806106-1",
@@ -563,9 +539,9 @@
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202318.js",
+							"param": "https://stats.wp.com/e-202319.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202318.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202319.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
@@ -587,9 +563,9 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202318.js",
+							"param": "https://stats.wp.com/e-202319.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202318.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202319.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
@@ -601,7 +577,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "9",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -634,7 +610,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "714"
+					"sourceid": "554"
 				},
 				{
 					"pluginid": "10063",
@@ -719,7 +695,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/sms-u/",
+							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -754,22 +730,6 @@
 					"desc": "<p>The page includes mixed content, that is content accessed via HTTP instead of HTTPS.</p>",
 					"instances":[ 
 						{
-							"uri": "https://unif.fr/blog/2021/03/30/mise-en-page/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "http://unif.fr/wp-content/uploads/2020/03/POD-in-situ-12-cm-ConvertImage-1024x1024.jpg",
-							"otherinfo": "tag=img src=http://unif.fr/wp-content/uploads/2020/03/POD-in-situ-12-cm-ConvertImage-1024x1024.jpg\n"
-						},
-						{
-							"uri": "https://unif.fr/blog/2021/03/30/test-data-center/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "http://unif.fr/wp-content/uploads/2020/03/POD-in-situ-12-cm-ConvertImage-1024x1024.jpg",
-							"otherinfo": "tag=img src=http://unif.fr/wp-content/uploads/2020/03/POD-in-situ-12-cm-ConvertImage-1024x1024.jpg\n"
-						},
-						{
 							"uri": "https://unif.fr/cursus-enseigner-avec-le-numerique-2022-2023/",
 							"method": "GET",
 							"param": "",
@@ -802,6 +762,14 @@
 							"otherinfo": "tag=img src=http://unpidf.fr/wp-content/uploads/2015/11/cover-212x300.png\n"
 						},
 						{
+							"uri": "https://unif.fr/impact-environnemental/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "http://unif.fr/wp-content/uploads/2022/07/Exemple-impact-environnement-Nombre-de-km-equivalent-CO2-1024x476.jpg",
+							"otherinfo": "tag=img src=http://unif.fr/wp-content/uploads/2022/07/Exemple-impact-environnement-Nombre-de-km-equivalent-CO2-1024x476.jpg\n"
+						},
+						{
 							"uri": "https://unif.fr/oraccle/",
 							"method": "GET",
 							"param": "",
@@ -816,6 +784,14 @@
 							"attack": "",
 							"evidence": "http://unif.eu/wp-content/uploads/2019/01/cours_d_amphi_01-300x2001.jpg",
 							"otherinfo": "tag=img src=http://unif.eu/wp-content/uploads/2019/01/cours_d_amphi_01-300x2001.jpg\ntag=img src=http://unif.fr/wp-content/uploads/2022/09/organigramme_unif.png\n"
+						},
+						{
+							"uri": "https://unif.fr/owd-nouveau-lancement-13-avril-2023/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "http://unif.fr/wp-content/uploads/2023/03/visuel-OWD-13-04-2023-1.jpg",
+							"otherinfo": "tag=img src=http://unif.fr/wp-content/uploads/2023/03/visuel-OWD-13-04-2023-1.jpg\n"
 						},
 						{
 							"uri": "https://unif.fr/reponses-u/",
@@ -852,11 +828,11 @@
 					],
 					"count": "12",
 					"solution": "<p>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.</p><p>The page must not contain any content that is transmitted over unencrypted HTTP.</p><p> This includes content from third party sites.</p>",
-					"otherinfo": "<p>tag=img src=http://unif.fr/wp-content/uploads/2020/03/POD-in-situ-12-cm-ConvertImage-1024x1024.jpg</p><p></p>",
+					"otherinfo": "<p>tag=img src=http://unif.fr/wp-content/uploads/2023/02/Capture-de\u0301cran-2023-02-09-a\u0300-09.42.47-1024x465.png</p><p></p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "787"
+					"sourceid": "359"
 				},
 				{
 					"pluginid": "10036",
@@ -870,6 +846,46 @@
 					"instances":[ 
 						{
 							"uri": "https://unif.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.10 (Debian)",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/learning-spaces/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.10 (Debian)",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/membres/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.10 (Debian)",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/nos-valeurs/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.10 (Debian)",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/organisation/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.10 (Debian)",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -902,46 +918,6 @@
 						},
 						{
 							"uri": "https://unif.fr/wp-admin/admin-ajax.php",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.10 (Debian)",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-index.xsl",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.10 (Debian)",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-calendar-1.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.10 (Debian)",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-post-1.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.10 (Debian)",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-taxonomies-category-1.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.10 (Debian)",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-users-1.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -984,7 +960,47 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/learning-spaces/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/membres/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://unif.fr/nos-valeurs/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/organisation/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1008,47 +1024,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/wp-sitemap-index.xsl",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-calendar-1.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-page-1.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-post-1.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-taxonomies-category-1.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-users-1.xml",
+							"uri": "https://unif.fr/wp-json/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1083,53 +1059,45 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://unif.fr/datakairos/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1683410400",
-							"otherinfo": "1683410400, which evaluates to: 2023-05-06 22:00:00"
-						},
-						{
-							"uri": "https://unif.fr/learning-spaces/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1683410400",
-							"otherinfo": "1683410400, which evaluates to: 2023-05-06 22:00:00"
-						},
-						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1683410400",
-							"otherinfo": "1683410400, which evaluates to: 2023-05-06 22:00:00"
+							"evidence": "1684015200",
+							"otherinfo": "1684015200, which evaluates to: 2023-05-13 22:00:00"
 						},
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1683410400",
-							"otherinfo": "1683410400, which evaluates to: 2023-05-06 22:00:00"
+							"evidence": "1684015200",
+							"otherinfo": "1684015200, which evaluates to: 2023-05-13 22:00:00"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1683410400",
-							"otherinfo": "1683410400, which evaluates to: 2023-05-06 22:00:00"
+							"evidence": "1684015200",
+							"otherinfo": "1684015200, which evaluates to: 2023-05-13 22:00:00"
+						},
+						{
+							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1684015200",
+							"otherinfo": "1684015200, which evaluates to: 2023-05-13 22:00:00"
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1683410400, which evaluates to: 2023-05-06 22:00:00</p>",
+					"otherinfo": "<p>1684015200, which evaluates to: 2023-05-13 22:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "313"
+					"sourceid": "124"
 				},
 				{
 					"pluginid": "10021",
@@ -1150,6 +1118,38 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
+							"uri": "https://unif.fr/carte-multi-services/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://unif.fr/learning-spaces/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://unif.fr/membres/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -1166,6 +1166,14 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
+							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
 							"uri": "https://unif.fr/robots.txt",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -1174,47 +1182,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://unif.fr/wp-sitemap-index.xsl",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-calendar-1.xml",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-page-1.xml",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-post-1.xml",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-taxonomies-category-1.xml",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-users-1.xml",
+							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1458,7 +1426,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "698"
+					"sourceid": "548"
 				},
 				{
 					"pluginid": "10027",
@@ -1699,7 +1667,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",
@@ -1713,6 +1681,30 @@
 					"instances":[ 
 						{
 							"uri": "https://unif.fr/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/learning-spaces/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1736,6 +1728,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://unif.fr/robots.txt",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1744,7 +1744,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/wp-sitemap-index.xsl",
+							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1752,39 +1752,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/wp-sitemap-posts-calendar-1.xml",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-page-1.xml",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-post-1.xml",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-taxonomies-category-1.xml",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-users-1.xml",
+							"uri": "https://unif.fr/wp-json/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1827,47 +1795,47 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
+							"uri": "https://unif.fr/learning-spaces/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://unif.fr/membres/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://unif.fr/nos-valeurs/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://unif.fr/organisation/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
 							"uri": "https://unif.fr/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-index.xsl",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-calendar-1.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-posts-post-1.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-taxonomies-category-1.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://unif.fr/wp-sitemap-users-1.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1924,7 +1892,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "118"
+					"sourceid": "117"
 				},
 				{
 					"pluginid": "10031",
@@ -2007,7 +1975,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "839"
+					"sourceid": "825"
 				}
 			]
 		}
