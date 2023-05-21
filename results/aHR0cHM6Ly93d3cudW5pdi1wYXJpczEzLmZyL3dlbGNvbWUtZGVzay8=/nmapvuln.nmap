@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun May 14 01:17:49 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-paris13.fr
+# Nmap 7.92 scan initiated Sun May 21 01:20:56 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-paris13.fr
 Nmap scan report for www.univ-paris13.fr (81.194.43.211)
-Host is up (0.083s latency).
+Host is up (0.081s latency).
 Other addresses for www.univ-paris13.fr (not scanned): 81.194.43.212
 rDNS record for 81.194.43.211: lb.univ-paris13.fr
 Not shown: 999 filtered tcp ports (no-response)
@@ -22,7 +22,7 @@ PORT    STATE SERVICE   VERSION
 |     server is available to handle this request.
 |_    </body></html>
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=5/14%Time=646036D2%P=x86_64-alpine-linux
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=5/21%Time=6469720D%P=x86_64-alpine-linux
 SF:-musl%r(GetRequest,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\nca
 SF:che-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><bo
 SF:dy><h1>503\x20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20availa
@@ -54,4 +54,4 @@ SF:\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\x
 SF:20an\x20invalid\x20request\.\n</body></html>\n\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun May 14 01:18:26 2023 -- 1 IP address (1 host up) scanned in 36.37 seconds
+# Nmap done at Sun May 21 01:21:32 2023 -- 1 IP address (1 host up) scanned in 35.83 seconds
