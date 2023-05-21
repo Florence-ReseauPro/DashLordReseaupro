@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 14 May 2023 01:34:39
+		Generated on Sun, 21 May 2023 01:35:24
 	</h3>
 
 	
@@ -144,7 +144,7 @@ td {
 					<div>High</div>
 				</td>
 				<td align="center">
-					<div>0</div>
+					<div>1</div>
 				</td>
 			</tr>
 			<tr>
@@ -194,6 +194,11 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
+				<td><a href="#10097">Hash Disclosure - Mac OSX salted SHA-1</a></td>
+				<td align="center" class="risk-3">High</td>
+				<td align="center">2</td>
+			</tr>
+			<tr>
 				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">10</td>
@@ -201,22 +206,22 @@ td {
 			<tr>
 				<td><a href="#10055">CSP: Wildcard Directive</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: script-src unsafe-eval</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: script-src unsafe-inline</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: style-src unsafe-inline</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
@@ -231,7 +236,7 @@ td {
 			<tr>
 				<td><a href="#10099">Source Code Disclosure - PHP</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">7</td>
+				<td align="center">6</td>
 			</tr>
 			<tr>
 				<td><a href="#10099">Source Code Disclosure - Perl</a></td>
@@ -251,7 +256,7 @@ td {
 			<tr>
 				<td><a href="#10055">CSP: Notices</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10010">Cookie No HttpOnly Flag</a></td>
@@ -296,7 +301,7 @@ td {
 			<tr>
 				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">15</td>
+				<td align="center">16</td>
 			</tr>
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
@@ -331,7 +336,7 @@ td {
 			<tr>
 				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">11</td>
+				<td align="center">10</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
@@ -349,6 +354,114 @@ td {
 
 	
 		<h3>Alert Detail</h3>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-3"><a
+						id="10097"></a>
+						<div>High</div></th>
+					<th class="risk-3">Hash Disclosure - Mac OSX salted SHA-1</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>A hash was disclosed by the web server. - Mac OSX salted SHA-1</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Universite/Contributeurs/Fichier_de_formations_Gustave_Eiffel.pdf">https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Universite/Contributeurs/Fichier_de_formations_Gustave_Eiffel.pdf</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">FEFF004700E9006E0069006500200063006900760069006C</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Universite/Contributeurs/Fichier_de_formations_Gustave_Eiffel.pdf">https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Universite/Contributeurs/Fichier_de_formations_Gustave_Eiffel.pdf</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">FEFF004D00E9007400690065007200730020006400650020</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">2</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that hashes that are used to protect credentials or other resources are not leaked by the web server or database. There is typically no requirement for password hashes to be accessible to the web browser.      </div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
+							<br />
+						
+							<a href="http://openwall.info/wiki/john/sample-hashes">http://openwall.info/wiki/john/sample-hashes</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10097/">10097</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
 		
 			<table class="results">
 				<tr height="24">
@@ -493,7 +606,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite">https://www.univ-gustave-eiffel.fr/luniversite</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -519,7 +632,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -773,6 +886,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international">https://www.univ-gustave-eiffel.fr/international</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; &#39;unsafe-inline&#39; https://www.ifsttar.fr https://plausible.io; script-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src &#39;self&#39; https://*.gstatic.com https://static.affluences.media/ data: ; frame-src &#39;self&#39; https://www.dailymotion.com https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src &#39;self&#39; data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src &#39;self&#39; &#39;unsafe-inline&#39; https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src &#39;self&#39; &#39;unsafe-inline&#39; https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors &#39;self&#39; https://*.eudonet.com</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -798,7 +937,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -893,6 +1032,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international">https://www.univ-gustave-eiffel.fr/international</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; &#39;unsafe-inline&#39; https://www.ifsttar.fr https://plausible.io; script-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src &#39;self&#39; https://*.gstatic.com https://static.affluences.media/ data: ; frame-src &#39;self&#39; https://www.dailymotion.com https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src &#39;self&#39; data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src &#39;self&#39; &#39;unsafe-inline&#39; https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src &#39;self&#39; &#39;unsafe-inline&#39; https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors &#39;self&#39; https://*.eudonet.com</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -918,7 +1083,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1013,6 +1178,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international">https://www.univ-gustave-eiffel.fr/international</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; &#39;unsafe-inline&#39; https://www.ifsttar.fr https://plausible.io; script-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src &#39;self&#39; https://*.gstatic.com https://static.affluences.media/ data: ; frame-src &#39;self&#39; https://www.dailymotion.com https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src &#39;self&#39; data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src &#39;self&#39; &#39;unsafe-inline&#39; https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src &#39;self&#39; &#39;unsafe-inline&#39; https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors &#39;self&#39; https://*.eudonet.com</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -1038,7 +1229,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1133,6 +1324,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international">https://www.univ-gustave-eiffel.fr/international</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; &#39;unsafe-inline&#39; https://www.ifsttar.fr https://plausible.io; script-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src &#39;self&#39; https://*.gstatic.com https://static.affluences.media/ data: ; frame-src &#39;self&#39; https://www.dailymotion.com https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src &#39;self&#39; data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src &#39;self&#39; &#39;unsafe-inline&#39; https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src &#39;self&#39; &#39;unsafe-inline&#39; https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors &#39;self&#39; https://*.eudonet.com</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -1158,7 +1375,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1480,7 +1697,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite">https://www.univ-gustave-eiffel.fr/luniversite</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1506,7 +1723,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3350,54 +3567,6 @@ NÎÎ	Î.
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Recherche/COM/PresentationED-PdL-complete.pdf">https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Recherche/COM/PresentationED-PdL-complete.pdf</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;?=G@c  Á£ÇÿO?sÿSþPÿðþ½úïoÚq¿Â~­]æÖz`/¦@ÀdÑ·/Pg&#39;GûÛHÍCÐõ&amp;`àqÆr þCö7Èæ±?¼?¨ÿ¯ßÍ÷{\âÏÐüÎ ñãÅû£8Ë3æ&gt;bHþJÿ#ûÿÂö¿Ì?¼§þiýµý}ÜÿÀ6zÝë4#Df¿ýBcÀÈBdÅK¤åÿJú|jnÑ½ÿTÿ
-ýë_w=¯÷I¡Ä?×;{Ý¿â7ûàà3Ì!&quot;ÌH0ð8Òæ 0ÿýä¿´ªèOæ?Rÿ\¤º+ÙÐxÆ}WÝëX¾ÆÀ;+À ÄÀSê+~ø0ù3 |òñÃÿ9Êæÿüò¾Îü»È¿î*û@­Ð±÷®ì/±ãÊ[&gt;¦Ü÷ÖýÏ¯ÆÀ8ÀÀ¤a æ	ªÏ^AH PþýCcÿüýÁü3óçÕÝõ«ÿHfZj®5þgó·l)×á_ÀÿÉ*Rg¬ÿê~Bçþ4àãåûS+ò	ûº#&quot;*;ð!@ùÓT ØÑÙÝô/ä¿¡ý/ù§ÌÝµ«óDTNzN°Úø/@ÒGò^;ÇBrþ:?¤îÛ&lt;7rL&quot;G¸ôÀÆ?êÿ !ÿA¤ÿV6vö¡ÿ#ùc¹&quot;u­àü{;$-	ÎËÝË;ÚLàÕéQ¼®C$:øDWÿM7ÿÅ5` qÁÌÄÈ`o°)H G&amp;ÿYÿ_#.itë¼doÒ£Á?c&amp;XSÁ¶yq÷¯Íë}ÎûqSÍ y(8$èÂ×Öùyùoó89Ì]¾?9ÜCl8?=â11@wàÁ¯ ` à &quot;òï&lt;ä¿wtòþÂ¿&#39;´ì%úÔÀ§þuÄ ./ÁCöãuL{kàA¤)ä¹øAÀ DÀÀÚrÅÃè°Zð M) D4 t  Ì/­mí6Mþô©ô¹ñµëÝ\û&lt; $ndàèAA28ô¯ñ-|\#vh ÿ° µ@ ¸ù¤dLÁýbYç½a þ âäv7W:w DÉ#t
-@ :  Ö6wÿ»øØýoÎmèdârCÞ6îÁN2?Æ&quot;Ad	¾°»¶!ÏolC¤10DcéTbÇ²Ã=|?ÆPÂ Ågïv&quot;UlîÀ
-ðô93@#3+L @þ¿*þ»¾þ¿&quot;}ÖÞ¹ñý&lt;/ql°[ñ&#39;Ð¶H¡6Ö×Áµ¶ººJ.¹åèàóÕU¼Ê1G?åy(ã&#39; Fð8 : h0¸6
-b rø¹bÓ#Ì¾|ÎÂ±yCP
-ðåkeà  Ì ÀÉÿ/×ø§ó^OKßoÚ07¦75¸ç8&gt;ëé^6Ä %b8ðÎÏ)ôp ¾×gç@;QÐ	 &quot;j=MSÁQ`OÀÀÑÞöúÒ&lt;²4,&lt; o à=À7oi æè ( @ùOùkAüÔü&gt;65­§A~éh×sËùÔ+¤|Z !à´È!&#39;ÆA
-¶PPDò ¬|ÆÇzÔÓP¡ÑÒm¢ê
-aKë&lt;ç¼cÀkÈÒt¼Gø0Ô)àÈD0à®s Qþé¼ü%~g÷céÅA¤. yìã	ÜE)&amp;H!VÁ æ!&amp;iûGÏûxôÿ°£¢?¡
-Mø	Á]p@ê0Ç*@· GØ9/Ä6ë_èÒX@dØßóÔ@JÀ§0@àõäßMäpïçµOÄä¢}¿
-b&#39;ð¼(vº#uÄÀdi8XÃy¼ÿW/á=|&quot;¡£ÈK&lt;2
-zZ!| ®éDbï v¢1rr¤ý2.®-Çä¬#2DÉS÷&lt;.LÀ3#H;  	`í\hö
-d¿)/ýKNèsØÁúIr·ñ@þê¡Q&lt;oû,^ÝQÂþu/ém|ì5oBðxxÂRRT©x@o%KAecDF`3I¡]*È¾ªìWl ;ì #C$	&quot;5U¾¯¡ ªò ¤ 0À ÙWùjøÍîs2WóÙGÆÞ²2ºËK²÷¼¿`|u¤ð9o&quot;è§ºynFèÔÁtð3øès»-	«=M½ç®@]ëìÀkAfé&amp;ö óÒ²_øý7¸(¦G(o@Uãû«@B ( xû ¿|ì+Ïz5?C&gt;¤LÐXã¦ó)}ÏàåXç³X^±ÝMî:¥{Cü¢[Æà.$&lt;Àï{ÁþÕÇøypG·ªZ m½ç0õlË«b7ñ(CÎ×/Z©bo
-ö¶¨Ð&gt;oÀ¥ï§PPI@ ð V6è2üý,ñs3NúÚúØùÙ|ßÆðÆw {&quot;nÞ5
-_³{ó&#39;wO2þÐ (ø[WûÑSb8&quot;
-v¤ÀrreÜM×ñÌ×¹4ïéB((@n@{È¼îàÀ§/ ¡yeñ¢VnÅö³wh®ÔÞ§ô¡÷ÁØ54ÐsÈ&gt;ÜÛ{&lt;9ÆóJøK)	(ÝÇB8: Ãá(|ò\. ÓQzäÕ|^P#W/5ð/Hèï¾¿adPB 
-  R@(0CÔY/iµ&quot;ñkÖÆ&amp;ñS¤Onoò¸©3I&lt;yÃ»ãX}%ËDæø¥ä/AÆ!ÜÖÀÅqk( Í¥ÆÞãÁ×Ä%ÈºÜ¬×°Þ85°¾&lt;Ü@OÒCÖ;¹G!~²@pîîFÀ&lt; S .u¥¯Qþüôí=Á%;¹÷!}n}Ïè-_½Óò^E2×}W:êwk×o:Åsítå@ÐÎ¸ä´
-f
- #Üdn`¨ï-³ÄÊÞ&#39;xàédG§æÐ¸0ùKûëv.$ûÜ\3¦ù#éÃÓÓ-&gt;Èà+o&quot;«k£¦öï¤è&quot;@¸Û\õ4°þÆ|¸\QÀ3^ÒF°©¤g¦,A£u;ÇR©1@²ÀãÓ«H# Ð0ñ3)¢¬ç«ÒØüdíMö&gt;Õ&gt;´¾¬=véUÙ7ãc,}`ê@w&lt;À$©o©D~jxI£¾ÖåCËy?Í8?=Üu!,cu4ãúnz  gfÖ·-@¹f`üÊK&amp;¿ýaükÅ§¤làb&quot;?iÙÐBãw¾DÈê¦Wõ÷ÉÙ=]s&amp;&amp;Ââ@&amp;b%h@&#39;8{·¿µº0cÀÕð²~iK_3 0Ä`t
-YàÝÃÓsæ R )ùkªsÖääsü;¢&lt;bkvÒw;?Îm_}ø&amp;§ExM6,²`O :0Fd*W{ed¼`@øÃûYÅ÷%,] Ä ° [{ïÎ.?ù@ù+5ç×9Üþü8¸ú¡ûÅÕmÜû5Ò¿mÙÇç÷8 ð3Dëo :\#Ät;{¢E1EÐ`o¼A jà·ïw7ðÙ!ôáÄ¿«å ¿ü*@1Y %Íèe »ö%\f&quot;XÐ,hºZ|+âwÜ¼´û5Òoùëb (JlÏ*äWæcjW&quot;ã9×AÁï?%Fø~8Xóå Ì . -~|Æ%Õ¾$ñ&#39;-³n¨¤ZÁD¥Ñ0zñßé{Ì¥P  AÜ Æ5®ECE i7#Y¶Hî¶ªEf	¶×$fXøì®ýÁ æ¬ 8» ø×e ®ÏïÿdrtKKä]ëç¨Xáø¹ÍÏ=gïÅpÇÿ&#39;(AÀàØÑEh$YõÒ.J*±I¸DÍ&quot;I&lt;;9g@;l$6 üófzåì¿CÐË_ê¡?ç©Ó¹©ü3uþÝ¿+Qk:(LYÉ¬|#ÍR¶K¼%`vHÎ rÄwr `ÐÕ;44àöÁIc ?ÛãÜ¥8m´·i¹gÒ÷p0 £bÊæ li¤Ë1º$ãËH&amp;KÚSÎ(,F¸àL	¾Ùÿý/ ¨ i á	dà4d®È?æU!ã&quot;©E»	åÏdßý-»Äë|Ñxºt¯2A-ªo	ÎO¶×pþà@ÀA@ÿð$òÀ»G: Öß«}Èý06*þXÑÓúuÕ1nÆÊÿ:Riõß^0D4Òl)iÎ8£aÿ± åÂCd²à àÓ Ï^¢429ðÝYpðck^ûÜ®ÇõC9ù:m¦}ò{(»?³«  w³;/µkTûÜY¨#G&lt;k!¥ñ©p»O\àÉ3\ÝÚGiÀrA`$ÿ~ÿSþ¤TÂÌd&#39;¬Ä¾nÿí^QóÏî@à²EÆØIþLÌO¡{:¦X6*×?Çeû÷_r#ÞÛDÁx¤?D­ Ò HO/xÐµà­y±$¸t&quot;ùÏÏgÎ?ïÀ ÀÿAØþ\ôD [È¨0À!ê0Dé[¨jVªö©A a!3ïöXThÖA @g¢@$YÚß]ó!§Æ÷ÅÛÈ4äïé594mÚ_k»Â÷ÿæÍÄ£#&quot;=iN&amp;z@ù]4¶vxJ£B$Z &amp;A@4 ?ÑÈ|$wó·ýï¿ëüÂ´&quot;pdºÄ É4¤,ö³TX:.¶2(0$X]h=&quot; 0(½ ÈªXïx6a]&#39;hm÷?ùöMý3ô{èÛ?/±2ELP+ÒaÒe	ktfÍS­ CÀÚÂ4
-Eo^µN$ PhIQ óe|@þzù2ðg9#ëiSLþ4ÿ±úÖð¡?A1LÔ ÒfªK÷S	©R¨é±ÁB Ù¥T(8ù¿Ó¼£Ï_Éÿ±¨ÿÔ&quot;P¶0U¢£¼*eªþPTÄ@K!@uö1ú µÀ=W	0 Ô(¬ôS&quot;g¸2ÿ^=ìÿG¥þÓ ÈÀ cC­f_µoª¨WT50$@b µH`ÂàË÷2Q W 1`|9)M¤¶dþÓ÷äH`âWrÃU®·«Þ&gt;5ÏhMY,üöùòìZ` D··b	 :à Pç7 ¨ ØFÛ#9³ÕG/	khN¡Ã (VÀ±Fw¦@%&lt;B	È  ¾5Èü&amp;à ð) (d$ìN;_RÁxýF&lt;±ËF±©»¥X%HAÀò·	À¯ @Oð¨ê¦Ò
- À	Óè ¼!C
-Òí±ÿ=*¤Äµ	ª5Fe§l®h¥P#¸= B1¨gy 9¥&gt; yÈÿ¶üä0g%®­øI»ºMVYèxIÐòhkâÿ1 Æå èpüiô8$N=N HºßÜÄËoö©ç:	0kQzRõó+i /0:ð¶ãÅÓ_ni ø;&#39;_vt »Ëh opÚ@ù?ZÆf¯ðý?a[d\è$ëæ4&lt;BLÜSq¡®CÈµu¾ Âµ)T
-1OD4Eùsxú ^\G?HP%~ª¡ )§ÉsÀý×müÂ4 ^DÁhij@*cãõL?NA`{mar¤ïíkö6 O^¼~Û?2bPi x$0F^6å:Ödï ÞÆê&gt;sbY¡Zá]ñö+&quot;_¥ õZÙû§(ÍO£kèù6Y­xòüuWßÈÔÂÚÎáÙågKÕ¨kl²±74·9:Ì½µ±Hài ùÑï5^ªR 0½óãg.N¶Væ&amp;z;Y%jv@@ À	`.xxr~uûðôEJJ¿.± »ìqvHlljkPÝÝ}ô0zWvðÂC c&#39;ûË³ãCl. 141·²upzQ ®ÁùXK&lt;-AzîJ²°èL¬îÄDNx¡\ë½P&amp;:?fÆzúëÏ?5qyi«~úa ³Ëû&#39;X®§´J»qðÙ3á´kLç¨÷&gt;°øÌº}Ïßím,!&amp;ìv1aÓ\s0Ü?&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/Universite/Organigrammes/Organigramme_Direction_generale_des_services.pdf">https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/Universite/Organigrammes/Organigramme_Direction_generale_des_services.pdf</a></td>
 					</tr>
 					<tr>
@@ -3463,7 +3632,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">7</td>
+					<td width="80%">6</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -3726,7 +3895,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite">https://www.univ-gustave-eiffel.fr/luniversite</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4014,6 +4183,32 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international">https://www.univ-gustave-eiffel.fr/international</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; &#39;unsafe-inline&#39; https://www.ifsttar.fr https://plausible.io; script-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src &#39;self&#39; https://*.gstatic.com https://static.affluences.media/ data: ; frame-src &#39;self&#39; https://www.dailymotion.com https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src &#39;self&#39; data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src &#39;self&#39; &#39;unsafe-inline&#39; https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src &#39;self&#39; &#39;unsafe-inline&#39; https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors &#39;self&#39; https://*.eudonet.com</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -4039,7 +4234,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -4579,7 +4774,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite">https://www.univ-gustave-eiffel.fr/luniversite</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4968,7 +5163,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite">https://www.univ-gustave-eiffel.fr/luniversite</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4994,7 +5189,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5293,7 +5488,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite">https://www.univ-gustave-eiffel.fr/luniversite</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5319,7 +5514,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5615,7 +5810,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite">https://www.univ-gustave-eiffel.fr/luniversite</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5641,7 +5836,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6116,7 +6311,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1683821652</td>
+						<td width="80%">1684252779</td>
 					</tr>
 				
 					<tr>
@@ -6142,7 +6337,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1683821653</td>
+						<td width="80%">1684252780</td>
 					</tr>
 				
 					<tr>
@@ -6168,7 +6363,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1683821654</td>
+						<td width="80%">1684252781</td>
 					</tr>
 				
 					<tr>
@@ -6194,7 +6389,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1683994449</td>
+						<td width="80%">1684598367</td>
 					</tr>
 				
 					<tr>
@@ -6220,12 +6415,38 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1683994451</td>
+						<td width="80%">1684598368</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1684598369</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">15</td>
+					<td width="80%">16</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6702,7 +6923,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite">https://www.univ-gustave-eiffel.fr/luniversite</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6728,7 +6949,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7482,7 +7703,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/en/university/our-strengths">https://www.univ-gustave-eiffel.fr/en/university/our-strengths</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/en/university/our-strengths/our-national-structure">https://www.univ-gustave-eiffel.fr/en/university/our-strengths/our-national-structure</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7502,7 +7723,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;a id=&quot;c90381&quot;&gt;&lt;/a&gt;</td>
+						<td width="80%">&lt;a id=&quot;c90380&quot;&gt;&lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
@@ -7739,7 +7960,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite">https://www.univ-gustave-eiffel.fr/luniversite</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7765,7 +7986,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -8117,32 +8338,6 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/innovation-pedagogique">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/innovation-pedagogique</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">private, no-store</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques</a></td>
 					</tr>
 					<tr>
@@ -8220,7 +8415,7 @@ e~ö¨JmÎ*Íð¼xÓÖ,%X¥nP«ñxû­,C®&amp;çIeÀW)7¼riKE½â
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">10</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
