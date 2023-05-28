@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 21 May 2023 04:35:12",
+	"@generated": "Sun, 28 May 2023 04:26:09",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -226,7 +226,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
+							"uri": "https://www.parisnanterre.fr/presentation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -406,7 +406,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2208"
+					"sourceid": "2054"
 				},
 				{
 					"pluginid": "90003",
@@ -634,7 +634,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "2259"
+					"sourceid": "2167"
 				},
 				{
 					"pluginid": "10063",
@@ -759,12 +759,12 @@
 							"param": "",
 							"attack": "",
 							"evidence": "http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg",
-							"otherinfo": "tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg\ntag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg\ntag=img src=http://pbs.twimg.com/profile_images/1336933363375108098/J5bD_mcF_normal.jpg\n"
+							"otherinfo": "tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg\ntag=img src=http://pbs.twimg.com/profile_images/1291260871273046016/RqN2JSSd_normal.jpg\ntag=img src=http://pbs.twimg.com/profile_images/1279863154349150209/vrPYyCXz_normal.jpg\n"
 						}
 					],
 					"count": "1",
 					"solution": "<p>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.</p><p>The page must not contain any content that is transmitted over unencrypted HTTP.</p><p> This includes content from third party sites.</p>",
-					"otherinfo": "<p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/1336933363375108098/J5bD_mcF_normal.jpg</p><p></p>",
+					"otherinfo": "<p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/1291260871273046016/RqN2JSSd_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/1279863154349150209/vrPYyCXz_normal.jpg</p><p></p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
@@ -985,41 +985,6 @@
 					"sourceid": "4"
 				},
 				{
-					"pluginid": "10096",
-					"alertRef": "10096",
-					"alert": "Timestamp Disclosure - Unix",
-					"name": "Timestamp Disclosure - Unix",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
-					"instances":[ 
-						{
-							"uri": "https://www.parisnanterre.fr/adminsite/webservices/export_rss.jsp?CODE_RUBRIQUE=FR&LANGUE=0&NOMBRE=10",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1682513473",
-							"otherinfo": "1682513473, which evaluates to: 2023-04-26 12:51:13"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/agenda/concert-du-gamelan?id_agendaevenement=74888",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1683706213",
-							"otherinfo": "1683706213, which evaluates to: 2023-05-10 08:10:13"
-						}
-					],
-					"count": "2",
-					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1682513473, which evaluates to: 2023-04-26 12:51:13</p>",
-					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
-					"cweid": "200",
-					"wascid": "13",
-					"sourceid": "2213"
-				},
-				{
 					"pluginid": "10021",
 					"alertRef": "10021",
 					"alert": "X-Content-Type-Options Header Missing",
@@ -1153,6 +1118,14 @@
 							"otherinfo": "~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:"
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/actualites-de-luniversite",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr/uas/UNIVERSITE/LOGO/202101-UPN-RVB-header-v06",
+							"otherinfo": "~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:"
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/extensions/",
 							"method": "GET",
 							"param": "",
@@ -1170,14 +1143,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/META_INF/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr/uas/UNIVERSITE/LOGO/202101-UPN-RVB-header-v06",
-							"otherinfo": "~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1322,7 +1287,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2256"
+					"sourceid": "2173"
 				},
 				{
 					"pluginid": "10109",
@@ -1945,7 +1910,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2492"
+					"sourceid": "2353"
 				}
 			]
 		}
