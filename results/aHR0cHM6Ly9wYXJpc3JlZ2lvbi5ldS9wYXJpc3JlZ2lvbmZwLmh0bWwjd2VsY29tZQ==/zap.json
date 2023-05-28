@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 21 May 2023 01:19:06",
+	"@generated": "Sun, 28 May 2023 01:21:02",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -58,7 +58,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "40"
+					"sourceid": "38"
 				},
 				{
 					"pluginid": "10038",
@@ -208,7 +208,7 @@
 					"reference": "",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "40"
+					"sourceid": "38"
 				},
 				{
 					"pluginid": "90003",
@@ -334,7 +334,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/28236</p><p>https://github.com/twbs/bootstrap/issues/20184</p><p>https://github.com/advisories/GHSA-ph58-4vrj-w6hr</p><p>https://github.com/twbs/bootstrap/issues/20631</p><p>https://github.com/advisories/GHSA-4p24-vmcr-4gqj</p><p>https://nvd.nist.gov/vuln/detail/CVE-2018-20676</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "169"
+					"sourceid": "166"
 				},
 				{
 					"pluginid": "10017",
@@ -468,7 +468,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "176"
+					"sourceid": "175"
 				},
 				{
 					"pluginid": "10063",
@@ -489,7 +489,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/bower_components/bootstrap/dist/js/bootstrap.min.js",
+							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -618,7 +618,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "40"
+					"sourceid": "38"
 				},
 				{
 					"pluginid": "10094",
@@ -653,6 +653,14 @@
 							"attack": "",
 							"evidence": "D27CDB6E-AE6D-11cf-96B8-444553540000",
 							"otherinfo": "\\x000fn\uFFFD\\x000c\\x001e\uFFFD\uFFFD\\x0001:\\x000f\uFFFDuq\uFFFD\uFFFD\uFFFD\\x001f>\uFFFD9\uFFFD~x\uFFFDM4"
+						},
+						{
+							"uri": "https://parisregion.eu/img/b3conference/Logo_b3.jpg",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA",
+							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\\x0000\\x0010JFIF\\x0000\\x0001\\x0002\\x0001\\x0000H\\x0000H\\x0000\\x0000\uFFFD\uFFFD\\x0000,Photoshop 3.0\\x00008BIM\\x0003\uFFFD\\x0000\\x0000\\x0000\\x0000\\x0000\\x0010\\x0000H\\x0000\\x0000\\x0000\\x0001\\x0000"
 						},
 						{
 							"uri": "https://parisregion.eu/img/welcome/valerie_pecresse500.jpg",
@@ -703,14 +711,6 @@
 							"otherinfo": "\uFFFD<\uFFFD{\uFFFDh\uFFFD\uFFFD\u04B9\uFFFDr\uFFFD\uFFFD\u04EE\uFFFD\u0297\uFFFD5\uFFFD\uFFFD\uFFFD]\\x0005\uFFFD\\x001e\\x0016\uFFFD\uFFFD\uFFFD\\x0000B\\x000cA>U\uFFFD\uFFFDjv\uFFFD\\x0012w(v)\uFFFD\uFFFDh\uFFFD\\x0002{\"\\x0012w(v)\uFFFD\uFFFDZ'\uFFFD7\uFFFDr\uFFFD\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"uri": "https://parisregion.eu/pdf/map_PARIS-2024-A4.pdf",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "30070/Subtype/XML/Type/Metadata",
-							"otherinfo": "\uFFFDM;\uFFFD\uFFFD\uFFFDn\u0729{\uFFFD\uFFFD/\uFFFD\uFFFD\uFFFD\uFFFDz\u059Dj\uFFFD"
-						},
-						{
 							"uri": "https://parisregion.eu/pdf/PRfP_Short-Guide-2nd-call_2021_VF.pdf",
 							"method": "GET",
 							"param": "",
@@ -725,7 +725,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "196"
+					"sourceid": "282"
 				},
 				{
 					"pluginid": "10027",
@@ -856,7 +856,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "176"
+					"sourceid": "175"
 				},
 				{
 					"pluginid": "10109",
@@ -947,7 +947,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10015",
@@ -1038,7 +1038,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10049",
@@ -1051,7 +1051,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"uri": "https://parisregion.eu/bower_components/fontawesome/css/font-awesome.min.css",
+							"uri": "https://parisregion.eu/bower_components/ionicons/css/ionicons.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1097,7 +1097,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "139"
+					"sourceid": "129"
 				},
 				{
 					"pluginid": "10049",
