@@ -1,10 +1,98 @@
-# Nmap 7.92 scan initiated Sun May 28 01:23:54 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln parisregion.eu
+# Nmap 7.92 scan initiated Sun Jun  4 01:30:27 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln parisregion.eu
 Nmap scan report for parisregion.eu (217.147.199.227)
 Host is up (0.12s latency).
 Not shown: 998 filtered tcp ports (no-response)
-PORT    STATE SERVICE  VERSION
-80/tcp  open  http     nginx (reverse proxy)
-443/tcp open  ssl/http nginx (reverse proxy)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      nginx (reverse proxy)
+443/tcp open  ssl/https
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Date: Sun, 04 Jun 2023 01:31:05 GMT
+|     Content-Type: text/plain; charset=utf-8
+|     Content-Length: 21
+|     Connection: close
+|     Strict-Transport-Security: max-age=15724800; includeSubDomains
+|     default backend - 404
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Date: Sun, 04 Jun 2023 01:31:01 GMT
+|     Content-Type: text/plain; charset=utf-8
+|     Content-Length: 21
+|     Connection: close
+|     Strict-Transport-Security: max-age=15724800; includeSubDomains
+|     default backend - 404
+|   HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     Date: Sun, 04 Jun 2023 01:31:02 GMT
+|     Content-Type: text/plain; charset=utf-8
+|     Content-Length: 21
+|     Connection: close
+|     Strict-Transport-Security: max-age=15724800; includeSubDomains
+|     default backend - 404
+|   RPCCheck: 
+|     HTTP/1.1 400 Bad Request
+|     Date: Sun, 04 Jun 2023 01:31:14 GMT
+|     Content-Type: text/html
+|     Content-Length: 150
+|     Connection: close
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     <hr><center>nginx</center>
+|     </body>
+|     </html>
+|   RTSPRequest: 
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     <hr><center>nginx</center>
+|     </body>
+|     </html>
+|   tor-versions: 
+|     HTTP/1.1 400 Bad Request
+|     Date: Sun, 04 Jun 2023 01:31:07 GMT
+|     Content-Type: text/html
+|     Content-Length: 150
+|     Connection: close
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     <hr><center>nginx</center>
+|     </body>
+|_    </html>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=6/4%Time=647BE955%P=x86_64-alpine-linux-
+SF:musl%r(GetRequest,E4,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Sun,
+SF:\x2004\x20Jun\x202023\x2001:31:01\x20GMT\r\nContent-Type:\x20text/plain
+SF:;\x20charset=utf-8\r\nContent-Length:\x2021\r\nConnection:\x20close\r\n
+SF:Strict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains\r\
+SF:n\r\ndefault\x20backend\x20-\x20404")%r(HTTPOptions,E4,"HTTP/1\.1\x2040
+SF:4\x20Not\x20Found\r\nDate:\x20Sun,\x2004\x20Jun\x202023\x2001:31:02\x20
+SF:GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:
+SF:\x2021\r\nConnection:\x20close\r\nStrict-Transport-Security:\x20max-age
+SF:=15724800;\x20includeSubDomains\r\n\r\ndefault\x20backend\x20-\x20404")
+SF:%r(FourOhFourRequest,E4,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20S
+SF:un,\x2004\x20Jun\x202023\x2001:31:05\x20GMT\r\nContent-Type:\x20text/pl
+SF:ain;\x20charset=utf-8\r\nContent-Length:\x2021\r\nConnection:\x20close\
+SF:r\nStrict-Transport-Security:\x20max-age=15724800;\x20includeSubDomains
+SF:\r\n\r\ndefault\x20backend\x20-\x20404")%r(tor-versions,118,"HTTP/1\.1\
+SF:x20400\x20Bad\x20Request\r\nDate:\x20Sun,\x2004\x20Jun\x202023\x2001:31
+SF::07\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r\nC
+SF:onnection:\x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Request
+SF:</title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></ce
+SF:nter>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n")%r(RTSPR
+SF:equest,96,"<html>\r\n<head><title>400\x20Bad\x20Request</title></head>\
+SF:r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n<hr><ce
+SF:nter>nginx</center>\r\n</body>\r\n</html>\r\n")%r(RPCCheck,118,"HTTP/1\
+SF:.1\x20400\x20Bad\x20Request\r\nDate:\x20Sun,\x2004\x20Jun\x202023\x2001
+SF::31:14\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20150\r
+SF:\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Requ
+SF:est</title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1><
+SF:/center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun May 28 01:24:28 2023 -- 1 IP address (1 host up) scanned in 33.97 seconds
+# Nmap done at Sun Jun  4 01:31:24 2023 -- 1 IP address (1 host up) scanned in 56.47 seconds
