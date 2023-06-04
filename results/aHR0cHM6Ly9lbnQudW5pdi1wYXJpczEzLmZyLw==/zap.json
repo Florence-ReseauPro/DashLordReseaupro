@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 28 May 2023 01:35:04",
+	"@generated": "Sun, 4 Jun 2023 01:40:17",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=7B8E0BF0256126F68400A3FE4107E67B?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=692C9A7D901969AAFBBAAD51F7297966?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -222,7 +222,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10010",
@@ -528,7 +528,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10036",
@@ -609,33 +609,6 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
-				},
-				{
-					"pluginid": "10094",
-					"alertRef": "10094-3",
-					"alert": "Base64 Disclosure",
-					"name": "Base64 Disclosure",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
-					"instances":[ 
-						{
-							"uri": "https://ent.univ-paris13.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "LT-8283329-4T0o4HQZ5hmfrJM6hlXRy7bbwqhw3c-cas1",
-							"otherinfo": "-?\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u07F8OJ8\\x001d\\x0006y\uFFFDg\uFFFD$\u03A1\uFFFDtr\uFFFD\uFFFD\\x001c7s\uFFFD\\x001a\uFFFD"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u07F8OJ8\\x001d\\x0006y\uFFFDg\uFFFD$\u03A1\uFFFDtr\uFFFD\uFFFD\\x001c7s\uFFFD\\x001a\uFFFD</p>",
-					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
-					"cweid": "200",
-					"wascid": "13",
 					"sourceid": "1"
 				},
 				{
@@ -760,7 +733,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				}
 			]
 		}
