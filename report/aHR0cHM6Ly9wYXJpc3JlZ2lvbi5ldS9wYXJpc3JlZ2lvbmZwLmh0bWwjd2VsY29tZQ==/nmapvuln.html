@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln parisregion.eu</pre>
-<p class="lead">Sun Jun  4 01:30:27 2023 – Sun Jun  4 01:31:24 2023<br>1 hosts scanned.
+<p class="lead">Sun Jun 11 01:29:52 2023 – Sun Jun 11 01:30:22 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -121,73 +121,12 @@
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">https</td>
-<td title="Product"></td>
+<td title="Service">http</td>
+<td title="Product">nginx</td>
 <td title="Version"></td>
-<td title="Extra Info"></td>
+<td title="Extra Info">reverse proxy</td>
 </tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.1 404 Not Found
-    Date: Sun, 04 Jun 2023 01:31:05 GMT
-    Content-Type: text/plain; charset=utf-8
-    Content-Length: 21
-    Connection: close
-    Strict-Transport-Security: max-age=15724800; includeSubDomains
-    default backend - 404
-  GetRequest: 
-    HTTP/1.1 404 Not Found
-    Date: Sun, 04 Jun 2023 01:31:01 GMT
-    Content-Type: text/plain; charset=utf-8
-    Content-Length: 21
-    Connection: close
-    Strict-Transport-Security: max-age=15724800; includeSubDomains
-    default backend - 404
-  HTTPOptions: 
-    HTTP/1.1 404 Not Found
-    Date: Sun, 04 Jun 2023 01:31:02 GMT
-    Content-Type: text/plain; charset=utf-8
-    Content-Length: 21
-    Connection: close
-    Strict-Transport-Security: max-age=15724800; includeSubDomains
-    default backend - 404
-  RPCCheck: 
-    HTTP/1.1 400 Bad Request
-    Date: Sun, 04 Jun 2023 01:31:14 GMT
-    Content-Type: text/html
-    Content-Length: 150
-    Connection: close
-    &lt;html&gt;
-    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
-    &lt;body&gt;
-    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;
-    &lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
-  RTSPRequest: 
-    &lt;html&gt;
-    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
-    &lt;body&gt;
-    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;
-    &lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
-  tor-versions: 
-    HTTP/1.1 400 Bad Request
-    Date: Sun, 04 Jun 2023 01:31:07 GMT
-    Content-Type: text/html
-    Content-Length: 150
-    Connection: close
-    &lt;html&gt;
-    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
-    &lt;body&gt;
-    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;
-    &lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;</pre>
-</td></tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx">cpe:/a:igor_sysoev:nginx</a></td></tr>
 </tbody>
 </table></div>
 </div>
@@ -219,11 +158,11 @@
 <td>217.147.199.227 - parisregion.eu</td>
 <td>443</td>
 <td>tcp</td>
-<td>https</td>
+<td>http</td>
+<td>nginx</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>cpe:/a:igor_sysoev:nginx</td>
+<td>reverse proxy</td>
 </tr>
 </tbody>
 </table></div>
