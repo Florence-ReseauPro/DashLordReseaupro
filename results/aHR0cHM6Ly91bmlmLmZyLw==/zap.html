@@ -127,7 +127,11 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 4 Jun 2023 01:21:35
+		Generated on Sun, 11 Jun 2023 01:20:28
+	</h3>
+
+	<h3>
+		ZAP Version: 2.12.0
 	</h3>
 
 	
@@ -144,7 +148,7 @@ td {
 					<div>High</div>
 				</td>
 				<td align="center">
-					<div>1</div>
+					<div>0</div>
 				</td>
 			</tr>
 			<tr>
@@ -168,7 +172,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>9</div>
+					<div>10</div>
 				</td>
 			</tr>
 			<tr>
@@ -194,19 +198,14 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
-				<td><a href="#10097">Hash Disclosure - Mac OSX salted SHA-1</a></td>
-				<td align="center" class="risk-3">High</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
 				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">11</td>
+				<td align="center">12</td>
 			</tr>
 			<tr>
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">11</td>
+				<td align="center">12</td>
 			</tr>
 			<tr>
 				<td><a href="#10020">Missing Anti-clickjacking Header</a></td>
@@ -226,12 +225,12 @@ td {
 			<tr>
 				<td><a href="#10010">Cookie No HttpOnly Flag</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">1</td>
+				<td align="center">6</td>
 			</tr>
 			<tr>
 				<td><a href="#10054">Cookie without SameSite Attribute</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">1</td>
+				<td align="center">6</td>
 			</tr>
 			<tr>
 				<td><a href="#10017">Cross-Domain JavaScript Source File Inclusion</a></td>
@@ -271,7 +270,7 @@ td {
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">12</td>
+				<td align="center">11</td>
 			</tr>
 			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
@@ -282,6 +281,11 @@ td {
 				<td><a href="#90011">Charset Mismatch </a></td>
 				<td align="center" class="risk-0">Informational</td>
 				<td align="center">12</td>
+			</tr>
+			<tr>
+				<td><a href="#10029">Cookie Poisoning</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
@@ -306,17 +310,17 @@ td {
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">8</td>
+				<td align="center">7</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable but Non-Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10031">User Controllable HTML Element Attribute (Potential XSS)</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">8</td>
+				<td align="center">20</td>
 			</tr>
 		</table>
 		<div class="spacer-lg"></div>
@@ -324,88 +328,6 @@ td {
 
 	
 		<h3>Alert Detail</h3>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-3"><a
-						id="10097"></a>
-						<div>High</div></th>
-					<th class="risk-3">Hash Disclosure - Mac OSX salted SHA-1</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>A hash was disclosed by the web server. - Mac OSX salted SHA-1</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/wp-content/uploads/2023/05/Communique-de-presse-Amue_DC_UNIF-05-2023.pdf">https://unif.fr/wp-content/uploads/2023/05/Communique-de-presse-Amue_DC_UNIF-05-2023.pdf</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">FEFF0061006C006900630065002E00760065007200650074</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that hashes that are used to protect credentials or other resources are not leaked by the web server or database. There is typically no requirement for password hashes to be accessible to the web browser.      </div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
-							<br />
-						
-							<a href="http://openwall.info/wiki/john/sample-hashes">http://openwall.info/wiki/john/sample-hashes</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10097/">10097</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
 		
 			<table class="results">
 				<tr height="24">
@@ -499,32 +421,6 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/datakairos/">https://unif.fr/datakairos/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form role=&quot;search&quot; method=&quot;get&quot; class=&quot;search-form&quot; action=&quot;https://unif.fr/&quot;&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/international/">https://unif.fr/international/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -729,9 +625,61 @@ td {
 						<td width="80%">&lt;form role=&quot;search&quot; method=&quot;get&quot; class=&quot;search-form&quot; action=&quot;https://unif.fr/&quot;&gt;</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form name=&quot;loginform&quot; id=&quot;loginform&quot; action=&quot;https://unif.fr/wp-login.php&quot; method=&quot;post&quot;&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form id=&quot;language-switcher&quot; action=&quot;&quot; method=&quot;get&quot;&gt;</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">12</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1113,9 +1061,35 @@ td {
 						<td width="80%"></td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">12</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1627,13 +1601,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&#39;https://stats.wp.com/e-202322.js&#39; defer&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://stats.wp.com/e-202323.js&#39; defer&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
+						<td width="80%"><a href="https://unif.fr/nos-valeurs/">https://unif.fr/nos-valeurs/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1659,7 +1633,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
+						<td width="80%"><a href="https://unif.fr/nos-valeurs/">https://unif.fr/nos-valeurs/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1685,7 +1659,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
+						<td width="80%"><a href="https://unif.fr/nos-valeurs/">https://unif.fr/nos-valeurs/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1711,7 +1685,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
+						<td width="80%"><a href="https://unif.fr/nos-valeurs/">https://unif.fr/nos-valeurs/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1731,7 +1705,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&#39;https://stats.wp.com/e-202322.js&#39; defer&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://stats.wp.com/e-202323.js&#39; defer&gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
@@ -1885,6 +1859,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?action=lostpassword">https://unif.fr/wp-login.php?action=lostpassword</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">wordpress_test_cookie</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: wordpress_test_cookie</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
 					</tr>
 					<tr>
@@ -1908,9 +1908,113 @@ td {
 						<td width="80%">Set-Cookie: wordpress_test_cookie</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">wordpress_test_cookie</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: wordpress_test_cookie</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">wp_lang</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: wp_lang</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php">https://unif.fr/wp-login.php</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">POST</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">tk_ai</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: tk_ai</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php">https://unif.fr/wp-login.php</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">POST</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">wordpress_test_cookie</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: wordpress_test_cookie</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">1</td>
+					<td width="80%">6</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1964,6 +2068,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?action=lostpassword">https://unif.fr/wp-login.php?action=lostpassword</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">wordpress_test_cookie</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: wordpress_test_cookie</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
 					</tr>
 					<tr>
@@ -1987,9 +2117,113 @@ td {
 						<td width="80%">Set-Cookie: wordpress_test_cookie</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">wordpress_test_cookie</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: wordpress_test_cookie</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">wp_lang</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: wp_lang</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php">https://unif.fr/wp-login.php</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">POST</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">tk_ai</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: tk_ai</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php">https://unif.fr/wp-login.php</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">POST</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">wordpress_test_cookie</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: wordpress_test_cookie</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">1</td>
+					<td width="80%">6</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2079,7 +2313,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://stats.wp.com/e-202322.js</td>
+						<td width="80%">https://stats.wp.com/e-202323.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2089,7 +2323,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&#39;https://stats.wp.com/e-202322.js&#39; defer&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://stats.wp.com/e-202323.js&#39; defer&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -2121,7 +2355,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
+						<td width="80%"><a href="https://unif.fr/nos-valeurs/">https://unif.fr/nos-valeurs/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2147,7 +2381,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
+						<td width="80%"><a href="https://unif.fr/nos-valeurs/">https://unif.fr/nos-valeurs/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2157,7 +2391,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://stats.wp.com/e-202322.js</td>
+						<td width="80%">https://stats.wp.com/e-202323.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2167,13 +2401,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&#39;https://stats.wp.com/e-202322.js&#39; defer&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://stats.wp.com/e-202323.js&#39; defer&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
+						<td width="80%"><a href="https://unif.fr/nos-valeurs/">https://unif.fr/nos-valeurs/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2199,7 +2433,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/nos-valeurs/">https://unif.fr/nos-valeurs/</a></td>
+						<td width="80%"><a href="https://unif.fr/organisation/">https://unif.fr/organisation/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2225,7 +2459,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/nos-valeurs/">https://unif.fr/nos-valeurs/</a></td>
+						<td width="80%"><a href="https://unif.fr/organisation/">https://unif.fr/organisation/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2235,7 +2469,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://stats.wp.com/e-202322.js</td>
+						<td width="80%">https://stats.wp.com/e-202323.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2245,13 +2479,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&#39;https://stats.wp.com/e-202322.js&#39; defer&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://stats.wp.com/e-202323.js&#39; defer&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/nos-valeurs/">https://unif.fr/nos-valeurs/</a></td>
+						<td width="80%"><a href="https://unif.fr/organisation/">https://unif.fr/organisation/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2432,59 +2666,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/carte-multi-services/">https://unif.fr/carte-multi-services/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/datakairos/">https://unif.fr/datakairos/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/international/">https://unif.fr/international/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2640,6 +2822,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/sms-u/">https://unif.fr/sms-u/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/univmobile/">https://unif.fr/univmobile/</a></td>
 					</tr>
 					<tr>
@@ -2667,6 +2875,32 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/wp-admin/admin-ajax.php">https://unif.fr/wp-admin/admin-ajax.php</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3154,32 +3388,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/datakairos/">https://unif.fr/datakairos/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Apache/2.4.10 (Debian)</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
 					</tr>
 					<tr>
@@ -3388,6 +3596,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Apache/2.4.10 (Debian)</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/wp-sitemap.xml">https://unif.fr/wp-sitemap.xml</a></td>
 					</tr>
 					<tr>
@@ -3503,32 +3737,6 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/datakairos/">https://unif.fr/datakairos/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/learning-spaces/">https://unif.fr/learning-spaces/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3736,6 +3944,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/wp-sitemap.xml">https://unif.fr/wp-sitemap.xml</a></td>
 					</tr>
 					<tr>
@@ -3827,32 +4061,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/datakairos/">https://unif.fr/datakairos/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">1685829600</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
 					</tr>
 					<tr>
@@ -3873,7 +4081,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1685829600</td>
+						<td width="80%">1686434400</td>
 					</tr>
 				
 					<tr>
@@ -3899,7 +4107,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1685829600</td>
+						<td width="80%">1686434400</td>
 					</tr>
 				
 					<tr>
@@ -3925,7 +4133,33 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1685829600</td>
+						<td width="80%">1686434400</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/partenaires/">https://unif.fr/partenaires/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1686434400</td>
 					</tr>
 				
 				<tr>
@@ -3985,32 +4219,6 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/">https://unif.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/carte-multi-services/">https://unif.fr/carte-multi-services/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4218,7 +4426,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/sms-u/">https://unif.fr/sms-u/</a></td>
+						<td width="80%"><a href="https://unif.fr/univmobile/">https://unif.fr/univmobile/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4244,7 +4452,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/univmobile/">https://unif.fr/univmobile/</a></td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4295,7 +4503,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">12</td>
+					<td width="80%">11</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5044,6 +5252,85 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
+						id="10029"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Cookie Poisoning</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>This check looks at user-supplied input in query string parameters and POST data to identify where cookie parameters might be controlled. This is called a cookie poisoning attack, and becomes exploitable when an attacker can manipulate the cookie in various ways. In some cases this will not be exploitable, however, allowing URL parameters to set cookie values is generally considered a bug.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">wp_lang</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Do not allow user input to control cookie names and values. If some query string parameters must be set in cookie values, be sure to filter out semicolon&#39;s that can serve as name/value pair delimiters.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-cookie">http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-cookie</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/20.html">20</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">20</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10029/">10029</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
 						id="10027"></a>
 						<div>Informational</div></th>
 					<th class="risk-0">Information Disclosure - Suspicious Comments</th>
@@ -5088,59 +5375,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/carte-multi-services/">https://unif.fr/carte-multi-services/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">admin</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/datakairos/">https://unif.fr/datakairos/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">admin</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/international/">https://unif.fr/international/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5296,7 +5531,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/sms-u/">https://unif.fr/sms-u/</a></td>
+						<td width="80%"><a href="https://unif.fr/univmobile/">https://unif.fr/univmobile/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5322,7 +5557,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/univmobile/">https://unif.fr/univmobile/</a></td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5343,6 +5578,58 @@ td {
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">admin</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">select</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">user</td>
 					</tr>
 				
 				<tr>
@@ -6059,7 +6346,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/univmobile/">https://unif.fr/univmobile/</a></td>
+						<td width="80%"><a href="https://unif.fr/wp-json/">https://unif.fr/wp-json/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6085,7 +6372,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/wp-json/">https://unif.fr/wp-json/</a></td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6105,7 +6392,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%"></td>
+						<td width="80%">no-cache, must-revalidate, max-age=0</td>
 					</tr>
 				
 					<tr>
@@ -6222,32 +6509,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/learning-spaces/">https://unif.fr/learning-spaces/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://unif.fr/membres/">https://unif.fr/membres/</a></td>
 					</tr>
 					<tr>
@@ -6326,7 +6587,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/robots.txt">https://unif.fr/robots.txt</a></td>
+						<td width="80%"><a href="https://unif.fr/partenaires/">https://unif.fr/partenaires/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6352,7 +6613,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/wp-json/">https://unif.fr/wp-json/</a></td>
+						<td width="80%"><a href="https://unif.fr/robots.txt">https://unif.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6403,7 +6664,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">8</td>
+					<td width="80%">7</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6524,9 +6785,35 @@ td {
 						<td width="80%">no-cache</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">no-cache</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6583,7 +6870,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?action=lostpassword">https://unif.fr/wp-login.php?action=lostpassword</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6593,7 +6880,59 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">redirect_to</td>
+						<td width="80%">action</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?action=lostpassword">https://unif.fr/wp-login.php?action=lostpassword</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">action</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?action=lostpassword">https://unif.fr/wp-login.php?action=lostpassword</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">action</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6776,6 +7115,266 @@ td {
 						<td width="20%"
 							class="indent2">Parameter</td>
 						<td width="80%">redirect_to</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F">https://unif.fr/wp-login.php?reauth=1&amp;redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">redirect_to</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">redirect_to</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">redirect_to</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">redirect_to</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">redirect_to</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">redirect_to</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">redirect_to</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">redirect_to</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">redirect_to</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR">https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&amp;wp_lang=fr_FR</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">wp_lang</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6790,7 +7389,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">8</td>
+					<td width="80%">20</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
