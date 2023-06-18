@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 11 Jun 2023 01:48:38",
+	"@generated": "Sun, 18 Jun 2023 01:52:04",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=0688A911FDC14EB390D798547FA093E9?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=1BB111F65D495D9E33DB08B7C9B11AF1?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -626,13 +626,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-1445076-wfetO5Kb3Rze7BzNb63WAEyJKvyfWN-cas1",
-							"otherinfo": "-?\uFFFD\uFFFDt\uFBF0}\uFFFDN\uFFFD\uFFFDG7\uFFFD\\x00073[\uFFFDu\uFFFD\\x0013\"J\uFFFD'\uFFFD7\uFFFD\\x001a\uFFFD"
+							"evidence": "LT-2447765-Fn9rlSv9MoQLy7N3zuVR1b6ieF5Qcb-cas1",
+							"otherinfo": "-?\uFFFD\uFFFD\uFFFD\uB7C5\uFFFD\uFFFD\uFFFDJ\uFFFDL\uFFFD\\x0002\uFFFD\uFFFD\uFFFD\uFFFDTuo\uFFFD\uFFFD\\x0017\uFFFD\\x001co\uFFFD\\x001a\uFFFD"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFDt\uFBF0}\uFFFDN\uFFFD\uFFFDG7\uFFFD\\x00073[\uFFFDu\uFFFD\\x0013\"J\uFFFD'\uFFFD7\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD\uFFFD\uB7C5\uFFFD\uFFFD\uFFFDJ\uFFFDL\uFFFD\\x0002\uFFFD\uFFFD\uFFFD\uFFFDTuo\uFFFD\uFFFD\\x0017\uFFFD\\x001co\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
