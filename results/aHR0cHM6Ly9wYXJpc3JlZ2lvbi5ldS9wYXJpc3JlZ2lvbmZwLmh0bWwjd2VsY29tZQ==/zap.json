@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 18 Jun 2023 01:27:57",
+	"@generated": "Sun, 25 Jun 2023 01:37:47",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -269,22 +269,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://parisregion.eu/study-research.html",
 							"method": "GET",
 							"param": "",
@@ -301,7 +285,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -350,7 +334,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/28236</p><p>https://github.com/twbs/bootstrap/issues/20184</p><p>https://github.com/advisories/GHSA-ph58-4vrj-w6hr</p><p>https://github.com/twbs/bootstrap/issues/20631</p><p>https://github.com/advisories/GHSA-4p24-vmcr-4gqj</p><p>https://nvd.nist.gov/vuln/detail/CVE-2018-20676</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "166"
+					"sourceid": "169"
 				},
 				{
 					"pluginid": "10017",
@@ -411,22 +395,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "https://oss.maxcdn.com/respond/1.4.2/respond.min.js",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://parisregion.eu/study-research.html",
 							"method": "GET",
 							"param": "https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js",
@@ -443,7 +411,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -500,7 +468,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "178"
+					"sourceid": "176"
 				},
 				{
 					"pluginid": "10063",
@@ -537,14 +505,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/bower_components/subscribe-better/jquery.subscribe-better.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://parisregion.eu/bower_components/wowjs/dist/wow.min.js",
 							"method": "GET",
 							"param": "",
@@ -554,6 +514,14 @@
 						},
 						{
 							"uri": "https://parisregion.eu/discover.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://parisregion.eu/news.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -896,7 +864,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "178"
+					"sourceid": "176"
 				},
 				{
 					"pluginid": "10109",
@@ -1078,7 +1046,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -1092,14 +1060,6 @@
 					"instances":[ 
 						{
 							"uri": "https://parisregion.eu/bower_components/fontawesome/css/font-awesome.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=604800",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1139,7 +1099,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
