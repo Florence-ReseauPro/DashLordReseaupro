@@ -367,7 +367,7 @@
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (40)"
+              "finding"      : "expires < 60 days (33)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -611,15 +611,15 @@
               "id"           : "intermediate_cert_notAfter <#4>",
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2023-07-28 23:59"
           }
 ,         {
               "id"           : "intermediate_cert_expiration <#4>",
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "ok > 40 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires <= 40 days"
           }
 ,         {
               "id"           : "intermediate_cert_chain <#4>",
@@ -647,14 +647,14 @@
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1687061596"
+              "finding"      : "1687667154"
           }
 ,         {
               "id"           : "HSTS",
@@ -1247,6 +1247,6 @@
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "187"
+              "finding"      : "107"
           }
 ]
