@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 25 Jun 2023 01:37:47",
+	"@generated": "Sun, 2 Jul 2023 01:36:08",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -58,7 +58,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "38"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10038",
@@ -208,7 +208,7 @@
 					"reference": "",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "38"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "90003",
@@ -269,6 +269,22 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://parisregion.eu/sitemap.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://parisregion.eu/sitemap.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://parisregion.eu/study-research.html",
 							"method": "GET",
 							"param": "",
@@ -285,13 +301,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "8",
+					"count": "10",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10003",
@@ -395,6 +411,22 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://parisregion.eu/sitemap.html",
+							"method": "GET",
+							"param": "https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js",
+							"attack": "",
+							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://parisregion.eu/sitemap.html",
+							"method": "GET",
+							"param": "https://oss.maxcdn.com/respond/1.4.2/respond.min.js",
+							"attack": "",
+							"evidence": "<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://parisregion.eu/study-research.html",
 							"method": "GET",
 							"param": "https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js",
@@ -411,7 +443,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "8",
+					"count": "10",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -482,14 +514,6 @@
 					"instances":[ 
 						{
 							"uri": "https://parisregion.eu/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/bower_components/bootstrap/dist/js/bootstrap.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -569,7 +593,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
@@ -626,7 +650,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "38"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10094",
@@ -733,7 +757,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "282"
+					"sourceid": "281"
 				},
 				{
 					"pluginid": "10027",
@@ -1046,7 +1070,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10049",
@@ -1060,6 +1084,14 @@
 					"instances":[ 
 						{
 							"uri": "https://parisregion.eu/bower_components/fontawesome/css/font-awesome.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=604800",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1099,7 +1131,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "5",
+					"count": "6",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
