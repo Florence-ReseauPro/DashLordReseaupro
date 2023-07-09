@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 2 Jul 2023 01:36:08",
+	"@generated": "Sun, 9 Jul 2023 01:37:08",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -58,7 +58,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "52"
+					"sourceid": "56"
 				},
 				{
 					"pluginid": "10038",
@@ -208,7 +208,7 @@
 					"reference": "",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "52"
+					"sourceid": "56"
 				},
 				{
 					"pluginid": "90003",
@@ -269,22 +269,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://parisregion.eu/study-research.html",
 							"method": "GET",
 							"param": "",
@@ -301,13 +285,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10003",
@@ -350,7 +334,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/28236</p><p>https://github.com/twbs/bootstrap/issues/20184</p><p>https://github.com/advisories/GHSA-ph58-4vrj-w6hr</p><p>https://github.com/twbs/bootstrap/issues/20631</p><p>https://github.com/advisories/GHSA-4p24-vmcr-4gqj</p><p>https://nvd.nist.gov/vuln/detail/CVE-2018-20676</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "169"
+					"sourceid": "166"
 				},
 				{
 					"pluginid": "10017",
@@ -411,22 +395,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "https://oss.maxcdn.com/respond/1.4.2/respond.min.js",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://parisregion.eu/study-research.html",
 							"method": "GET",
 							"param": "https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js",
@@ -443,7 +411,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -500,7 +468,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "176"
+					"sourceid": "175"
 				},
 				{
 					"pluginid": "10063",
@@ -521,7 +489,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.min.js",
+							"uri": "https://parisregion.eu/bower_components/bootstrap/dist/js/bootstrap.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -529,7 +497,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/bower_components/wowjs/dist/wow.min.js",
+							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -650,7 +618,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "52"
+					"sourceid": "56"
 				},
 				{
 					"pluginid": "10094",
@@ -888,7 +856,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "176"
+					"sourceid": "175"
 				},
 				{
 					"pluginid": "10109",
@@ -1091,14 +1059,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=604800",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://parisregion.eu/img/favicon.ico",
 							"method": "GET",
 							"param": "",
@@ -1131,7 +1091,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
