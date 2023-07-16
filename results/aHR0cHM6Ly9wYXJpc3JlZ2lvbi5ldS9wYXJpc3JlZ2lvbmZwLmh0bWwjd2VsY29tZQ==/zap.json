@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
-	"@version": "2.12.0",
-	"@generated": "Sun, 9 Jul 2023 01:37:08",
+	"@version": "2.13.0",
+	"@generated": "Sun, 16 Jul 2023 01:35:31",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -58,7 +58,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "56"
+					"sourceid": "84"
 				},
 				{
 					"pluginid": "10038",
@@ -208,7 +208,7 @@
 					"reference": "",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "56"
+					"sourceid": "84"
 				},
 				{
 					"pluginid": "90003",
@@ -309,7 +309,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "* Bootstrap v3.3.7",
-							"otherinfo": "CVE-2019-8331\nCVE-2018-14041\nCVE-2018-14040\nCVE-2018-20677\nCVE-2018-20676\nCVE-2018-14042\nCVE-2016-10735\n"
+							"otherinfo": "CVE-2019-8331\nCVE-2018-14041\nCVE-2018-20677\nCVE-2018-20676\nCVE-2018-14042\nCVE-2016-10735\n"
 						},
 						{
 							"uri": "https://parisregion.eu/bower_components/jquery/dist/jquery.min.js",
@@ -330,7 +330,7 @@
 					],
 					"count": "3",
 					"solution": "<p>Please upgrade to the latest version of bootstrap.</p>",
-					"otherinfo": "<p>CVE-2019-8331</p><p>CVE-2018-14041</p><p>CVE-2018-14040</p><p>CVE-2018-20677</p><p>CVE-2018-20676</p><p>CVE-2018-14042</p><p>CVE-2016-10735</p><p></p>",
+					"otherinfo": "<p>CVE-2019-8331</p><p>CVE-2018-14041</p><p>CVE-2018-20677</p><p>CVE-2018-20676</p><p>CVE-2018-14042</p><p>CVE-2016-10735</p><p></p>",
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/28236</p><p>https://github.com/twbs/bootstrap/issues/20184</p><p>https://github.com/advisories/GHSA-ph58-4vrj-w6hr</p><p>https://github.com/twbs/bootstrap/issues/20631</p><p>https://github.com/advisories/GHSA-4p24-vmcr-4gqj</p><p>https://nvd.nist.gov/vuln/detail/CVE-2018-20676</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
@@ -618,7 +618,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "56"
+					"sourceid": "84"
 				},
 				{
 					"pluginid": "10094",
@@ -653,14 +653,6 @@
 							"attack": "",
 							"evidence": "D27CDB6E-AE6D-11cf-96B8-444553540000",
 							"otherinfo": "\\x000fn\uFFFD\\x000c\\x001e\uFFFD\uFFFD\\x0001:\\x000f\uFFFDuq\uFFFD\uFFFD\uFFFD\\x001f>\uFFFD9\uFFFD~x\uFFFDM4"
-						},
-						{
-							"uri": "https://parisregion.eu/img/b3conference/Logo_b3.jpg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA",
-							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\\x0000\\x0010JFIF\\x0000\\x0001\\x0002\\x0001\\x0000H\\x0000H\\x0000\\x0000\uFFFD\uFFFD\\x0000,Photoshop 3.0\\x00008BIM\\x0003\uFFFD\\x0000\\x0000\\x0000\\x0000\\x0000\\x0010\\x0000H\\x0000\\x0000\\x0000\\x0001\\x0000"
 						},
 						{
 							"uri": "https://parisregion.eu/img/welcome/valerie_pecresse500.jpg",
@@ -703,6 +695,14 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFD\u04ED\uFFFD\uFFFD\uFFFD\u07E7\uFFFD\uFFFD#\uFFFDZn\uFFFD\u06B6\uFFFD\uFFFDz"
 						},
 						{
+							"uri": "https://parisregion.eu/pdf/20200630_Prfp_DMI-laboratories.xls",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "877D93EC-0EFA-40ac-8DA6-3AB56D48C5D3UU",
+							"otherinfo": "\uFFFD\uFFFD\uFFFDq\\x0002\uFFFDA\\x0005\\x0003\uFFFD4i\u03FC\\x000c\\x000e\uFFFD\uFFFD\\x0000y\uFFFD><\\x000b\uFFFD\uFFFDQ"
+						},
+						{
 							"uri": "https://parisregion.eu/pdf/h2020_hi_ethics-self-assess_en.pdf",
 							"method": "GET",
 							"param": "",
@@ -725,7 +725,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "281"
+					"sourceid": "282"
 				},
 				{
 					"pluginid": "10027",
@@ -962,7 +962,7 @@
 						{
 							"uri": "https://parisregion.eu/",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "max-age=0",
 							"otherinfo": ""
@@ -970,7 +970,7 @@
 						{
 							"uri": "https://parisregion.eu/b3conference.html",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "max-age=0",
 							"otherinfo": ""
@@ -978,7 +978,7 @@
 						{
 							"uri": "https://parisregion.eu/discover.html",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "max-age=0",
 							"otherinfo": ""
@@ -986,7 +986,7 @@
 						{
 							"uri": "https://parisregion.eu/map.html",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "max-age=0",
 							"otherinfo": ""
@@ -994,7 +994,7 @@
 						{
 							"uri": "https://parisregion.eu/news.html",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "max-age=0",
 							"otherinfo": ""
@@ -1002,7 +1002,7 @@
 						{
 							"uri": "https://parisregion.eu/parisregionfp.html",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "max-age=0",
 							"otherinfo": ""
@@ -1010,7 +1010,7 @@
 						{
 							"uri": "https://parisregion.eu/search-project.html",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "max-age=0",
 							"otherinfo": ""
@@ -1018,7 +1018,7 @@
 						{
 							"uri": "https://parisregion.eu/sitemap.html",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "max-age=0",
 							"otherinfo": ""
@@ -1026,7 +1026,7 @@
 						{
 							"uri": "https://parisregion.eu/study-research.html",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "max-age=0",
 							"otherinfo": ""
@@ -1050,14 +1050,6 @@
 					"riskdesc": "Informational (Medium)",
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
-						{
-							"uri": "https://parisregion.eu/bower_components/fontawesome/css/font-awesome.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=604800",
-							"otherinfo": ""
-						},
 						{
 							"uri": "https://parisregion.eu/img/favicon.ico",
 							"method": "GET",
@@ -1091,13 +1083,13 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "139"
+					"sourceid": "120"
 				},
 				{
 					"pluginid": "10049",
@@ -1119,6 +1111,14 @@
 						},
 						{
 							"uri": "https://parisregion.eu/discover.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://parisregion.eu/news.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1150,7 +1150,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "6",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
