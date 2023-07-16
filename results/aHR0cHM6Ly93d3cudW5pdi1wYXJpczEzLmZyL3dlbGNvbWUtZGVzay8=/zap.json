@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
-	"@version": "2.12.0",
-	"@generated": "Sun, 9 Jul 2023 01:31:55",
+	"@version": "2.13.0",
+	"@generated": "Sun, 16 Jul 2023 01:33:28",
 	"site":[ 
 		{
 			"@name": "https://www.univ-paris13.fr",
@@ -214,7 +214,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel='stylesheet' id='astra-addon-css-css' href='https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-64a7a3e0481796-73347959.css?ver=4.1.6' media='all' />",
+							"evidence": "<link rel='stylesheet' id='astra-addon-css-css' href='https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-64ad1e7a3228d3-71416617.css?ver=4.1.6' media='all' />",
 							"otherinfo": ""
 						},
 						{
@@ -463,6 +463,14 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<link rel='stylesheet' id='wp-block-library-css' href='https://www.univ-spn.fr/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2' media='all' />",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-paris13.fr/welcome-desk/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script charset=\"UTF-8\" src=\"https://webapi.affluences.com/js/webapi_latest.min.js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -750,7 +758,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-64a7a3e0488938-67749028.js?ver=4.1.6' id='astra-addon-js-js'></script>",
+							"evidence": "<script src='https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-64ad1e7a332076-17373293.js?ver=4.1.6' id='astra-addon-js-js'></script>",
 							"otherinfo": ""
 						},
 						{
@@ -826,7 +834,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "92",
+					"count": "93",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -844,6 +852,14 @@
 					"riskdesc": "Low (Medium)",
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
+						{
+							"uri": "https://www.univ-paris13.fr/welcome-desk/",
+							"method": "GET",
+							"param": "https://webapi.affluences.com/js/webapi_latest.min.js",
+							"attack": "",
+							"evidence": "<script charset=\"UTF-8\" src=\"https://webapi.affluences.com/js/webapi_latest.min.js\"></script>",
+							"otherinfo": ""
+						},
 						{
 							"uri": "https://www.univ-paris13.fr/welcome-desk/",
 							"method": "GET",
@@ -1127,9 +1143,9 @@
 						{
 							"uri": "https://www.univ-paris13.fr/welcome-desk/",
 							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-64a7a3e0488938-67749028.js?ver=4.1.6",
+							"param": "https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-64ad1e7a332076-17373293.js?ver=4.1.6",
 							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-64a7a3e0488938-67749028.js?ver=4.1.6' id='astra-addon-js-js'></script>",
+							"evidence": "<script src='https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-64ad1e7a332076-17373293.js?ver=4.1.6' id='astra-addon-js-js'></script>",
 							"otherinfo": ""
 						},
 						{
@@ -1205,7 +1221,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "45",
+					"count": "46",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -1408,8 +1424,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1688809218",
-							"otherinfo": "1688809218, which evaluates to: 2023-07-08 09:40:18"
+							"evidence": "1689414069",
+							"otherinfo": "1689414069, which evaluates to: 2023-07-15 09:41:09"
 						},
 						{
 							"uri": "https://www.univ-paris13.fr/welcome-desk/",
@@ -1432,8 +1448,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1688741969",
-							"otherinfo": "1688741969, which evaluates to: 2023-07-07 14:59:29"
+							"evidence": "1689256293",
+							"otherinfo": "1689256293, which evaluates to: 2023-07-13 13:51:33"
 						}
 					],
 					"count": "6",
@@ -1610,7 +1626,7 @@
 						{
 							"uri": "https://www.univ-paris13.fr/",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "public",
 							"otherinfo": ""
@@ -1618,7 +1634,7 @@
 						{
 							"uri": "https://www.univ-paris13.fr/welcome-desk/",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "public",
 							"otherinfo": ""
@@ -1689,7 +1705,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "10"
+					"sourceid": "4"
 				}
 			]
 		}
