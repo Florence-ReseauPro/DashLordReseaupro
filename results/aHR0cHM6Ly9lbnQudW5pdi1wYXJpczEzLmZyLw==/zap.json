@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
-	"@version": "2.12.0",
-	"@generated": "Sun, 9 Jul 2023 01:55:54",
+	"@version": "2.13.0",
+	"@generated": "Sun, 16 Jul 2023 02:05:26",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=CB7C4CE42F4C1F655B9C114412574164?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=8641A9CB89C25BB902F01D73616956AA?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -76,7 +76,7 @@
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -222,7 +222,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10010",
@@ -528,7 +528,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10036",
@@ -597,7 +597,7 @@
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -626,13 +626,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-5973136-cy2IrG0207SbfxqEyxrEchKBCXM3ol-cas1",
-							"otherinfo": "-?\uFFFD\uFFFD\uFFFD\uFFFD\u07EF\uFFFD\uFFFDb+\\x001bM\uFFFD\uFFFD&\uFFFD\u01A12\u01B1\\x001c\uFFFD\uFFFDB\\\uFFFD\uFFFD\uFFFD\\x001a\uFFFD"
+							"evidence": "LT-6741926-VKaxAqkkFxW7gt9bcgEphGYP7KhCHw-cas1",
+							"otherinfo": "-?\uFFFD\uFFFD}\u06EF\uFFFD)\uFFFD@\uFFFDI\\x0005\uFFFDn\uFFFD\uFFFD\u0700Ja\\x0019\uFFFD\uFFFD*\\x0010\uFFFD\uFFFD\uFFFD\\x001a\uFFFD"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFD\uFFFD\uFFFD\u07EF\uFFFD\uFFFDb+\\x001bM\uFFFD\uFFFD&\uFFFD\u01A12\u01B1\\x001c\uFFFD\uFFFDB\\\uFFFD\uFFFD\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD}\u06EF\uFFFD)\uFFFD@\uFFFDI\\x0005\uFFFDn\uFFFD\uFFFD\u0700Ja\\x0019\uFFFD\uFFFD*\\x0010\uFFFD\uFFFD\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -705,7 +705,7 @@
 						{
 							"uri": "https://ent.univ-paris13.fr/",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "no-cache, no-store",
 							"otherinfo": ""
@@ -717,6 +717,57 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
+					"instances":[ 
+						{
+							"uri": "https://ent.univ-paris13.fr/",
+							"method": "GET",
+							"param": "CASSESSIONID",
+							"attack": "",
+							"evidence": "8641A9CB89C25BB902F01D73616956AA",
+							"otherinfo": "\ncookie:CASSESSIONID"
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/",
+							"method": "GET",
+							"param": "UP13ENT",
+							"attack": "",
+							"evidence": "9a0e4b1al4ief6f3jqleh277r3",
+							"otherinfo": "\ncookie:UP13ENT"
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/robots.txt",
+							"method": "GET",
+							"param": "UP13ENT",
+							"attack": "",
+							"evidence": "dg52a7nq9un8a6jua27jbce3d3",
+							"otherinfo": "\ncookie:UP13ENT"
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"method": "GET",
+							"param": "UP13ENT",
+							"attack": "",
+							"evidence": "9k0h68ejlkfj6uo3geno89gvf4",
+							"otherinfo": "\ncookie:UP13ENT"
+						}
+					],
+					"count": "4",
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p></p><p>cookie:CASSESSIONID</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
+					"cweid": "-1",
+					"wascid": "-1",
 					"sourceid": "1"
 				},
 				{
@@ -760,7 +811,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				}
 			]
 		}
