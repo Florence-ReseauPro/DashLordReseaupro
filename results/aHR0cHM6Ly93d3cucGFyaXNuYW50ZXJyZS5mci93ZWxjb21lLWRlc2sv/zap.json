@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
-	"@version": "2.12.0",
-	"@generated": "Sun, 9 Jul 2023 02:52:17",
+	"@version": "2.13.0",
+	"@generated": "Sun, 16 Jul 2023 03:37:21",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -50,7 +50,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2059"
+					"sourceid": "2097"
 				},
 				{
 					"pluginid": "10202",
@@ -287,7 +287,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -295,15 +295,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/actualites-de-luniversite",
 							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif",
-							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -311,7 +303,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -319,7 +311,15 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
+							"method": "GET",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -327,7 +327,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -335,7 +335,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -343,7 +343,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-ufr-et-instituts",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -351,7 +351,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/presentation",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -359,7 +359,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/welcome-desk",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -367,7 +367,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/welcome-desk/",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -406,7 +406,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2060"
+					"sourceid": "2021"
 				},
 				{
 					"pluginid": "90003",
@@ -435,14 +435,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/action/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"schema.DC\" href=\"http://purl.org/dc/elements/1.1/\" />",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/extensions/",
 							"method": "GET",
 							"param": "",
@@ -459,7 +451,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/sitemap.xml",
+							"uri": "https://www.parisnanterre.fr/META_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -467,7 +459,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/WEB_INF/",
+							"uri": "https://www.parisnanterre.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -507,7 +499,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -642,7 +634,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "2175"
+					"sourceid": "2271"
 				},
 				{
 					"pluginid": "10063",
@@ -770,14 +762,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/action/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/adminsite/",
 							"method": "GET",
 							"param": "",
@@ -850,7 +834,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the \"Server\" header or provide generic details.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
@@ -966,57 +950,6 @@
 					"sourceid": "4"
 				},
 				{
-					"pluginid": "10096",
-					"alertRef": "10096",
-					"alert": "Timestamp Disclosure - Unix",
-					"name": "Timestamp Disclosure - Unix",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
-					"instances":[ 
-						{
-							"uri": "https://www.parisnanterre.fr/adminsite/webservices/export_rss.jsp?CODE_RUBRIQUE=FR&LANGUE=0&NOMBRE=10",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1688456992",
-							"otherinfo": "1688456992, which evaluates to: 2023-07-04 07:49:52"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/adminsite/webservices/export_rss.jsp?CODE_RUBRIQUE=FR&LANGUE=0&NOMBRE=10",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1688463611",
-							"otherinfo": "1688463611, which evaluates to: 2023-07-04 09:40:11"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/agenda/parcours-street-art-visites-guidees?id_agendaevenement=76651",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1688456992",
-							"otherinfo": "1688456992, which evaluates to: 2023-07-04 07:49:52"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/nicolas-bourbon-1",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1534928097",
-							"otherinfo": "1534928097, which evaluates to: 2018-08-22 08:54:57"
-						}
-					],
-					"count": "4",
-					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1688456992, which evaluates to: 2023-07-04 07:49:52</p>",
-					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
-					"cweid": "200",
-					"wascid": "13",
-					"sourceid": "2134"
-				},
-				{
 					"pluginid": "10021",
 					"alertRef": "10021",
 					"alert": "X-Content-Type-Options Header Missing",
@@ -1029,7 +962,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -1037,7 +970,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/actualites-de-luniversite",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -1045,7 +978,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -1053,7 +986,15 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
+							"method": "GET",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -1061,23 +1002,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-services",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -1085,7 +1010,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-ufr-et-instituts",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -1093,7 +1018,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/presentation",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -1101,7 +1026,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -1109,7 +1034,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/welcome-desk",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -1117,13 +1042,13 @@
 						{
 							"uri": "https://www.parisnanterre.fr/welcome-desk/",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
@@ -1351,7 +1276,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2170"
+					"sourceid": "2273"
 				},
 				{
 					"pluginid": "10109",
@@ -1508,7 +1433,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1516,15 +1441,15 @@
 						{
 							"uri": "https://www.parisnanterre.fr/actualites-de-luniversite",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif",
+							"uri": "https://www.parisnanterre.fr/organisation",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1532,7 +1457,15 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
+							"method": "GET",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1540,15 +1473,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
-							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1556,7 +1481,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-ufr-et-instituts",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1564,7 +1489,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/presentation",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1572,7 +1497,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1580,7 +1505,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/welcome-desk",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1588,7 +1513,7 @@
 						{
 							"uri": "https://www.parisnanterre.fr/welcome-desk/",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1603,6 +1528,89 @@
 					"sourceid": "4"
 				},
 				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.parisnanterre.fr/",
+							"method": "GET",
+							"param": "JSESSIONID",
+							"attack": "",
+							"evidence": "601B11E5CF32A0807C7B242AEC378202",
+							"otherinfo": "\ncookie:JSESSIONID"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/",
+							"method": "GET",
+							"param": "JSESSIONID",
+							"attack": "",
+							"evidence": "94B37510F576C052AAC461A8D700FB05",
+							"otherinfo": "\ncookie:JSESSIONID"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/robots.txt",
+							"method": "GET",
+							"param": "JSESSIONID",
+							"attack": "",
+							"evidence": "66663336ACC969D27E980B2058518822",
+							"otherinfo": "\ncookie:JSESSIONID"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/sitemap.xml",
+							"method": "GET",
+							"param": "JSESSIONID",
+							"attack": "",
+							"evidence": "AA7A89C09B37BEEA0E4AFDC78C7DAC25",
+							"otherinfo": "\ncookie:JSESSIONID"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/welcome-desk",
+							"method": "GET",
+							"param": "JSESSIONID",
+							"attack": "",
+							"evidence": "A113A3D3E08B06B573032408FEF84271",
+							"otherinfo": "\ncookie:JSESSIONID"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/welcome-desk/",
+							"method": "GET",
+							"param": "JSESSIONID",
+							"attack": "",
+							"evidence": "FFECB3AEF26D546C5604516EEDDFB65F",
+							"otherinfo": "\ncookie:JSESSIONID"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/",
+							"method": "GET",
+							"param": "JSESSIONID",
+							"attack": "",
+							"evidence": "601B11E5CF32A0807C7B242AEC378202",
+							"otherinfo": "\ncookie:JSESSIONID"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/robots.txt",
+							"method": "GET",
+							"param": "JSESSIONID",
+							"attack": "",
+							"evidence": "66663336ACC969D27E980B2058518822",
+							"otherinfo": "\ncookie:JSESSIONID"
+						}
+					],
+					"count": "8",
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p></p><p>cookie:JSESSIONID</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "98"
+				},
+				{
 					"pluginid": "10049",
 					"alertRef": "10049",
 					"alert": "Storable and Cacheable Content",
@@ -1614,14 +1622,6 @@
 					"instances":[ 
 						{
 							"uri": "https://www.parisnanterre.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/action/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1693,7 +1693,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -1982,7 +1982,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2365"
+					"sourceid": "2510"
 				}
 			]
 		}
