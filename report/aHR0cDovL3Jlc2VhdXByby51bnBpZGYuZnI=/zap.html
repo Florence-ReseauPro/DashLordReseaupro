@@ -127,11 +127,11 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 9 Jul 2023 01:23:07
+		Generated on Sun, 16 Jul 2023 01:26:14
 	</h3>
 
 	<h3>
-		ZAP Version: 2.12.0
+		ZAP Version: 2.13.0
 	</h3>
 
 	
@@ -172,7 +172,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>6</div>
+					<div>8</div>
 				</td>
 			</tr>
 			<tr>
@@ -225,7 +225,7 @@ td {
 			<tr>
 				<td><a href="#10003">Vulnerable JS Library</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">4</td>
+				<td align="center">5</td>
 			</tr>
 			<tr>
 				<td><a href="#10010">Cookie No HttpOnly Flag</a></td>
@@ -265,7 +265,12 @@ td {
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">12</td>
+				<td align="center">11</td>
+			</tr>
+			<tr>
+				<td><a href="#10111">Authentication Request Identified</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
@@ -286,6 +291,11 @@ td {
 				<td><a href="#10049">Non-Storable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
 				<td align="center">9</td>
+			</tr>
+			<tr>
+				<td><a href="#10112">Session Management Response Identified</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
@@ -910,7 +920,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -936,7 +946,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -962,7 +972,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -988,7 +998,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1014,7 +1024,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1040,7 +1050,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1066,7 +1076,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1092,7 +1102,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1118,7 +1128,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1144,7 +1154,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1170,7 +1180,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1555,6 +1565,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/js/datatables.min.js">http://reseaupro.unpidf.fr/js/datatables.min.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">m.version=&quot;1.10.11&quot;;m.settings=[];m.models={};m.models.oSearch</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="http://reseaupro.unpidf.fr/js/jquery-1.7.2.min.js">http://reseaupro.unpidf.fr/js/jquery-1.7.2.min.js</a></td>
 					</tr>
 					<tr>
@@ -1658,7 +1694,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">4</td>
+					<td width="80%">5</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2596,32 +2632,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/176">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/176</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">X-Powered-By: PHP/5.4.45-0+deb7u14</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193</a></td>
 					</tr>
 					<tr>
@@ -2675,6 +2685,32 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: PHP/5.4.45-0+deb7u14</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3401,33 +3437,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/images/pcu/favicon.ico">http://reseaupro.unpidf.fr/images/pcu/favicon.ico</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3453,7 +3463,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3479,7 +3489,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3505,7 +3515,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3531,7 +3541,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3557,7 +3567,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3583,7 +3593,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3609,7 +3619,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3635,7 +3645,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3661,7 +3671,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3687,7 +3697,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3702,7 +3712,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">12</td>
+					<td width="80%">11</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -3737,6 +3747,136 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10021/">10021</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
+						id="10111"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Authentication Request Identified</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The given request has been identified as an authentication request. The &#39;Other Info&#39; field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to &quot;Auto-Detect&quot; then this rule will change the authentication to match the request identified.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword">http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">POST</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">lostpassword[username]</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">lostpassword[username]</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/user/login">http://reseaupro.unpidf.fr/index.php/user/login</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">POST</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">login</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">password</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/user/login">http://reseaupro.unpidf.fr/index.php/user/login</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">POST</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">login</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">password</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">3</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>This is an informational alert rather than a vulnerability and so there is nothing to fix.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10111/">10111</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -5099,6 +5239,136 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10049/">10049</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
+						id="10112"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Session Management Response Identified</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr">http://reseaupro.unpidf.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">symfony</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">871o1qliekj328t968r8s5a1h5</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr">http://reseaupro.unpidf.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">symfony</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">qsvuurvu84v7k3avfuapaeu1m2</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr">http://reseaupro.unpidf.fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">symfony</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">qsvuurvu84v7k3avfuapaeu1m2</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">3</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>This is an informational alert rather than a vulnerability and so there is nothing to fix.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10112/">10112</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
