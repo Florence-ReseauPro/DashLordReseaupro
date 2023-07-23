@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 16 Jul 2023 01:26:14",
+	"@generated": "Sun, 23 Jul 2023 01:11:30",
 	"site":[ 
 		{
 			"@name": "http://reseaupro.unpidf.fr",
@@ -34,7 +34,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "184"
+					"sourceid": "191"
 				},
 				{
 					"pluginid": "10202",
@@ -61,7 +61,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "120"
+					"sourceid": "122"
 				},
 				{
 					"pluginid": "10038",
@@ -433,7 +433,7 @@
 					"reference": "<p>https://cdn.datatables.net/1.11.3/</p><p>https://github.com/DataTables/Dist-DataTables/commit/59a8d3f8a3c1138ab08704e783bc52bfe88d7c9b</p><p>https://github.com/DataTables/DataTablesSrc/commit/a51cbe99fd3d02aa5582f97d4af1615d11a1ea03</p><p>https://cdn.datatables.net/1.10.23/</p><p>https://cdn.datatables.net/1.10.22/</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "180"
+					"sourceid": "179"
 				},
 				{
 					"pluginid": "10010",
@@ -546,7 +546,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "189"
+					"sourceid": "190"
 				},
 				{
 					"pluginid": "10063",
@@ -714,6 +714,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/176",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14",
+							"otherinfo": ""
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
 							"method": "GET",
 							"param": "",
@@ -731,14 +739,6 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14",
-							"otherinfo": ""
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1523,6 +1523,178 @@
 					"sourceid": "1"
 				},
 				{
+					"pluginid": "90005",
+					"alertRef": "90005-3",
+					"alert": "Sec-Fetch-Dest Header is Missing",
+					"name": "Sec-Fetch-Dest Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
+					"instances":[ 
+						{
+							"uri": "http://reseaupro.unpidf.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-2",
+					"alert": "Sec-Fetch-Mode Header is Missing",
+					"name": "Sec-Fetch-Mode Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
+					"instances":[ 
+						{
+							"uri": "http://reseaupro.unpidf.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-1",
+					"alert": "Sec-Fetch-Site Header is Missing",
+					"name": "Sec-Fetch-Site Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
+					"instances":[ 
+						{
+							"uri": "http://reseaupro.unpidf.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-4",
+					"alert": "Sec-Fetch-User Header is Missing",
+					"name": "Sec-Fetch-User Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
+					"instances":[ 
+						{
+							"uri": "http://reseaupro.unpidf.fr",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
 					"pluginid": "10112",
 					"alertRef": "10112",
 					"alert": "Session Management Response Identified",
@@ -1537,7 +1709,7 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "871o1qliekj328t968r8s5a1h5",
+							"evidence": "2id6vd2pgak545srcjftf5kgf1",
 							"otherinfo": "\ncookie:symfony"
 						},
 						{
@@ -1545,7 +1717,7 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "qsvuurvu84v7k3avfuapaeu1m2",
+							"evidence": "vdiuhcj499h5elsjkb5fvdkt96",
 							"otherinfo": "\ncookie:symfony"
 						},
 						{
@@ -1553,7 +1725,7 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "qsvuurvu84v7k3avfuapaeu1m2",
+							"evidence": "2id6vd2pgak545srcjftf5kgf1",
 							"otherinfo": "\ncookie:symfony"
 						}
 					],
@@ -1563,7 +1735,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -1616,7 +1788,7 @@
 							"param": "_csrf_token",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/entreprises\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=ec755d1e71a9bfd22ceee3ab38c05b66\r\n\r\nThe user-controlled value was:\r\nec755d1e71a9bfd22ceee3ab38c05b66"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/entreprises\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=db2a43b87829c52bbc49e7f287d6bd07\r\n\r\nThe user-controlled value was:\r\ndb2a43b87829c52bbc49e7f287d6bd07"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises",
@@ -1648,7 +1820,7 @@
 							"param": "_csrf_token",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/user/login\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=ec755d1e71a9bfd22ceee3ab38c05b66\r\n\r\nThe user-controlled value was:\r\nec755d1e71a9bfd22ceee3ab38c05b66"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/user/login\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=db2a43b87829c52bbc49e7f287d6bd07\r\n\r\nThe user-controlled value was:\r\ndb2a43b87829c52bbc49e7f287d6bd07"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/user/login",
@@ -1677,11 +1849,11 @@
 					],
 					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=ec755d1e71a9bfd22ceee3ab38c05b66</p><p></p><p>The user-controlled value was:</p><p>ec755d1e71a9bfd22ceee3ab38c05b66</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=db2a43b87829c52bbc49e7f287d6bd07</p><p></p><p>The user-controlled value was:</p><p>db2a43b87829c52bbc49e7f287d6bd07</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "193"
+					"sourceid": "196"
 				}
 			]
 		}
