@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 23 Jul 2023 01:42:05",
+	"@generated": "Sun, 30 Jul 2023 01:30:04",
 	"site":[ 
 		{
 			"@name": "https://www.univ-paris13.fr",
@@ -1313,33 +1313,6 @@
 					"sourceid": "1"
 				},
 				{
-					"pluginid": "10037",
-					"alertRef": "10037",
-					"alert": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
-					"name": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
-					"riskcode": "1",
-					"confidence": "2",
-					"riskdesc": "Low (Medium)",
-					"desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>",
-					"instances":[ 
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "x-powered-by: WP Rocket/3.14.2.1",
-							"otherinfo": ""
-						}
-					],
-					"count": "1",
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress \"X-Powered-By\" headers.</p>",
-					"otherinfo": "",
-					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
-					"cweid": "200",
-					"wascid": "13",
-					"sourceid": "1"
-				},
-				{
 					"pluginid": "10036",
 					"alertRef": "10036",
 					"alert": "Server Leaks Version Information via \"Server\" HTTP Response Header Field",
@@ -1434,17 +1407,9 @@
 							"attack": "",
 							"evidence": "1687941786",
 							"otherinfo": "1687941786, which evaluates to: 2023-06-28 08:43:06"
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1690018828",
-							"otherinfo": "1690018828, which evaluates to: 2023-07-22 09:40:28"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1687941785, which evaluates to: 2023-06-28 08:43:05</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -1512,17 +1477,9 @@
 							"attack": "",
 							"evidence": "select",
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected 2 times, the first in the element starting with: \"<script>\r\n\t\t\t/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListe\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Debug",
-							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected in the element starting with: \"<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cach\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected 6 times, the first in the element starting with: \"<script id='mec-frontend-script-js-extra'></p><p>var mecdata = {\"day\":\"jour\",\"days\":\"jours\",\"hour\":\"heure\",\"hours\":\"heures\",\"minute\":\"\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -1572,7 +1529,7 @@
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
-							"evidence": "public",
+							"evidence": "",
 							"otherinfo": ""
 						}
 					],
