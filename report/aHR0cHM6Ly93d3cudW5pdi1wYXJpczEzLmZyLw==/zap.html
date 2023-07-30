@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 23 Jul 2023 01:42:05
+		Generated on Sun, 30 Jul 2023 01:30:04
 	</h3>
 
 	<h3>
@@ -164,7 +164,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>6</div>
+					<div>5</div>
 				</td>
 			</tr>
 			<tr>
@@ -223,11 +223,6 @@ td {
 				<td align="center">1</td>
 			</tr>
 			<tr>
-				<td><a href="#10037">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
 				<td><a href="#10036">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></td>
 				<td align="center" class="risk-1">Low</td>
 				<td align="center">1</td>
@@ -240,7 +235,7 @@ td {
 			<tr>
 				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
@@ -250,7 +245,7 @@ td {
 			<tr>
 				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">4</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
@@ -4578,88 +4573,6 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
-						id="10037"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The web/application server is leaking information via one or more &quot;X-Powered-By&quot; HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-paris13.fr/">https://www.univ-paris13.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">x-powered-by: WP Rocket/3.14.2.1</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is configured to suppress &quot;X-Powered-By&quot; headers.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a>
-							<br />
-						
-							<a href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10037/">10037</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
 						id="10036"></a>
 						<div>Low</div></th>
 					<th class="risk-1">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</th>
@@ -4958,35 +4871,9 @@ td {
 						<td width="80%">1687941786</td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-paris13.fr/">https://www.univ-paris13.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">1690018828</td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5194,35 +5081,9 @@ td {
 						<td width="80%">select</td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-paris13.fr/">https://www.univ-paris13.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Debug</td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">4</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5370,7 +5231,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">public</td>
+						<td width="80%"></td>
 					</tr>
 				
 				<tr>
