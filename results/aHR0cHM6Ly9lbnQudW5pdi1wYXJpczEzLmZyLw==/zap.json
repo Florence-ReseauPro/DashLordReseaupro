@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 23 Jul 2023 01:52:21",
+	"@generated": "Sun, 30 Jul 2023 01:38:26",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=177CCAF310D57D3206A7AB4C99929EC9?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=8F69295AFFAE3CC3DD50FF75CAB40C8B?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -222,7 +222,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10010",
@@ -528,7 +528,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10036",
@@ -626,13 +626,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-7522604-KXdPcJpB1rdXzLOJsyhx24btGXUb7w-cas1",
-							"otherinfo": "-?\uFFFD\uFFFDm\uFFFD\u04CF\uFFFD]\uFFFD\uFFFD&\uFFFDu\uFFFD\uFFFD\uFFFD,\uFFFDl\uFFFD\\x001cv\uFFFDF]F\uFFFD\uFFFD\uFFFD\\x001a\uFFFD"
+							"evidence": "LT-8217112-sgZEsJ3CEYXIQCx3b4bGiYx9UM5gGM-cas1",
+							"otherinfo": "-?\uFFFD\uFFFD^\uFFFD\uFFFDo\uFFFD\uFFFD\uFFFD,'p\uFFFDar\\x0010\\x000b\\x001d\uFFFD\u1C62c\\x001fT3\uFFFD\\x00063\uFFFD\\x001a\uFFFD"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFDm\uFFFD\u04CF\uFFFD]\uFFFD\uFFFD&\uFFFDu\uFFFD\uFFFD\uFFFD,\uFFFDl\uFFFD\\x001cv\uFFFDF]F\uFFFD\uFFFD\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD^\uFFFD\uFFFDo\uFFFD\uFFFD\uFFFD,'p\uFFFDar\\x0010\\x000b\\x001d\uFFFD\u1C62c\\x001fT3\uFFFD\\x00063\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -874,7 +874,7 @@
 							"method": "GET",
 							"param": "CASSESSIONID",
 							"attack": "",
-							"evidence": "177CCAF310D57D3206A7AB4C99929EC9",
+							"evidence": "8F69295AFFAE3CC3DD50FF75CAB40C8B",
 							"otherinfo": "\ncookie:CASSESSIONID"
 						},
 						{
@@ -882,7 +882,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "l6k15gric12h9e8fk1kqr0s6s0",
+							"evidence": "mbfmd9uekruahitgausp7i15e0",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -890,7 +890,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "v89eq0isbo10c42tbgqajmh5s7",
+							"evidence": "tj82os728stagqffpria2aj9a6",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -898,7 +898,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "1o9tn2nj8e73f5l2l2du6fgde6",
+							"evidence": "ejl3ncmfqrjeeoml32pu9l0eh1",
 							"otherinfo": "\ncookie:UP13ENT"
 						}
 					],
@@ -951,7 +951,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				}
 			]
 		}
