@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 23 Jul 2023 01:18:07",
+	"@generated": "Sun, 30 Jul 2023 01:13:27",
 	"site":[ 
 		{
 			"@name": "https://www.univ-paris13.fr",
@@ -853,414 +853,6 @@
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://webapi.affluences.com/js/webapi_latest.min.js",
-							"attack": "",
-							"evidence": "<script charset=\"UTF-8\" src=\"https://webapi.affluences.com/js/webapi_latest.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/complianz-gdpr-premium/cookiebanner/js/complianz.min.js?ver=6.5.2",
-							"attack": "",
-							"evidence": "<script defer src='https://www.univ-spn.fr/wp-content/plugins/complianz-gdpr-premium/cookiebanner/js/complianz.min.js?ver=6.5.2' id='cmplz-cookiebanner-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/complianz-gdpr-premium/cookiebanner/js/migrate.min.js?ver=6.5.2",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/complianz-gdpr-premium/cookiebanner/js/migrate.min.js?ver=6.5.2' id='cmplz-migrate-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/ele-custom-skin-pro/assets/js/ecspro.js?ver=3.2.4",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/ele-custom-skin-pro/assets/js/ecspro.js?ver=3.2.4' id='ecspro-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/ele-custom-skin/assets/js/ecs.js?ver=3.1.7",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/ele-custom-skin/assets/js/ecs.js?ver=3.1.7' id='ecs-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/ele-custom-skin/assets/js/ecs_ajax_pagination.js?ver=3.1.7",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/ele-custom-skin/assets/js/ecs_ajax_pagination.js?ver=3.1.7' id='ecs_ajax_load-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.14.1",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.14.1' id='elementor-pro-frontend-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.14.1",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.14.1' id='pro-preloaded-elements-handlers-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.14.1",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.14.1' id='elementor-pro-webpack-runtime-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1' id='smartmenus-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.14.1",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.14.1' id='e-sticky-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.1",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.1' id='elementor-frontend-modules-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.14.1",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.14.1' id='elementor-frontend-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.14.1",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.14.1' id='preloaded-modules-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.14.1",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.14.1' id='elementor-webpack-runtime-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.9.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.9.0' id='elementor-dialog-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.14.1",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.14.1' id='share-link-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=2.9.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=2.9.0' id='elementskit-framework-js-frontend-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=2.9.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=2.9.0' id='animate-circle-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=2.9.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=2.9.0' id='elementskit-elementor-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=2.9.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=2.9.0' id='ekit-widget-scripts-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/events.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/events.js?ver=6.11.0' id='mec-events-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/flipcount.js?ver=6.2.2",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/flipcount.js?ver=6.2.2' id='mec-flipcount-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/frontend.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/frontend.js?ver=6.11.0' id='mec-frontend-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/googlemap.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/googlemap.js?ver=6.11.0' id='mec-googlemap-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/jquery.typewatch.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/jquery.typewatch.js?ver=6.11.0' id='mec-typekit-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/mec-general-calendar.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/js/mec-general-calendar.js?ver=6.11.0' id='mec-general-calendar-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/clusterer/markerclusterer.min.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/clusterer/markerclusterer.min.js?ver=6.11.0' id='mec-clustering-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/colorbrightness/colorbrightness.min.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/colorbrightness/colorbrightness.min.js?ver=6.11.0' id='mec-colorbrightness-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/featherlight/featherlight.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/featherlight/featherlight.js?ver=6.11.0' id='featherlight-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/lity/lity.min.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/lity/lity.min.js?ver=6.11.0' id='mec-lity-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/owl-carousel/owl.carousel.min.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/owl-carousel/owl.carousel.min.js?ver=6.11.0' id='mec-owl-carousel-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/richmarker/richmarker.min.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/richmarker/richmarker.min.js?ver=6.11.0' id='mec-richmarker-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/select2/select2.full.min.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/select2/select2.full.min.js?ver=6.11.0' id='mec-select2-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/tooltip/tooltip.js?ver=6.11.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/modern-events-calendar/assets/packages/tooltip/tooltip.js?ver=6.11.0' id='mec-tooltip-script-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/plugins/pojo-accessibility/assets/js/app.min.js?ver=1.0.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/plugins/pojo-accessibility/assets/js/app.min.js?ver=1.0.0' id='pojo-a11y-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.1.6",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.1.6' id='astra-flexibility-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.1.6",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.1.6' id='astra-theme-js-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-64ba29b23dc251-43237440.js?ver=4.1.6",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-64ba29b23dc251-43237440.js?ver=4.1.6' id='astra-addon-js-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5' id='wp-hooks-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae' id='wp-i18n-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-includes/js/imagesloaded.min.js?ver=4.1.4",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-includes/js/jquery/jquery.min.js?ver=3.6.4",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "https://www.univ-spn.fr/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.2",
-							"attack": "",
-							"evidence": "<script src='https://www.univ-spn.fr/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.2' id='jquery-ui-datepicker-js'></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.univ-paris13.fr/welcome-desk/",
 							"method": "GET",
 							"param": "https://webapi.affluences.com/js/webapi_latest.min.js",
@@ -1629,13 +1221,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "97",
+					"count": "46",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10063",
@@ -1670,41 +1262,6 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
-				},
-				{
-					"pluginid": "10037",
-					"alertRef": "10037",
-					"alert": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
-					"name": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
-					"riskcode": "1",
-					"confidence": "2",
-					"riskdesc": "Low (Medium)",
-					"desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>",
-					"instances":[ 
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "x-powered-by: WP Rocket/3.14.2.1",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/welcome-desk/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "x-powered-by: WP Rocket/3.14.2.1",
-							"otherinfo": ""
-						}
-					],
-					"count": "2",
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress \"X-Powered-By\" headers.</p>",
-					"otherinfo": "",
-					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
-					"cweid": "200",
-					"wascid": "13",
 					"sourceid": "4"
 				},
 				{
@@ -1828,14 +1385,6 @@
 							"otherinfo": "1687941786, which evaluates to: 2023-06-28 08:43:06"
 						},
 						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1690018828",
-							"otherinfo": "1690018828, which evaluates to: 2023-07-22 09:40:28"
-						},
-						{
 							"uri": "https://www.univ-paris13.fr/welcome-desk/",
 							"method": "GET",
 							"param": "",
@@ -1850,17 +1399,9 @@
 							"attack": "",
 							"evidence": "1687941786",
 							"otherinfo": "1687941786, which evaluates to: 2023-06-28 08:43:06"
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/welcome-desk/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1689948995",
-							"otherinfo": "1689948995, which evaluates to: 2023-07-21 14:16:35"
 						}
 					],
-					"count": "6",
+					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1687941785, which evaluates to: 2023-06-28 08:43:05</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -1960,25 +1501,9 @@
 							"attack": "",
 							"evidence": "select",
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected 2 times, the first in the element starting with: \"<script>\r\n\t\t\t/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListe\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Debug",
-							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected in the element starting with: \"<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cach\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/welcome-desk/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Debug",
-							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected in the element starting with: \"<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cach\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "8",
+					"count": "6",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected 6 times, the first in the element starting with: \"<script id='mec-frontend-script-js-extra'></p><p>var mecdata = {\"day\":\"jour\",\"days\":\"jours\",\"hour\":\"heure\",\"hours\":\"heures\",\"minute\":\"\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -2036,7 +1561,7 @@
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
-							"evidence": "public",
+							"evidence": "",
 							"otherinfo": ""
 						},
 						{
@@ -2044,7 +1569,7 @@
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
-							"evidence": "public",
+							"evidence": "",
 							"otherinfo": ""
 						}
 					],
@@ -2089,7 +1614,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90005",
@@ -2124,7 +1649,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90005",
@@ -2159,7 +1684,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90005",
@@ -2194,7 +1719,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10049",
@@ -2253,7 +1778,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "10"
 				}
 			]
 		}
