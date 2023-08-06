@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 30 Jul 2023 01:23:03",
+	"@generated": "Sun, 6 Aug 2023 01:18:52",
 	"site":[ 
 		{
 			"@name": "https://datakairos.unif.fr",
@@ -93,7 +93,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10063",
@@ -277,14 +277,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "nginx/1.18.0 (Ubuntu)",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/favicon.svg",
 							"method": "GET",
 							"param": "",
@@ -309,13 +301,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the \"Server\" header or provide generic details.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10035",
@@ -329,6 +321,14 @@
 					"instances":[ 
 						{
 							"uri": "https://datakairos.unif.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-1394ab50.43ae3012.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -377,14 +377,6 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -663,17 +655,9 @@
 							"attack": "",
 							"evidence": "query",
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-93757618\"],{\"0d3b\":function(e,t,r){var n=r(\"d039\"),a=r(\"b622\")\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://datakairos.unif.fr/js/chunk-ec858992.c95758cd.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-ec858992\"],{\"166a\":function(t,e,i){},\"169a\":function(t,e,i){\"u\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "13",
+					"count": "12",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-1ab22a73\"],{\"0bc6\":function(t,e,i){},\"166a\":function(t,e,i){},\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -765,7 +749,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -800,7 +784,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -835,7 +819,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -870,7 +854,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -982,14 +966,6 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
 							"uri": "https://datakairos.unif.fr/favicon.svg",
 							"method": "GET",
 							"param": "",
@@ -1014,13 +990,13 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				}
 			]
 		}
