@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 30 Jul 2023 01:38:26",
+	"@generated": "Sun, 6 Aug 2023 01:30:55",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=8F69295AFFAE3CC3DD50FF75CAB40C8B?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=521128885A7512BD3424D3B18B1F40ED?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -626,13 +626,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-8217112-sgZEsJ3CEYXIQCx3b4bGiYx9UM5gGM-cas1",
-							"otherinfo": "-?\uFFFD\uFFFD^\uFFFD\uFFFDo\uFFFD\uFFFD\uFFFD,'p\uFFFDar\\x0010\\x000b\\x001d\uFFFD\u1C62c\\x001fT3\uFFFD\\x00063\uFFFD\\x001a\uFFFD"
+							"evidence": "LT-8874720-kKz0t2Y5YmVy5asIqveyWDV6N6P4q0-cas1",
+							"otherinfo": "-?\uFFFD\uFFFD;\uFFFDO\uFFFD+=-\u064EX\uFFFD\\\uFFFDj\uFFFD*\uFFFD\uFFFD\r^\uFFFD\uFFFD\uFFFD*\uFFFD\uFFFD\\x001a\uFFFD"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFD^\uFFFD\uFFFDo\uFFFD\uFFFD\uFFFD,'p\uFFFDar\\x0010\\x000b\\x001d\uFFFD\u1C62c\\x001fT3\uFFFD\\x00063\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD;\uFFFDO\uFFFD+=-\u064EX\uFFFD\\\uFFFDj\uFFFD*\uFFFD\uFFFD\r^\uFFFD\uFFFD\uFFFD*\uFFFD\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -874,7 +874,7 @@
 							"method": "GET",
 							"param": "CASSESSIONID",
 							"attack": "",
-							"evidence": "8F69295AFFAE3CC3DD50FF75CAB40C8B",
+							"evidence": "521128885A7512BD3424D3B18B1F40ED",
 							"otherinfo": "\ncookie:CASSESSIONID"
 						},
 						{
@@ -882,7 +882,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "mbfmd9uekruahitgausp7i15e0",
+							"evidence": "5hvhl58jar0ilv9ocdkrcdsno4",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -890,7 +890,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "tj82os728stagqffpria2aj9a6",
+							"evidence": "me53ihueholj5ihkpuv4gb9bv4",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -898,7 +898,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "ejl3ncmfqrjeeoml32pu9l0eh1",
+							"evidence": "d930sd7js7ucupt3d7j9tbgsh3",
 							"otherinfo": "\ncookie:UP13ENT"
 						}
 					],
