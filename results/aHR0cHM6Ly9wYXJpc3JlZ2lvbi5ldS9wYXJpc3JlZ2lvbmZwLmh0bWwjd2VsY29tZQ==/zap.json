@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 6 Aug 2023 01:13:03",
+	"@generated": "Sun, 13 Aug 2023 01:07:07",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -58,7 +58,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "37"
+					"sourceid": "38"
 				},
 				{
 					"pluginid": "10038",
@@ -208,7 +208,7 @@
 					"reference": "",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "37"
+					"sourceid": "38"
 				},
 				{
 					"pluginid": "90003",
@@ -269,7 +269,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/study-research.html",
+							"uri": "https://parisregion.eu/sitemap.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -277,7 +277,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/study-research.html",
+							"uri": "https://parisregion.eu/sitemap.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -334,7 +334,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/28236</p><p>https://github.com/twbs/bootstrap/issues/20184</p><p>https://github.com/advisories/GHSA-ph58-4vrj-w6hr</p><p>https://github.com/twbs/bootstrap/issues/20631</p><p>https://github.com/advisories/GHSA-4p24-vmcr-4gqj</p><p>https://nvd.nist.gov/vuln/detail/CVE-2018-20676</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "167"
+					"sourceid": "166"
 				},
 				{
 					"pluginid": "10017",
@@ -618,7 +618,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "37"
+					"sourceid": "38"
 				},
 				{
 					"pluginid": "10094",
@@ -725,7 +725,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "218"
+					"sourceid": "281"
 				},
 				{
 					"pluginid": "10027",
@@ -1067,7 +1067,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.xml",
+							"uri": "https://parisregion.eu/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1110,7 +1110,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.xml",
+							"uri": "https://parisregion.eu/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1153,7 +1153,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.xml",
+							"uri": "https://parisregion.eu/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1196,7 +1196,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.xml",
+							"uri": "https://parisregion.eu/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1223,7 +1223,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.css",
+							"uri": "https://parisregion.eu/bower_components/fontawesome/css/font-awesome.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1232,6 +1232,14 @@
 						},
 						{
 							"uri": "https://parisregion.eu/img/favicon.ico",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=604800",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://parisregion.eu/img/favicon.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1255,7 +1263,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -1290,14 +1298,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/news.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://parisregion.eu/parisregionfp.html",
 							"method": "GET",
 							"param": "",
@@ -1322,7 +1322,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
