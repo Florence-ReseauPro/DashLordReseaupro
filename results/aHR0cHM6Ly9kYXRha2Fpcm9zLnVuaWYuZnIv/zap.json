@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 6 Aug 2023 01:18:52",
+	"@generated": "Sun, 13 Aug 2023 01:13:44",
 	"site":[ 
 		{
 			"@name": "https://datakairos.unif.fr",
@@ -71,14 +71,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/robots.txt",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/sitemap.xml",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -87,7 +79,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
@@ -170,7 +162,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-2d0e5e97.0f155758.js",
+							"uri": "https://datakairos.unif.fr/js/chunk-2d21402c.5b1ec646.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -245,14 +237,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.8046ce1e.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "nginx/1.18.0 (Ubuntu)",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/css/chunk-345a4851.8733232e.css",
 							"method": "GET",
 							"param": "",
@@ -270,6 +254,14 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.18.0 (Ubuntu)",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -352,14 +344,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.8046ce1e.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/css/chunk-345a4851.8733232e.css",
 							"method": "GET",
 							"param": "",
@@ -377,6 +361,14 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -414,7 +406,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10021",
@@ -459,14 +451,6 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.8046ce1e.css",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
 							"uri": "https://datakairos.unif.fr/css/chunk-345a4851.8733232e.css",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -484,6 +468,14 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -706,7 +698,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10015",
@@ -749,7 +741,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -770,7 +762,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/favicon.svg",
+							"uri": "https://datakairos.unif.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -778,13 +778,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -805,7 +805,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/favicon.svg",
+							"uri": "https://datakairos.unif.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -813,13 +821,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -840,7 +848,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/favicon.svg",
+							"uri": "https://datakairos.unif.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -848,13 +864,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -875,7 +891,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/favicon.svg",
+							"uri": "https://datakairos.unif.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -883,7 +907,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -934,14 +958,6 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-25b709a1.8046ce1e.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
 							"uri": "https://datakairos.unif.fr/css/chunk-345a4851.8733232e.css",
 							"method": "GET",
 							"param": "",
@@ -959,6 +975,14 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4055a115.4d496dc5.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-41001690.fcc7bac3.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
