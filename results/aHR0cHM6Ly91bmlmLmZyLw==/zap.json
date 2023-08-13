@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 6 Aug 2023 01:03:51",
+	"@generated": "Sun, 13 Aug 2023 00:58:36",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -178,6 +178,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://unif.fr/international/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
@@ -211,14 +219,6 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/sms-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -396,7 +396,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202331.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202332.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
@@ -428,7 +428,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202331.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202332.js' defer></script>",
 							"otherinfo": ""
 						}
 					],
@@ -465,7 +465,7 @@
 					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://security.snyk.io/vuln/SNYK-JS-MOMENT-2944238</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "567"
+					"sourceid": "572"
 				},
 				{
 					"pluginid": "10010",
@@ -478,21 +478,61 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
+							"uri": "https://unif.fr/wp-login.php?action=lostpassword",
+							"method": "GET",
+							"param": "wordpress_test_cookie",
+							"attack": "",
+							"evidence": "Set-Cookie: wordpress_test_cookie",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://unif.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "wordpress_test_cookie",
 							"attack": "",
 							"evidence": "Set-Cookie: wordpress_test_cookie",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "wordpress_test_cookie",
+							"attack": "",
+							"evidence": "Set-Cookie: wordpress_test_cookie",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "wp_lang",
+							"attack": "",
+							"evidence": "Set-Cookie: wp_lang",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php",
+							"method": "POST",
+							"param": "tk_ai",
+							"attack": "",
+							"evidence": "Set-Cookie: tk_ai",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php",
+							"method": "POST",
+							"param": "wordpress_test_cookie",
+							"attack": "",
+							"evidence": "Set-Cookie: wordpress_test_cookie",
+							"otherinfo": ""
 						}
 					],
-					"count": "1",
+					"count": "6",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "805"
+					"sourceid": "1421"
 				},
 				{
 					"pluginid": "10054",
@@ -505,21 +545,61 @@
 					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
 						{
+							"uri": "https://unif.fr/wp-login.php?action=lostpassword",
+							"method": "GET",
+							"param": "wordpress_test_cookie",
+							"attack": "",
+							"evidence": "Set-Cookie: wordpress_test_cookie",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://unif.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F",
 							"method": "GET",
 							"param": "wordpress_test_cookie",
 							"attack": "",
 							"evidence": "Set-Cookie: wordpress_test_cookie",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "wordpress_test_cookie",
+							"attack": "",
+							"evidence": "Set-Cookie: wordpress_test_cookie",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "wp_lang",
+							"attack": "",
+							"evidence": "Set-Cookie: wp_lang",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php",
+							"method": "POST",
+							"param": "tk_ai",
+							"attack": "",
+							"evidence": "Set-Cookie: tk_ai",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php",
+							"method": "POST",
+							"param": "wordpress_test_cookie",
+							"attack": "",
+							"evidence": "Set-Cookie: wordpress_test_cookie",
+							"otherinfo": ""
 						}
 					],
-					"count": "1",
+					"count": "6",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "805"
+					"sourceid": "1421"
 				},
 				{
 					"pluginid": "10017",
@@ -542,9 +622,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202331.js",
+							"param": "https://stats.wp.com/e-202332.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202331.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202332.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
@@ -556,7 +636,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "//www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
@@ -564,15 +644,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202331.js",
+							"param": "https://stats.wp.com/e-202332.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202331.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202332.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
@@ -580,7 +660,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/nos-valeurs/",
+							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "//www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
@@ -588,15 +668,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/nos-valeurs/",
+							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202331.js",
+							"param": "https://stats.wp.com/e-202332.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202331.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202332.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/nos-valeurs/",
+							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
@@ -637,7 +717,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "560"
+					"sourceid": "569"
 				},
 				{
 					"pluginid": "10063",
@@ -667,6 +747,14 @@
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/international/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -707,14 +795,6 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/sms-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1090,41 +1170,41 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1691272800",
-							"otherinfo": "1691272800, which evaluates to: 2023-08-05 22:00:00"
+							"evidence": "1691877600",
+							"otherinfo": "1691877600, which evaluates to: 2023-08-12 22:00:00"
 						},
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1691272800",
-							"otherinfo": "1691272800, which evaluates to: 2023-08-05 22:00:00"
+							"evidence": "1691877600",
+							"otherinfo": "1691877600, which evaluates to: 2023-08-12 22:00:00"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1691272800",
-							"otherinfo": "1691272800, which evaluates to: 2023-08-05 22:00:00"
+							"evidence": "1691877600",
+							"otherinfo": "1691877600, which evaluates to: 2023-08-12 22:00:00"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1691272800",
-							"otherinfo": "1691272800, which evaluates to: 2023-08-05 22:00:00"
+							"evidence": "1691877600",
+							"otherinfo": "1691877600, which evaluates to: 2023-08-12 22:00:00"
 						}
 					],
 					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1691272800, which evaluates to: 2023-08-05 22:00:00</p>",
+					"otherinfo": "<p>1691877600, which evaluates to: 2023-08-12 22:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "124"
+					"sourceid": "138"
 				},
 				{
 					"pluginid": "10021",
@@ -1453,7 +1533,34 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "547"
+					"sourceid": "548"
+				},
+				{
+					"pluginid": "10029",
+					"alertRef": "10029",
+					"alert": "Cookie Poisoning",
+					"name": "Cookie Poisoning",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where cookie parameters might be controlled. This is called a cookie poisoning attack, and becomes exploitable when an attacker can manipulate the cookie in various ways. In some cases this will not be exploitable, however, allowing URL parameters to set cookie values is generally considered a bug.</p>",
+					"instances":[ 
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "wp_lang",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "An attacker may be able to poison cookie values through URL parameters.  Try injecting a semicolon to see if you can add cookie values (e.g. name=controlledValue;name=anotherValue;).\n\nThis was identified at:\r\n\r\nhttps://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR\r\n\r\nUser-input was found in the following cookie:\r\nwp_lang=fr_FR; path=/; secure\r\n\r\nThe user input was:\r\nwp_lang=fr_FR"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Do not allow user input to control cookie names and values. If some query string parameters must be set in cookie values, be sure to filter out semicolon's that can serve as name/value pair delimiters.</p>",
+					"otherinfo": "<p>An attacker may be able to poison cookie values through URL parameters.  Try injecting a semicolon to see if you can add cookie values (e.g. name=controlledValue;name=anotherValue;).</p><p></p><p>This was identified at:</p><p></p><p>https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR</p><p></p><p>User-input was found in the following cookie:</p><p>wp_lang=fr_FR; path=/; secure</p><p></p><p>The user input was:</p><p>wp_lang=fr_FR</p>",
+					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-cookie</p>",
+					"cweid": "20",
+					"wascid": "20",
+					"sourceid": "1444"
 				},
 				{
 					"pluginid": "10027",
@@ -1694,7 +1801,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10015",
@@ -1763,6 +1870,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://unif.fr/robots.txt",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "cache-control",
@@ -1787,7 +1902,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "11",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
@@ -2000,7 +2115,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "805"
+					"sourceid": "634"
 				},
 				{
 					"pluginid": "10049",
@@ -2118,7 +2233,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "103"
+					"sourceid": "104"
 				},
 				{
 					"pluginid": "10031",
@@ -2130,6 +2245,30 @@
 					"riskdesc": "Informational (Low)",
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
+						{
+							"uri": "https://unif.fr/wp-login.php?action=lostpassword",
+							"method": "GET",
+							"param": "action",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?action=lostpassword\r\n\r\nappears to include user input in: \r\n\r\na(n) [form] tag [id] attribute \r\n\r\nThe user input found was:\r\naction=lostpassword\r\n\r\nThe user-controlled value was:\r\nlostpasswordform"
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?action=lostpassword",
+							"method": "GET",
+							"param": "action",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?action=lostpassword\r\n\r\nappears to include user input in: \r\n\r\na(n) [form] tag [name] attribute \r\n\r\nThe user input found was:\r\naction=lostpassword\r\n\r\nThe user-controlled value was:\r\nlostpasswordform"
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?action=lostpassword",
+							"method": "GET",
+							"param": "action",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?action=lostpassword\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\naction=lostpassword\r\n\r\nThe user-controlled value was:\r\nlostpassword"
+						},
 						{
 							"uri": "https://unif.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F",
 							"method": "GET",
@@ -2193,15 +2332,87 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F\r\n\r\nappears to include user input in: \r\n\r\na(n) [script] tag [src] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://unif.fr/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://unif.fr/wp-admin/js/user-profile.min.js?ver=6.2.2"
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [a] tag [href] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://unif.fr/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://unif.fr/"
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://unif.fr/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://unif.fr/wp-admin/"
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://unif.fr/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://unif.fr/wp-admin/edit.php"
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [link] tag [href] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://unif.fr/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://unif.fr/wp-admin/css/forms.min.css?ver=6.2.2"
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [link] tag [href] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://unif.fr/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://unif.fr/wp-admin/css/l10n.min.css?ver=6.2.2"
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [link] tag [href] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://unif.fr/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://unif.fr/wp-admin/css/login.min.css?ver=6.2.2"
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [script] tag [src] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://unif.fr/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://unif.fr/wp-admin/js/password-strength-meter.min.js?ver=6.2.2"
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [script] tag [src] attribute \r\n\r\nThe user input found was:\r\nredirect_to=https://unif.fr/wp-admin/\r\n\r\nThe user-controlled value was:\r\nhttps://unif.fr/wp-admin/js/user-profile.min.js?ver=6.2.2"
+						},
+						{
+							"uri": "https://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR",
+							"method": "GET",
+							"param": "wp_lang",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttps://unif.fr/wp-login.php?redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F&wp_lang=fr_FR\r\n\r\nappears to include user input in: \r\n\r\na(n) [option] tag [value] attribute \r\n\r\nThe user input found was:\r\nwp_lang=fr_FR\r\n\r\nThe user-controlled value was:\r\nfr_fr"
 						}
 					],
-					"count": "8",
+					"count": "20",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://unif.fr/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Funif.fr%2Fwp-admin%2F</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [a] tag [href] attribute </p><p></p><p>The user input found was:</p><p>redirect_to=https://unif.fr/wp-admin/</p><p></p><p>The user-controlled value was:</p><p>https://unif.fr/</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://unif.fr/wp-login.php?action=lostpassword</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [form] tag [id] attribute </p><p></p><p>The user input found was:</p><p>action=lostpassword</p><p></p><p>The user-controlled value was:</p><p>lostpasswordform</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "805"
+					"sourceid": "1421"
 				}
 			]
 		}
