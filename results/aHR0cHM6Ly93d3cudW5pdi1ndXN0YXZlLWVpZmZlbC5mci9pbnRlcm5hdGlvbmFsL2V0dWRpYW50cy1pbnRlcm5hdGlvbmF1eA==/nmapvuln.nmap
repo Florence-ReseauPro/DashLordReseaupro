@@ -1,13 +1,13 @@
-# Nmap 7.92 scan initiated Sun Aug  6 01:43:19 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-gustave-eiffel.fr
+# Nmap 7.92 scan initiated Sun Aug 13 01:35:42 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-gustave-eiffel.fr
 Nmap scan report for www.univ-gustave-eiffel.fr (193.55.45.10)
-Host is up (0.084s latency).
+Host is up (0.12s latency).
 rDNS record for 193.55.45.10: wwwdev.univ-eiffel.fr
 Not shown: 998 filtered tcp ports (no-response)
-PORT    STATE SERVICE   VERSION
-80/tcp  open  http      Apache httpd
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Apache httpd
 |_http-server-header: Apache
-443/tcp open  ssl/https Apache
+443/tcp open  ssl/http Apache httpd
 |_http-server-header: Apache
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Aug  6 01:43:58 2023 -- 1 IP address (1 host up) scanned in 39.68 seconds
+# Nmap done at Sun Aug 13 01:36:07 2023 -- 1 IP address (1 host up) scanned in 25.28 seconds
