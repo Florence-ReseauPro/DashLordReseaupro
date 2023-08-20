@@ -1,7 +1,7 @@
 {
-	"@programName": "OWASP ZAP",
+	"@programName": "ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 13 Aug 2023 00:58:36",
+	"@generated": "Sun, 20 Aug 2023 00:57:10",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -178,14 +178,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/international/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
@@ -219,6 +211,14 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/sms-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -396,7 +396,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202332.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202333.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
@@ -428,7 +428,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202332.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202333.js' defer></script>",
 							"otherinfo": ""
 						}
 					],
@@ -465,7 +465,7 @@
 					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://security.snyk.io/vuln/SNYK-JS-MOMENT-2944238</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "572"
+					"sourceid": "568"
 				},
 				{
 					"pluginid": "10010",
@@ -532,7 +532,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1421"
+					"sourceid": "1425"
 				},
 				{
 					"pluginid": "10054",
@@ -599,7 +599,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "1421"
+					"sourceid": "1425"
 				},
 				{
 					"pluginid": "10017",
@@ -622,9 +622,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202332.js",
+							"param": "https://stats.wp.com/e-202333.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202332.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202333.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
@@ -646,9 +646,9 @@
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202332.js",
+							"param": "https://stats.wp.com/e-202333.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202332.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202333.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
@@ -670,9 +670,9 @@
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202332.js",
+							"param": "https://stats.wp.com/e-202333.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202332.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202333.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
@@ -717,7 +717,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "569"
+					"sourceid": "561"
 				},
 				{
 					"pluginid": "10063",
@@ -747,14 +747,6 @@
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/international/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -795,6 +787,14 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://unif.fr/sms-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1170,41 +1170,41 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1691877600",
-							"otherinfo": "1691877600, which evaluates to: 2023-08-12 22:00:00"
+							"evidence": "1692482400",
+							"otherinfo": "1692482400, which evaluates to: 2023-08-19 22:00:00"
 						},
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1691877600",
-							"otherinfo": "1691877600, which evaluates to: 2023-08-12 22:00:00"
+							"evidence": "1692482400",
+							"otherinfo": "1692482400, which evaluates to: 2023-08-19 22:00:00"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1691877600",
-							"otherinfo": "1691877600, which evaluates to: 2023-08-12 22:00:00"
+							"evidence": "1692482400",
+							"otherinfo": "1692482400, which evaluates to: 2023-08-19 22:00:00"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1691877600",
-							"otherinfo": "1691877600, which evaluates to: 2023-08-12 22:00:00"
+							"evidence": "1692482400",
+							"otherinfo": "1692482400, which evaluates to: 2023-08-19 22:00:00"
 						}
 					],
 					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1691877600, which evaluates to: 2023-08-12 22:00:00</p>",
+					"otherinfo": "<p>1692482400, which evaluates to: 2023-08-19 22:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "138"
+					"sourceid": "189"
 				},
 				{
 					"pluginid": "10021",
@@ -1533,7 +1533,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "548"
+					"sourceid": "544"
 				},
 				{
 					"pluginid": "10029",
@@ -1560,7 +1560,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-cookie</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1444"
+					"sourceid": "1449"
 				},
 				{
 					"pluginid": "10027",
@@ -1801,7 +1801,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "10"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -2115,7 +2115,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "634"
+					"sourceid": "637"
 				},
 				{
 					"pluginid": "10049",
@@ -2412,7 +2412,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1421"
+					"sourceid": "1425"
 				}
 			]
 		}
