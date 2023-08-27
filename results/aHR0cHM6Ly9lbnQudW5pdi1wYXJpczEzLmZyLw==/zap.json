@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 20 Aug 2023 01:10:41",
+	"@generated": "Sun, 27 Aug 2023 01:34:06",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=8E4D434D0FE168BDB7A1B594DBB179FD?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=29DB15CDB586C93AB174EF348F70F8C1?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -222,7 +222,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10010",
@@ -528,7 +528,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10036",
@@ -609,6 +609,33 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"uri": "https://ent.univ-paris13.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "LT-1093866-uX7zSSY7fEPPmHcCpwl6Fz6WLtZRhB-cas1",
+							"otherinfo": "-?\uFFFD\uFFFD\uFFFD\uFFFD\uBBEE_\uFFFD\uFFFDI\uFFFD\uFFFD\\x0010\uFFFD\uFFFD\\x001d\uFFFD\uFFFD\uFFFD^\uFFFD\u03E5\uFFFD\uFFFD\uFFFDa\\x0007\uFFFD\\x001a\uFFFD"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD\uFFFD\uFFFD\uBBEE_\uFFFD\uFFFDI\uFFFD\uFFFD\\x0010\uFFFD\uFFFD\\x001d\uFFFD\uFFFD\uFFFD^\uFFFD\u03E5\uFFFD\uFFFD\uFFFDa\\x0007\uFFFD\\x001a\uFFFD</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
 					"sourceid": "1"
 				},
 				{
@@ -711,14 +738,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://ent.univ-paris13.fr/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -727,7 +746,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -754,14 +773,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://ent.univ-paris13.fr/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -770,7 +781,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -797,14 +808,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://ent.univ-paris13.fr/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -813,7 +816,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -840,14 +843,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://ent.univ-paris13.fr/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -856,7 +851,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -879,7 +874,7 @@
 							"method": "GET",
 							"param": "CASSESSIONID",
 							"attack": "",
-							"evidence": "8E4D434D0FE168BDB7A1B594DBB179FD",
+							"evidence": "29DB15CDB586C93AB174EF348F70F8C1",
 							"otherinfo": "\ncookie:CASSESSIONID"
 						},
 						{
@@ -887,7 +882,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "kf8oalkti13ib5s2kct45t5s95",
+							"evidence": "siral4ds9g2jta6cfs17isqk73",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -895,7 +890,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "g77lsfmstmmaqfg1bqbid5fvg1",
+							"evidence": "kivoqippeu3riccgmlspi96o56",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -903,7 +898,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "km14jc44msma49qfsesjssm1j1",
+							"evidence": "h4d184jp65fn9aq9uqnatmr5i1",
 							"otherinfo": "\ncookie:UP13ENT"
 						}
 					],
@@ -956,7 +951,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "6"
 				}
 			]
 		}
