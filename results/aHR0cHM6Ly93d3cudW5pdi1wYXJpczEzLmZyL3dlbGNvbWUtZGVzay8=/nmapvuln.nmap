@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Aug 20 01:02:03 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-paris13.fr
+# Nmap 7.92 scan initiated Sun Aug 27 01:09:01 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-paris13.fr
 Nmap scan report for www.univ-paris13.fr (81.194.43.211)
-Host is up (0.16s latency).
+Host is up (0.081s latency).
 Other addresses for www.univ-paris13.fr (not scanned): 81.194.43.212
 rDNS record for 81.194.43.211: lb.univ-paris13.fr
 Not shown: 998 filtered tcp ports (no-response)
@@ -25,24 +25,14 @@ PORT     STATE SERVICE       VERSION
 |_    </body></html>
 8443/tcp open  ssl/https-alt
 | fingerprint-strings: 
-|   FourOhFourRequest: 
+|   FourOhFourRequest, GetRequest, HTTPOptions: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 20 Aug 2023 01:02:30 GMT
-|     Missing Host header
-|   GetRequest: 
-|     HTTP/1.1 400 Bad Request
-|     Connection: close
-|     Date: Sun, 20 Aug 2023 01:02:28 GMT
-|     Missing Host header
-|   HTTPOptions: 
-|     HTTP/1.1 400 Bad Request
-|     Connection: close
-|     Date: Sun, 20 Aug 2023 01:02:29 GMT
+|     Date: Sun, 27 Aug 2023 01:09:26 GMT
 |_    Missing Host header
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=8/20%Time=64E16624%P=x86_64-alpine-linux
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=8/27%Time=64EAA245%P=x86_64-alpine-linux
 SF:-musl%r(GetRequest,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\nca
 SF:che-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><bo
 SF:dy><h1>503\x20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20availa
@@ -77,15 +67,15 @@ SF:Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nY
 SF:our\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n"
 SF:);
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=8/20%Time=64E16624%P=x86_64-alpine-linu
+SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=8/27%Time=64EAA246%P=x86_64-alpine-linu
 SF:x-musl%r(GetRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnectio
-SF:n:\x20close\r\nDate:\x20Sun,\x2020\x20Aug\x202023\x2001:02:28\x20GMT\r\
+SF:n:\x20close\r\nDate:\x20Sun,\x2027\x20Aug\x202023\x2001:09:26\x20GMT\r\
 SF:n\r\nMissing\x20Host\x20header")%r(HTTPOptions,67,"HTTP/1\.1\x20400\x20
-SF:Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Sun,\x2020\x20Aug\x2
-SF:02023\x2001:02:29\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(FourOhFou
+SF:Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Sun,\x2027\x20Aug\x2
+SF:02023\x2001:09:26\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(FourOhFou
 SF:rRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close
-SF:\r\nDate:\x20Sun,\x2020\x20Aug\x202023\x2001:02:30\x20GMT\r\n\r\nMissin
+SF:\r\nDate:\x20Sun,\x2027\x20Aug\x202023\x2001:09:26\x20GMT\r\n\r\nMissin
 SF:g\x20Host\x20header");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Aug 20 01:02:53 2023 -- 1 IP address (1 host up) scanned in 49.86 seconds
+# Nmap done at Sun Aug 27 01:09:41 2023 -- 1 IP address (1 host up) scanned in 40.25 seconds
