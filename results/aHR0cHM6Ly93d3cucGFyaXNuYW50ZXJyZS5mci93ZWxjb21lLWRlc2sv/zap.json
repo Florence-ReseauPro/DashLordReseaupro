@@ -1,7 +1,7 @@
 {
-	"@programName": "OWASP ZAP",
+	"@programName": "ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 13 Aug 2023 03:08:39",
+	"@generated": "Sun, 27 Aug 2023 03:05:03",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -50,7 +50,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2046"
+					"sourceid": "2095"
 				},
 				{
 					"pluginid": "10202",
@@ -226,7 +226,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
+							"uri": "https://www.parisnanterre.fr/presentation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -406,7 +406,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2152"
+					"sourceid": "2109"
 				},
 				{
 					"pluginid": "90003",
@@ -435,14 +435,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/action/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"schema.DC\" href=\"http://purl.org/dc/elements/1.1/\" />",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/extensions/",
 							"method": "GET",
 							"param": "",
@@ -452,6 +444,14 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"schema.DC\" href=\"http://purl.org/dc/elements/1.1/\" />",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/META_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -634,7 +634,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "2225"
+					"sourceid": "2135"
 				},
 				{
 					"pluginid": "10063",
@@ -695,7 +695,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
+							"uri": "https://www.parisnanterre.fr/presentation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -762,14 +762,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/action/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/adminsite/",
 							"method": "GET",
 							"param": "",
@@ -811,6 +803,14 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/WEB_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -948,33 +948,6 @@
 					"cweid": "319",
 					"wascid": "15",
 					"sourceid": "4"
-				},
-				{
-					"pluginid": "10096",
-					"alertRef": "10096",
-					"alert": "Timestamp Disclosure - Unix",
-					"name": "Timestamp Disclosure - Unix",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
-					"instances":[ 
-						{
-							"uri": "https://www.parisnanterre.fr/m-philippe-gervais-lambony",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1534928097",
-							"otherinfo": "1534928097, which evaluates to: 2018-08-22 08:54:57"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1534928097, which evaluates to: 2018-08-22 08:54:57</p>",
-					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
-					"cweid": "200",
-					"wascid": "13",
-					"sourceid": "2780"
 				},
 				{
 					"pluginid": "10021",
@@ -1303,7 +1276,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2222"
+					"sourceid": "2166"
 				},
 				{
 					"pluginid": "10109",
@@ -1364,7 +1337,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
+							"uri": "https://www.parisnanterre.fr/presentation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1709,7 +1682,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "20EE98F8B08F4E23E86008F11DFCFB6E",
+							"evidence": "1D411A07A656609BD1C947F0E3D6F4ED",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1717,7 +1690,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "D02D2117C5036CDBBE6766A2A5D87D3B",
+							"evidence": "89DC0AD45E0960CBE1013E0492AE4EE9",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1725,7 +1698,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "5B7D8873416DBD2AE36012F36105DAF0",
+							"evidence": "C496D9E5BDA587F7D6DE0084B8A207B9",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1733,7 +1706,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "9617FC2FDC242C8090125656060E89A2",
+							"evidence": "C3D7906CB02FD6CA6ED4E7D429CA6BC4",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1741,7 +1714,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "5056B51195F3ACD7920019C0BB98F3DA",
+							"evidence": "7FE23649D190D2402C4784F6423F0504",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1749,7 +1722,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "C684345013342944C70C32304081B26D",
+							"evidence": "A4970DC490D82BDAFC66843411E56F61",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1757,25 +1730,17 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "D02D2117C5036CDBBE6766A2A5D87D3B",
-							"otherinfo": "\ncookie:JSESSIONID"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/robots.txt",
-							"method": "GET",
-							"param": "JSESSIONID",
-							"attack": "",
-							"evidence": "5B7D8873416DBD2AE36012F36105DAF0",
+							"evidence": "1D411A07A656609BD1C947F0E3D6F4ED",
 							"otherinfo": "\ncookie:JSESSIONID"
 						}
 					],
-					"count": "8",
+					"count": "7",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:JSESSIONID</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "4"
+					"sourceid": "164"
 				},
 				{
 					"pluginid": "10049",
@@ -1789,14 +1754,6 @@
 					"instances":[ 
 						{
 							"uri": "https://www.parisnanterre.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/action/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1837,6 +1794,14 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/WEB_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -2149,7 +2114,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2511"
+					"sourceid": "2489"
 				}
 			]
 		}
