@@ -660,8 +660,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "34 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (27)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -674,7 +674,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2023-09-23 20:56"
           }
 ,         {
@@ -857,14 +857,14 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1692493146"
+              "finding"      : "1693098360"
           }
 ,         {
               "id"           : "HSTS",
@@ -1443,6 +1443,6 @@
               "ip"           : "unif.fr/192.33.182.249",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "108"
+              "finding"      : "173"
           }
 ]
