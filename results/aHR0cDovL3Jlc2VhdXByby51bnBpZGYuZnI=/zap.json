@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 3 Sep 2023 00:56:01",
+	"@generated": "Sun, 10 Sep 2023 00:56:13",
 	"site":[ 
 		{
 			"@name": "http://reseaupro.unpidf.fr",
@@ -9,6 +9,33 @@
 			"@port": "80",
 			"@ssl": "false",
 			"alerts": [ 
+				{
+					"pluginid": "10062",
+					"alertRef": "10062",
+					"alert": "PII Disclosure",
+					"name": "PII Disclosure",
+					"riskcode": "3",
+					"confidence": "3",
+					"riskdesc": "High (High)",
+					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
+					"instances":[ 
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/page/3",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "30258846200200",
+							"otherinfo": "Credit Card Type detected: DinersClub\nBank Identification Number: 302588\nBrand: DISCOVER\nCategory: BUSINESS CARD\nIssuer: DINERS CLUB INTERNATIONAL"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Check the response for the potential presence of personally identifiable information (PII), ensure nothing sensitive is leaked by the application.</p>",
+					"otherinfo": "<p>Credit Card Type detected: DinersClub</p><p>Bank Identification Number: 302588</p><p>Brand: DISCOVER</p><p>Category: BUSINESS CARD</p><p>Issuer: DINERS CLUB INTERNATIONAL</p>",
+					"reference": "",
+					"cweid": "359",
+					"wascid": "13",
+					"sourceid": "180"
+				},
 				{
 					"pluginid": "10202",
 					"alertRef": "10202",
@@ -34,7 +61,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "119"
+					"sourceid": "120"
 				},
 				{
 					"pluginid": "10038",
@@ -111,7 +138,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -344,7 +371,7 @@
 					"count": "10",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
 					"sourceid": "1"
@@ -519,7 +546,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "190"
+					"sourceid": "187"
 				},
 				{
 					"pluginid": "10063",
@@ -596,7 +623,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -623,7 +650,7 @@
 					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
 					"sourceid": "1"
@@ -711,7 +738,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1000,7 +1027,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1073,7 +1100,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "167"
+					"sourceid": "175"
 				},
 				{
 					"pluginid": "10094",
@@ -1185,7 +1212,7 @@
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>GIF89a\\x0001\\x0000\\x0001\\x0000\uFFFD\\x0000\\x0000\\x0000\\x0000\\x0000\uFFFD\uFFFD\uFFFD!\uFFFD\\x0004\\x0001\\x0000\\x0000\\x0000\\x0000,\\x0000\\x0000\\x0000\\x0000\\x0001\\x0000\\x0001\\x0000\\x0000\\x0002\\x0001D\\x0000;</p>",
-					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
 					"sourceid": "107"
@@ -1226,6 +1253,14 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/partenaires",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "User",
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"<!-- User -->\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1289,7 +1324,7 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"<!-- User -->\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"<!-- User -->\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
@@ -1340,6 +1375,14 @@
 							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript><p><img src=\"//statistiques.anasiege.net/piwik.php?idsite=4\" style=\"border:0;\" alt=\"\" /></p></noscript>",
+							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
 							"method": "GET",
 							"param": "",
@@ -1365,14 +1408,6 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript><p><img src=\"//statistiques.anasiege.net/piwik.php?idsite=4\" style=\"border:0;\" alt=\"\" /></p></noscript>",
-							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1490,7 +1525,7 @@
 					"count": "9",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
-					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
 					"sourceid": "1"
@@ -1682,7 +1717,7 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "49a85gaoa4ua8f2h7vqauih430",
+							"evidence": "4gc68vrl6ipa43ertq0uqrdph0",
 							"otherinfo": "\ncookie:symfony"
 						},
 						{
@@ -1690,7 +1725,7 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "rbsn7a966d556kuf3lbcchgsj5",
+							"evidence": "cgpcf46e5793or6lq034iaauj4",
 							"otherinfo": "\ncookie:symfony"
 						},
 						{
@@ -1698,7 +1733,7 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "49a85gaoa4ua8f2h7vqauih430",
+							"evidence": "4gc68vrl6ipa43ertq0uqrdph0",
 							"otherinfo": "\ncookie:symfony"
 						}
 					],
@@ -1740,10 +1775,10 @@
 					"count": "2",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
-					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10031",
@@ -1761,7 +1796,7 @@
 							"param": "_csrf_token",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/entreprises\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=f713a6b0f36d8eab178bdf6cf7669382\r\n\r\nThe user-controlled value was:\r\nf713a6b0f36d8eab178bdf6cf7669382"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/entreprises\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=32619f39e2d994db6fde03e7e3f9c69f\r\n\r\nThe user-controlled value was:\r\n32619f39e2d994db6fde03e7e3f9c69f"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises",
@@ -1793,7 +1828,7 @@
 							"param": "_csrf_token",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/user/login\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=f713a6b0f36d8eab178bdf6cf7669382\r\n\r\nThe user-controlled value was:\r\nf713a6b0f36d8eab178bdf6cf7669382"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/user/login\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=32619f39e2d994db6fde03e7e3f9c69f\r\n\r\nThe user-controlled value was:\r\n32619f39e2d994db6fde03e7e3f9c69f"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/user/login",
@@ -1822,11 +1857,11 @@
 					],
 					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=f713a6b0f36d8eab178bdf6cf7669382</p><p></p><p>The user-controlled value was:</p><p>f713a6b0f36d8eab178bdf6cf7669382</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=32619f39e2d994db6fde03e7e3f9c69f</p><p></p><p>The user-controlled value was:</p><p>32619f39e2d994db6fde03e7e3f9c69f</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "191"
+					"sourceid": "195"
 				}
 			]
 		}
