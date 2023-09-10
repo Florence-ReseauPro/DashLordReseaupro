@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 3 Sep 2023 00:56:01
+		Generated on Sun, 10 Sep 2023 00:56:13
 	</h3>
 
 	<h3>
@@ -148,7 +148,7 @@ td {
 					<div>High</div>
 				</td>
 				<td align="center">
-					<div>0</div>
+					<div>1</div>
 				</td>
 			</tr>
 			<tr>
@@ -196,6 +196,11 @@ td {
 					align="center">Risk Level</th>
 				<th width="20%"
 					align="center">Number of Instances</th>
+			</tr>
+			<tr>
+				<td><a href="#10062">PII Disclosure</a></td>
+				<td align="center" class="risk-3">High</td>
+				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
@@ -275,7 +280,7 @@ td {
 			<tr>
 				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">11</td>
+				<td align="center">12</td>
 			</tr>
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
@@ -328,6 +333,91 @@ td {
 
 	
 		<h3>Alert Detail</h3>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-3"><a
+						id="10062"></a>
+						<div>High</div></th>
+					<th class="risk-3">PII Disclosure</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/entreprises/index/page/3">http://reseaupro.unpidf.fr/index.php/entreprises/index/page/3</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">30258846200200</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">Credit Card Type detected: DinersClub
+Bank Identification Number: 302588
+Brand: DISCOVER
+Category: BUSINESS CARD
+Issuer: DINERS CLUB INTERNATIONAL</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Check the response for the potential presence of personally identifiable information (PII), ensure nothing sensitive is leaked by the application.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/359.html">359</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10062/">10062</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
 		
 			<table class="results">
 				<tr height="24">
@@ -745,7 +835,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48</a></td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1627,7 +1717,7 @@ td {
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</a>
 							
 						</td>
 				</tr>
@@ -2553,7 +2643,7 @@ CVE-2022-31160
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48</a></td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2657,10 +2747,10 @@ CVE-2022-31160
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</a>
 							<br />
 						
-							<a href="https://developers.google.com/web/updates/2018/06/feature-policy">https://developers.google.com/web/updates/2018/06/feature-policy</a>
+							<a href="https://developer.chrome.com/blog/feature-policy/">https://developer.chrome.com/blog/feature-policy/</a>
 							<br />
 						
 							<a href="https://scotthelme.co.uk/a-new-security-header-feature-policy/">https://scotthelme.co.uk/a-new-security-header-feature-policy/</a>
@@ -2990,7 +3080,7 @@ CVE-2022-31160
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48</a></td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4068,7 +4158,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48</a></td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4764,7 +4854,7 @@ csrfToken=_csrf_token</td>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
+							<a href="https://projects.webappsec.org/w/page/13246936/Information%20Leakage">https://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
 							
 						</td>
 				</tr>
@@ -4900,6 +4990,37 @@ csrfToken=_csrf_token</td>
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/inscription/partenaires">http://reseaupro.unpidf.fr/index.php/inscription/partenaires</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">User</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The following pattern was used: \bUSER\b and was detected 2 times, the first in the element starting with: &quot;&lt;!-- User --&gt;&quot;, see evidence field for the suspicious comment/snippet.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword">http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5146,7 +5267,7 @@ csrfToken=_csrf_token</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">12</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5321,6 +5442,37 @@ csrfToken=_csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword">http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;noscript&gt;&lt;p&gt;&lt;img src=&quot;//statistiques.anasiege.net/piwik.php?idsite=4&quot; style=&quot;border:0;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;&lt;/noscript&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162</a></td>
 					</tr>
 					<tr>
@@ -5415,37 +5567,6 @@ csrfToken=_csrf_token</td>
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;noscript&gt;&lt;p&gt;&lt;img src=&quot;//statistiques.anasiege.net/piwik.php?idsite=4&quot; style=&quot;border:0;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;&lt;/noscript&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5910,13 +6031,13 @@ csrfToken=_csrf_token</td>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://tools.ietf.org/html/rfc7234">https://tools.ietf.org/html/rfc7234</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7234">https://datatracker.ietf.org/doc/html/rfc7234</a>
 							<br />
 						
-							<a href="https://tools.ietf.org/html/rfc7231">https://tools.ietf.org/html/rfc7231</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7231">https://datatracker.ietf.org/doc/html/rfc7231</a>
 							<br />
 						
-							<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)">http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</a>
+							<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</a>
 							
 						</td>
 				</tr>
@@ -6562,7 +6683,7 @@ csrfToken=_csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">49a85gaoa4ua8f2h7vqauih430</td>
+						<td width="80%">4gc68vrl6ipa43ertq0uqrdph0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6594,7 +6715,7 @@ cookie:symfony</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">rbsn7a966d556kuf3lbcchgsj5</td>
+						<td width="80%">cgpcf46e5793or6lq034iaauj4</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6626,7 +6747,7 @@ cookie:symfony</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">49a85gaoa4ua8f2h7vqauih430</td>
+						<td width="80%">4gc68vrl6ipa43ertq0uqrdph0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6775,13 +6896,13 @@ cookie:symfony</td>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://tools.ietf.org/html/rfc7234">https://tools.ietf.org/html/rfc7234</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7234">https://datatracker.ietf.org/doc/html/rfc7234</a>
 							<br />
 						
-							<a href="https://tools.ietf.org/html/rfc7231">https://tools.ietf.org/html/rfc7231</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7231">https://datatracker.ietf.org/doc/html/rfc7231</a>
 							<br />
 						
-							<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)">http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</a>
+							<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</a>
 							
 						</td>
 				</tr>
@@ -6857,10 +6978,10 @@ appears to include user input in:
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-_csrf_token=f713a6b0f36d8eab178bdf6cf7669382
+_csrf_token=32619f39e2d994db6fde03e7e3f9c69f
 
 The user-controlled value was:
-f713a6b0f36d8eab178bdf6cf7669382</td>
+32619f39e2d994db6fde03e7e3f9c69f</td>
 					</tr>
 				
 					<tr>
@@ -7029,10 +7150,10 @@ appears to include user input in:
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-_csrf_token=f713a6b0f36d8eab178bdf6cf7669382
+_csrf_token=32619f39e2d994db6fde03e7e3f9c69f
 
 The user-controlled value was:
-f713a6b0f36d8eab178bdf6cf7669382</td>
+32619f39e2d994db6fde03e7e3f9c69f</td>
 					</tr>
 				
 					<tr>

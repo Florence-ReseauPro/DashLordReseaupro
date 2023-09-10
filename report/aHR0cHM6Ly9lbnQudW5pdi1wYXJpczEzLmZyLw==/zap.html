@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 3 Sep 2023 01:40:25
+		Generated on Sun, 10 Sep 2023 01:28:45
 	</h3>
 
 	<h3>
@@ -172,7 +172,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>10</div>
+					<div>9</div>
 				</td>
 			</tr>
 			<tr>
@@ -268,11 +268,6 @@ td {
 				<td align="center">1</td>
 			</tr>
 			<tr>
-				<td><a href="#10094">Base64 Disclosure</a></td>
-				<td align="center" class="risk-0">Informational</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
 				<td><a href="#90011">Charset Mismatch (Header Versus Meta Content-Type Charset)</a></td>
 				<td align="center" class="risk-0">Informational</td>
 				<td align="center">1</td>
@@ -290,22 +285,22 @@ td {
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Dest Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Mode Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Site Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-User Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10112">Session Management Response Identified</a></td>
@@ -383,7 +378,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;fm1&quot; name=&quot;fm1&quot; class=&quot;fm-v clearfix&quot; action=&quot;/cas/login;CASSESSIONID=EBDC67FE53217D689CFE40001B48D9B2?service=https%3A%2F%2Fent.univ-paris13.fr&quot; method=&quot;post&quot;&gt;</td>
+						<td width="80%">&lt;form id=&quot;fm1&quot; name=&quot;fm1&quot; class=&quot;fm-v clearfix&quot; action=&quot;/cas/login;CASSESSIONID=6543A3CF0AD0808092E413DEF86B9B16?service=https%3A%2F%2Fent.univ-paris13.fr&quot; method=&quot;post&quot;&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -971,7 +966,7 @@ td {
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</a>
 							
 						</td>
 				</tr>
@@ -2033,10 +2028,10 @@ Response Body Length: 452.</td>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</a>
 							<br />
 						
-							<a href="https://developers.google.com/web/updates/2018/06/feature-policy">https://developers.google.com/web/updates/2018/06/feature-policy</a>
+							<a href="https://developer.chrome.com/blog/feature-policy/">https://developer.chrome.com/blog/feature-policy/</a>
 							<br />
 						
 							<a href="https://scotthelme.co.uk/a-new-security-header-feature-policy/">https://scotthelme.co.uk/a-new-security-header-feature-policy/</a>
@@ -2489,90 +2484,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
-						id="10094"></a>
-						<div>Informational</div></th>
-					<th class="risk-0">Base64 Disclosure</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://ent.univ-paris13.fr/">https://ent.univ-paris13.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">LT-1891858-fJHSCDdefhReculbMJrCpVjzXPxXxY-cas1</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">-?���|�ϟ$t�ן���V�&amp;��V&lt;�?�c��</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10094/">10094</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-0"><a
 						id="90011"></a>
 						<div>Informational</div></th>
 					<th class="risk-0">Charset Mismatch (Header Versus Meta Content-Type Charset)</th>
@@ -2753,13 +2664,13 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://tools.ietf.org/html/rfc7234">https://tools.ietf.org/html/rfc7234</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7234">https://datatracker.ietf.org/doc/html/rfc7234</a>
 							<br />
 						
-							<a href="https://tools.ietf.org/html/rfc7231">https://tools.ietf.org/html/rfc7231</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7231">https://datatracker.ietf.org/doc/html/rfc7231</a>
 							<br />
 						
-							<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)">http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</a>
+							<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</a>
 							
 						</td>
 				</tr>
@@ -2922,37 +2833,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ent.univ-paris13.fr/robots.txt">https://ent.univ-paris13.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Dest</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://ent.univ-paris13.fr/sitemap.xml">https://ent.univ-paris13.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
@@ -2983,7 +2863,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -3068,37 +2948,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ent.univ-paris13.fr/robots.txt">https://ent.univ-paris13.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Mode</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://ent.univ-paris13.fr/sitemap.xml">https://ent.univ-paris13.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
@@ -3129,7 +2978,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -3214,37 +3063,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ent.univ-paris13.fr/robots.txt">https://ent.univ-paris13.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Site</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://ent.univ-paris13.fr/sitemap.xml">https://ent.univ-paris13.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
@@ -3275,7 +3093,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -3360,37 +3178,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ent.univ-paris13.fr/robots.txt">https://ent.univ-paris13.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-User</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://ent.univ-paris13.fr/sitemap.xml">https://ent.univ-paris13.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
@@ -3421,7 +3208,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -3495,7 +3282,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">EBDC67FE53217D689CFE40001B48D9B2</td>
+						<td width="80%">6543A3CF0AD0808092E413DEF86B9B16</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3527,7 +3314,7 @@ cookie:CASSESSIONID</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">jl4ieui9losng7nscsqnf31qk7</td>
+						<td width="80%">rbkjevaeudd156abej8eo9h915</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3559,7 +3346,7 @@ cookie:UP13ENT</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">u32sgcgcu1aikelcruanelhc40</td>
+						<td width="80%">voqskhed853fi756hof1k7lbf5</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3591,7 +3378,7 @@ cookie:UP13ENT</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">pi40734eumbhv46rkc8qak6v14</td>
+						<td width="80%">5vj2efanol98gkqruuh0ti1hn0</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3756,13 +3543,13 @@ cookie:UP13ENT</td>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://tools.ietf.org/html/rfc7234">https://tools.ietf.org/html/rfc7234</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7234">https://datatracker.ietf.org/doc/html/rfc7234</a>
 							<br />
 						
-							<a href="https://tools.ietf.org/html/rfc7231">https://tools.ietf.org/html/rfc7231</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7231">https://datatracker.ietf.org/doc/html/rfc7231</a>
 							<br />
 						
-							<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)">http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</a>
+							<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</a>
 							
 						</td>
 				</tr>
