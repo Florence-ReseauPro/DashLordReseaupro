@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Sep  3 01:04:24 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln unif.fr
+# Nmap 7.92 scan initiated Sun Sep 10 01:02:21 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln unif.fr
 Nmap scan report for unif.fr (192.33.182.249)
-Host is up (0.11s latency).
+Host is up (0.086s latency).
 rDNS record for 192.33.182.249: unknown-1.univ-paris13.fr
 Not shown: 991 filtered tcp ports (no-response)
 PORT     STATE  SERVICE    VERSION
@@ -13,6 +13,7 @@ PORT     STATE  SERVICE    VERSION
 |_    	SSV:90447	4.6	https://vulners.com/seebug/SSV:90447	*EXPLOIT*
 53/tcp   closed domain
 80/tcp   open   http       Apache httpd 2.4.10
+|_http-server-header: Apache/2.4.10 (Debian)
 | vulners: 
 |   cpe:/a:apache:http_server:2.4.10: 
 |     	PACKETSTORM:171631	7.5	https://vulners.com/packetstorm/PACKETSTORM:171631	*EXPLOIT*
@@ -20,7 +21,6 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2023-25690	7.5	https://vulners.com/cve/CVE-2023-25690
 |     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
 |     	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
-|     	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
 |     	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
 |     	CVE-2021-39275	7.5	https://vulners.com/cve/CVE-2021-39275
 |     	CVE-2021-26691	7.5	https://vulners.com/cve/CVE-2021-26691
@@ -64,7 +64,6 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
 |     	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
 |     	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
-|     	CVE-2022-22719	5.0	https://vulners.com/cve/CVE-2022-22719
 |     	CVE-2021-34798	5.0	https://vulners.com/cve/CVE-2021-34798
 |     	CVE-2021-26690	5.0	https://vulners.com/cve/CVE-2021-26690
 |     	CVE-2020-1934	5.0	https://vulners.com/cve/CVE-2020-1934
@@ -92,10 +91,8 @@ PORT     STATE  SERVICE    VERSION
 |     	4013EC74-B3C1-5D95-938A-54197A58586D	4.3	https://vulners.com/githubexploit/4013EC74-B3C1-5D95-938A-54197A58586D	*EXPLOIT*
 |     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
 |_    	PACKETSTORM:140265	0.0	https://vulners.com/packetstorm/PACKETSTORM:140265	*EXPLOIT*
-|_http-server-header: Apache/2.4.10 (Debian)
 222/tcp  closed rsh-spx
 443/tcp  open   ssl/http   Apache httpd 2.4.10
-|_http-server-header: Apache/2.4.10 (Debian)
 | vulners: 
 |   cpe:/a:apache:http_server:2.4.10: 
 |     	PACKETSTORM:171631	7.5	https://vulners.com/packetstorm/PACKETSTORM:171631	*EXPLOIT*
@@ -103,7 +100,6 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2023-25690	7.5	https://vulners.com/cve/CVE-2023-25690
 |     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
 |     	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
-|     	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
 |     	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
 |     	CVE-2021-39275	7.5	https://vulners.com/cve/CVE-2021-39275
 |     	CVE-2021-26691	7.5	https://vulners.com/cve/CVE-2021-26691
@@ -147,7 +143,6 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2022-29404	5.0	https://vulners.com/cve/CVE-2022-29404
 |     	CVE-2022-28614	5.0	https://vulners.com/cve/CVE-2022-28614
 |     	CVE-2022-26377	5.0	https://vulners.com/cve/CVE-2022-26377
-|     	CVE-2022-22719	5.0	https://vulners.com/cve/CVE-2022-22719
 |     	CVE-2021-34798	5.0	https://vulners.com/cve/CVE-2021-34798
 |     	CVE-2021-26690	5.0	https://vulners.com/cve/CVE-2021-26690
 |     	CVE-2020-1934	5.0	https://vulners.com/cve/CVE-2020-1934
@@ -175,6 +170,7 @@ PORT     STATE  SERVICE    VERSION
 |     	4013EC74-B3C1-5D95-938A-54197A58586D	4.3	https://vulners.com/githubexploit/4013EC74-B3C1-5D95-938A-54197A58586D	*EXPLOIT*
 |     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
 |_    	PACKETSTORM:140265	0.0	https://vulners.com/packetstorm/PACKETSTORM:140265	*EXPLOIT*
+|_http-server-header: Apache/2.4.10 (Debian)
 2251/tcp closed dif-port
 3404/tcp closed unknown
 8080/tcp closed http-proxy
@@ -182,4 +178,4 @@ PORT     STATE  SERVICE    VERSION
 Service Info: Host: formation.unif.eu; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Sep  3 01:04:48 2023 -- 1 IP address (1 host up) scanned in 23.47 seconds
+# Nmap done at Sun Sep 10 01:02:43 2023 -- 1 IP address (1 host up) scanned in 21.76 seconds
