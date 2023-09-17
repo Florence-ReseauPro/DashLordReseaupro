@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 10 Sep 2023 01:02:16",
+	"@generated": "Sun, 17 Sep 2023 01:02:32",
 	"site":[ 
 		{
 			"@name": "https://www.univ-paris13.fr",
@@ -1383,7 +1383,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "10"
+					"sourceid": "12"
 				},
 				{
 					"pluginid": "10096",
@@ -1408,16 +1408,16 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1694184961",
-							"otherinfo": "1694184961, which evaluates to: 2023-09-08 14:56:01"
+							"evidence": "1694792232",
+							"otherinfo": "1694792232, which evaluates to: 2023-09-15 15:37:12"
 						},
 						{
 							"uri": "https://www.univ-paris13.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1695117600",
-							"otherinfo": "1695117600, which evaluates to: 2023-09-19 10:00:00"
+							"evidence": "1695132000",
+							"otherinfo": "1695132000, which evaluates to: 2023-09-19 14:00:00"
 						},
 						{
 							"uri": "https://www.univ-paris13.fr/",
@@ -1456,8 +1456,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1694185870",
-							"otherinfo": "1694185870, which evaluates to: 2023-09-08 15:11:10"
+							"evidence": "1694776297",
+							"otherinfo": "1694776297, which evaluates to: 2023-09-15 11:11:37"
 						}
 					],
 					"count": "8",
@@ -1675,6 +1675,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.univ-paris13.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.univ-paris13.fr/welcome-desk/",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -1683,7 +1691,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -1710,6 +1718,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.univ-paris13.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.univ-paris13.fr/welcome-desk/",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -1718,7 +1734,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -1745,6 +1761,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.univ-paris13.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.univ-paris13.fr/welcome-desk/",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -1753,7 +1777,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -1780,6 +1804,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.univ-paris13.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.univ-paris13.fr/welcome-desk/",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -1788,7 +1820,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -1853,7 +1885,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "10"
+					"sourceid": "4"
 				}
 			]
 		}
