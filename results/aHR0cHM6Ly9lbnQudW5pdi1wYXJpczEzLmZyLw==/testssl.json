@@ -373,8 +373,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "ent.univ-paris13.fr/81.194.43.211",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (32)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (25)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -387,7 +387,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "ent.univ-paris13.fr/81.194.43.211",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2023-10-12 23:59"
           }
 ,         {
@@ -570,14 +570,14 @@
               "ip"           : "ent.univ-paris13.fr/81.194.43.211",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-3599 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "ent.univ-paris13.fr/81.194.43.211",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1694305871"
+              "finding"      : "1694914500"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1523,8 +1523,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "ent.univ-paris13.fr/81.194.43.212",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (32)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 30 days (25)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1537,7 +1537,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "ent.univ-paris13.fr/81.194.43.212",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2023-10-12 23:59"
           }
 ,         {
@@ -1720,14 +1720,14 @@
               "ip"           : "ent.univ-paris13.fr/81.194.43.212",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-3599 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "ent.univ-paris13.fr/81.194.43.212",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1694305976"
+              "finding"      : "1694914559"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2304,6 +2304,6 @@
               "ip"           : "ent.univ-paris13.fr/81.194.43.212",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "216"
+              "finding"      : "128"
           }
 ]

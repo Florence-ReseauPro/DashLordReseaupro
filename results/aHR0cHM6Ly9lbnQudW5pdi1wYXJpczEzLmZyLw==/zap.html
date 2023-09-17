@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 10 Sep 2023 01:28:45
+		Generated on Sun, 17 Sep 2023 01:33:16
 	</h3>
 
 	<h3>
@@ -172,7 +172,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>9</div>
+					<div>10</div>
 				</td>
 			</tr>
 			<tr>
@@ -265,6 +265,11 @@ td {
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
 				<td align="center" class="risk-1">Low</td>
+				<td align="center">1</td>
+			</tr>
+			<tr>
+				<td><a href="#10094">Base64 Disclosure</a></td>
+				<td align="center" class="risk-0">Informational</td>
 				<td align="center">1</td>
 			</tr>
 			<tr>
@@ -378,7 +383,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;fm1&quot; name=&quot;fm1&quot; class=&quot;fm-v clearfix&quot; action=&quot;/cas/login;CASSESSIONID=6543A3CF0AD0808092E413DEF86B9B16?service=https%3A%2F%2Fent.univ-paris13.fr&quot; method=&quot;post&quot;&gt;</td>
+						<td width="80%">&lt;form id=&quot;fm1&quot; name=&quot;fm1&quot; class=&quot;fm-v clearfix&quot; action=&quot;/cas/login;CASSESSIONID=7A74B5F1E3E277263D4FD6F5A5BE1F47?service=https%3A%2F%2Fent.univ-paris13.fr&quot; method=&quot;post&quot;&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2484,6 +2489,90 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
+						id="10094"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Base64 Disclosure</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://ent.univ-paris13.fr/">https://ent.univ-paris13.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">LT-1424013-fj5I5OOsDQ70IR0Pza2wchLr9DlfmH-cas1</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">-?��n4����98�C�GC�kl���W���</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://projects.webappsec.org/w/page/13246936/Information%20Leakage">https://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10094/">10094</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
 						id="90011"></a>
 						<div>Informational</div></th>
 					<th class="risk-0">Charset Mismatch (Header Versus Meta Content-Type Charset)</th>
@@ -2833,7 +2922,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ent.univ-paris13.fr/sitemap.xml">https://ent.univ-paris13.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://ent.univ-paris13.fr/robots.txt">https://ent.univ-paris13.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2948,7 +3037,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ent.univ-paris13.fr/sitemap.xml">https://ent.univ-paris13.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://ent.univ-paris13.fr/robots.txt">https://ent.univ-paris13.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3063,7 +3152,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ent.univ-paris13.fr/sitemap.xml">https://ent.univ-paris13.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://ent.univ-paris13.fr/robots.txt">https://ent.univ-paris13.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3178,7 +3267,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://ent.univ-paris13.fr/sitemap.xml">https://ent.univ-paris13.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://ent.univ-paris13.fr/robots.txt">https://ent.univ-paris13.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3282,7 +3371,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">6543A3CF0AD0808092E413DEF86B9B16</td>
+						<td width="80%">7A74B5F1E3E277263D4FD6F5A5BE1F47</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3314,7 +3403,7 @@ cookie:CASSESSIONID</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">rbkjevaeudd156abej8eo9h915</td>
+						<td width="80%">0rnu1774ldda55rblbi1h041b4</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3346,7 +3435,7 @@ cookie:UP13ENT</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">voqskhed853fi756hof1k7lbf5</td>
+						<td width="80%">dhvc5e7knl7hkksi67d3pu3so3</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3378,7 +3467,7 @@ cookie:UP13ENT</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">5vj2efanol98gkqruuh0ti1hn0</td>
+						<td width="80%">o7v0rel0vsvkidirtufjq54gv2</td>
 					</tr>
 					<tr>
 						<td width="20%"

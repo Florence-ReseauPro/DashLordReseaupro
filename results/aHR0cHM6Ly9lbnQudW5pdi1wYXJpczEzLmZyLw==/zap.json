@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 10 Sep 2023 01:28:45",
+	"@generated": "Sun, 17 Sep 2023 01:33:17",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=6543A3CF0AD0808092E413DEF86B9B16?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=7A74B5F1E3E277263D4FD6F5A5BE1F47?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -222,7 +222,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10010",
@@ -528,7 +528,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10036",
@@ -609,6 +609,33 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"uri": "https://ent.univ-paris13.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "LT-1424013-fj5I5OOsDQ70IR0Pza2wchLr9DlfmH-cas1",
+							"otherinfo": "-?\uFFFD\uFFFDn4\uFFFD\uFFFD\uFFFD\uFFFD98\uFFFD\\x0003C\uFFFD\\x0008GC\uFFFDkl\\x001c\uFFFD\uFFFD\uFFFD\\x000eW\uFFFD\\x001f\uFFFD\\x001a\uFFFD"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFDn4\uFFFD\uFFFD\uFFFD\uFFFD98\uFFFD\\x0003C\uFFFD\\x0008GC\uFFFDkl\\x001c\uFFFD\uFFFD\uFFFD\\x000eW\uFFFD\\x001f\uFFFD\\x001a\uFFFD</p>",
+					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
 					"sourceid": "1"
 				},
 				{
@@ -711,7 +738,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"uri": "https://ent.univ-paris13.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -746,7 +773,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"uri": "https://ent.univ-paris13.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -781,7 +808,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"uri": "https://ent.univ-paris13.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -816,7 +843,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"uri": "https://ent.univ-paris13.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -847,7 +874,7 @@
 							"method": "GET",
 							"param": "CASSESSIONID",
 							"attack": "",
-							"evidence": "6543A3CF0AD0808092E413DEF86B9B16",
+							"evidence": "7A74B5F1E3E277263D4FD6F5A5BE1F47",
 							"otherinfo": "\ncookie:CASSESSIONID"
 						},
 						{
@@ -855,7 +882,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "rbkjevaeudd156abej8eo9h915",
+							"evidence": "0rnu1774ldda55rblbi1h041b4",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -863,7 +890,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "voqskhed853fi756hof1k7lbf5",
+							"evidence": "dhvc5e7knl7hkksi67d3pu3so3",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -871,7 +898,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "5vj2efanol98gkqruuh0ti1hn0",
+							"evidence": "o7v0rel0vsvkidirtufjq54gv2",
 							"otherinfo": "\ncookie:UP13ENT"
 						}
 					],
@@ -924,7 +951,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				}
 			]
 		}
