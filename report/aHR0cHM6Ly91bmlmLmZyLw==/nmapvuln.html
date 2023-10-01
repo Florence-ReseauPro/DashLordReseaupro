@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln unif.fr</pre>
-<p class="lead">Sun Sep 24 01:07:39 2023 – Sun Sep 24 01:08:04 2023<br>1 hosts scanned.
+<p class="lead">Sun Oct  1 01:10:15 2023 – Sun Oct  1 01:10:48 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -78,7 +78,7 @@
 <td><span class="label label-success">up</span></td>
 <td>192.33.182.249</td>
 <td>unif.fr</td>
-<td>3</td>
+<td>2</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -110,24 +110,6 @@
 <th>Extra Info</th>
 </tr></thead>
 <tbody>
-<tr class="success">
-<td title="Port">22</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">ssh</td>
-<td title="Product">OpenSSH</td>
-<td title="Version">6.7p1 Debian 5+deb8u8</td>
-<td title="Extra Info">protocol 2.0</td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:openbsd:openssh:6.7p1">cpe:/a:openbsd:openssh:6.7p1</a><h5>vulners</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  cpe:/a:openbsd:openssh:6.7p1: 
-    	CVE-2015-5600	8.5	https://vulners.com/cve/CVE-2015-5600
-    	CVE-2015-6564	6.9	https://vulners.com/cve/CVE-2015-6564
-    	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
-    	SSV:90447	4.6	https://vulners.com/seebug/SSV:90447	*EXPLOIT*</pre>
-</td></tr>
 <tr class="active">
 <td>53</td>
 <td>tcp</td>
@@ -147,9 +129,7 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server:2.4.10">cpe:/a:apache:http_server:2.4.10</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache/2.4.10 (Debian)</pre>
-<h5>vulners</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server:2.4.10">cpe:/a:apache:http_server:2.4.10</a><h5>vulners</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   cpe:/a:apache:http_server:2.4.10: 
     	PACKETSTORM:171631	7.5	https://vulners.com/packetstorm/PACKETSTORM:171631	*EXPLOIT*
@@ -227,16 +207,9 @@
     	4013EC74-B3C1-5D95-938A-54197A58586D	4.3	https://vulners.com/githubexploit/4013EC74-B3C1-5D95-938A-54197A58586D	*EXPLOIT*
     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
     	PACKETSTORM:140265	0.0	https://vulners.com/packetstorm/PACKETSTORM:140265	*EXPLOIT*</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache/2.4.10 (Debian)</pre>
 </td></tr>
-<tr class="active">
-<td>222</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>rsh-spx</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 <tr class="success">
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
@@ -329,24 +302,6 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Apache/2.4.10 (Debian)</pre>
 </td></tr>
 <tr class="active">
-<td>2251</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>dif-port</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
-<td>3404</td>
-<td>tcp</td>
-<td>closed<br>reset</td>
-<td>unknown</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="active">
 <td>8080</td>
 <td>tcp</td>
 <td>closed<br>reset</td>
@@ -381,16 +336,6 @@
 <th>Extra info</th>
 </tr></thead>
 <tbody>
-<tr>
-<td>192.33.182.249 - unif.fr</td>
-<td>22</td>
-<td>tcp</td>
-<td>ssh</td>
-<td>OpenSSH</td>
-<td>6.7p1 Debian 5+deb8u8</td>
-<td>cpe:/a:openbsd:openssh:6.7p1</td>
-<td>protocol 2.0</td>
-</tr>
 <tr>
 <td>192.33.182.249 - unif.fr</td>
 <td>80</td>
