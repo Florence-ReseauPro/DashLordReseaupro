@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
-	"@version": "2.13.0",
-	"@generated": "Sun, 8 Oct 2023 01:31:51",
+	"@version": "2.14.0",
+	"@generated": "Sun, 15 Oct 2023 01:47:21",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,14 +24,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=38B49C98AF688AB68977C221F632BF74?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=B379D08BA485EF0E562E8BD218195C02?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
 					"count": "1",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ].</p>",
-					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
+					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
 					"sourceid": "1"
@@ -612,6 +612,33 @@
 					"sourceid": "1"
 				},
 				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"uri": "https://ent.univ-paris13.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "LT-1239568-gjwie4k1kWhfWlskHfclyTjfJgggd1-cas1",
+							"otherinfo": "-?\uFFFD\uFFFDy\uFFFD\u03E0\uFFFD\\x0008\uFFFD\uFFFDMdZ\\x0017\u0596\uFFFD\\x0007}\uFFFDrN7\u0242\\x0008\\x001d\uFFFD\uFFFD\\x001a\uFFFD"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFDy\uFFFD\u03E0\uFFFD\\x0008\uFFFD\uFFFDMdZ\\x0017\u0596\uFFFD\\x0007}\uFFFDrN7\u0242\\x0008\\x001d\uFFFD\uFFFD\\x001a\uFFFD</p>",
+					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
 					"pluginid": "90011",
 					"alertRef": "90011",
 					"alert": "Charset Mismatch (Header Versus Meta Content-Type Charset)",
@@ -847,7 +874,7 @@
 							"method": "GET",
 							"param": "CASSESSIONID",
 							"attack": "",
-							"evidence": "38B49C98AF688AB68977C221F632BF74",
+							"evidence": "B379D08BA485EF0E562E8BD218195C02",
 							"otherinfo": "\ncookie:CASSESSIONID"
 						},
 						{
@@ -855,7 +882,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "g61p0mblsfa95frlm81kra1vl5",
+							"evidence": "fisanumso7q1400brqvbbu2820",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -863,7 +890,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "tvbhi7rlhe4p22i21i67i97tv2",
+							"evidence": "3ni35q6icajfgvllairj49ppb0",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -871,7 +898,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "m660jb3kpncb4c4a08m43f0jc1",
+							"evidence": "4uos8dgcq257norfsugatnpl61",
 							"otherinfo": "\ncookie:UP13ENT"
 						}
 					],
