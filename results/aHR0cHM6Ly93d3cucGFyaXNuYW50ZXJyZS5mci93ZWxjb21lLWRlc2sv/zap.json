@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
-	"@version": "2.13.0",
-	"@generated": "Sun, 8 Oct 2023 03:25:56",
+	"@version": "2.14.0",
+	"@generated": "Sun, 15 Oct 2023 03:31:24",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -50,7 +50,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2091"
+					"sourceid": "2159"
 				},
 				{
 					"pluginid": "10202",
@@ -162,7 +162,7 @@
 					"count": "12",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"beanKey\" \"default-MOTS_CLEFS\" \"l\" \"RH\" ].</p>",
-					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
+					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
 					"sourceid": "4"
@@ -333,7 +333,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
+							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -341,7 +341,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
+							"uri": "https://www.parisnanterre.fr/organisation/les-ufr-et-instituts",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -406,7 +406,7 @@
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2182"
+					"sourceid": "2107"
 				},
 				{
 					"pluginid": "90003",
@@ -599,7 +599,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1165"
+					"sourceid": "1071"
 				},
 				{
 					"pluginid": "10110",
@@ -620,7 +620,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/f4128e670f9c5d67803e6e82118ef956506a223a.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -634,7 +634,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "2297"
+					"sourceid": "2269"
 				},
 				{
 					"pluginid": "10063",
@@ -976,7 +976,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif",
+							"uri": "https://www.parisnanterre.fr/organisation",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -984,7 +984,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation",
+							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1000,7 +1000,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
+							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1008,7 +1008,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
+							"uri": "https://www.parisnanterre.fr/organisation/les-ufr-et-instituts",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1222,7 +1222,7 @@
 							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 4 times, the first in the element starting with: \"function dragOver(){const e=event;e.preventDefault();let row=getTargetRow(e.currentTarget);let rows=draggingRow.parentNode.query\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/f4128e670f9c5d67803e6e82118ef956506a223a.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1230,7 +1230,7 @@
 							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected 5 times, the first in the element starting with: \"return $(this).data('kMonoSelect');return this;}}else{return $(this).data('kMonoSelect');};};})(jQuery);(function(factory){if(ty\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/f4128e670f9c5d67803e6e82118ef956506a223a.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1238,7 +1238,7 @@
 							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 25 times, the first in the element starting with: \"if(conv!==true){if(conv&&s[\"throws\"]){response=conv(response);}else{try{response=conv(response);}catch(e){return{state:\"parserer\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/f4128e670f9c5d67803e6e82118ef956506a223a.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1246,7 +1246,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected 10 times, the first in the element starting with: \"$opened.removeClass('plier-deplier__contenu--ouvert').addClass('plier-deplier__contenu--clos');$opened.closest('.plier-deplier')\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/f4128e670f9c5d67803e6e82118ef956506a223a.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1254,7 +1254,7 @@
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected 53 times, the first in the element starting with: \"whitespace+\"*((?:-\\\\d)?\\\\d*)\"+whitespace+\"*\\\\)|)(?=[^-]|$)\",\"i\")},rinputs=/^(?:input|select|textarea|button)$/i,rheader=/^h\\d$/i\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/f4128e670f9c5d67803e6e82118ef956506a223a.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1262,7 +1262,7 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"oInit=_fnExtend($.extend(true,{},DataTable.defaults),oInit);_fnMap(oSettings.oFeatures,oInit,\"bPaginate\");_fnMap(oSettings.oFeat\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/f4128e670f9c5d67803e6e82118ef956506a223a.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1276,7 +1276,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2299"
+					"sourceid": "2313"
 				},
 				{
 					"pluginid": "10109",
@@ -1447,7 +1447,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif",
+							"uri": "https://www.parisnanterre.fr/organisation",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1455,7 +1455,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation",
+							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1471,7 +1471,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
+							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1479,7 +1479,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
+							"uri": "https://www.parisnanterre.fr/organisation/les-ufr-et-instituts",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1682,7 +1682,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "50680000A50137AACE51F23BDD47F48A",
+							"evidence": "0D7083E58C1FD06F821D24F434F4BEED",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1690,7 +1690,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "F742316F1ED8893C0561A16B87AE0714",
+							"evidence": "B610FF4BB18D3B9B3CF2F664EA4C6303",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1698,7 +1698,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "E5627587A1E088CD80DDDB7328D1CA9B",
+							"evidence": "1347175B2E4EA83FDED78CB45122C303",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1706,7 +1706,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "97BE609A0CB7ADFB1E3E341F10B32435",
+							"evidence": "53EDA1A86ABB98EB86DEEED63580D521",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1714,7 +1714,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "0AB8C9E38D41BE0552A0EF932BC2541E",
+							"evidence": "B4FE2326CE0E6F6BF2032DC1A5AB2AEA",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1722,25 +1722,33 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "1A17063698EBD8D93464704F7B833FA2",
+							"evidence": "BD437FDA64B0E6465103FA355F43E676",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/",
+							"uri": "https://www.parisnanterre.fr/robots.txt",
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "50680000A50137AACE51F23BDD47F48A",
+							"evidence": "1347175B2E4EA83FDED78CB45122C303",
+							"otherinfo": "\ncookie:JSESSIONID"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/sitemap.xml",
+							"method": "GET",
+							"param": "JSESSIONID",
+							"attack": "",
+							"evidence": "53EDA1A86ABB98EB86DEEED63580D521",
 							"otherinfo": "\ncookie:JSESSIONID"
 						}
 					],
-					"count": "7",
+					"count": "8",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:JSESSIONID</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "86"
+					"sourceid": "54"
 				},
 				{
 					"pluginid": "10049",
@@ -2114,7 +2122,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2380"
+					"sourceid": "2566"
 				}
 			]
 		}
