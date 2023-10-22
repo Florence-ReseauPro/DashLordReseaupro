@@ -1,10 +1,51 @@
-# Nmap 7.92 scan initiated Sun Oct 15 01:25:50 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln parisregion.eu
+# Nmap 7.92 scan initiated Sun Oct 22 01:26:26 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln parisregion.eu
 Nmap scan report for parisregion.eu (217.147.199.227)
 Host is up (0.12s latency).
 Not shown: 998 filtered tcp ports (no-response)
-PORT    STATE SERVICE  VERSION
-80/tcp  open  http     nginx (reverse proxy)
-443/tcp open  ssl/http nginx (reverse proxy)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      nginx (reverse proxy)
+443/tcp open  ssl/https
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     Date: Sun, 22 Oct 2023 01:27:09 GMT
+|     Content-Type: text/html
+|     Connection: close
+|     Vary: Accept-Encoding
+|     Strict-Transport-Security: max-age=15724800; includeSubDomains
+|_    <!DOCTYPE html> <html> <head> <title>Alfa-Safety - Domain not found</title> <style> .div-1 { background-color: #EBEBEB; } </style> <meta charset="UTF-8"> </head> <body> <br/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcgAAABaCAMAAAALpjYkAAAApVBMVEVHcExFcYVIdooxUF8WV15Db4ITICYIGBwdLjUdNkAVKTE9ZHQTJy1HdIglPkpGcoYQIiZCanwAq8g4X3AsSlYnQEsGh54zU2CKqLQgNDxEbn4CbYE8Y3MAsc4AqMNCbH46YHAAl68KTlwCdIkAm7UAVGQArclvjZd2tsU+RrFGcIEAp8EApcFEcIEAob9KdopEboFGcoRIbH4AsM1OfpFIdIc6ZninQMx3AAAAKnRSTlMA4/x3TtEMA0QxI7Ea7Fr1EsXZmWhPjIxfPNlfovPKuY+lOHS7Qukxh/VXy9m9AAAeEUlEQVR42uxbiZKiQBJtoKXkUvAMbby1Z4MSi0P+/9c2sw4Oj1Z73HFmo4uxY0TBsl69zJeHb28/42f8jJ/xM/4vxq//1MevnwX5qwZxrffOwPjovFsu+fqtozyn6qCz9f9qQna705nY5HVL
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=10/22%Time=65347A6D%P=x86_64-alpine-linu
+SF:x-musl%r(GetRequest,2C5F,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20
+SF:Sun,\x2022\x20Oct\x202023\x2001:27:09\x20GMT\r\nContent-Type:\x20text/h
+SF:tml\r\nConnection:\x20close\r\nVary:\x20Accept-Encoding\r\nStrict-Trans
+SF:port-Security:\x20max-age=15724800;\x20includeSubDomains\r\n\r\n<!DOCTY
+SF:PE\x20html>\x20<html>\x20<head>\x20<title>Alfa-Safety\x20-\x20Domain\x2
+SF:0not\x20found</title>\x20<style>\x20\.div-1\x20{\x20background-color:\x
+SF:20#EBEBEB;\x20}\x20</style>\x20<meta\x20charset=\"UTF-8\">\x20</head>\x
+SF:20<body>\x20<br/><img\x20src=\"data:image/png;base64,iVBORw0KGgoAAAANSU
+SF:hEUgAAAcgAAABaCAMAAAALpjYkAAAApVBMVEVHcExFcYVIdooxUF8WV15Db4ITICYIGBwdL
+SF:jUdNkAVKTE9ZHQTJy1HdIglPkpGcoYQIiZCanwAq8g4X3AsSlYnQEsGh54zU2CKqLQgNDxE
+SF:bn4CbYE8Y3MAsc4AqMNCbH46YHAAl68KTlwCdIkAm7UAVGQArclvjZd2tsU\+RrFGcIEAp8
+SF:EApcFEcIEAob9KdopEboFGcoRIbH4AsM1OfpFIdIc6ZninQMx3AAAAKnRSTlMA4/x3TtEMA
+SF:0QxI7Ea7Fr1EsXZmWhPjIxfPNlfovPKuY\+lOHS7Qukxh/VXy9m9AAAeEUlEQVR42uxbiZK
+SF:iQBJtoKXkUvAMbby1Z4MSi0P\+/9c2sw4Oj1Z73HFmo4uxY0TBsl69zJeHb28/42f8jJ/xM
+SF:/4vxq//1MevnwX5qwZxrffOwPjovFsu\+fqtozyn6qCz9f9qQna705nY5HVL")%r(HTTPOp
+SF:tions,22BC,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Sun,\x2022\x20
+SF:Oct\x202023\x2001:27:09\x20GMT\r\nContent-Type:\x20text/html\r\nConnect
+SF:ion:\x20close\r\nVary:\x20Accept-Encoding\r\nStrict-Transport-Security:
+SF:\x20max-age=15724800;\x20includeSubDomains\r\n\r\n<!DOCTYPE\x20html>\x2
+SF:0<html>\x20<head>\x20<title>Alfa-Safety\x20-\x20Domain\x20not\x20found<
+SF:/title>\x20<style>\x20\.div-1\x20{\x20background-color:\x20#EBEBEB;\x20
+SF:}\x20</style>\x20<meta\x20charset=\"UTF-8\">\x20</head>\x20<body>\x20<b
+SF:r/><img\x20src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcgAAABa
+SF:CAMAAAALpjYkAAAApVBMVEVHcExFcYVIdooxUF8WV15Db4ITICYIGBwdLjUdNkAVKTE9ZHQ
+SF:TJy1HdIglPkpGcoYQIiZCanwAq8g4X3AsSlYnQEsGh54zU2CKqLQgNDxEbn4CbYE8Y3MAsc
+SF:4AqMNCbH46YHAAl68KTlwCdIkAm7UAVGQArclvjZd2tsU\+RrFGcIEAp8EApcFEcIEAob9K
+SF:dopEboFGcoRIbH4AsM1OfpFIdIc6ZninQMx3AAAAKnRSTlMA4/x3TtEMA0QxI7Ea7Fr1EsX
+SF:ZmWhPjIxfPNlfovPKuY\+lOHS7Qukxh/VXy9m9AAAeEUlEQVR42uxbiZKiQBJtoKXkUvAMb
+SF:by1Z4MSi0P\+/9c2sw4Oj1Z73HFmo4uxY0TBsl69zJeHb28/42f8jJ/xM/4vxq//1MevnwX
+SF:5qwZxrffOwPjovFsu\+fqtozyn6qCz9f9qQna705nY5HVL");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Oct 15 01:26:24 2023 -- 1 IP address (1 host up) scanned in 34.30 seconds
+# Nmap done at Sun Oct 22 01:27:19 2023 -- 1 IP address (1 host up) scanned in 53.07 seconds

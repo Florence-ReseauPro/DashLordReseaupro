@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln parisregion.eu</pre>
-<p class="lead">Sun Oct 15 01:25:50 2023 – Sun Oct 15 01:26:24 2023<br>1 hosts scanned.
+<p class="lead">Sun Oct 22 01:26:26 2023 – Sun Oct 22 01:27:19 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -121,12 +121,23 @@
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http</td>
-<td title="Product">nginx</td>
+<td title="Service">https</td>
+<td title="Product"></td>
 <td title="Version"></td>
-<td title="Extra Info">reverse proxy</td>
+<td title="Extra Info"></td>
 </tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx">cpe:/a:igor_sysoev:nginx</a></td></tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  GetRequest, HTTPOptions: 
+    HTTP/1.1 404 Not Found
+    Date: Sun, 22 Oct 2023 01:27:09 GMT
+    Content-Type: text/html
+    Connection: close
+    Vary: Accept-Encoding
+    Strict-Transport-Security: max-age=15724800; includeSubDomains
+    &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;title&gt;Alfa-Safety - Domain not found&lt;/title&gt; &lt;style&gt; .div-1 { background-color: #EBEBEB; } &lt;/style&gt; &lt;meta charset="UTF-8"&gt; &lt;/head&gt; &lt;body&gt; &lt;br/&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcgAAABaCAMAAAALpjYkAAAApVBMVEVHcExFcYVIdooxUF8WV15Db4ITICYIGBwdLjUdNkAVKTE9ZHQTJy1HdIglPkpGcoYQIiZCanwAq8g4X3AsSlYnQEsGh54zU2CKqLQgNDxEbn4CbYE8Y3MAsc4AqMNCbH46YHAAl68KTlwCdIkAm7UAVGQArclvjZd2tsU+RrFGcIEAp8EApcFEcIEAob9KdopEboFGcoRIbH4AsM1OfpFIdIc6ZninQMx3AAAAKnRSTlMA4/x3TtEMA0QxI7Ea7Fr1EsXZmWhPjIxfPNlfovPKuY+lOHS7Qukxh/VXy9m9AAAeEUlEQVR42uxbiZKiQBJtoKXkUvAMbby1Z4MSi0P+/9c2sw4Oj1Z73HFmo4uxY0TBsl69zJeHb28/42f8jJ/xM/4vxq//1MevnwX5qwZxrffOwPjovFsu+fqtozyn6qCz9f9qQna705nY5HVL</pre>
+</td></tr>
 </tbody>
 </table></div>
 </div>
@@ -158,11 +169,11 @@
 <td>217.147.199.227 - parisregion.eu</td>
 <td>443</td>
 <td>tcp</td>
-<td>http</td>
-<td>nginx</td>
+<td>https</td>
 <td></td>
-<td>cpe:/a:igor_sysoev:nginx</td>
-<td>reverse proxy</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table></div>
