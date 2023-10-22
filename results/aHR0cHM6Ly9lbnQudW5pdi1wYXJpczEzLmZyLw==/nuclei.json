@@ -32,9 +32,48 @@
       "extracted-results": [
         "lb.univ-paris13.fr."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 52147\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 52147\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nent.univ-paris13.fr.\t7200\tIN\tCNAME\tlb.univ-paris13.fr.\n",
-      "timestamp": "2023-10-15T01:53:07.567866452Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 49284\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 49284\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;ent.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nent.univ-paris13.fr.\t7200\tIN\tCNAME\tlb.univ-paris13.fr.\n",
+      "timestamp": "2023-10-22T02:08:57.52169266Z",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "content-security-policy",
+      "type": "http",
+      "host": "https://ent.univ-paris13.fr/",
+      "matched-at": "https://ent.univ-paris13.fr/",
+      "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:10:38.769078169Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
       "matcher-status": true
     },
     {
@@ -71,8 +110,8 @@
       "matched-at": "https://ent.univ-paris13.fr/",
       "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
       "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:55:07.103032454Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:10:38.769157669Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
       "matcher-status": true
     },
@@ -110,8 +149,8 @@
       "matched-at": "https://ent.univ-paris13.fr/",
       "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
       "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:55:07.103126354Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:10:38.769656274Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
       "matcher-status": true
     },
@@ -149,203 +188,8 @@
       "matched-at": "https://ent.univ-paris13.fr/",
       "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
       "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:55:07.103145554Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-opener-policy",
-      "type": "http",
-      "host": "https://ent.univ-paris13.fr/",
-      "matched-at": "https://ent.univ-paris13.fr/",
-      "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:55:07.103157654Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-resource-policy",
-      "type": "http",
-      "host": "https://ent.univ-paris13.fr/",
-      "matched-at": "https://ent.univ-paris13.fr/",
-      "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:55:07.103188054Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "content-security-policy",
-      "type": "http",
-      "host": "https://ent.univ-paris13.fr/",
-      "matched-at": "https://ent.univ-paris13.fr/",
-      "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:55:07.103199854Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "x-content-type-options",
-      "type": "http",
-      "host": "https://ent.univ-paris13.fr/",
-      "matched-at": "https://ent.univ-paris13.fr/",
-      "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:55:07.103211254Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "x-frame-options",
-      "type": "http",
-      "host": "https://ent.univ-paris13.fr/",
-      "matched-at": "https://ent.univ-paris13.fr/",
-      "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:55:07.103222554Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:10:38.77035798Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
       "matcher-status": true
     },
@@ -383,8 +227,86 @@
       "matched-at": "https://ent.univ-paris13.fr/",
       "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
       "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:55:07.103237454Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:10:38.770726483Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-opener-policy",
+      "type": "http",
+      "host": "https://ent.univ-paris13.fr/",
+      "matched-at": "https://ent.univ-paris13.fr/",
+      "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:10:38.771065186Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-resource-policy",
+      "type": "http",
+      "host": "https://ent.univ-paris13.fr/",
+      "matched-at": "https://ent.univ-paris13.fr/",
+      "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:10:38.771492089Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
       "matcher-status": true
     },
@@ -422,8 +344,8 @@
       "matched-at": "https://ent.univ-paris13.fr/",
       "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
       "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:55:07.103250454Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:10:38.77154399Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
       "matcher-status": true
     },
@@ -461,8 +383,86 @@
       "matched-at": "https://ent.univ-paris13.fr/",
       "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
       "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:55:07.103270054Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:10:38.77156009Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-frame-options",
+      "type": "http",
+      "host": "https://ent.univ-paris13.fr/",
+      "matched-at": "https://ent.univ-paris13.fr/",
+      "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:10:38.77157479Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-content-type-options",
+      "type": "http",
+      "host": "https://ent.univ-paris13.fr/",
+      "matched-at": "https://ent.univ-paris13.fr/",
+      "request": "GET / HTTP/1.1\r\nHost: ent.univ-paris13.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.0 502 Bad Gateway\r\nConnection: close\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><body><h1>502 Bad Gateway</h1>\nThe server returned an invalid or incomplete response.\n</body></html>\n\n",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:10:38.77158509Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ent.univ-paris13.fr/'",
       "matcher-status": true
     },
@@ -495,8 +495,8 @@
       "host": "ent.univ-paris13.fr:443",
       "matched-at": "ent.univ-paris13.fr:443",
       "request": "2E",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:58:17.756363682Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:14:53.423595365Z",
       "matcher-status": true
     },
     {
@@ -524,8 +524,8 @@
       "extracted-results": [
         "Sectigo Limited"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:58:35.904021099Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:15:12.710012428Z",
       "matcher-status": true
     },
     {
@@ -553,8 +553,8 @@
       "extracted-results": [
         "*.univ-paris13.fr"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:58:35.904617598Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:15:12.710226629Z",
       "matcher-status": true
     },
     {
@@ -588,8 +588,8 @@
         "CN: *.univ-paris13.fr",
         " SAN: [*.univ-paris13.fr]"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:58:35.904935698Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:15:12.71027783Z",
       "matcher-status": true
     },
     {
@@ -618,8 +618,8 @@
       "extracted-results": [
         "tls12"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:58:38.602961275Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:15:17.514597163Z",
       "matcher-status": true
     },
     {
@@ -648,8 +648,8 @@
       "extracted-results": [
         "tls13"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2023-10-15T01:58:39.179267286Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-10-22T02:15:17.854639406Z",
       "matcher-status": true
     }
   ]
