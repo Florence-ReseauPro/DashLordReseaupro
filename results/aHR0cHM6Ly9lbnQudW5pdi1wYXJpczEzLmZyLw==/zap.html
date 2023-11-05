@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 29 Oct 2023 01:54:42
+		Generated on Sun, 5 Nov 2023 01:58:06
 	</h3>
 
 	<h3>
@@ -172,7 +172,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>10</div>
+					<div>9</div>
 				</td>
 			</tr>
 			<tr>
@@ -283,11 +283,6 @@ td {
 				<td align="center">1</td>
 			</tr>
 			<tr>
-				<td><a href="#10094">Base64 Disclosure</a></td>
-				<td align="center" class="risk-0">Informational</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
 				<td><a href="#90011">Charset Mismatch (Header Versus Meta Content-Type Charset)</a></td>
 				<td align="center" class="risk-0">Informational</td>
 				<td align="center">1</td>
@@ -325,7 +320,7 @@ td {
 			<tr>
 				<td><a href="#10112">Session Management Response Identified</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">4</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable but Non-Cacheable Content</a></td>
@@ -398,7 +393,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form id=&quot;fm1&quot; name=&quot;fm1&quot; class=&quot;fm-v clearfix&quot; action=&quot;/cas/login;CASSESSIONID=952B78E156B84925B18DB8F5B48DCFFE?service=https%3A%2F%2Fent.univ-paris13.fr&quot; method=&quot;post&quot;&gt;</td>
+						<td width="80%">&lt;form id=&quot;fm1&quot; name=&quot;fm1&quot; class=&quot;fm-v clearfix&quot; action=&quot;/cas/login;CASSESSIONID=3C86ED47B23FD4446E1049E0F187DD07?service=https%3A%2F%2Fent.univ-paris13.fr&quot; method=&quot;post&quot;&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2996,90 +2991,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
-						id="10094"></a>
-						<div>Informational</div></th>
-					<th class="risk-0">Base64 Disclosure</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://ent.univ-paris13.fr/">https://ent.univ-paris13.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">LT-1611341-QqpjQRXac0xtUVVLjAVEDcBdPfJqWH-cas1</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">-?��]w�_����Ev��TUR�QpO|����</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://projects.webappsec.org/w/page/13246936/Information%20Leakage">https://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10094/">10094</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-0"><a
 						id="90011"></a>
 						<div>Informational</div></th>
 					<th class="risk-0">Charset Mismatch (Header Versus Meta Content-Type Charset)</th>
@@ -4002,45 +3913,13 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">952B78E156B84925B18DB8F5B48DCFFE</td>
+						<td width="80%">3C86ED47B23FD4446E1049E0F187DD07</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
 cookie:CASSESSIONID</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://ent.univ-paris13.fr/">https://ent.univ-paris13.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">UP13ENT</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">ofm4ohomo2sl25r70jnvu9lsp4</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-cookie:UP13ENT</td>
 					</tr>
 				
 					<tr>
@@ -4066,7 +3945,7 @@ cookie:UP13ENT</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">6tpas9kk78ct6j80hf4tauo4h4</td>
+						<td width="80%">ato0l6i5s1o28v1atfvnedd7a6</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4098,7 +3977,7 @@ cookie:UP13ENT</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">7qavc18gg8gipa10oinqofd6f6</td>
+						<td width="80%">du4ablao0oms87v777645msbq4</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4109,7 +3988,7 @@ cookie:UP13ENT</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">4</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
