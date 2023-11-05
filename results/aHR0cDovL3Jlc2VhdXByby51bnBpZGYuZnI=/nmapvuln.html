@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln reseaupro.unpidf.fr</pre>
-<p class="lead">Sun Oct 29 01:02:58 2023 – Sun Oct 29 01:03:19 2023<br>1 hosts scanned.
+<p class="lead">Sun Nov  5 01:04:57 2023 – Sun Nov  5 01:05:21 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -125,64 +125,23 @@
   cpe:/a:openbsd:openssh:6.0p1: 
     	CVE-2015-5600	8.5	https://vulners.com/cve/CVE-2015-5600
     	SSV:61450	7.5	https://vulners.com/seebug/SSV:61450	*EXPLOIT*
+    	PRION:CVE-2020-16088	7.5	https://vulners.com/prion/PRION:CVE-2020-16088
+    	PRION:CVE-2017-1000372	7.5	https://vulners.com/prion/PRION:CVE-2017-1000372
     	CVE-2014-1692	7.5	https://vulners.com/cve/CVE-2014-1692
+    	PRION:CVE-2019-19726	7.2	https://vulners.com/prion/PRION:CVE-2019-19726
     	CVE-2015-6564	6.9	https://vulners.com/cve/CVE-2015-6564
+    	PRION:CVE-2017-1000373	6.4	https://vulners.com/prion/PRION:CVE-2017-1000373
     	SSV:61911	5.8	https://vulners.com/seebug/SSV:61911	*EXPLOIT*
     	CVE-2014-2653	5.8	https://vulners.com/cve/CVE-2014-2653
     	CVE-2014-2532	5.8	https://vulners.com/cve/CVE-2014-2532
     	SSV:60656	5.0	https://vulners.com/seebug/SSV:60656	*EXPLOIT*
+    	PRION:CVE-2019-8460	5.0	https://vulners.com/prion/PRION:CVE-2019-8460
     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
     	CVE-2010-5107	5.0	https://vulners.com/cve/CVE-2010-5107
     	SSV:90447	4.6	https://vulners.com/seebug/SSV:90447	*EXPLOIT*</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">80</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http</td>
-<td title="Product">Apache httpd</td>
-<td title="Version">2.2.22</td>
-<td title="Extra Info">(Debian)</td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server:2.2.22">cpe:/a:apache:http_server:2.2.22</a><h5>vulners</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  cpe:/a:apache:http_server:2.2.22: 
-    	CVE-2017-7679	7.5	https://vulners.com/cve/CVE-2017-7679
-    	CVE-2017-3169	7.5	https://vulners.com/cve/CVE-2017-3169
-    	CVE-2017-3167	7.5	https://vulners.com/cve/CVE-2017-3167
-    	SSV:60427	6.9	https://vulners.com/seebug/SSV:60427	*EXPLOIT*
-    	SSV:60386	6.9	https://vulners.com/seebug/SSV:60386	*EXPLOIT*
-    	SSV:60069	6.9	https://vulners.com/seebug/SSV:60069	*EXPLOIT*
-    	CVE-2012-0883	6.9	https://vulners.com/cve/CVE-2012-0883
-    	PACKETSTORM:127546	6.8	https://vulners.com/packetstorm/PACKETSTORM:127546	*EXPLOIT*
-    	CVE-2016-5387	6.8	https://vulners.com/cve/CVE-2016-5387
-    	CVE-2014-0226	6.8	https://vulners.com/cve/CVE-2014-0226
-    	1337DAY-ID-22451	6.8	https://vulners.com/zdt/1337DAY-ID-22451	*EXPLOIT*
-    	CVE-2017-9788	6.4	https://vulners.com/cve/CVE-2017-9788
-    	SSV:60788	5.1	https://vulners.com/seebug/SSV:60788	*EXPLOIT*
-    	CVE-2013-1862	5.1	https://vulners.com/cve/CVE-2013-1862
-    	SSV:96537	5.0	https://vulners.com/seebug/SSV:96537	*EXPLOIT*
-    	SSV:62058	5.0	https://vulners.com/seebug/SSV:62058	*EXPLOIT*
-    	SSV:61874	5.0	https://vulners.com/seebug/SSV:61874	*EXPLOIT*
-    	EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	*EXPLOIT*
-    	EDB-ID:42745	5.0	https://vulners.com/exploitdb/EDB-ID:42745	*EXPLOIT*
-    	CVE-2017-9798	5.0	https://vulners.com/cve/CVE-2017-9798
-    	CVE-2016-8743	5.0	https://vulners.com/cve/CVE-2016-8743
-    	CVE-2014-0231	5.0	https://vulners.com/cve/CVE-2014-0231
-    	CVE-2014-0098	5.0	https://vulners.com/cve/CVE-2014-0098
-    	CVE-2013-6438	5.0	https://vulners.com/cve/CVE-2013-6438
-    	CVE-2013-5704	5.0	https://vulners.com/cve/CVE-2013-5704
-    	1337DAY-ID-28573	5.0	https://vulners.com/zdt/1337DAY-ID-28573	*EXPLOIT*
-    	SSV:60905	4.3	https://vulners.com/seebug/SSV:60905	*EXPLOIT*
-    	SSV:60657	4.3	https://vulners.com/seebug/SSV:60657	*EXPLOIT*
-    	SSV:60653	4.3	https://vulners.com/seebug/SSV:60653	*EXPLOIT*
-    	SSV:60345	4.3	https://vulners.com/seebug/SSV:60345	*EXPLOIT*</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache/2.2.22 (Debian)</pre>
-</td></tr>
-<tr class="success">
-<td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">http</td>
@@ -226,6 +185,52 @@
     	SSV:60657	4.3	https://vulners.com/seebug/SSV:60657	*EXPLOIT*
     	SSV:60653	4.3	https://vulners.com/seebug/SSV:60653	*EXPLOIT*
     	SSV:60345	4.3	https://vulners.com/seebug/SSV:60345	*EXPLOIT*</pre>
+</td></tr>
+<tr class="success">
+<td title="Port">443</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">http</td>
+<td title="Product">Apache httpd</td>
+<td title="Version">2.2.22</td>
+<td title="Extra Info">(Debian)</td>
+</tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server:2.2.22">cpe:/a:apache:http_server:2.2.22</a><h5>vulners</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  cpe:/a:apache:http_server:2.2.22: 
+    	CVE-2017-7679	7.5	https://vulners.com/cve/CVE-2017-7679
+    	CVE-2017-3169	7.5	https://vulners.com/cve/CVE-2017-3169
+    	CVE-2017-3167	7.5	https://vulners.com/cve/CVE-2017-3167
+    	SSV:60427	6.9	https://vulners.com/seebug/SSV:60427	*EXPLOIT*
+    	SSV:60386	6.9	https://vulners.com/seebug/SSV:60386	*EXPLOIT*
+    	SSV:60069	6.9	https://vulners.com/seebug/SSV:60069	*EXPLOIT*
+    	CVE-2012-0883	6.9	https://vulners.com/cve/CVE-2012-0883
+    	PACKETSTORM:127546	6.8	https://vulners.com/packetstorm/PACKETSTORM:127546	*EXPLOIT*
+    	CVE-2016-5387	6.8	https://vulners.com/cve/CVE-2016-5387
+    	CVE-2014-0226	6.8	https://vulners.com/cve/CVE-2014-0226
+    	1337DAY-ID-22451	6.8	https://vulners.com/zdt/1337DAY-ID-22451	*EXPLOIT*
+    	CVE-2017-9788	6.4	https://vulners.com/cve/CVE-2017-9788
+    	SSV:60788	5.1	https://vulners.com/seebug/SSV:60788	*EXPLOIT*
+    	CVE-2013-1862	5.1	https://vulners.com/cve/CVE-2013-1862
+    	SSV:96537	5.0	https://vulners.com/seebug/SSV:96537	*EXPLOIT*
+    	SSV:62058	5.0	https://vulners.com/seebug/SSV:62058	*EXPLOIT*
+    	SSV:61874	5.0	https://vulners.com/seebug/SSV:61874	*EXPLOIT*
+    	EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	*EXPLOIT*
+    	EDB-ID:42745	5.0	https://vulners.com/exploitdb/EDB-ID:42745	*EXPLOIT*
+    	CVE-2017-9798	5.0	https://vulners.com/cve/CVE-2017-9798
+    	CVE-2016-8743	5.0	https://vulners.com/cve/CVE-2016-8743
+    	CVE-2014-0231	5.0	https://vulners.com/cve/CVE-2014-0231
+    	CVE-2014-0098	5.0	https://vulners.com/cve/CVE-2014-0098
+    	CVE-2013-6438	5.0	https://vulners.com/cve/CVE-2013-6438
+    	CVE-2013-5704	5.0	https://vulners.com/cve/CVE-2013-5704
+    	1337DAY-ID-28573	5.0	https://vulners.com/zdt/1337DAY-ID-28573	*EXPLOIT*
+    	SSV:60905	4.3	https://vulners.com/seebug/SSV:60905	*EXPLOIT*
+    	SSV:60657	4.3	https://vulners.com/seebug/SSV:60657	*EXPLOIT*
+    	SSV:60653	4.3	https://vulners.com/seebug/SSV:60653	*EXPLOIT*
+    	SSV:60345	4.3	https://vulners.com/seebug/SSV:60345	*EXPLOIT*</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache/2.2.22 (Debian)</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">1556</td>
