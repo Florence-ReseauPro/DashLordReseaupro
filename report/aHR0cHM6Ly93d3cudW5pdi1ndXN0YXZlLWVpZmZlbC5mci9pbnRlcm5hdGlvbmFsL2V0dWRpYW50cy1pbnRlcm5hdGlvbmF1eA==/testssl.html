@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az840-77:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az1241-208:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2023-11-05 01:54:05                --&gt;&gt; 193.55.45.10:443 (www.univ-gustave-eiffel.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-11-12 01:51:23                --&gt;&gt; 193.55.45.10:443 (www.univ-gustave-eiffel.fr) &lt;&lt;--</span>
 
  rDNS (193.55.45.10):    wwwdev.univ-eiffel.fr.
  Service detected:       HTTP
@@ -161,9 +161,11 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>*.univ-gustave-eiffel.fr </i> (CN in response to request w/o SNI: <i>*.univ-eiffel.fr </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>*.univ-gustave-eiffel.fr univ-gustave-eiffel.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN wildcard and CN wildcard</span> (SNI mandatory)
+                              <span style="color:#a86437;">wildcard certificate</span> could be problematic, see other hosts at
+                              https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=65F59F2B71F5B9401AB7EAEC64BC9CB6E628C64737822B8B9D63A949E8082916
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#e52207;">expires &lt; 30 days (22)</span> (2022-11-27 00:00 --&gt; 2023-11-27 23:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#e52207;">expires &lt; 30 days (15)</span> (2022-11-27 00:00 --&gt; 2023-11-27 23:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://GEANT.crl.sectigo.com/GEANTOVRSACA4.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>http://GEANT.ocsp.sectigo.com
@@ -385,7 +387,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               Grade capped to B. TLS 1.0 offered
                               Grade capped to A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2023-11-05 01:56:00 [ 117s] --&gt;&gt; 193.55.45.10:443 (www.univ-gustave-eiffel.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-11-12 01:53:16 [ 115s] --&gt;&gt; 193.55.45.10:443 (www.univ-gustave-eiffel.fr) &lt;&lt;--</span>
 
 
 </pre>
