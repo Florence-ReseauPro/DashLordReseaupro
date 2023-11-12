@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 5 Nov 2023 01:05:04",
+	"@generated": "Sun, 12 Nov 2023 01:03:01",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -34,7 +34,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p><p>http://openwall.info/wiki/john/sample-hashes</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1372"
+					"sourceid": "1387"
 				},
 				{
 					"pluginid": "10202",
@@ -64,6 +64,14 @@
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
+						},
+						{
+							"uri": "https://unif.fr/international/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -104,14 +112,6 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form role=\"search\" method=\"get\" class=\"search-form\" action=\"https://unif.fr/\">",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ]."
-						},
-						{
-							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -396,11 +396,11 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202344.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202345.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -408,7 +408,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -416,7 +416,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -424,11 +424,11 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202344.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202345.js' defer></script>",
 							"otherinfo": ""
 						}
 					],
@@ -465,7 +465,7 @@
 					"reference": "<p>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214</p><p>https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g</p><p>https://security.snyk.io/vuln/npm:moment:20170905</p><p>https://security.snyk.io/vuln/SNYK-JS-MOMENT-2944238</p><p>https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4</p><p>https://github.com/moment/moment/issues/4163</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "568"
+					"sourceid": "572"
 				},
 				{
 					"pluginid": "10010",
@@ -492,7 +492,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "799"
+					"sourceid": "823"
 				},
 				{
 					"pluginid": "10054",
@@ -519,7 +519,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "799"
+					"sourceid": "823"
 				},
 				{
 					"pluginid": "10017",
@@ -542,9 +542,9 @@
 						{
 							"uri": "https://unif.fr/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202344.js",
+							"param": "https://stats.wp.com/e-202345.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202344.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202345.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
@@ -556,7 +556,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/nos-valeurs/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "//www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
@@ -564,15 +564,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/nos-valeurs/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202344.js",
+							"param": "https://stats.wp.com/e-202345.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202344.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202345.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/nos-valeurs/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
@@ -580,7 +580,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "//www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
@@ -588,15 +588,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202344.js",
+							"param": "https://stats.wp.com/e-202345.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202344.js' defer></script>",
+							"evidence": "<script src='https://stats.wp.com/e-202345.js' defer></script>",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=UA-34806106-1",
 							"attack": "",
@@ -637,7 +637,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "567"
+					"sourceid": "561"
 				},
 				{
 					"pluginid": "10063",
@@ -859,7 +859,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "357"
+					"sourceid": "339"
 				},
 				{
 					"pluginid": "10036",
@@ -995,6 +995,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://unif.fr/learning-spaces/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
@@ -1028,14 +1036,6 @@
 						},
 						{
 							"uri": "https://unif.fr/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://unif.fr/univmobile/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1090,41 +1090,41 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1699138800",
-							"otherinfo": "1699138800, which evaluates to: 2023-11-04 23:00:00"
+							"evidence": "1699743600",
+							"otherinfo": "1699743600, which evaluates to: 2023-11-11 23:00:00"
 						},
 						{
 							"uri": "https://unif.fr/nos-valeurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1699138800",
-							"otherinfo": "1699138800, which evaluates to: 2023-11-04 23:00:00"
+							"evidence": "1699743600",
+							"otherinfo": "1699743600, which evaluates to: 2023-11-11 23:00:00"
 						},
 						{
 							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1699138800",
-							"otherinfo": "1699138800, which evaluates to: 2023-11-04 23:00:00"
+							"evidence": "1699743600",
+							"otherinfo": "1699743600, which evaluates to: 2023-11-11 23:00:00"
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1699138800",
-							"otherinfo": "1699138800, which evaluates to: 2023-11-04 23:00:00"
+							"evidence": "1699743600",
+							"otherinfo": "1699743600, which evaluates to: 2023-11-11 23:00:00"
 						}
 					],
 					"count": "4",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1699138800, which evaluates to: 2023-11-04 23:00:00</p>",
+					"otherinfo": "<p>1699743600, which evaluates to: 2023-11-11 23:00:00</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "138"
+					"sourceid": "124"
 				},
 				{
 					"pluginid": "10021",
@@ -1268,6 +1268,14 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\\x0015\uFFFDP\\x0001cR\uFFFDU\\x0005\u035DH0\\x0006c\uFFFD\\x0006\uFFFD\uFFFDa}\\x0016\uFFFD\\\\x000f!\uFFFD\uFFFD"
 						},
 						{
+							"uri": "https://unif.fr/international/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "lLm0ihXnUAFjUqZVBc2dSDAGY4gGpp9hfRaoXA8h_bw",
+							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\\x0015\uFFFDP\\x0001cR\uFFFDU\\x0005\u035DH0\\x0006c\uFFFD\\x0006\uFFFD\uFFFDa}\\x0016\uFFFD\\\\x000f!\uFFFD\uFFFD"
+						},
+						{
 							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
@@ -1301,14 +1309,6 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "lLm0ihXnUAFjUqZVBc2dSDAGY4gGpp9hfRaoXA8h_bw",
-							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\\x0015\uFFFDP\\x0001cR\uFFFDU\\x0005\u035DH0\\x0006c\uFFFD\\x0006\uFFFD\uFFFDa}\\x0016\uFFFD\\\\x000f!\uFFFD\uFFFD"
-						},
-						{
-							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1453,7 +1453,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "549"
+					"sourceid": "551"
 				},
 				{
 					"pluginid": "10027",
@@ -1483,6 +1483,14 @@
 						},
 						{
 							"uri": "https://unif.fr/datakairos/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin",
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 2 times, the first in the element starting with: \"<script type='text/javascript' id='simcal-default-calendar-js-extra'>\n/* <![CDATA[ */\nvar simcal_default_calendar = {\"ajax_url\":\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://unif.fr/international/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1523,14 +1531,6 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected 2 times, the first in the element starting with: \"<script type='text/javascript' id='simcal-default-calendar-js-extra'>\n/* <![CDATA[ */\nvar simcal_default_calendar = {\"ajax_url\":\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1597,6 +1597,14 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
+							"uri": "https://unif.fr/international/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"#\">Pr\u00E9sentation</a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
 							"uri": "https://unif.fr/learning-spaces/",
 							"method": "GET",
 							"param": "",
@@ -1630,14 +1638,6 @@
 						},
 						{
 							"uri": "https://unif.fr/partenaires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"#\">Pr\u00E9sentation</a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://unif.fr/reponses-u/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1694,7 +1694,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "10"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -2008,7 +2008,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "799"
+					"sourceid": "823"
 				},
 				{
 					"pluginid": "10049",
@@ -2126,7 +2126,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "106"
+					"sourceid": "113"
 				},
 				{
 					"pluginid": "10031",
@@ -2209,7 +2209,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "799"
+					"sourceid": "823"
 				}
 			]
 		}
