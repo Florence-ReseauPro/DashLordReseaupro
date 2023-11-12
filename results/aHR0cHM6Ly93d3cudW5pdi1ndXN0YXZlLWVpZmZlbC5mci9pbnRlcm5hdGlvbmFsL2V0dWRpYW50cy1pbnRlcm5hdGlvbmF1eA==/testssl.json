@@ -685,6 +685,13 @@
               "finding"      : "Ok via SAN wildcard and CN wildcard (SNI mandatory)"
           }
 ,         {
+              "id"           : "cert_trust_wildcard",
+              "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "trust is via wildcard"
+          }
+,         {
               "id"           : "cert_chain_of_trust",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
@@ -703,7 +710,7 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "HIGH",
-              "finding"      : "expires < 30 days (22)"
+              "finding"      : "expires < 30 days (15)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -906,7 +913,7 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1699149301"
+              "finding"      : "1699753936"
           }
 ,         {
               "id"           : "HSTS",
@@ -1506,6 +1513,6 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "117"
+              "finding"      : "115"
           }
 ]
