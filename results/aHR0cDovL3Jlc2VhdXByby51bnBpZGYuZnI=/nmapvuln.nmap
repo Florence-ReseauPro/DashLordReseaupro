@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Nov 12 01:02:32 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln reseaupro.unpidf.fr
+# Nmap 7.92 scan initiated Sun Nov 19 01:04:03 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln reseaupro.unpidf.fr
 Nmap scan report for reseaupro.unpidf.fr (193.51.86.242)
-Host is up (0.10s latency).
+Host is up (0.085s latency).
 Not shown: 814 closed tcp ports (reset), 181 filtered tcp ports (no-response)
 PORT      STATE SERVICE      VERSION
 22/tcp    open  ssh          OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)
@@ -12,9 +12,12 @@ PORT      STATE SERVICE      VERSION
 |     	SSV:61450	7.5	https://vulners.com/seebug/SSV:61450	*EXPLOIT*
 |     	PRION:CVE-2020-16088	7.5	https://vulners.com/prion/PRION:CVE-2020-16088
 |     	PRION:CVE-2017-1000372	7.5	https://vulners.com/prion/PRION:CVE-2017-1000372
-|     	EDB-ID:42271	7.5	https://vulners.com/exploitdb/EDB-ID:42271	*EXPLOIT*
 |     	CVE-2014-1692	7.5	https://vulners.com/cve/CVE-2014-1692
 |     	PRION:CVE-2019-19726	7.2	https://vulners.com/prion/PRION:CVE-2019-19726
+|     	MSF:EXPLOIT-OPENBSD-LOCAL-DYNAMIC_LOADER_CHPASS_PRIVESC-	7.2	https://vulners.com/metasploit/MSF:EXPLOIT-OPENBSD-LOCAL-DYNAMIC_LOADER_CHPASS_PRIVESC-	*EXPLOIT*
+|     	EDB-ID:47803	7.2	https://vulners.com/exploitdb/EDB-ID:47803	*EXPLOIT*
+|     	EDB-ID:47780	7.2	https://vulners.com/exploitdb/EDB-ID:47780	*EXPLOIT*
+|     	1337DAY-ID-39095	7.2	https://vulners.com/zdt/1337DAY-ID-39095	*EXPLOIT*
 |     	CVE-2015-6564	6.9	https://vulners.com/cve/CVE-2015-6564
 |     	PRION:CVE-2017-1000373	6.4	https://vulners.com/prion/PRION:CVE-2017-1000373
 |     	SSV:61911	5.8	https://vulners.com/seebug/SSV:61911	*EXPLOIT*
@@ -25,10 +28,7 @@ PORT      STATE SERVICE      VERSION
 |     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
 |     	CVE-2010-5107	5.0	https://vulners.com/cve/CVE-2010-5107
 |     	SSV:90447	4.6	https://vulners.com/seebug/SSV:90447	*EXPLOIT*
-|     	MSF:EXPLOIT-OPENBSD-LOCAL-DYNAMIC_LOADER_CHPASS_PRIVESC-	4.3	https://vulners.com/metasploit/MSF:EXPLOIT-OPENBSD-LOCAL-DYNAMIC_LOADER_CHPASS_PRIVESC-	*EXPLOIT*
-|     	EDB-ID:47803	4.3	https://vulners.com/exploitdb/EDB-ID:47803	*EXPLOIT*
-|     	EDB-ID:47780	4.3	https://vulners.com/exploitdb/EDB-ID:47780	*EXPLOIT*
-|_    	1337DAY-ID-39095	4.3	https://vulners.com/zdt/1337DAY-ID-39095	*EXPLOIT*
+|_    	PACKETSTORM:140944	0.0	https://vulners.com/packetstorm/PACKETSTORM:140944	*EXPLOIT*
 80/tcp    open  http         Apache httpd 2.2.22 ((Debian))
 |_http-server-header: Apache/2.2.22 (Debian)
 | vulners: 
@@ -44,4 +44,4 @@ PORT      STATE SERVICE      VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Nov 12 01:02:53 2023 -- 1 IP address (1 host up) scanned in 21.41 seconds
+# Nmap done at Sun Nov 19 01:04:21 2023 -- 1 IP address (1 host up) scanned in 17.82 seconds
