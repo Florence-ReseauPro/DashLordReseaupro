@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 12 Nov 2023 01:19:19",
+	"@generated": "Sun, 19 Nov 2023 01:20:51",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -449,7 +449,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10110",
@@ -500,7 +500,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "175"
+					"sourceid": "182"
 				},
 				{
 					"pluginid": "10063",
@@ -521,7 +521,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/bower_components/subscribe-better/jquery.subscribe-better.min.js",
+							"uri": "https://parisregion.eu/bower_components/bootstrap/dist/js/bootstrap.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -529,7 +529,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/bower_components/wowjs/dist/wow.min.js",
+							"uri": "https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -599,7 +599,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10040",
@@ -757,7 +757,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "279"
+					"sourceid": "283"
 				},
 				{
 					"pluginid": "10027",
@@ -888,7 +888,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "175"
+					"sourceid": "182"
 				},
 				{
 					"pluginid": "10109",
@@ -1097,23 +1097,15 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/parisregionfp.html",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1140,23 +1132,15 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/parisregionfp.html",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1183,23 +1167,15 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/parisregionfp.html",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1226,23 +1202,15 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/parisregionfp.html",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10049",
@@ -1256,6 +1224,14 @@
 					"instances":[ 
 						{
 							"uri": "https://parisregion.eu/bower_components/ionicons/css/ionicons.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=604800",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://parisregion.eu/bower_components/jquery.mb.ytplayer/dist/css/jquery.mb.YTPlayer.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1303,13 +1279,13 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "49"
+					"sourceid": "48"
 				},
 				{
 					"pluginid": "10049",
@@ -1352,23 +1328,15 @@
 							"attack": "",
 							"evidence": "max-age=0",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/study-research.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0",
-							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				}
 			]
 		}

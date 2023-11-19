@@ -33,51 +33,9 @@
       "type": "dns",
       "host": "parisregion.eu.",
       "matched-at": "parisregion.eu",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 19267\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t DS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 19267\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t DS\n\n;; ANSWER SECTION:\nparisregion.eu.\t21600\tIN\tDS\t38542 8 2 7C48D89B1370AE35CE5ED17DDEF5DD896E52A8CA65721C089855097FD3B23D60\n",
-      "timestamp": "2023-11-12T01:26:27.322757081Z",
-      "matcher-status": true
-    },
-    {
-      "template": "dns/mx-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
-      "template-id": "mx-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
-      "info": {
-        "name": "MX Record Detection",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "mx"
-        ],
-        "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
-        "reference": [
-          "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
-          "https://mxtoolbox.com/"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "parisregion.eu.",
-      "matched-at": "parisregion.eu",
-      "extracted-results": [
-        "1 mx4.mail.ovh.net.",
-        "10 mx3.mail.ovh.net."
-      ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 10650\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t MX\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 10650\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t MX\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tMX\t1 mx4.mail.ovh.net.\nparisregion.eu.\t3600\tIN\tMX\t10 mx3.mail.ovh.net.\n",
-      "timestamp": "2023-11-12T01:26:27.537901493Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 6368\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t DS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 6368\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t DS\n\n;; ANSWER SECTION:\nparisregion.eu.\t86400\tIN\tDS\t38542 8 2 7C48D89B1370AE35CE5ED17DDEF5DD896E52A8CA65721C089855097FD3B23D60\n",
+      "timestamp": "2023-11-19T01:25:19.199784224Z",
       "matcher-status": true
     },
     {
@@ -115,9 +73,9 @@
       "extracted-results": [
         "\"1|www.parisregion.eu\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 22250\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 22250\n;; flags: qr rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t TXT\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tTXT\t\"1|www.parisregion.eu\"\n",
-      "timestamp": "2023-11-12T01:26:28.378116451Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 32398\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 32398\n;; flags: qr rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t TXT\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tTXT\t\"1|www.parisregion.eu\"\n",
+      "timestamp": "2023-11-19T01:25:19.356512264Z",
       "matcher-status": true
     },
     {
@@ -152,9 +110,51 @@
       "type": "dns",
       "host": "parisregion.eu.",
       "matched-at": "parisregion.eu",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 57363\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 57363\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nparisregion.eu.\t60\tIN\tSOA\tdns111.ovh.net. tech.ovh.net. 2023111001 86400 3600 3600000 60\n",
-      "timestamp": "2023-11-12T01:26:28.462472359Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 8016\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 8016\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nparisregion.eu.\t60\tIN\tSOA\tdns111.ovh.net. tech.ovh.net. 2023111001 86400 3600 3600000 60\n",
+      "timestamp": "2023-11-19T01:25:19.361502479Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/mx-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
+      "template-id": "mx-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
+      "info": {
+        "name": "MX Record Detection",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "mx"
+        ],
+        "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
+        "reference": [
+          "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
+          "https://mxtoolbox.com/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "parisregion.eu.",
+      "matched-at": "parisregion.eu",
+      "extracted-results": [
+        "10 mx3.mail.ovh.net.",
+        "1 mx4.mail.ovh.net."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 17561\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t MX\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 17561\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t MX\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tMX\t10 mx3.mail.ovh.net.\nparisregion.eu.\t3600\tIN\tMX\t1 mx4.mail.ovh.net.\n",
+      "timestamp": "2023-11-19T01:25:20.275965804Z",
       "matcher-status": true
     },
     {
@@ -187,285 +187,12 @@
       "host": "parisregion.eu.",
       "matched-at": "parisregion.eu",
       "extracted-results": [
-        "dns111.ovh.net.",
-        "ns111.ovh.net."
+        "ns111.ovh.net.",
+        "dns111.ovh.net."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 29752\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 29752\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t NS\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tNS\tdns111.ovh.net.\nparisregion.eu.\t3600\tIN\tNS\tns111.ovh.net.\n",
-      "timestamp": "2023-11-12T01:26:28.48434466Z",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "content-security-policy",
-      "type": "http",
-      "host": "https://parisregion.eu/parisregionfp.html#welcome",
-      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
-      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:12 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
-      "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:12.378353969Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "x-frame-options",
-      "type": "http",
-      "host": "https://parisregion.eu/parisregionfp.html#welcome",
-      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
-      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:12 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
-      "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:12.378400506Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "x-permitted-cross-domain-policies",
-      "type": "http",
-      "host": "https://parisregion.eu/parisregionfp.html#welcome",
-      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
-      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:12 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
-      "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:12.378417057Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "referrer-policy",
-      "type": "http",
-      "host": "https://parisregion.eu/parisregionfp.html#welcome",
-      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
-      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:12 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
-      "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:12.378435211Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "clear-site-data",
-      "type": "http",
-      "host": "https://parisregion.eu/parisregionfp.html#welcome",
-      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
-      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:12 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
-      "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:12.378455799Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-embedder-policy",
-      "type": "http",
-      "host": "https://parisregion.eu/parisregionfp.html#welcome",
-      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
-      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:12 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
-      "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:12.378475776Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-opener-policy",
-      "type": "http",
-      "host": "https://parisregion.eu/parisregionfp.html#welcome",
-      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
-      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:12 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
-      "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:12.378493379Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 60228\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 60228\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n; EDE: 18 (Prohibited): ()\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t NS\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tNS\tns111.ovh.net.\nparisregion.eu.\t3600\tIN\tNS\tdns111.ovh.net.\n",
+      "timestamp": "2023-11-19T01:25:20.28355735Z",
       "matcher-status": true
     },
     {
@@ -501,9 +228,48 @@
       "host": "https://parisregion.eu/parisregionfp.html#welcome",
       "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
       "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:12 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:04 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:12.378509438Z",
+      "timestamp": "2023-11-19T01:26:04.636889213Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "content-security-policy",
+      "type": "http",
+      "host": "https://parisregion.eu/parisregionfp.html#welcome",
+      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
+      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:04 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "ip": "217.147.199.227",
+      "timestamp": "2023-11-19T01:26:04.63694692Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
       "matcher-status": true
     },
@@ -540,9 +306,48 @@
       "host": "https://parisregion.eu/parisregionfp.html#welcome",
       "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
       "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:12 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:04 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:12.378528263Z",
+      "timestamp": "2023-11-19T01:26:04.63696277Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-frame-options",
+      "type": "http",
+      "host": "https://parisregion.eu/parisregionfp.html#welcome",
+      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
+      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:04 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "ip": "217.147.199.227",
+      "timestamp": "2023-11-19T01:26:04.636975614Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
       "matcher-status": true
     },
@@ -579,52 +384,205 @@
       "host": "https://parisregion.eu/parisregionfp.html#welcome",
       "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
       "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:12 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:04 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:12.378537821Z",
+      "timestamp": "2023-11-19T01:26:04.636991634Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
       "matcher-status": true
     },
     {
-      "template": "http/technologies/waf-detect.yaml",
-      "template-url": "https://templates.nuclei.sh/public/waf-detect",
-      "template-id": "waf-detect",
-      "template-path": "/home/runner/nuclei-templates/http/technologies/waf-detect.yaml",
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
       "info": {
-        "name": "WAF Detection",
+        "name": "HTTP Missing Security Headers",
         "author": [
-          "dwisiswant0",
-          "lu4nx"
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
         ],
         "tags": [
-          "waf",
-          "tech",
-          "misc"
+          "misconfig",
+          "headers",
+          "generic"
         ],
-        "description": "A web application firewall was detected.",
-        "reference": [
-          "https://github.com/ekultek/whatwaf"
-        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
         "severity": "info",
         "metadata": {
           "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
         }
       },
-      "matcher-name": "nginxgeneric",
+      "matcher-name": "clear-site-data",
       "type": "http",
       "host": "https://parisregion.eu/parisregionfp.html#welcome",
-      "matched-at": "https://parisregion.eu/parisregionfp.html/#welcome",
-      "request": "POST /parisregionfp.html/ HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:34 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
+      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:04 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:34.823642727Z",
-      "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: parisregion.eu' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html/#welcome'",
+      "timestamp": "2023-11-19T01:26:04.637006381Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-permitted-cross-domain-policies",
+      "type": "http",
+      "host": "https://parisregion.eu/parisregionfp.html#welcome",
+      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
+      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:04 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "ip": "217.147.199.227",
+      "timestamp": "2023-11-19T01:26:04.637020558Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "referrer-policy",
+      "type": "http",
+      "host": "https://parisregion.eu/parisregionfp.html#welcome",
+      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
+      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:04 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "ip": "217.147.199.227",
+      "timestamp": "2023-11-19T01:26:04.637035145Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-embedder-policy",
+      "type": "http",
+      "host": "https://parisregion.eu/parisregionfp.html#welcome",
+      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
+      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:04 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "ip": "217.147.199.227",
+      "timestamp": "2023-11-19T01:26:04.637047899Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-opener-policy",
+      "type": "http",
+      "host": "https://parisregion.eu/parisregionfp.html#welcome",
+      "matched-at": "https://parisregion.eu/parisregionfp.html#welcome",
+      "request": "GET /parisregionfp.html HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:04 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "ip": "217.147.199.227",
+      "timestamp": "2023-11-19T01:26:04.637061133Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html#welcome'",
       "matcher-status": true
     },
     {
@@ -663,9 +621,51 @@
       "host": "https://parisregion.eu/parisregionfp.html#welcome",
       "matched-at": "https://parisregion.eu/parisregionfp.html/#welcome",
       "request": "POST /parisregionfp.html/ HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 12 Nov 2023 01:27:34 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:27 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:27:34.823681989Z",
+      "timestamp": "2023-11-19T01:26:27.349767493Z",
+      "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: parisregion.eu' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html/#welcome'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/technologies/waf-detect.yaml",
+      "template-url": "https://templates.nuclei.sh/public/waf-detect",
+      "template-id": "waf-detect",
+      "template-path": "/home/runner/nuclei-templates/http/technologies/waf-detect.yaml",
+      "info": {
+        "name": "WAF Detection",
+        "author": [
+          "dwisiswant0",
+          "lu4nx"
+        ],
+        "tags": [
+          "waf",
+          "tech",
+          "misc"
+        ],
+        "description": "A web application firewall was detected.",
+        "reference": [
+          "https://github.com/ekultek/whatwaf"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "matcher-name": "nginxgeneric",
+      "type": "http",
+      "host": "https://parisregion.eu/parisregionfp.html#welcome",
+      "matched-at": "https://parisregion.eu/parisregionfp.html/#welcome",
+      "request": "POST /parisregionfp.html/ HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nContent-Length: 146\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 01:26:27 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "ip": "217.147.199.227",
+      "timestamp": "2023-11-19T01:26:27.349813288Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: parisregion.eu' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html/#welcome'",
       "matcher-status": true
     },
@@ -695,7 +695,7 @@
         "Let's Encrypt"
       ],
       "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:29:17.956500124Z",
+      "timestamp": "2023-11-19T01:28:10.757431703Z",
       "matcher-status": true
     },
     {
@@ -724,7 +724,7 @@
         "parisregion.eu"
       ],
       "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:29:17.95661054Z",
+      "timestamp": "2023-11-19T01:28:10.757557228Z",
       "matcher-status": true
     },
     {
@@ -754,7 +754,7 @@
         "tls12"
       ],
       "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:29:19.583749Z",
+      "timestamp": "2023-11-19T01:28:12.08961968Z",
       "matcher-status": true
     },
     {
@@ -784,7 +784,7 @@
         "tls13"
       ],
       "ip": "217.147.199.227",
-      "timestamp": "2023-11-12T01:29:19.789207119Z",
+      "timestamp": "2023-11-19T01:28:12.306964392Z",
       "matcher-status": true
     }
   ]
