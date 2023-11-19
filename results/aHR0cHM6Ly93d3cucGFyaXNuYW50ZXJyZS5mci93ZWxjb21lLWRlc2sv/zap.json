@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 29 Oct 2023 03:23:23",
+	"@generated": "Sun, 19 Nov 2023 03:43:46",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -50,7 +50,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2116"
+					"sourceid": "2071"
 				},
 				{
 					"pluginid": "10202",
@@ -79,7 +79,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"beanKey\" \"default-MOTS_CLEFS\" \"l\" \"RH\" ]."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
+							"uri": "https://www.parisnanterre.fr/META_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -87,7 +87,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"beanKey\" \"default-MOTS_CLEFS\" \"l\" \"RH\" ]."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
+							"uri": "https://www.parisnanterre.fr/META_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -95,7 +95,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"beanKey\" \"default-MOTS_CLEFS\" \"l\" \"RH\" ]."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
+							"uri": "https://www.parisnanterre.fr/META_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -301,6 +301,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/organisation",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -326,14 +334,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-services",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -406,7 +406,7 @@
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2113"
+					"sourceid": "2185"
 				},
 				{
 					"pluginid": "90003",
@@ -599,7 +599,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1120"
+					"sourceid": "1100"
 				},
 				{
 					"pluginid": "10110",
@@ -620,7 +620,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -634,7 +634,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "2263"
+					"sourceid": "2163"
 				},
 				{
 					"pluginid": "10063",
@@ -762,7 +762,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/adminsite/",
+							"uri": "https://www.parisnanterre.fr/action/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -770,7 +770,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/extensions/",
+							"uri": "https://www.parisnanterre.fr/adminsite/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -861,6 +861,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/action/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/adminsite/",
 							"method": "GET",
 							"param": "",
@@ -878,14 +886,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/lyceen%C2%B7ne",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -960,6 +960,14 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.parisnanterre.fr/m-philippe-gervais-lambony",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1534928097",
+							"otherinfo": "1534928097, which evaluates to: 2018-08-22 08:54:57"
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/nicolas-bourbon-1",
 							"method": "GET",
 							"param": "",
@@ -968,13 +976,13 @@
 							"otherinfo": "1534928097, which evaluates to: 2018-08-22 08:54:57"
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1534928097, which evaluates to: 2018-08-22 08:54:57</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2855"
+					"sourceid": "3674"
 				},
 				{
 					"pluginid": "10021",
@@ -1081,7 +1089,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "195"
 				},
 				{
 					"pluginid": "10094",
@@ -1110,14 +1118,6 @@
 							"otherinfo": "~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/actualites-de-luniversite",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr/uas/UNIVERSITE/LOGO/202101-UPN-RVB-header-v06",
-							"otherinfo": "~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/extensions/",
 							"method": "GET",
 							"param": "",
@@ -1135,6 +1135,14 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/META_INF/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr/uas/UNIVERSITE/LOGO/202101-UPN-RVB-header-v06",
+							"otherinfo": "~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1249,7 +1257,7 @@
 							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 4 times, the first in the element starting with: \"function dragOver(){const e=event;e.preventDefault();let row=getTargetRow(e.currentTarget);let rows=draggingRow.parentNode.query\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1257,7 +1265,7 @@
 							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected 5 times, the first in the element starting with: \"return $(this).data('kMonoSelect');return this;}}else{return $(this).data('kMonoSelect');};};})(jQuery);(function(factory){if(ty\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1265,7 +1273,7 @@
 							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected 25 times, the first in the element starting with: \"if(conv!==true){if(conv&&s[\"throws\"]){response=conv(response);}else{try{response=conv(response);}catch(e){return{state:\"parserer\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1273,7 +1281,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected 10 times, the first in the element starting with: \"$opened.removeClass('plier-deplier__contenu--ouvert').addClass('plier-deplier__contenu--clos');$opened.closest('.plier-deplier')\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1281,7 +1289,7 @@
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected 53 times, the first in the element starting with: \"whitespace+\"*((?:-\\\\d)?\\\\d*)\"+whitespace+\"*\\\\)|)(?=[^-]|$)\",\"i\")},rinputs=/^(?:input|select|textarea|button)$/i,rheader=/^h\\d$/i\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1289,7 +1297,7 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"oInit=_fnExtend($.extend(true,{},DataTable.defaults),oInit);_fnMap(oSettings.oFeatures,oInit,\"bPaginate\");_fnMap(oSettings.oFeat\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/80c22a43e6cb041cec302d4f1c7c820fdac2fdf.js",
+							"uri": "https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1303,7 +1311,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2260"
+					"sourceid": "2170"
 				},
 				{
 					"pluginid": "10109",
@@ -1565,6 +1573,14 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.parisnanterre.fr/adminsite/",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -1581,13 +1597,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "10"
+					"sourceid": "18"
 				},
 				{
 					"pluginid": "90005",
@@ -1600,6 +1616,14 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.parisnanterre.fr/adminsite/",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -1616,13 +1640,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "10"
+					"sourceid": "18"
 				},
 				{
 					"pluginid": "90005",
@@ -1635,6 +1659,14 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.parisnanterre.fr/adminsite/",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -1651,13 +1683,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "10"
+					"sourceid": "18"
 				},
 				{
 					"pluginid": "90005",
@@ -1670,6 +1702,14 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.parisnanterre.fr/adminsite/",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -1686,13 +1726,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "10"
+					"sourceid": "18"
 				},
 				{
 					"pluginid": "10112",
@@ -1709,7 +1749,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "0F513EB8503395294A21CC5988FD18A2",
+							"evidence": "C9FB2D29BCB364013AE73FBA5BB21893",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1717,7 +1757,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "DD8834DF55FC20831A3A66715B0C5421",
+							"evidence": "EA9A9C01B1DDC9AA12A42B4E631D1E30",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1725,7 +1765,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "20627B86110F9CA5FF53A8BBB5D356BC",
+							"evidence": "523C859AD3B301D2EA9EF4823E2821AC",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1733,7 +1773,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "33C7E5247FD5B652DC0EAC55502D6345",
+							"evidence": "F958A94128E98412C9B9EAC522D0C6AB",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1741,7 +1781,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "59006D36F138860E0F2C5C96A3DD894A",
+							"evidence": "96A22B3DE14B9D55A2BDDBD705D0EE73",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1749,11 +1789,19 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "3AD339CC3E60688B98BBA5761D4E147A",
+							"evidence": "42191BFABCDA5D918D8B7F833F14133A",
+							"otherinfo": "\ncookie:JSESSIONID"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/welcome-desk/",
+							"method": "GET",
+							"param": "JSESSIONID",
+							"attack": "",
+							"evidence": "9D2CA55A6EA0E27A268F1BE9C4BDA506",
 							"otherinfo": "\ncookie:JSESSIONID"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:JSESSIONID</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
@@ -1780,7 +1828,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/extensions/",
+							"uri": "https://www.parisnanterre.fr/action/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -2133,7 +2181,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2543"
+					"sourceid": "2368"
 				}
 			]
 		}

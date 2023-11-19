@@ -349,6 +349,13 @@
               "finding"      : "Ok via SAN wildcard and CN wildcard (SNI mandatory)"
           }
 ,         {
+              "id"           : "cert_trust_wildcard",
+              "ip"           : "www.parisnanterre.fr/193.50.151.174",
+              "port"         : "443",
+              "severity"     : "LOW",
+              "finding"      : "trust is via wildcard"
+          }
+,         {
               "id"           : "cert_chain_of_trust",
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
@@ -367,7 +374,7 @@
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "249 >= 60 days"
+              "finding"      : "228 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -654,7 +661,7 @@
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1698549946"
+              "finding"      : "1700365574"
           }
 ,         {
               "id"           : "HSTS",
@@ -1247,6 +1254,6 @@
               "ip"           : "www.parisnanterre.fr/193.50.151.174",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "134"
+              "finding"      : "164"
           }
 ]
