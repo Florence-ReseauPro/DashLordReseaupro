@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 12 Nov 2023 01:32:55",
+	"@generated": "Sun, 19 Nov 2023 01:31:47",
 	"site":[ 
 		{
 			"@name": "https://datakairos.unif.fr",
@@ -71,14 +71,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/robots.txt",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/sitemap.xml",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -87,7 +79,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
@@ -114,7 +106,23 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://datakairos.unif.fr/js/chunk-1ab22a73.b7fdc6a5.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://datakairos.unif.fr/js/chunk-1b83712e.788253e1.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://datakairos.unif.fr/js/chunk-25b709a1.ff4efe71.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -162,22 +170,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-2d21402c.5b1ec646.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://datakairos.unif.fr/js/chunk-35823db7.98732019.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://datakairos.unif.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -200,7 +192,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10036",
@@ -277,7 +269,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/favicon.svg",
+							"uri": "https://datakairos.unif.fr/css/chunk-4ac107f0.5e48ccd7.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -307,7 +299,7 @@
 					"reference": "<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10035",
@@ -321,14 +313,6 @@
 					"instances":[ 
 						{
 							"uri": "https://datakairos.unif.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://datakairos.unif.fr/css/chunk-1394ab50.43ae3012.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -384,6 +368,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://datakairos.unif.fr/css/chunk-4ac107f0.5e48ccd7.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://datakairos.unif.fr/favicon.svg",
 							"method": "GET",
 							"param": "",
@@ -414,7 +406,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10021",
@@ -491,6 +483,14 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
+							"uri": "https://datakairos.unif.fr/css/chunk-4ac107f0.5e48ccd7.css",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
 							"uri": "https://datakairos.unif.fr/favicon.svg",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -515,13 +515,13 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -625,14 +625,6 @@
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-6881cb42\"],{\"0529\":function(t,e,i){\"use strict\";var s=function\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://datakairos.unif.fr/js/chunk-7b708dfe.c82a0700.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-7b708dfe\"],{\"017c\":function(t,e,i){\"use strict\";e[\"a\"]={filter\", see evidence field for the suspicious comment/snippet."
-						},
-						{
 							"uri": "https://datakairos.unif.fr/js/chunk-7d8cba4d.19f10bdf.js",
 							"method": "GET",
 							"param": "",
@@ -655,15 +647,31 @@
 							"attack": "",
 							"evidence": "query",
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-93757618\"],{\"0d3b\":function(e,t,r){var n=r(\"d039\"),a=r(\"b622\")\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://datakairos.unif.fr/js/chunk-ec858992.c95758cd.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "select",
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-ec858992\"],{\"166a\":function(t,e,i){},\"169a\":function(t,e,i){\"u\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://datakairos.unif.fr/js/chunk-f61b9666.0744ad75.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "select",
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-f61b9666\"],{\"0529\":function(t,e,i){\"use strict\";var s=function\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "12",
+					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-1ab22a73\"],{\"0bc6\":function(t,e,i){},\"166a\":function(t,e,i){},\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "111"
+					"sourceid": "110"
 				},
 				{
 					"pluginid": "10109",
@@ -942,14 +950,6 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://datakairos.unif.fr/css/chunk-1394ab50.43ae3012.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
 							"uri": "https://datakairos.unif.fr/css/chunk-1b83712e.1a373f0a.css",
 							"method": "GET",
 							"param": "",
@@ -991,6 +991,14 @@
 						},
 						{
 							"uri": "https://datakairos.unif.fr/css/chunk-4700b4d9.084c6fa0.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://datakairos.unif.fr/css/chunk-4ac107f0.5e48ccd7.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
