@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 19 Nov 2023 03:43:46",
+	"@generated": "Sun, 26 Nov 2023 03:26:18",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -50,7 +50,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2071"
+					"sourceid": "2066"
 				},
 				{
 					"pluginid": "10202",
@@ -309,15 +309,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
+							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-enseignant",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -334,6 +326,14 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -406,7 +406,7 @@
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2185"
+					"sourceid": "2075"
 				},
 				{
 					"pluginid": "90003",
@@ -599,7 +599,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1100"
+					"sourceid": "1131"
 				},
 				{
 					"pluginid": "10110",
@@ -634,7 +634,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "2163"
+					"sourceid": "2252"
 				},
 				{
 					"pluginid": "10063",
@@ -695,7 +695,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
+							"uri": "https://www.parisnanterre.fr/organisation/les-ufr-et-instituts",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -778,6 +778,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/extensions/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
 							"method": "GET",
 							"param": "",
@@ -803,14 +811,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/WEB_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -960,14 +960,6 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.parisnanterre.fr/m-philippe-gervais-lambony",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1534928097",
-							"otherinfo": "1534928097, which evaluates to: 2018-08-22 08:54:57"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/nicolas-bourbon-1",
 							"method": "GET",
 							"param": "",
@@ -976,13 +968,13 @@
 							"otherinfo": "1534928097, which evaluates to: 2018-08-22 08:54:57"
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1534928097, which evaluates to: 2018-08-22 08:54:57</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "3674"
+					"sourceid": "2727"
 				},
 				{
 					"pluginid": "10021",
@@ -1011,7 +1003,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation",
+							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1019,7 +1011,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
+							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-enseignant",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1089,7 +1081,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "195"
+					"sourceid": "4"
 				},
 				{
 					"pluginid": "10094",
@@ -1118,6 +1110,14 @@
 							"otherinfo": "~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:"
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/actualites-de-luniversite",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr/uas/UNIVERSITE/LOGO/202101-UPN-RVB-header-v06",
+							"otherinfo": "~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:"
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/extensions/",
 							"method": "GET",
 							"param": "",
@@ -1135,14 +1135,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/META_INF/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "fr/uas/UNIVERSITE/LOGO/202101-UPN-RVB-header-v06",
-							"otherinfo": "~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1311,7 +1303,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2170"
+					"sourceid": "2254"
 				},
 				{
 					"pluginid": "10109",
@@ -1372,6 +1364,14 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"\" class=\"js-menu-link type_rubrique_null\" aria-expanded=\"false\">\r\n            \t<span class=\"icon-chevron-down\">L'universit\u00E9</span>\r\n            \t</a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "",
@@ -1412,7 +1412,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</p>",
 					"reference": "",
@@ -1439,6 +1439,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/lyceen%C2%B7ne",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/welcome-desk/",
 							"method": "GET",
 							"param": "",
@@ -1447,7 +1455,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
@@ -1482,15 +1490,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/organisation",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/la-presidence",
+							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-enseignant",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1507,6 +1507,14 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1573,14 +1581,6 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.parisnanterre.fr/adminsite/",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -1597,13 +1597,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "18"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90005",
@@ -1616,14 +1616,6 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.parisnanterre.fr/adminsite/",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -1640,13 +1632,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "18"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90005",
@@ -1659,14 +1651,6 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.parisnanterre.fr/adminsite/",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -1683,13 +1667,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "18"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90005",
@@ -1702,14 +1686,6 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.parisnanterre.fr/adminsite/",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -1726,13 +1702,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "18"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10112",
@@ -1749,7 +1725,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "C9FB2D29BCB364013AE73FBA5BB21893",
+							"evidence": "0BD183D63DB91D46EFB3F6128B3C4C82",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1757,7 +1733,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "EA9A9C01B1DDC9AA12A42B4E631D1E30",
+							"evidence": "D21C6999C4E3835C1F9563C5DF8F044B",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1765,7 +1741,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "523C859AD3B301D2EA9EF4823E2821AC",
+							"evidence": "92D39A76ED59417CA0EBC59F41AAC1D0",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1773,7 +1749,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "F958A94128E98412C9B9EAC522D0C6AB",
+							"evidence": "044C66BF396474B3E7706EFC1BF1B78C",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1781,7 +1757,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "96A22B3DE14B9D55A2BDDBD705D0EE73",
+							"evidence": "6A665C54EB840FB80E121FA8DD1D9F66",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1789,7 +1765,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "42191BFABCDA5D918D8B7F833F14133A",
+							"evidence": "2F899D78F9E551411485C0B9337B9F96",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1797,7 +1773,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "9D2CA55A6EA0E27A268F1BE9C4BDA506",
+							"evidence": "C71B99690250B0E1AACF963C204053F6",
 							"otherinfo": "\ncookie:JSESSIONID"
 						}
 					],
@@ -1807,7 +1783,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "4"
+					"sourceid": "22"
 				},
 				{
 					"pluginid": "10049",
@@ -1836,7 +1812,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
+							"uri": "https://www.parisnanterre.fr/extensions/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1868,14 +1844,6 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/WEB_INF/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/welcome-desk",
 							"method": "GET",
 							"param": "",
@@ -1892,7 +1860,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "9",
+					"count": "8",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
@@ -2181,7 +2149,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2368"
+					"sourceid": "2383"
 				}
 			]
 		}
