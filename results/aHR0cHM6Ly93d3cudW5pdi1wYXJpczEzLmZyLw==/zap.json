@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 19 Nov 2023 01:44:08",
+	"@generated": "Sun, 26 Nov 2023 01:45:28",
 	"site":[ 
 		{
 			"@name": "https://www.univ-paris13.fr",
@@ -1486,8 +1486,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1700230178",
-							"otherinfo": "1700230178, which evaluates to: 2023-11-17 14:09:38"
+							"evidence": "1700905239",
+							"otherinfo": "1700905239, which evaluates to: 2023-11-25 09:40:39"
 						},
 						{
 							"uri": "https://www.univ-paris13.fr/",
@@ -1580,19 +1580,11 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "user",
-							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"<script type=\"application/ld+json\">\n            {\n                \"@context\": \"http://schema.org\",\n                \"@type\": \"Eve\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "Debug",
 							"otherinfo": "The following pattern was used: \\bDEBUG\\b and was detected in the element starting with: \"<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cach\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected 6 times, the first in the element starting with: \"<script id=\"mec-frontend-script-js-extra\"></p><p>var mecdata = {\"day\":\"jour\",\"days\":\"jours\",\"hour\":\"heure\",\"hours\":\"heures\",\"minute\":\"\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
