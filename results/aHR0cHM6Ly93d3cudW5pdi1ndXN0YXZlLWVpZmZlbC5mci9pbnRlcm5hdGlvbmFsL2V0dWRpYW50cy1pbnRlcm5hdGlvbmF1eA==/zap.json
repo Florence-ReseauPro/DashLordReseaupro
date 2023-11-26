@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 19 Nov 2023 01:48:44",
+	"@generated": "Sun, 26 Nov 2023 01:50:16",
 	"site":[ 
 		{
 			"@name": "https://www.univ-gustave-eiffel.fr",
@@ -42,7 +42,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p><p>http://openwall.info/wiki/john/sample-hashes</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1738"
+					"sourceid": "1744"
 				},
 				{
 					"pluginid": "10202",
@@ -396,7 +396,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "2128"
+					"sourceid": "2165"
 				},
 				{
 					"pluginid": "10098",
@@ -578,7 +578,7 @@
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1832"
+					"sourceid": "1807"
 				},
 				{
 					"pluginid": "10099",
@@ -629,7 +629,7 @@
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1923"
+					"sourceid": "1929"
 				},
 				{
 					"pluginid": "90003",
@@ -690,14 +690,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script defer data-domain=\"univ-gustave-eiffel.fr\" src=\"https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/notre-projet",
 							"method": "GET",
 							"param": "",
@@ -722,7 +714,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
@@ -755,7 +747,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/20631</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "1060"
+					"sourceid": "1108"
 				},
 				{
 					"pluginid": "10055",
@@ -825,7 +817,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1554"
+					"sourceid": "2313"
 				},
 				{
 					"pluginid": "10011",
@@ -868,7 +860,7 @@
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
 					"cweid": "614",
 					"wascid": "13",
-					"sourceid": "1554"
+					"sourceid": "2313"
 				},
 				{
 					"pluginid": "10054",
@@ -903,7 +895,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "1554"
+					"sourceid": "2313"
 				},
 				{
 					"pluginid": "10017",
@@ -932,6 +924,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.univ-gustave-eiffel.fr/en/",
+							"method": "GET",
+							"param": "https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js",
+							"attack": "",
+							"evidence": "<script defer data-domain=\"univ-gustave-eiffel.fr\" src=\"https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js\"></script>",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international",
 							"method": "GET",
 							"param": "https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js",
@@ -949,22 +949,6 @@
 						},
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/luniversite",
-							"method": "GET",
-							"param": "https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js",
-							"attack": "",
-							"evidence": "<script defer data-domain=\"univ-gustave-eiffel.fr\" src=\"https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
-							"method": "GET",
-							"param": "https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js",
-							"attack": "",
-							"evidence": "<script defer data-domain=\"univ-gustave-eiffel.fr\" src=\"https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
 							"method": "GET",
 							"param": "https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js",
 							"attack": "",
@@ -996,7 +980,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -1045,7 +1029,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1053"
+					"sourceid": "1102"
 				},
 				{
 					"pluginid": "10063",
@@ -1171,7 +1155,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1988"
+					"sourceid": "1994"
 				},
 				{
 					"pluginid": "10035",
@@ -1283,7 +1267,7 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1291,7 +1275,7 @@
 							"otherinfo": "1542389828, which evaluates to: 2018-11-16 17:37:08"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1299,7 +1283,7 @@
 							"otherinfo": "1566916459, which evaluates to: 2019-08-27 14:34:19"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1307,7 +1291,7 @@
 							"otherinfo": "1588604850, which evaluates to: 2020-05-04 15:07:30"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1315,7 +1299,7 @@
 							"otherinfo": "1619505705, which evaluates to: 2021-04-27 06:41:45"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1323,7 +1307,7 @@
 							"otherinfo": "1622448876, which evaluates to: 2021-05-31 08:14:36"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1331,7 +1315,7 @@
 							"otherinfo": "1622448924, which evaluates to: 2021-05-31 08:15:24"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1339,7 +1323,7 @@
 							"otherinfo": "1679563313, which evaluates to: 2023-03-23 09:21:53"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1347,7 +1331,7 @@
 							"otherinfo": "1683817256, which evaluates to: 2023-05-11 15:00:56"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1355,7 +1339,7 @@
 							"otherinfo": "1683817257, which evaluates to: 2023-05-11 15:00:57"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1363,7 +1347,7 @@
 							"otherinfo": "1688630396, which evaluates to: 2023-07-06 07:59:56"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1371,7 +1355,7 @@
 							"otherinfo": "1695200164, which evaluates to: 2023-09-20 08:56:04"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1379,7 +1363,7 @@
 							"otherinfo": "1697535472, which evaluates to: 2023-10-17 09:37:52"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1387,53 +1371,93 @@
 							"otherinfo": "1699537856, which evaluates to: 2023-11-09 13:50:56"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1700128046",
-							"otherinfo": "1700128046, which evaluates to: 2023-11-16 09:47:26"
+							"evidence": "1700734984",
+							"otherinfo": "1700734984, which evaluates to: 2023-11-23 10:23:04"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1700128047",
-							"otherinfo": "1700128047, which evaluates to: 2023-11-16 09:47:27"
+							"evidence": "1700734986",
+							"otherinfo": "1700734986, which evaluates to: 2023-11-23 10:23:06"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1700128048",
-							"otherinfo": "1700128048, which evaluates to: 2023-11-16 09:47:28"
+							"evidence": "1700734988",
+							"otherinfo": "1700734988, which evaluates to: 2023-11-23 10:23:08"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1700300850",
-							"otherinfo": "1700300850, which evaluates to: 2023-11-18 09:47:30"
+							"evidence": "1700734989",
+							"otherinfo": "1700734989, which evaluates to: 2023-11-23 10:23:09"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1700300851",
-							"otherinfo": "1700300851, which evaluates to: 2023-11-18 09:47:31"
+							"evidence": "1700734991",
+							"otherinfo": "1700734991, which evaluates to: 2023-11-23 10:23:11"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1700734993",
+							"otherinfo": "1700734993, which evaluates to: 2023-11-23 10:23:13"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1700734995",
+							"otherinfo": "1700734995, which evaluates to: 2023-11-23 10:23:15"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1700734997",
+							"otherinfo": "1700734997, which evaluates to: 2023-11-23 10:23:17"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1700907782",
+							"otherinfo": "1700907782, which evaluates to: 2023-11-25 10:23:02"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1700907786",
+							"otherinfo": "1700907786, which evaluates to: 2023-11-25 10:23:06"
 						}
 					],
-					"count": "18",
+					"count": "23",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1542389828, which evaluates to: 2018-11-16 17:37:08</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10021",
@@ -1494,7 +1518,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/innovation-pedagogique",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/apprentissage",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1658,7 +1682,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "1028"
+					"sourceid": "1079"
 				},
 				{
 					"pluginid": "10027",
@@ -1810,19 +1834,19 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
+							"uri": "https://www.univ-gustave-eiffel.fr/en/university",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a id=\"c90461\"></a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
 							"uri": "https://www.univ-gustave-eiffel.fr/en/university/our-project",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<a id=\"c90321\"></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/en/university/our-strengths",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a id=\"c90381\"></a>",
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
@@ -2008,7 +2032,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/innovation-pedagogique",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/apprentissage",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -2059,14 +2083,6 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
@@ -2091,13 +2107,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -2110,14 +2126,6 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
@@ -2142,13 +2150,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -2161,14 +2169,6 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
@@ -2193,13 +2193,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -2212,14 +2212,6 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
@@ -2244,13 +2236,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10112",
@@ -2267,25 +2259,17 @@
 							"method": "POST",
 							"param": "fe_typo_user",
 							"attack": "",
-							"evidence": "0d7acbea16bc426a41cc5428d06a3842.ecac5c3446998a6476b84c855997047755a647b989cdeba562f3bde0daff7731",
-							"otherinfo": "\ncookie:fe_typo_user"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
-							"method": "POST",
-							"param": "fe_typo_user",
-							"attack": "",
-							"evidence": "0d7acbea16bc426a41cc5428d06a3842.ecac5c3446998a6476b84c855997047755a647b989cdeba562f3bde0daff7731",
+							"evidence": "3b6f8c24fe2eab99b8eba259e56bb0c7.fc039b3f3665005e6f2b59123c6f720e639b2e36035da7008ffc4ec87049aea7",
 							"otherinfo": "\ncookie:fe_typo_user"
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:fe_typo_user</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1274"
+					"sourceid": "1371"
 				},
 				{
 					"pluginid": "10049",
@@ -2320,7 +2304,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "11"
+					"sourceid": "21"
 				},
 				{
 					"pluginid": "10031",
@@ -2411,7 +2395,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1274"
+					"sourceid": "1371"
 				}
 			]
 		}
