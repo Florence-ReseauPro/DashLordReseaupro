@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 26 Nov 2023 01:56:19",
+	"@generated": "Sun, 3 Dec 2023 02:00:27",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=E4F7D9E8C0A8538EABA840B75595B697?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=AFE2C8823E95C61D735A02499E16646D?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -329,6 +329,14 @@
 							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
 						},
 						{
+							"uri": "https://ent.univ-paris13.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
+						},
+						{
 							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -337,7 +345,7 @@
 							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
 					"otherinfo": "<p>Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].</p><p>Predicted response size: 379.</p><p>Response Body Length: 452.</p>",
 					"reference": "",
@@ -747,13 +755,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-1049444-gkOqFFkIV4aqd51DjXl22xGtP6zz0b-cas1",
-							"otherinfo": "-?\uFFFD\u04CFx\u33E0\uFFFD\uFFFD\\x0016B\\x0015\u1A9D\uFFFDP\uFFFD^]\uFFFD\uFFFDkO\uFFFD<\uFFFDo\uFFFD\\x001a\uFFFD"
+							"evidence": "LT-1907854-re3mSWnEqJJSuRTXUg147Zgj5OswVr-cas1",
+							"otherinfo": "-?\uFFFD\uFFFDN\uFFFD\u73EB{y\uFFFDZq*$\uFFFD\uFFFDE5\u0503^;f\\x0008\uFFFD:\uFFFD\\x0015\uFFFD\uFFFD\\x001a\uFFFD"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\u04CFx\u33E0\uFFFD\uFFFD\\x0016B\\x0015\u1A9D\uFFFDP\uFFFD^]\uFFFD\uFFFDkO\uFFFD<\uFFFDo\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFDN\uFFFD\u73EB{y\uFFFDZq*$\uFFFD\uFFFDE5\u0503^;f\\x0008\uFFFD:\uFFFD\\x0015\uFFFD\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -1027,7 +1035,7 @@
 							"method": "GET",
 							"param": "CASSESSIONID",
 							"attack": "",
-							"evidence": "E4F7D9E8C0A8538EABA840B75595B697",
+							"evidence": "AFE2C8823E95C61D735A02499E16646D",
 							"otherinfo": "\ncookie:CASSESSIONID"
 						},
 						{
@@ -1035,27 +1043,11 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "tuc8oltmio4isg225o2s0dosq6",
-							"otherinfo": "\ncookie:UP13ENT"
-						},
-						{
-							"uri": "https://ent.univ-paris13.fr/robots.txt",
-							"method": "GET",
-							"param": "UP13ENT",
-							"attack": "",
-							"evidence": "okrddi4n07etegtamu3fk9a895",
-							"otherinfo": "\ncookie:UP13ENT"
-						},
-						{
-							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
-							"method": "GET",
-							"param": "UP13ENT",
-							"attack": "",
-							"evidence": "l478hissh0tlm375hrplghdfm2",
+							"evidence": "36r0gje4hsiqcjmut1frrsubh6",
 							"otherinfo": "\ncookie:UP13ENT"
 						}
 					],
-					"count": "4",
+					"count": "2",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:CASSESSIONID</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
