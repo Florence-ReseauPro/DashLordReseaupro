@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 26 Nov 2023 01:50:16
+		Generated on Sun, 3 Dec 2023 01:44:57
 	</h3>
 
 	<h3>
@@ -210,27 +210,27 @@ td {
 			<tr>
 				<td><a href="#10055">CSP: Wildcard Directive</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: script-src unsafe-eval</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: script-src unsafe-inline</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: style-src unsafe-inline</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">12</td>
+				<td align="center">9</td>
 			</tr>
 			<tr>
 				<td><a href="#10098">Cross-Domain Misconfiguration</a></td>
@@ -250,7 +250,7 @@ td {
 			<tr>
 				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">9</td>
+				<td align="center">10</td>
 			</tr>
 			<tr>
 				<td><a href="#10003">Vulnerable JS Library</a></td>
@@ -260,7 +260,7 @@ td {
 			<tr>
 				<td><a href="#10055">CSP: Notices</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10010">Cookie No HttpOnly Flag</a></td>
@@ -305,7 +305,7 @@ td {
 			<tr>
 				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">23</td>
+				<td align="center">16</td>
 			</tr>
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
@@ -983,6 +983,40 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international">https://www.univ-gustave-eiffel.fr/international</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; &#39;unsafe-inline&#39; https://www.ifsttar.fr https://plausible.io; script-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src &#39;self&#39; https://*.gstatic.com https://static.affluences.media/ data: ; frame-src &#39;self&#39; https://www.dailymotion.com https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src &#39;self&#39; data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src &#39;self&#39; &#39;unsafe-inline&#39; https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src &#39;self&#39; &#39;unsafe-inline&#39; https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors &#39;self&#39; https://*.eudonet.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: 
+form-action
+
+The directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -1016,7 +1050,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1116,6 +1150,37 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international">https://www.univ-gustave-eiffel.fr/international</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; &#39;unsafe-inline&#39; https://www.ifsttar.fr https://plausible.io; script-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src &#39;self&#39; https://*.gstatic.com https://static.affluences.media/ data: ; frame-src &#39;self&#39; https://www.dailymotion.com https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src &#39;self&#39; data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src &#39;self&#39; &#39;unsafe-inline&#39; https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src &#39;self&#39; &#39;unsafe-inline&#39; https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors &#39;self&#39; https://*.eudonet.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">script-src includes unsafe-eval.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -1146,7 +1211,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1246,6 +1311,37 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international">https://www.univ-gustave-eiffel.fr/international</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; &#39;unsafe-inline&#39; https://www.ifsttar.fr https://plausible.io; script-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src &#39;self&#39; https://*.gstatic.com https://static.affluences.media/ data: ; frame-src &#39;self&#39; https://www.dailymotion.com https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src &#39;self&#39; data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src &#39;self&#39; &#39;unsafe-inline&#39; https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src &#39;self&#39; &#39;unsafe-inline&#39; https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors &#39;self&#39; https://*.eudonet.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">script-src includes unsafe-inline.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -1276,7 +1372,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1376,6 +1472,37 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international">https://www.univ-gustave-eiffel.fr/international</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; &#39;unsafe-inline&#39; https://www.ifsttar.fr https://plausible.io; script-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src &#39;self&#39; https://*.gstatic.com https://static.affluences.media/ data: ; frame-src &#39;self&#39; https://www.dailymotion.com https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src &#39;self&#39; data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src &#39;self&#39; &#39;unsafe-inline&#39; https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src &#39;self&#39; &#39;unsafe-inline&#39; https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors &#39;self&#39; https://*.eudonet.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">style-src includes unsafe-inline.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -1406,7 +1533,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1599,68 +1726,6 @@ The directive(s): form-action are among the directives that do not fallback to d
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_International/Contributeurs/PARRAINAGE/">https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_International/Contributeurs/PARRAINAGE/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/Fran%C3%A7ais">https://www.univ-gustave-eiffel.fr/Fran%C3%A7ais</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/logement">https://www.univ-gustave-eiffel.fr/logement</a></td>
 					</tr>
 					<tr>
@@ -1693,37 +1758,6 @@ The directive(s): form-action are among the directives that do not fallback to d
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nous-soutenir/typo3temp/assets/_processed_/e/b/csm_fernier_dominique_2019_fbbd735c7d.png">https://www.univ-gustave-eiffel.fr/luniversite/nous-soutenir/typo3temp/assets/_processed_/e/b/csm_fernier_dominique_2019_fbbd735c7d.png</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/mois">https://www.univ-gustave-eiffel.fr/mois</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1846,7 +1880,7 @@ The directive(s): form-action are among the directives that do not fallback to d
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">12</td>
+					<td width="80%">9</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -4845,6 +4879,37 @@ e¬î?þâ½cwêÔ»?&gt;</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script defer data-domain=&quot;univ-gustave-eiffel.fr&quot; src=&quot;https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/notre-projet">https://www.univ-gustave-eiffel.fr/luniversite/notre-projet</a></td>
 					</tr>
 					<tr>
@@ -4937,7 +5002,7 @@ e¬î?þâ½cwêÔ»?&gt;</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">9</td>
+					<td width="80%">10</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5112,6 +5177,43 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international">https://www.univ-gustave-eiffel.fr/international</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39; &#39;unsafe-inline&#39; https://www.ifsttar.fr https://plausible.io; script-src &#39;self&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src &#39;self&#39; https://*.gstatic.com https://static.affluences.media/ data: ; frame-src &#39;self&#39; https://www.dailymotion.com https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src &#39;self&#39; data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src &#39;self&#39; &#39;unsafe-inline&#39; https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src &#39;self&#39; &#39;unsafe-inline&#39; https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors &#39;self&#39; https://*.eudonet.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">Warnings:
+Duplicate host https://my.matterport.com/
+Duplicate host https://*.youtube.com
+Duplicate host https://*.libcast.com
+Duplicate host https://gallery.mailchimp.com/
+Duplicate host https://template.univ-gustave-eiffel.fr
+</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -5148,7 +5250,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5779,7 +5881,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/notre-projet">https://www.univ-gustave-eiffel.fr/luniversite/notre-projet</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6903,7 +7005,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6934,7 +7036,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6965,7 +7067,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6996,7 +7098,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7027,7 +7129,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7058,7 +7160,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7089,7 +7191,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7120,7 +7222,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7151,7 +7253,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7182,7 +7284,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7213,38 +7315,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">1695200164</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">1695200164, which evaluates to: 2023-09-20 08:56:04</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7275,7 +7346,7 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7295,18 +7366,18 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1699537856</td>
+						<td width="80%">1701177420</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">1699537856, which evaluates to: 2023-11-09 13:50:56</td>
+						<td width="80%">1701177420, which evaluates to: 2023-11-28 13:17:00</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7326,18 +7397,18 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1700734984</td>
+						<td width="80%">1701264856</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">1700734984, which evaluates to: 2023-11-23 10:23:04</td>
+						<td width="80%">1701264856, which evaluates to: 2023-11-29 13:34:16</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7357,18 +7428,18 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1700734986</td>
+						<td width="80%">1701264857</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">1700734986, which evaluates to: 2023-11-23 10:23:06</td>
+						<td width="80%">1701264857, which evaluates to: 2023-11-29 13:34:17</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7388,18 +7459,18 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1700734988</td>
+						<td width="80%">1701524062</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">1700734988, which evaluates to: 2023-11-23 10:23:08</td>
+						<td width="80%">1701524062, which evaluates to: 2023-12-02 13:34:22</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7419,203 +7490,17 @@ Duplicate host https://template.univ-gustave-eiffel.fr
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1700734989</td>
+						<td width="80%">1701524063</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">1700734989, which evaluates to: 2023-11-23 10:23:09</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">1700734991</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">1700734991, which evaluates to: 2023-11-23 10:23:11</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">1700734993</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">1700734993, which evaluates to: 2023-11-23 10:23:13</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">1700734995</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">1700734995, which evaluates to: 2023-11-23 10:23:15</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">1700734997</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">1700734997, which evaluates to: 2023-11-23 10:23:17</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">1700907782</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">1700907782, which evaluates to: 2023-11-25 10:23:02</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">1700907786</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">1700907786, which evaluates to: 2023-11-25 10:23:06</td>
+						<td width="80%">1701524063, which evaluates to: 2023-12-02 13:34:23</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">23</td>
+					<td width="80%">16</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -7861,38 +7746,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/apprentissage">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/apprentissage</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-content-type-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques">https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques</a></td>
 					</tr>
 					<tr>
@@ -7958,6 +7811,38 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/notre-projet">https://www.univ-gustave-eiffel.fr/luniversite/notre-projet</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">x-content-type-options</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/luniversite/partenariats-appui-aux-politiques-publiques/appui-aux-politiques-publiques">https://www.univ-gustave-eiffel.fr/luniversite/partenariats-appui-aux-politiques-publiques/appui-aux-politiques-publiques</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -9072,7 +8957,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/en/university/our-strengths/our-national-structure">https://www.univ-gustave-eiffel.fr/en/university/our-strengths/our-national-structure</a></td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/en/university/our-strengths">https://www.univ-gustave-eiffel.fr/en/university/our-strengths</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -9092,7 +8977,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;a id=&quot;c90380&quot;&gt;&lt;/a&gt;</td>
+						<td width="80%">&lt;a id=&quot;c90381&quot;&gt;&lt;/a&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -9954,6 +9839,37 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/">https://www.univ-gustave-eiffel.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Dest</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -9986,37 +9902,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/robots.txt">https://www.univ-gustave-eiffel.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Dest</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -10100,6 +9985,37 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/">https://www.univ-gustave-eiffel.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Mode</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -10132,37 +10048,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/robots.txt">https://www.univ-gustave-eiffel.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Mode</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -10246,6 +10131,37 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/">https://www.univ-gustave-eiffel.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Site</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -10278,37 +10194,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/robots.txt">https://www.univ-gustave-eiffel.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Site</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -10392,6 +10277,37 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/">https://www.univ-gustave-eiffel.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-User</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux">https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux</a></td>
 					</tr>
 					<tr>
@@ -10424,37 +10340,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/robots.txt">https://www.univ-gustave-eiffel.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-User</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-gustave-eiffel.fr/sitemap.xml">https://www.univ-gustave-eiffel.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -10558,7 +10443,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">3b6f8c24fe2eab99b8eba259e56bb0c7.fc039b3f3665005e6f2b59123c6f720e639b2e36035da7008ffc4ec87049aea7</td>
+						<td width="80%">bbbd8df4e5e3ff7e0d9a0017b598fc11.cb42c0d38cbb1ad3e94f57f97d93f562eec8727dd09f3354fa74b51fb4b6b510</td>
 					</tr>
 					<tr>
 						<td width="20%"
