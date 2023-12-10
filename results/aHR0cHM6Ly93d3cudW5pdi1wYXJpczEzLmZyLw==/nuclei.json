@@ -1,43 +1,6 @@
 [
   [
     {
-      "template": "dns/caa-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-      "template-id": "caa-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-      "info": {
-        "name": "CAA Record",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "caa"
-        ],
-        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-        "reference": [
-          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "www.univ-paris13.fr.",
-      "matched-at": "www.univ-paris13.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 2882\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 2882\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t3169\tIN\tCNAME\tlb.univ-paris13.fr.\n\n;; AUTHORITY SECTION:\nuniv-paris13.fr.\t1800\tIN\tSOA\tdns1.univ-paris13.fr. hostmaster.univ-paris13.fr. 2023112802 21600 3600 604800 86400\n",
-      "timestamp": "2023-12-03T01:55:06.82487074Z",
-      "matcher-status": true
-    },
-    {
       "template": "dns/dns-saas-service-detection.yaml",
       "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
       "template-id": "dns-saas-service-detection",
@@ -69,9 +32,46 @@
       "extracted-results": [
         "lb.univ-paris13.fr."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 33570\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 33570\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t7200\tIN\tCNAME\tlb.univ-paris13.fr.\n",
-      "timestamp": "2023-12-03T01:55:07.818667414Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 20490\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 20490\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t5518\tIN\tCNAME\tlb.univ-paris13.fr.\n",
+      "timestamp": "2023-12-10T01:52:35.424537126Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "www.univ-paris13.fr.",
+      "matched-at": "www.univ-paris13.fr",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 46488\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 46488\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t7200\tIN\tCNAME\tlb.univ-paris13.fr.\n\n;; AUTHORITY SECTION:\nuniv-paris13.fr.\t7200\tIN\tSOA\tdns1.univ-paris13.fr. hostmaster.univ-paris13.fr. 2023120701 21600 3600 604800 86400\n",
+      "timestamp": "2023-12-10T01:52:35.847505355Z",
       "matcher-status": true
     },
     {
@@ -104,7 +104,7 @@
       "matched-at": "www.univ-paris13.fr:443",
       "request": "2E",
       "ip": "81.194.43.212",
-      "timestamp": "2023-12-03T02:00:23.496400325Z",
+      "timestamp": "2023-12-10T01:57:26.028343845Z",
       "matcher-status": true
     },
     {
@@ -133,7 +133,7 @@
         "Sectigo Limited"
       ],
       "ip": "81.194.43.212",
-      "timestamp": "2023-12-03T02:00:25.69102962Z",
+      "timestamp": "2023-12-10T01:57:34.523604827Z",
       "matcher-status": true
     },
     {
@@ -162,7 +162,7 @@
         "*.univ-paris13.fr"
       ],
       "ip": "81.194.43.212",
-      "timestamp": "2023-12-03T02:00:25.691178318Z",
+      "timestamp": "2023-12-10T01:57:34.523717887Z",
       "matcher-status": true
     },
     {
@@ -197,7 +197,7 @@
         " SAN: [*.univ-paris13.fr]"
       ],
       "ip": "81.194.43.212",
-      "timestamp": "2023-12-03T02:00:25.691263237Z",
+      "timestamp": "2023-12-10T01:57:34.523765766Z",
       "matcher-status": true
     },
     {
@@ -227,7 +227,7 @@
         "tls12"
       ],
       "ip": "81.194.43.212",
-      "timestamp": "2023-12-03T02:00:27.635598932Z",
+      "timestamp": "2023-12-10T01:57:36.440446572Z",
       "matcher-status": true
     },
     {
@@ -257,7 +257,7 @@
         "tls13"
       ],
       "ip": "81.194.43.212",
-      "timestamp": "2023-12-03T02:00:28.049165661Z",
+      "timestamp": "2023-12-10T01:57:36.86559162Z",
       "matcher-status": true
     }
   ]
