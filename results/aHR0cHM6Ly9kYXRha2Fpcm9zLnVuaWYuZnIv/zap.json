@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 3 Dec 2023 01:38:06",
+	"@generated": "Sun, 10 Dec 2023 01:34:26",
 	"site":[ 
 		{
 			"@name": "https://datakairos.unif.fr",
@@ -93,7 +93,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10063",
@@ -625,6 +625,14 @@
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-6881cb42\"],{\"0529\":function(t,e,i){\"use strict\";var s=function\", see evidence field for the suspicious comment/snippet."
 						},
 						{
+							"uri": "https://datakairos.unif.fr/js/chunk-7b708dfe.c82a0700.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "select",
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-7b708dfe\"],{\"017c\":function(t,e,i){\"use strict\";e[\"a\"]={filter\", see evidence field for the suspicious comment/snippet."
+						},
+						{
 							"uri": "https://datakairos.unif.fr/js/chunk-7d8cba4d.19f10bdf.js",
 							"method": "GET",
 							"param": "",
@@ -657,13 +665,13 @@
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-ec858992\"],{\"166a\":function(t,e,i){},\"169a\":function(t,e,i){\"u\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "12",
+					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"(window[\"webpackJsonp\"]=window[\"webpackJsonp\"]||[]).push([[\"chunk-1ab22a73\"],{\"0bc6\":function(t,e,i){},\"166a\":function(t,e,i){},\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "111"
+					"sourceid": "110"
 				},
 				{
 					"pluginid": "10109",
@@ -770,7 +778,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/favicon.svg",
+							"uri": "https://datakairos.unif.fr/css/chunk-1394ab50.43ae3012.css",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -813,7 +821,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/favicon.svg",
+							"uri": "https://datakairos.unif.fr/css/chunk-1394ab50.43ae3012.css",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -856,7 +864,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/favicon.svg",
+							"uri": "https://datakairos.unif.fr/css/chunk-1394ab50.43ae3012.css",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -899,7 +907,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://datakairos.unif.fr/favicon.svg",
+							"uri": "https://datakairos.unif.fr/css/chunk-1394ab50.43ae3012.css",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
