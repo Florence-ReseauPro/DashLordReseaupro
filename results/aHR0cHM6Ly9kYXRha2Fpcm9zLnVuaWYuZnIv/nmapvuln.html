@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln datakairos.unif.fr</pre>
-<p class="lead">Sun Dec 10 01:36:30 2023 – Sun Dec 10 01:37:28 2023<br>1 hosts scanned.
+<p class="lead">Sun Dec 17 01:32:44 2023 – Sun Dec 17 01:33:04 2023<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -78,7 +78,7 @@
 <td><span class="label label-success">up</span></td>
 <td>192.33.182.243</td>
 <td>datakairos.unif.fr</td>
-<td>4</td>
+<td>3</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -130,6 +130,15 @@
     	PRION:CVE-2016-20012	5.0	https://vulners.com/prion/PRION:CVE-2016-20012
     	CVE-2020-12062	5.0	https://vulners.com/cve/CVE-2020-12062</pre>
 </td></tr>
+<tr class="active">
+<td>53</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>domain</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr class="success">
 <td title="Port">80</td>
 <td title="Protocol">tcp</td>
@@ -143,6 +152,15 @@
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx:1.18.0">cpe:/a:igor_sysoev:nginx:1.18.0</a><h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nginx/1.18.0 (Ubuntu)</pre>
 </td></tr>
+<tr class="active">
+<td>222</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>rsh-spx</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr class="success">
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
@@ -156,25 +174,51 @@
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx:1.18.0">cpe:/a:igor_sysoev:nginx:1.18.0</a><h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nginx/1.18.0 (Ubuntu)</pre>
 </td></tr>
-<tr class="warning">
-<td>515</td>
+<tr class="active">
+<td>2251</td>
 <td>tcp</td>
-<td>filtered<br>no-response</td>
-<td>printer</td>
+<td>closed<br>reset</td>
+<td>dif-port</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="success">
-<td title="Port">20031</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">unknown</td>
-<td title="Product"></td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
+<tr class="active">
+<td>3404</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>unknown</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
+<tr class="active">
+<td>8000</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>http-alt</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="active">
+<td>8080</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>http-proxy</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="active">
+<td>8443</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>https-alt</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </tbody>
 </table></div>
 </div>
@@ -221,16 +265,6 @@
 <td>1.18.0</td>
 <td>cpe:/a:igor_sysoev:nginx:1.18.0</td>
 <td>Ubuntu</td>
-</tr>
-<tr>
-<td>192.33.182.243 - datakairos.unif.fr</td>
-<td>20031</td>
-<td>tcp</td>
-<td>unknown</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 </tbody>
 </table></div>
