@@ -1,43 +1,6 @@
 [
   [
     {
-      "template": "dns/caa-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-      "template-id": "caa-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-      "info": {
-        "name": "CAA Record",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "caa"
-        ],
-        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-        "reference": [
-          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "www.univ-paris13.fr.",
-      "matched-at": "www.univ-paris13.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 39578\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 39578\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t2986\tIN\tCNAME\tlb.univ-paris13.fr.\n\n;; AUTHORITY SECTION:\nuniv-paris13.fr.\t1800\tIN\tSOA\tdns1.univ-paris13.fr. hostmaster.univ-paris13.fr. 2023121301 21600 3600 604800 86400\n",
-      "timestamp": "2023-12-17T01:43:07.050617045Z",
-      "matcher-status": true
-    },
-    {
       "template": "dns/dns-saas-service-detection.yaml",
       "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
       "template-id": "dns-saas-service-detection",
@@ -69,9 +32,46 @@
       "extracted-results": [
         "lb.univ-paris13.fr."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 44254\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 44254\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t7200\tIN\tCNAME\tlb.univ-paris13.fr.\n",
-      "timestamp": "2023-12-17T01:43:07.129767463Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 34723\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 34723\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t7200\tIN\tCNAME\tlb.univ-paris13.fr.\n",
+      "timestamp": "2023-12-24T01:53:59.098392826Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "www.univ-paris13.fr.",
+      "matched-at": "www.univ-paris13.fr",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 45360\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 45360\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t7200\tIN\tCNAME\tlb.univ-paris13.fr.\n\n;; AUTHORITY SECTION:\nuniv-paris13.fr.\t1800\tIN\tSOA\tdns1.univ-paris13.fr. hostmaster.univ-paris13.fr. 2023122001 21600 3600 604800 86400\n",
+      "timestamp": "2023-12-24T01:53:59.128746966Z",
       "matcher-status": true
     },
     {
@@ -86,8 +86,10 @@
         ],
         "tags": [
           "network",
-          "c2",
           "jarm",
+          "c2",
+          "ir",
+          "osint",
           "cti"
         ],
         "description": "Detect C2 Servers with JARM Hashes\n",
@@ -103,8 +105,8 @@
       "host": "www.univ-paris13.fr:443",
       "matched-at": "www.univ-paris13.fr:443",
       "request": "2E",
-      "ip": "81.194.43.212",
-      "timestamp": "2023-12-17T01:47:09.466244195Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-12-24T01:59:04.420488486Z",
       "matcher-status": true
     },
     {
@@ -118,7 +120,8 @@
           "lingtren"
         ],
         "tags": [
-          "ssl"
+          "ssl",
+          "tls"
         ],
         "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
         "severity": "info",
@@ -132,8 +135,8 @@
       "extracted-results": [
         "Sectigo Limited"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2023-12-17T01:47:19.747896191Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-12-24T01:59:14.908896769Z",
       "matcher-status": true
     },
     {
@@ -147,7 +150,8 @@
           "pdteam"
         ],
         "tags": [
-          "ssl"
+          "ssl",
+          "tls"
         ],
         "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
         "severity": "info",
@@ -161,8 +165,8 @@
       "extracted-results": [
         "*.univ-paris13.fr"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2023-12-17T01:47:19.748012249Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-12-24T01:59:14.909104517Z",
       "matcher-status": true
     },
     {
@@ -196,8 +200,8 @@
         "CN: *.univ-paris13.fr",
         " SAN: [*.univ-paris13.fr]"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2023-12-17T01:47:19.748057193Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-12-24T01:59:14.909153248Z",
       "matcher-status": true
     },
     {
@@ -212,7 +216,8 @@
           "pussycat0x"
         ],
         "tags": [
-          "ssl"
+          "ssl",
+          "tls"
         ],
         "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
         "severity": "info",
@@ -226,8 +231,8 @@
       "extracted-results": [
         "tls12"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2023-12-17T01:47:24.630909705Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-12-24T01:59:17.161121654Z",
       "matcher-status": true
     },
     {
@@ -242,7 +247,8 @@
           "pussycat0x"
         ],
         "tags": [
-          "ssl"
+          "ssl",
+          "tls"
         ],
         "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
         "severity": "info",
@@ -256,8 +262,8 @@
       "extracted-results": [
         "tls13"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2023-12-17T01:47:24.846457557Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2023-12-24T01:59:17.503620829Z",
       "matcher-status": true
     }
   ]
