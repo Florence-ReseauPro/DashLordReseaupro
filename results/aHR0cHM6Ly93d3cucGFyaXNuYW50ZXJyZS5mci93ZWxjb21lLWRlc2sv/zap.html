@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 10 Dec 2023 04:11:11
+		Generated on Sun, 24 Dec 2023 04:45:13
 	</h3>
 
 	<h3>
@@ -205,7 +205,7 @@ td {
 			<tr>
 				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">12</td>
+				<td align="center">15</td>
 			</tr>
 			<tr>
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
@@ -215,7 +215,7 @@ td {
 			<tr>
 				<td><a href="#10020">Missing Anti-clickjacking Header</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">11</td>
+				<td align="center">12</td>
 			</tr>
 			<tr>
 				<td><a href="#10099">Source Code Disclosure - PHP</a></td>
@@ -285,7 +285,7 @@ td {
 			<tr>
 				<td><a href="#10049">Non-Storable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
@@ -295,22 +295,22 @@ td {
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Dest Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Mode Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Site Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-User Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10112">Session Management Response Identified</a></td>
@@ -320,7 +320,7 @@ td {
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">9</td>
+				<td align="center">8</td>
 			</tr>
 			<tr>
 				<td><a href="#10031">User Controllable HTML Element Attribute (Potential XSS)</a></td>
@@ -590,7 +590,7 @@ Issuer: TEXAS NATIONAL BANK OF WACO</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/fcktoolbox/">https://www.parisnanterre.fr/fcktoolbox/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/action/">https://www.parisnanterre.fr/action/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -621,7 +621,7 @@ Issuer: TEXAS NATIONAL BANK OF WACO</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/fcktoolbox/">https://www.parisnanterre.fr/fcktoolbox/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/action/">https://www.parisnanterre.fr/action/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -652,7 +652,100 @@ Issuer: TEXAS NATIONAL BANK OF WACO</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/fcktoolbox/">https://www.parisnanterre.fr/fcktoolbox/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/action/">https://www.parisnanterre.fr/action/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form action=&quot;https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG&quot; method=&quot;post&quot;&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 3: &quot;#ECRAN_LOGIQUE#&quot; &quot;ACTION&quot; &quot;CODE_RUBRIQUE&quot; &quot;CODE_SITE_DISTANT&quot; &quot;LANGUE_SEARCH&quot; &quot;MOTS_CLEFS_404&quot; &quot;OBJET&quot; &quot;PROC&quot; &quot;RH&quot; &quot;SEARCH_EXCLUSIONOBJET&quot; &quot;SEARCH_SOUSRUBRIQUES&quot; &quot;SITE_CLOISONNE&quot; ].</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/META_INF/">https://www.parisnanterre.fr/META_INF/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form action=&quot;/search&quot; method=&quot;get&quot; itemprop=&quot;potentialAction&quot; itemscope itemtype=&quot;http://schema.org/SearchAction&quot;&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;beanKey&quot; &quot;default-MOTS_CLEFS&quot; &quot;l&quot; &quot;RH&quot; ].</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/META_INF/">https://www.parisnanterre.fr/META_INF/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;form action=&quot;/search&quot; method=&quot;get&quot; itemprop=&quot;potentialAction&quot; itemscope itemtype=&quot;http://schema.org/SearchAction&quot;&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: &quot;beanKey&quot; &quot;default-MOTS_CLEFS&quot; &quot;l&quot; &quot;RH&quot; ].</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/META_INF/">https://www.parisnanterre.fr/META_INF/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -899,7 +992,7 @@ Issuer: TEXAS NATIONAL BANK OF WACO</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">12</td>
+					<td width="80%">15</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1184,7 +1277,7 @@ Issuer: TEXAS NATIONAL BANK OF WACO</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-missions">https://www.parisnanterre.fr/organisation/les-missions</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-organismes-rattaches">https://www.parisnanterre.fr/organisation/les-organismes-rattaches</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1627,6 +1720,37 @@ Issuer: TEXAS NATIONAL BANK OF WACO</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-organismes-rattaches">https://www.parisnanterre.fr/organisation/les-organismes-rattaches</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">x-frame-options</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-ufr-et-instituts">https://www.parisnanterre.fr/organisation/les-ufr-et-instituts</a></td>
 					</tr>
 					<tr>
@@ -1750,7 +1874,7 @@ Issuer: TEXAS NATIONAL BANK OF WACO</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">12</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2710,7 +2834,7 @@ zÌ`9»qY¾³(ÐÄäºsÂûºpö:ÕZ×©dsºÍê=üÎVa`aå³
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scripts/8eaa1e53bf24115be03413e4777d288dc5987c90.js">https://www.parisnanterre.fr/wro/scripts/8eaa1e53bf24115be03413e4777d288dc5987c90.js</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scripts/a72f8ad573e9c6e8ab2f56e49ab94902f674fffb.js">https://www.parisnanterre.fr/wro/scripts/a72f8ad573e9c6e8ab2f56e49ab94902f674fffb.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2741,7 +2865,7 @@ zÌ`9»qY¾³(ÐÄäºsÂûºpö:ÕZ×©dsºÍê=üÎVa`aå³
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3011,7 +3135,7 @@ zÌ`9»qY¾³(ÐÄäºsÂûºpö:ÕZ×©dsºÍê=üÎVa`aå³
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-missions">https://www.parisnanterre.fr/organisation/les-missions</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-organismes-rattaches">https://www.parisnanterre.fr/organisation/les-organismes-rattaches</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3355,7 +3479,7 @@ zÌ`9»qY¾³(ÐÄäºsÂûºpö:ÕZ×©dsºÍê=üÎVa`aå³
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/fcktoolbox/">https://www.parisnanterre.fr/fcktoolbox/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/META_INF/">https://www.parisnanterre.fr/META_INF/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3417,7 +3541,7 @@ zÌ`9»qY¾³(ÐÄäºsÂûºpö:ÕZ×©dsºÍê=üÎVa`aå³
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/sitemap.xml">https://www.parisnanterre.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&amp;PROC=IDENTIFICATION_FRONT">https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&amp;PROC=IDENTIFICATION_FRONT</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3448,7 +3572,7 @@ zÌ`9»qY¾³(ÐÄäºsÂûºpö:ÕZ×©dsºÍê=üÎVa`aå³
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/WEB_INF/">https://www.parisnanterre.fr/WEB_INF/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/sitemap.xml">https://www.parisnanterre.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3727,7 +3851,7 @@ zÌ`9»qY¾³(ÐÄäºsÂûºpö:ÕZ×©dsºÍê=üÎVa`aå³
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/fcktoolbox/">https://www.parisnanterre.fr/fcktoolbox/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/lyceen%C2%B7ne">https://www.parisnanterre.fr/lyceen%C2%B7ne</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3820,7 +3944,7 @@ zÌ`9»qY¾³(ÐÄäºsÂûºpö:ÕZ×©dsºÍê=üÎVa`aå³
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/sitemap.xml">https://www.parisnanterre.fr/sitemap.xml</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&amp;PROC=IDENTIFICATION_FRONT">https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&amp;PROC=IDENTIFICATION_FRONT</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3851,7 +3975,7 @@ zÌ`9»qY¾³(ÐÄäºsÂûºpö:ÕZ×©dsºÍê=üÎVa`aå³
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/WEB_INF/">https://www.parisnanterre.fr/WEB_INF/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/sitemap.xml">https://www.parisnanterre.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4157,39 +4281,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/agenda">https://www.parisnanterre.fr/agenda</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-content-type-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/luniversite-recrute/personnel-enseignant">https://www.parisnanterre.fr/luniversite-recrute/personnel-enseignant</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif">https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4254,6 +4346,38 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-missions">https://www.parisnanterre.fr/organisation/les-missions</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">x-content-type-options</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-organismes-rattaches">https://www.parisnanterre.fr/organisation/les-organismes-rattaches</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5053,7 +5177,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scripts/8eaa1e53bf24115be03413e4777d288dc5987c90.js">https://www.parisnanterre.fr/wro/scripts/8eaa1e53bf24115be03413e4777d288dc5987c90.js</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scripts/a72f8ad573e9c6e8ab2f56e49ab94902f674fffb.js">https://www.parisnanterre.fr/wro/scripts/a72f8ad573e9c6e8ab2f56e49ab94902f674fffb.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5084,7 +5208,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5115,7 +5239,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5146,7 +5270,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5177,7 +5301,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5208,7 +5332,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5239,7 +5363,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/60b5450a301e7f0bc4ad99d979c7e9a9e86cb3bd.js</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js">https://www.parisnanterre.fr/wro/scriptsFo_fr_FR/23978683d5fc46e5949df9b3f44fbdc413d91661.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5518,7 +5642,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-ecoles-doctorales">https://www.parisnanterre.fr/organisation/les-ecoles-doctorales</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-organismes-rattaches">https://www.parisnanterre.fr/organisation/les-organismes-rattaches</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5763,6 +5887,37 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&amp;PROC=IDENTIFICATION_FRONT">https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&amp;PROC=IDENTIFICATION_FRONT</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">302</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.parisnanterre.fr/welcome-desk/">https://www.parisnanterre.fr/welcome-desk/</a></td>
 					</tr>
 					<tr>
@@ -5793,7 +5948,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5948,37 +6103,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/agenda">https://www.parisnanterre.fr/agenda</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.parisnanterre.fr/luniversite-recrute/personnel-enseignant">https://www.parisnanterre.fr/luniversite-recrute/personnel-enseignant</a></td>
 					</tr>
 					<tr>
@@ -6042,6 +6166,37 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-missions">https://www.parisnanterre.fr/organisation/les-missions</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">cache-control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/organisation/les-organismes-rattaches">https://www.parisnanterre.fr/organisation/les-organismes-rattaches</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6286,7 +6441,38 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/">https://www.parisnanterre.fr/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/adminsite/">https://www.parisnanterre.fr/adminsite/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Dest</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/robots.txt">https://www.parisnanterre.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6347,7 +6533,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6401,7 +6587,38 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/">https://www.parisnanterre.fr/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/adminsite/">https://www.parisnanterre.fr/adminsite/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Mode</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/robots.txt">https://www.parisnanterre.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6462,7 +6679,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6516,7 +6733,38 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/">https://www.parisnanterre.fr/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/adminsite/">https://www.parisnanterre.fr/adminsite/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Site</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/robots.txt">https://www.parisnanterre.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6577,7 +6825,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6631,7 +6879,38 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/">https://www.parisnanterre.fr/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/adminsite/">https://www.parisnanterre.fr/adminsite/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-User</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/robots.txt">https://www.parisnanterre.fr/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6692,7 +6971,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6766,7 +7045,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">039E205399DB16D768D86112EA7CC37B</td>
+						<td width="80%">06C0D81B51AE1F57F6701F50784FDAD4</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6798,7 +7077,7 @@ cookie:JSESSIONID</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1918292741C6DC7354344697B7174F96</td>
+						<td width="80%">B5253722095DE498AF9856AD73267F27</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6830,7 +7109,7 @@ cookie:JSESSIONID</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">5499CD99D069D33AF6F304674C04F1BD</td>
+						<td width="80%">6397A297533E9998F7CFEC073EE94820</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6862,7 +7141,7 @@ cookie:JSESSIONID</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">B32735C5AA701A27B2A826DD5B2D030B</td>
+						<td width="80%">98A6A9DCCAA59BF761C33211E219D967</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6894,7 +7173,7 @@ cookie:JSESSIONID</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">BA50692E55FE06578ADFFBBD3E4C4DAF</td>
+						<td width="80%">246955CCE961DA626C71D4D124E6052F</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6926,7 +7205,7 @@ cookie:JSESSIONID</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">0ECBF724F27D29319CAC1AC858736F02</td>
+						<td width="80%">0E9D6E19F1AA16F5AE20877E732DE110</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6958,7 +7237,7 @@ cookie:JSESSIONID</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">9C50F4117E8E03410EB6A4963F43700F</td>
+						<td width="80%">2B010318728ACA8A5B83CC26291475D6</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7115,7 +7394,7 @@ cookie:JSESSIONID</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/fcktoolbox/">https://www.parisnanterre.fr/fcktoolbox/</a></td>
+						<td width="80%"><a href="https://www.parisnanterre.fr/META_INF/">https://www.parisnanterre.fr/META_INF/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -7208,37 +7487,6 @@ cookie:JSESSIONID</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.parisnanterre.fr/WEB_INF/">https://www.parisnanterre.fr/WEB_INF/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.parisnanterre.fr/welcome-desk">https://www.parisnanterre.fr/welcome-desk</a></td>
 					</tr>
 					<tr>
@@ -7300,7 +7548,7 @@ cookie:JSESSIONID</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">9</td>
+					<td width="80%">8</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
