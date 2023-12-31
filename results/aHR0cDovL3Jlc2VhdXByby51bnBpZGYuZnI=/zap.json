@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 24 Dec 2023 01:00:57",
+	"@generated": "Sun, 31 Dec 2023 01:01:14",
 	"site":[ 
 		{
 			"@name": "http://reseaupro.unpidf.fr",
@@ -141,7 +141,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10020",
@@ -186,6 +186,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -211,14 +219,6 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -293,7 +293,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/partenaires",
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/etudiants",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -301,7 +301,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/partenaires",
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/etudiants",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -309,7 +309,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -317,7 +317,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -406,7 +406,7 @@
 					"reference": "<p>https://github.com/advisories/GHSA-m7j4-fhg6-xf5v</p><p>https://cdn.datatables.net/1.11.3/</p><p>https://github.com/advisories/GHSA-h73q-5wmj-q8pj</p><p>https://cdn.datatables.net/1.10.23/</p><p>https://github.com/DataTables/DataTablesSrc/commit/a51cbe99fd3d02aa5582f97d4af1615d11a1ea03</p><p>https://github.com/DataTables/Dist-DataTables/commit/59a8d3f8a3c1138ab08704e783bc52bfe88d7c9b</p><p>https://cdn.datatables.net/1.10.22/</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "178"
+					"sourceid": "177"
 				},
 				{
 					"pluginid": "10010",
@@ -433,7 +433,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10054",
@@ -460,7 +460,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10110",
@@ -687,6 +687,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/176",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14",
+							"otherinfo": ""
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
 							"method": "GET",
 							"param": "",
@@ -711,14 +719,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14",
-							"otherinfo": ""
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/user",
 							"method": "GET",
 							"param": "",
@@ -733,7 +733,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10036",
@@ -840,7 +840,7 @@
 					"reference": "<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10096",
@@ -923,7 +923,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10021",
@@ -1073,7 +1073,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "174"
+					"sourceid": "173"
 				},
 				{
 					"pluginid": "10094",
@@ -1188,7 +1188,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "112"
+					"sourceid": "113"
 				},
 				{
 					"pluginid": "10027",
@@ -1273,14 +1273,6 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"<!-- User -->\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "User",
-							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"<!-- User -->\", see evidence field for the suspicious comment/snippet."
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "",
@@ -1297,13 +1289,13 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"<!-- User -->\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
 					"otherinfo": "<p>The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"<!-- User -->\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10109",
@@ -1410,7 +1402,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -1432,6 +1424,14 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/etudiants",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1479,14 +1479,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-store",
-							"otherinfo": ""
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/user",
 							"method": "GET",
 							"param": "",
@@ -1501,7 +1493,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90005",
@@ -1690,7 +1682,7 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "97ak20uordhg8qf9arvifg57s5",
+							"evidence": "87oc4fl4fd2hm4pm9k3041hf03",
 							"otherinfo": "\ncookie:symfony"
 						},
 						{
@@ -1698,7 +1690,7 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "ocm2qijojalml760iahfmgesp5",
+							"evidence": "n7oa6k6gnbbt1k2h5udo0ttgi7",
 							"otherinfo": "\ncookie:symfony"
 						},
 						{
@@ -1706,7 +1698,7 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "97ak20uordhg8qf9arvifg57s5",
+							"evidence": "n7oa6k6gnbbt1k2h5udo0ttgi7",
 							"otherinfo": "\ncookie:symfony"
 						}
 					],
@@ -1716,7 +1708,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -1769,7 +1761,7 @@
 							"param": "_csrf_token",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/entreprises\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=024b480c4f8e69f7391d3d4bb6c677bc\r\n\r\nThe user-controlled value was:\r\n024b480c4f8e69f7391d3d4bb6c677bc"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/entreprises\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=2abbb1cf0828877b6319242985e79e8c\r\n\r\nThe user-controlled value was:\r\n2abbb1cf0828877b6319242985e79e8c"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises",
@@ -1796,12 +1788,20 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/entreprises\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nraison_sociale=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises",
+							"method": "POST",
+							"param": "raz",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/entreprises\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\nraz=R\u00E9initialiser\r\n\r\nThe user-controlled value was:\r\nr\u00E9initialiser"
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/user/login",
 							"method": "POST",
 							"param": "_csrf_token",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/user/login\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=024b480c4f8e69f7391d3d4bb6c677bc\r\n\r\nThe user-controlled value was:\r\n024b480c4f8e69f7391d3d4bb6c677bc"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/user/login\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\n_csrf_token=2abbb1cf0828877b6319242985e79e8c\r\n\r\nThe user-controlled value was:\r\n2abbb1cf0828877b6319242985e79e8c"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/user/login",
@@ -1828,13 +1828,13 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\r\n\r\nhttp://reseaupro.unpidf.fr/index.php/user/login\r\n\r\nappears to include user input in: \r\n\r\na(n) [input] tag [value] attribute \r\n\r\nThe user input found was:\r\npassword=ZAP\r\n\r\nThe user-controlled value was:\r\nzap"
 						}
 					],
-					"count": "8",
+					"count": "9",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=024b480c4f8e69f7391d3d4bb6c677bc</p><p></p><p>The user-controlled value was:</p><p>024b480c4f8e69f7391d3d4bb6c677bc</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=2abbb1cf0828877b6319242985e79e8c</p><p></p><p>The user-controlled value was:</p><p>2abbb1cf0828877b6319242985e79e8c</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "200"
+					"sourceid": "187"
 				}
 			]
 		}
