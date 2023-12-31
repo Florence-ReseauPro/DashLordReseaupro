@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 24 Dec 2023 01:21:27",
+	"@generated": "Sun, 31 Dec 2023 01:25:37",
 	"site":[ 
 		{
 			"@name": "https://parisregion.eu",
@@ -58,7 +58,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "36"
+					"sourceid": "107"
 				},
 				{
 					"pluginid": "10038",
@@ -135,14 +135,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://parisregion.eu/study-research.html",
 							"method": "GET",
 							"param": "",
@@ -151,7 +143,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
@@ -208,7 +200,7 @@
 					"reference": "",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "36"
+					"sourceid": "107"
 				},
 				{
 					"pluginid": "90003",
@@ -269,22 +261,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://parisregion.eu/study-research.html",
 							"method": "GET",
 							"param": "",
@@ -301,7 +277,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
@@ -350,7 +326,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/28236</p><p>https://github.com/advisories/GHSA-pj7m-g53m-7638</p><p>https://github.com/twbs/bootstrap/issues/20184</p><p>https://github.com/advisories/GHSA-ph58-4vrj-w6hr</p><p>https://github.com/twbs/bootstrap/issues/20631</p><p>https://github.com/advisories/GHSA-4p24-vmcr-4gqj</p><p>https://github.com/advisories/GHSA-9v3m-8fp8-mj99</p><p>https://nvd.nist.gov/vuln/detail/CVE-2018-20676</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "166"
+					"sourceid": "162"
 				},
 				{
 					"pluginid": "10017",
@@ -411,22 +387,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/sitemap.html",
-							"method": "GET",
-							"param": "https://oss.maxcdn.com/respond/1.4.2/respond.min.js",
-							"attack": "",
-							"evidence": "<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://parisregion.eu/study-research.html",
 							"method": "GET",
 							"param": "https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js",
@@ -443,7 +403,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
@@ -500,7 +460,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "169"
+					"sourceid": "171"
 				},
 				{
 					"pluginid": "10063",
@@ -599,7 +559,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10040",
@@ -650,7 +610,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "36"
+					"sourceid": "107"
 				},
 				{
 					"pluginid": "10094",
@@ -757,7 +717,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "282"
+					"sourceid": "279"
 				},
 				{
 					"pluginid": "10027",
@@ -888,7 +848,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "169"
+					"sourceid": "171"
 				},
 				{
 					"pluginid": "10109",
@@ -1097,15 +1057,23 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://parisregion.eu/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "3"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90005",
@@ -1132,15 +1100,23 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://parisregion.eu/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "3"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90005",
@@ -1167,15 +1143,23 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://parisregion.eu/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "3"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90005",
@@ -1202,15 +1186,23 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://parisregion.eu/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "3"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10049",
@@ -1223,15 +1215,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"uri": "https://parisregion.eu/bower_components/fontawesome/css/font-awesome.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=604800",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://parisregion.eu/bower_components/ionicons/css/ionicons.min.css",
+							"uri": "https://parisregion.eu/bower_components/bootstrap/dist/css/bootstrap.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1271,13 +1255,13 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "123"
+					"sourceid": "120"
 				},
 				{
 					"pluginid": "10049",
@@ -1336,7 +1320,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "10"
 				}
 			]
 		}
