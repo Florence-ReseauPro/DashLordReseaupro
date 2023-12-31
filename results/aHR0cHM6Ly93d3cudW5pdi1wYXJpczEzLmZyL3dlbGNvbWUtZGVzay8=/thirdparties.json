@@ -218,10 +218,6 @@
     },
     {
       "type": "unknown",
-      "url": "https://static.affluences.media/webapi/css/stylesheet.min.css?hash=5352bc79"
-    },
-    {
-      "type": "unknown",
       "url": "https://www.univ-spn.fr/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=3.0.4"
     },
     {
@@ -231,6 +227,10 @@
     {
       "type": "unknown",
       "url": "https://www.univ-spn.fr/wp-content/plugins/pojo-accessibility/assets/js/app.min.js?ver=1.0.0"
+    },
+    {
+      "type": "unknown",
+      "url": "https://static.affluences.media/webapi/css/stylesheet.min.css?hash=5352bc79"
     },
     {
       "type": "unknown",
@@ -525,19 +525,11 @@
       }
     },
     {
-      "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2",
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/da154528/www-player.css",
       "details": {
-        "id": "google fonts",
-        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-      }
-    },
-    {
-      "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2",
-      "details": {
-        "id": "google fonts",
-        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
       }
     },
     {
@@ -549,11 +541,27 @@
       }
     },
     {
+      "type": "google fonts",
+      "url": "https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2",
+      "details": {
+        "id": "google fonts",
+        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+      }
+    },
+    {
       "type": "youtube",
       "url": "https://www.youtube.com/s/player/da154528/www-embed-player.vflset/www-embed-player.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "google fonts",
+      "url": "https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2",
+      "details": {
+        "id": "google fonts",
+        "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
       }
     },
     {
@@ -638,7 +646,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/1xEiQfu-UCiwbMaFnr-G2Uzcd5udG06umsh6raawdbQ.js",
+      "url": "https://www.google.com/js/th/sLx6qsRU46GEe0D3YqweyWcV0efz1f9DxDQkuEUxY-c.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -678,7 +686,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/1xEiQfu-UCiwbMaFnr-G2Uzcd5udG06umsh6raawdbQ.js",
+      "url": "https://www.google.com/js/th/sLx6qsRU46GEe0D3YqweyWcV0efz1f9DxDQkuEUxY-c.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -750,7 +758,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?G_Uefg",
+      "url": "https://www.youtube.com/generate_204?Q04ncg",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -758,7 +766,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?HsPikQ",
+      "url": "https://www.youtube.com/generate_204?1QBlKg",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -788,7 +796,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "upgrade-insecure-requests",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 24 Dec 2023 01:17:42 GMT",
+    "date": "Sun, 31 Dec 2023 01:16:15 GMT",
     "server": "Apache/2.4.41 (Ubuntu)",
     "strict-transport-security": "max-age=63072000",
     "vary": "X-Forwarded-Proto,User-Agent,Accept-Encoding\nAccept-Encoding",
@@ -800,7 +808,7 @@
   "endpoints": [
     {
       "hostname": "www.univ-paris13.fr",
-      "ip": "81.194.43.212",
+      "ip": "81.194.43.211",
       "geoip": {
         "city": {
           "geoname_id": 3036386,
@@ -843,7 +851,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 50,
+          "accuracy_radius": 20,
           "latitude": 48.9163,
           "longitude": 2.3869,
           "time_zone": "Europe/Paris"
@@ -893,7 +901,7 @@
     },
     {
       "hostname": "www.univ-spn.fr",
-      "ip": "81.194.43.211",
+      "ip": "81.194.43.212",
       "geoip": {
         "city": {
           "geoname_id": 3036386,
@@ -936,7 +944,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 50,
+          "accuracy_radius": 20,
           "latitude": 48.9163,
           "longitude": 2.3869,
           "time_zone": "Europe/Paris"
@@ -1042,8 +1050,42 @@
     },
     {
       "hostname": "static.affluences.media",
-      "ip": "104.21.39.185",
+      "ip": "172.67.171.47",
       "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
         "registered_country": {
           "geoname_id": 6252001,
           "iso_code": "US",
@@ -1062,7 +1104,7 @@
     },
     {
       "hostname": "www.googletagmanager.com",
-      "ip": "142.251.16.97",
+      "ip": "142.251.163.97",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1116,7 +1158,7 @@
     },
     {
       "hostname": "ajax.googleapis.com",
-      "ip": "142.251.163.95",
+      "ip": "142.251.16.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1170,15 +1212,8 @@
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "142.250.31.136",
+      "ip": "142.251.163.93",
       "geoip": {
-        "city": {
-          "geoname_id": 4364745,
-          "names": {
-            "en": "Oxford",
-            "ru": "Оксфорд"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -1208,14 +1243,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 50,
-          "latitude": 38.6828,
-          "longitude": -76.1563,
-          "metro_code": 512,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "21654"
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -1230,28 +1261,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4361885,
-            "iso_code": "MD",
-            "names": {
-              "de": "Maryland",
-              "en": "Maryland",
-              "es": "Maryland",
-              "fr": "Maryland",
-              "ja": "メリーランド州",
-              "pt-BR": "Maryland",
-              "ru": "Мэриленд",
-              "zh-CN": "马里兰州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.115.94",
+      "ip": "172.253.122.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1305,7 +1320,7 @@
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "142.251.16.156",
+      "ip": "172.253.115.155",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1359,7 +1374,7 @@
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.251.179.148",
+      "ip": "172.253.122.149",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1413,7 +1428,7 @@
     },
     {
       "hostname": "jnn-pa.googleapis.com",
-      "ip": "172.253.62.95",
+      "ip": "142.251.163.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1467,7 +1482,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.251.163.106",
+      "ip": "172.253.63.104",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1521,7 +1536,7 @@
     },
     {
       "hostname": "i.ytimg.com",
-      "ip": "172.253.63.119",
+      "ip": "142.251.16.119",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1575,15 +1590,8 @@
     },
     {
       "hostname": "yt3.ggpht.com",
-      "ip": "142.250.31.132",
+      "ip": "142.251.167.132",
       "geoip": {
-        "city": {
-          "geoname_id": 4364745,
-          "names": {
-            "en": "Oxford",
-            "ru": "Оксфорд"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -1613,14 +1621,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 50,
-          "latitude": 38.6828,
-          "longitude": -76.1563,
-          "metro_code": 512,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "21654"
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -1635,28 +1639,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4361885,
-            "iso_code": "MD",
-            "names": {
-              "de": "Maryland",
-              "en": "Maryland",
-              "es": "Maryland",
-              "fr": "Maryland",
-              "ja": "メリーランド州",
-              "pt-BR": "Maryland",
-              "ru": "Мэриленд",
-              "zh-CN": "马里兰州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "172.253.122.94",
+      "ip": "142.251.163.94",
       "geoip": {
         "continent": {
           "code": "NA",
