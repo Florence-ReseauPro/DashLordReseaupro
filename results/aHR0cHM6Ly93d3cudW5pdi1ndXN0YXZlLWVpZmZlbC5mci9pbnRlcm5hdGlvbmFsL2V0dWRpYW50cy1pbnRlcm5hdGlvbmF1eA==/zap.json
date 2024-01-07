@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 31 Dec 2023 01:50:21",
+	"@generated": "Sun, 7 Jan 2024 01:51:07",
 	"site":[ 
 		{
 			"@name": "https://www.univ-gustave-eiffel.fr",
@@ -42,7 +42,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p><p>http://openwall.info/wiki/john/sample-hashes</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1805"
+					"sourceid": "1795"
 				},
 				{
 					"pluginid": "10202",
@@ -103,7 +103,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"form-search-sitewide-top\" \"tx_eiffel_wsgooglesearch[__referrer][@action]\" \"tx_eiffel_wsgooglesearch[__referrer][@controller]\" \"tx_eiffel_wsgooglesearch[__referrer][@extension]\" \"tx_eiffel_wsgooglesearch[__referrer][@request]\" \"tx_eiffel_wsgooglesearch[__referrer][arguments]\" \"tx_eiffel_wsgooglesearch[__trustedProperties]\" ]."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -396,7 +396,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "2189"
+					"sourceid": "2291"
 				},
 				{
 					"pluginid": "10098",
@@ -457,7 +457,7 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -556,6 +556,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_International/Contributeurs/B2.1_CHARTE_SYLLABUS_FLE_2023-2024_S1.pdf",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<?=h\u00FBg\u00DB\\x0018\u00A5Q\\x001a\u00A5?)\u009E\u0082V\u00F1m\u00C8\\x0017\u00D6\u0081\\x0013y\u00C5H\u00EF\u00B7\u00FFJ\\x0012>\u0080\u00A3\u00C27\u00F0\u00BC\u009C~\\x0008\u008Ep\\x0014K\u00E1\u00D7\\x001c\u00D9\u0083\u00F4>$\u0097-\u0080\u009F*V\u00C1\u00A3\u00FFN_Fi\u0094Fi\u0094Fi\u0094Fi\u0094Fi\u0094F\u00E9\u00BF\u008FTW\u0080S\u00F388\\x0015\u00FB\u00C0\u00A9\u00BA\\x001c\u00D3\u008Fa\u00BA\\x0000\\x001c\u00E7\u00AA\u00D7\u00AF\u00A3\u00DAtn]\u00AE3\u00A0\u00BFyP\u00FF\u00F4vd\u00BD\u00F7\\x0007ej\u00C7\u00B9m\u008F\u00D2(\u00FD\u00BB\u0089\u00BFW\\x000f\u00A4G\u00DF\u00ABGi\u0094Fi\u0094Fi\u0094Fi\u0094Fi\u0094Fi\u0094F\u00E9<H\u00B8\u009A\u00E5!o\u00FEO\u00FB1J\u00A34Jg\\x0012\u00BB\u00FD?\u00ED\u00C1(\u008D\u00D2(\u008D\u00D2(\u008D\u00D2(\u008D\u00D2(\u00FDFb\u0098\\x0013\u00E8\u00DF#`\\x00070\u0087)\u00F1\u0087\u00A0`\u00B7\u00A1\u00A0\\x001a\u00BC\u00A0\u0094\u00BF\\x0015a\u008410\\x000e\u00D2`\\x0002dC\t\u0094A\\x0005T\u00C2,X\\x0000\u008B`\\x0005l\u0082\u00AD\u00B0\\x0007\u0082p\\x0000\u00DE\u0085\u008F\u00E0K\u00F8\\x001b\u00CB\\x0012&\\x000b\u00CF&NH\u00CCJ\u00CCI\u009C\u0098\u0098\u00EF\u00F8\u00CCqJ\u00D2J\u0097J;\u00DC/|\u00A3\\x0008\u0085\u00E4\u00B6\u008D \rX,\\x000e[\u009C)[l\u0080v\u00D82`\u00F1\u0083\\x0011,\u00E6\r\u00B3\\x0008h\u0091\u0085\u00BEB\u00BF\u00D7\u0088\u00A9\u00E2x\u00F1\u00D1\u00D0K\u00A1\u00D7C\u00EF\u00F2o7\u0088nq\u00AC\u00DC\u00B3\u00D9\u00A1&\u00B1\u009C\\x0015\u0082\\x000b3\u00BB\u00E11\u0098\\x0018\u00CA\te}\u00FCb\u00FF\u00CF'{>\u00B9\u00B1w\u00D5{\u008D\u00D8\u00F9\\x000e\u00FF\u00EE\u00B0\\x001c\u008D3\u00BF5\u008D\u00D1\u00E0T8\u00EC\u00DF\\x001fXx\u00CE(\u00F3o\\x001f\u008B\u00E2\\x000c\u00F1\u00BBX\u00B3\u0094\u00F52\u0081E2\\x0013\u008BgI,\u0085U\u00B3\u00F9l\\x0011[\u00CE\u00D6\u00B0\\x000e\u00B6\u0089mgW\u00B3k\u00D8nv\\x0003\u00BB\u0083\\x001ddO2\\x000bs0\u00899\u0099\u0087M`\\x0015,\u008FU\u0081\u008A\u00C9\u00DF\u00F3\u0085\u00AF\u00C3>\\x000e\\x0012\\x0003!\u00FC\u009D\u00F5\\x0011\u00BF\u00B9>L\\x0013\\x0006<\n\u0093x\u00EB@\u00CA\u0087\\x001c\u00FEw\\x0017\u00C4O\u00CFa\u00C9\\x000cQ\u00C0g\\x000f\u00E0H\\x0002d\u00C82\u00EC\u00E3\u00D9+\u0088\u009D\u00F2\u00F7q\u00B8\\x0013#\u00C6\\x0001\u00E5#F\\x0002\u00E5\u00CF\u00B2\u00E7\u00BE\u00B5S\u00E2@\u00CA\u00821s0\u00E7\\x0019\\x001a\u009Da<\u00F4-V\u00BE\u00F8\u00B66\u00CEI\u00E2\u00B9U\u00E4Vp4\u00CF\u00DF(ke_\u008F\u00AEG\u00F8\u00AF\\\u008F^\u00FF\u0095;7nX\u00BFn\u00ED\u009A\u00D5\u00AB\u00DAW\u00AEX\u00DE\u00B6\u00AC\u00B5e\u00E9\u0092\u00C5\u008B\\x0016.\u0098\u00EF\u00AF\u00F7\u00D5\u00D5\u00CE\u00AD\u00A9\u009E3{\u00D6\u00CC\u00AA\\x0019\u0095\u00D3+\u00CA\u00CBJK\u008A/\u00F0\\x0016\\x0015N+\u0098:%?o\u00F2\u00A4\u0089\\x0019\\x0013\u00D2\u00D3R\u0092\u00DDc]c\\x001c\u00B6\\x0018\u00B3)\u00D2\u00A8\u00D7i5j\u0095R!\n\\x000c\u00D2\u00CA\\\u00E5\rR \u00B9!\u00A0HvM\u009F\u009E\u00CE\u00F3\u00AEF\\x00144\\x000e\\x00114\\x0004$\\x0014\u0095\\x000f\u00D7\tH\r\u00B2\u009A4\\\u00D3\u008B\u009A\u00AD\u00A7izI\u00D3;\u00A0\u00C9LR\\x0001\\x0014\u00A4\u00A7Ie.)\u00F0b\u00A9K\u00EAa\u00F3k\u00EA1}m\u00A9\u00CB/\\x0005z\u00E5\u00F4,9\u00ADH\u00963F\u00CC8\u009DXC*\u00B3\u00B5\u0095J\\x0001\u00D6 \u0095\\x0005\u00CA7\u00B5u\u00955\u0094\u00A2\u00BDn\u00BD\u00AE\u00C4U\u00D2\u00A2KO\u0083n\u009D\\x001e\u0093zL\\x0005R\\k\u00BBYJ!\u0093\\x0013BJ\u00D9\u0094n\\x00014F\u00DEl@t\u009756\\x0007\u00AAk\u00EA\u00CBJ\u00EDN\u00A7_\u0096A\u0089l+\u00A0*\t\u00A8e[\u00D2r\u00EE3\\#u\u00A7=\u00D9\u00B5\u00BB\u00C7\\x0004K\\x001b<\u0086fWs\u00E3\u00C2\u00FA\u0080\u00D8\u0088\u0095\u00BA\u00C4\u00B2\u00AE\u00AE]\\x0001\u00B3'\u0090\u00EA*\r\u00A4n{\u00DF\u0086]n\t\u00A4\u00B9J\u00CB\\x0002\\x001e\\x0017\\x001a\u00AB\u009A;\u00D0\\x0000\\x000b(\u00DD&\u0097\u00D4\u00F5\\x0015\u00A0\u00F3\u00AE\u00DEO\u0086K\\x001a\u00C3\\x0012\u0095\u00DB\u00F4\\x0015\u00F0$\u00EF\u00E2@\u0098\u00B0\u00BC?\r\u00E8\\x001bz\u0088\u00FDs:\u00B9/\u00D7\u00F4xa)f\\x0002\u009D5\u00F5\u0094\u0097`\u00A9=\\x0008\u00DE\\x000c\u008F? 4\u00F0\u0092'\u00FBK,>^\u00D2\u00D9_2P\u00BD\u00C1\u00E5\u00E4CU\u00D6\\x0010\u00FElj\u00B3\\x0005:\u0097J\u00E9i\\x0018}\u00F9\u00E3\u00C6\\x000f\u0096K\\x00011\u00B9aiS\\x001b\u00C7\u00C6\u0096.Wi)\u00C5\u00AD\u00AE>\u00E0-\u00C5\u0084\u00B71\u00DC\u00D7\u00B2\u00EE\u00CC\\x000c\u00D4ol\u00C0N,\u00E7a\u00A8\u00A9\\x000fd\u00B8\u00D6\\x0006b\\\u00C5\u00A4\u0080\\x0002\u0089\u008F\u00C1\u00F2\u00DAz\u00B9J\u00B8Z \u00A6$\\x0000\rM\u00E1Z\u0081\u008C\u00B2R\u00EE\u0097T\u00D6\u00D5PJ\\x000er[\u00AE\u009A\u00FA#\u0090\\x0013z\u00B7;W\u00B2\u00EF\u00CF\u0081\\\u00F0s?\\x0002\u00D6\\x0012\\x001c\u0094\u00E4\u00B2\u00AE\u00FA\u00E6\u00D6\u0080\u00A3\u00C1\u00DE\u008C\u00F3\u00B3U\u00AA\u00B7;\\x0003^?\u0086\u00CF\u00EF\u00AAo\u00F1\u00F3Qr\u0099\\x0002\u00A9\u00EFbsN\u00B9E\u00B9\\x0016\u00F6\u00ED4\u00ED~e\u00DEs\u00B5[#\u00D5\\x000bv\u00D1\u00CFG\\x000b\\x0005R9>\\\u00C5\\x0005X`\u00C2\u00E1\u0092\u00B3|D\u008B\\x000b\u00A4zf\u0087~5l%\u00AC\u00C1S\u00C3\u00EC`Ft\u0097L\u00E7E\"\u00AFZ2\u00DD\u00EE\u00F4;\u0089\u00BE\u00C5%{\u00D8'\u00A5;\u00A0\\x0019b\u00CB\u0084\u0082\\x0001\u009F\u00A8\u009D\u00B3\u00BAF\u00DA\u00DC\u00A1T\u00A9\u00AC\u00A5t\u0088\u0083\u00C3\u008C*\u00C3\\x000e\u0086\u00AD\u008D\u00EC\u00A7\u00C0c\\x0011n\\x0018kh\u00F8pN\u00EF/\\x0012\u00DD\u00B8rQ&\u00A0\\x0019Y\u00C4G\u00D1&\\x0005\u00A0Z\u00AAw\u00B5\u00B8\u00FC.\u009CC\u00DE\u00EAz\u00DE7\\x001eky|\u00ABj]U5\u00F3\u00EB\u00E5\u00D1\\x000e\u00CF\u0092\u00BAa9*\u00CF\u00A3\\\\x0000\u009CX\u00DC\u009F\\x0011Jp\\x000e\u0096{\u00EC\u00FD\u00C3*\u00E7+\u00E4\u00FC@v\u00FAi\u00C5\u0095\u00FD\u00C5.\u00EEWWWs7\\x001e\\x001c|*\u00DB\u00BB\u0099\u009CP\u0096\\\u00E3\\x000f\u00CC\u00F1\u00F8]\u0081\u00A5\\x001e\u0097\u0093\u00FB\u0099\u009E\u00D6\u00AD\\x0001\u0083\u00B3\u00AE\u00A1\\x0004\u00D7j9nw\u00AE\u00F2F\u0097d\u0092\u00CA\u00BB\\x001a{B\u009DK\u00BB\u00BA\u00BD\u00DE\u00AE\u00B5e\rmSp]t\u00B9*\u009B\u00BB\\\u00B5\u00F5\\x0005v\u00D9\u00F9\u00B9\u00F5\u00DB\u00ED\u00DBx\u00DBQP\u00C5\u00AA\u00EA\u008A\u00D1\u0094\\x0000\u00C5\u00DD.vUM\u00B7\u0097]U;\u00BF\u00FE\\x0008\u009E\u00B8\u00D2Uu\u00F5A\u0081\t%\r\u00C5\u00FE\u00EE\u00B1XVD\u00C2\\x0003H\u0096\n\\\u00CA\u0085<#\u00F1\\x000c\u00B74\\x00173\\x001aY\u00DF~\\x0004\\x000f\u00AAN\u00B9T!\\x000b\u00E4|S\\x000f\\x0003Y\u00A6\u00E9\u00971h\u00EA\\x0011Hf\u00A2\u0086\u0092\u00E5\u0086\u00BCx\u00A5k\u00EAQP\u0089\u00B7_[\u00812\r\u00C9:I;%\u00AC\u00AD\u00C1\\x0012\\x0013/9\nx\u0090\u0080\\H\u00D4\r<\u00C0^\u009D\u00D2\u00AB\u00F1j\u00BD\\x0006\u00C1(`H\u00B9(\u0088\u0092\u00A3\u00A8\u00ABe\u00B0\u00DF\u00C0\u008C\u00CC\u00DE\u008D6\u00E7\u00CA\u00E2\\x001e\u00D6\u00D9\u00AD\u00F5\u00DA\u008F\u00C8\u0096\u00E6\u00865;Q\u0093\u00CB:\\x0007d\u00E89W\\x001bb\\x0008\u00DB\u00A3\u008E\u00FB\\x0006{\u00E0\u009B_\u00BF\u00DF\\x0000h_~\u00A2F1'\u009C\u0085\u00B66\u009CCx\u009E\u0094I\u00CD|\u00FE]\u00ECo\u00EBj\u00F0\u00F3\u00DD\\x0003\u00AC8W\u00F1\u00C3\\x0002\u00CCU\\x0008\\x0001\u00C1U\u0088\\x001e\u00AB\\x000c\\x0001\u009D\u00AB\u00A58\u00A0w\\x0015sy\\x0011\u0097\\x0017\u0091\\\u00C5\u00E5j\u009C\u00F9\u00CC\u00CAp\u00B0\u00F9\u00A6\u00DB\u00D5\u00E0\u00C2\u008D\\x0018WL=\u00D8\\x0019\u00AD5\u0091\u009B\u0094zB\u00A1\u00BAz\u00E7\u008B\u00F6^\u00BF\\x0013\u00D7\u00D2B\u00E4\u00F9\u00F5\\x0001\u00AD\\x0007\\x000f7\u00A5{\\x0006\u00EAUpn@qE\u00A0\u00B3\u00A9\u0091\u00FB\\x0001\u00BEz^W\u00ED\u00AEl\u00F2\u00E3\u00BA\u00EC7\u0088*\u0095\\x0001-Z\u00D0\u0086-\u00A0F\u00B9\\\u0087\u00AF7\u00AC\u00D4\u0084s\u00AD\u00D1%'Q\u008C[G\u00A7?\u00E0\u00F7\u00F0F\u00EB\u0097\u00FB\u00E5\u00F5j\n\u00C0t\u00D7\u0094\u0080*\u0099l*\u0093yC\\x0019\u00FE\u00AE(W\u00B6\u00BC\u00F9\u00E0Z\u00D7\u00B9wq\u00D0\u00A2oP[O\\x0012;f\u00B11?\\x0005Im@\u00CF\u009B\\X\u00D4\u00D4 \u00D1\\x001c\u00A9\u00C5\u00B5L\u0087\u0085\u00CEN\u0092\\x0016\u00DC\u00F3\\x0015\u00C9-2\u00EB\u00EC\u00E1B\u00E0\u00DD\\x0012\u00DDz\u00A3.\u00A0\u009D\u0080\\x0006\u00F1\u00C3\u00D3\u00FA\t|\u00CFQ\u00BA\u00D5~?9/\u00E7v\u0085\\x0015\u00B0mS@\u008F\\x001e%\\x000f\te\u00B8\\x0002F\\x0007\u008B*\u00B9/\u00F8\u00D9\u0085\u00AEr\u00D5\u00A7\u00B8\u0099\u009A\\x001e\u0098\u00EB\u00DA\u0082['wZ\u00B6\u00A4\u00C6\u00E2\u0080\u00D1]\u00D9\u0088\u00A7\\x001b\u00D5\u00D7\u00A3\u00C4\u0095\u00D7_Y\u00C37A}\u00D8\u00C6q\u0092\u00AAy\u00CF\r\\x0018w\u00DC\\x0012zB{][\u009DC\\x0008\u00F7\\x000e~\u00FA\u00F1\u00F9\\x0007\u00F6#\u00FC\u00A6\u00E8\u00EF:]\\x0010X\u00E0IO\u00D3\u009C.5\u00CA\u00E2\u00AE.\u008Dq\u00E4\n\\x0014/\u008Dq\\x0000e\u00A1\u00E0n\u00E2\u00A7\\x0002\"\u009Fp\u00F2|s\u00CD\u00E8\\x0016f{dd2v\u00CDp\u00E1\u00D9!\u00B89\u00E3\\x0015G\u00C4\u0085\u00E3\u0094\u009A\u00FD\\\\x000b\u009D\u00AD\u0096w\u00B1\u00B3*\u00B1!J\u00FC\u0080\u0096\u008Dw\u0099\u00A6\u00F6\u00E7X8G\u00C3\u00D8\\x0015X6<\u00DB6\u0090-\u00E7\u008C\u00D7@\u00F7\\x0004\u00BA=`'\u00F8.\u008B\u00B3d\u0085=\u00D0\u008Es\u00B2_\u0085\u008F\u0085\u00D4%\u0099\\S\\\u00FC!W\u00AE\u00E0\u00DC\u0080\u00C33\u00B0 p\u00E2\u00E3|\u00E3\u00CB\u00A5\u00B3I\u00AA_\u008A\u00D3\\x001c\r\u00967t\u0095w\u00F1\u00CBiSc8`\u00E1\u0096\\x0002\u00AB=\u00C3L\u00E2\u008A`8m\u00D0\\x0010\u00EFN\u00A0\u00B3Zj\u00F0K\rx)e5\u00F5N\u00A7\\x001d\u00D7!\u00A2\u00D4\u008A7TW#?\\x0004\u00AA\u00A9?\u00D5\u00F3\u00E5KJc\\x0017\u009F\u00DC\u0080w\\x0014\u00BF=\u00A0\u00C6#\u00A9\u00B5\u00B1\u00C5\u00E5\u00C4\u00B3#\u00C0\u00F7\\x001e\u008A>\u00F7Q\\x0011^0`\u00EF\u00EAru\\x0005\u00E4\\x0015[\u008E\u00CAh>\\x0019\\x0017\\%\\x0007\u00FC\u00AC\u00F5\u00B8\\x001a[\u00F8\u00E5\u00B9\u0095\u00DF\u009D[\u00E4\u00BA\u00E5\u00E8\u00AE\\x001c\\x001dn\u00CD^\u00E6\u00C2U\u00DC\u0082b9\u0096\\x00188\u00DC\u00F4\u0096\u00F2GS\\x0017\u00BF\u009A/j\u00F0`$\u00CC]Q]R~\\x0017n\u00BE\u008B\u00F0\u00DCP$7\u00CDk\u00C0C\u008A\u009FE\u0092<\u00D4\u008Dv\u00CCa\\x0010*y\u00CE\u008F\u0086HQ\u00EB\u00E6\u008A4\u00F9\u00B97\u00AB<\u00DD\u008B\u00D4\u00EEA\u0089\u00FCY\u00E3!e\u008Dl\\x0015=\u009B[\\x001f\u00A8\u00EEW\u0091W\\x0012O\u00AC\u00F3\\x0004\u0084\u00D8<,\u00E4\u009Dgs\u00E7\u00D7\u00F7\u00EFP\"/\u00AE\u00C4\u00F0zqV\u00D9ym) \u00D4\u00D5\u0087\u0087G\u00AE_\u00C9\u00AB\u00DA\u00FB\\x0007\u008C\u00AA\u00A1D>=\u00C2+k\u00E0\u009C\u00E9?\u0081\\x0016\u00DA1\u00A6g\u0095wk\u00C5\\x001ea[0\u00A9\u00D0\u00D1#l%\u00D8\\x0012L\u00D2#l&\u00D8\\x0014L\u009A\u0082\u00D0A\u00B0\u0091T6\\x0004\u0093\u00A6\"\u00AC\\x000f&\\x0015 \u00AC#XK\u00B0&\u00984\ra5\u00C1*\u00AA\u00D0N\u00B02\u0098x\\x0001\u00C2\n\u0082\u00E5\u00C1\u00C4b\u0084\u00B6`b\t\u00C22\u0082V\u0082\\x0016\u0082f\u0082&\u00AA\u00B0\u0094*4\\x00124P\u00D9\\x0012\u0082\u00C5\u00C1\u00842\u0084E\\x0004\\x000b\t\\x0016\\x0010\u00CC'\u00F0\\x0013\u00D4\\x0013\\H0\u008F\u00C0GPG0\u0097\u00A0\u0086\u00A0\u009A`\\x000e\u00C1\u00EC`B)\u00C2,\u00CA\u00CD$\u00A8\"\u0098API0\u009D\u00A0\u0082\u00A0\u009C\u00A0\u008C\u00A04h\u00AFD(\t\u00DAg \\x0014\\x0013\\@\u00E0\r\u00DA\u00AB\\x0010\u008A\\x0008\n\u0083\u00F6\u0099\\x0008\u00D3\\x0008\n\\x0008\u00A6\\x0012L!\u00A8%\u00C8'\u009By\\x0004\u0093\u00C9\u00D8$\u0082\u0089\\x0004\u00B9d3\u0087 \u009B\u00EAe\\x0011d\\x0012d\\x0010L H'ciT\u00DDC\u00F5\u00C6SY*A\n\u00C18\u00D2L&pS\u0085\u00B1\\x0004.\u00AA7\u00864\u009D\\x0004\\x0012\u0081\u0083 \u0089 1\\x0018?\\x001b!\u0081\u00C0\\x001e\u008C\u009F\u0083\\x0010O\\x0010G`\u00A3\u00B2X\\x0002+\t-\\x00041\\x0004\u00D1T\\x0016E`&\u00A1\u0089r\u0091\\x0004\\x0011$4\\x0012\\x0018\\x0008\u00F4\\x0004:\\x0002m0\u00AE\\x001aA\\x0013\u008C\u00ABAP\\x0013\u00A8\\x0008\u0094\\x0004\nR\\x0011)'\\x00100\\x0002\u0090\u0081\u0085\\x0008\u00FA\\x0008N\u00C9\\x0015\u00D8\u00DF)\u00F7\r\u00C1I\u0082\u00BF\\x0011\u00FC\u0095\u00E0k\u0082\u00BF\\x0004m\u00B5\\x0008_\\x0011|\\x0019\u00B4\u00D5!\u00FC\u0099\u00E0\\x000b\u0082\\x0013\\x0004\u009F\u0093\u00CAg\\x0004\u009F\u0092\u00B0\u0097\u00E0\\x0013\u0082\u008F\t>\"\u0095?\\x0011|H\u00F0\\x0001\u0095\u00FD\u0091\u00E0\\x0008\u00DE'\u00F8\\x0003\u00A9\u00FC\u009E\u00E0=\\x0012\u00BEK\u00F0\\x000e\u00C1\u00DB\\x0004o\\x0005c\u00E7!\u00FC\u008E\u00E0\u00B7\u00C1\u00D8\\x000b\\x0011\u00DE$\u00F8\r\t\u00DF x\u009D\u0084\u00AF\\x0011\u00FC\u009A\u00E0U\u0082_\u0091\u00CA+\u0094\u00FB%\u00E5^&x\u0089\u0084\u00BF x\u0091\u00E0\\x0005\u0082\u00E7\t~N\u009A?#\u00F8)\t\u009F#x\u0096\u00E0'\\x0004\u00C7\u0083V\u00DC\u0097\u00D83Ak\\x0011\u00C2\u00D3\\x0004O\\x0005\u00AD\\x000b\\x0010\u009E$x\u0082\u00E0q\u0082\u00C7\\x0008\\x001e%8Fp\u0094\u00EA\\x001d!\u00E8!\u00E1a\u0082C\\x0004\\x0007\t\\x000e\\x0010\u00EC'\\x0008\\x0012tS\u00BD\\x0000\u00F9\u00F2\\x0008\u00E5~L\u00F0#R\u00F9!\u00C1>\u0082\u0087\t~@\u00F0\\x0010\u00D5\u00DBK\\x0015\\x001e$\u00E1\\x0003\\x0004\u00F7\\x0013\u00DCGp/\u00C1\u00F7\t\u00F6\\x0010\u00DCCpw\u00D0\u00B2\\x0014\u00E1{\\x0004w\\x0005-M\\x0008w\\x0006-\u00CD\\x0008w\\x0004--\\x0008\u00B7\\x0007-\u00AD\\x0008\u00B7\\x0011|\u0097\u00E0V\u0082[\\x0008n&\u00B8\u0089\u00E0;AK#\u00C2\u008Dd\u00F3\\x0006\u00B2y=\u00D9\u00BC\u008E\u00E0Z2\u00BD\u009B*\\C\u00D0E\u009AW\u0093\u00CAUA\u008B\\x000fa\\x0017\\x0019\u00BB\u0092\u008C\u00ED$\u00B8\u00824/'+;\u00A8\u00FAe\\x0004\u009D\\x0004\u0097\\x0012\\B\u00B0\u009D\u00E0b\u0082\u008B\\x0008\u00B6\\x0005-\u00B8'\u00B3\u00AD\u00D4\u00C2\\x00162\u00BD\u0099`\\x0013\u00B5\u00D0A\u00BEl$\u00D8@\u00ED\u00AD\u00A7\u00EA\u00EB\\x0008\u00D6\\x0012\u00AC!XM\u00B0\u008A\u00A0\u009D`%ue\\x0005\u00B5\u00B7\u009C\u00A0-h\u0099\u0084\u00B0\u008C\u00A05\\x0018\u00B3\\x0003\u00A1%\\x0018\u00C3\u00E7ns0\u00E6R\u0084\u00A6`\\x000c\u00AF\u00B7\u0094\u0084\u008D\u00C1\\x0018/B\\x0003\t\u0097\u0090pq0\u00E6\\x0012\u0084E\u00C1\u0098\u00CB\\x0011\\x0016\\x0006cv\",\\x0008F\u00E3!\u00CC\u00E6\\x0007\u00A3\u0093\\x0010\u00FC\\x0004\u00F5\u00C1h\\x001d\u00C2\u0085\\x0004\u00F3\u0082\u00D1x\u00CC3_0\\x001a\u00CFwVGPK07\\x0018\u008D\u00C7<\u00AB\tF\u00E3\u00C1\u00CE\u00AA\t\u00E6\\x0004\u00A3\u00B8\u00D7\u00B3\u0083Q\u00E5\\x0008\u00B3\\x0008f\u0092\u00B0\u008A`\\x0006\t+\t\u00A6\\x0013T\\x0004\u00A3\u00F0\u00DCd\u00E5\u00A4RF\u00C2R\u0082\u0092\u00A0\u00B9\\x0002\u00A18h\u00E6\u008B\u00F2\u0082\u00A0\u00B9\\x001e\u00C1\\x001b4\u00FB\\x0011\u008A\u0082\u00E6\u00F9\\x0008\u0085\\x0004\u00D3\u0082f>[\\x000b\\x0008\u00A6\\x0012L!\u00C8\\x000f\u009A=\\x0008yAs\\x001a\u00C2\u00E4\u00A09\\x001fa\\x0012\u00C1\u00C4\u00A0\u00997\u0094K\r\u00E5\\x0010d\\x0007\u00CD<\u0082Y\\x0004\u0099A3\\x000fd\\x0006\u00C1\\x0004\u00F2%\u009D \u008D\\\u00F2\u0090K\u00E3\tR\u00C9\u00A5\\x0014\u0082q\u00E4D2\u0081\u009B`,\u0081\u008B*\u008C!M'\u00B9$\u0091\\x0013\\x000ej/\u0089 \u00914\\x0013\\x0008\u00ECT=\u009E \u008E\u00C0F\u009A\u00B1\\x0004Vr\u00D0B\\x0010C~FSCQ\\x0004f\u00AAg\"\u0088$\u0088 0\u0092\u008A\u0081r\u00FA\u00A0i\\x0011\u0082.hZ\u008C\u00A0\r\u009A\u0096 h\\x0008\u00D4\\x0004*\\x0002%i*HS$\u00A1@\u00C0\\x0008\u00C0\\x001bB\\x000c\u00A1^\\x001f\u00E2)\u00E4\u00BF#\u0083|\\x0012e\u00C3\u008A\u00C5\u00F4\u00D7\u00C8A\u00FE\n\u00F9\u00CB\u00C8\u00A5\u008E?#\\x0011\u00D9\u00E48\\x0011\u00D9\u00EC\u00F8\\x001c\u00F93\u00E4O\u0091{Q\u00FE\t\u00F2\u00C7X\u00F6\\x0011\u00E6\u00FF\u0084\u00FC!\u00F2\\x0007\u00C8D\u00F9\u00FF \u00BF\u008F\u00E9? \u00FE\\x001e\u00F9=\u00D4{\\x0017\u00F3\u00EF \u00BF\u008D\u00FC\\x0016\u00F2\u00EF\u0090\u008B\u00FCf\u00C42\u00C7o\"\u00DA\\x001co \u00BF\u008E\u00FC\\x001a\u00F2\u00AFQ\u00F6*\u00E2\u00AF\u0090_A\u00FE%\u00E6_F|\t\u00F9\\x0017\u00C8/\"\u00BF\u0080\u00FC<\u00F2\u00CF\u0091\u0086\u00FCS\u00E3J\u00C7s\u00C6v\u00C7\u00B3\u00C6\u00F1\u008E\u009F \\x001e7\u00A69\u009EA\u00D9\u00D3\u0098~\u00CA\u00B8\u00CA\u00E1\r=i\\\u00E1x\u00C2\u00B8\u00DC\u00F1\u00B8\u00B1\u00CD\u00F1\\x0018\u0096<j\u00CCr\\x001cC>\u008A|\u00C4\u00B0\u00CE\u00D1cX\u00EF8l\u00D8\u00E08d\u00D8\u00E88\u0088|\\x0000y?\u00E6\u0083\u0088\u00DD\u00A8\\x0013@~\\x0004\u00F9\u00C7\u00C8?B\u00FE!\u00F2>\u00E4\u0087\u0091\u00A0\u00BF\u00C4\u00F1\u0090~\u009Bc\u00AF~\u00AB\u00E3A\u00C4\\x0007\u00F4\\x0017;\u00EE\u00D7ow\u00DC\u0087\u00F2{\u0091\u00BF\u008F\u00BC\\x0007\u00F9\\x001e\u00E4\u00BB\u0091\u00BF\u0087|\\x0017\u00F2\u009D\u00C8w\u00E8\u00D3\\x001d\u00B7#\u00DF\u00A6\u00DB\u00EB\u00F8\u00AE\u00EE\\x0001\u00C7\u00AD\u0088\u00B7 \u00DF\u008C|\\x0013\u00F2wtm\u008E\\x001bu;\\x001c7\u00E8\u00EEt\\\u00AF\u00FB\u009E\u00E3:\u00DD=\u008EkQ\u00BE\\x001by\u00A7\u00E8v\\!\u00E69.gy\u008E\\x001d\u00BEN\u00DFe\u00FB:}\u0097\u00FA\u00B6\u00FB.\u00D9\u00B7\u00DD\u00A7\u00DF\u00CE\u00F4\u00DB\u00ED\u00DB\u00AB\u00B6_\u00B4}\u00DF\u00F6\u00DFn\u00F7F\u00A9t\\x0017\u00FB\u00B6\u00F9.\u00DA\u00B7\u00CD\u00B7\u00D5\u00B7\u00D9\u00B7e\u00DFf\u00DFQ\u00E1jh\\x0015\u00AE\u00F2\\x0016\u00F86\u00ED\u00EB\u00F0):b:6v\u0088_v\u00B0}\\x001d\u00AC\u00B4\u0083ev0\\x0001:L\\x001dR\u0087h\u00D8\u00E8[\u00EF\u00DB\u00B0o\u00BD\\x000f\u00D6W\u00AF\u00EF\\\\x001fX\u00AF\u0098\\x001aX\u00FF\u00EEz\\x0001\u00D63]O\u00E8\u00C9\u00FD\u00EB\u00EDI\u00E5\u0088\u00DE\u008B\u00D7\\x001bM\u00E5\u00EB|k|k\u00F7\u00AD\u00F1\u00ADn]\u00E5[\u0081\\x000e.\u00CF[\u00E6k\u00DB\u00B7\u00CC\u00D7\u009A\u00D7\u00ECk\u00D9\u00D7\u00ECk\u00CA[\u00EAk\u00CCk\u00F0-\u00C9[\u00E4[\u00BCo\u0091oa\u00DE|\u00DF\u0082}\u00F3}\u00FE\u00BCz\u00DF\u0085\u00A8?/\u00AF\u00CE\u00E7\u00DBW\u00E7\u00AB\u00CD\u00AB\u00F1\u00CD\u00DDW\u00E3\u009B\u00937\u00DB7\\x001b\u00E5\u00B3\u00F2\u00AA|3\u00F7U\u00F9f\u00E4M\u00F7U\u00EE\u009B\u00EE\u00AB\u00C8+\u00F7\u0095a\u00E7!\u00C1\u0094 %\u0088&\u00EE\u00C0\u00EC\\x0004\u00F4\\x0004\u00EC\u00AC8\u00D3\u00EE\u00B5\u00BFk\u00FF\u00DC\u00AE\\x0000{\u00C0\u00FE\u00A4]\u008C\u008A\u008Cw\u00C4\\x000b\u00A9\u0091q\u00ACdN\\x001c[\\x0013wi\u00DC\u00F5qb\u00A4\u00ED%\u009B\u00E0\u00B5\u00A5\u00A6\u0095G\u00C6\u00BE\\x0014\u00FBN\u00ECg\u00B1\u008Ahol\u00EA\u0084r\u00B0\u009A\u00AC\u0092U\u00B4\u00F0\u00BEYg\u00D5\u0095\u00CBXTJ\u00985Q\u00EE\u00AB\u00C3\u00EAJ.\u008F\u00B4\u00B0H\u008B\u00C3\"\u0094}faW\u0082\u00C8$\u00C6\u0080\u0099\\x0010D\r\u00EA\\x001c`\\x0016G\u00B9\u00F8(\u00E3\u0097S\\x0002c7t\u00D7\u00D5z<U=\u00EA\u00D0\u00DC\u00AA\u0080\u00A6zA\u0080]\\x0015p\u00D7\u00F2\u00A7\u00B7f~@uU\\x0000|\u00F3\\x0017\u00D4w3v\u009D_\u00FEmc \u0086\u00FF\u00BAX\u00CE\u00EF\u00BC\u00F6\u00DAn++\u0086\u00C4\u00E2\u00AA@bm}P\u00DC\u00B3'\u00B1\u00D8_\\x0015\u00E8\u00E4i\u00AFWN\u0087x\\x001aP\u00C5\\x000fr\u00A6\u00DB\n\u00C5~\u00CF\u00E2\r\\x001d\\x001b<\u00F5\u00DEB\r\u0098\u00DF5n\\x0016-O\u0098^2\t\u0091\u0091,22\\x0014)x#\u00B1;\u0091\\x0011\u008E\\x0008\u0081?B\\x0011\u00A27\"kry\u00A4\u00D1a\\x0014\u00F8#d\\x0014\u00AD^#Jx\u008F\u00C7\\x0019\u00AA\u00EB\u00CA#\u00F5\\x000e\u00BD\u00E0+\u00D2\u00CF\u00D1\\x000b^}QI\u00B9W\u009F\u009EY>\u00BC\u00E7r\u008B\u009E\u008D\u008B\u00F1\u00B1x\u00C3F\u008F\u00FC\u00C1\u00DCb?\u00EB\u00E0y\\x000f\\x0017\u00F3\u00CF\u0086\u008D\u0098\u00E7?\\x001dr\\x001e<\u00DFJ\u00A4\u0086\u00B0d\\x0003\u00D2\u00C6~\u00E1\u00C6o\u00AF\u00F5\u0096\u00D8\u00DA\u0081\u00FFr\u00B2-Y,\u00FF\u0091Z}7@\u00DFM\u00C3\u00FEn]\r+`\\x0003t\u00E2\u00CF\u0095p-\u00DC\\x0004O\u00C0oa)\\\u008E\u00A9\u00DBa\\x000f<\\x0008?\u0080\\x0000<\\x0005?\u0083\u00D7\u00CF\u00F9\\x0017\u00F0\u0080\u00FA\u00B6*W\u0081A<\\x000c*\u0088\\x0006\\x0008\u009D\\x000c\u00F5\u00F6=\u0088\u00DC\u00A3\u008C\\x0018\"\u00B9\ts\u00D1\niP\\x00122\u0085>=M\u00F6i\u00DFM!S_\u008F*\ntr]\u00A3\u00F0\nJ\u00FF\u00CCN\u0085N\nE<\\x001f\u009A\u00C4\u00F3\u00C2.LG\u00CA5N\u00A8\u00EF\u00EE{\u00A4o\u00EF0wf\u00C0L\u00A8\\x0003\\x001f\u00CC\u0083\\x000b\u00C1\\x000fs`6r5\u00D4\u00C0,X\\x0004K\u00A0\\x0011\u009A\u00A0\\x0019Z\u00A0\\x0015\u0096A\\x001b,\u00C7x\u00AD\u0084vX\\x0005\u00AB\u0091[a\r\u00AC\u0085u\u00B0\\x001ec\u00B8\\x0011:`\\x0013\u00A67\u0086%\u0094\u00DF\\x0002[a\\x001bl\\x000f\u00E3Ep1\u00A6\u00B7\u00E2s\u009B\u009C\u00BA\\x0004.\u00C5\u00C8_6\u0080;\\x0006pPr9\u00ECD\u00BE\\x0002\u009FW\u00C2.\u00B8\n\u00AEF\u00E4\u00CF\u00E1\u00B2\u00E1\u00B9.\u00B8\\x0006v\u00E3x^\\x0007\u00D7\\x000f\u00A4\u00AF\\x001fQ\u00CA\u00D37\u00C0-\u00C87\u00C2wp\u00D4o\u00C6\u00F4m8\u00F6w\u00C0\u009Dp\u0097,\u00BD\tn\u0085\u00EF\u00CA\u00B9{\u00E0^,\u00BFu\u0098./\\x001b\u00D4\u00FF\\x001e\u00DC\u008DZ{\u00E0\u00FB\u00A8y\\x001f\u00CE\u009E\u00BD\u00A7\u00E9r\u00CD{\u00E0Qx\\x000c\u00E7\u00D4\u00B3\u00F08\u00CE\u00B6'0\u00F54\\x001c\u00C1\u00F4\u00D3\u00F0\\x000e\u00BC\\x000b\u00EF\u00C3\\x0007\u00F0!\u00FC\u0089y\u00D8$V\\x0001_\u00C0\u0097\u00F0\\x0012F\u00BF\\x0015\u00A3\u00CEc\u00BEV~.\u00C7\u00E7\u00B2\u0081\u0088o\u00C6\u00D8\u00F6G\u00F6\\x0012\u008C\u00D8\u00F08l\n\u0097Q<w\u00C8q\u00EA/\u00DB\u008C\u009A\u00BBp4v\\x000c\u00A9\u00D3%\u008FS\u00BF-\u00AE\u00DDokh\u00BCx\u009Fx\u008F\\x0006e\u00D4\u00C3\u009B\\x0006$\u0083\u00FD\\x001e^\u008B\u00F4\u0086\u00C6lx\\x0004\u00EF\u0090%\u00C3KO\u008F\u00EC\u00D0\u00F4\u00F7\u00CFZr\\x001f<\u0080|?>",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Recherche/COM/PresentationED-PdL-complete.pdf",
 							"method": "GET",
 							"param": "",
@@ -572,13 +580,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "8",
+					"count": "9",
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1831"
+					"sourceid": "1847"
 				},
 				{
 					"pluginid": "10099",
@@ -607,14 +615,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/Universite/RA/Campus/UGE-Campus22-Med_Web.pdf",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "$#lG2e4lKEZ4l",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/Universite/RA/UGE-RA22_Web.pdf",
 							"method": "GET",
 							"param": "",
@@ -623,13 +623,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1950"
+					"sourceid": "1936"
 				},
 				{
 					"pluginid": "90003",
@@ -720,7 +720,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "10"
+					"sourceid": "4"
 				},
 				{
 					"pluginid": "10003",
@@ -747,7 +747,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/20631</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "1204"
+					"sourceid": "1120"
 				},
 				{
 					"pluginid": "10055",
@@ -817,7 +817,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1733"
+					"sourceid": "1619"
 				},
 				{
 					"pluginid": "10011",
@@ -829,14 +829,6 @@
 					"riskdesc": "Low (Medium)",
 					"desc": "<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>",
 					"instances":[ 
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/en/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
-							"method": "POST",
-							"param": "fe_typo_user",
-							"attack": "",
-							"evidence": "Set-Cookie: fe_typo_user",
-							"otherinfo": ""
-						},
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/en/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
 							"method": "POST",
@@ -862,13 +854,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
 					"cweid": "614",
 					"wascid": "13",
-					"sourceid": "1733"
+					"sourceid": "1619"
 				},
 				{
 					"pluginid": "10054",
@@ -903,7 +895,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "1733"
+					"sourceid": "1619"
 				},
 				{
 					"pluginid": "10017",
@@ -956,7 +948,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
 							"method": "GET",
 							"param": "https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js",
 							"attack": "",
@@ -964,7 +956,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/notre-projet",
 							"method": "GET",
 							"param": "https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js",
 							"attack": "",
@@ -1037,7 +1029,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1182"
+					"sourceid": "1123"
 				},
 				{
 					"pluginid": "10063",
@@ -1098,7 +1090,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1163,7 +1155,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2006"
+					"sourceid": "2007"
 				},
 				{
 					"pluginid": "10035",
@@ -1224,7 +1216,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1275,7 +1267,7 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1283,7 +1275,7 @@
 							"otherinfo": "1542389828, which evaluates to: 2018-11-16 17:37:08"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1291,7 +1283,7 @@
 							"otherinfo": "1566916459, which evaluates to: 2019-08-27 14:34:19"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1299,7 +1291,7 @@
 							"otherinfo": "1588604850, which evaluates to: 2020-05-04 15:07:30"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1307,7 +1299,7 @@
 							"otherinfo": "1619505705, which evaluates to: 2021-04-27 06:41:45"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1315,7 +1307,7 @@
 							"otherinfo": "1622448876, which evaluates to: 2021-05-31 08:14:36"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1323,7 +1315,7 @@
 							"otherinfo": "1622448924, which evaluates to: 2021-05-31 08:15:24"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1331,7 +1323,7 @@
 							"otherinfo": "1679563313, which evaluates to: 2023-03-23 09:21:53"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1339,7 +1331,7 @@
 							"otherinfo": "1683817256, which evaluates to: 2023-05-11 15:00:56"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1347,7 +1339,7 @@
 							"otherinfo": "1683817257, which evaluates to: 2023-05-11 15:00:57"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1355,7 +1347,7 @@
 							"otherinfo": "1688630396, which evaluates to: 2023-07-06 07:59:56"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1363,7 +1355,7 @@
 							"otherinfo": "1697535472, which evaluates to: 2023-10-17 09:37:52"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1371,7 +1363,7 @@
 							"otherinfo": "1701177420, which evaluates to: 2023-11-28 13:17:00"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1379,7 +1371,7 @@
 							"otherinfo": "1703151570, which evaluates to: 2023-12-21 09:39:30"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1387,7 +1379,7 @@
 							"otherinfo": "1703151571, which evaluates to: 2023-12-21 09:39:31"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1395,7 +1387,7 @@
 							"otherinfo": "1703151572, which evaluates to: 2023-12-21 09:39:32"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1403,7 +1395,7 @@
 							"otherinfo": "1703151573, which evaluates to: 2023-12-21 09:39:33"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1411,29 +1403,53 @@
 							"otherinfo": "1703151574, which evaluates to: 2023-12-21 09:39:34"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1703929215",
-							"otherinfo": "1703929215, which evaluates to: 2023-12-30 09:40:15"
+							"evidence": "1704534038",
+							"otherinfo": "1704534038, which evaluates to: 2024-01-06 09:40:38"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1703929216",
-							"otherinfo": "1703929216, which evaluates to: 2023-12-30 09:40:16"
+							"evidence": "1704534039",
+							"otherinfo": "1704534039, which evaluates to: 2024-01-06 09:40:39"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1704534040",
+							"otherinfo": "1704534040, which evaluates to: 2024-01-06 09:40:40"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1704534041",
+							"otherinfo": "1704534041, which evaluates to: 2024-01-06 09:40:41"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1704534042",
+							"otherinfo": "1704534042, which evaluates to: 2024-01-06 09:40:42"
 						}
 					],
-					"count": "19",
+					"count": "22",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1542389828, which evaluates to: 2018-11-16 17:37:08</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "11"
 				},
 				{
 					"pluginid": "10021",
@@ -1494,7 +1510,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/apprentissage",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/innovation-pedagogique",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1532,7 +1548,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10094",
@@ -1546,14 +1562,6 @@
 					"instances":[ 
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/typo3conf/ext/wseils_usine/Resources/Public/Images/favicon",
-							"otherinfo": "\uFFFD\u0729\uFFFDw(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u8973\uFFFD\uFFFD\uFFFDw\uFFFDE\uFFFD(\uFFFD\uFFFD\\x001e\uFFFD\uFFFD\uFFFDnX\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD?}\uFFFD\uFFFDr\uFFFD"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/en/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1593,7 +1601,15 @@
 							"otherinfo": "\uFFFD\u0729\uFFFDw(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u8973\uFFFD\uFFFD\uFFFDw\uFFFDE\uFFFD(\uFFFD\uFFFD\\x001e\uFFFD\uFFFD\uFFFDnX\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD?}\uFFFD\uFFFDr\uFFFD"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/innovation-pedagogique",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/typo3conf/ext/wseils_usine/Resources/Public/Images/favicon",
+							"otherinfo": "\uFFFD\u0729\uFFFDw(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u8973\uFFFD\uFFFD\uFFFDw\uFFFDE\uFFFD(\uFFFD\uFFFD\\x001e\uFFFD\uFFFD\uFFFDnX\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD?}\uFFFD\uFFFDr\uFFFD"
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1631,7 +1647,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "10"
+					"sourceid": "4"
 				},
 				{
 					"pluginid": "10019",
@@ -1658,7 +1674,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "1138"
+					"sourceid": "1090"
 				},
 				{
 					"pluginid": "10027",
@@ -1719,7 +1735,7 @@
 							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script src=\"/typo3conf/ext/eiffel/Resources/Public/Js/jquery-nice-select/jquery.nice-select.min.js?1683817256\" type=\"text/javas\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1810,19 +1826,19 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/en/university/our-project",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a id=\"c90321\"></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/en/university/our-strengths/our-national-structure",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<a id=\"c90380\"></a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/en/university/our-strengths/our-scientific-platforms",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a id=\"c90368\"></a>",
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
@@ -1925,7 +1941,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1947,7 +1963,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "10"
+					"sourceid": "4"
 				},
 				{
 					"pluginid": "10015",
@@ -2008,7 +2024,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/apprentissage",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/innovation-pedagogique",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -2059,7 +2075,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
+							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -2067,7 +2083,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -2075,13 +2099,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "10"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -2094,7 +2118,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
+							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -2102,7 +2126,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -2110,13 +2142,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "10"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -2129,7 +2161,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
+							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -2137,7 +2169,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -2145,13 +2185,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "10"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -2164,7 +2204,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
+							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -2172,7 +2212,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -2180,13 +2228,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "10"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10112",
@@ -2199,37 +2247,21 @@
 					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/en/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
-							"method": "POST",
-							"param": "fe_typo_user",
-							"attack": "",
-							"evidence": "5be22c995a59389ab9048b8a9aefe089.db96853078aad9c8529c6d7014759c20fa47befd780fbc4ddd0d7b6981d29d95",
-							"otherinfo": "\ncookie:fe_typo_user"
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
 							"method": "POST",
 							"param": "fe_typo_user",
 							"attack": "",
-							"evidence": "1d470789bfea4a932e223ea061e8ba9a.30db0979abcc281e60f87cb397beaa4235f32f7ca9e284eacddacbb0c245c468",
-							"otherinfo": "\ncookie:fe_typo_user"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
-							"method": "POST",
-							"param": "fe_typo_user",
-							"attack": "",
-							"evidence": "d54d93c1f756cdcccf13f360a157a718.2d3101450caa80192778bee6fe2b676372e7dd53caad6056d15ccf7eb2f60d54",
+							"evidence": "dabfd658c35fe9570aefbb6beec1c1d3.22e19410e6079738f9a676b1545c24fde95a8b50da9ac3cfde6ef6341bac7bdc",
 							"otherinfo": "\ncookie:fe_typo_user"
 						}
 					],
-					"count": "3",
+					"count": "1",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:fe_typo_user</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1733"
+					"sourceid": "1352"
 				},
 				{
 					"pluginid": "10049",
@@ -2264,7 +2296,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "109"
+					"sourceid": "11"
 				},
 				{
 					"pluginid": "10031",
@@ -2355,7 +2387,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1558"
+					"sourceid": "1352"
 				}
 			]
 		}
