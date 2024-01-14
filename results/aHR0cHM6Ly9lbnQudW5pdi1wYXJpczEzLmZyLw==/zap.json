@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 7 Jan 2024 01:56:41",
+	"@generated": "Sun, 14 Jan 2024 01:56:35",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=2C6F5073D2206C608BBFA0BF00FA7F4A?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=EBB629581B08860FD09878F90520EC28?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -77,7 +77,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -120,7 +120,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -163,7 +163,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10038",
@@ -309,6 +309,49 @@
 					"cweid": "345",
 					"wascid": "15",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10044",
+					"alertRef": "10044",
+					"alert": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"name": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>",
+					"instances":[ 
+						{
+							"uri": "https://ent.univ-paris13.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].\nPredicted response size: 379.\nResponse Body Length: 452."
+						}
+					],
+					"count": "3",
+					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
+					"otherinfo": "<p>Location header URI length: 79 [https://cas.univ-paris13.fr/cas/login?service=https%3A%2F%2Fent.univ-paris13.fr].</p><p>Predicted response size: 379.</p><p>Response Body Length: 452.</p>",
+					"reference": "",
+					"cweid": "201",
+					"wascid": "13",
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10010",
@@ -614,7 +657,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10036",
@@ -695,6 +738,33 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"uri": "https://ent.univ-paris13.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "LT-1450849-eBNUU7fIz7TtQM2Q9q4hb0O0fULUem-cas1",
+							"otherinfo": "-?\uFFFD\uFFFD<\uFFFD\u07DE\\x0004\uFFFD\\x0014\uFFFD\uFFFD3\uFFFD;P3d=\uFFFD\uFFFD[\uFFFD\uFFFD\\x001fP\uFFFD\\x001e\uFFFD\uFFFD\\x001a\uFFFD"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>-?\uFFFD\uFFFD<\uFFFD\u07DE\\x0004\uFFFD\\x0014\uFFFD\uFFFD3\uFFFD;P3d=\uFFFD\uFFFD[\uFFFD\uFFFD\\x001fP\uFFFD\\x001e\uFFFD\uFFFD\\x001a\uFFFD</p>",
+					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
 					"sourceid": "1"
 				},
 				{
@@ -819,7 +889,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -862,7 +932,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -905,7 +975,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -948,7 +1018,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10112",
@@ -965,7 +1035,7 @@
 							"method": "GET",
 							"param": "CASSESSIONID",
 							"attack": "",
-							"evidence": "2C6F5073D2206C608BBFA0BF00FA7F4A",
+							"evidence": "EBB629581B08860FD09878F90520EC28",
 							"otherinfo": "\ncookie:CASSESSIONID"
 						},
 						{
@@ -973,7 +1043,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "10crf8evcn35a2k3bsfm3fh5o4",
+							"evidence": "f6ad4gmdk2qf7k7mug5cjk0301",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -981,7 +1051,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "9lis4gd262q5ssdhn7br89r711",
+							"evidence": "36ul6pjbgl0vankq8cbu0qdrk6",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -989,7 +1059,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "6rmfpgk8qaul4mq6rd7md0lfp7",
+							"evidence": "rp6hvl3ih9pn9auddc74btur66",
 							"otherinfo": "\ncookie:UP13ENT"
 						}
 					],
@@ -1042,7 +1112,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "6"
 				}
 			]
 		}
