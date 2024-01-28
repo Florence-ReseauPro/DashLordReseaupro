@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 21 Jan 2024 01:43:40
+		Generated on Sun, 28 Jan 2024 01:39:06
 	</h3>
 
 	<h3>
@@ -156,7 +156,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>5</div>
+					<div>3</div>
 				</td>
 			</tr>
 			<tr>
@@ -203,17 +203,7 @@ td {
 				<td align="center">1</td>
 			</tr>
 			<tr>
-				<td><a href="#10055">CSP: Wildcard Directive</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
-				<td><a href="#10055">CSP: script-src unsafe-inline</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
-				<td><a href="#10055">CSP: style-src unsafe-inline</a></td>
+				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">1</td>
 			</tr>
@@ -250,7 +240,7 @@ td {
 			<tr>
 				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">5</td>
+				<td align="center">4</td>
 			</tr>
 			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
@@ -285,7 +275,7 @@ td {
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Site Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-User Header is Missing</a></td>
@@ -454,14 +444,14 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-2"><a
-						id="10055"></a>
+						id="10038"></a>
 						<div>Medium</div></th>
-					<th class="risk-2">CSP: Wildcard Directive</th>
+					<th class="risk-2">Content Security Policy (CSP) Header Not Set</th>
 				</tr>
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
+							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
 							
 						</td>
 				</tr>
@@ -482,7 +472,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">content-security-policy</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -492,15 +482,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">upgrade-insecure-requests</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: 
-script-src, style-src, img-src, connect-src, frame-src, frame-ancestors, font-src, media-src, object-src, manifest-src, worker-src, form-action
-
-The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</td>
+						<td width="80%"></td>
 					</tr>
 				
 				<tr>
@@ -510,26 +497,32 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 				<tr>
 					<td width="20%">Solution</td>
 					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</div>
+							<div>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</div>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
+							<a href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a>
+							<br />
+						
+							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a>
+							<br />
+						
 							<a href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a>
 							<br />
 						
-							<a href="https://caniuse.com/#search=content+security+policy">https://caniuse.com/#search=content+security+policy</a>
+							<a href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a>
+							<br />
+						
+							<a href="https://web.dev/articles/csp">https://web.dev/articles/csp</a>
+							<br />
+						
+							<a href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a>
 							<br />
 						
 							<a href="https://content-security-policy.com/">https://content-security-policy.com/</a>
-							<br />
-						
-							<a href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a>
-							<br />
-						
-							<a href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a>
 							
 						</td>
 				</tr>
@@ -545,199 +538,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 				<tr>
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10055/">10055</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10055"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">CSP: script-src unsafe-inline</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-paris13.fr/">https://www.univ-paris13.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">content-security-policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">upgrade-insecure-requests</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">script-src includes unsafe-inline.</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a>
-							<br />
-						
-							<a href="https://caniuse.com/#search=content+security+policy">https://caniuse.com/#search=content+security+policy</a>
-							<br />
-						
-							<a href="https://content-security-policy.com/">https://content-security-policy.com/</a>
-							<br />
-						
-							<a href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a>
-							<br />
-						
-							<a href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10055/">10055</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10055"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">CSP: style-src unsafe-inline</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-paris13.fr/">https://www.univ-paris13.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">content-security-policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">upgrade-insecure-requests</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">style-src includes unsafe-inline.</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a>
-							<br />
-						
-							<a href="https://caniuse.com/#search=content+security+policy">https://caniuse.com/#search=content+security+policy</a>
-							<br />
-						
-							<a href="https://content-security-policy.com/">https://content-security-policy.com/</a>
-							<br />
-						
-							<a href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a>
-							<br />
-						
-							<a href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10055/">10055</a></td>
+						href="https://www.zaproxy.org/docs/alerts/10038/">10038</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1217,7 +1018,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;astra-addon-css-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-659bb90eb0a479-21631932.css?ver=4.6.0&#39; media=&#39;all&#39; /&gt;</td>
+						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;astra-addon-css-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-65b21a4b9e7e32-80587712.css?ver=4.6.3&#39; media=&#39;all&#39; /&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1248,7 +1049,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;astra-addon-megamenu-dynamic-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/plugins/astra-addon/addons/nav-menu/assets/css/minified/magamenu-frontend.min.css?ver=4.6.0&#39; media=&#39;all&#39; /&gt;</td>
+						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;astra-addon-megamenu-dynamic-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/plugins/astra-addon/addons/nav-menu/assets/css/minified/magamenu-frontend.min.css?ver=4.6.3&#39; media=&#39;all&#39; /&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1279,7 +1080,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;astra-google-fonts-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/astra-local-fonts/astra-local-fonts.css?ver=4.6.3&#39; media=&#39;all&#39; /&gt;</td>
+						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;astra-google-fonts-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/astra-local-fonts/astra-local-fonts.css?ver=4.6.4&#39; media=&#39;all&#39; /&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1310,7 +1111,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;astra-theme-css-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.6.3&#39; media=&#39;all&#39; /&gt;</td>
+						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;astra-theme-css-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.6.4&#39; media=&#39;all&#39; /&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1496,7 +1297,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;elementor-frontend-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1704987493&#39; media=&#39;all&#39; /&gt;</td>
+						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;elementor-frontend-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1705933042&#39; media=&#39;all&#39; /&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1682,7 +1483,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;elementor-pro-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/uploads/elementor/css/custom-pro-frontend.min.css?ver=1704987494&#39; media=&#39;all&#39; /&gt;</td>
+						<td width="80%">&lt;link rel=&#39;stylesheet&#39; id=&#39;elementor-pro-css&#39; href=&#39;https://www.univ-spn.fr/wp-content/uploads/elementor/css/custom-pro-frontend.min.css?ver=1705933042&#39; media=&#39;all&#39; /&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2333,7 +2134,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.18.2&quot; id=&quot;elementor-pro-frontend-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.18.3&quot; id=&quot;elementor-pro-frontend-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2364,7 +2165,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.18.2&quot; id=&quot;pro-preloaded-elements-handlers-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.18.3&quot; id=&quot;pro-preloaded-elements-handlers-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2395,7 +2196,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.18.2&quot; id=&quot;elementor-pro-webpack-runtime-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.18.3&quot; id=&quot;elementor-pro-webpack-runtime-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2457,7 +2258,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.18.2&quot; id=&quot;e-sticky-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.18.3&quot; id=&quot;e-sticky-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3325,7 +3126,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.6.3&quot; id=&quot;astra-flexibility-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.6.4&quot; id=&quot;astra-flexibility-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3356,7 +3157,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.6.3&quot; id=&quot;astra-theme-js-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.6.4&quot; id=&quot;astra-theme-js-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3387,7 +3188,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-659bb90eb144e2-70985130.js?ver=4.6.0&quot; id=&quot;astra-addon-js-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-65b21a4ba0d4c6-93084381.js?ver=4.6.3&quot; id=&quot;astra-addon-js-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3988,7 +3789,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.18.2</td>
+						<td width="80%">https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.18.3</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3998,7 +3799,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.18.2&quot; id=&quot;elementor-pro-frontend-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.18.3&quot; id=&quot;elementor-pro-frontend-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4019,7 +3820,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.18.2</td>
+						<td width="80%">https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.18.3</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4029,7 +3830,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.18.2&quot; id=&quot;pro-preloaded-elements-handlers-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.18.3&quot; id=&quot;pro-preloaded-elements-handlers-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4050,7 +3851,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.18.2</td>
+						<td width="80%">https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.18.3</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4060,7 +3861,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.18.2&quot; id=&quot;elementor-pro-webpack-runtime-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.18.3&quot; id=&quot;elementor-pro-webpack-runtime-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4112,7 +3913,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.18.2</td>
+						<td width="80%">https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.18.3</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4122,7 +3923,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.18.2&quot; id=&quot;e-sticky-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.18.3&quot; id=&quot;e-sticky-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4980,7 +4781,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.6.3</td>
+						<td width="80%">https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.6.4</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4990,7 +4791,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.6.3&quot; id=&quot;astra-flexibility-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.6.4&quot; id=&quot;astra-flexibility-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5011,7 +4812,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.6.3</td>
+						<td width="80%">https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.6.4</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5021,7 +4822,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.6.3&quot; id=&quot;astra-theme-js-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.6.4&quot; id=&quot;astra-theme-js-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5042,7 +4843,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-659bb90eb144e2-70985130.js?ver=4.6.0</td>
+						<td width="80%">https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-65b21a4ba0d4c6-93084381.js?ver=4.6.3</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5052,7 +4853,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-659bb90eb144e2-70985130.js?ver=4.6.0&quot; id=&quot;astra-addon-js-js&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://www.univ-spn.fr/wp-content/uploads/astra-addon/astra-addon-65b21a4ba0d4c6-93084381.js?ver=4.6.3&quot; id=&quot;astra-addon-js-js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5905,68 +5706,6 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1704987493</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">1704987493, which evaluates to: 2024-01-11 15:38:13</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-paris13.fr/">https://www.univ-paris13.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">1704987494</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">1704987494, which evaluates to: 2024-01-11 15:38:14</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-paris13.fr/">https://www.univ-paris13.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
 						<td width="80%">1705051322</td>
 					</tr>
 					<tr>
@@ -6029,17 +5768,48 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1705743690</td>
+						<td width="80%">1705933042</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">1705743690, which evaluates to: 2024-01-20 09:41:30</td>
+						<td width="80%">1705933042, which evaluates to: 2024-01-22 14:17:22</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.univ-paris13.fr/">https://www.univ-paris13.fr/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1706281549</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">1706281549, which evaluates to: 2024-01-26 15:05:49</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">5</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6817,69 +6587,7 @@ var mecdata = {&quot;day&quot;:&quot;jour&quot;,&quot;days&quot;:&quot;jours&quo
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-paris13.fr/">https://www.univ-paris13.fr/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Site</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.univ-paris13.fr/robots.txt">https://www.univ-paris13.fr/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Site</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.univ-paris13.fr/sitemap.xml">https://www.univ-paris13.fr/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6909,7 +6617,7 @@ var mecdata = {&quot;day&quot;:&quot;jour&quot;,&quot;days&quot;:&quot;jours&quo
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">1</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
