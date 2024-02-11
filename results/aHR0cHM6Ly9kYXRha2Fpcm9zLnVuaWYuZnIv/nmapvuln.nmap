@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Feb  4 01:39:21 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln datakairos.unif.fr
+# Nmap 7.92 scan initiated Sun Feb 11 01:33:18 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln datakairos.unif.fr
 Nmap scan report for datakairos.unif.fr (192.33.182.243)
 Host is up (0.084s latency).
 rDNS record for 192.33.182.243: cassiopee.sorbonne-paris-nord.fr
@@ -7,11 +7,11 @@ PORT      STATE    SERVICE  VERSION
 22/tcp    open     ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
 | vulners: 
 |   cpe:/a:openbsd:openssh:8.2p1: 
+|     	PRION:CVE-2020-15778	6.8	https://vulners.com/prion/PRION:CVE-2020-15778
 |     	CVE-2020-15778	6.8	https://vulners.com/cve/CVE-2020-15778
 |     	C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	6.8	https://vulners.com/githubexploit/C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	*EXPLOIT*
 |     	10213DBE-F683-58BB-B6D3-353173626207	6.8	https://vulners.com/githubexploit/10213DBE-F683-58BB-B6D3-353173626207	*EXPLOIT*
 |     	PRION:CVE-2020-12062	5.0	https://vulners.com/prion/PRION:CVE-2020-12062
-|     	PRION:CVE-2016-20012	5.0	https://vulners.com/prion/PRION:CVE-2016-20012
 |_    	CVE-2020-12062	5.0	https://vulners.com/cve/CVE-2020-12062
 80/tcp    open     http     nginx 1.18.0 (Ubuntu)
 |_http-server-header: nginx/1.18.0 (Ubuntu)
@@ -22,4 +22,4 @@ PORT      STATE    SERVICE  VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Feb  4 01:41:09 2024 -- 1 IP address (1 host up) scanned in 108.39 seconds
+# Nmap done at Sun Feb 11 01:35:06 2024 -- 1 IP address (1 host up) scanned in 108.41 seconds
