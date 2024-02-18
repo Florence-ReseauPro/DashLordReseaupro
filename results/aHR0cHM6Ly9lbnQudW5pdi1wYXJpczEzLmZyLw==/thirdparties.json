@@ -42,7 +42,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://cas.univ-paris13.fr/cas/js/cas.js;CASSESSIONID=C26C976528947DEDDAD91613A84E3EB5"
+      "url": "https://cas.univ-paris13.fr/cas/js/cas.js;CASSESSIONID=3CF4D7E4E4F2955D34FE680DA9D4C7F6"
     },
     {
       "type": "unknown",
@@ -93,12 +93,12 @@
       "sourcePort": 443
     },
     {
-      "name": "hacas",
+      "name": "SERVERID",
       "value": "cas1",
       "domain": "cas.univ-paris13.fr",
       "path": "/",
       "expires": -1,
-      "size": 9,
+      "size": 12,
       "httpOnly": false,
       "secure": false,
       "session": true,
@@ -108,7 +108,7 @@
     },
     {
       "name": "CASSESSIONID",
-      "value": "C26C976528947DEDDAD91613A84E3EB5",
+      "value": "3CF4D7E4E4F2955D34FE680DA9D4C7F6",
       "domain": "cas.univ-paris13.fr",
       "path": "/cas/",
       "expires": -1,
@@ -122,16 +122,18 @@
     }
   ],
   "headers": {
+    "access-control-allow-origin": "*",
     "cache-control": "no-cache\nno-store",
     "content-encoding": "gzip",
+    "content-security-policy": "frame-ancestors https://*.univ-spn.fr https://*.univ-paris13.fr; upgrade-insecure-requests;",
     "content-type": "text/html;charset=iso-8859-1",
-    "date": "Sun, 11 Feb 2024 01:48:58 GMT",
+    "date": "Sun, 18 Feb 2024 01:33:43 GMT",
     "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
     "pragma": "no-cache",
     "server": "Apache-Coyote/1.1",
-    "set-cookie": "CASSESSIONID=C26C976528947DEDDAD91613A84E3EB5; Path=/cas/; Secure; HttpOnly; Secure\nhacas=cas1; path=/",
-    "strict-transport-security": "max-age=0; includeSubDomains",
-    "transfer-encoding": "chunked"
+    "set-cookie": "CASSESSIONID=3CF4D7E4E4F2955D34FE680DA9D4C7F6; Path=/cas/; Secure; HttpOnly\nSERVERID=cas1; path=/",
+    "strict-transport-security": "max-age=63072000",
+    "vary": "Accept-Encoding"
   },
   "endpoints": [
     {
@@ -180,7 +182,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 20,
+          "accuracy_radius": 50,
           "latitude": 48.9275,
           "longitude": 2.3623,
           "time_zone": "Europe/Paris"
@@ -232,7 +234,7 @@
     },
     {
       "hostname": "cas.univ-paris13.fr",
-      "ip": "81.194.43.200",
+      "ip": "81.194.43.212",
       "geoip": {
         "city": {
           "geoname_id": 2980916,
@@ -276,7 +278,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 20,
+          "accuracy_radius": 50,
           "latitude": 48.9275,
           "longitude": 2.3623,
           "time_zone": "Europe/Paris"
@@ -328,7 +330,7 @@
     },
     {
       "hostname": "cdn.univ-paris13.fr",
-      "ip": "81.194.43.201",
+      "ip": "81.194.43.200",
       "geoip": {
         "city": {
           "geoname_id": 2980916,
@@ -372,7 +374,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 20,
+          "accuracy_radius": 50,
           "latitude": 48.9275,
           "longitude": 2.3623,
           "time_zone": "Europe/Paris"
@@ -424,7 +426,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.251.32.42",
+      "ip": "142.251.16.95",
       "geoip": {
         "city": {
           "geoname_id": 5133273,
@@ -504,7 +506,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.217.164.99",
+      "ip": "172.253.115.94",
       "geoip": {
         "continent": {
           "code": "NA",
