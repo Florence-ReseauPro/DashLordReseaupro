@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 18 Feb 2024 01:32:55",
+	"@generated": "Sun, 25 Feb 2024 01:52:54",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=20FF582481D5EE978519A5E9F09D95B9?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=7606B62DD66CEE2C3275534A5FA07814?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">",
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"_eventId\" \"execution\" \"lt\" \"password\" \"username\" ]."
 						}
 					],
@@ -833,9 +833,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://ent.univ-paris13.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -901,7 +909,7 @@
 							"method": "GET",
 							"param": "CASSESSIONID",
 							"attack": "",
-							"evidence": "20FF582481D5EE978519A5E9F09D95B9",
+							"evidence": "7606B62DD66CEE2C3275534A5FA07814",
 							"otherinfo": "\ncookie:CASSESSIONID"
 						},
 						{
@@ -909,7 +917,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "t1hlu6gg76vjt4vge69v63k146",
+							"evidence": "oa67a2db600rbnnv95ar1ssj91",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -917,7 +925,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "06vujn0s4fohamkha1trhkoak3",
+							"evidence": "6o35ng7qeeo3rrdsfir667bq65",
 							"otherinfo": "\ncookie:UP13ENT"
 						},
 						{
@@ -925,7 +933,7 @@
 							"method": "GET",
 							"param": "UP13ENT",
 							"attack": "",
-							"evidence": "lal9hru90dp6n8a3kogd95orf7",
+							"evidence": "2mjl6omun7v4lsqmefrvqpeqj1",
 							"otherinfo": "\ncookie:UP13ENT"
 						}
 					],
