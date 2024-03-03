@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 18 Feb 2024 06:26:19",
+	"@generated": "Sun, 3 Mar 2024 05:01:31",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -50,7 +50,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2039"
+					"sourceid": "2050"
 				},
 				{
 					"pluginid": "10202",
@@ -79,7 +79,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"beanKey\" \"default-MOTS_CLEFS\" \"l\" \"RH\" ]."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/META_INF/",
+							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -87,7 +87,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"beanKey\" \"default-MOTS_CLEFS\" \"l\" \"RH\" ]."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/META_INF/",
+							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -95,7 +95,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"beanKey\" \"default-MOTS_CLEFS\" \"l\" \"RH\" ]."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/META_INF/",
+							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -301,7 +301,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/agenda",
+							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -309,7 +309,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/ethique/integrite-scientifique",
+							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-enseignant",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -572,7 +572,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1162"
+					"sourceid": "1269"
 				},
 				{
 					"pluginid": "10110",
@@ -607,7 +607,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "2119"
+					"sourceid": "2272"
 				},
 				{
 					"pluginid": "10063",
@@ -636,6 +636,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/actualites-de-luniversite",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/extensions/",
 							"method": "GET",
 							"param": "",
@@ -653,14 +661,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/META_INF/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-missions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -759,7 +759,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/lyceen%C2%B7ne",
+							"uri": "https://www.parisnanterre.fr/META_INF/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -767,7 +767,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/META_INF/",
+							"uri": "https://www.parisnanterre.fr/personnels",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -850,23 +850,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/extensions/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/fcktoolbox/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/lyceen%C2%B7ne",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -882,7 +866,23 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/personnels",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&PROC=IDENTIFICATION_FRONT",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -933,6 +933,14 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.parisnanterre.fr/adminsite/webservices/export_rss.jsp?CODE_RUBRIQUE=FR&LANGUE=0&NOMBRE=10",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1708421360",
+							"otherinfo": "1708421360, which evaluates to: 2024-02-20 09:29:20"
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/nicolas-bourbon-1",
 							"method": "GET",
 							"param": "",
@@ -941,13 +949,13 @@
 							"otherinfo": "1534928097, which evaluates to: 2018-08-22 08:54:57"
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1534928097, which evaluates to: 2018-08-22 08:54:57</p>",
+					"otherinfo": "<p>1708421360, which evaluates to: 2024-02-20 09:29:20</p>",
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "3160"
+					"sourceid": "2236"
 				},
 				{
 					"pluginid": "10021",
@@ -976,7 +984,15 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/agenda",
+							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-enseignant",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1009,14 +1025,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-ufr-et-instituts",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/presentation",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1147,6 +1155,14 @@
 							"otherinfo": "~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:"
 						},
 						{
+							"uri": "https://www.parisnanterre.fr/welcome-desk/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "fr/uas/UNIVERSITE/LOGO/202101-UPN-RVB-header-v06",
+							"otherinfo": "~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:"
+						},
+						{
 							"uri": "https://www.parisnanterre.fr/youtube",
 							"method": "GET",
 							"param": "",
@@ -1155,7 +1171,7 @@
 							"otherinfo": "r\uFFFD\uFFFDr\\x0016\uFFFD\uFFFD\uFFFDP/U\uFFFD8\\x0010\uFFFDb \\x0002i\uFFFD)pm\uFFFD`"
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>~\uFFFD\uFFFDj\uFFFD\uFFFD4\uFFFDDE\"\\x0013\\x0013\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDmt\uFFFD\uFFFD\\x000f7\uFFFDU\\x0007\uFFFD^i\u05EB\uFFFD\uFFFD:</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -1276,7 +1292,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2111"
+					"sourceid": "2233"
 				},
 				{
 					"pluginid": "10109",
@@ -1447,7 +1463,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/agenda",
+							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-administratif",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/luniversite-recrute/personnel-enseignant",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1480,14 +1504,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/organisation/les-ufr-et-instituts",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/presentation",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1546,23 +1562,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/adminsite/",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/welcome-desk",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1578,7 +1578,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -1605,23 +1605,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/adminsite/",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/welcome-desk",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1637,7 +1621,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -1664,23 +1648,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/adminsite/",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/welcome-desk",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1696,7 +1664,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -1723,23 +1691,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/adminsite/",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/welcome-desk",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1755,7 +1707,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -1778,7 +1730,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "03D8DF3B8D47B1C3EA6FF88E301E5D3C",
+							"evidence": "0414E13FE6D0067E039D193D15BEC14B",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1786,7 +1738,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "28E30C720B14D721F4F4D531E58328B2",
+							"evidence": "5D28282EA2C528C81CA5209EC056529F",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1794,7 +1746,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "36BEC2F937E022B75504B682A6F1B481",
+							"evidence": "C1A1E02B077996A1280BD7742BEBF4C9",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1802,7 +1754,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "A581C198315A9FEAA68ACE3435B6817B",
+							"evidence": "4758E1633454D5BA720C8C605F31F09B",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1810,7 +1762,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "71A39FBF009A2F727DF896A3503994C1",
+							"evidence": "64B5042C32C77F50486510503F14D3AF",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1818,7 +1770,7 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "518D38351F1A4C4443ECC51EFAF17825",
+							"evidence": "20FFE62D52362683DA9BE790B1248886",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
@@ -1826,35 +1778,19 @@
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "E18F20D5E05945DEE65411B0F7417050",
+							"evidence": "EA4706B490395861259713AE4F88BCE9",
 							"otherinfo": "\ncookie:JSESSIONID"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/META_INF",
+							"uri": "https://www.parisnanterre.fr/organisation/les-ecoles-doctorales",
 							"method": "GET",
 							"param": "JSESSIONID",
 							"attack": "",
-							"evidence": "36BEC2F937E022B75504B682A6F1B481",
-							"otherinfo": "\ncookie:JSESSIONID"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/organisation/les-organismes-rattaches",
-							"method": "GET",
-							"param": "JSESSIONID",
-							"attack": "",
-							"evidence": "A581C198315A9FEAA68ACE3435B6817B",
-							"otherinfo": "\ncookie:JSESSIONID"
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/presentation",
-							"method": "GET",
-							"param": "JSESSIONID",
-							"attack": "",
-							"evidence": "A581C198315A9FEAA68ACE3435B6817B",
+							"evidence": "4758E1633454D5BA720C8C605F31F09B",
 							"otherinfo": "\ncookie:JSESSIONID"
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:JSESSIONID</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
@@ -2234,7 +2170,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2349"
+					"sourceid": "2445"
 				}
 			]
 		}
