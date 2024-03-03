@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 4 Feb 2024 00:59:06
+		Generated on Sun, 3 Mar 2024 00:58:06
 	</h3>
 
 	<h3>
@@ -148,7 +148,7 @@ td {
 					<div>High</div>
 				</td>
 				<td align="center">
-					<div>0</div>
+					<div>1</div>
 				</td>
 			</tr>
 			<tr>
@@ -198,6 +198,11 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
+				<td><a href="#10062">PII Disclosure</a></td>
+				<td align="center" class="risk-3">High</td>
+				<td align="center">1</td>
+			</tr>
+			<tr>
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">11</td>
@@ -205,7 +210,7 @@ td {
 			<tr>
 				<td><a href="#10020">Missing Anti-clickjacking Header</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">12</td>
+				<td align="center">11</td>
 			</tr>
 			<tr>
 				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
@@ -280,7 +285,7 @@ td {
 			<tr>
 				<td><a href="#10049">Non-Storable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">8</td>
+				<td align="center">9</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Dest Header is Missing</a></td>
@@ -295,7 +300,7 @@ td {
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Site Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-User Header is Missing</a></td>
@@ -305,12 +310,12 @@ td {
 			<tr>
 				<td><a href="#10112">Session Management Response Identified</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">6</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10031">User Controllable HTML Element Attribute (Potential XSS)</a></td>
@@ -323,6 +328,91 @@ td {
 
 	
 		<h3>Alert Detail</h3>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-3"><a
+						id="10062"></a>
+						<div>High</div></th>
+					<th class="risk-3">PII Disclosure</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/entreprises/index/page/3">http://reseaupro.unpidf.fr/index.php/entreprises/index/page/3</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">30258846200200</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">Credit Card Type detected: DinersClub
+Bank Identification Number: 302588
+Brand: DISCOVER
+Category: BUSINESS CARD
+Issuer: DINERS CLUB INTERNATIONAL</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Check the response for the potential presence of personally identifiable information (PII), ensure nothing sensitive is leaked by the application.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/359.html">359</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10062/">10062</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
 		
 			<table class="results">
 				<tr height="24">
@@ -1036,37 +1126,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-frame-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49</a></td>
 					</tr>
 					<tr>
@@ -1128,7 +1187,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">12</td>
+					<td width="80%">11</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1433,7 +1492,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/user">http://reseaupro.unpidf.fr/index.php/user</a></td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1464,7 +1523,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/user">http://reseaupro.unpidf.fr/index.php/user</a></td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3151,7 +3210,7 @@ CVE-2021-23445
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162</a></td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/176">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/176</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3244,7 +3303,7 @@ CVE-2021-23445
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/user">http://reseaupro.unpidf.fr/index.php/user</a></td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3655,7 +3714,7 @@ CVE-2021-23445
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
+							<a href="https://cwe.mitre.org/data/definitions/200.html">https://cwe.mitre.org/data/definitions/200.html</a>
 							
 						</td>
 				</tr>
@@ -4327,6 +4386,37 @@ csrfToken=_csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/entreprises/index/page/1">http://reseaupro.unpidf.fr/index.php/entreprises/index/page/1</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">php/entreprises/infosEntreprise/id_entreprise/10368</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">�z{kz���?�w�I��k�ǿ��ޞ�ަ��{�t߯</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/entreprises/index/raison_sociale/ReseauPro+Portail+Entreprise">http://reseaupro.unpidf.fr/index.php/entreprises/index/raison_sociale/ReseauPro+Portail+Entreprise</a></td>
 					</tr>
 					<tr>
@@ -4602,37 +4692,6 @@ csrfToken=_csrf_token</td>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">n���:�uq���&gt;�9�~x�M4</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/entreprises">http://reseaupro.unpidf.fr/index.php/entreprises</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">POST</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">php/entreprises/infosEntreprise/id_entreprise/8838</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">�z{kz���?�w�I��k�ǿ��ޞ�ަ��{�&lt;�</td>
 					</tr>
 				
 				<tr>
@@ -5596,7 +5655,7 @@ csrfToken=_csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162</a></td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/121">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/121</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5689,6 +5748,37 @@ csrfToken=_csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47">http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">no-store</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="http://reseaupro.unpidf.fr/index.php/user">http://reseaupro.unpidf.fr/index.php/user</a></td>
 					</tr>
 					<tr>
@@ -5719,7 +5809,7 @@ csrfToken=_csrf_token</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">8</td>
+					<td width="80%">9</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6163,40 +6253,9 @@ csrfToken=_csrf_token</td>
 						<td width="80%"></td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/sitemap.xml">http://reseaupro.unpidf.fr/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Site</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6416,7 +6475,7 @@ csrfToken=_csrf_token</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">isf5s014q5dcpu7959o8co4ob3</td>
+						<td width="80%">co881jpqhjk8ha1f79mee6ata3</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6448,7 +6507,7 @@ cookie:symfony</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">m1o2hde6qufgbi3dqp9acbtbl5</td>
+						<td width="80%">v1483fdb36um5bbs5lnrt26jp4</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6460,7 +6519,7 @@ cookie:symfony</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr">http://reseaupro.unpidf.fr</a></td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/css/jquery-ui.min.css?date=1505979942">http://reseaupro.unpidf.fr/css/jquery-ui.min.css?date=1505979942</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6480,7 +6539,103 @@ cookie:symfony</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">m1o2hde6qufgbi3dqp9acbtbl5</td>
+						<td width="80%">co881jpqhjk8ha1f79mee6ata3</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:symfony</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/css/main.css?date=1642762249">http://reseaupro.unpidf.fr/css/main.css?date=1642762249</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">symfony</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">co881jpqhjk8ha1f79mee6ata3</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:symfony</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/images/bt_play.png">http://reseaupro.unpidf.fr/images/bt_play.png</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">symfony</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">co881jpqhjk8ha1f79mee6ata3</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+cookie:symfony</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://reseaupro.unpidf.fr/js/open-close.js">http://reseaupro.unpidf.fr/js/open-close.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">symfony</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">co881jpqhjk8ha1f79mee6ata3</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6491,7 +6646,7 @@ cookie:symfony</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">6</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6540,37 +6695,6 @@ cookie:symfony</td>
 				<TR vAlign="top">
 					<TD colspan="2"></TD>
 				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="http://reseaupro.unpidf.fr/images/pcu/favicon.ico">http://reseaupro.unpidf.fr/images/pcu/favicon.ico</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
-					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -6636,7 +6760,7 @@ cookie:symfony</td>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6742,10 +6866,10 @@ appears to include user input in:
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-_csrf_token=c927d156032c3146f53f1ca2da0f8477
+_csrf_token=f6f494d87d9cb5b5273eed215bdd1ded
 
 The user-controlled value was:
-c927d156032c3146f53f1ca2da0f8477</td>
+f6f494d87d9cb5b5273eed215bdd1ded</td>
 					</tr>
 				
 					<tr>
@@ -6914,10 +7038,10 @@ appears to include user input in:
 a(n) [input] tag [value] attribute 
 
 The user input found was:
-_csrf_token=c927d156032c3146f53f1ca2da0f8477
+_csrf_token=f6f494d87d9cb5b5273eed215bdd1ded
 
 The user-controlled value was:
-c927d156032c3146f53f1ca2da0f8477</td>
+f6f494d87d9cb5b5273eed215bdd1ded</td>
 					</tr>
 				
 					<tr>

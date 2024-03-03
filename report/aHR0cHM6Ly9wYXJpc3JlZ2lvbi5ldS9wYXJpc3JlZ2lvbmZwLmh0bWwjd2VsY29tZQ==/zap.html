@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 4 Feb 2024 01:19:39
+		Generated on Sun, 3 Mar 2024 01:13:36
 	</h3>
 
 	<h3>
@@ -156,7 +156,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>5</div>
+					<div>2</div>
 				</td>
 			</tr>
 			<tr>
@@ -164,7 +164,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>4</div>
+					<div>2</div>
 				</td>
 			</tr>
 			<tr>
@@ -172,7 +172,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>10</div>
+					<div>9</div>
 				</td>
 			</tr>
 			<tr>
@@ -198,69 +198,39 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
-				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">4</td>
-			</tr>
-			<tr>
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">10</td>
-			</tr>
-			<tr>
-				<td><a href="#10042">HTTPS to HTTP Insecure Transition in Form Post</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">4</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">10</td>
-			</tr>
-			<tr>
-				<td><a href="#10003">Vulnerable JS Library</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">3</td>
+				<td align="center">4</td>
 			</tr>
 			<tr>
 				<td><a href="#10017">Cross-Domain JavaScript Source File Inclusion</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">10</td>
-			</tr>
-			<tr>
-				<td><a href="#10110">Dangerous JS Functions</a></td>
 				<td align="center" class="risk-1">Low</td>
 				<td align="center">4</td>
 			</tr>
 			<tr>
 				<td><a href="#10063">Permissions Policy Header Not Set</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">10</td>
-			</tr>
-			<tr>
-				<td><a href="#10040">Secure Pages Include Mixed Content</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">4</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">11</td>
-			</tr>
-			<tr>
-				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
-				<td align="center" class="risk-0">Informational</td>
-				<td align="center">14</td>
+				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">9</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">9</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Dest Header is Missing</a></td>
@@ -275,7 +245,7 @@ td {
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Site Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-User Header is Missing</a></td>
@@ -285,12 +255,12 @@ td {
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">6</td>
+				<td align="center">4</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable but Non-Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">5</td>
+				<td align="center">2</td>
 			</tr>
 		</table>
 		<div class="spacer-lg"></div>
@@ -298,250 +268,6 @@ td {
 
 	
 		<h3>Alert Detail</h3>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10202"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">Absence of Anti-CSRF Tokens</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>No Anti-CSRF tokens were found in a HTML submission form.</div>
-							<br />
-						
-							<div>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</div>
-							<br />
-						
-							<div>CSRF attacks are effective in a number of situations, including:</div>
-							<br />
-						
-							<div>    * The victim has an active session on the target site.</div>
-							<br />
-						
-							<div>    * The victim is authenticated via HTTP auth on the target site.</div>
-							<br />
-						
-							<div>    * The victim is on the same local network as the target site.</div>
-							<br />
-						
-							<div>CSRF has primarily been used to perform an action against a target site using the victim&#39;s privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form action=&quot;http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;amp;id=94f8a2a3bd&quot;
-      method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;b_c16c58b40e9d106fbe4300426_94f8a2a3bd&quot; &quot;mc-embedded-subscribe&quot; &quot;mce-EMAIL&quot; &quot;mce-MMERGE3&quot; ].</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/news.html">https://parisregion.eu/news.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form action=&quot;http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;amp;id=94f8a2a3bd&quot;
-      method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;b_c16c58b40e9d106fbe4300426_94f8a2a3bd&quot; &quot;mc-embedded-subscribe&quot; &quot;mce-EMAIL&quot; &quot;mce-MMERGE3&quot; ].</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form action=&quot;http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;amp;id=94f8a2a3bd&quot;
-                method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;b_c16c58b40e9d106fbe4300426_94f8a2a3bd&quot; &quot;mc-embedded-subscribe&quot; &quot;mce-EMAIL&quot; &quot;mce-MMERGE3&quot; ].</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form action=&quot;http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;amp;id=94f8a2a3bd&quot;
-                method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;b_c16c58b40e9d106fbe4300426_94f8a2a3bd&quot; &quot;mc-embedded-subscribe&quot; &quot;mce-EMAIL&quot; &quot;mce-MMERGE3&quot; ].</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">4</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Phase: Architecture and Design</div>
-							<br />
-						
-							<div>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</div>
-							<br />
-						
-							<div>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</div>
-							<br />
-						
-							<div>Phase: Implementation</div>
-							<br />
-						
-							<div>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</div>
-							<br />
-						
-							<div>Phase: Architecture and Design</div>
-							<br />
-						
-							<div>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</div>
-							<br />
-						
-							<div>Note that this can be bypassed using XSS.</div>
-							<br />
-						
-							<div>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</div>
-							<br />
-						
-							<div>Note that this can be bypassed using XSS.</div>
-							<br />
-						
-							<div>Use the ESAPI Session Management control.</div>
-							<br />
-						
-							<div>This control includes a component for CSRF.</div>
-							<br />
-						
-							<div>Do not use the GET method for any request that triggers a state change.</div>
-							<br />
-						
-							<div>Phase: Implementation</div>
-							<br />
-						
-							<div>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</a>
-							<br />
-						
-							<a href="https://cwe.mitre.org/data/definitions/352.html">https://cwe.mitre.org/data/definitions/352.html</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">9</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10202/">10202</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
 		
 			<table class="results">
 				<tr height="24">
@@ -565,99 +291,6 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://parisregion.eu/">https://parisregion.eu/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/news.html">https://parisregion.eu/news.html</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -716,164 +349,9 @@ td {
 						<td width="80%"></td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/robots.txt">https://parisregion.eu/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/search-project.html">https://parisregion.eu/search-project.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.xml">https://parisregion.eu/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">10</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -920,290 +398,6 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10038/">10038</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10042"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">HTTPS to HTTP Insecure Transition in Form Post</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>This check identifies secure HTTPS pages that host insecure HTTP forms. The issue is that a secure page is transitioning to an insecure page when data is uploaded through a form. The user may think they&#39;re submitting data to a secure page when in fact they are not.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;id=94f8a2a3bd</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The response to the following request over HTTPS included an HTTP form tag action attribute value:
-
-https://parisregion.eu/discover.html
-The context was:
-
-&lt;form action=&quot;http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;amp;id=94f8a2a3bd&quot;
-      method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate&gt;
-    &lt;div id=&quot;mc_embed_signup_scroll&quot;&gt;
-        &lt;p class=&quot;lead&quot;&gt;
-          Stay informed with the latest news and information from Paris Region
-        &lt;/p&gt;
-        &lt;div class=&quot;indicates-required&quot;&gt;&lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt; indicates required&lt;/div&gt;
-        &lt;div class=&quot;mc-field-group&quot;&gt;
-            &lt;label for=&quot;mce-EMAIL&quot;&gt;Email Address  &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-            &lt;input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot;&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;mc-field-group&quot;&gt;
-            &lt;label for=&quot;mce-MMERGE3&quot;&gt;Country  &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-            &lt;input type=&quot;text&quot; value=&quot;&quot; name=&quot;MMERGE3&quot; class=&quot;required&quot; id=&quot;mce-MMERGE3&quot;&gt;
-        &lt;/div&gt;
-        &lt;div id=&quot;mce-responses&quot; class=&quot;clear&quot;&gt;
-            &lt;div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
-        &lt;div style=&quot;position: absolute; left: -5000px;&quot; aria-hidden=&quot;true&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;b_c16c58b40e9d106fbe4300426_94f8a2a3bd&quot; tabindex=&quot;-1&quot; value=&quot;&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;clear&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/form&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/news.html">https://parisregion.eu/news.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;id=94f8a2a3bd</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The response to the following request over HTTPS included an HTTP form tag action attribute value:
-
-https://parisregion.eu/news.html
-The context was:
-
-&lt;form action=&quot;http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;amp;id=94f8a2a3bd&quot;
-      method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate&gt;
-    &lt;div id=&quot;mc_embed_signup_scroll&quot;&gt;
-        &lt;p class=&quot;lead&quot;&gt;
-          Stay informed with the latest news and information from Paris Region
-        &lt;/p&gt;
-        &lt;div class=&quot;indicates-required&quot;&gt;&lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt; indicates required&lt;/div&gt;
-        &lt;div class=&quot;mc-field-group&quot;&gt;
-            &lt;label for=&quot;mce-EMAIL&quot;&gt;Email Address  &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-            &lt;input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot;&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;mc-field-group&quot;&gt;
-            &lt;label for=&quot;mce-MMERGE3&quot;&gt;Country  &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-            &lt;input type=&quot;text&quot; value=&quot;&quot; name=&quot;MMERGE3&quot; class=&quot;required&quot; id=&quot;mce-MMERGE3&quot;&gt;
-        &lt;/div&gt;
-        &lt;div id=&quot;mce-responses&quot; class=&quot;clear&quot;&gt;
-            &lt;div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
-            &lt;div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
-        &lt;div style=&quot;position: absolute; left: -5000px;&quot; aria-hidden=&quot;true&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;b_c16c58b40e9d106fbe4300426_94f8a2a3bd&quot; tabindex=&quot;-1&quot; value=&quot;&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;clear&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/form&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;id=94f8a2a3bd</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The response to the following request over HTTPS included an HTTP form tag action attribute value:
-
-https://parisregion.eu/sitemap.html
-The context was:
-
-&lt;form action=&quot;http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;amp;id=94f8a2a3bd&quot;
-                method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate&gt;
-              &lt;div id=&quot;mc_embed_signup_scroll&quot;&gt;
-                  &lt;p class=&quot;lead&quot;&gt;
-                    Stay informed with our latest news and information from our partners (Paris Region Entreprises, Visit Paris Region,
-                    Institut d’Aménagement et d’Urbanisme)
-                  &lt;/p&gt;
-                  &lt;div class=&quot;indicates-required&quot;&gt;&lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt; indicates required&lt;/div&gt;
-                  &lt;div class=&quot;mc-field-group&quot;&gt;
-                      &lt;label for=&quot;mce-EMAIL&quot;&gt;Email Address  &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-                      &lt;input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot;&gt;
-                  &lt;/div&gt;
-                  &lt;div class=&quot;mc-field-group&quot;&gt;
-                      &lt;label for=&quot;mce-MMERGE3&quot;&gt;Country  &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-                      &lt;input type=&quot;text&quot; value=&quot;&quot; name=&quot;MMERGE3&quot; class=&quot;required&quot; id=&quot;mce-MMERGE3&quot;&gt;
-                  &lt;/div&gt;
-                  &lt;div id=&quot;mce-responses&quot; class=&quot;clear&quot;&gt;
-                      &lt;div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
-                      &lt;div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
-                  &lt;/div&gt;    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
-                  &lt;div style=&quot;position: absolute; left: -5000px;&quot; aria-hidden=&quot;true&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;b_c16c58b40e9d106fbe4300426_94f8a2a3bd&quot; tabindex=&quot;-1&quot; value=&quot;&quot;&gt;&lt;/div&gt;
-                  &lt;div class=&quot;clear&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;&gt;&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/form&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;id=94f8a2a3bd</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The response to the following request over HTTPS included an HTTP form tag action attribute value:
-
-https://parisregion.eu/study-research.html
-The context was:
-
-&lt;form action=&quot;http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;amp;id=94f8a2a3bd&quot;
-                method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate&gt;
-              &lt;div id=&quot;mc_embed_signup_scroll&quot;&gt;
-                  &lt;p class=&quot;lead&quot;&gt;
-                    Stay informed with our latest news and information from our partners (Paris Region Entreprises, Visit Paris Region,
-                    Institut d’Aménagement et d’Urbanisme)
-                  &lt;/p&gt;
-                  &lt;div class=&quot;indicates-required&quot;&gt;&lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt; indicates required&lt;/div&gt;
-                  &lt;div class=&quot;mc-field-group&quot;&gt;
-                      &lt;label for=&quot;mce-EMAIL&quot;&gt;Email Address  &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-                      &lt;input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot;&gt;
-                  &lt;/div&gt;
-                  &lt;div class=&quot;mc-field-group&quot;&gt;
-                      &lt;label for=&quot;mce-MMERGE3&quot;&gt;Country  &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-                      &lt;input type=&quot;text&quot; value=&quot;&quot; name=&quot;MMERGE3&quot; class=&quot;required&quot; id=&quot;mce-MMERGE3&quot;&gt;
-                  &lt;/div&gt;
-                  &lt;div id=&quot;mce-responses&quot; class=&quot;clear&quot;&gt;
-                      &lt;div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
-                      &lt;div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
-                  &lt;/div&gt;    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
-                  &lt;div style=&quot;position: absolute; left: -5000px;&quot; aria-hidden=&quot;true&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;b_c16c58b40e9d106fbe4300426_94f8a2a3bd&quot; tabindex=&quot;-1&quot; value=&quot;&quot;&gt;&lt;/div&gt;
-                  &lt;div class=&quot;clear&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;&gt;&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/form&gt;</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">4</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure sensitive data is only sent over secured HTTPS channels.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10042/">10042</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1291,68 +485,6 @@ The context was:
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
 					</tr>
 					<tr>
@@ -1385,130 +517,6 @@ The context was:
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1538,7 +546,7 @@ The context was:
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">10</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1567,187 +575,6 @@ The context was:
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/90003/">90003</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10003"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">Vulnerable JS Library</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The identified library bootstrap, version 3.3.7 is vulnerable.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/bootstrap/dist/js/bootstrap.min.js">https://parisregion.eu/bower_components/bootstrap/dist/js/bootstrap.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">* Bootstrap v3.3.7</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">CVE-2018-14041
-CVE-2019-8331
-CVE-2018-20677
-CVE-2018-20676
-CVE-2018-14042
-CVE-2016-10735
-</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/jquery/dist/jquery.min.js">https://parisregion.eu/bower_components/jquery/dist/jquery.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">/*! jQuery v1.12.4</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">CVE-2020-11023
-CVE-2020-11022
-CVE-2015-9251
-CVE-2019-11358
-</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">/*! jQuery v1.12.4</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">CVE-2020-11023
-CVE-2020-11022
-CVE-2015-9251
-CVE-2019-11358
-</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">3</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Please upgrade to the latest version of bootstrap.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://github.com/twbs/bootstrap/issues/28236">https://github.com/twbs/bootstrap/issues/28236</a>
-							<br />
-						
-							<a href="https://github.com/advisories/GHSA-pj7m-g53m-7638">https://github.com/advisories/GHSA-pj7m-g53m-7638</a>
-							<br />
-						
-							<a href="https://github.com/twbs/bootstrap/issues/20184">https://github.com/twbs/bootstrap/issues/20184</a>
-							<br />
-						
-							<a href="https://github.com/advisories/GHSA-ph58-4vrj-w6hr">https://github.com/advisories/GHSA-ph58-4vrj-w6hr</a>
-							<br />
-						
-							<a href="https://github.com/twbs/bootstrap/issues/20631">https://github.com/twbs/bootstrap/issues/20631</a>
-							<br />
-						
-							<a href="https://github.com/advisories/GHSA-4p24-vmcr-4gqj">https://github.com/advisories/GHSA-4p24-vmcr-4gqj</a>
-							<br />
-						
-							<a href="https://github.com/advisories/GHSA-9v3m-8fp8-mj99">https://github.com/advisories/GHSA-9v3m-8fp8-mj99</a>
-							<br />
-						
-							<a href="https://nvd.nist.gov/vuln/detail/CVE-2018-20676">https://nvd.nist.gov/vuln/detail/CVE-2018-20676</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10003/">10003</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1835,68 +662,6 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://oss.maxcdn.com/respond/1.4.2/respond.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
 					</tr>
 					<tr>
@@ -1929,130 +694,6 @@ CVE-2019-11358
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://oss.maxcdn.com/respond/1.4.2/respond.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://oss.maxcdn.com/respond/1.4.2/respond.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2082,7 +723,7 @@ CVE-2019-11358
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">10</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2108,183 +749,6 @@ CVE-2019-11358
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10017/">10017</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
-						id="10110"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Dangerous JS Functions</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>A dangerous JS function seems to be in use that would leave the site vulnerable.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js">https://parisregion.eu/bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">eval</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/jquery/dist/jquery.min.js">https://parisregion.eu/bower_components/jquery/dist/jquery.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">eval</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/js/tarteaucitron/tarteaucitron.js">https://parisregion.eu/js/tarteaucitron/tarteaucitron.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">eval</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">eval</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">4</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>See the references for security advice on the use of these functions.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://angular.io/guide/security">https://angular.io/guide/security</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/749.html">749</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10110/">10110</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -2341,255 +805,7 @@ CVE-2019-11358
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/bootstrap/dist/js/bootstrap.min.js">https://parisregion.eu/bower_components/bootstrap/dist/js/bootstrap.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.min.js">https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/wowjs/dist/wow.min.js">https://parisregion.eu/bower_components/wowjs/dist/wow.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/robots.txt">https://parisregion.eu/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.xml">https://parisregion.eu/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2619,7 +835,7 @@ CVE-2019-11358
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">10</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2666,196 +882,6 @@ CVE-2019-11358
 		
 			<table class="results">
 				<tr height="24">
-					<th width="20%" class="risk-1"><a
-						id="10040"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Secure Pages Include Mixed Content</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The page includes mixed content, that is content accessed via HTTP instead of HTTPS.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;id=94f8a2a3bd</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">tag=form action=http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;id=94f8a2a3bd
-</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/news.html">https://parisregion.eu/news.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">http://internationaleducation.parisregion.eu/?lang=en</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">tag=iframe src=http://internationaleducation.parisregion.eu/?lang=en
-tag=img src=http://www.smartweeks.info/img/smartweeks/BanniereEN.png
-tag=img src=http://www.expofrance2025.com/ressources/actualite/600x189xPanorama_Village_global_Sensual_City_Studio.png.pagespeed.ic.GBqAU3loaz.webp
-tag=form action=http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;id=94f8a2a3bd
-</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;id=94f8a2a3bd</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">tag=form action=http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;id=94f8a2a3bd
-</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;id=94f8a2a3bd</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">tag=form action=http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b40e9d106fbe4300426&amp;id=94f8a2a3bd
-</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">4</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.</div>
-							<br />
-						
-							<div>The page must not contain any content that is transmitted over unencrypted HTTP.</div>
-							<br />
-						
-							<div> This includes content from third party sites.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/311.html">311</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">4</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10040/">10040</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
 					<th width="20%" class="risk-0"><a
 						id="10094"></a>
 						<div>Informational</div></th>
@@ -2871,273 +897,6 @@ tag=form action=http://iledefrance.us12.list-manage.com/subscribe/post?u=c16c58b
 				<TR vAlign="top">
 					<TD colspan="2"></TD>
 				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/b3conference.html">https://parisregion.eu/b3conference.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">img/b3conference/Logo-ridf-couleur</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">�h?ow(���zw�� ���u����^�</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/jquery.mb.ytplayer/dist/css/jquery.mb.YTPlayer.min.css">https://parisregion.eu/bower_components/jquery.mb.ytplayer/dist/css/jquery.mb.YTPlayer.min.css</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">d09GRgABAAAAAA5sABEAAAAAFCAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABgAAAABwAAAAcZ9iuNUdERUYAAAGcAAAAHQAAACAAdAAET1MvMgAAAbwAAABJAAAAYHUMUrFjbWFwAAACCAAAAKkAAAGKn5XycWN2dCAAAAK0AAAANgAAADYNLQohZnBnbQAAAuwAAAGxAAACZVO0L6dnYXNwAAAEoAAAAAgAAAAIAAAAEGdseWYAAASoAAAGVQAAB4jz86dSaGVhZAAACwAAAAAzAAAANgbKONpoaGVhAAALNAAAACAAAAAkESQLXGhtdHgAAAtUAAAAVAAAARxOmwVwbG9jYQAAC6gAAAAjAAAAkFoEXRRtYXhwAAALzAAAACAAAAAgAWoB625hbWUAAAvsAAAA+wAAAeok3Eb+cG9zdAAADOgAAADAAAABN99tv1lwcmVwAAANqAAAALkAAAFY3I6ikndlYmYAAA5kAAAABgAAAAbHMlGnAAAAAQAAAADMPaLPAAAAAM3Nk7QAAAAAzc13sXjaY2BkYGDgA2IJBhBgYmAEQjcgZgHzGAAHTAB5AAAAeNpjYGbZwDiBgZWBhdWY5SwDA8MsCM10liGNKQ3IB0rBASMDEgj1DvdjcGDgfcDAlvYPqJJVldEZpoZVkuUZkFJgYAQAUUULewAAAHjaY2BgYGaAYBkGRgYQaAHyGMF8FoYMIC3GIAAUYQOyeBkUGKIYqhgWKHAp6CvEP2D4/x+sAyTuyJAIFGeAizP+//r/8f/D//f+n/HA8oHo/WcKblDzsQBGoOkwSUYmIMGErgDiRLyAhZWNnYOTi5uHl49fQFBIWERUTFxCUkpaRhYiLyevoKikrKKqpq6hqaWto6unb2BoZGxiambOQF1gQZYuAIQnH4IAAAAAAAAAAAABegEnAHEAswC9AOAA5QD+ARcBIwBdAHIBtgBcAGAAZgByAI8AogErAbIAUwBEBREAAHjaXVG7TltBEN0NDwOBxNggOdoUs5mQxnuhBQnE1Y1iZDuF5QhpN3KRi3EBH0CBRA3arxmgoaRImwYhF0h8Qj4hEjNriKI0Ozuzc86ZM0vKkap36WvPU+ckkMLdBs02/U5ItbMA96Tr642MtIMHWmxm9Mp1+/4LBpvRlDtqAOU9bykPGU07gVq0p/7R/AqG+/wf8zsYtDTT9NQ6CekhBOabcUuD7xnNussP+oLV4WIwMKSYpuIuP6ZS/rc052rLsLWR0byDMxH5yTRAU2ttBJr+1CHV83EUS5DLprE2mJiy/iQTwYXJdFVTtcz42sFdsrPoYIMqzYEH2MNWeQweDg8mFNK3JMosDRH2YqvECBGTHAo55dzJ/qRA+UgSxrxJSjvjhrUGxpHXwKA2T7P/PJtNbW8dwvhZHMF3vxlLOvjIhtoYEWI7YimACURCRlX5hhrPvSwG5FL7z0CUgOXxj3+dCLTu2EQ8l7V1DjFWCHp+29zyy4q7VrnOi0J3b6pqqNIpzftezr7HA54eC8NBY8Gbz/v+SoH6PCyuNGgOBEN6N3r/orXqiKu8Fz6yJ9O/sVoAAAAAAQAB//8AD3jaTZVrbBxXFcfvufNe72Nmdx77tmfHO2N76117784OTr154YAbR7RQuUQhttoSuXZKFQVKKYqgiFJAgkpIkVClIn8opSomjXY3VHHTFldEIYpay1hR+ID4Bha27FoIEQGpd8Idu4lY7c6eOfee//2f3+zeizAaQwif4iYRgwRUbgGqjLYFNvVxtcVzfxltM5iGqMUEaS5ItwU+vTPahiBPFFMpmoo5hnv8XnjFn+Um7/xmjF1GCLHoPf+fgsUVEYcSKIcGkYbaWYxKLZ3bgGa50qpACQ0NeyYoYILaDTqpurUK2FZBUYlJY8ukEc0egLpbo+kY8O/BQcx2dvwP2Fh6/Q+Gl19fyroubHmer7rpjHllPZ/NKB+tp2/4/TzxSx0zo/74uUY29vJZOEHIfng4lzz7cjyXzn/jJwqCwCOLdj2iPSP3F/hUAHF3v+Cviee5DIqhJDLRACLoPGpHECq1M7Sd5iDZ/W6zQW8mu9Ecql7SI6xYaiOpnxCydwPNWqWJ/tSSjY1mqtqU5ZYNpWal2pJiGy0XSi1bVuKX1Fyh1GuMoJYeUeJvy/GEVbTpfTOjHJRVzUim0tlcwekbKD1QrgR5M97OV8nIyMjQsKPUEKWGNEVFFBwqEs/yHMEVFMM1PIc4FhiWQVxHcxjD0zzXEkgbmHe5G1eA9T955453xd+B9tbpi6vj10+fvj6+evH0Fju7vPDU5szVY8euzmw+tXABv7kEov/v33WOv+v/C8LG9M2xD19/EquzCyuHVuY6R25Obz35+odw4NDKwuzWHAK86q9x21wKYYQkjFeZ3M5f/TUmw6Qo12P+38Wf0zEZpVABlVANfQu1owHXXMD1AdIyQhvNgeou2b1LAuhAkVwyExRps/ppAE230qrTX1MrEVXil5W4qlm9thMAMpR2MtVHAbXMnBJvZ8oVGjdZ5XK6u6cwNExqdNJ9dnm4D+8eIeYeM7hH0b3H9bcQuczdeH75ef+TxTveO/5tuDK2Mrs5d+HmzQtzm7MrbP6ZqxMrrz2+vf34aysTV5+5iN9YhMi51W93Tiz5/wFp+ujy/MntGXx+dfrjqflrO788Ob989MaMP716+Nr8FOpCjbvnw032BUrm82gKfQc10SJaAwwZGINHEUrksaEndI3XCppBavWaU7Nrda/u7QfPsnmBF1ReK4NjCxbkgVRJdW/MdmiyjHkhCgKvGkrNq+uGngPLUDXVioJTcGxONWguENOIYmkq1lQqaDu2q1AqKi6qRh6CN0uqhlkn1WIwt1Z3FTqH6lt2kWLkqZpQ2F1H4D3X1CzFUkCp1R8EVaeKGr3mgXpyd3OKZTcgioMi3qImqA2FaFSYrkHd7BYESnSMdqAx1HNgg/6pG0Bo95RAGehqoNAuaRHR90wGdXyJtkAJ1DxSDVQCfS8ocui+EohqagNjFroniyLAOYbBgvSQxuXxiUSCGQXReJBnjafhbf6xBs8P9ZclLLJdTJfdL3bLRsgd50Nf52P7JIWjInYqFuZhUGErucF0Qj/zNJtPGArDz7EYFi0chvSpw8C/mJRgRVLfgrEf7RvowhyjJ3JPfPlX/h8N/6fZryX7bh/pJsPj4QLX9Ra89NL3QQkljmOqnognU6HcxKkoI/JsaJ8cDcfCqZAMC2cfFeSoHu+WFEmWzIQqx8PVmCThSFqPKqLIsgxJx0QYZt1iocjgfrPbjIoiltkXxzxTlE5FVTL1zb7YmTOSzXGiEBU0ZgHzXexjd9HklDtTc2P7iR4/Wmqk/jGhfZXjZW1bYFVp3y01G+ocrh/K9VST3+05OUsaEnAYGKZRfWIpDQaXT2Ej2/vCl1S5nNe7jHq5eCAlM7rOpFx8PP1Zf/NzCUdkpXjUhHmdfdi/Xv31D6WccPAIDjNMmPnBzC+ErAipZzPf++LkQyGRhTDEpCNkbmLpz8892zmE3+8swq1YODIqf2Z7lO8RdJHn7RS8kpY6r0qhAg7xXIHnhViu+zBDbhcx16UOfGVgaGkoXe6LhwS+h7NgSa+vR7ESZvPyq6VUqN+SC0ZSTPm3oETGoxGIh/p60w3naIyJ/Gywf9CMnnAemR3524hT5DErxOwBhR55COMw3e+u0T0tOEsR0JMx+NBHftD/AJ+D/f7v/TW+9t+P+Bo9e/7vNYz+By6FsKkAAAB42mNgZGBgYGRwbI8IWhzPb/OVQZ6DAQTOni3fCKP/+/x7yrOBNRTI5WBgAokCAG3mDbAAeNpjYGRgYFX9t5eBgeftf5//WTwbGIAiKMAdAJycBph42mN6w+DCwcDAAMIsZ8D0HhBNLIap52D478fBwHQRyvbBpZ7nLYMtKeZjt5OJhxT1TKsYGFhDETTjcSAG0gyPoRgozigIpL0hNEiOBcgFAEBoNC142mNgYNCBwjoccALDBEY9RhsgPIMMmZcRhHtIhkcA9pQspAAAAQAAAEcBVAALAAAAAAACAAEAAgAWAAABAACTAAAAAHjalZCxTgJBFEXPApJoYYgF9VZUSIAFTdDCnmiIgsTKsASQuGiCu0YaCr4OfomKOzsTCHRmMzPn3blz38sCFyzJ4uXOgbKWZY+8KssZLqk7zkp9cJyjSOT4jD9WjvPSt46vKHoFx2txyfGGqnfPO18kyohSGjBjJPqRFmqPmWolWkZ9o0uHZ/EkfTNgTo0KVX017ujRps+TyDqvT7xW9U/UV1Vz9ZryrQn8o8QOL1JsdVA/5IwZpv7f/YsKTW50O1PqpzKNZyw1UnKov2c9dbkD7c1/zdhXFSrNdIz3HbuaJFH1KM9CZyDN3N3SoiFupfP66mbOYAd8k0EGAHjabc05TwJhHITxZ0BBBc/P4IkI7y4sh0dBsosHKiqHeLUiiTE0FH56Xdl/6TS/ZIoZUszzM+ad/3IOSilNmm122GWPfQ4ocEiRI0qUcXj4VKgSUKNOgybHnHDKGSER7Xjjgkuu6HDNDbd0ueOeB3r0GTDkkRFPPPPCK29a0KIyympJy1pRTnmtak3r2tCmtjLjz+/ph5edfU2cc2Fiy/3px4Xpmb5ZMatmYNbMutkwm2Yr0W8nBnOj+OcXVDk0PnjaRc67DoJAEAVQFuT9fqsJCSZ2+w12QkNjrCCx9w+sbSy19DsGK/9Ob3RZujk3k7nzZp8bsbvSkXXoR8Yew9gavN9QNHSUHTFch4oMfuoV0uqGNL4nv25emq3yHzzADwVcwOsFHMCtBWzAWQlYgJ0ImIA1rRmAeRbQAWM6vQD04A9GgXglRBo4Kh+19gJGYDgzBqOnZALGO8kUTLaSGZhWkjmYrSULMA8kS7CYi5ZgKTlQxr/W1F5aAAAAAAFRp8cxAAA=</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">wOFF     l                             FFTM  �      gخ5GDEF  �        t OS/2  �   I   `uR�cmap     �  ����qcvt   �   6   6-
-!fpgm  �  �  eS�/�gasp  �         glyf  �  U  ���Rhead      3   6�8�hhea  4       $$\hmtx  T   T  N�ploca  �   #   �Z]maxp  �        j�name  �   �  �$�F�post  �   �  7�m�Yprep  �   �  X܎��webf  d      �2Q�       �=��    �͓�    ��w�x�c`d``�b	`b`B7 f� L y   x�c`f��8�����՘�,�,�t�!�)�J�#��cp`�}������U����U���R`` QE{   x�c```f�`Fh��|� -�  a�x��(p)�+�?`���$�Ȑg��3����������������g
-nP� F��0IF&amp; ��� �D�������������_@PHXDTL\BRJZF&quot;/&#39;����������������o`hdlbjf�@]`A�. �&#39;�         z&#39; q � � � � �# ] r� \ ` f r � �+� S D  x�]Q�N[A���� 9�����{�	�Սbd;��i7r��q@�Dگ���H�!H|B&gt;!3k��4;;�sΙ3Kʑ�w�k�S�$����6�NH�� ���덌��Zlf��u���є;j �=o)M;�Z�����
-����;�4���:	�!�qK��ͺ�����b00����.?�R��4�j˰��Ѽ�3��4@Skm���!��qK�˦�6����$���tUS�����]���`�*́��Vy&amp;ҷ$�,�b���
-9�����@�HƼIJ;ㆵƑ���6O��&lt;�Mmo��Y�w�K:�Ȇ�b;b)�	DBFU��Ͻ,�R��@��������D&lt;��u1Vz~���ˊ�V�΋Bwo�j��)��^ξ���Ac�����J��&lt;,�4hCz7z���ꈫ�&gt;�&#39;ӿ�Z     �� x�M�klW���^�cfw��g�;c{�]{��N�y�G�P�D!���vJJ)���R@�JH�P�&quot;(�*&amp;�v7Tq�WD!�Z�XQ�����Z�w���X�Ξ9�������ދ0C��&amp;�Tn���6�q��sm3����i.H�&gt;�3چ OS)��9�{�^xş�&amp;��f�]F��=�����(����Y�J-�ۀf�Ҫ@	{&amp;(`��:���
-�VAQ�Icˤ���[�����A�vv��Xz���__ʺ.ly����ye=��(��o��&lt;�K3����F6��Y8A�~x8�&lt;�r&lt;���&#39;
-��#�v=�=#��T qw�௉���$2� &quot;�&lt;jG*�3��� ��n�Ao&amp;���^�#�Xj#���w�Z���Ԓ��f�ڔ��f�ڒb-J-[V��\��k���Q�o��U��}3��U�H���\��(=P�y3��W����а����4EE*����5&lt;�8�A\Gs��&lt;�H�w�W��?y�w�߁��鋫��O��&gt;�z��;�������cǮ�l&gt;�p������u�������ͱ_��+�V�:GnNo=���p��������q�\
-a�$�W���_�5&amp;ä(�c��ş�1�P�P}���\���2B́�.ٽK�@�\2i��i M�Ҫ�_S+U◕��Y�� 2�v2�G�̜og�7Y�r���04Ljt�}vy��!�3�Gѽ������x~�y���;�;�m�2�2�9w���s��+l���+�=����k+W����X�ȹ�owN,��i������|~u���k;�&lt;9�|�ƌ?�z����B����M�J��h
-}5�&quot;Z�GJ䱡&#39;t��
-�Aj��S�ku���ϲy�T^+�c�TIuo�vh��y!
-�Jͫ놞�P5Պ�SplN5h.ӈbi*�T*h;��P**.�F�7K��Y&#39;�b0�Vw:��[v�b䩚P�]G�=��,�R@��U����zrws�e7 ��&quot;ޢ&amp;��hT��A��Jt�v�1�s`���@h��@�j��.i��Lu|��@	�&lt;RT}/(r��jjc�&#39;�&quot;�9��������D��x�g���m�����%,�]L��/v�F��C_�c�$��&quot;v*�aPa+��tB?�4�O
-�ϱ-��������`ER߂�����&#39;rO|�W���ٯ%�n�&amp;���������A	%�c���&#39;S��ĩ(#�lh��©�g��I�̄*��՘$�HZ�*�ȲI�Df�b���~�ی�&quot;���&lt;S�NEU2�;ؙ3��q�4f�]�cw��;Ssc��?Zj��1�}��em[`Ui�-5����T���99Kp�Q}b)�Oa#��T��׻�z�x %3�Τ\|&lt;�Y�s	Gd�xԄy�}ؿ^����p�3L����/���g3����C!��0Ĥ#dnb���=�9���,­X82*f{��t������:�J��\��X��0Cn1ץ|e`hi(]���`I��G�f��T�ߒFRL���Dƣ���z��h���l�Ќ�p��ۈS�1+���y�0���=-8KГ1��G~�� ������5��ߏ�={��5��.���   x�c`d```dpl�Z�o�A��Ξ-�����{ʳ�5��``� m�� x�c`d``U���������Y&lt;�&quot;(� ���x�cz������ �,g��M,���`�����t������-�-)�c�����L�XC4�q ���(�(��!4H�� @h4-x�c``Ё�:p�F=F &lt;����{H�G ��,�     GT             �    xڕ��NAE��ha��VTH�M�h���ʰ��h��F
-�~��;;tf33�ݹs��,���΁��e��*�.�;�J}p��H���?V��ҷ��(z�kq��w�;_$ʈR0c$��j��j%ZF}�K�g�$}3`N�
-U}5��Ѧϓ�:�O�V�O�WUs���	���/RluP?������
-Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ���Ң!n����f�`|�A x�m�9Oa��g@A�����.,�GA��**�x�&quot;�14~z]��4�d�R��3��rJ)M�mv�e�}(pH�#J�qx�T�P�N�&amp;ǜp�!�x�K��p��t��z�0�O&lt;��+oZТ2�jI�ZQNy�jM��Ц�2���釗�}M�sab���ǅ陾Y1�f`�̺�0�f+�o&#39;s���T94&gt;x�Eλ�@P��~�		&amp;v�vBCc� ���m,��;+�NotY�97���f���ґu�G�����P4t�1\��~���4�&#39;�n^���&lt;�\����l�Y	X����5��y�c:� ��F�x%D8*��F`83��d�;�L���V�9��%0$K����`)9Pƿ��^Z    Q��1  </td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/jquery/dist/jquery.min.js">https://parisregion.eu/bower_components/jquery/dist/jquery.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">D27CDB6E-AE6D-11cf-96B8-444553540000</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">n���:�uq���&gt;�9�~x�M4</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/img/b3conference/Logo_b3.jpg">https://parisregion.eu/img/b3conference/Logo_b3.jpg</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">���� JFIF  H H  �� ,Photoshop 3.0 8BIM�      H    </td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/img/welcome/valerie_pecresse500.jpg">https://parisregion.eu/img/welcome/valerie_pecresse500.jpg</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">org/std/Iptc4xmpExt/2008-02-29/</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">��?��&quot;�\���M&lt;�M���</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/js/tarteaucitron/tarteaucitron.js">https://parisregion.eu/js/tarteaucitron/tarteaucitron.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">iVBORw0KGgoAAAANSUhEUgAAAHcAAAAeCAYAAAAWwoEYAAADl0lEQVRoge1Y0W3bQAx9CjKARlC+9GVUmqDJBHEmiDyB6wkcTxBngtgTxJ0gzgQW4C/9aYOmE6g4lTQo+k6y3Rb94QOERNQd+cjj8XiGwWAwGAwGg8FgMBgMBoPB8F8RNRXe+whEKe7c36ZCAeCRxC9Rig2PUd8kPgAsoxSfQ3YAzAA8D/HwYYCb05kBKKO0teFkmbC1jlKsAnq/Abjn+QBqAIsoRS30ttwG/HNz1wH/XIxWTicLdvtW7xTAGEAMtP685CNsBTe2d/BLydfXAG57SEnMAST0zgYZSUCPk02bCvkJduIzuJzDLfPolbY+tLKmar+/8+IRePy4qdpE03qHuH8fipFb4N2+XdA3AJ/0vaQxt7s9FvkIS2XvtqnwM0rxpOQfbnE5G2LhTCmUO2fHIngOmcv+KG3HafDchB6ntwjYqenR2PqC7sOZ3E7FXHB0vqxoFyUyLh7OEH7LOGouvhhN3eIBeKXv0n5MsufdHqXcwYR5U2EbpV35lSspVPJmQj4TcgRK7jTg5IzmPUhhwM5a2WHUFCx+NgiDucmgh7idikLovHFlL0pxQ9xzX+IIP9Y6FrJsqhjlQpZRAkFVDCjZfcCHt6bqJDmuh5ylCWx0RVnk3oumaknqTH5sqrY0fBWyULaHUIgAgxb46MxV3DbieAhxOxUxjSuljig9lMQ/Bcfoi9BTEv9aLORSndVxYOH525sUDC6u2gWxcNzBNRxPanyh3ktKinOgy3WoxPbtUM0t6RkbQnzBnFPgi9GCOEubY9UffIryz9iKRe8s/FUfEWosJJGxagp85bpUO3VywQ46lOtAWfNxKwa4JXQ+628+bpxYGXXMzp5rXH401VEyXwIdowXFaKWSMFHvMTVmGnc+P3oXV2QOiBCfgex8QtcQCbcQE/H+eoHzrkFo1KM7zVO4jVVj5s6lRiWF7zyXyfRMc97J3tzj87mYqZ7E2YjzUct9GUi4tjHLR8dVkBLjQcuHFleWvQfRNEhFR7uX7pkctOwvZXsft7sAtyldEUIN2UTeLxnEfxKYswzdi88BdbZ8hifUoSMftQvP+muRwN6+Q3DeqqRExP9QmTtcheiHh0Ot1x2i2km1bP9pbufw5zZdyWsOrh7vQae5OZWbsMv30pi7cd/CKj3coPEVaCP4Zhx4eQWhOZ1Y9MTXGyP8/iGjEyfa1T4fO/4Lea9vBoPBYDAYDAaDwWAwGAwGwz8GgF8siXCCbrSRhgAAAABJRU5ErkJggg==</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">�PNG
-
-   IHDR   w        �IDATh��X�m�@}
-2�FP��eT���q&amp;�&lt;��	Og��ĝ ��/�i���8�4(�N�����D�����x��`0��`0���_5��D)��ߦB���/Q��Q�$&gt; ,��Cv � &lt;��a��ә(����d����R�z���� j �(E-����ss��\�VN&#39;v�V��@����#l7�w�K��� n{HI�$��I@��M�
-�	v�3���-�蕶&gt;���j����x����D�z����[�ݾ]�7 ����1��=�Keﶩ�3J��nq9b�L)�;g�&quot;x���(m�i�܄��ة������Ù�N�\pt��h%2.�~�8j.�M��x���~L�������ySa�]��+)T�fB&gt;rJ�4���=Ha��Z�a�,~6��ɠ����B�qe/JqC�s_�?�:�l��B�QAU(�}�����$9����	ltEY�ދ�jI�L~l��4|�P��P� ����U�6�xq;1�+��(=��?���S�Z,�R��q`��ۛ.���p��5Oj|��KJ�s��u����P�-�B|��S��т8K�c�|���؊E�,�Uj,$��j
-|�T;ur�:��@Y�q+�%t&gt;�o&gt;n�Xu�Ξk\~4�Q2_��h��0Q�15fw&gt;?zWd����|B�	���z��Ahԣ;�S��Uc�ΥF%��&lt;���Ls�����󹘩��و�Q�}H��1�G�U��AˇW���4HEG�����/e{�� �)]B�D�/���݋�u�|�&#39;ԡ#���k��޾Cpު�D��P�;\�臇C����I�l�in���6]�k��A��9�����Ҙ�q��*=ܠ�h#�fxy�9�X���#��!�&#39;��&gt;;�y�o��`0��`0�?�_,�p�n���    IEND�B`�</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">D27CDB6E-AE6D-11cf-96B8-444553540000</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">n���:�uq���&gt;�9�~x�M4</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/news.html">https://parisregion.eu/news.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">com/ressources/actualite/600x189xPanorama_Village_global_Sensual_City_Studio</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">r����,���z��rۚ�+^��4�_=������k�b�V�{�%����&#39;����(�����ب</td>
-					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -3170,71 +929,9 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 						<td width="80%">����M�ӭ���ߧ��#�Zn�ڶ��z</td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/pdf/h2020_hi_ethics-self-assess_en.pdf">https://parisregion.eu/pdf/h2020_hi_ethics-self-assess_en.pdf</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">/Type/Font/Subtype/TrueType/Name/F1/BaseFont/ABCDEE+Verdana/Encoding/WinAnsiEncoding/FontDescriptor</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">�&lt;�{�h��ҹ�r��Ӯ�ʗ�5���]���� BA&gt;U��jv�w(v)��h�{&quot;w(v)��Z&#39;�7�r����</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/pdf/PRfP_Short-Guide-2nd-call_2021_VF.pdf">https://parisregion.eu/pdf/PRfP_Short-Guide-2nd-call_2021_VF.pdf</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">/Type/Font/Subtype/TrueType/Name/F1/BaseFont/BCDEEE+Verdana/Encoding/WinAnsiEncoding/FontDescriptor</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">�&lt;�{�h��ҹ�r��Ӯ�ʗ�5���]�����A&gt;U��jv�w(v)��h�{&quot;w(v)��Z&#39;�7�r����</td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">1</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -3263,496 +960,6 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10094/">10094</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-0"><a
-						id="10027"></a>
-						<div>Informational</div></th>
-					<th class="risk-0">Information Disclosure - Suspicious Comments</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js">https://parisregion.eu/bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">user</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;d.marginLeft=0;break;case&quot;right&quot;:d.marginLeft=i?-(d.width-g.width):0}}}else d.width=&quot;100%&quot;,d.height=&quot;100%&quot;,d.marginTop=0,d.margi&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/jquery/dist/jquery.min.js">https://parisregion.eu/bower_components/jquery/dist/jquery.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">db</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bDB\b and was detected 2 times, the first in the element starting with: &quot;}return c}function Q(a){var b;for(b in a)if((&quot;data&quot;!==b||!n.isEmptyObject(a[b]))&amp;&amp;&quot;toJSON&quot;!==b)return!1;return!0}function R(a,b,&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/jquery/dist/jquery.min.js">https://parisregion.eu/bower_components/jquery/dist/jquery.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">select</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;!function(a,b){&quot;object&quot;==typeof module&amp;&amp;&quot;object&quot;==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.docu&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.min.js">https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">select</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;!1===this.options.mouseDrag&amp;&amp;!0===this.options.touchDrag?a=[&quot;touchstart.owl&quot;,&quot;touchmove.owl&quot;,&quot;touchend.owl touchcancel.owl&quot;]:!0=&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/js/tarteaucitron/tarteaucitron.js">https://parisregion.eu/js/tarteaucitron/tarteaucitron.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">from</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;                //var mainChildren = Array.from(main.children);&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/js/tarteaucitron/tarteaucitron.js">https://parisregion.eu/js/tarteaucitron/tarteaucitron.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">query</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bQUERY\b and was detected 3 times, the first in the element starting with: &quot;                // get the real window width for media query&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/js/tarteaucitron/tarteaucitron.js">https://parisregion.eu/js/tarteaucitron/tarteaucitron.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">TODO</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bTODO\b and was detected 2 times, the first in the element starting with: &quot;                // css for the middle bar TODO: add it on the css file&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/js/tarteaucitron/tarteaucitron.js">https://parisregion.eu/js/tarteaucitron/tarteaucitron.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">user</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bUSER\b and was detected 2 times, the first in the element starting with: &quot;    &quot;user&quot;: {},&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">db</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bDB\b and was detected in the element starting with: &quot;&lt;script&gt;/*! jQuery v1.12.4 | (c) jQuery Foundation | jquery.org/license */
-!function(a,b){&quot;object&quot;==typeof module&amp;&amp;&quot;object&quot;==typ&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">from</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;&lt;script&gt;!function(a){if(&quot;object&quot;==typeof exports)module.exports=a();else if(&quot;function&quot;==typeof define&amp;&amp;define.amd)define(a);else&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">query</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bQUERY\b and was detected in the element starting with: &quot;&lt;script&gt;!function(e){var o={};function t(r){if(o[r])return o[r].exports;var a=o[r]={i:r,l:!1,exports:{}};return e[r].call(a.expo&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">SELECT</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bSELECT\b and was detected 3 times, the first in the element starting with: &quot;&lt;script&gt;/* @preserve
- * Leaflet 1.3.1+Detached: ba6f97fff8647e724e4dfe66d2ed7da11f908989.ba6f97f, a JS library for interactive m&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">TODO</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bTODO\b and was detected 2 times, the first in the element starting with: &quot;&lt;script&gt;(function() {
-  // If window.HTMLWidgets is already defined, then use it; otherwise create a
-  // new object. This allow&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">user</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bUSER\b and was detected in the element starting with: &quot;&lt;script&gt;(function (root, factory) {
-	if (typeof define === &#39;function&#39; &amp;&amp; define.amd) {
-		// AMD. Register as an anonymous module&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">14</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10027/">10027</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -3809,1127 +1016,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/b3conference.html">https://parisregion.eu/b3conference.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script&gt;(function() {
-  // If window.HTMLWidgets is already defined, then use it; otherwise create a
-  // new object. This allows preceding code to set options that affect the
-  // initialization process (though none currently exist).
-  window.HTMLWidgets = window.HTMLWidgets || {};
-
-  // See if we&#39;re running in a viewer pane. If not, we&#39;re in a web browser.
-  var viewerMode = window.HTMLWidgets.viewerMode =
-      /\bviewer_pane=1\b/.test(window.location);
-
-  // See if we&#39;re running in Shiny mode. If not, it&#39;s a static document.
-  // Note that static widgets can appear in both Shiny and static modes, but
-  // obviously, Shiny widgets can only appear in Shiny apps/documents.
-  var shinyMode = window.HTMLWidgets.shinyMode =
-      typeof(window.Shiny) !== &quot;undefined&quot; &amp;&amp; !!window.Shiny.outputBindings;
-
-  // We can&#39;t count on jQuery being available, so we implement our own
-  // version if necessary.
-  function querySelectorAll(scope, selector) {
-    if (typeof(jQuery) !== &quot;undefined&quot; &amp;&amp; scope instanceof jQuery) {
-      return scope.find(selector);
-    }
-    if (scope.querySelectorAll) {
-      return scope.querySelectorAll(selector);
-    }
-  }
-
-  function asArray(value) {
-    if (value === null)
-      return [];
-    if ($.isArray(value))
-      return value;
-    return [value];
-  }
-
-  // Implement jQuery&#39;s extend
-  function extend(target /*, ... */) {
-    if (arguments.length == 1) {
-      return target;
-    }
-    for (var i = 1; i &lt; arguments.length; i++) {
-      var source = arguments[i];
-      for (var prop in source) {
-        if (source.hasOwnProperty(prop)) {
-          target[prop] = source[prop];
-        }
-      }
-    }
-    return target;
-  }
-
-  // IE8 doesn&#39;t support Array.forEach.
-  function forEach(values, callback, thisArg) {
-    if (values.forEach) {
-      values.forEach(callback, thisArg);
-    } else {
-      for (var i = 0; i &lt; values.length; i++) {
-        callback.call(thisArg, values[i], i, values);
-      }
-    }
-  }
-
-  // Replaces the specified method with the return value of funcSource.
-  //
-  // Note that funcSource should not BE the new method, it should be a function
-  // that RETURNS the new method. funcSource receives a single argument that is
-  // the overridden method, it can be called from the new method. The overridden
-  // method can be called like a regular function, it has the target permanently
-  // bound to it so &quot;this&quot; will work correctly.
-  function overrideMethod(target, methodName, funcSource) {
-    var superFunc = target[methodName] || function() {};
-    var superFuncBound = function() {
-      return superFunc.apply(target, arguments);
-    };
-    target[methodName] = funcSource(superFuncBound);
-  }
-
-  // Add a method to delegator that, when invoked, calls
-  // delegatee.methodName. If there is no such method on
-  // the delegatee, but there was one on delegator before
-  // delegateMethod was called, then the original version
-  // is invoked instead.
-  // For example:
-  //
-  // var a = {
-  //   method1: function() { console.log(&#39;a1&#39;); }
-  //   method2: function() { console.log(&#39;a2&#39;); }
-  // };
-  // var b = {
-  //   method1: function() { console.log(&#39;b1&#39;); }
-  // };
-  // delegateMethod(a, b, &quot;method1&quot;);
-  // delegateMethod(a, b, &quot;method2&quot;);
-  // a.method1();
-  // a.method2();
-  //
-  // The output would be &quot;b1&quot;, &quot;a2&quot;.
-  function delegateMethod(delegator, delegatee, methodName) {
-    var inherited = delegator[methodName];
-    delegator[methodName] = function() {
-      var target = delegatee;
-      var method = delegatee[methodName];
-
-      // The method doesn&#39;t exist on the delegatee. Instead,
-      // call the method on the delegator, if it exists.
-      if (!method) {
-        target = delegator;
-        method = inherited;
-      }
-
-      if (method) {
-        return method.apply(target, arguments);
-      }
-    };
-  }
-
-  // Implement a vague facsimilie of jQuery&#39;s data method
-  function elementData(el, name, value) {
-    if (arguments.length == 2) {
-      return el[&quot;htmlwidget_data_&quot; + name];
-    } else if (arguments.length == 3) {
-      el[&quot;htmlwidget_data_&quot; + name] = value;
-      return el;
-    } else {
-      throw new Error(&quot;Wrong number of arguments for elementData: &quot; +
-        arguments.length);
-    }
-  }
-
-  // http://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
-  function escapeRegExp(str) {
-    return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, &quot;\\$&amp;&quot;);
-  }
-
-  function hasClass(el, className) {
-    var re = new RegExp(&quot;\\b&quot; + escapeRegExp(className) + &quot;\\b&quot;);
-    return re.test(el.className);
-  }
-
-  // elements - array (or array-like object) of HTML elements
-  // className - class name to test for
-  // include - if true, only return elements with given className;
-  //   if false, only return elements *without* given className
-  function filterByClass(elements, className, include) {
-    var results = [];
-    for (var i = 0; i &lt; elements.length; i++) {
-      if (hasClass(elements[i], className) == include)
-        results.push(elements[i]);
-    }
-    return results;
-  }
-
-  function on(obj, eventName, func) {
-    if (obj.addEventListener) {
-      obj.addEventListener(eventName, func, false);
-    } else if (obj.attachEvent) {
-      obj.attachEvent(eventName, func);
-    }
-  }
-
-  function off(obj, eventName, func) {
-    if (obj.removeEventListener)
-      obj.removeEventListener(eventName, func, false);
-    else if (obj.detachEvent) {
-      obj.detachEvent(eventName, func);
-    }
-  }
-
-  // Translate array of values to top/right/bottom/left, as usual with
-  // the &quot;padding&quot; CSS property
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/padding
-  function unpackPadding(value) {
-    if (typeof(value) === &quot;number&quot;)
-      value = [value];
-    if (value.length === 1) {
-      return {top: value[0], right: value[0], bottom: value[0], left: value[0]};
-    }
-    if (value.length === 2) {
-      return {top: value[0], right: value[1], bottom: value[0], left: value[1]};
-    }
-    if (value.length === 3) {
-      return {top: value[0], right: value[1], bottom: value[2], left: value[1]};
-    }
-    if (value.length === 4) {
-      return {top: value[0], right: value[1], bottom: value[2], left: value[3]};
-    }
-  }
-
-  // Convert an unpacked padding object to a CSS value
-  function paddingToCss(paddingObj) {
-    return paddingObj.top + &quot;px &quot; + paddingObj.right + &quot;px &quot; + paddingObj.bottom + &quot;px &quot; + paddingObj.left + &quot;px&quot;;
-  }
-
-  // Makes a number suitable for CSS
-  function px(x) {
-    if (typeof(x) === &quot;number&quot;)
-      return x + &quot;px&quot;;
-    else
-      return x;
-  }
-
-  // Retrieves runtime widget sizing information for an element.
-  // The return value is either null, or an object with fill, padding,
-  // defaultWidth, defaultHeight fields.
-  function sizingPolicy(el) {
-    var sizingEl = document.querySelector(&quot;script[data-for=&#39;&quot; + el.id + &quot;&#39;][type=&#39;application/htmlwidget-sizing&#39;]&quot;);
-    if (!sizingEl)
-      return null;
-    var sp = JSON.parse(sizingEl.textContent || sizingEl.text || &quot;{}&quot;);
-    if (viewerMode) {
-      return sp.viewer;
-    } else {
-      return sp.browser;
-    }
-  }
-
-  // @param tasks Array of strings (or falsy value, in which case no-op).
-  //   Each element must be a valid JavaScript expression that yields a
-  //   function. Or, can be an array of objects with &quot;code&quot; and &quot;data&quot;
-  //   properties; in this case, the &quot;code&quot; property should be a string
-  //   of JS that&#39;s an expr that yields a function, and &quot;data&quot; should be
-  //   an object that will be added as an additional argument when that
-  //   function is called.
-  // @param target The object that will be &quot;this&quot; for each function
-  //   execution.
-  // @param args Array of arguments to be passed to the functions. (The
-  //   same arguments will be passed to all functions.)
-  function evalAndRun(tasks, target, args) {
-    if (tasks) {
-      forEach(tasks, function(task) {
-        var theseArgs = args;
-        if (typeof(task) === &quot;object&quot;) {
-          theseArgs = theseArgs.concat([task.data]);
-          task = task.code;
-        }
-        var taskFunc = tryEval(task);
-        if (typeof(taskFunc) !== &quot;function&quot;) {
-          throw new Error(&quot;Task must be a function! Source:\n&quot; + task);
-        }
-        taskFunc.apply(target, theseArgs);
-      });
-    }
-  }
-
-  // Attempt eval() both with and without enclosing in parentheses.
-  // Note that enclosing coerces a function declaration into
-  // an expression that eval() can parse
-  // (otherwise, a SyntaxError is thrown)
-  function tryEval(code) {
-    var result = null;
-    try {
-      result = eval(code);
-    } catch(error) {
-      if (!error instanceof SyntaxError) {
-        throw error;
-      }
-      try {
-        result = eval(&quot;(&quot; + code + &quot;)&quot;);
-      } catch(e) {
-        if (e instanceof SyntaxError) {
-          throw error;
-        } else {
-          throw e;
-        }
-      }
-    }
-    return result;
-  }
-
-  function initSizing(el) {
-    var sizing = sizingPolicy(el);
-    if (!sizing)
-      return;
-
-    var cel = document.getElementById(&quot;htmlwidget_container&quot;);
-    if (!cel)
-      return;
-
-    if (typeof(sizing.padding) !== &quot;undefined&quot;) {
-      document.body.style.margin = &quot;0&quot;;
-      document.body.style.padding = paddingToCss(unpackPadding(sizing.padding));
-    }
-
-    if (sizing.fill) {
-      document.body.style.overflow = &quot;hidden&quot;;
-      document.body.style.width = &quot;100%&quot;;
-      document.body.style.height = &quot;100%&quot;;
-      document.documentElement.style.width = &quot;100%&quot;;
-      document.documentElement.style.height = &quot;100%&quot;;
-      if (cel) {
-        cel.style.position = &quot;absolute&quot;;
-        var pad = unpackPadding(sizing.padding);
-        cel.style.top = pad.top + &quot;px&quot;;
-        cel.style.right = pad.right + &quot;px&quot;;
-        cel.style.bottom = pad.bottom + &quot;px&quot;;
-        cel.style.left = pad.left + &quot;px&quot;;
-        el.style.width = &quot;100%&quot;;
-        el.style.height = &quot;100%&quot;;
-      }
-
-      return {
-        getWidth: function() { return cel.offsetWidth; },
-        getHeight: function() { return cel.offsetHeight; }
-      };
-
-    } else {
-      el.style.width = px(sizing.width);
-      el.style.height = px(sizing.height);
-
-      return {
-        getWidth: function() { return el.offsetWidth; },
-        getHeight: function() { return el.offsetHeight; }
-      };
-    }
-  }
-
-  // Default implementations for methods
-  var defaults = {
-    find: function(scope) {
-      return querySelectorAll(scope, &quot;.&quot; + this.name);
-    },
-    renderError: function(el, err) {
-      var $el = $(el);
-
-      this.clearError(el);
-
-      // Add all these error classes, as Shiny does
-      var errClass = &quot;shiny-output-error&quot;;
-      if (err.type !== null) {
-        // use the classes of the error condition as CSS class names
-        errClass = errClass + &quot; &quot; + $.map(asArray(err.type), function(type) {
-          return errClass + &quot;-&quot; + type;
-        }).join(&quot; &quot;);
-      }
-      errClass = errClass + &quot; htmlwidgets-error&quot;;
-
-      // Is el inline or block? If inline or inline-block, just display:none it
-      // and add an inline error.
-      var display = $el.css(&quot;display&quot;);
-      $el.data(&quot;restore-display-mode&quot;, display);
-
-      if (display === &quot;inline&quot; || display === &quot;inline-block&quot;) {
-        $el.hide();
-        if (err.message !== &quot;&quot;) {
-          var errorSpan = $(&quot;&lt;span&gt;&quot;).addClass(errClass);
-          errorSpan.text(err.message);
-          $el.after(errorSpan);
-        }
-      } else if (display === &quot;block&quot;) {
-        // If block, add an error just after the el, set visibility:none on the
-        // el, and position the error to be on top of the el.
-        // Mark it with a unique ID and CSS class so we can remove it later.
-        $el.css(&quot;visibility&quot;, &quot;hidden&quot;);
-        if (err.message !== &quot;&quot;) {
-          var errorDiv = $(&quot;&lt;div&gt;&quot;).addClass(errClass).css(&quot;position&quot;, &quot;absolute&quot;)
-            .css(&quot;top&quot;, el.offsetTop)
-            .css(&quot;left&quot;, el.offsetLeft)
-            // setting width can push out the page size, forcing otherwise
-            // unnecessary scrollbars to appear and making it impossible for
-            // the element to shrink; so use max-width instead
-            .css(&quot;maxWidth&quot;, el.offsetWidth)
-            .css(&quot;height&quot;, el.offsetHeight);
-          errorDiv.text(err.message);
-          $el.after(errorDiv);
-
-          // Really dumb way to keep the size/position of the error in sync with
-          // the parent element as the window is resized or whatever.
-          var intId = setInterval(function() {
-            if (!errorDiv[0].parentElement) {
-              clearInterval(intId);
-              return;
-            }
-            errorDiv
-              .css(&quot;top&quot;, el.offsetTop)
-              .css(&quot;left&quot;, el.offsetLeft)
-              .css(&quot;maxWidth&quot;, el.offsetWidth)
-              .css(&quot;height&quot;, el.offsetHeight);
-          }, 500);
-        }
-      }
-    },
-    clearError: function(el) {
-      var $el = $(el);
-      var display = $el.data(&quot;restore-display-mode&quot;);
-      $el.data(&quot;restore-display-mode&quot;, null);
-
-      if (display === &quot;inline&quot; || display === &quot;inline-block&quot;) {
-        if (display)
-          $el.css(&quot;display&quot;, display);
-        $(el.nextSibling).filter(&quot;.htmlwidgets-error&quot;).remove();
-      } else if (display === &quot;block&quot;){
-        $el.css(&quot;visibility&quot;, &quot;inherit&quot;);
-        $(el.nextSibling).filter(&quot;.htmlwidgets-error&quot;).remove();
-      }
-    },
-    sizing: {}
-  };
-
-  // Called by widget bindings to register a new type of widget. The definition
-  // object can contain the following properties:
-  // - name (required) - A string indicating the binding name, which will be
-  //   used by default as the CSS classname to look for.
-  // - initialize (optional) - A function(el) that will be called once per
-  //   widget element; if a value is returned, it will be passed as the third
-  //   value to renderValue.
-  // - renderValue (required) - A function(el, data, initValue) that will be
-  //   called with data. Static contexts will cause this to be called once per
-  //   element; Shiny apps will cause this to be called multiple times per
-  //   element, as the data changes.
-  window.HTMLWidgets.widget = function(definition) {
-    if (!definition.name) {
-      throw new Error(&quot;Widget must have a name&quot;);
-    }
-    if (!definition.type) {
-      throw new Error(&quot;Widget must have a type&quot;);
-    }
-    // Currently we only support output widgets
-    if (definition.type !== &quot;output&quot;) {
-      throw new Error(&quot;Unrecognized widget type &#39;&quot; + definition.type + &quot;&#39;&quot;);
-    }
-    // TODO: Verify that .name is a valid CSS classname
-
-    // Support new-style instance-bound definitions. Old-style class-bound
-    // definitions have one widget &quot;object&quot; per widget per type/class of
-    // widget; the renderValue and resize methods on such widget objects
-    // take el and instance arguments, because the widget object can&#39;t
-    // store them. New-style instance-bound definitions have one widget
-    // object per widget instance; the definition that&#39;s passed in doesn&#39;t
-    // provide renderValue or resize methods at all, just the single method
-    //   factory(el, width, height)
-    // which returns an object that has renderValue(x) and resize(w, h).
-    // This enables a far more natural programming style for the widget
-    // author, who can store per-instance state using either OO-style
-    // instance fields or functional-style closure variables (I guess this
-    // is in contrast to what can only be called C-style pseudo-OO which is
-    // what we required before).
-    if (definition.factory) {
-      definition = createLegacyDefinitionAdapter(definition);
-    }
-
-    if (!definition.renderValue) {
-      throw new Error(&quot;Widget must have a renderValue function&quot;);
-    }
-
-    // For static rendering (non-Shiny), use a simple widget registration
-    // scheme. We also use this scheme for Shiny apps/documents that also
-    // contain static widgets.
-    window.HTMLWidgets.widgets = window.HTMLWidgets.widgets || [];
-    // Merge defaults into the definition; don&#39;t mutate the original definition.
-    var staticBinding = extend({}, defaults, definition);
-    overrideMethod(staticBinding, &quot;find&quot;, function(superfunc) {
-      return function(scope) {
-        var results = superfunc(scope);
-        // Filter out Shiny outputs, we only want the static kind
-        return filterByClass(results, &quot;html-widget-output&quot;, false);
-      };
-    });
-    window.HTMLWidgets.widgets.push(staticBinding);
-
-    if (shinyMode) {
-      // Shiny is running. Register the definition with an output binding.
-      // The definition itself will not be the output binding, instead
-      // we will make an output binding object that delegates to the
-      // definition. This is because we foolishly used the same method
-      // name (renderValue) for htmlwidgets definition and Shiny bindings
-      // but they actually have quite different semantics (the Shiny
-      // bindings receive data that includes lots of metadata that it
-      // strips off before calling htmlwidgets renderValue). We can&#39;t
-      // just ignore the difference because in some widgets it&#39;s helpful
-      // to call this.renderValue() from inside of resize(), and if
-      // we&#39;re not delegating, then that call will go to the Shiny
-      // version instead of the htmlwidgets version.
-
-      // Merge defaults with definition, without mutating either.
-      var bindingDef = extend({}, defaults, definition);
-
-      // This object will be our actual Shiny binding.
-      var shinyBinding = new Shiny.OutputBinding();
-
-      // With a few exceptions, we&#39;ll want to simply use the bindingDef&#39;s
-      // version of methods if they are available, otherwise fall back to
-      // Shiny&#39;s defaults. NOTE: If Shiny&#39;s output bindings gain additional
-      // methods in the future, and we want them to be overrideable by
-      // HTMLWidget binding definitions, then we&#39;ll need to add them to this
-      // list.
-      delegateMethod(shinyBinding, bindingDef, &quot;getId&quot;);
-      delegateMethod(shinyBinding, bindingDef, &quot;onValueChange&quot;);
-      delegateMethod(shinyBinding, bindingDef, &quot;onValueError&quot;);
-      delegateMethod(shinyBinding, bindingDef, &quot;renderError&quot;);
-      delegateMethod(shinyBinding, bindingDef, &quot;clearError&quot;);
-      delegateMethod(shinyBinding, bindingDef, &quot;showProgress&quot;);
-
-      // The find, renderValue, and resize are handled differently, because we
-      // want to actually decorate the behavior of the bindingDef methods.
-
-      shinyBinding.find = function(scope) {
-        var results = bindingDef.find(scope);
-
-        // Only return elements that are Shiny outputs, not static ones
-        var dynamicResults = results.filter(&quot;.html-widget-output&quot;);
-
-        // It&#39;s possible that whatever caused Shiny to think there might be
-        // new dynamic outputs, also caused there to be new static outputs.
-        // Since there might be lots of different htmlwidgets bindings, we
-        // schedule execution for later--no need to staticRender multiple
-        // times.
-        if (results.length !== dynamicResults.length)
-          scheduleStaticRender();
-
-        return dynamicResults;
-      };
-
-      // Wrap renderValue to handle initialization, which unfortunately isn&#39;t
-      // supported natively by Shiny at the time of this writing.
-
-      shinyBinding.renderValue = function(el, data) {
-        Shiny.renderDependencies(data.deps);
-        // Resolve strings marked as javascript literals to objects
-        if (!(data.evals instanceof Array)) data.evals = [data.evals];
-        for (var i = 0; data.evals &amp;&amp; i &lt; data.evals.length; i++) {
-          window.HTMLWidgets.evaluateStringMember(data.x, data.evals[i]);
-        }
-        if (!bindingDef.renderOnNullValue) {
-          if (data.x === null) {
-            el.style.visibility = &quot;hidden&quot;;
-            return;
-          } else {
-            el.style.visibility = &quot;inherit&quot;;
-          }
-        }
-        if (!elementData(el, &quot;initialized&quot;)) {
-          initSizing(el);
-
-          elementData(el, &quot;initialized&quot;, true);
-          if (bindingDef.initialize) {
-            var result = bindingDef.initialize(el, el.offsetWidth,
-              el.offsetHeight);
-            elementData(el, &quot;init_result&quot;, result);
-          }
-        }
-        bindingDef.renderValue(el, data.x, elementData(el, &quot;init_result&quot;));
-        evalAndRun(data.jsHooks.render, elementData(el, &quot;init_result&quot;), [el, data.x]);
-      };
-
-      // Only override resize if bindingDef implements it
-      if (bindingDef.resize) {
-        shinyBinding.resize = function(el, width, height) {
-          // Shiny can call resize before initialize/renderValue have been
-          // called, which doesn&#39;t make sense for widgets.
-          if (elementData(el, &quot;initialized&quot;)) {
-            bindingDef.resize(el, width, height, elementData(el, &quot;init_result&quot;));
-          }
-        };
-      }
-
-      Shiny.outputBindings.register(shinyBinding, bindingDef.name);
-    }
-  };
-
-  var scheduleStaticRenderTimerId = null;
-  function scheduleStaticRender() {
-    if (!scheduleStaticRenderTimerId) {
-      scheduleStaticRenderTimerId = setTimeout(function() {
-        scheduleStaticRenderTimerId = null;
-        window.HTMLWidgets.staticRender();
-      }, 1);
-    }
-  }
-
-  // Render static widgets after the document finishes loading
-  // Statically render all elements that are of this widget&#39;s class
-  window.HTMLWidgets.staticRender = function() {
-    var bindings = window.HTMLWidgets.widgets || [];
-    forEach(bindings, function(binding) {
-      var matches = binding.find(document.documentElement);
-      forEach(matches, function(el) {
-        var sizeObj = initSizing(el, binding);
-
-        if (hasClass(el, &quot;html-widget-static-bound&quot;))
-          return;
-        el.className = el.className + &quot; html-widget-static-bound&quot;;
-
-        var initResult;
-        if (binding.initialize) {
-          initResult = binding.initialize(el,
-            sizeObj ? sizeObj.getWidth() : el.offsetWidth,
-            sizeObj ? sizeObj.getHeight() : el.offsetHeight
-          );
-          elementData(el, &quot;init_result&quot;, initResult);
-        }
-
-        if (binding.resize) {
-          var lastSize = {
-            w: sizeObj ? sizeObj.getWidth() : el.offsetWidth,
-            h: sizeObj ? sizeObj.getHeight() : el.offsetHeight
-          };
-          var resizeHandler = function(e) {
-            var size = {
-              w: sizeObj ? sizeObj.getWidth() : el.offsetWidth,
-              h: sizeObj ? sizeObj.getHeight() : el.offsetHeight
-            };
-            if (size.w === 0 &amp;&amp; size.h === 0)
-              return;
-            if (size.w === lastSize.w &amp;&amp; size.h === lastSize.h)
-              return;
-            lastSize = size;
-            binding.resize(el, size.w, size.h, initResult);
-          };
-
-          on(window, &quot;resize&quot;, resizeHandler);
-
-          // This is needed for cases where we&#39;re running in a Shiny
-          // app, but the widget itself is not a Shiny output, but
-          // rather a simple static widget. One example of this is
-          // an rmarkdown document that has runtime:shiny and widget
-          // that isn&#39;t in a render function. Shiny only knows to
-          // call resize handlers for Shiny outputs, not for static
-          // widgets, so we do it ourselves.
-          if (window.jQuery) {
-            window.jQuery(document).on(
-              &quot;shown.htmlwidgets shown.bs.tab.htmlwidgets shown.bs.collapse.htmlwidgets&quot;,
-              resizeHandler
-            );
-            window.jQuery(document).on(
-              &quot;hidden.htmlwidgets hidden.bs.tab.htmlwidgets hidden.bs.collapse.htmlwidgets&quot;,
-              resizeHandler
-            );
-          }
-
-          // This is needed for the specific case of ioslides, which
-          // flips slides between display:none and display:block.
-          // Ideally we would not have to have ioslide-specific code
-          // here, but rather have ioslides raise a generic event,
-          // but the rmarkdown package just went to CRAN so the
-          // window to getting that fixed may be long.
-          if (window.addEventListener) {
-            // It&#39;s OK to limit this to window.addEventListener
-            // browsers because ioslides itself only supports
-            // such browsers.
-            on(document, &quot;slideenter&quot;, resizeHandler);
-            on(document, &quot;slideleave&quot;, resizeHandler);
-          }
-        }
-
-        var scriptData = document.querySelector(&quot;script[data-for=&#39;&quot; + el.id + &quot;&#39;][type=&#39;application/json&#39;]&quot;);
-        if (scriptData) {
-          var data = JSON.parse(scriptData.textContent || scriptData.text);
-          // Resolve strings marked as javascript literals to objects
-          if (!(data.evals instanceof Array)) data.evals = [data.evals];
-          for (var k = 0; data.evals &amp;&amp; k &lt; data.evals.length; k++) {
-            window.HTMLWidgets.evaluateStringMember(data.x, data.evals[k]);
-          }
-          binding.renderValue(el, data.x, initResult);
-          evalAndRun(data.jsHooks.render, initResult, [el, data.x]);
-        }
-      });
-    });
-
-    invokePostRenderHandlers();
-  }
-
-
-  function has_jQuery3() {
-    if (!window.jQuery) {
-      return false;
-    }
-    var $version = window.jQuery.fn.jquery;
-    var $major_version = parseInt($version.split(&quot;.&quot;)[0]);
-    return $major_version &gt;= 3;
-  }
-
-  /*
-  / Shiny 1.4 bumped jQuery from 1.x to 3.x which means jQuery&#39;s
-  / on-ready handler (i.e., $(fn)) is now asyncronous (i.e., it now
-  / really means $(setTimeout(fn)).
-  / https://jquery.com/upgrade-guide/3.0/#breaking-change-document-ready-handlers-are-now-asynchronous
-  /
-  / Since Shiny uses $() to schedule initShiny, shiny&gt;=1.4 calls initShiny
-  / one tick later than it did before, which means staticRender() is
-  / called renderValue() earlier than (advanced) widget authors might be expecting.
-  / https://github.com/rstudio/shiny/issues/2630
-  /
-  / For a concrete example, leaflet has some methods (e.g., updateBounds)
-  / which reference Shiny methods registered in initShiny (e.g., setInputValue).
-  / Since leaflet is privy to this life-cycle, it knows to use setTimeout() to
-  / delay execution of those methods (until Shiny methods are ready)
-  / https://github.com/rstudio/leaflet/blob/18ec981/javascript/src/index.js#L266-L268
-  /
-  / Ideally widget authors wouldn&#39;t need to use this setTimeout() hack that
-  / leaflet uses to call Shiny methods on a staticRender(). In the long run,
-  / the logic initShiny should be broken up so that method registration happens
-  / right away, but binding happens later.
-  */
-  function maybeStaticRenderLater() {
-    if (shinyMode &amp;&amp; has_jQuery3()) {
-      window.jQuery(window.HTMLWidgets.staticRender);
-    } else {
-      window.HTMLWidgets.staticRender();
-    }
-  }
-
-  if (document.addEventListener) {
-    document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
-      document.removeEventListener(&quot;DOMContentLoaded&quot;, arguments.callee, false);
-      maybeStaticRenderLater();
-    }, false);
-  } else if (document.attachEvent) {
-    document.attachEvent(&quot;onreadystatechange&quot;, function() {
-      if (document.readyState === &quot;complete&quot;) {
-        document.detachEvent(&quot;onreadystatechange&quot;, arguments.callee);
-        maybeStaticRenderLater();
-      }
-    });
-  }
-
-
-  window.HTMLWidgets.getAttachmentUrl = function(depname, key) {
-    // If no key, default to the first item
-    if (typeof(key) === &quot;undefined&quot;)
-      key = 1;
-
-    var link = document.getElementById(depname + &quot;-&quot; + key + &quot;-attachment&quot;);
-    if (!link) {
-      throw new Error(&quot;Attachment &quot; + depname + &quot;/&quot; + key + &quot; not found in document&quot;);
-    }
-    return link.getAttribute(&quot;href&quot;);
-  };
-
-  window.HTMLWidgets.dataframeToD3 = function(df) {
-    var names = [];
-    var length;
-    for (var name in df) {
-        if (df.hasOwnProperty(name))
-            names.push(name);
-        if (typeof(df[name]) !== &quot;object&quot; || typeof(df[name].length) === &quot;undefined&quot;) {
-            throw new Error(&quot;All fields must be arrays&quot;);
-        } else if (typeof(length) !== &quot;undefined&quot; &amp;&amp; length !== df[name].length) {
-            throw new Error(&quot;All fields must be arrays of the same length&quot;);
-        }
-        length = df[name].length;
-    }
-    var results = [];
-    var item;
-    for (var row = 0; row &lt; length; row++) {
-        item = {};
-        for (var col = 0; col &lt; names.length; col++) {
-            item[names[col]] = df[names[col]][row];
-        }
-        results.push(item);
-    }
-    return results;
-  };
-
-  window.HTMLWidgets.transposeArray2D = function(array) {
-      if (array.length === 0) return array;
-      var newArray = array[0].map(function(col, i) {
-          return array.map(function(row) {
-              return row[i]
-          })
-      });
-      return newArray;
-  };
-  // Split value at splitChar, but allow splitChar to be escaped
-  // using escapeChar. Any other characters escaped by escapeChar
-  // will be included as usual (including escapeChar itself).
-  function splitWithEscape(value, splitChar, escapeChar) {
-    var results = [];
-    var escapeMode = false;
-    var currentResult = &quot;&quot;;
-    for (var pos = 0; pos &lt; value.length; pos++) {
-      if (!escapeMode) {
-        if (value[pos] === splitChar) {
-          results.push(currentResult);
-          currentResult = &quot;&quot;;
-        } else if (value[pos] === escapeChar) {
-          escapeMode = true;
-        } else {
-          currentResult += value[pos];
-        }
-      } else {
-        currentResult += value[pos];
-        escapeMode = false;
-      }
-    }
-    if (currentResult !== &quot;&quot;) {
-      results.push(currentResult);
-    }
-    return results;
-  }
-  // Function authored by Yihui/JJ Allaire
-  window.HTMLWidgets.evaluateStringMember = function(o, member) {
-    var parts = splitWithEscape(member, &#39;.&#39;, &#39;\\&#39;);
-    for (var i = 0, l = parts.length; i &lt; l; i++) {
-      var part = parts[i];
-      // part may be a character or &#39;numeric&#39; member name
-      if (o !== null &amp;&amp; typeof o === &quot;object&quot; &amp;&amp; part in o) {
-        if (i == (l - 1)) { // if we are at the end of the line then evalulate
-          if (typeof o[part] === &quot;string&quot;)
-            o[part] = tryEval(o[part]);
-        } else { // otherwise continue to next embedded object
-          o = o[part];
-        }
-      }
-    }
-  };
-
-  // Retrieve the HTMLWidget instance (i.e. the return value of an
-  // HTMLWidget binding&#39;s initialize() or factory() function)
-  // associated with an element, or null if none.
-  window.HTMLWidgets.getInstance = function(el) {
-    return elementData(el, &quot;init_result&quot;);
-  };
-
-  // Finds the first element in the scope that matches the selector,
-  // and returns the HTMLWidget instance (i.e. the return value of
-  // an HTMLWidget binding&#39;s initialize() or factory() function)
-  // associated with that element, if any. If no element matches the
-  // selector, or the first matching element has no HTMLWidget
-  // instance associated with it, then null is returned.
-  //
-  // The scope argument is optional, and defaults to window.document.
-  window.HTMLWidgets.find = function(scope, selector) {
-    if (arguments.length == 1) {
-      selector = scope;
-      scope = document;
-    }
-
-    var el = scope.querySelector(selector);
-    if (el === null) {
-      return null;
-    } else {
-      return window.HTMLWidgets.getInstance(el);
-    }
-  };
-
-  // Finds all elements in the scope that match the selector, and
-  // returns the HTMLWidget instances (i.e. the return values of
-  // an HTMLWidget binding&#39;s initialize() or factory() function)
-  // associated with the elements, in an array. If elements that
-  // match the selector don&#39;t have an associated HTMLWidget
-  // instance, the returned array will contain nulls.
-  //
-  // The scope argument is optional, and defaults to window.document.
-  window.HTMLWidgets.findAll = function(scope, selector) {
-    if (arguments.length == 1) {
-      selector = scope;
-      scope = document;
-    }
-
-    var nodes = scope.querySelectorAll(selector);
-    var results = [];
-    for (var i = 0; i &lt; nodes.length; i++) {
-      results.push(window.HTMLWidgets.getInstance(nodes[i]));
-    }
-    return results;
-  };
-
-  var postRenderHandlers = [];
-  function invokePostRenderHandlers() {
-    while (postRenderHandlers.length) {
-      var handler = postRenderHandlers.shift();
-      if (handler) {
-        handler();
-      }
-    }
-  }
-
-  // Register the given callback function to be invoked after the
-  // next time static widgets are rendered.
-  window.HTMLWidgets.addPostRenderHandler = function(callback) {
-    postRenderHandlers.push(callback);
-  };
-
-  // Takes a new-style instance-bound definition, and returns an
-  // old-style class-bound definition. This saves us from having
-  // to rewrite all the logic in this file to accomodate both
-  // types of definitions.
-  function createLegacyDefinitionAdapter(defn) {
-    var result = {
-      name: defn.name,
-      type: defn.type,
-      initialize: function(el, width, height) {
-        return defn.factory(el, width, height);
-      },
-      renderValue: function(el, x, instance) {
-        return instance.renderValue(x);
-      },
-      resize: function(el, width, height, instance) {
-        return instance.resize(width, height);
-      }
-    };
-
-    if (defn.find)
-      result.find = defn.find;
-    if (defn.renderError)
-      result.renderError = defn.renderError;
-    if (defn.clearError)
-      result.clearError = defn.clearError;
-
-    return result;
-  }
-})();
-
-&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">No links have been found while there are scripts, which is an indication that this is a modern web application.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/news.html">https://parisregion.eu/news.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/search-project.html">https://parisregion.eu/search-project.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;a&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4959,7 +1046,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">9</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5040,224 +1127,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/b3conference.html">https://parisregion.eu/b3conference.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/map.html">https://parisregion.eu/map.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/news.html">https://parisregion.eu/news.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/search-project.html">https://parisregion.eu/search-project.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5287,7 +1157,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">9</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5378,7 +1248,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
+						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5409,7 +1279,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
+						<td width="80%"><a href="https://parisregion.eu/robots.txt">https://parisregion.eu/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5524,7 +1394,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
+						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5555,7 +1425,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
+						<td width="80%"><a href="https://parisregion.eu/robots.txt">https://parisregion.eu/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5670,37 +1540,6 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Sec-Fetch-Site</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
 					</tr>
 					<tr>
@@ -5731,7 +1570,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -5816,7 +1655,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
+						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5847,7 +1686,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
+						<td width="80%"><a href="https://parisregion.eu/robots.txt">https://parisregion.eu/robots.txt</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5931,7 +1770,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/ionicons/css/ionicons.min.css">https://parisregion.eu/bower_components/ionicons/css/ionicons.min.css</a></td>
+						<td width="80%"><a href="https://parisregion.eu/">https://parisregion.eu/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5951,18 +1790,18 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">max-age=604800</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%"></td>
+						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.css">https://parisregion.eu/bower_components/owl/owl-carousel/owl.carousel.css</a></td>
+						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5982,74 +1821,12 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">max-age=604800</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/img/favicon.ico">https://parisregion.eu/img/favicon.ico</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=604800</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/img/favicon.png">https://parisregion.eu/img/favicon.png</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=604800</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
+						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
 					</tr>
 				
 					<tr>
@@ -6116,7 +1893,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">6</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -6219,100 +1996,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/discover.html">https://parisregion.eu/discover.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://parisregion.eu/parisregionfp.html">https://parisregion.eu/parisregionfp.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/sitemap.html">https://parisregion.eu/sitemap.html</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://parisregion.eu/study-research.html">https://parisregion.eu/study-research.html</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -6342,7 +2026,7 @@ Mnt;S�2�g,5Rr��g=u�����W*�t����$Q�(�Bg ��
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">5</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
