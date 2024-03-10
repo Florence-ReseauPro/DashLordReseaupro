@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 3 Mar 2024 01:37:52",
+	"@generated": "Sun, 10 Mar 2024 01:37:24",
 	"site":[ 
 		{
 			"@name": "https://www.univ-gustave-eiffel.fr",
@@ -42,7 +42,7 @@
 					"reference": "<p>https://openwall.info/wiki/john/sample-hashes</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1769"
+					"sourceid": "1787"
 				},
 				{
 					"pluginid": "10202",
@@ -95,7 +95,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"form-search-sitewide-top\" \"tx_eiffel_wsgooglesearch[__referrer][@action]\" \"tx_eiffel_wsgooglesearch[__referrer][@controller]\" \"tx_eiffel_wsgooglesearch[__referrer][@extension]\" \"tx_eiffel_wsgooglesearch[__referrer][@request]\" \"tx_eiffel_wsgooglesearch[__referrer][arguments]\" \"tx_eiffel_wsgooglesearch[__trustedProperties]\" ]."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -141,7 +141,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10055",
@@ -162,14 +162,6 @@
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nform-action\n\nThe directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self' 'unsafe-inline' https://www.ifsttar.fr https://plausible.io; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src 'self' https://*.gstatic.com https://static.affluences.media/ data: ; frame-src 'self' https://www.dailymotion.com https://*.esr.gouv.fr https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src 'self' data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src 'self' 'unsafe-inline' https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src 'self' 'unsafe-inline' https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors 'self' https://*.eudonet.com",
-							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nform-action\n\nThe directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -178,13 +170,13 @@
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nform-action\n\nThe directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p><p>form-action</p><p></p><p>The directive(s): form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10055",
@@ -205,14 +197,6 @@
 							"otherinfo": "script-src includes unsafe-eval."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self' 'unsafe-inline' https://www.ifsttar.fr https://plausible.io; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src 'self' https://*.gstatic.com https://static.affluences.media/ data: ; frame-src 'self' https://www.dailymotion.com https://*.esr.gouv.fr https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src 'self' data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src 'self' 'unsafe-inline' https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src 'self' 'unsafe-inline' https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors 'self' https://*.eudonet.com",
-							"otherinfo": "script-src includes unsafe-eval."
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -221,13 +205,13 @@
 							"otherinfo": "script-src includes unsafe-eval."
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>script-src includes unsafe-eval.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10055",
@@ -248,14 +232,6 @@
 							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self' 'unsafe-inline' https://www.ifsttar.fr https://plausible.io; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src 'self' https://*.gstatic.com https://static.affluences.media/ data: ; frame-src 'self' https://www.dailymotion.com https://*.esr.gouv.fr https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src 'self' data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src 'self' 'unsafe-inline' https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src 'self' 'unsafe-inline' https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors 'self' https://*.eudonet.com",
-							"otherinfo": "script-src includes unsafe-inline."
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -264,13 +240,13 @@
 							"otherinfo": "script-src includes unsafe-inline."
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>script-src includes unsafe-inline.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10055",
@@ -291,14 +267,6 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self' 'unsafe-inline' https://www.ifsttar.fr https://plausible.io; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src 'self' https://*.gstatic.com https://static.affluences.media/ data: ; frame-src 'self' https://www.dailymotion.com https://*.esr.gouv.fr https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src 'self' data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src 'self' 'unsafe-inline' https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src 'self' 'unsafe-inline' https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors 'self' https://*.eudonet.com",
-							"otherinfo": "style-src includes unsafe-inline."
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -307,13 +275,13 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10038",
@@ -343,6 +311,30 @@
 						},
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/catalog",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/en/university/support-us/typo3temp/assets/_processed_/e/b/csm_fernier_dominique_2019_fbbd735c7d.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_International/Contributeurs/PARRAINAGE/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/Fran%C3%A7ais",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -398,13 +390,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "9",
+					"count": "12",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "2166"
+					"sourceid": "2128"
 				},
 				{
 					"pluginid": "10098",
@@ -457,7 +449,7 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -503,7 +495,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90003",
@@ -532,14 +524,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/en/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script defer data-domain=\"univ-gustave-eiffel.fr\" src=\"https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js\"></script>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international",
 							"method": "GET",
 							"param": "",
@@ -564,7 +548,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/notre-projet",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script defer data-domain=\"univ-gustave-eiffel.fr\" src=\"https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -594,7 +586,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10003",
@@ -621,7 +613,7 @@
 					"reference": "<p>https://github.com/twbs/bootstrap/issues/20631</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "1144"
+					"sourceid": "1181"
 				},
 				{
 					"pluginid": "10055",
@@ -642,14 +634,6 @@
 							"otherinfo": "Warnings:\nDuplicate host https://my.matterport.com/\nDuplicate host https://*.youtube.com\nDuplicate host https://*.libcast.com\nDuplicate host https://gallery.mailchimp.com/\nDuplicate host https://template.univ-gustave-eiffel.fr\n"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self' 'unsafe-inline' https://www.ifsttar.fr https://plausible.io; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://tarteaucitron.io https://plausible.io https://*.tiktok.com https://*.facebook.net https://public.tableau.com https://*.audiomeans.fr https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://webapi.affluences.com/ https://ajax.googleapis.com/ajax/ https://static.affluences.media/ https://www.google-analytics.com https://platform.twitter.com https://cdn.syndication.twimg.com api-public.addthis.com https://api-public-oci-origin.addthis.com https://*.addthis.com https://v1.addthisedge.com graph.facebook.com https://graph.facebook.com https://z.moatads.com https://widgets.pinterest.com https://vk.com/share.php https://www.odnoklassniki.ru/dk https://connect.ok.ru/dk; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://*.googletagmanager.com https://cdn-eu.readspeaker.com https://static.affluences.media https://platform.twitter.com https://*.twimg.com; font-src 'self' https://*.gstatic.com https://static.affluences.media/ data: ; frame-src 'self' https://www.dailymotion.com https://*.esr.gouv.fr https://*.google.com https://spectremedia.org https://public.tableau.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://*.ephoto.fr https://*.univ-eiffel.fr https://*.univ-gustave-eiffel.fr https://maps.google.fr/ https://static.affluences.media/ https://embed.acast.com https://cdn.theconversation.com https://podcasts.ouest-france.fr https://datawrapper.dwcdn.net https://counter.theconversation.com  https://*.audiomeans.fr https://player.vimeo.com/ https://www.geoportail.gouv.fr/ https://www.facebook.com https://my.matterport.com/ https://*.youtube.com https://*.libcast.com https://clap.univ-eiffel.fr https://haltools.archives-ouvertes.fr https://archives-ouvertes.fr https://*.twitter.com https://www.youtube-nocookie.com http://*.u-pem.fr https://*.u-pem.fr https://*.vimeo.com https://upem.moveonfr.com https://view.genial.ly https://s7.addthis.com; img-src 'self' data: https://*.googletagmanager.com https://modele.univ-gustave-eiffel.fr https://*.tiktok.com https://*.facebook.com https://www.univ-gustave-eiffel.fr https://public.tableau.com https://*.twitter.com https://gallery.mailchimp.com/ https://*.google.fr https://*.google.com https://www.ifsttar.fr/ https://images.theconversation.com https://counter.theconversation.com https://i.ytimg.com https://gallery.mailchimp.com/ https://www.google-analytics.com https://template.univ-gustave-eiffel.fr https://static.affluences.media/ https://template.univ-gustave-eiffel.fr https://ssl.google-analytics.com https://*.twimg.com https://platform.twitter.com https://analytics.google.com https://www.addthis.com; connect-src 'self' 'unsafe-inline' https://plausible.io https://*.tiktok.com https://*.facebook.com https://*.doubleclick.net https://api.countapi.xyz/ https://www.ifsttar.fr https://media-eu.readspeaker.com/ https://app-eu.readspeaker.com/ https://vttts-eu.readspeaker.com/ https://cdn-eu.readspeaker.com/ https://*.googletagmanager.com https://*.google-analytics.com https://ssl.google-analytics.com https://*.analytics.google.com https://www.google.fr https://*.addthis.com https://api-public.addthis.com; media-src 'self' 'unsafe-inline' https://podcast.u-pem.fr https://*.addthis.com https://api-public.addthis.com; frame-ancestors 'self' https://*.eudonet.com",
-							"otherinfo": "Warnings:\nDuplicate host https://my.matterport.com/\nDuplicate host https://*.youtube.com\nDuplicate host https://*.libcast.com\nDuplicate host https://gallery.mailchimp.com/\nDuplicate host https://template.univ-gustave-eiffel.fr\n"
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -658,13 +642,13 @@
 							"otherinfo": "Warnings:\nDuplicate host https://my.matterport.com/\nDuplicate host https://*.youtube.com\nDuplicate host https://*.libcast.com\nDuplicate host https://gallery.mailchimp.com/\nDuplicate host https://template.univ-gustave-eiffel.fr\n"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>Warnings:</p><p>Duplicate host https://my.matterport.com/</p><p>Duplicate host https://*.youtube.com</p><p>Duplicate host https://*.libcast.com</p><p>Duplicate host https://gallery.mailchimp.com/</p><p>Duplicate host https://template.univ-gustave-eiffel.fr</p><p></p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10010",
@@ -677,6 +661,14 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.univ-gustave-eiffel.fr/en/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
+							"method": "POST",
+							"param": "paginationSearch",
+							"attack": "",
+							"evidence": "Set-Cookie: paginationSearch",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.univ-gustave-eiffel.fr/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
 							"method": "POST",
 							"param": "paginationSearch",
@@ -685,13 +677,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1315"
+					"sourceid": "2761"
 				},
 				{
 					"pluginid": "10011",
@@ -703,6 +695,14 @@
 					"riskdesc": "Low (Medium)",
 					"desc": "<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>",
 					"instances":[ 
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/en/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
+							"method": "POST",
+							"param": "paginationSearch",
+							"attack": "",
+							"evidence": "Set-Cookie: paginationSearch",
+							"otherinfo": ""
+						},
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
 							"method": "POST",
@@ -720,13 +720,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
 					"cweid": "614",
 					"wascid": "13",
-					"sourceid": "1315"
+					"sourceid": "2761"
 				},
 				{
 					"pluginid": "10054",
@@ -739,6 +739,14 @@
 					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.univ-gustave-eiffel.fr/en/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
+							"method": "POST",
+							"param": "paginationSearch",
+							"attack": "",
+							"evidence": "Set-Cookie: paginationSearch",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.univ-gustave-eiffel.fr/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
 							"method": "POST",
 							"param": "paginationSearch",
@@ -747,13 +755,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "1315"
+					"sourceid": "2761"
 				},
 				{
 					"pluginid": "10017",
@@ -814,7 +822,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/notre-projet",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
+							"method": "GET",
+							"param": "https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js",
+							"attack": "",
+							"evidence": "<script defer data-domain=\"univ-gustave-eiffel.fr\" src=\"https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
 							"method": "GET",
 							"param": "https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js",
 							"attack": "",
@@ -838,13 +854,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "9",
+					"count": "10",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10110",
@@ -887,7 +903,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1143"
+					"sourceid": "1178"
 				},
 				{
 					"pluginid": "110009",
@@ -917,6 +933,22 @@
 						},
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/catalog",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/Lib/",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/en/university/support-us/typo3temp/assets/_processed_/e/b/csm_fernier_dominique_2019_fbbd735c7d.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/Lib/",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/Fran%C3%A7ais",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -970,15 +1002,23 @@
 							"attack": "",
 							"evidence": "/Lib/",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/week",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/Lib/",
+							"otherinfo": ""
 						}
 					],
-					"count": "9",
+					"count": "12",
 					"solution": "<p>Disable directory browsing in your web server. Refer to the web server documentation.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/attacks/Full_Path_Disclosure</p>",
 					"cweid": "209",
 					"wascid": "13",
-					"sourceid": "2166"
+					"sourceid": "2128"
 				},
 				{
 					"pluginid": "10063",
@@ -1031,7 +1071,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1077,7 +1117,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "2",
@@ -1104,7 +1144,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1980"
+					"sourceid": "2150"
 				},
 				{
 					"pluginid": "10035",
@@ -1118,6 +1158,14 @@
 					"instances":[ 
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/en/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1150,14 +1198,6 @@
 						},
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1203,7 +1243,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10096",
@@ -1216,7 +1256,7 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1224,7 +1264,7 @@
 							"otherinfo": "1542389828, which evaluates to: 2018-11-16 17:37:08"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1232,7 +1272,7 @@
 							"otherinfo": "1566916459, which evaluates to: 2019-08-27 14:34:19"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1240,7 +1280,7 @@
 							"otherinfo": "1588604850, which evaluates to: 2020-05-04 15:07:30"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1248,7 +1288,7 @@
 							"otherinfo": "1619505705, which evaluates to: 2021-04-27 06:41:45"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1256,7 +1296,7 @@
 							"otherinfo": "1622448876, which evaluates to: 2021-05-31 08:14:36"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1264,7 +1304,7 @@
 							"otherinfo": "1622448924, which evaluates to: 2021-05-31 08:15:24"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1272,7 +1312,7 @@
 							"otherinfo": "1679563313, which evaluates to: 2023-03-23 09:21:53"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1280,7 +1320,7 @@
 							"otherinfo": "1683817256, which evaluates to: 2023-05-11 15:00:56"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1288,7 +1328,7 @@
 							"otherinfo": "1683817257, which evaluates to: 2023-05-11 15:00:57"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1296,7 +1336,7 @@
 							"otherinfo": "1688630396, which evaluates to: 2023-07-06 07:59:56"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1304,7 +1344,7 @@
 							"otherinfo": "1697535472, which evaluates to: 2023-10-17 09:37:52"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1312,7 +1352,7 @@
 							"otherinfo": "1701177420, which evaluates to: 2023-11-28 13:17:00"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1320,7 +1360,7 @@
 							"otherinfo": "1709040711, which evaluates to: 2024-02-27 13:31:51"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1328,7 +1368,7 @@
 							"otherinfo": "1709040743, which evaluates to: 2024-02-27 13:32:23"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1336,7 +1376,7 @@
 							"otherinfo": "1709040744, which evaluates to: 2024-02-27 13:32:24"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1344,7 +1384,7 @@
 							"otherinfo": "1709040745, which evaluates to: 2024-02-27 13:32:25"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1352,7 +1392,7 @@
 							"otherinfo": "1709040746, which evaluates to: 2024-02-27 13:32:26"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1360,7 +1400,7 @@
 							"otherinfo": "1709040747, which evaluates to: 2024-02-27 13:32:27"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1368,7 +1408,7 @@
 							"otherinfo": "1709040748, which evaluates to: 2024-02-27 13:32:28"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1376,7 +1416,7 @@
 							"otherinfo": "1709040749, which evaluates to: 2024-02-27 13:32:29"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1384,7 +1424,7 @@
 							"otherinfo": "1709040750, which evaluates to: 2024-02-27 13:32:30"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1392,28 +1432,28 @@
 							"otherinfo": "1709040751, which evaluates to: 2024-02-27 13:32:31"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709386349",
-							"otherinfo": "1709386349, which evaluates to: 2024-03-02 13:32:29"
+							"evidence": "1709991161",
+							"otherinfo": "1709991161, which evaluates to: 2024-03-09 13:32:41"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709386350",
-							"otherinfo": "1709386350, which evaluates to: 2024-03-02 13:32:30"
+							"evidence": "1709991167",
+							"otherinfo": "1709991167, which evaluates to: 2024-03-09 13:32:47"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1709386351",
-							"otherinfo": "1709386351, which evaluates to: 2024-03-02 13:32:31"
+							"evidence": "1709991168",
+							"otherinfo": "1709991168, which evaluates to: 2024-03-09 13:32:48"
 						}
 					],
 					"count": "25",
@@ -1422,7 +1462,7 @@
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "11"
 				},
 				{
 					"pluginid": "10021",
@@ -1521,7 +1561,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10094",
@@ -1582,14 +1622,6 @@
 							"otherinfo": "\uFFFD\u0729\uFFFDw(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u8973\uFFFD\uFFFD\uFFFDw\uFFFDE\uFFFD(\uFFFD\uFFFD\\x001e\uFFFD\uFFFD\uFFFDnX\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD?}\uFFFD\uFFFDr\uFFFD"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/typo3conf/ext/wseils_usine/Resources/Public/Images/favicon",
-							"otherinfo": "\uFFFD\u0729\uFFFDw(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u8973\uFFFD\uFFFD\uFFFDw\uFFFDE\uFFFD(\uFFFD\uFFFD\\x001e\uFFFD\uFFFD\uFFFDnX\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD?}\uFFFD\uFFFDr\uFFFD"
-						},
-						{
 							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/notre-implantation-nationale",
 							"method": "GET",
 							"param": "",
@@ -1622,13 +1654,13 @@
 							"otherinfo": "\uFFFD\u0729\uFFFDw(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u8973\uFFFD\uFFFD\uFFFDw\uFFFDE\uFFFD(\uFFFD\uFFFD\\x001e\uFFFD\uFFFD\uFFFDnX\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD?}\uFFFD\uFFFDr\uFFFD"
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFD\u0729\uFFFDw(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u8973\uFFFD\uFFFD\uFFFDw\uFFFDE\uFFFD(\uFFFD\uFFFD\\x001e\uFFFD\uFFFD\uFFFDnX\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD?}\uFFFD\uFFFDr\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10019",
@@ -1655,7 +1687,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "1120"
+					"sourceid": "1140"
 				},
 				{
 					"pluginid": "10027",
@@ -1669,6 +1701,14 @@
 					"instances":[ 
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "select",
+							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script src=\"/typo3conf/ext/eiffel/Resources/Public/Js/jquery-nice-select/jquery.nice-select.min.js?1683817256\" type=\"text/javas\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/en/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1701,14 +1741,6 @@
 						},
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script src=\"/typo3conf/ext/eiffel/Resources/Public/Js/jquery-nice-select/jquery.nice-select.min.js?1683817256\" type=\"text/javas\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1754,7 +1786,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10109",
@@ -1861,7 +1893,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10049",
@@ -1914,7 +1946,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts/nos-plateformes-scientifiques",
+							"uri": "https://www.univ-gustave-eiffel.fr/luniversite/nos-atouts",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1944,7 +1976,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10015",
@@ -2043,7 +2075,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "4"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90005",
@@ -2056,7 +2088,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
+							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -2064,7 +2096,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -2072,13 +2112,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -2091,7 +2131,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
+							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -2099,7 +2139,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -2107,13 +2155,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -2126,7 +2174,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
+							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -2134,7 +2182,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -2142,13 +2198,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -2161,7 +2217,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/",
+							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -2169,7 +2225,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux",
+							"uri": "https://www.univ-gustave-eiffel.fr/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.univ-gustave-eiffel.fr/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -2177,13 +2241,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "4"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10112",
@@ -2200,73 +2264,33 @@
 							"method": "POST",
 							"param": "fe_typo_user",
 							"attack": "",
-							"evidence": "3b5ee3f81ba86c15bed7ab6a7af8c1af.640d2cb6b3ef19a5d644a54b5ebd828c55f6d85d227fd2fe1342024a8d0186cf",
+							"evidence": "42d9c4cc1bc4e754ac38e97cb6a8140b.2c12fa359dd84c58f84b29cffba9751df6416bf2d7f05099b5e9f3d76db15117",
 							"otherinfo": "\ncookie:fe_typo_user"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/_processed_/0/4",
-							"method": "GET",
+							"uri": "https://www.univ-gustave-eiffel.fr/search?cHash=bca08b83a04078da90f60164b92802cd&tx_eiffel_wsgooglesearch%5Bcontroller%5D=GoogleSearch",
+							"method": "POST",
 							"param": "fe_typo_user",
 							"attack": "",
-							"evidence": "3b5ee3f81ba86c15bed7ab6a7af8c1af.640d2cb6b3ef19a5d644a54b5ebd828c55f6d85d227fd2fe1342024a8d0186cf",
+							"evidence": "86ab2fdcf303ab00c2dd9559102117c5.eb693ca7fcb1cdce001fa8c622dbafee939f2d2b1263fabfc7d364857cd1bb43",
 							"otherinfo": "\ncookie:fe_typo_user"
 						},
 						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/_processed_/d/0",
+							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Formation/Contributeurs/DOCUMENTS_REGLEMENTAIRES/REGLEMENTS_JURYS/Reglement_des_jurys_2022-2023.zip",
 							"method": "GET",
 							"param": "fe_typo_user",
 							"attack": "",
-							"evidence": "3b5ee3f81ba86c15bed7ab6a7af8c1af.640d2cb6b3ef19a5d644a54b5ebd828c55f6d85d227fd2fe1342024a8d0186cf",
-							"otherinfo": "\ncookie:fe_typo_user"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Universite/COM/LOGOS/Construction/logo-egis-redim.jpg",
-							"method": "GET",
-							"param": "fe_typo_user",
-							"attack": "",
-							"evidence": "3b5ee3f81ba86c15bed7ab6a7af8c1af.640d2cb6b3ef19a5d644a54b5ebd828c55f6d85d227fd2fe1342024a8d0186cf",
-							"otherinfo": "\ncookie:fe_typo_user"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Universite/COM/LOGOS/Construction/logo-VICAT-redim.jpg",
-							"method": "GET",
-							"param": "fe_typo_user",
-							"attack": "",
-							"evidence": "3b5ee3f81ba86c15bed7ab6a7af8c1af.640d2cb6b3ef19a5d644a54b5ebd828c55f6d85d227fd2fe1342024a8d0186cf",
-							"otherinfo": "\ncookie:fe_typo_user"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Universite/COM/LOGOS/Energie/logo-EDF-redim.jpg",
-							"method": "GET",
-							"param": "fe_typo_user",
-							"attack": "",
-							"evidence": "3b5ee3f81ba86c15bed7ab6a7af8c1af.640d2cb6b3ef19a5d644a54b5ebd828c55f6d85d227fd2fe1342024a8d0186cf",
-							"otherinfo": "\ncookie:fe_typo_user"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Universite/COM/LOGOS/Transport",
-							"method": "GET",
-							"param": "fe_typo_user",
-							"attack": "",
-							"evidence": "3b5ee3f81ba86c15bed7ab6a7af8c1af.640d2cb6b3ef19a5d644a54b5ebd828c55f6d85d227fd2fe1342024a8d0186cf",
-							"otherinfo": "\ncookie:fe_typo_user"
-						},
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/UniversiteGustaveEiffel/REP_Universite/COM/LOGOS/Transport/logo-sncf-redim.jpg",
-							"method": "GET",
-							"param": "fe_typo_user",
-							"attack": "",
-							"evidence": "3b5ee3f81ba86c15bed7ab6a7af8c1af.640d2cb6b3ef19a5d644a54b5ebd828c55f6d85d227fd2fe1342024a8d0186cf",
+							"evidence": "42d9c4cc1bc4e754ac38e97cb6a8140b.2c12fa359dd84c58f84b29cffba9751df6416bf2d7f05099b5e9f3d76db15117",
 							"otherinfo": "\ncookie:fe_typo_user"
 						}
 					],
-					"count": "8",
+					"count": "3",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:fe_typo_user</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1315"
+					"sourceid": "1335"
 				},
 				{
 					"pluginid": "10049",
@@ -2301,7 +2325,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "160"
+					"sourceid": "11"
 				},
 				{
 					"pluginid": "10031",
@@ -2392,7 +2416,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1315"
+					"sourceid": "1333"
 				}
 			]
 		}
