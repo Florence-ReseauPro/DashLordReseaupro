@@ -32,9 +32,9 @@
       "extracted-results": [
         "lb.univ-paris13.fr."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 5212\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 5212\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t1584\tIN\tCNAME\tlb.univ-paris13.fr.\n",
-      "timestamp": "2024-02-04T01:56:47.02962671Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 56910\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 56910\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t6985\tIN\tCNAME\tlb.univ-paris13.fr.\n",
+      "timestamp": "2024-03-17T01:49:41.212228555Z",
       "matcher-status": true
     },
     {
@@ -69,9 +69,9 @@
       "type": "dns",
       "host": "www.univ-paris13.fr.",
       "matched-at": "www.univ-paris13.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 56457\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 56457\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t7200\tIN\tCNAME\tlb.univ-paris13.fr.\n\n;; AUTHORITY SECTION:\nuniv-paris13.fr.\t1800\tIN\tSOA\tdns1.univ-paris13.fr. hostmaster.univ-paris13.fr. 2024013001 21600 3600 604800 86400\n",
-      "timestamp": "2024-02-04T01:56:47.194768893Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 3090\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 3090\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t7200\tIN\tCNAME\tlb.univ-paris13.fr.\n\n;; AUTHORITY SECTION:\nuniv-paris13.fr.\t7200\tIN\tSOA\tdns1.univ-paris13.fr. hostmaster.univ-paris13.fr. 2024031302 21600 3600 604800 86400\n",
+      "timestamp": "2024-03-17T01:49:41.643093179Z",
       "matcher-status": true
     },
     {
@@ -105,8 +105,8 @@
       "host": "www.univ-paris13.fr:443",
       "matched-at": "www.univ-paris13.fr:443",
       "request": "2E",
-      "ip": "81.194.43.212",
-      "timestamp": "2024-02-04T02:00:49.598574094Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2024-03-17T01:54:31.697818743Z",
       "matcher-status": true
     },
     {
@@ -135,8 +135,8 @@
       "extracted-results": [
         "Sectigo Limited"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2024-02-04T02:00:54.607881627Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2024-03-17T01:54:40.398775985Z",
       "matcher-status": true
     },
     {
@@ -165,8 +165,8 @@
       "extracted-results": [
         "*.univ-paris13.fr"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2024-02-04T02:00:54.608014494Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2024-03-17T01:54:40.398918709Z",
       "matcher-status": true
     },
     {
@@ -186,7 +186,7 @@
         ],
         "description": "Checks a sites certificate to see if there are wildcard CN or SAN entries.\n",
         "reference": [
-          "https://cheatsheetseries.owasp.org/cheatsheets/transport_layer_protection_cheat_sheet.html#carefully-consider-the-use-of-wildcard-certificates"
+          "https://cheatsheetseries.owasp.org/cheatsheets/transport_layer_security_cheat_sheet.html#carefully-consider-the-use-of-wildcard-certificates"
         ],
         "severity": "info",
         "metadata": {
@@ -200,8 +200,8 @@
         "CN: *.univ-paris13.fr",
         " SAN: [*.univ-paris13.fr]"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2024-02-04T02:00:54.608056051Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2024-03-17T01:54:40.398970526Z",
       "matcher-status": true
     },
     {
@@ -231,8 +231,8 @@
       "extracted-results": [
         "tls12"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2024-02-04T02:00:58.296651095Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2024-03-17T01:54:43.87875672Z",
       "matcher-status": true
     },
     {
@@ -262,8 +262,8 @@
       "extracted-results": [
         "tls13"
       ],
-      "ip": "81.194.43.212",
-      "timestamp": "2024-02-04T02:00:58.544063858Z",
+      "ip": "81.194.43.211",
+      "timestamp": "2024-03-17T01:54:44.228252179Z",
       "matcher-status": true
     }
   ]
