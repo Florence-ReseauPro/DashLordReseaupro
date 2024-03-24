@@ -3,7 +3,7 @@
   "cookies": [
     {
       "name": "JSESSIONID",
-      "value": "A6ED496FD60A62BDFF11AC0DB27A35E3",
+      "value": "6EBFDEBF4855DE143BAA0089E1E37ACB",
       "domain": "www.parisnanterre.fr",
       "path": "/",
       "expires": -1,
@@ -20,7 +20,7 @@
     "connection": "Keep-Alive",
     "content-language": "en-US",
     "content-type": "text/html;charset=UTF-8",
-    "date": "Sun, 17 Mar 2024 02:29:33 GMT",
+    "date": "Sun, 24 Mar 2024 03:00:14 GMT",
     "keep-alive": "timeout=5, max=99",
     "server": "Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48",
     "transfer-encoding": "chunked"
@@ -30,6 +30,19 @@
       "hostname": "www.parisnanterre.fr",
       "ip": "193.50.151.174",
       "geoip": {
+        "city": {
+          "geoname_id": 2990999,
+          "names": {
+            "de": "Nancy",
+            "en": "Nancy",
+            "es": "Nancy",
+            "fr": "Nancy",
+            "ja": "ナンシー",
+            "pt-BR": "Nancy",
+            "ru": "Нанси",
+            "zh-CN": "南希"
+          }
+        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -60,10 +73,13 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
-          "latitude": 48.8582,
-          "longitude": 2.3387,
+          "accuracy_radius": 100,
+          "latitude": 48.6822,
+          "longitude": 6.1862,
           "time_zone": "Europe/Paris"
+        },
+        "postal": {
+          "code": "54000"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -79,7 +95,36 @@
             "ru": "Франция",
             "zh-CN": "法国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 11071622,
+            "iso_code": "GES",
+            "names": {
+              "de": "Grand Est",
+              "en": "Grand Est",
+              "es": "Gran Este",
+              "fr": "Grand Est",
+              "ja": "グラン・テスト地域圏",
+              "pt-BR": "Grande Leste",
+              "ru": "Гранд-Эст"
+            }
+          },
+          {
+            "geoname_id": 2994111,
+            "iso_code": "54",
+            "names": {
+              "de": "Meurthe-et-Moselle",
+              "en": "Meurthe et Moselle",
+              "es": "Meurthe y Mosela",
+              "fr": "Meurthe-et-Moselle",
+              "ja": "ムルト＝エ＝モゼル県",
+              "pt-BR": "Meurthe-et-Moselle",
+              "ru": "Мёрт и Мозель",
+              "zh-CN": "默尔特-摩泽尔省"
+            }
+          }
+        ]
       }
     }
   ]
