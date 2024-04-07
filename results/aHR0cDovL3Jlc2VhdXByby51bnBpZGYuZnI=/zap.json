@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 31 Mar 2024 01:00:19",
+	"@generated": "Sun, 7 Apr 2024 01:00:00",
 	"site":[ 
 		{
 			"@name": "http://reseaupro.unpidf.fr",
@@ -9,33 +9,6 @@
 			"@port": "80",
 			"@ssl": "false",
 			"alerts": [ 
-				{
-					"pluginid": "10062",
-					"alertRef": "10062",
-					"alert": "PII Disclosure",
-					"name": "PII Disclosure",
-					"riskcode": "3",
-					"confidence": "3",
-					"riskdesc": "High (High)",
-					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
-					"instances":[ 
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/page/3",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "30258846200200",
-							"otherinfo": "Credit Card Type detected: DinersClub\nBank Identification Number: 302588\nBrand: DISCOVER\nCategory: BUSINESS CARD\nIssuer: DINERS CLUB INTERNATIONAL"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Check the response for the potential presence of personally identifiable information (PII), ensure nothing sensitive is leaked by the application.</p>",
-					"otherinfo": "<p>Credit Card Type detected: DinersClub</p><p>Bank Identification Number: 302588</p><p>Brand: DISCOVER</p><p>Category: BUSINESS CARD</p><p>Issuer: DINERS CLUB INTERNATIONAL</p>",
-					"reference": "",
-					"cweid": "359",
-					"wascid": "13",
-					"sourceid": "194"
-				},
 				{
 					"pluginid": "10038",
 					"alertRef": "10038-1",
@@ -111,14 +84,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "",
@@ -143,13 +108,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10020",
@@ -194,6 +159,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -226,14 +199,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/49",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -256,7 +221,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90003",
@@ -301,22 +266,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/etudiants",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link href=\"https://fonts.googleapis.com/css?family=Roboto:400,500,700,900\" rel=\"stylesheet\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/etudiants",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800' rel='stylesheet' type='text/css'>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/partenaires",
 							"method": "GET",
 							"param": "",
@@ -326,22 +275,6 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/inscription/partenaires",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800' rel='stylesheet' type='text/css'>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link href=\"https://fonts.googleapis.com/css?family=Roboto:400,500,700,900\" rel=\"stylesheet\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -365,7 +298,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -373,7 +306,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -381,13 +314,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "14",
+					"count": "10",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10003",
@@ -446,7 +379,7 @@
 					"reference": "<p>https://github.com/advisories/GHSA-m7j4-fhg6-xf5v</p><p>https://cdn.datatables.net/1.11.3/</p><p>https://github.com/advisories/GHSA-h73q-5wmj-q8pj</p><p>https://cdn.datatables.net/1.10.23/</p><p>https://github.com/DataTables/DataTablesSrc/commit/a51cbe99fd3d02aa5582f97d4af1615d11a1ea03</p><p>https://github.com/DataTables/Dist-DataTables/commit/59a8d3f8a3c1138ab08704e783bc52bfe88d7c9b</p><p>https://cdn.datatables.net/1.10.22/</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "160"
+					"sourceid": "170"
 				},
 				{
 					"pluginid": "10010",
@@ -559,7 +492,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "182"
+					"sourceid": "177"
 				},
 				{
 					"pluginid": "10063",
@@ -666,7 +599,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10037",
@@ -743,6 +676,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/5.4.45-0+deb7u14",
+							"otherinfo": ""
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
 							"method": "GET",
 							"param": "",
@@ -767,7 +708,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress \"X-Powered-By\" headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</p><p>https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
@@ -826,7 +767,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -834,7 +775,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -963,7 +904,7 @@
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10021",
@@ -977,14 +918,6 @@
 					"instances":[ 
 						{
 							"uri": "http://reseaupro.unpidf.fr",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/images/pcu/favicon.ico",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1025,6 +958,14 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1113,7 +1054,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "175"
+					"sourceid": "171"
 				},
 				{
 					"pluginid": "10094",
@@ -1142,12 +1083,12 @@
 							"otherinfo": "\uFFFD\\x001az{kz\uFFFD\uFFFD\uFFFD?\uFFFDw\uFFFDI\uFFFD\uFFFDk\uFFFD\u01FF\uFFFD\uFFFD\u079E\uFFFD\u07A6\uFFFD\uFFFD{\uFFFDt\u07EF"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/page/1",
+							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/page/2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "php/entreprises/infosEntreprise/id_entreprise/10368",
-							"otherinfo": "\uFFFD\\x001az{kz\uFFFD\uFFFD\uFFFD?\uFFFDw\uFFFDI\uFFFD\uFFFDk\uFFFD\u01FF\uFFFD\uFFFD\u079E\uFFFD\u07A6\uFFFD\uFFFD{\uFFFDt\u07EF"
+							"evidence": "php/entreprises/infosEntreprise/id_entreprise/11510",
+							"otherinfo": "\uFFFD\\x001az{kz\uFFFD\uFFFD\uFFFD?\uFFFDw\uFFFDI\uFFFD\uFFFDk\uFFFD\u01FF\uFFFD\uFFFD\u079E\uFFFD\u07A6\uFFFD\uFFFD{\uFFFDu\uFFFD]"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises/index/raison_sociale/ReseauPro+Portail+Entreprise",
@@ -1273,6 +1214,14 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"<!-- User -->\", see evidence field for the suspicious comment/snippet."
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "User",
+							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"<!-- User -->\", see evidence field for the suspicious comment/snippet."
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
 							"method": "GET",
 							"param": "",
@@ -1298,14 +1247,6 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "User",
-							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in the element starting with: \"<!-- User -->\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1380,6 +1321,14 @@
 							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
 						},
 						{
+							"uri": "http://reseaupro.unpidf.fr/index.php/inscriptionpartenaire/requestPassword",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript><p><img src=\"//statistiques.anasiege.net/piwik.php?idsite=4\" style=\"border:0;\" alt=\"\" /></p></noscript>",
+							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
+						},
+						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
 							"method": "GET",
 							"param": "",
@@ -1405,14 +1354,6 @@
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/47",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript><p><img src=\"//statistiques.anasiege.net/piwik.php?idsite=4\" style=\"border:0;\" alt=\"\" /></p></noscript>",
-							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/48",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1495,7 +1436,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/162",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1503,7 +1444,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/193",
+							"uri": "http://reseaupro.unpidf.fr/index.php/page/rubrique/id/46",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1533,7 +1474,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1722,7 +1663,7 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "3c0cp3aq31o0eu2klj7cgclal4",
+							"evidence": "05a8do9ecnc14a483f3vovfsi3",
 							"otherinfo": "\ncookie:symfony"
 						},
 						{
@@ -1730,15 +1671,7 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "ldn5nie6317sttr496bu64ncv6",
-							"otherinfo": "\ncookie:symfony"
-						},
-						{
-							"uri": "http://reseaupro.unpidf.fr/css/datatables.min.css",
-							"method": "GET",
-							"param": "symfony",
-							"attack": "",
-							"evidence": "3c0cp3aq31o0eu2klj7cgclal4",
+							"evidence": "nokgapnu1r83lgojh9foe4a0n3",
 							"otherinfo": "\ncookie:symfony"
 						},
 						{
@@ -1746,7 +1679,15 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "3c0cp3aq31o0eu2klj7cgclal4",
+							"evidence": "05a8do9ecnc14a483f3vovfsi3",
+							"otherinfo": "\ncookie:symfony"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/js/jquery-ui.js",
+							"method": "GET",
+							"param": "symfony",
+							"attack": "",
+							"evidence": "05a8do9ecnc14a483f3vovfsi3",
 							"otherinfo": "\ncookie:symfony"
 						},
 						{
@@ -1754,11 +1695,19 @@
 							"method": "GET",
 							"param": "symfony",
 							"attack": "",
-							"evidence": "3c0cp3aq31o0eu2klj7cgclal4",
+							"evidence": "05a8do9ecnc14a483f3vovfsi3",
+							"otherinfo": "\ncookie:symfony"
+						},
+						{
+							"uri": "http://reseaupro.unpidf.fr/js/jquery.dataTables.js",
+							"method": "GET",
+							"param": "symfony",
+							"attack": "",
+							"evidence": "05a8do9ecnc14a483f3vovfsi3",
 							"otherinfo": "\ncookie:symfony"
 						}
 					],
-					"count": "5",
+					"count": "6",
 					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
 					"otherinfo": "<p></p><p>cookie:symfony</p>",
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>",
@@ -1817,7 +1766,7 @@
 							"param": "_csrf_token",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://reseaupro.unpidf.fr/index.php/entreprises\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n_csrf_token=7a989076c79b409c57726e8f79d10cff\n\nThe user-controlled value was:\n7a989076c79b409c57726e8f79d10cff"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://reseaupro.unpidf.fr/index.php/entreprises\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n_csrf_token=047cd825f4da50c79bff1f7b3dbc0dd8\n\nThe user-controlled value was:\n047cd825f4da50c79bff1f7b3dbc0dd8"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises",
@@ -1833,7 +1782,7 @@
 							"param": "nbre_lignes",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://reseaupro.unpidf.fr/index.php/entreprises\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\nnbre_lignes=20\n\nThe user-controlled value was:\n20"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://reseaupro.unpidf.fr/index.php/entreprises\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\nnbre_lignes=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises",
@@ -1844,20 +1793,12 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://reseaupro.unpidf.fr/index.php/entreprises\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\nraison_sociale=ZAP\n\nThe user-controlled value was:\nzap"
 						},
 						{
-							"uri": "http://reseaupro.unpidf.fr/index.php/entreprises",
-							"method": "POST",
-							"param": "raz",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://reseaupro.unpidf.fr/index.php/entreprises\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\nraz=R\u00E9initialiser\n\nThe user-controlled value was:\nr\u00E9initialiser"
-						},
-						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/user/login",
 							"method": "POST",
 							"param": "_csrf_token",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://reseaupro.unpidf.fr/index.php/user/login\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n_csrf_token=7a989076c79b409c57726e8f79d10cff\n\nThe user-controlled value was:\n7a989076c79b409c57726e8f79d10cff"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://reseaupro.unpidf.fr/index.php/user/login\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\n_csrf_token=047cd825f4da50c79bff1f7b3dbc0dd8\n\nThe user-controlled value was:\n047cd825f4da50c79bff1f7b3dbc0dd8"
 						},
 						{
 							"uri": "http://reseaupro.unpidf.fr/index.php/user/login",
@@ -1884,13 +1825,13 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttp://reseaupro.unpidf.fr/index.php/user/login\n\nappears to include user input in: \n\na(n) [input] tag [value] attribute \n\nThe user input found was:\npassword=ZAP\n\nThe user-controlled value was:\nzap"
 						}
 					],
-					"count": "9",
+					"count": "8",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=7a989076c79b409c57726e8f79d10cff</p><p></p><p>The user-controlled value was:</p><p>7a989076c79b409c57726e8f79d10cff</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>http://reseaupro.unpidf.fr/index.php/entreprises</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [input] tag [value] attribute </p><p></p><p>The user input found was:</p><p>_csrf_token=047cd825f4da50c79bff1f7b3dbc0dd8</p><p></p><p>The user-controlled value was:</p><p>047cd825f4da50c79bff1f7b3dbc0dd8</p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "190"
+					"sourceid": "200"
 				}
 			]
 		}
