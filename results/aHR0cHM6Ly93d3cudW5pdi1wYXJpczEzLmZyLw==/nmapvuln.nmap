@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Apr 28 01:29:34 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-paris13.fr
+# Nmap 7.92 scan initiated Sun May  5 01:45:36 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-paris13.fr
 Nmap scan report for www.univ-paris13.fr (81.194.43.211)
-Host is up (0.082s latency).
+Host is up (0.10s latency).
 Other addresses for www.univ-paris13.fr (not scanned): 81.194.43.212
 rDNS record for 81.194.43.211: lb.univ-paris13.fr
 Not shown: 998 filtered tcp ports (no-response)
@@ -28,89 +28,88 @@ PORT     STATE SERVICE       VERSION
 |   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, RPCCheck, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|   FourOhFourRequest, HTTPOptions: 
+|   FourOhFourRequest: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 28 Apr 2024 01:29:55 GMT
+|     Date: Sun, 05 May 2024 01:45:59 GMT
 |     Missing Host header
-|   GetRequest: 
+|   GetRequest, HTTPOptions: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 28 Apr 2024 01:29:54 GMT
+|     Date: Sun, 05 May 2024 01:45:58 GMT
 |     Missing Host header
 |   RTSPRequest: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 28 Apr 2024 01:30:01 GMT
+|     Date: Sun, 05 May 2024 01:46:05 GMT
 |_    Missing Host header
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=4/28%Time=662DA692%P=x86_64-alpine-linux
-SF:-musl%r(GetRequest,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\nca
-SF:che-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><bo
-SF:dy><h1>503\x20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20availa
-SF:ble\x20to\x20handle\x20this\x20request\.\n</body></html>\n\n")%r(HTTPOp
-SF:tions,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\ncache-control:\
-SF:x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><body><h1>503\x2
-SF:0Service\x20Unavailable</h1>\nNo\x20server\x20is\x20available\x20to\x20
-SF:handle\x20this\x20request\.\n</body></html>\n\n")%r(FourOhFourRequest,C
-SF:2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\ncache-control:\x20no-c
-SF:ache\r\ncontent-type:\x20text/html\r\n\r\n<html><body><h1>503\x20Servic
-SF:e\x20Unavailable</h1>\nNo\x20server\x20is\x20available\x20to\x20handle\
-SF:x20this\x20request\.\n</body></html>\n\n")%r(tor-versions,CF,"HTTP/1\.1
-SF:\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x2
-SF:0no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n
-SF:<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\x20
-SF:an\x20invalid\x20request\.\n</body></html>\n")%r(RTSPRequest,CF,"HTTP/1
-SF:\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:
-SF:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\
-SF:r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\
-SF:x20an\x20invalid\x20request\.\n</body></html>\n")%r(RPCCheck,CF,"HTTP/1
-SF:\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:
-SF:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\
-SF:r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\
-SF:x20an\x20invalid\x20request\.\n</body></html>\n")%r(DNSVersionBindReqTC
-SF:P,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCa
-SF:che-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20te
-SF:xt/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20brow
-SF:ser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n")%r(DNSStat
-SF:usRequestTCP,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\
-SF:x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-
-SF:Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nY
-SF:our\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n"
-SF:);
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=5/5%Time=6636E4D6%P=x86_64-alpine-linux-
+SF:musl%r(GetRequest,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\ncac
+SF:he-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><bod
+SF:y><h1>503\x20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20availab
+SF:le\x20to\x20handle\x20this\x20request\.\n</body></html>\n\n")%r(HTTPOpt
+SF:ions,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\ncache-control:\x
+SF:20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><body><h1>503\x20
+SF:Service\x20Unavailable</h1>\nNo\x20server\x20is\x20available\x20to\x20h
+SF:andle\x20this\x20request\.\n</body></html>\n\n")%r(FourOhFourRequest,C2
+SF:,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\ncache-control:\x20no-ca
+SF:che\r\ncontent-type:\x20text/html\r\n\r\n<html><body><h1>503\x20Service
+SF:\x20Unavailable</h1>\nNo\x20server\x20is\x20available\x20to\x20handle\x
+SF:20this\x20request\.\n</body></html>\n\n")%r(tor-versions,CF,"HTTP/1\.1\
+SF:x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20
+SF:no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<
+SF:html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\x20a
+SF:n\x20invalid\x20request\.\n</body></html>\n")%r(RTSPRequest,CF,"HTTP/1\
+SF:.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\
+SF:x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r
+SF:\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\x
+SF:20an\x20invalid\x20request\.\n</body></html>\n")%r(RPCCheck,CF,"HTTP/1\
+SF:.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\
+SF:x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r
+SF:\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\x
+SF:20an\x20invalid\x20request\.\n</body></html>\n")%r(DNSVersionBindReqTCP
+SF:,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCac
+SF:he-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20tex
+SF:t/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20brows
+SF:er\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n")%r(DNSStatu
+SF:sRequestTCP,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x
+SF:2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-T
+SF:ype:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYo
+SF:ur\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=4/28%Time=662DA692%P=x86_64-alpine-linu
-SF:x-musl%r(GetRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnectio
-SF:n:\x20close\r\nDate:\x20Sun,\x2028\x20Apr\x202024\x2001:29:54\x20GMT\r\
-SF:n\r\nMissing\x20Host\x20header")%r(HTTPOptions,67,"HTTP/1\.1\x20400\x20
-SF:Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Sun,\x2028\x20Apr\x2
-SF:02024\x2001:29:55\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(FourOhFou
-SF:rRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close
-SF:\r\nDate:\x20Sun,\x2028\x20Apr\x202024\x2001:29:55\x20GMT\r\n\r\nMissin
-SF:g\x20Host\x20header")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Requ
-SF:est\r\nConnection:\x20close\r\nDate:\x20Sun,\x2028\x20Apr\x202024\x2001
-SF::30:01\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(RPCCheck,2F,"HTTP/1\
-SF:.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSVers
-SF:ionBindReqTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20
-SF:close\r\n\r\n")%r(DNSStatusRequestTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Re
-SF:quest\r\nConnection:\x20close\r\n\r\n")%r(Help,2F,"HTTP/1\.1\x20400\x20
-SF:Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(SSLSessionReq,2F,"HT
-SF:TP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(Te
-SF:rminalServerCookie,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection
-SF::\x20close\r\n\r\n")%r(TLSSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Req
-SF:uest\r\nConnection:\x20close\r\n\r\n")%r(Kerberos,2F,"HTTP/1\.1\x20400\
-SF:x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(SMBProgNeg,2F,"HT
-SF:TP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(X1
-SF:1Probe,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r
-SF:\n\r\n")%r(LPDString,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnecti
-SF:on:\x20close\r\n\r\n")%r(LDAPSearchReq,2F,"HTTP/1\.1\x20400\x20Bad\x20R
-SF:equest\r\nConnection:\x20close\r\n\r\n")%r(LDAPBindReq,2F,"HTTP/1\.1\x2
-SF:0400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(SIPOptions,2
-SF:F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")
-SF:%r(LANDesk-RC,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20
-SF:close\r\n\r\n")%r(TerminalServer,2F,"HTTP/1\.1\x20400\x20Bad\x20Request
-SF:\r\nConnection:\x20close\r\n\r\n");
+SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=5/5%Time=6636E4D6%P=x86_64-alpine-linux
+SF:-musl%r(GetRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection
+SF::\x20close\r\nDate:\x20Sun,\x2005\x20May\x202024\x2001:45:58\x20GMT\r\n
+SF:\r\nMissing\x20Host\x20header")%r(HTTPOptions,67,"HTTP/1\.1\x20400\x20B
+SF:ad\x20Request\r\nConnection:\x20close\r\nDate:\x20Sun,\x2005\x20May\x20
+SF:2024\x2001:45:58\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(FourOhFour
+SF:Request,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\
+SF:r\nDate:\x20Sun,\x2005\x20May\x202024\x2001:45:59\x20GMT\r\n\r\nMissing
+SF:\x20Host\x20header")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\nConnection:\x20close\r\nDate:\x20Sun,\x2005\x20May\x202024\x2001:
+SF:46:05\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(RPCCheck,2F,"HTTP/1\.
+SF:1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSVersi
+SF:onBindReqTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20c
+SF:lose\r\n\r\n")%r(DNSStatusRequestTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Req
+SF:uest\r\nConnection:\x20close\r\n\r\n")%r(Help,2F,"HTTP/1\.1\x20400\x20B
+SF:ad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(SSLSessionReq,2F,"HTT
+SF:P/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(Ter
+SF:minalServerCookie,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:
+SF:\x20close\r\n\r\n")%r(TLSSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Requ
+SF:est\r\nConnection:\x20close\r\n\r\n")%r(Kerberos,2F,"HTTP/1\.1\x20400\x
+SF:20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(SMBProgNeg,2F,"HTT
+SF:P/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(X11
+SF:Probe,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\
+SF:n\r\n")%r(LPDString,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnectio
+SF:n:\x20close\r\n\r\n")%r(LDAPSearchReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\nConnection:\x20close\r\n\r\n")%r(LDAPBindReq,2F,"HTTP/1\.1\x20
+SF:400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(SIPOptions,2F
+SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%
+SF:r(LANDesk-RC,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20c
+SF:lose\r\n\r\n")%r(TerminalServer,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\nConnection:\x20close\r\n\r\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Apr 28 01:30:12 2024 -- 1 IP address (1 host up) scanned in 38.77 seconds
+# Nmap done at Sun May  5 01:46:19 2024 -- 1 IP address (1 host up) scanned in 42.68 seconds
