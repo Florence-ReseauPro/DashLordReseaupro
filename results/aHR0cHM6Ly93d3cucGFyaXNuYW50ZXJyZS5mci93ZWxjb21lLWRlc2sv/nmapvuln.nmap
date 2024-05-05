@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Apr 21 01:20:49 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.parisnanterre.fr
+# Nmap 7.92 scan initiated Sun May  5 01:35:00 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.parisnanterre.fr
 Nmap scan report for www.parisnanterre.fr (193.50.151.174)
-Host is up (0.083s latency).
+Host is up (0.15s latency).
 rDNS record for 193.50.151.174: ksupapp21.u-paris10.fr
 Not shown: 997 filtered tcp ports (no-response)
 PORT     STATE  SERVICE    VERSION
@@ -86,6 +86,7 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2022-28615	6.4	https://vulners.com/cve/CVE-2022-28615
 |     	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
 |     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2017-12171	6.4	https://vulners.com/cve/CVE-2017-12171
 |     	CVE-2019-10097	6.0	https://vulners.com/cve/CVE-2019-10097
 |     	CVE-2019-0217	6.0	https://vulners.com/cve/CVE-2019-0217
 |     	CVE-2019-0215	6.0	https://vulners.com/cve/CVE-2019-0215
@@ -218,6 +219,7 @@ PORT     STATE  SERVICE    VERSION
 |     	B0A9E5E8-7CCC-5984-9922-A89F11D6BF38	0.0	https://vulners.com/githubexploit/B0A9E5E8-7CCC-5984-9922-A89F11D6BF38	*EXPLOIT*
 |_    	45D138AD-BEC6-552A-91EA-8816914CA7F4	0.0	https://vulners.com/githubexploit/45D138AD-BEC6-552A-91EA-8816914CA7F4	*EXPLOIT*
 443/tcp  open   ssl/http   Apache httpd 2.4.37 ((Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48)
+|_http-server-header: Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48
 | vulners: 
 |   cpe:/a:apache:http_server:2.4.37: 
 |     	CVE-2019-9517	7.8	https://vulners.com/cve/CVE-2019-9517
@@ -298,6 +300,7 @@ PORT     STATE  SERVICE    VERSION
 |     	CVE-2022-28615	6.4	https://vulners.com/cve/CVE-2022-28615
 |     	CVE-2021-44224	6.4	https://vulners.com/cve/CVE-2021-44224
 |     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2017-12171	6.4	https://vulners.com/cve/CVE-2017-12171
 |     	CVE-2019-10097	6.0	https://vulners.com/cve/CVE-2019-10097
 |     	CVE-2019-0217	6.0	https://vulners.com/cve/CVE-2019-0217
 |     	CVE-2019-0215	6.0	https://vulners.com/cve/CVE-2019-0215
@@ -429,8 +432,7 @@ PORT     STATE  SERVICE    VERSION
 |     	PACKETSTORM:152441	0.0	https://vulners.com/packetstorm/PACKETSTORM:152441	*EXPLOIT*
 |     	B0A9E5E8-7CCC-5984-9922-A89F11D6BF38	0.0	https://vulners.com/githubexploit/B0A9E5E8-7CCC-5984-9922-A89F11D6BF38	*EXPLOIT*
 |_    	45D138AD-BEC6-552A-91EA-8816914CA7F4	0.0	https://vulners.com/githubexploit/45D138AD-BEC6-552A-91EA-8816914CA7F4	*EXPLOIT*
-|_http-server-header: Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1g mod_jk/1.2.48
 9090/tcp closed zeus-admin
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Apr 21 01:21:10 2024 -- 1 IP address (1 host up) scanned in 21.79 seconds
+# Nmap done at Sun May  5 01:35:32 2024 -- 1 IP address (1 host up) scanned in 31.58 seconds
