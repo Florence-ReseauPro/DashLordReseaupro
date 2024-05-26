@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln reseaupro.unpidf.fr</pre>
-<p class="lead">Sun May 19 01:03:56 2024 – Sun May 19 01:04:13 2024<br>1 hosts scanned.
+<p class="lead">Sun May 26 01:01:08 2024 – Sun May 26 01:03:34 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,9 +76,9 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>193.51.86.242</td>
+<td>192.33.182.242</td>
 <td>reseaupro.unpidf.fr</td>
-<td>5</td>
+<td>4</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#193-51-86-242"><h3 class="panel-title">193.51.86.242 - reseaupro.unpidf.fr</h3></div>
-<div class="panel-body collapse in" id="193-51-86-242">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#192-33-182-242"><h3 class="panel-title">192.33.182.242 - reseaupro.unpidf.fr</h3></div>
+<div class="panel-body collapse in" id="192-33-182-242">
 <h4>Hostnames</h4>
 <ul>
 <li>reseaupro.unpidf.fr (user)</li>
-<li>reseaupro.unpidf.fr (PTR)</li>
+<li>prod.unif.fr (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -114,180 +114,37 @@
 <td title="Port">22</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">ssh</td>
-<td title="Product">OpenSSH</td>
-<td title="Version">6.0p1 Debian 4+deb7u7</td>
-<td title="Extra Info">protocol 2.0</td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:openbsd:openssh:6.0p1">cpe:/a:openbsd:openssh:6.0p1</a><h5>vulners</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  cpe:/a:openbsd:openssh:6.0p1: 
-    	PRION:CVE-2015-5600	8.5	https://vulners.com/prion/PRION:CVE-2015-5600
-    	CVE-2015-5600	8.5	https://vulners.com/cve/CVE-2015-5600
-    	SSV:92672	7.8	https://vulners.com/seebug/SSV:92672	*EXPLOIT*
-    	PRION:CVE-2017-5850	7.8	https://vulners.com/prion/PRION:CVE-2017-5850
-    	EDB-ID:41278	7.8	https://vulners.com/exploitdb/EDB-ID:41278	*EXPLOIT*
-    	1337DAY-ID-26918	7.8	https://vulners.com/zdt/1337DAY-ID-26918	*EXPLOIT*
-    	1337DAY-ID-26888	7.8	https://vulners.com/zdt/1337DAY-ID-26888	*EXPLOIT*
-    	SSV:61450	7.5	https://vulners.com/seebug/SSV:61450	*EXPLOIT*
-    	PRION:CVE-2020-16088	7.5	https://vulners.com/prion/PRION:CVE-2020-16088
-    	PRION:CVE-2017-1000372	7.5	https://vulners.com/prion/PRION:CVE-2017-1000372
-    	PRION:CVE-2014-1692	7.5	https://vulners.com/prion/PRION:CVE-2014-1692
-    	EDB-ID:42271	7.5	https://vulners.com/exploitdb/EDB-ID:42271	*EXPLOIT*
-    	CVE-2014-1692	7.5	https://vulners.com/cve/CVE-2014-1692
-    	PRION:CVE-2019-19726	7.2	https://vulners.com/prion/PRION:CVE-2019-19726
-    	MSF:EXPLOIT-OPENBSD-LOCAL-DYNAMIC_LOADER_CHPASS_PRIVESC-	7.2	https://vulners.com/metasploit/MSF:EXPLOIT-OPENBSD-LOCAL-DYNAMIC_LOADER_CHPASS_PRIVESC-	*EXPLOIT*
-    	EDB-ID:47803	7.2	https://vulners.com/exploitdb/EDB-ID:47803	*EXPLOIT*
-    	EDB-ID:47780	7.2	https://vulners.com/exploitdb/EDB-ID:47780	*EXPLOIT*
-    	1337DAY-ID-39095	7.2	https://vulners.com/zdt/1337DAY-ID-39095	*EXPLOIT*
-    	PRION:CVE-2015-6564	6.9	https://vulners.com/prion/PRION:CVE-2015-6564
-    	CVE-2015-6564	6.9	https://vulners.com/cve/CVE-2015-6564
-    	CVE-2020-15778	6.8	https://vulners.com/cve/CVE-2020-15778
-    	C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	6.8	https://vulners.com/githubexploit/C94132FD-1FA5-5342-B6EE-0DAF45EEFFE3	*EXPLOIT*
-    	10213DBE-F683-58BB-B6D3-353173626207	6.8	https://vulners.com/githubexploit/10213DBE-F683-58BB-B6D3-353173626207	*EXPLOIT*
-    	PRION:CVE-2017-1000373	6.4	https://vulners.com/prion/PRION:CVE-2017-1000373
-    	SSV:61911	5.8	https://vulners.com/seebug/SSV:61911	*EXPLOIT*
-    	PRION:CVE-2014-2653	5.8	https://vulners.com/prion/PRION:CVE-2014-2653
-    	PRION:CVE-2014-2532	5.8	https://vulners.com/prion/PRION:CVE-2014-2532
-    	CVE-2014-2653	5.8	https://vulners.com/cve/CVE-2014-2653
-    	CVE-2014-2532	5.8	https://vulners.com/cve/CVE-2014-2532
-    	SSV:60656	5.0	https://vulners.com/seebug/SSV:60656	*EXPLOIT*
-    	PRION:CVE-2019-8460	5.0	https://vulners.com/prion/PRION:CVE-2019-8460
-    	PRION:CVE-2010-5107	5.0	https://vulners.com/prion/PRION:CVE-2010-5107
-    	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
-    	CVE-2010-5107	5.0	https://vulners.com/cve/CVE-2010-5107
-    	CVE-2010-4816	5.0	https://vulners.com/cve/CVE-2010-4816
-    	SSV:90447	4.6	https://vulners.com/seebug/SSV:90447	*EXPLOIT*
-    	PACKETSTORM:140944	0.0	https://vulners.com/packetstorm/PACKETSTORM:140944	*EXPLOIT*</pre>
-</td></tr>
-<tr class="success">
-<td title="Port">80</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http</td>
-<td title="Product">Apache httpd</td>
-<td title="Version">2.2.22</td>
-<td title="Extra Info">(Debian)</td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server:2.2.22">cpe:/a:apache:http_server:2.2.22</a><h5>vulners</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  cpe:/a:apache:http_server:2.2.22: 
-    	CVE-2017-7679	7.5	https://vulners.com/cve/CVE-2017-7679
-    	CVE-2017-3169	7.5	https://vulners.com/cve/CVE-2017-3169
-    	CVE-2017-3167	7.5	https://vulners.com/cve/CVE-2017-3167
-    	SSV:60427	6.9	https://vulners.com/seebug/SSV:60427	*EXPLOIT*
-    	SSV:60386	6.9	https://vulners.com/seebug/SSV:60386	*EXPLOIT*
-    	SSV:60069	6.9	https://vulners.com/seebug/SSV:60069	*EXPLOIT*
-    	CVE-2012-0883	6.9	https://vulners.com/cve/CVE-2012-0883
-    	PACKETSTORM:127546	6.8	https://vulners.com/packetstorm/PACKETSTORM:127546	*EXPLOIT*
-    	CVE-2016-5387	6.8	https://vulners.com/cve/CVE-2016-5387
-    	CVE-2014-0226	6.8	https://vulners.com/cve/CVE-2014-0226
-    	1337DAY-ID-22451	6.8	https://vulners.com/zdt/1337DAY-ID-22451	*EXPLOIT*
-    	CVE-2017-9788	6.4	https://vulners.com/cve/CVE-2017-9788
-    	CVE-2017-12171	6.4	https://vulners.com/cve/CVE-2017-12171
-    	SSV:60788	5.1	https://vulners.com/seebug/SSV:60788	*EXPLOIT*
-    	CVE-2013-1862	5.1	https://vulners.com/cve/CVE-2013-1862
-    	SSV:96537	5.0	https://vulners.com/seebug/SSV:96537	*EXPLOIT*
-    	SSV:62058	5.0	https://vulners.com/seebug/SSV:62058	*EXPLOIT*
-    	SSV:61874	5.0	https://vulners.com/seebug/SSV:61874	*EXPLOIT*
-    	F7F6E599-CEF4-5E03-8E10-FE18C4101E38	5.0	https://vulners.com/githubexploit/F7F6E599-CEF4-5E03-8E10-FE18C4101E38	*EXPLOIT*
-    	EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	*EXPLOIT*
-    	EDB-ID:42745	5.0	https://vulners.com/exploitdb/EDB-ID:42745	*EXPLOIT*
-    	E5C174E5-D6E8-56E0-8403-D287DE52EB3F	5.0	https://vulners.com/githubexploit/E5C174E5-D6E8-56E0-8403-D287DE52EB3F	*EXPLOIT*
-    	DB6E1BBD-08B1-574D-A351-7D6BB9898A4A	5.0	https://vulners.com/githubexploit/DB6E1BBD-08B1-574D-A351-7D6BB9898A4A	*EXPLOIT*
-    	CVE-2023-31122	5.0	https://vulners.com/cve/CVE-2023-31122
-    	CVE-2017-9798	5.0	https://vulners.com/cve/CVE-2017-9798
-    	CVE-2016-8743	5.0	https://vulners.com/cve/CVE-2016-8743
-    	CVE-2015-3183	5.0	https://vulners.com/cve/CVE-2015-3183
-    	CVE-2014-0231	5.0	https://vulners.com/cve/CVE-2014-0231
-    	CVE-2014-0098	5.0	https://vulners.com/cve/CVE-2014-0098
-    	CVE-2013-6438	5.0	https://vulners.com/cve/CVE-2013-6438
-    	CVE-2013-5704	5.0	https://vulners.com/cve/CVE-2013-5704
-    	B0208442-6E17-5772-B12D-B5BE30FA5540	5.0	https://vulners.com/githubexploit/B0208442-6E17-5772-B12D-B5BE30FA5540	*EXPLOIT*
-    	A820A056-9F91-5059-B0BC-8D92C7A31A52	5.0	https://vulners.com/githubexploit/A820A056-9F91-5059-B0BC-8D92C7A31A52	*EXPLOIT*
-    	9814661A-35A4-5DB7-BB25-A1040F365C81	5.0	https://vulners.com/githubexploit/9814661A-35A4-5DB7-BB25-A1040F365C81	*EXPLOIT*
-    	5A864BCC-B490-5532-83AB-2E4109BB3C31	5.0	https://vulners.com/githubexploit/5A864BCC-B490-5532-83AB-2E4109BB3C31	*EXPLOIT*
-    	1337DAY-ID-28573	5.0	https://vulners.com/zdt/1337DAY-ID-28573	*EXPLOIT*
-    	SSV:60905	4.3	https://vulners.com/seebug/SSV:60905	*EXPLOIT*
-    	SSV:60657	4.3	https://vulners.com/seebug/SSV:60657	*EXPLOIT*
-    	SSV:60653	4.3	https://vulners.com/seebug/SSV:60653	*EXPLOIT*
-    	SSV:60345	4.3	https://vulners.com/seebug/SSV:60345	*EXPLOIT*</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache/2.2.22 (Debian)</pre>
-</td></tr>
-<tr class="success">
-<td title="Port">443</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http</td>
-<td title="Product">Apache httpd</td>
-<td title="Version">2.2.22</td>
-<td title="Extra Info">(Debian)</td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server:2.2.22">cpe:/a:apache:http_server:2.2.22</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache/2.2.22 (Debian)</pre>
-<h5>vulners</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  cpe:/a:apache:http_server:2.2.22: 
-    	CVE-2017-7679	7.5	https://vulners.com/cve/CVE-2017-7679
-    	CVE-2017-3169	7.5	https://vulners.com/cve/CVE-2017-3169
-    	CVE-2017-3167	7.5	https://vulners.com/cve/CVE-2017-3167
-    	SSV:60427	6.9	https://vulners.com/seebug/SSV:60427	*EXPLOIT*
-    	SSV:60386	6.9	https://vulners.com/seebug/SSV:60386	*EXPLOIT*
-    	SSV:60069	6.9	https://vulners.com/seebug/SSV:60069	*EXPLOIT*
-    	CVE-2012-0883	6.9	https://vulners.com/cve/CVE-2012-0883
-    	PACKETSTORM:127546	6.8	https://vulners.com/packetstorm/PACKETSTORM:127546	*EXPLOIT*
-    	CVE-2016-5387	6.8	https://vulners.com/cve/CVE-2016-5387
-    	CVE-2014-0226	6.8	https://vulners.com/cve/CVE-2014-0226
-    	1337DAY-ID-22451	6.8	https://vulners.com/zdt/1337DAY-ID-22451	*EXPLOIT*
-    	CVE-2017-9788	6.4	https://vulners.com/cve/CVE-2017-9788
-    	CVE-2017-12171	6.4	https://vulners.com/cve/CVE-2017-12171
-    	SSV:60788	5.1	https://vulners.com/seebug/SSV:60788	*EXPLOIT*
-    	CVE-2013-1862	5.1	https://vulners.com/cve/CVE-2013-1862
-    	SSV:96537	5.0	https://vulners.com/seebug/SSV:96537	*EXPLOIT*
-    	SSV:62058	5.0	https://vulners.com/seebug/SSV:62058	*EXPLOIT*
-    	SSV:61874	5.0	https://vulners.com/seebug/SSV:61874	*EXPLOIT*
-    	F7F6E599-CEF4-5E03-8E10-FE18C4101E38	5.0	https://vulners.com/githubexploit/F7F6E599-CEF4-5E03-8E10-FE18C4101E38	*EXPLOIT*
-    	EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	5.0	https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D	*EXPLOIT*
-    	EDB-ID:42745	5.0	https://vulners.com/exploitdb/EDB-ID:42745	*EXPLOIT*
-    	E5C174E5-D6E8-56E0-8403-D287DE52EB3F	5.0	https://vulners.com/githubexploit/E5C174E5-D6E8-56E0-8403-D287DE52EB3F	*EXPLOIT*
-    	DB6E1BBD-08B1-574D-A351-7D6BB9898A4A	5.0	https://vulners.com/githubexploit/DB6E1BBD-08B1-574D-A351-7D6BB9898A4A	*EXPLOIT*
-    	CVE-2023-31122	5.0	https://vulners.com/cve/CVE-2023-31122
-    	CVE-2017-9798	5.0	https://vulners.com/cve/CVE-2017-9798
-    	CVE-2016-8743	5.0	https://vulners.com/cve/CVE-2016-8743
-    	CVE-2015-3183	5.0	https://vulners.com/cve/CVE-2015-3183
-    	CVE-2014-0231	5.0	https://vulners.com/cve/CVE-2014-0231
-    	CVE-2014-0098	5.0	https://vulners.com/cve/CVE-2014-0098
-    	CVE-2013-6438	5.0	https://vulners.com/cve/CVE-2013-6438
-    	CVE-2013-5704	5.0	https://vulners.com/cve/CVE-2013-5704
-    	B0208442-6E17-5772-B12D-B5BE30FA5540	5.0	https://vulners.com/githubexploit/B0208442-6E17-5772-B12D-B5BE30FA5540	*EXPLOIT*
-    	A820A056-9F91-5059-B0BC-8D92C7A31A52	5.0	https://vulners.com/githubexploit/A820A056-9F91-5059-B0BC-8D92C7A31A52	*EXPLOIT*
-    	9814661A-35A4-5DB7-BB25-A1040F365C81	5.0	https://vulners.com/githubexploit/9814661A-35A4-5DB7-BB25-A1040F365C81	*EXPLOIT*
-    	5A864BCC-B490-5532-83AB-2E4109BB3C31	5.0	https://vulners.com/githubexploit/5A864BCC-B490-5532-83AB-2E4109BB3C31	*EXPLOIT*
-    	1337DAY-ID-28573	5.0	https://vulners.com/zdt/1337DAY-ID-28573	*EXPLOIT*
-    	SSV:60905	4.3	https://vulners.com/seebug/SSV:60905	*EXPLOIT*
-    	SSV:60657	4.3	https://vulners.com/seebug/SSV:60657	*EXPLOIT*
-    	SSV:60653	4.3	https://vulners.com/seebug/SSV:60653	*EXPLOIT*
-    	SSV:60345	4.3	https://vulners.com/seebug/SSV:60345	*EXPLOIT*</pre>
-</td></tr>
-<tr class="success">
-<td title="Port">1556</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">veritas_pbx</td>
+<td title="Service">tcpwrapped</td>
 <td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 <tr class="success">
-<td title="Port">13782</td>
+<td title="Port">25</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">netbackup</td>
+<td title="Service">tcpwrapped</td>
+<td title="Product"></td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
+<tr class="success">
+<td title="Port">80</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">tcpwrapped</td>
+<td title="Product"></td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
+<tr class="success">
+<td title="Port">443</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">tcpwrapped</td>
 <td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
@@ -311,50 +168,40 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>193.51.86.242 - reseaupro.unpidf.fr</td>
+<td>192.33.182.242 - reseaupro.unpidf.fr</td>
 <td>22</td>
 <td>tcp</td>
-<td>ssh</td>
-<td>OpenSSH</td>
-<td>6.0p1 Debian 4+deb7u7</td>
-<td>cpe:/a:openbsd:openssh:6.0p1</td>
-<td>protocol 2.0</td>
+<td>tcpwrapped</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>193.51.86.242 - reseaupro.unpidf.fr</td>
+<td>192.33.182.242 - reseaupro.unpidf.fr</td>
+<td>25</td>
+<td>tcp</td>
+<td>tcpwrapped</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>192.33.182.242 - reseaupro.unpidf.fr</td>
 <td>80</td>
 <td>tcp</td>
-<td>http</td>
-<td>Apache httpd</td>
-<td>2.2.22</td>
-<td>cpe:/a:apache:http_server:2.2.22</td>
-<td>(Debian)</td>
+<td>tcpwrapped</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>193.51.86.242 - reseaupro.unpidf.fr</td>
+<td>192.33.182.242 - reseaupro.unpidf.fr</td>
 <td>443</td>
 <td>tcp</td>
-<td>http</td>
-<td>Apache httpd</td>
-<td>2.2.22</td>
-<td>cpe:/a:apache:http_server:2.2.22</td>
-<td>(Debian)</td>
-</tr>
-<tr>
-<td>193.51.86.242 - reseaupro.unpidf.fr</td>
-<td>1556</td>
-<td>tcp</td>
-<td>veritas_pbx</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>193.51.86.242 - reseaupro.unpidf.fr</td>
-<td>13782</td>
-<td>tcp</td>
-<td>netbackup</td>
+<td>tcpwrapped</td>
 <td></td>
 <td></td>
 <td></td>
