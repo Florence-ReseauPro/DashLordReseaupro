@@ -1,43 +1,6 @@
 [
   [
     {
-      "template": "dns/dns-saas-service-detection.yaml",
-      "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
-      "template-id": "dns-saas-service-detection",
-      "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
-      "info": {
-        "name": "DNS SaaS Service Detection",
-        "author": [
-          "noah @thesubtlety",
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "service"
-        ],
-        "description": "A CNAME DNS record was discovered",
-        "reference": [
-          "https://ns1.com/resources/cname",
-          "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
-          "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "type": "dns",
-      "host": "www.univ-paris13.fr.",
-      "matched-at": "www.univ-paris13.fr",
-      "extracted-results": [
-        "lb.univ-paris13.fr."
-      ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 42813\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 42813\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t60\tIN\tCNAME\tlb.univ-paris13.fr.\n",
-      "timestamp": "2024-06-02T01:53:06.941640987Z",
-      "matcher-status": true
-    },
-    {
       "template": "dns/caa-fingerprint.yaml",
       "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
       "template-id": "caa-fingerprint",
@@ -69,9 +32,46 @@
       "type": "dns",
       "host": "www.univ-paris13.fr.",
       "matched-at": "www.univ-paris13.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 28615\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 28615\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t60\tIN\tCNAME\tlb.univ-paris13.fr.\n\n;; AUTHORITY SECTION:\nuniv-paris13.fr.\t60\tIN\tSOA\tdns1.univ-paris13.fr. hostmaster.univ-paris13.fr. 2024052401 21600 3600 604800 86400\n",
-      "timestamp": "2024-06-02T01:53:07.005547465Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 47229\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 47229\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t60\tIN\tCNAME\tlb.univ-paris13.fr.\n\n;; AUTHORITY SECTION:\nuniv-paris13.fr.\t60\tIN\tSOA\tdns1.univ-paris13.fr. hostmaster.univ-paris13.fr. 2024060601 21600 3600 604800 86400\n",
+      "timestamp": "2024-06-09T01:54:30.493247298Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/dns-saas-service-detection.yaml",
+      "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
+      "template-id": "dns-saas-service-detection",
+      "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
+      "info": {
+        "name": "DNS SaaS Service Detection",
+        "author": [
+          "noah @thesubtlety",
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "service"
+        ],
+        "description": "A CNAME DNS record was discovered",
+        "reference": [
+          "https://ns1.com/resources/cname",
+          "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+          "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "dns",
+      "host": "www.univ-paris13.fr.",
+      "matched-at": "www.univ-paris13.fr",
+      "extracted-results": [
+        "lb.univ-paris13.fr."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 46880\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 46880\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.univ-paris13.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.univ-paris13.fr.\t60\tIN\tCNAME\tlb.univ-paris13.fr.\n",
+      "timestamp": "2024-06-09T01:54:31.406278268Z",
       "matcher-status": true
     },
     {
@@ -90,7 +90,8 @@
           "c2",
           "ir",
           "osint",
-          "cti"
+          "cti",
+          "tcp"
         ],
         "description": "Detect C2 Servers with JARM Hashes\n",
         "reference": [
@@ -106,7 +107,7 @@
       "matched-at": "www.univ-paris13.fr:443",
       "request": "2E",
       "ip": "81.194.43.212",
-      "timestamp": "2024-06-02T01:57:49.918149684Z",
+      "timestamp": "2024-06-09T01:58:23.331318243Z",
       "matcher-status": true
     },
     {
@@ -136,7 +137,7 @@
         "Sectigo Limited"
       ],
       "ip": "81.194.43.212",
-      "timestamp": "2024-06-02T01:57:50.71736917Z",
+      "timestamp": "2024-06-09T01:58:40.873476207Z",
       "matcher-status": true
     },
     {
@@ -166,7 +167,7 @@
         "*.univ-paris13.fr"
       ],
       "ip": "81.194.43.212",
-      "timestamp": "2024-06-02T01:57:50.717490326Z",
+      "timestamp": "2024-06-09T01:58:40.873599588Z",
       "matcher-status": true
     },
     {
@@ -197,11 +198,11 @@
       "host": "www.univ-paris13.fr",
       "matched-at": "www.univ-paris13.fr:443",
       "extracted-results": [
-        " SAN: [*.univ-paris13.fr]",
-        "CN: *.univ-paris13.fr"
+        "CN: *.univ-paris13.fr",
+        " SAN: [*.univ-paris13.fr]"
       ],
       "ip": "81.194.43.212",
-      "timestamp": "2024-06-02T01:57:50.717537083Z",
+      "timestamp": "2024-06-09T01:58:40.87364396Z",
       "matcher-status": true
     },
     {
@@ -232,7 +233,7 @@
         "tls12"
       ],
       "ip": "81.194.43.212",
-      "timestamp": "2024-06-02T01:57:51.714796141Z",
+      "timestamp": "2024-06-09T01:58:42.558842393Z",
       "matcher-status": true
     },
     {
@@ -263,7 +264,7 @@
         "tls13"
       ],
       "ip": "81.194.43.212",
-      "timestamp": "2024-06-02T01:57:51.971286246Z",
+      "timestamp": "2024-06-09T01:58:42.815765614Z",
       "matcher-status": true
     }
   ]
