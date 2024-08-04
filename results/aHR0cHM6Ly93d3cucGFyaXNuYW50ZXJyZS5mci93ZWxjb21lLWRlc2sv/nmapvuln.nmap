@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Jul 28 01:42:33 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.parisnanterre.fr
+# Nmap 7.92 scan initiated Sun Aug  4 01:33:20 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.parisnanterre.fr
 Nmap scan report for www.parisnanterre.fr (193.50.151.174)
-Host is up (0.14s latency).
+Host is up (0.10s latency).
 rDNS record for 193.50.151.174: ksupapp21.u-paris10.fr
 Not shown: 997 filtered tcp ports (no-response)
 PORT     STATE  SERVICE    VERSION
@@ -8,7 +8,6 @@ PORT     STATE  SERVICE    VERSION
 | vulners: 
 |   cpe:/a:apache:http_server:2.4.37: 
 |     	F607361B-6369-5DF5-9B29-E90FA29DC565	9.8	https://vulners.com/githubexploit/F607361B-6369-5DF5-9B29-E90FA29DC565	*EXPLOIT*
-|     	EDB-ID:51193	9.8	https://vulners.com/exploitdb/EDB-ID:51193	*EXPLOIT*
 |     	CVE-2023-25690	9.8	https://vulners.com/cve/CVE-2023-25690
 |     	CVE-2022-31813	9.8	https://vulners.com/cve/CVE-2022-31813
 |     	CVE-2022-23943	9.8	https://vulners.com/cve/CVE-2022-23943
@@ -34,7 +33,6 @@ PORT     STATE  SERVICE    VERSION
 |     	4373C92A-2755-5538-9C91-0469C995AA9B	9.0	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
 |     	36618CA8-9316-59CA-B748-82F15F407C4F	9.0	https://vulners.com/githubexploit/36618CA8-9316-59CA-B748-82F15F407C4F	*EXPLOIT*
 |     	CVE-2021-44224	8.2	https://vulners.com/cve/CVE-2021-44224
-|     	EDB-ID:46676	7.8	https://vulners.com/exploitdb/EDB-ID:46676	*EXPLOIT*
 |     	CVE-2019-0211	7.8	https://vulners.com/cve/CVE-2019-0211
 |     	PACKETSTORM:176334	7.5	https://vulners.com/packetstorm/PACKETSTORM:176334	*EXPLOIT*
 |     	PACKETSTORM:171631	7.5	https://vulners.com/packetstorm/PACKETSTORM:171631	*EXPLOIT*
@@ -99,7 +97,6 @@ PORT     STATE  SERVICE    VERSION
 | vulners: 
 |   cpe:/a:apache:http_server:2.4.37: 
 |     	F607361B-6369-5DF5-9B29-E90FA29DC565	9.8	https://vulners.com/githubexploit/F607361B-6369-5DF5-9B29-E90FA29DC565	*EXPLOIT*
-|     	EDB-ID:51193	9.8	https://vulners.com/exploitdb/EDB-ID:51193	*EXPLOIT*
 |     	CVE-2023-25690	9.8	https://vulners.com/cve/CVE-2023-25690
 |     	CVE-2022-31813	9.8	https://vulners.com/cve/CVE-2022-31813
 |     	CVE-2022-23943	9.8	https://vulners.com/cve/CVE-2022-23943
@@ -125,7 +122,6 @@ PORT     STATE  SERVICE    VERSION
 |     	4373C92A-2755-5538-9C91-0469C995AA9B	9.0	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
 |     	36618CA8-9316-59CA-B748-82F15F407C4F	9.0	https://vulners.com/githubexploit/36618CA8-9316-59CA-B748-82F15F407C4F	*EXPLOIT*
 |     	CVE-2021-44224	8.2	https://vulners.com/cve/CVE-2021-44224
-|     	EDB-ID:46676	7.8	https://vulners.com/exploitdb/EDB-ID:46676	*EXPLOIT*
 |     	CVE-2019-0211	7.8	https://vulners.com/cve/CVE-2019-0211
 |     	PACKETSTORM:176334	7.5	https://vulners.com/packetstorm/PACKETSTORM:176334	*EXPLOIT*
 |     	PACKETSTORM:171631	7.5	https://vulners.com/packetstorm/PACKETSTORM:171631	*EXPLOIT*
@@ -187,4 +183,4 @@ PORT     STATE  SERVICE    VERSION
 9090/tcp closed zeus-admin
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jul 28 01:42:58 2024 -- 1 IP address (1 host up) scanned in 25.81 seconds
+# Nmap done at Sun Aug  4 01:33:43 2024 -- 1 IP address (1 host up) scanned in 22.98 seconds
