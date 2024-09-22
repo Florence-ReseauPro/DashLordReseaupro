@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln reseaupro.unpidf.fr</pre>
-<p class="lead">Sun Sep 15 01:16:40 2024 – Sun Sep 15 01:34:16 2024<br>1 hosts scanned.
+<p class="lead">Sun Sep 22 01:17:06 2024 – Sun Sep 22 01:34:02 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -171,16 +171,51 @@
     server is available to handle this request.
     &lt;/body&gt;&lt;/html&gt;</pre>
 </td></tr>
+<tr class="active">
+<td>993</td>
+<td>tcp</td>
+<td>closed<br>reset</td>
+<td>imaps</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr class="success">
-<td title="Port">993</td>
+<td title="Port">8443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">imaps</td>
+<td title="Service">https-alt</td>
 <td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, RPCCheck, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+  FourOhFourRequest: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Date: Sun, 22 Sep 2024 01:33:38 GMT
+    Missing Host header
+  GetRequest: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Date: Sun, 22 Sep 2024 01:33:36 GMT
+    Missing Host header
+  HTTPOptions: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Date: Sun, 22 Sep 2024 01:33:37 GMT
+    Missing Host header
+  RTSPRequest: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Date: Sun, 22 Sep 2024 01:33:44 GMT
+    Missing Host header</pre>
+</td></tr>
 </tbody>
 </table></div>
 </div>
@@ -220,9 +255,9 @@
 </tr>
 <tr>
 <td>81.194.43.212 - reseaupro.unpidf.fr</td>
-<td>993</td>
+<td>8443</td>
 <td>tcp</td>
-<td>imaps</td>
+<td>https-alt</td>
 <td></td>
 <td></td>
 <td></td>
