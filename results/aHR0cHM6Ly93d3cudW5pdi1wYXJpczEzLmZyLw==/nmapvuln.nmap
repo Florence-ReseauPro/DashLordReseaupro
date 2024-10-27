@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Oct 20 01:57:14 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-paris13.fr
+# Nmap 7.92 scan initiated Sun Oct 27 02:09:09 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.univ-paris13.fr
 Nmap scan report for www.univ-paris13.fr (81.194.43.211)
-Host is up (0.081s latency).
+Host is up (0.15s latency).
 Other addresses for www.univ-paris13.fr (not scanned): 81.194.43.212
 rDNS record for 81.194.43.211: lb.univ-paris13.fr
 Not shown: 998 filtered tcp ports (no-response)
@@ -28,24 +28,29 @@ PORT     STATE SERVICE       VERSION
 |   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, RPCCheck, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|   FourOhFourRequest, HTTPOptions: 
+|   FourOhFourRequest: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 20 Oct 2024 01:57:38 GMT
+|     Date: Sun, 27 Oct 2024 02:09:35 GMT
 |     Missing Host header
 |   GetRequest: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 20 Oct 2024 01:57:37 GMT
+|     Date: Sun, 27 Oct 2024 02:09:33 GMT
+|     Missing Host header
+|   HTTPOptions: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Date: Sun, 27 Oct 2024 02:09:34 GMT
 |     Missing Host header
 |   RTSPRequest: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 20 Oct 2024 01:57:44 GMT
+|     Date: Sun, 27 Oct 2024 02:09:41 GMT
 |_    Missing Host header
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=10/20%Time=67146392%P=x86_64-alpine-linu
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=10/27%Time=671DA0DE%P=x86_64-alpine-linu
 SF:x-musl%r(GetRequest,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\nc
 SF:ache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><b
 SF:ody><h1>503\x20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20avail
@@ -80,17 +85,17 @@ SF:-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\n
 SF:Your\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n
 SF:");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=10/20%Time=67146392%P=x86_64-alpine-lin
+SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=10/27%Time=671DA0DE%P=x86_64-alpine-lin
 SF:ux-musl%r(GetRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnecti
-SF:on:\x20close\r\nDate:\x20Sun,\x2020\x20Oct\x202024\x2001:57:37\x20GMT\r
+SF:on:\x20close\r\nDate:\x20Sun,\x2027\x20Oct\x202024\x2002:09:33\x20GMT\r
 SF:\n\r\nMissing\x20Host\x20header")%r(HTTPOptions,67,"HTTP/1\.1\x20400\x2
-SF:0Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Sun,\x2020\x20Oct\x
-SF:202024\x2001:57:38\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(FourOhFo
+SF:0Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Sun,\x2027\x20Oct\x
+SF:202024\x2002:09:34\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(FourOhFo
 SF:urRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20clos
-SF:e\r\nDate:\x20Sun,\x2020\x20Oct\x202024\x2001:57:38\x20GMT\r\n\r\nMissi
+SF:e\r\nDate:\x20Sun,\x2027\x20Oct\x202024\x2002:09:35\x20GMT\r\n\r\nMissi
 SF:ng\x20Host\x20header")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Req
-SF:uest\r\nConnection:\x20close\r\nDate:\x20Sun,\x2020\x20Oct\x202024\x200
-SF:1:57:44\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(RPCCheck,2F,"HTTP/1
+SF:uest\r\nConnection:\x20close\r\nDate:\x20Sun,\x2027\x20Oct\x202024\x200
+SF:2:09:41\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(RPCCheck,2F,"HTTP/1
 SF:\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSVer
 SF:sionBindReqTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x2
 SF:0close\r\n\r\n")%r(DNSStatusRequestTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20R
@@ -113,4 +118,4 @@ SF:0close\r\n\r\n")%r(TerminalServer,2F,"HTTP/1\.1\x20400\x20Bad\x20Reques
 SF:t\r\nConnection:\x20close\r\n\r\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Oct 20 01:57:55 2024 -- 1 IP address (1 host up) scanned in 41.41 seconds
+# Nmap done at Sun Oct 27 02:10:02 2024 -- 1 IP address (1 host up) scanned in 53.02 seconds
