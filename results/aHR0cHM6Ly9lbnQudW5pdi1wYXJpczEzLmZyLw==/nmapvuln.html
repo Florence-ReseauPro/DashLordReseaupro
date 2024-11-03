@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr</pre>
-<p class="lead">Sun Oct 27 02:14:14 2024 – Sun Oct 27 02:14:56 2024<br>1 hosts scanned.
+<p class="lead">Sun Nov  3 01:55:52 2024 – Sun Nov  3 01:56:29 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -147,12 +147,14 @@
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">https</td>
-<td title="Product"></td>
+<td title="Product">Apache</td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, RTSPRequest, tor-versions: 
     HTTP/1.1 400 Bad request
@@ -189,17 +191,17 @@
   FourOhFourRequest, HTTPOptions: 
     HTTP/1.1 400 Bad Request
     Connection: close
-    Date: Sun, 27 Oct 2024 02:14:35 GMT
+    Date: Sun, 03 Nov 2024 01:56:11 GMT
     Missing Host header
   GetRequest: 
     HTTP/1.1 400 Bad Request
     Connection: close
-    Date: Sun, 27 Oct 2024 02:14:34 GMT
+    Date: Sun, 03 Nov 2024 01:56:10 GMT
     Missing Host header
   RTSPRequest: 
     HTTP/1.1 400 Bad Request
     Connection: close
-    Date: Sun, 27 Oct 2024 02:14:41 GMT
+    Date: Sun, 03 Nov 2024 01:56:17 GMT
     Missing Host header</pre>
 </td></tr>
 </tbody>
@@ -234,7 +236,7 @@
 <td>443</td>
 <td>tcp</td>
 <td>https</td>
-<td></td>
+<td>Apache</td>
 <td></td>
 <td></td>
 <td></td>
