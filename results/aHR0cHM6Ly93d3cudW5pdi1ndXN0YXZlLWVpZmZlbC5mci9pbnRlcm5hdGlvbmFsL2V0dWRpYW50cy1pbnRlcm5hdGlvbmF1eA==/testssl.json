@@ -695,8 +695,8 @@
               "id"           : "cert_chain_of_trust",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
-              "severity"     : "CRITICAL",
-              "finding"      : "failed (chain incomplete)."
+              "severity"     : "OK",
+              "finding"      : "passed."
           }
 ,         {
               "id"           : "cert_certificatePolicies_EV",
@@ -710,7 +710,7 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "360 >= 60 days"
+              "finding"      : "353 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -787,7 +787,7 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1"
+              "finding"      : "2"
           }
 ,         {
               "id"           : "certs_list_ordering_problem",
@@ -802,6 +802,48 @@
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "GEANT OV RSA CA 4 (GEANT Vereniging from NL)"
+          }
+,         {
+              "id"           : "intermediate_cert <#1>",
+              "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIG5TCCBM2gAwIBAgIRANpDvROb0li7TdYcrMTz2+AwDQYJKoZIhvcNAQEMBQAwgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTIwMDIxODAwMDAwMFoXDTMzMDUwMTIzNTk1OVowRDELMAkGA1UEBhMCTkwxGTAXBgNVBAoTEEdFQU5UIFZlcmVuaWdpbmcxGjAYBgNVBAMTEUdFQU5UIE9WIFJTQSBDQSA0MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApYhi1aEiPsg9ZKRMAw9Qr8Mthsr6R20VSfFeh7TgwtLQi6RSRLOh4or4EMG/1th8lijv7xnBMVZkTysFiPmTPiLOfvz+QwO1NwjvgY+Jrs7fSoVA/TQkXzcxu4Tl3WHi+qJmKLJVu/JOuHud6mOpLWkIbhODSzOxANJ24IGPx9h4OXDyy6/342eE6UPXCtJ8AzeumTG6Dfv5KVx24lCFTGUzHUB+j+g0lSKg/Sf1OzgCajJV9enmZ/84ydh48wPp6vbWf1H0O3Rd3LhpMSVnTqFTLKZSbQeLcx/l9DOKZfBCC9ghWxsgTqW9gQ7v3T3aIfSaVC9rnwVxO0VjmDdPFNbdoxnh0zYwf45nV1QQgpRwZJ93yWedhp4ch1a6Ajwqs+wv4mZzmBSjovtV0mKwd+CQbSToalEUP4QeJq4Udz5WNmNMI4OYP6cgrnlJ50aa0DZPlJqrKQPGL69KQQz12WgxvhCuVU70y6ZWAPopBa1ykbsttpLxADZre5cH573lIuLHdjx7NjpYIXRx2+QJURnX2qx37eZIxYXz8ggM+wXH6RDbU3V2o5DP67hXPHSAbA+p0orjAocpk2osxHKoNSE3LCjNx8WVdxnXvuQ28tKdaK69knfm3bB7xpdfsNNTPH9ElcjscWZxpeZ5Iij8lyrCG1z0vSWtSBsgSnUyG/sCAwEAAaOCAYswggGHMB8GA1UdIwQYMBaAFFN5v1qqK0rPVIDh2JvAnfKyA2bLMB0GA1UdDgQWBBRvHTVJEGwy+lmgnryK6B+VvnF6DDAOBgNVHQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwOAYDVR0gBDEwLzAtBgRVHSAAMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMFAGA1UdHwRJMEcwRaBDoEGGP2h0dHA6Ly9jcmwudXNlcnRydXN0LmNvbS9VU0VSVHJ1c3RSU0FDZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNybDB2BggrBgEFBQcBAQRqMGgwPwYIKwYBBQUHMAKGM2h0dHA6Ly9jcnQudXNlcnRydXN0LmNvbS9VU0VSVHJ1c3RSU0FBZGRUcnVzdENBLmNydDAlBggrBgEFBQcwAYYZaHR0cDovL29jc3AudXNlcnRydXN0LmNvbTANBgkqhkiG9w0BAQwFAAOCAgEAUtlC3e0xj/1BMfPhdQhUXeLjb0xp8UE28kzWE5xDzGKbfGgnrT2Rlw5gLIx+/cNVrad//+MrpTppMlxq59AsXYZW3xRasrvkjGfNR3vt/1RAl8iI31lGhIg6dfIX5N4esLkrQeN8HiyHKH6khm4966IkVVtnxz5CgUPqEYn4eQ+4eeESrWBhAqXaiv7HRvpsdwLYekAhnrlGpioZ/CJIT2PTTxf+GHM6cuUnNqdUzfvrQgA8kt1/ASXx2od/M+c8nlJqrGz29lrJveJOSEMX0c/ts02WhsfMhkYa6XujUZLmvR1Eq08r48/EZ4l+t5L4wt0DV8VaPbsEBF1EOFpz/YS2H6mSwcFaNJbnYqqJHIvm3PLJHkFmEoLXRVrQXdCT+3wgBfgU6heCV5CYBz/YkrdWES7tiiT8sVUDqXmVlTsbiRNiyLs2bmEWWFUl76jViIJog5fongEqN3jLIGTG/mXrJT1UyymIcobnIGrbwwRVz/mpFQo0vBYIi1k2ThVh0Dx88BbF9YiP84dd8Fkn5wbE6FxXYJ287qfRTgmhePecPc73YrztapdRcsKVGkOpaTIJP/l+lAHRLZxk/dUtyN95G++bOSQqnOCpVPabUGl2E/OEyFrpIpwgu2L/WJclvd6g+ZA/iWkLSMcpnFb+uX6QBqvD6+RNxul1FaB5iHY=\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#1>",
+              "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "37834FA5EA40FBF7B61196955962E1CA0558872435E4206653D3F620DD8E988E"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#1>",
+              "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2020-02-18 00:00"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#1>",
+              "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2033-05-01 23:59"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#1>",
+              "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#1>",
+              "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "GEANT OV RSA CA 4 <-- USERTrust RSA Certification Authority"
           }
 ,         {
               "id"           : "intermediate_cert_badOCSP",
@@ -822,14 +864,14 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1730597826"
+              "finding"      : "1731203518"
           }
 ,         {
               "id"           : "HSTS",
@@ -1352,80 +1394,73 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "95"
           }
 ,         {
               "id"           : "protocol_support_score_weighted",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "28"
           }
 ,         {
               "id"           : "key_exchange_score",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "90"
           }
 ,         {
               "id"           : "key_exchange_score_weighted",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "27"
           }
 ,         {
               "id"           : "cipher_strength_score",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "90"
           }
 ,         {
               "id"           : "cipher_strength_score_weighted",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "36"
           }
 ,         {
               "id"           : "final_score",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "91"
           }
 ,         {
               "id"           : "overall_grade",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
-              "severity"     : "CRITICAL",
-              "finding"      : "T"
+              "severity"     : "MEDIUM",
+              "finding"      : "B"
           }
 ,         {
               "id"           : "grade_cap_reason_1",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Grade capped to T. Issues with the chain of trust (chain incomplete)"
+              "finding"      : "Grade capped to B. TLS 1.1 offered"
           }
 ,         {
               "id"           : "grade_cap_reason_2",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Grade capped to B. TLS 1.1 offered"
-          }
-,         {
-              "id"           : "grade_cap_reason_3",
-              "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
-              "port"         : "443",
-              "severity"     : "INFO",
               "finding"      : "Grade capped to B. TLS 1.0 offered"
           }
 ,         {
-              "id"           : "grade_cap_reason_4",
+              "id"           : "grade_cap_reason_3",
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
@@ -1436,6 +1471,6 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.55.45.10",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "191"
+              "finding"      : "103"
           }
 ]

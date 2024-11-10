@@ -20,9 +20,9 @@
 #####################################################################</span>
 
   Using <i>OpenSSL 1.0.2-bad </i>  [~183 ciphers]
-  on fv-az1535-978:/home/testssl/bin/openssl.Linux.x86_64
+  on fv-az1210-549:/home/testssl/bin/openssl.Linux.x86_64
 
-<span style="color:white;background-color:black;"> Start 2024-11-03 01:35:31                --&gt;&gt; 193.55.45.10:443 (www.univ-gustave-eiffel.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2024-11-10 01:51:10                --&gt;&gt; 193.55.45.10:443 (www.univ-gustave-eiffel.fr) &lt;&lt;--</span>
 
  rDNS (193.55.45.10):    wwwdev.univ-eiffel.fr.
  Service detected:       HTTP
@@ -159,9 +159,9 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN wildcard and CN wildcard</span> (SNI mandatory)
                               <span style="color:#a86437;">wildcard certificate</span> could be problematic, see other hosts at
                               https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=4B4CFBFE384F8095705690765ABD6711FCB1510F668CCBA68638904E30C8CDE8
-<span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#e52207;font-weight:bold;">NOT ok</span> (chain incomplete)
+<span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">360 &gt;= 60 days</span> (2024-10-29 00:00 --&gt; 2025-10-29 23:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">353 &gt;= 60 days</span> (2024-10-29 00:00 --&gt; 2025-10-29 23:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://GEANT.crl.sectigo.com/GEANTOVRSACA4.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>http://GEANT.ocsp.sectigo.com
@@ -169,15 +169,16 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> OCSP must staple extension   </span>--
 <span style="font-weight:bold;"> DNS CAA RR</span> (experimental)    <span style="color:#a86437;">not offered</span>
 <span style="font-weight:bold;"> Certificate Transparency     </span><span style="color:#008817;">yes</span> (certificate extension)
-<span style="font-weight:bold;"> Certificates provided</span>        1
+<span style="font-weight:bold;"> Certificates provided</span>        2
 <span style="font-weight:bold;"> Issuer                       </span><i>GEANT OV RSA CA 4</i> (<i>GEANT Vereniging</i> from <i>NL</i>)
+<span style="font-weight:bold;"> Intermediate cert validity   </span>#1: <span style="color:#008817;">ok &gt; 40 days</span> (2033-05-01 23:59). <i>GEANT OV RSA CA 4</i> &lt;-- <i>USERTrust RSA Certification Authority</i>
 <span style="font-weight:bold;"> Intermediate Bad OCSP</span> (exp.) <span style="color:#008817;">Ok</span>
 
 
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#a86437;">not offered</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>Apache
@@ -375,21 +376,18 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 
 <span style="font-weight:bold;"> Rating specs</span> (not complete)  SSL Labs&apos;s &apos;SSL Server Rating Guide&apos; (version 2009q from 2020-01-30)
 <span style="font-weight:bold;"> Specification documentation  </span><a href="https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide" style="color:black;text-decoration:none;">https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide</a>
-<span style="font-weight:bold;"> Protocol Support</span> (weighted)  0 (0)
-<span style="font-weight:bold;"> Key Exchange</span>     (weighted)  0 (0)
-<span style="font-weight:bold;"> Cipher Strength</span>  (weighted)  0 (0)
-<span style="font-weight:bold;"> Final Score                  </span>0
-<span style="font-weight:bold;"> Overall Grade                </span><span style="color:#e52207;font-weight:bold;">T</span>
-<span style="font-weight:bold;"> Grade cap reasons            </span>Grade capped to T. Issues with the chain of
-                                trust (chain incomplete)
-                              Grade capped to
-                                B. TLS 1.1 offered
+<span style="font-weight:bold;"> Protocol Support </span>(weighted)  95 (28)
+<span style="font-weight:bold;"> Key Exchange </span>    (weighted)  90 (27)
+<span style="font-weight:bold;"> Cipher Strength </span> (weighted)  90 (36)
+<span style="font-weight:bold;"> Final Score                  </span>91
+<span style="font-weight:bold;"> Overall Grade                </span><span style="color:#c05600;">B</span>
+<span style="font-weight:bold;"> Grade cap reasons            </span>Grade capped to B. TLS 1.1 offered
                               Grade capped to
                                 B. TLS 1.0 offered
                               Grade capped to
                                 A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2024-11-03 01:38:38 [ 191s] --&gt;&gt; 193.55.45.10:443 (www.univ-gustave-eiffel.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2024-11-10 01:52:50 [ 103s] --&gt;&gt; 193.55.45.10:443 (www.univ-gustave-eiffel.fr) &lt;&lt;--</span>
 
 
 </pre>
