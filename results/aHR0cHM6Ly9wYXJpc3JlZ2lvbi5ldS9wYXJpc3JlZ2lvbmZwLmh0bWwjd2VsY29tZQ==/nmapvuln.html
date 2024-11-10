@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln parisregion.eu</pre>
-<p class="lead">Sun Nov  3 01:25:18 2024 – Sun Nov  3 01:25:48 2024<br>1 hosts scanned.
+<p class="lead">Sun Nov 10 01:26:46 2024 – Sun Nov 10 01:27:12 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>217.147.204.80</td>
+<td>217.147.193.100</td>
 <td>parisregion.eu</td>
 <td>2</td>
 <td>0</td>
@@ -91,8 +91,8 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#217-147-204-80"><h3 class="panel-title">217.147.204.80 - parisregion.eu</h3></div>
-<div class="panel-body collapse in" id="217-147-204-80">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#217-147-193-100"><h3 class="panel-title">217.147.193.100 - parisregion.eu</h3></div>
+<div class="panel-body collapse in" id="217-147-193-100">
 <h4>Hostnames</h4>
 <ul><li>parisregion.eu (user)</li></ul>
 <h4>Ports</h4>
@@ -112,21 +112,27 @@
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">http</td>
-<td title="Product">nginx</td>
+<td title="Product">Apache httpd</td>
 <td title="Version"></td>
-<td title="Extra Info">reverse proxy</td>
+<td title="Extra Info"></td>
 </tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx">cpe:/a:igor_sysoev:nginx</a></td></tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server">cpe:/a:apache:http_server</a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
+</td></tr>
 <tr class="success">
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">http</td>
-<td title="Product">nginx</td>
+<td title="Product">Apache httpd</td>
 <td title="Version"></td>
-<td title="Extra Info">reverse proxy</td>
+<td title="Extra Info"></td>
 </tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:igor_sysoev:nginx">cpe:/a:igor_sysoev:nginx</a></td></tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:apache:http_server">cpe:/a:apache:http_server</a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
+</td></tr>
 </tbody>
 </table></div>
 </div>
@@ -145,24 +151,24 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>217.147.204.80 - parisregion.eu</td>
+<td>217.147.193.100 - parisregion.eu</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
-<td>nginx</td>
+<td>Apache httpd</td>
 <td></td>
-<td>cpe:/a:igor_sysoev:nginx</td>
-<td>reverse proxy</td>
+<td>cpe:/a:apache:http_server</td>
+<td></td>
 </tr>
 <tr>
-<td>217.147.204.80 - parisregion.eu</td>
+<td>217.147.193.100 - parisregion.eu</td>
 <td>443</td>
 <td>tcp</td>
 <td>http</td>
-<td>nginx</td>
+<td>Apache httpd</td>
 <td></td>
-<td>cpe:/a:igor_sysoev:nginx</td>
-<td>reverse proxy</td>
+<td>cpe:/a:apache:http_server</td>
+<td></td>
 </tr>
 </tbody>
 </table></div>
