@@ -1,0 +1,293 @@
+[
+  [
+    {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "reseaupro.unpidf.fr.",
+      "matched-at": "reseaupro.unpidf.fr",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 27810\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;reseaupro.unpidf.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 27810\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;reseaupro.unpidf.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nunpidf.fr.\t300\tIN\tSOA\tdns1.univ-paris13.fr. hostmaster.univ-paris13.fr. 2024052702 21600 3600 604800 86400\n",
+      "timestamp": "2024-12-08T01:25:44.805237109Z",
+      "matcher-status": true
+    },
+    {
+      "template": "http/miscellaneous/external-service-interaction.yaml",
+      "template-url": "https://templates.nuclei.sh/public/external-service-interaction",
+      "template-id": "external-service-interaction",
+      "template-path": "/home/runner/nuclei-templates/http/miscellaneous/external-service-interaction.yaml",
+      "info": {
+        "name": "External Service Interaction",
+        "author": [
+          "andreluna"
+        ],
+        "tags": [
+          "miscellaneous",
+          "http",
+          "misc",
+          "oast"
+        ],
+        "description": "External Service interaction via Host Header Injection.",
+        "reference": [
+          "https://portswigger.net/kb/issues/00300210_external-service-interaction-http",
+          "https://success.qualys.com/support/s/article/000006843",
+          "https://owasp.org/www-project-web-security-testing-guide/latest/4-web_application_security_testing/07-input_validation_testing/17-testing_for_host_header_injection"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-918",
+            "cwe-406"
+          ]
+        }
+      },
+      "type": "http",
+      "host": "http://reseaupro.unpidf.fr",
+      "matched-at": "http://reseaupro.unpidf.fr",
+      "request": "GET / HTTP/1.1\r\nHost: ctafb6c81rctjkd1l400sx833m5dbumwk.oast.fun\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nLocation: https://ctafb6c81rctjkd1l400sx833m5dbumwk.oast.fun/\r\nContent-Length: 0\r\n\r\n",
+      "ip": "81.194.43.212",
+      "timestamp": "2024-12-08T01:26:42.259466681Z",
+      "interaction": {
+        "protocol": "dns",
+        "unique-id": "ctafb6c81rctjkd1l400sx833m5dbumwk",
+        "full-id": "cTafB6C81Rctjkd1l400sX833m5dbUmWk",
+        "q-type": "A",
+        "raw-request": ";; opcode: QUERY, status: NOERROR, id: 53238\n;; flags: cd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;cTafB6C81Rctjkd1l400sX833m5dbUmWk.OAST.FuN.\tIN\t A\n",
+        "raw-response": ";; opcode: QUERY, status: NOERROR, id: 53238\n;; flags: qr aa cd; QUERY: 1, ANSWER: 1, AUTHORITY: 2, ADDITIONAL: 2\n\n;; QUESTION SECTION:\n;cTafB6C81Rctjkd1l400sX833m5dbUmWk.OAST.FuN.\tIN\t A\n\n;; ANSWER SECTION:\ncTafB6C81Rctjkd1l400sX833m5dbUmWk.OAST.FuN.\t3600\tIN\tA\t206.189.156.69\n\n;; AUTHORITY SECTION:\ncTafB6C81Rctjkd1l400sX833m5dbUmWk.OAST.FuN.\t3600\tIN\tNS\tns1.oast.fun.\ncTafB6C81Rctjkd1l400sX833m5dbUmWk.OAST.FuN.\t3600\tIN\tNS\tns2.oast.fun.\n\n;; ADDITIONAL SECTION:\nns1.oast.fun.\t3600\tIN\tA\t206.189.156.69\nns2.oast.fun.\t3600\tIN\tA\t206.189.156.69\n",
+        "remote-address": "172.217.41.148",
+        "timestamp": "2024-12-08T01:26:40.284508324Z"
+      },
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Host: ctafb6c81rctjkd1l400sx833m5dbumwk.oast.fun' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'http://reseaupro.unpidf.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "network/detection/imap-detect.yaml",
+      "template-url": "https://templates.nuclei.sh/public/imap-detect",
+      "template-id": "imap-detect",
+      "template-path": "/home/runner/nuclei-templates/network/detection/imap-detect.yaml",
+      "info": {
+        "name": "IMAP - Detect",
+        "author": [
+          "pussycat0x"
+        ],
+        "tags": [
+          "network",
+          "detect",
+          "imap",
+          "mail",
+          "detection",
+          "tcp"
+        ],
+        "description": "IMAP was detected.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1,
+          "shodan-query": "imap",
+          "verified": true
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ],
+          "cvss-metrics": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        }
+      },
+      "type": "tcp",
+      "host": "reseaupro.unpidf.fr:143",
+      "matched-at": "reseaupro.unpidf.fr:143",
+      "request": "\n",
+      "response": "* OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE] perdition ready on lb.univ-paris13.fr 000388c4\r\n",
+      "ip": "81.194.43.212",
+      "timestamp": "2024-12-08T01:30:57.731196542Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/detect-ssl-issuer.yaml",
+      "template-url": "https://templates.nuclei.sh/public/ssl-issuer",
+      "template-id": "ssl-issuer",
+      "template-path": "/home/runner/nuclei-templates/ssl/detect-ssl-issuer.yaml",
+      "info": {
+        "name": "Detect SSL Certificate Issuer",
+        "author": [
+          "lingtren"
+        ],
+        "tags": [
+          "ssl",
+          "tls"
+        ],
+        "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "reseaupro.unpidf.fr",
+      "matched-at": "reseaupro.unpidf.fr:443",
+      "extracted-results": [
+        "Sectigo Limited"
+      ],
+      "ip": "81.194.43.212",
+      "timestamp": "2024-12-08T01:32:58.007289579Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/mismatched-ssl-certificate.yaml",
+      "template-url": "https://templates.nuclei.sh/public/mismatched-ssl-certificate",
+      "template-id": "mismatched-ssl-certificate",
+      "template-path": "/home/runner/nuclei-templates/ssl/mismatched-ssl-certificate.yaml",
+      "info": {
+        "name": "Mismatched SSL Certificate",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "mismatched"
+        ],
+        "description": "Mismatched certificates occur when there is inconsistency between the common name to which the certificate was issued and the domain name in the URL. This issue impacts the trust value of the affected website.\n",
+        "reference": [
+          "https://www.invicti.com/web-vulnerability-scanner/vulnerabilities/ssl-certificate-name-hostname-mismatch/"
+        ],
+        "severity": "low",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "reseaupro.unpidf.fr",
+      "matched-at": "reseaupro.unpidf.fr:443",
+      "extracted-results": [
+        "CN: horizon.univ-paris13.fr"
+      ],
+      "ip": "81.194.43.212",
+      "timestamp": "2024-12-08T01:32:58.007376362Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/ssl-dns-names.yaml",
+      "template-url": "https://templates.nuclei.sh/public/ssl-dns-names",
+      "template-id": "ssl-dns-names",
+      "template-path": "/home/runner/nuclei-templates/ssl/ssl-dns-names.yaml",
+      "info": {
+        "name": "SSL DNS Names",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "ssl",
+          "tls"
+        ],
+        "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "reseaupro.unpidf.fr",
+      "matched-at": "reseaupro.unpidf.fr:443",
+      "extracted-results": [
+        "horizon.univ-paris13.fr"
+      ],
+      "ip": "81.194.43.212",
+      "timestamp": "2024-12-08T01:32:58.007442296Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "reseaupro.unpidf.fr",
+      "matched-at": "reseaupro.unpidf.fr:443",
+      "extracted-results": [
+        "tls12"
+      ],
+      "ip": "81.194.43.212",
+      "timestamp": "2024-12-08T01:32:59.388999761Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "reseaupro.unpidf.fr",
+      "matched-at": "reseaupro.unpidf.fr:443",
+      "extracted-results": [
+        "tls13"
+      ],
+      "ip": "81.194.43.212",
+      "timestamp": "2024-12-08T01:32:59.673203805Z",
+      "matcher-status": true
+    }
+  ]
+]
