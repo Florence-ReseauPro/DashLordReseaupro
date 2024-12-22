@@ -1,41 +1,10 @@
-# Nmap 7.92 scan initiated Sun Dec 15 02:09:52 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
-Nmap scan report for ent.univ-paris13.fr (81.194.43.212)
-Host is up (0.10s latency).
-Other addresses for ent.univ-paris13.fr (not scanned): 81.194.43.211
-rDNS record for 81.194.43.212: lb.univ-paris13.fr
-Not shown: 995 filtered tcp ports (no-response)
+# Nmap 7.92 scan initiated Sun Dec 22 02:17:40 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
+Nmap scan report for ent.univ-paris13.fr (81.194.43.211)
+Host is up (0.16s latency).
+Other addresses for ent.univ-paris13.fr (not scanned): 81.194.43.212
+rDNS record for 81.194.43.211: lb.univ-paris13.fr
+Not shown: 998 filtered tcp ports (no-response)
 PORT     STATE SERVICE       VERSION
-80/tcp   open  http
-| fingerprint-strings: 
-|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, RPCCheck, RTSPRequest, X11Probe: 
-|     HTTP/1.1 400 Bad request
-|     Content-length: 90
-|     Cache-Control: no-cache
-|     Connection: close
-|     Content-Type: text/html
-|     <html><body><h1>400 Bad request</h1>
-|     Your browser sent an invalid request.
-|     </body></html>
-|   FourOhFourRequest: 
-|     HTTP/1.1 301 Moved Permanently
-|     content-length: 0
-|     location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak
-|     connection: close
-|   GetRequest, HTTPOptions: 
-|     HTTP/1.1 301 Moved Permanently
-|     content-length: 0
-|     location: https:///
-|_    connection: close
-143/tcp  open  imap
-| fingerprint-strings: 
-|   GenericLines: 
-|     * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE] perdition ready on lb.univ-paris13.fr 000388c4
-|     Invalid tag, mate
-|   GetRequest: 
-|     * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE] perdition ready on lb.univ-paris13.fr 000388c4
-|     Unrecognised command, mate
-|   NULL: 
-|_    * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE] perdition ready on lb.univ-paris13.fr 000388c4
 443/tcp  open  ssl/https     Apache
 |_http-server-header: Apache
 | fingerprint-strings: 
@@ -55,16 +24,6 @@ PORT     STATE SERVICE       VERSION
 |     <html><body><h1>503 Service Unavailable</h1>
 |     server is available to handle this request.
 |_    </body></html>
-993/tcp  open  ssl/imap
-| fingerprint-strings: 
-|   GenericLines: 
-|     * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE] perdition ready on lb.univ-paris13.fr 00038d75
-|     Invalid tag, mate
-|   GetRequest: 
-|     * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE] perdition ready on lb.univ-paris13.fr 00038d75
-|     Unrecognised command, mate
-|   NULL: 
-|_    * OK [CAPABILITY IMAP4rev1 LITERAL+ ID ENABLE ACL RIGHTS=kxte QUOTA MAILBOX-REFERRALS NAMESPACE UIDPLUS NO_ATOMIC_RENAME UNSELECT CHILDREN MULTIAPPEND BINARY CATENATE CONDSTORE ESEARCH SORT SORT=MODSEQ SORT=DISPLAY THREAD=ORDEREDSUBJECT THREAD=REFERENCES ANNOTATEMORE LIST-EXTENDED WITHIN QRESYNC SCAN XLIST URLAUTH URLAUTH=BINARY X-NETSCAPE COMPRESS=DEFLATE IDLE] perdition ready on lb.univ-paris13.fr 00038d75
 8443/tcp open  ssl/https-alt
 | fingerprint-strings: 
 |   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, RPCCheck, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe: 
@@ -73,82 +32,26 @@ PORT     STATE SERVICE       VERSION
 |   FourOhFourRequest: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 15 Dec 2024 02:10:17 GMT
+|     Date: Sun, 22 Dec 2024 02:18:11 GMT
 |     Missing Host header
-|   GetRequest, HTTPOptions: 
+|   GetRequest: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 15 Dec 2024 02:10:16 GMT
+|     Date: Sun, 22 Dec 2024 02:18:09 GMT
+|     Missing Host header
+|   HTTPOptions: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Date: Sun, 22 Dec 2024 02:18:10 GMT
 |     Missing Host header
 |   RTSPRequest: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 15 Dec 2024 02:10:22 GMT
+|     Date: Sun, 22 Dec 2024 02:18:17 GMT
 |_    Missing Host header
-5 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=12/15%Time=675E3A7E%P=x86_64-alpine-linux-musl%
-SF:r(GetRequest,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-le
-SF:ngth:\x200\r\nlocation:\x20https:///\r\nconnection:\x20close\r\n\r\n")%
-SF:r(HTTPOptions,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-l
-SF:ength:\x200\r\nlocation:\x20https:///\r\nconnection:\x20close\r\n\r\n")
-SF:%r(RTSPRequest,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length
-SF::\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nConten
-SF:t-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\
-SF:nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\
-SF:n")%r(X11Probe,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length
-SF::\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nConten
-SF:t-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\
-SF:nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\
-SF:n")%r(FourOhFourRequest,80,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\
-SF:ncontent-length:\x200\r\nlocation:\x20https:///nice%20ports%2C/Tri%6Eit
-SF:y\.txt%2ebak\r\nconnection:\x20close\r\n\r\n")%r(RPCCheck,CF,"HTTP/1\.1
-SF:\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x2
-SF:0no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n
-SF:<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\x20
-SF:an\x20invalid\x20request\.\n</body></html>\n")%r(DNSVersionBindReqTCP,C
-SF:F,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache
-SF:-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/
-SF:html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser
-SF:\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n")%r(DNSStatusR
-SF:equestTCP,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x20
-SF:90\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Typ
-SF:e:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour
-SF:\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n")%r
-SF:(Help,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r
-SF:\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x
-SF:20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20
-SF:browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port143-TCP:V=7.92%I=7%D=12/15%Time=675E3A7E%P=x86_64-alpine-linux-musl
-SF:%r(NULL,19D,"\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20LITERAL\+\x20ID\x
-SF:20ENABLE\x20ACL\x20RIGHTS=kxte\x20QUOTA\x20MAILBOX-REFERRALS\x20NAMESPA
-SF:CE\x20UIDPLUS\x20NO_ATOMIC_RENAME\x20UNSELECT\x20CHILDREN\x20MULTIAPPEN
-SF:D\x20BINARY\x20CATENATE\x20CONDSTORE\x20ESEARCH\x20SORT\x20SORT=MODSEQ\
-SF:x20SORT=DISPLAY\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20ANNOTA
-SF:TEMORE\x20LIST-EXTENDED\x20WITHIN\x20QRESYNC\x20SCAN\x20XLIST\x20URLAUT
-SF:H\x20URLAUTH=BINARY\x20X-NETSCAPE\x20COMPRESS=DEFLATE\x20IDLE\]\x20perd
-SF:ition\x20ready\x20on\x20lb\.univ-paris13\.fr\x20000388c4\r\n")%r(GetReq
-SF:uest,1C1,"\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20LITERAL\+\x20ID\x20E
-SF:NABLE\x20ACL\x20RIGHTS=kxte\x20QUOTA\x20MAILBOX-REFERRALS\x20NAMESPACE\
-SF:x20UIDPLUS\x20NO_ATOMIC_RENAME\x20UNSELECT\x20CHILDREN\x20MULTIAPPEND\x
-SF:20BINARY\x20CATENATE\x20CONDSTORE\x20ESEARCH\x20SORT\x20SORT=MODSEQ\x20
-SF:SORT=DISPLAY\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20ANNOTATEM
-SF:ORE\x20LIST-EXTENDED\x20WITHIN\x20QRESYNC\x20SCAN\x20XLIST\x20URLAUTH\x
-SF:20URLAUTH=BINARY\x20X-NETSCAPE\x20COMPRESS=DEFLATE\x20IDLE\]\x20perditi
-SF:on\x20ready\x20on\x20lb\.univ-paris13\.fr\x20000388c4\r\nGET\x20BAD\x20
-SF:Unrecognised\x20command,\x20mate\r\n")%r(GenericLines,1B6,"\*\x20OK\x20
-SF:\[CAPABILITY\x20IMAP4rev1\x20LITERAL\+\x20ID\x20ENABLE\x20ACL\x20RIGHTS
-SF:=kxte\x20QUOTA\x20MAILBOX-REFERRALS\x20NAMESPACE\x20UIDPLUS\x20NO_ATOMI
-SF:C_RENAME\x20UNSELECT\x20CHILDREN\x20MULTIAPPEND\x20BINARY\x20CATENATE\x
-SF:20CONDSTORE\x20ESEARCH\x20SORT\x20SORT=MODSEQ\x20SORT=DISPLAY\x20THREAD
-SF:=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20ANNOTATEMORE\x20LIST-EXTENDED\x
-SF:20WITHIN\x20QRESYNC\x20SCAN\x20XLIST\x20URLAUTH\x20URLAUTH=BINARY\x20X-
-SF:NETSCAPE\x20COMPRESS=DEFLATE\x20IDLE\]\x20perdition\x20ready\x20on\x20l
-SF:b\.univ-paris13\.fr\x20000388c4\r\n\*\x20BAD\x20Invalid\x20tag,\x20mate
-SF:\r\n");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=12/15%Time=675E3A84%P=x86_64-alpine-linu
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=12/22%Time=676776DD%P=x86_64-alpine-linu
 SF:x-musl%r(GetRequest,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\nc
 SF:ache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><b
 SF:ody><h1>503\x20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20avail
@@ -183,45 +86,17 @@ SF:-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\n
 SF:Your\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n
 SF:");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port993-TCP:V=7.92%T=SSL%I=7%D=12/15%Time=675E3A85%P=x86_64-alpine-linu
-SF:x-musl%r(NULL,19D,"\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20LITERAL\+\x
-SF:20ID\x20ENABLE\x20ACL\x20RIGHTS=kxte\x20QUOTA\x20MAILBOX-REFERRALS\x20N
-SF:AMESPACE\x20UIDPLUS\x20NO_ATOMIC_RENAME\x20UNSELECT\x20CHILDREN\x20MULT
-SF:IAPPEND\x20BINARY\x20CATENATE\x20CONDSTORE\x20ESEARCH\x20SORT\x20SORT=M
-SF:ODSEQ\x20SORT=DISPLAY\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20
-SF:ANNOTATEMORE\x20LIST-EXTENDED\x20WITHIN\x20QRESYNC\x20SCAN\x20XLIST\x20
-SF:URLAUTH\x20URLAUTH=BINARY\x20X-NETSCAPE\x20COMPRESS=DEFLATE\x20IDLE\]\x
-SF:20perdition\x20ready\x20on\x20lb\.univ-paris13\.fr\x2000038d75\r\n")%r(
-SF:GetRequest,1C1,"\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20LITERAL\+\x20I
-SF:D\x20ENABLE\x20ACL\x20RIGHTS=kxte\x20QUOTA\x20MAILBOX-REFERRALS\x20NAME
-SF:SPACE\x20UIDPLUS\x20NO_ATOMIC_RENAME\x20UNSELECT\x20CHILDREN\x20MULTIAP
-SF:PEND\x20BINARY\x20CATENATE\x20CONDSTORE\x20ESEARCH\x20SORT\x20SORT=MODS
-SF:EQ\x20SORT=DISPLAY\x20THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20ANN
-SF:OTATEMORE\x20LIST-EXTENDED\x20WITHIN\x20QRESYNC\x20SCAN\x20XLIST\x20URL
-SF:AUTH\x20URLAUTH=BINARY\x20X-NETSCAPE\x20COMPRESS=DEFLATE\x20IDLE\]\x20p
-SF:erdition\x20ready\x20on\x20lb\.univ-paris13\.fr\x2000038d75\r\nGET\x20B
-SF:AD\x20Unrecognised\x20command,\x20mate\r\n")%r(GenericLines,1B6,"\*\x20
-SF:OK\x20\[CAPABILITY\x20IMAP4rev1\x20LITERAL\+\x20ID\x20ENABLE\x20ACL\x20
-SF:RIGHTS=kxte\x20QUOTA\x20MAILBOX-REFERRALS\x20NAMESPACE\x20UIDPLUS\x20NO
-SF:_ATOMIC_RENAME\x20UNSELECT\x20CHILDREN\x20MULTIAPPEND\x20BINARY\x20CATE
-SF:NATE\x20CONDSTORE\x20ESEARCH\x20SORT\x20SORT=MODSEQ\x20SORT=DISPLAY\x20
-SF:THREAD=ORDEREDSUBJECT\x20THREAD=REFERENCES\x20ANNOTATEMORE\x20LIST-EXTE
-SF:NDED\x20WITHIN\x20QRESYNC\x20SCAN\x20XLIST\x20URLAUTH\x20URLAUTH=BINARY
-SF:\x20X-NETSCAPE\x20COMPRESS=DEFLATE\x20IDLE\]\x20perdition\x20ready\x20o
-SF:n\x20lb\.univ-paris13\.fr\x2000038d75\r\n\*\x20BAD\x20Invalid\x20tag,\x
-SF:20mate\r\n");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=12/15%Time=675E3A85%P=x86_64-alpine-lin
+SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=12/22%Time=676776DD%P=x86_64-alpine-lin
 SF:ux-musl%r(GetRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnecti
-SF:on:\x20close\r\nDate:\x20Sun,\x2015\x20Dec\x202024\x2002:10:16\x20GMT\r
+SF:on:\x20close\r\nDate:\x20Sun,\x2022\x20Dec\x202024\x2002:18:09\x20GMT\r
 SF:\n\r\nMissing\x20Host\x20header")%r(HTTPOptions,67,"HTTP/1\.1\x20400\x2
-SF:0Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Sun,\x2015\x20Dec\x
-SF:202024\x2002:10:16\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(FourOhFo
+SF:0Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Sun,\x2022\x20Dec\x
+SF:202024\x2002:18:10\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(FourOhFo
 SF:urRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20clos
-SF:e\r\nDate:\x20Sun,\x2015\x20Dec\x202024\x2002:10:17\x20GMT\r\n\r\nMissi
+SF:e\r\nDate:\x20Sun,\x2022\x20Dec\x202024\x2002:18:11\x20GMT\r\n\r\nMissi
 SF:ng\x20Host\x20header")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Req
-SF:uest\r\nConnection:\x20close\r\nDate:\x20Sun,\x2015\x20Dec\x202024\x200
-SF:2:10:22\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(RPCCheck,2F,"HTTP/1
+SF:uest\r\nConnection:\x20close\r\nDate:\x20Sun,\x2022\x20Dec\x202024\x200
+SF:2:18:17\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(RPCCheck,2F,"HTTP/1
 SF:\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSVer
 SF:sionBindReqTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x2
 SF:0close\r\n\r\n")%r(DNSStatusRequestTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20R
@@ -244,4 +119,4 @@ SF:0close\r\n\r\n")%r(TerminalServer,2F,"HTTP/1\.1\x20400\x20Bad\x20Reques
 SF:t\r\nConnection:\x20close\r\n\r\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Dec 15 02:10:34 2024 -- 1 IP address (1 host up) scanned in 41.50 seconds
+# Nmap done at Sun Dec 22 02:18:34 2024 -- 1 IP address (1 host up) scanned in 53.88 seconds
