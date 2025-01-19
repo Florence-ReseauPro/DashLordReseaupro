@@ -1,23 +1,22 @@
 [
   [
     {
-      "template": "dns/dnssec-detection.yaml",
-      "template-url": "https://templates.nuclei.sh/public/dnssec-detection",
-      "template-id": "dnssec-detection",
-      "template-path": "/home/runner/nuclei-templates/dns/dnssec-detection.yaml",
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
       "info": {
-        "name": "DNSSEC Detection",
+        "name": "CAA Record",
         "author": [
           "pdteam"
         ],
         "tags": [
           "dns",
-          "dnssec"
+          "caa"
         ],
-        "description": "Domain Name System Security Extensions (DNSSEC) are enabled. The Delegation of Signing (DS) record provides information about a signed zone file when DNSSEC enabled.",
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
         "reference": [
-          "https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en",
-          "https://www.cyberciti.biz/faq/unix-linux-test-and-validate-dnssec-using-dig-command-line/"
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
         ],
         "severity": "info",
         "metadata": {
@@ -33,47 +32,9 @@
       "type": "dns",
       "host": "parisregion.eu.",
       "matched-at": "parisregion.eu",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 30760\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t DS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 30760\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t DS\n\n;; ANSWER SECTION:\nparisregion.eu.\t21600\tIN\tDS\t47540 8 2 92D2B2A0D0473AD86267D0C3F98CAECF9AF5099FBD2BCF3BC3540E271BB62C06\n",
-      "timestamp": "2025-01-12T01:38:16.615923008Z",
-      "matcher-status": true
-    },
-    {
-      "template": "dns/nameserver-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
-      "template-id": "nameserver-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/nameserver-fingerprint.yaml",
-      "info": {
-        "name": "NS Record Detection",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "ns"
-        ],
-        "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "parisregion.eu.",
-      "matched-at": "parisregion.eu",
-      "extracted-results": [
-        "ns111.ovh.net.",
-        "dns111.ovh.net."
-      ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 28493\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 28493\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t NS\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tNS\tns111.ovh.net.\nparisregion.eu.\t3600\tIN\tNS\tdns111.ovh.net.\n",
-      "timestamp": "2025-01-12T01:38:16.69538931Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 22684\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 22684\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nparisregion.eu.\t60\tIN\tSOA\tdns111.ovh.net. tech.ovh.net. 2025011200 86400 3600 3600000 60\n",
+      "timestamp": "2025-01-19T01:27:53.546743927Z",
       "matcher-status": true
     },
     {
@@ -109,12 +70,88 @@
       "host": "parisregion.eu.",
       "matched-at": "parisregion.eu",
       "extracted-results": [
-        "\"_globalsign-domain-verification=SdNHo7N6SgNJLuB9K-ZOtOfqGeecrF_PH3yMR73IlS\"",
-        "\"1|www.parisregion.eu\""
+        "\"1|www.parisregion.eu\"",
+        "\"_globalsign-domain-verification=SdNHo7N6SgNJLuB9K-ZOtOfqGeecrF_PH3yMR73IlS\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 39250\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 39250\n;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t TXT\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tTXT\t\"_globalsign-domain-verification=SdNHo7N6SgNJLuB9K-ZOtOfqGeecrF_PH3yMR73IlS\"\nparisregion.eu.\t3600\tIN\tTXT\t\"1|www.parisregion.eu\"\n",
-      "timestamp": "2025-01-12T01:38:16.779401253Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 18939\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 18939\n;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t TXT\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tTXT\t\"1|www.parisregion.eu\"\nparisregion.eu.\t3600\tIN\tTXT\t\"_globalsign-domain-verification=SdNHo7N6SgNJLuB9K-ZOtOfqGeecrF_PH3yMR73IlS\"\n",
+      "timestamp": "2025-01-19T01:27:53.569679485Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/dnssec-detection.yaml",
+      "template-url": "https://templates.nuclei.sh/public/dnssec-detection",
+      "template-id": "dnssec-detection",
+      "template-path": "/home/runner/nuclei-templates/dns/dnssec-detection.yaml",
+      "info": {
+        "name": "DNSSEC Detection",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "dnssec"
+        ],
+        "description": "Domain Name System Security Extensions (DNSSEC) are enabled. The Delegation of Signing (DS) record provides information about a signed zone file when DNSSEC enabled.",
+        "reference": [
+          "https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en",
+          "https://www.cyberciti.biz/faq/unix-linux-test-and-validate-dnssec-using-dig-command-line/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "parisregion.eu.",
+      "matched-at": "parisregion.eu",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 17385\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t DS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 17385\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t DS\n\n;; ANSWER SECTION:\nparisregion.eu.\t21600\tIN\tDS\t47540 8 2 92D2B2A0D0473AD86267D0C3F98CAECF9AF5099FBD2BCF3BC3540E271BB62C06\n",
+      "timestamp": "2025-01-19T01:27:54.245626193Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/nameserver-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
+      "template-id": "nameserver-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/nameserver-fingerprint.yaml",
+      "info": {
+        "name": "NS Record Detection",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "ns"
+        ],
+        "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "parisregion.eu.",
+      "matched-at": "parisregion.eu",
+      "extracted-results": [
+        "ns111.ovh.net.",
+        "dns111.ovh.net."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 6340\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 6340\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t NS\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tNS\tns111.ovh.net.\nparisregion.eu.\t3600\tIN\tNS\tdns111.ovh.net.\n",
+      "timestamp": "2025-01-19T01:27:54.647260805Z",
       "matcher-status": true
     },
     {
@@ -151,49 +188,12 @@
       "host": "parisregion.eu.",
       "matched-at": "parisregion.eu",
       "extracted-results": [
-        "10 mx3.mail.ovh.net.",
-        "1 mx4.mail.ovh.net."
+        "1 mx4.mail.ovh.net.",
+        "10 mx3.mail.ovh.net."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 38394\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t MX\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 38394\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t MX\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tMX\t1 mx4.mail.ovh.net.\nparisregion.eu.\t3600\tIN\tMX\t10 mx3.mail.ovh.net.\n",
-      "timestamp": "2025-01-12T01:38:16.781243558Z",
-      "matcher-status": true
-    },
-    {
-      "template": "dns/caa-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-      "template-id": "caa-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-      "info": {
-        "name": "CAA Record",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "caa"
-        ],
-        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-        "reference": [
-          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "parisregion.eu.",
-      "matched-at": "parisregion.eu",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 38652\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 38652\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nparisregion.eu.\t60\tIN\tSOA\tdns111.ovh.net. tech.ovh.net. 2025011100 86400 3600 3600000 60\n",
-      "timestamp": "2025-01-12T01:38:16.870496861Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 8240\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t MX\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 8240\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;parisregion.eu.\tIN\t MX\n\n;; ANSWER SECTION:\nparisregion.eu.\t3600\tIN\tMX\t1 mx4.mail.ovh.net.\nparisregion.eu.\t3600\tIN\tMX\t10 mx3.mail.ovh.net.\n",
+      "timestamp": "2025-01-19T01:27:54.811196193Z",
       "matcher-status": true
     },
     {
@@ -232,9 +232,9 @@
       "host": "https://parisregion.eu/parisregionfp.html#welcome",
       "matched-at": "https://parisregion.eu/parisregionfp.html/#welcome",
       "request": "POST /parisregionfp.html/ HTTP/1.1\r\nHost: parisregion.eu\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 254\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=iso-8859-1\r\nDate: Sun, 12 Jan 2025 01:39:28 GMT\r\nExpires: Sun, 12 Jan 2025 01:39:28 GMT\r\nLocation: https://www.parisregion.eu/parisregionfp.html/\r\nServer: Apache\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>301 Moved Permanently</title>\n</head><body>\n<h1>Moved Permanently</h1>\n<p>The document has moved <a href=\"https://www.parisregion.eu/parisregionfp.html/\">here</a>.</p>\n</body></html>\n",
+      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 254\r\nCache-Control: max-age=0\r\nContent-Type: text/html; charset=iso-8859-1\r\nDate: Sun, 19 Jan 2025 01:29:42 GMT\r\nExpires: Sun, 19 Jan 2025 01:29:42 GMT\r\nLocation: https://www.parisregion.eu/parisregionfp.html/\r\nServer: Apache\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>301 Moved Permanently</title>\n</head><body>\n<h1>Moved Permanently</h1>\n<p>The document has moved <a href=\"https://www.parisregion.eu/parisregionfp.html/\">here</a>.</p>\n</body></html>\n",
       "ip": "217.147.193.100",
-      "timestamp": "2025-01-12T01:39:28.252538207Z",
+      "timestamp": "2025-01-19T01:29:42.949087811Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: parisregion.eu' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://parisregion.eu/parisregionfp.html/#welcome'",
       "matcher-status": true
     },
@@ -265,7 +265,7 @@
         "Let's Encrypt"
       ],
       "ip": "217.147.193.100",
-      "timestamp": "2025-01-12T01:41:19.357474782Z",
+      "timestamp": "2025-01-19T01:31:44.426370984Z",
       "matcher-status": true
     },
     {
@@ -295,7 +295,7 @@
         "parisregion.eu"
       ],
       "ip": "217.147.193.100",
-      "timestamp": "2025-01-12T01:41:19.357615655Z",
+      "timestamp": "2025-01-19T01:31:44.42651055Z",
       "matcher-status": true
     },
     {
@@ -326,7 +326,7 @@
         "tls12"
       ],
       "ip": "217.147.193.100",
-      "timestamp": "2025-01-12T01:41:21.000580837Z",
+      "timestamp": "2025-01-19T01:31:46.518637628Z",
       "matcher-status": true
     },
     {
@@ -357,7 +357,7 @@
         "tls13"
       ],
       "ip": "217.147.193.100",
-      "timestamp": "2025-01-12T01:41:21.170512496Z",
+      "timestamp": "2025-01-19T01:31:46.864902974Z",
       "matcher-status": true
     }
   ]
