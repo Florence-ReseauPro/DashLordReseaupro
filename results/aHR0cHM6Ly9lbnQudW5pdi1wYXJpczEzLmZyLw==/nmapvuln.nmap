@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Jan 12 02:18:14 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
+# Nmap 7.92 scan initiated Sun Jan 19 01:57:08 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ent.univ-paris13.fr
 Nmap scan report for ent.univ-paris13.fr (81.194.43.212)
-Host is up (0.10s latency).
+Host is up (0.11s latency).
 Other addresses for ent.univ-paris13.fr (not scanned): 81.194.43.211
 rDNS record for 81.194.43.212: lb.univ-paris13.fr
 Not shown: 995 filtered tcp ports (no-response)
@@ -73,21 +73,21 @@ PORT     STATE SERVICE       VERSION
 |   FourOhFourRequest, HTTPOptions: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 12 Jan 2025 03:18:42 GMT
+|     Date: Sun, 19 Jan 2025 02:57:38 GMT
 |     Missing Host header
 |   GetRequest: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 12 Jan 2025 03:18:41 GMT
+|     Date: Sun, 19 Jan 2025 02:57:37 GMT
 |     Missing Host header
 |   RTSPRequest: 
 |     HTTP/1.1 400 Bad Request
 |     Connection: close
-|     Date: Sun, 12 Jan 2025 03:18:48 GMT
+|     Date: Sun, 19 Jan 2025 02:57:44 GMT
 |_    Missing Host header
 5 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=1/12%Time=67832673%P=x86_64-alpine-linux-musl%r
+SF-Port80-TCP:V=7.92%I=7%D=1/19%Time=678C5C02%P=x86_64-alpine-linux-musl%r
 SF:(GetRequest,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-len
 SF:gth:\x200\r\nlocation:\x20https:///\r\nconnection:\x20close\r\n\r\n")%r
 SF:(HTTPOptions,5D,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\ncontent-le
@@ -120,7 +120,7 @@ SF:nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x2
 SF:0text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20b
 SF:rowser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port143-TCP:V=7.92%I=7%D=1/12%Time=67832673%P=x86_64-alpine-linux-musl%
+SF-Port143-TCP:V=7.92%I=7%D=1/19%Time=678C5C02%P=x86_64-alpine-linux-musl%
 SF:r(NULL,198,"\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20LITERAL\+\x20ID\x2
 SF:0ENABLE\x20ACL\x20RIGHTS=kxte\x20QUOTA\x20MAILBOX-REFERRALS\x20NAMESPAC
 SF:E\x20UIDPLUS\x20NO_ATOMIC_RENAME\x20UNSELECT\x20CHILDREN\x20MULTIAPPEND
@@ -147,7 +147,7 @@ SF:x20QRESYNC\x20SCAN\x20XLIST\x20URLAUTH\x20URLAUTH=BINARY\x20X-NETSCAPE\
 SF:x20COMPRESS=DEFLATE\x20IDLE\]\x20perdition\x20ready\x20on\x2081\.194\.4
 SF:3\.212\x2000038b0a\r\n\*\x20BAD\x20Invalid\x20tag,\x20mate\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=1/12%Time=6783267A%P=x86_64-alpine-linux
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=1/19%Time=678C5C08%P=x86_64-alpine-linux
 SF:-musl%r(GetRequest,C2,"HTTP/1\.0\x20503\x20Service\x20Unavailable\r\nca
 SF:che-control:\x20no-cache\r\ncontent-type:\x20text/html\r\n\r\n<html><bo
 SF:dy><h1>503\x20Service\x20Unavailable</h1>\nNo\x20server\x20is\x20availa
@@ -182,7 +182,7 @@ SF:Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request</h1>\nY
 SF:our\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></html>\n"
 SF:);
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port993-TCP:V=7.92%T=SSL%I=7%D=1/12%Time=6783267A%P=x86_64-alpine-linux
+SF-Port993-TCP:V=7.92%T=SSL%I=7%D=1/19%Time=678C5C09%P=x86_64-alpine-linux
 SF:-musl%r(NULL,198,"\*\x20OK\x20\[CAPABILITY\x20IMAP4rev1\x20LITERAL\+\x2
 SF:0ID\x20ENABLE\x20ACL\x20RIGHTS=kxte\x20QUOTA\x20MAILBOX-REFERRALS\x20NA
 SF:MESPACE\x20UIDPLUS\x20NO_ATOMIC_RENAME\x20UNSELECT\x20CHILDREN\x20MULTI
@@ -209,17 +209,17 @@ SF:ITHIN\x20QRESYNC\x20SCAN\x20XLIST\x20URLAUTH\x20URLAUTH=BINARY\x20X-NET
 SF:SCAPE\x20COMPRESS=DEFLATE\x20IDLE\]\x20perdition\x20ready\x20on\x2081\.
 SF:194\.43\.212\x2000039064\r\n\*\x20BAD\x20Invalid\x20tag,\x20mate\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=1/12%Time=6783267A%P=x86_64-alpine-linu
+SF-Port8443-TCP:V=7.92%T=SSL%I=7%D=1/19%Time=678C5C09%P=x86_64-alpine-linu
 SF:x-musl%r(GetRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnectio
-SF:n:\x20close\r\nDate:\x20Sun,\x2012\x20Jan\x202025\x2003:18:41\x20GMT\r\
+SF:n:\x20close\r\nDate:\x20Sun,\x2019\x20Jan\x202025\x2002:57:37\x20GMT\r\
 SF:n\r\nMissing\x20Host\x20header")%r(HTTPOptions,67,"HTTP/1\.1\x20400\x20
-SF:Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Sun,\x2012\x20Jan\x2
-SF:02025\x2003:18:42\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(FourOhFou
+SF:Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Sun,\x2019\x20Jan\x2
+SF:02025\x2002:57:38\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(FourOhFou
 SF:rRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close
-SF:\r\nDate:\x20Sun,\x2012\x20Jan\x202025\x2003:18:42\x20GMT\r\n\r\nMissin
+SF:\r\nDate:\x20Sun,\x2019\x20Jan\x202025\x2002:57:38\x20GMT\r\n\r\nMissin
 SF:g\x20Host\x20header")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Requ
-SF:est\r\nConnection:\x20close\r\nDate:\x20Sun,\x2012\x20Jan\x202025\x2003
-SF::18:48\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(RPCCheck,2F,"HTTP/1\
+SF:est\r\nConnection:\x20close\r\nDate:\x20Sun,\x2019\x20Jan\x202025\x2002
+SF::57:44\x20GMT\r\n\r\nMissing\x20Host\x20header")%r(RPCCheck,2F,"HTTP/1\
 SF:.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSVers
 SF:ionBindReqTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20
 SF:close\r\n\r\n")%r(DNSStatusRequestTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Re
@@ -242,4 +242,4 @@ SF:close\r\n\r\n")%r(TerminalServer,2F,"HTTP/1\.1\x20400\x20Bad\x20Request
 SF:\r\nConnection:\x20close\r\n\r\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jan 12 02:18:55 2025 -- 1 IP address (1 host up) scanned in 41.20 seconds
+# Nmap done at Sun Jan 19 01:57:50 2025 -- 1 IP address (1 host up) scanned in 42.17 seconds
